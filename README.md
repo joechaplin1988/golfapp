@@ -1,7 +1,7 @@
 # Golf Tee Time Scrapers — Usage Notes
 
-Status: **five platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS) — **79 clubs / 97 sheets per scheduled run (2026-09-09)**, the
+Status: **seven platforms live** (Intelligent Golf, ESP, Golf Manager,
+ClubV1, BRS, Shiji, Gladstone) — **85 clubs / 110 sheets per scheduled run (2026-09-09)**, the
 whole of Kent & Sussex fingerprinted, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
@@ -18,7 +18,9 @@ which platform a club runs:
 | `esp_scraper.py` | ESP / EliteLive | session flow → HTML fragment | 6 |
 | `golf_manager_scraper.py` | Golf Manager | clean JSON API | 2 |
 | `clubv1_scraper.py` | ClubV1 | server HTML | 1 |
-| `brs_scraper.py` | BRS Golf | JSON API (club-context cookie + Referer) | 9 |
+| `brs_scraper.py` | BRS Golf | JSON API (club-context cookie + Referer) | 13 |
+| `shiji_scraper.py` | Shiji (hotel resorts) | open JSON API found via the booking page | 4 sheets / 2 clubs |
+| `gladstone_scraper.py` | Gladstone Go (council / leisure trusts) | JSON API, anonymous session + `X-Use-Sso` header; **no prices** | 9 sheets / 4 clubs |
 | `geocode_clubs.py` | — | Postcodes.io | fills lat/long for all |
 | `discover_clubs.py` | — | OSM + county union + each club's site | finds clubs + their platform → review CSV |
 | `probe_course_ids.py` | — | live tee sheets | approved review rows → platform ids |
@@ -162,7 +164,7 @@ python geocode_clubs.py clubs_config.csv
 git add clubs_config.csv && git commit -m "add clubs" && git push
 ```
 
-`platform` values: our five scrapers, plus `chronogolf` / `shiji` /
+`platform` values: our seven scrapers, plus `chronogolf` /
 `gladstone` (seen, no scraper yet — counted so "which scraper next?" has
 real numbers), and `no_site` / `unknown` / `blocked` (403, check in a real
 browser) / `dead_link` (404, stale directory URL) / `error`. `access` is
@@ -685,6 +687,35 @@ Two platform-specific notes worth keeping:
   records legitimately vary between `{"1"}`, `{"1","2"}` and `{"1".."4"}`.
   That's remaining-capacity data, not a bug — the player-count filter should
   use it.
+
+### Shiji + Gladstone — the last two Kent/Sussex platform families (2026-09-09)
+Recon → build in one afternoon; both verified with
+`run_pipeline.py --config <13 new rows> --no-db --days 3` → `Done: 26 ok, 13
+empty, 0 error; 1908 tee-time row(s)`.
+
+**Shiji** (Dale Hill Woosnam + Old, East Sussex National East + West): the
+booking page embeds `window.__API_ENDPOINT__` and the API course id; the sheet
+is `GET {api}/course/{id}/availability/{date}?players=n&holes=18` — no auth.
+`prices.guest` is pence per player and identical for 1–4 players (Dale Hill
+Saturday £45 → £45/90/135/180), so this joins ESP and Golf Manager as a
+verified multiply case. We query each party size because the API only returns
+slots with room for that many. Tudor Park (Marriott) runs the same app but its
+booking host is unreachable (certificate for another domain, 403 on http) —
+left out.
+
+**Gladstone Go** (High Elms 18/9, Orpington Cray 18/9 + Ruxley 9, Bromley
+18/9 on Mytime Active's tenant; Poult Wood 18/9 on TM Active's): every call
+401s until you hit `/api/samlauthentication/anonymous` AND send
+`X-Use-Sso: 1`. Then `/api/configuration/sites` (site ids, postcodes — the
+Mytime tenant also lists six Birmingham courses and Dibden in Hampshire),
+`/api/configuration/activity-groups` (18/9-hole groups per site) and
+`/api/availability/V2/sessions?…siteIds=&activityGroupIds=&dateFrom=&dateTo=`
+(one activity per tee time, UTC times, spaces left). **No price anywhere** —
+Gladstone only prices a slot when it is leased into a basket, which holds it
+against real customers, so we don't. Rows carry bookable sizes with `null`
+prices; the page shows "price on club site" and a max-price filter excludes
+them (Joe's decision: include them, 2026-09-09). Config `course_id` is
+`SITE/GROUP`, one row per group because 18- and 9-hole groups share times.
 
 ### Pipeline now threaded per platform; 7-day window (2026-09-09)
 `run_pipeline.py` scrapes each platform in its own thread (same per-club

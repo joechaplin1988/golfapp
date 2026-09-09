@@ -54,7 +54,7 @@ REQUEST_TIMEOUT_SECONDS = 20
 MAX_ATTEMPTS = 2
 RETRY_BACKOFF_SECONDS = 3.0
 
-PLATFORMS = ("intelligent_golf", "esp", "golf_manager", "clubv1", "brs")
+PLATFORMS = ("intelligent_golf", "esp", "golf_manager", "clubv1", "brs", "shiji", "gladstone")
 
 
 def setup_logging() -> None:

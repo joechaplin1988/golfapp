@@ -255,8 +255,86 @@ def brs_rows(s, name, evidence_url):
     return rows
 
 
+# --- Shiji (hotel-resort booking sites) ------------------------------------
+
+def shiji_rows(s, name, evidence_url):
+    """Booking-site origin -> its course codes -> a free slot via the open API."""
+    import shiji_scraper
+    import golf_common as gc
+    p = urlparse(evidence_url)
+    base = f"{p.scheme}://{p.netloc}"
+    r = get(s, f"{base}/golf")
+    if not r:
+        return [row(club_name=name, platform="shiji", base_url=base, verified=False, evidence="/golf fetch failed")]
+    codes = re.findall(r'<option value="([A-Z0-9]+)"[^>]*>([^<]+)</option>', r.text)
+    codes = [(v, l.strip()) for v, l in codes if v and l.strip().lower() != "please select"]
+    if not codes:
+        return [row(club_name=name, platform="shiji", base_url=base, verified=False, evidence="no course selector on /golf")]
+    rows = []
+    for code, label in codes:
+        club = gc.ClubConfig(club_name=name, platform="shiji", base_url=base, course_id=code)
+        found = None
+        for i in range(SCAN_DAYS):
+            d = (date.today() + timedelta(days=i)).isoformat()
+            res, status = shiji_scraper.scrape_club(club, d, s)
+            if status == "error":
+                break
+            if res:
+                found = (d, len(res))
+                break
+        rows.append(row(club_name=f"{name} ({label})" if len(codes) > 1 else name, platform="shiji",
+                        base_url=base, course_id=code, verified=bool(found),
+                        evidence=f"{found[1]} slots on {found[0]}" if found else "no free slot in 14 days"))
+    return rows
+
+
+# --- Gladstone Go (council / leisure trust) ---------------------------------
+
+def gladstone_rows(s, name, evidence_url):
+    """Tenant origin -> site matched by name -> one row per golf activity group with a free slot."""
+    import gladstone_scraper
+    import golf_common as gc
+    from discover_clubs import norm_club_name
+    p = urlparse(evidence_url)
+    base = f"{p.scheme}://{p.netloc}"
+    hdr = {**UA, "Accept": "application/json", "X-Use-Sso": "1", "Referer": f"{base}/book"}
+    try:
+        s.get(f"{base}/api/samlauthentication/anonymous", headers=hdr, timeout=20)
+        sites = s.get(f"{base}/api/configuration/sites?includeFacilitiesAndAmenities=true&isActive=true",
+                      headers=hdr, timeout=20).json()
+        groups = s.get(f"{base}/api/configuration/activity-groups", headers=hdr, timeout=20).json()
+    except (requests.RequestException, ValueError) as e:
+        return [row(club_name=name, platform="gladstone", base_url=base, verified=False, evidence=f"API failed: {e}")]
+    key = norm_club_name(name)
+    site = next((x for x in sites if norm_club_name(x.get("name", "")) == key), None) or \
+           next((x for x in sites if key and key in norm_club_name(x.get("name", ""))), None)
+    if not site:
+        return [row(club_name=name, platform="gladstone", base_url=base, verified=False,
+                    evidence="no site on this tenant matches the club name")]
+    golf_groups = [g for g in groups if g["id"].startswith(site["id"])
+                   and re.search(r"\b\d+\s*hole", g.get("description", ""), re.I)]
+    rows = []
+    for g in golf_groups:
+        club = gc.ClubConfig(club_name=name, platform="gladstone", base_url=base, course_id=f"{site['id']}/{g['id']}")
+        found = None
+        for i in range(SCAN_DAYS):
+            d = (date.today() + timedelta(days=i)).isoformat()
+            res, status = gladstone_scraper.scrape_club(club, d, s)
+            if status == "error":
+                break
+            if res:
+                found = (d, len(res))
+                break
+        label = re.sub(r"\(web\)", "", g["description"], flags=re.I).strip()
+        rows.append(row(club_name=f"{name} ({label})", platform="gladstone", base_url=base,
+                        course_id=f"{site['id']}/{g['id']}", postcode=site.get("address", {}).get("postalCode", ""),
+                        verified=bool(found),
+                        evidence=f"{found[1]} slots on {found[0]}" if found else "no free slot in 14 days"))
+    return rows
+
+
 HANDLERS = {"intelligent_golf": ig_rows, "esp": esp_rows, "golf_manager": gm_rows, "clubv1": clubv1_rows,
-            "brs": brs_rows}
+            "brs": brs_rows, "shiji": shiji_rows, "gladstone": gladstone_rows}
 
 
 def main():

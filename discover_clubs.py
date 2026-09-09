@@ -101,6 +101,7 @@ NOISE_NAME_RE = re.compile(
 COUNTY_BOUNDS = {
     "kent": ["Kent"],
     "sussex": ["East Sussex", "West Sussex"],
+    "surrey": ["Surrey"],
 }
 
 
@@ -179,6 +180,7 @@ def enumerate_osm(county: str, refresh: bool = False) -> list[dict]:
 COUNTY_UNION_URLS = {
     "kent": "https://www.kentgolf.org/countyclubs.php",
     "sussex": "https://www.sussexgolf.org/countyclubs.php",
+    "surrey": "https://www.surreygolf.org/countyclubs.php",   # same CMS, 111 clubs
 }
 
 SOCIAL_HOSTS = ("facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com", "youtube.com")
@@ -229,7 +231,7 @@ def enumerate_county_union(county: str, refresh: bool = False) -> dict[str, str]
             ext = [
                 _clean_url(x["href"]) for x in soup2.find_all("a", href=True)
                 if x["href"].startswith("http")
-                and "kentgolf.org" not in x["href"] and "sussexgolf.org" not in x["href"]
+                and urlparse(base).netloc.replace("www.", "") not in x["href"]   # the union's own pages
                 and not any(s in x["href"] for s in SOCIAL_HOSTS)
             ]
             ext = [u for u in ext if u]

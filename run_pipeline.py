@@ -41,6 +41,8 @@ import esp_scraper
 import golf_manager_scraper
 import clubv1_scraper
 import brs_scraper
+import shiji_scraper
+import gladstone_scraper
 
 gc.setup_logging()
 log = gc.log
@@ -51,6 +53,8 @@ SCRAPE_FNS = {
     "golf_manager": golf_manager_scraper.scrape_club,
     "clubv1": clubv1_scraper.scrape_club,
     "brs": brs_scraper.scrape_club,
+    "shiji": shiji_scraper.scrape_club,
+    "gladstone": gladstone_scraper.scrape_club,
 }
 
 

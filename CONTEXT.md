@@ -196,7 +196,13 @@ non-determinism) - details in README "Discovering new clubs".
 **Residue pass DONE (2026-09-09)** - the ~60 unresolved clubs re-checked
 (browser UA, in-app browser, web search): +16 clubs / 17 sheets verified
 and live -> **77 clubs / 95 sheets**, then the survey-era re-check added
-Crowborough Beacon + Royal Cinque Ports -> **79 clubs / 97 sheets** (IG: Cuckfield, Tilgate Forest,
+Crowborough Beacon + Royal Cinque Ports -> **79 clubs / 97 sheets**;
+Shiji + Gladstone scrapers (2026-09-09) added Dale Hill x2, East Sussex
+National x2, High Elms x2, Orpington x3, Bromley GC x2, Poult Wood x2 ->
+**85 clubs / 110 sheets**. Gladstone has NO prices (only at basket-lease,
+which blocks real customers) - Joe chose to include them unpriced; the page
+says "price on club site" and max-price filters drop them. Shiji is
+per-player pence, verified constant across party sizes (multiply is safe). (IG: Cuckfield, Tilgate Forest,
 Rookwood, Slinfold x2, Nevill, Horsham; BRS: Cherry Lodge, Leeds Castle,
 St Augustine's, Broome Park; ESP: Sedlescombe, Darenth Valley, Cottesmore;
 ClubV1: Ashford, Tenterden, Bexleyheath). Lesson: a 403/TLS "error" is
@@ -213,9 +219,10 @@ and Rye: IG sheets with no visitor slot in 14 days - re-probe later.
 all client-side over the fully loaded result set. Pipeline threaded per
 platform; workflow scrapes 3 days every 2h and 7 days twice daily. Repo
 being made public (unlimited Actions minutes; history scanned - no secrets
-ever committed, only placeholders). Kent/Sussex is now effectively done for
-platforms we scrape; left: Gladstone council courses (8 sheets, new
-scraper), hotel-group app (5 sheets, new scraper), one-offs. Next region
+ever committed, only placeholders). Kent/Sussex is DONE: every platform family with more than one club
+now has a scraper (7 platforms). Left: one-offs only (Rustington/Fusemetrix,
+Tonbridge GC/BookingHound, Lullingstone/Chronogolf), Tudor Park (host
+unreachable), Rye/Wrotham Heath re-probes. Next region
 order agreed: Surrey, Essex, Hampshire, Hertfordshire, Berkshire.
 **Deploy rule (Joe, 2026-09-09): don't rebuild Netlify on every push** -
 netlify.toml now has an `ignore` rule so only pushes touching web/ or

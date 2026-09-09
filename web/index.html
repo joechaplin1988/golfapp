@@ -238,7 +238,8 @@ function applyFilters(rows, f) {
     const hhmm = String(t.tee_time).slice(0, 5);
     if (hhmm < f.from || hhmm > f.to) return false;
     if (f.holes && String(t.holes) !== f.holes) return false;
-    if (f.maxPrice != null && t.price != null && Number(t.price) > f.maxPrice) return false;
+    // A max price means "I know what I'll pay", so unpriced slots drop out too.
+    if (f.maxPrice != null && (t.price == null || Number(t.price) > f.maxPrice)) return false;
     return true;
   });
 }
@@ -309,14 +310,16 @@ function render() {
           '<div class="sub">' + miles + ' mi away · ' + n + ' tee time' + (n === 1 ? "" : "s") +
             ' from ' + g.earliest + '</div>' +
         '</div>' +
-        '<div class="from">' + (g.minPrice != null ? '<b>from £' + g.minPrice.toFixed(0) + '</b>' : '<b>—</b>') +
-          '<span>' + playersLabel() + '</span></div>' +
+        '<div class="from">' + (g.minPrice != null
+            ? '<b>from £' + g.minPrice.toFixed(0) + '</b><span>' + playersLabel() + '</span>'
+            : '<span>price on club site</span>') + '</div>' +
         '<div class="chev">▾</div>' +
       '</summary>' +
       '<div class="times"></div>';
     const list = card.querySelector(".times");
     for (const t of g.times) {
-      const price = t.price != null ? "£" + Number(t.price).toFixed(0) : "—";
+      // Some council courses (Gladstone) publish availability but no price.
+      const price = t.price != null ? "£" + Number(t.price).toFixed(0) : "see site";
       const row = document.createElement("div");
       row.className = "row";
       row.innerHTML =
