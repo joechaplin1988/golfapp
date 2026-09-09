@@ -170,11 +170,39 @@ def clubv1_rows(s, name, evidence_url):
     if not rr:
         return [row(club_name=name, platform="clubv1", base_url=base,
                     verified=False, evidence="/Visitors/booking fetch failed")]
+    # A hub can exist with visitor booking switched OFF — it answers 200 with
+    # "Permission Denied". Hard no: nothing to scrape, do not add.
+    if re.search(r"permission denied|do not have permission", rr.text, re.I):
+        return [row(club_name=name, platform="clubv1", base_url=base, verified=False,
+                    evidence="hub exists but /Visitors/booking says Permission Denied — visitor booking not enabled; do not add")]
     ids = sorted(set(re.findall(r"courseId=(\d+)", rr.text)))
-    tees = len(BeautifulSoup(rr.text, "html.parser").select("div.tee"))
-    return [row(club_name=name, platform="clubv1", base_url=base, course_id=cid,
-                verified=bool(cid and tees), evidence=f"{tees} tee rows on sheet; courseId(s) seen {ids}")
-            for cid in (ids or [""])]
+    if not ids:
+        return [row(club_name=name, platform="clubv1", base_url=base, verified=False,
+                    evidence="tee sheet reached but no courseId in its links")]
+    rows = []
+    for cid in ids:
+        seen = None
+        # Every other day, with extra pacing: ClubV1 shows a "rapid refresh
+        # detected" warning at ~1s between hits on the same hub.
+        for i in range(0, SCAN_DAYS, 2):
+            d = (date.today() + timedelta(days=i)).isoformat()
+            time.sleep(2)
+            r2 = get(s, f"{base}/Visitors/TeeSheet?date={d}&courseId={cid}")
+            if not r2:
+                continue
+            n = len(BeautifulSoup(r2.text, "html.parser").select("div.tee.available"))
+            if n:
+                seen = (d, n)
+                break
+        rows.append(row(
+            club_name=name, platform="clubv1", base_url=base, course_id=cid,
+            # The id is read off the public sheet's own links — authoritative —
+            # so the row is safe to add even if no slot is open this fortnight.
+            verified=True,
+            evidence=(f"public sheet, courseId {cid}; {seen[1]} slots on {seen[0]}" if seen
+                      else f"public sheet, courseId {cid}; no availability in {SCAN_DAYS} days (scraper will report empty)"),
+        ))
+    return rows
 
 
 HANDLERS = {"intelligent_golf": ig_rows, "esp": esp_rows, "golf_manager": gm_rows, "clubv1": clubv1_rows}

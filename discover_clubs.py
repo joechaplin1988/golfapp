@@ -284,6 +284,13 @@ PLATFORM_MARKERS = {
 BOOKING_LINK_RE = re.compile(r"book|tee.?time|visitor|green.?fee", re.I)
 LOGIN_TITLE_RE = re.compile(r"login required|log in|sign in", re.I)
 
+# A hub can exist for a club WITHOUT visitor booking being switched on: a
+# ClubV1 hub answers HTTP 200 with "Permission Denied" on /Visitors/booking
+# for those (Mid Kent, Dartford, Eltham Warren, Faversham, Bearsted). Landing
+# on the platform's domain is NOT proof the sheet is open — the first version
+# of this script counted five such clubs as "confirmed public".
+DENIED_RE = re.compile(r"permission denied|do not have permission|access denied|not authori[sz]ed", re.I)
+
 # STRUCTURAL markers: the actual HTML/JS a platform's real booking page
 # renders (the same selectors each scraper keys off). These are a strong
 # same-domain signal — unlike a URL-domain match, they work for a
@@ -457,6 +464,8 @@ def fingerprint_club(name: str, site: Optional[str], lat, lon, session: requests
             return None
         if LOGIN_TITLE_RE.search(r2.text[:2000]):
             return ("login", "", url)
+        if DENIED_RE.search(r2.text[:3000]):
+            return ("denied", _fingerprint_url(r2.url) or "", url)
         # STRONG: we're standing on the platform's own domain, or the page's
         # actual markup is that platform's real tee-sheet structure.
         strong = _fingerprint_url(r2.url) or _structural_hit(r2.text)
@@ -470,6 +479,13 @@ def fingerprint_club(name: str, site: Optional[str], lat, lon, session: requests
             if (plat, link) not in hinted_urls:
                 hinted_urls.append((plat, link))
         return ("weak", "", url)
+
+    def _denied(plat_hint, evidence, where):
+        cand.access = "not_available"
+        cand.platform = plat_hint or (weak_platforms[0] if weak_platforms else "unknown")
+        cand.confidence = "high"
+        cand.note = f"platform hub reached but visitor booking is not enabled ({where}): {evidence}"
+        return cand
 
     def booking_ish_links(html, base_url):
         soup = BeautifulSoup(html, "html.parser")
@@ -509,6 +525,8 @@ def fingerprint_club(name: str, site: Optional[str], lat, lon, session: requests
             cand.confidence = "high"
             cand.note = f"booking link requires login: {evidence}"
             return cand
+        if kind == "denied":
+            return _denied(plat, evidence, "booking link")
         if kind == "confirmed":
             cand.platform, cand.evidence_url, cand.access = plat, evidence, "public"
             cand.confidence = "high"
@@ -535,6 +553,8 @@ def fingerprint_club(name: str, site: Optional[str], lat, lon, session: requests
                 cand.confidence = "high"
                 cand.note = f"booking link (2 hops in) requires login: {evidence}"
                 return cand
+            if kind == "denied":
+                return _denied(plat, evidence, "booking link, 2 hops in")
             if kind == "confirmed":
                 cand.platform, cand.evidence_url, cand.access = plat, evidence, "public"
                 cand.confidence = "high"
@@ -562,6 +582,8 @@ def fingerprint_club(name: str, site: Optional[str], lat, lon, session: requests
         if not res:
             continue
         kind, hit_plat, evidence = res
+        if kind == "denied":
+            return _denied(hit_plat or plat, evidence, "platform link")
         if kind == "confirmed":
             cand.platform, cand.evidence_url, cand.access = hit_plat, evidence, "public"
             cand.confidence = "high"
@@ -590,6 +612,8 @@ def fingerprint_club(name: str, site: Optional[str], lat, lon, session: requests
         if not res:
             continue
         kind, hit_plat, evidence = res
+        if kind == "denied":
+            return _denied(hit_plat or plat, evidence, f"{plat} convention path")
         if kind == "login":
             cand.access = "login_required"
             cand.platform = plat
@@ -666,6 +690,42 @@ def cmd_fingerprint(args):
     log.info(f"Platform distribution this batch: {dict(dist)}")
 
 
+def cmd_recheck(args):
+    """Re-fingerprint rows already in a review CSV, in place. For when the
+    fingerprinting logic improves (as it did when 'Permission Denied' hubs
+    were found being counted as public) and an existing batch needs
+    correcting without re-visiting every club in it."""
+    path = Path(args.review_csv)
+    with path.open(newline="", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+        fields = f.fieldnames if hasattr(f, "fieldnames") else None
+    fields = list(rows[0].keys()) if rows else FIELDS_FALLBACK
+    targets = [r for r in rows if not args.platform or r["platform"] in args.platform]
+    log.info(f"rechecking {len(targets)} of {len(rows)} row(s)")
+    session = requests.Session()
+    changed = 0
+    for r in targets:
+        site = r.get("official_site") or None
+        cand = fingerprint_club(r["name"], site, r.get("lat"), r.get("lon"), session)
+        new = asdict(cand)
+        before = (r["platform"], r.get("access"), r["confidence"])
+        for k in ("platform", "access", "evidence_url", "confidence", "note"):
+            r[k] = new[k]
+        after = (r["platform"], r["access"], r["confidence"])
+        if before != after:
+            changed += 1
+            log.info(f"  {r['name']:34} {before} -> {after}")
+        time.sleep(REQUEST_DELAY_SECONDS)
+    with path.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=fields)
+        w.writeheader()
+        w.writerows(rows)
+    log.info(f"rewrote {path} — {changed} row(s) changed")
+
+
+FIELDS_FALLBACK = ["name", "official_site", "lat", "lon", "platform", "access", "evidence_url", "confidence", "note"]
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="Discover golf club booking platforms (enumerate + fingerprint)")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -685,6 +745,11 @@ if __name__ == "__main__":
     p2.add_argument("--exclude", nargs="*", default=[],
                     help="review CSVs from earlier batches — clubs in them are skipped (resume without redoing)")
     p2.set_defaults(func=cmd_fingerprint)
+
+    p3 = sub.add_parser("recheck", help="Re-fingerprint rows of an existing review CSV in place")
+    p3.add_argument("review_csv")
+    p3.add_argument("--platform", nargs="*", default=[], help="only rows whose platform is one of these")
+    p3.set_defaults(func=cmd_recheck)
 
     a = ap.parse_args()
     a.func(a)
