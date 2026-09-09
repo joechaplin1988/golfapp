@@ -1,0 +1,94 @@
+{
+  "name": "Golf tee-time pipeline",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 30
+            }
+          ]
+        }
+      },
+      "id": "b1a1c111-1111-4111-8111-111111111111",
+      "name": "Every 30 minutes",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "command": "cd \"/CHANGE/ME/to/Golf app project files\" && python run_pipeline.py --days 3"
+      },
+      "id": "b2a2c222-2222-4222-8222-222222222222",
+      "name": "Run scrapers -> Supabase",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [520, 300],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "cond-exitcode",
+              "leftValue": "={{ $json.exitCode }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "notEquals"
+              }
+            }
+          ]
+        }
+      },
+      "id": "b3a3c333-3333-4333-8333-333333333333",
+      "name": "Pipeline failed?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [800, 300]
+    },
+    {
+      "parameters": {},
+      "id": "b4a4c444-4444-4444-8444-444444444444",
+      "name": "Alert (wire to email/Slack)",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [1080, 200]
+    },
+    {
+      "parameters": {},
+      "id": "b5a5c555-5555-4555-8555-555555555555",
+      "name": "OK",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [1080, 400]
+    }
+  ],
+  "connections": {
+    "Every 30 minutes": {
+      "main": [[{ "node": "Run scrapers -> Supabase", "type": "main", "index": 0 }]]
+    },
+    "Run scrapers -> Supabase": {
+      "main": [[{ "node": "Pipeline failed?", "type": "main", "index": 0 }]]
+    },
+    "Pipeline failed?": {
+      "main": [
+        [{ "node": "Alert (wire to email/Slack)", "type": "main", "index": 0 }],
+        [{ "node": "OK", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

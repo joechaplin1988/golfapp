@@ -1,0 +1,34 @@
+club_name,platform,base_url,course_id,postcode,latitude,longitude
+The Ridge,intelligent_golf,https://www.theridge.co.uk/visitorbooking,1,ME17 3JB,51.222315,0.614479
+Wildernesse,intelligent_golf,https://wildernesse.intelligentgolf.co.uk/visitorbooking,1,TN15 0JE,51.282364,0.222425
+Knole Park,intelligent_golf,https://knolepark.intelligentgolf.co.uk/visitorbooking,1,TN15 0HJ,51.275988,0.202918
+Lamberhurst,intelligent_golf,https://lamberhurst.intelligentgolf.co.uk/visitorbooking,1,TN3 8DT,51.105582,0.397563
+Canterbury,intelligent_golf,https://canterbury.intelligentgolf.co.uk/visitorbooking,241,CT1 1TW,51.278872,1.112503
+Cooden Beach,intelligent_golf,https://coodenbeach.intelligentgolf.co.uk/visitorbooking,1,TN39 4TR,50.835456,0.427579
+Crowborough,intelligent_golf,https://crowborough.intelligentgolf.co.uk/visitorbooking,1,TN6 1UJ,51.048097,0.148172
+Piltdown,intelligent_golf,https://piltdown.intelligentgolf.co.uk/visitorbooking,144,TN22 3XB,50.983061,0.064041
+Haywards Heath,intelligent_golf,https://haywardsheath.intelligentgolf.co.uk/visitorbooking,855,RH16 1SL,51.018533,-0.097127
+West Malling (Spitfire),intelligent_golf,https://westmalling.intelligentgolf.co.uk/visitorbooking,129,ME19 5AR,51.301867,0.367121
+West Malling (Hurricane),intelligent_golf,https://westmalling.intelligentgolf.co.uk/visitorbooking,131,ME19 5AR,51.301867,0.367121
+REGC (Devonshire),intelligent_golf,https://royaleastbourne.intelligentgolf.co.uk/visitorbooking,98,BN20 8BP,50.767364,0.267066
+REGC (Hartington 9),intelligent_golf,https://royaleastbourne.intelligentgolf.co.uk/visitorbooking,99,BN20 8BP,50.767364,0.267066
+Mannings Heath (Waterfall),intelligent_golf,https://manningsheath.intelligentgolf.co.uk/visitorbooking,80,RH13 6PG,51.052704,-0.274781
+Mannings Heath (Kingfisher),intelligent_golf,https://manningsheath.intelligentgolf.co.uk/visitorbooking,1,RH13 6PG,51.052704,-0.274781
+Copthorne,intelligent_golf,https://copthorne.intelligentgolf.co.uk/visitorbooking,1,RH10 3LL,51.138227,-0.110078
+Copthorne (Back 9),intelligent_golf,https://copthorne.intelligentgolf.co.uk/visitorbooking,4,RH10 3LL,51.138227,-0.110078
+Cinque Ports,intelligent_golf,https://members.royalcinqueports.com/visitorbooking,1732,CT14 6RF,51.240676,1.396277
+Nizels,intelligent_golf,https://www.nizelsgolfclub.com/visitorbooking,1,TN11 8NU,51.229814,0.212544
+The Heron (Heron-Hawk),intelligent_golf,https://www.heroncountryclub.uk/visitorbooking,1,CM13 3LW,51.584599,0.362301
+The Heron (Hawk-Vixen),intelligent_golf,https://www.heroncountryclub.uk/visitorbooking,4,CM13 3LW,51.584599,0.362301
+The Heron (Vixen-Heron),intelligent_golf,https://www.heroncountryclub.uk/visitorbooking,3,CM13 3LW,51.584599,0.362301
+Westerham,esp,https://www.e-s-p.com/elitelive,615,TN16 1QN,51.269108,0.091155
+Chart Hills,esp,https://www.e-s-p.com/elitelive,1854,TN27 8JX,51.131130,0.648177
+Prince's,esp,https://www.e-s-p.com/elitelive,157,CT13 9QB,51.284215,1.376942
+Sweetwoods,esp,https://www.e-s-p.com/elitelive,803,TN8 7AY,51.137459,0.089403
+London Club,esp,https://www.e-s-p.com/elitelive,1773,TN15 7EH,51.345980,0.288429
+Birchwood Park,esp,https://www.e-s-p.com/elitelive,2070,DA2 7HJ,51.412630,0.160455
+Redlibbets,golf_manager,https://redlibbets.golfmanager.com,,TN15 7HT,51.366302,0.292689
+Eastbourne Downs,golf_manager,https://eastbourne.golfmanager.com,,BN20 8ES,50.765690,0.247159
+Willingdon,clubv1,https://willingdon.hub.clubv1.com,10566,BN20 9AA,50.789032,0.254947
+Royal St Georges,,,,,,
+Littlestone,,,,,,

@@ -1,0 +1,51 @@
+name: Scrape tee times into Supabase
+
+# Runs the whole pipeline (run_pipeline.py) on a schedule. This replaces the
+# n8n Execute Command approach, which n8n Cloud can't do (no shell). GitHub
+# Actions IS both the scheduler and the Python host, so nothing else to run.
+#
+# Cadence note / GitHub free tier: one run is ~4 min. On a PRIVATE repo the
+# Free plan gives 2,000 Actions-minutes/month, so every-2-hours (~1,440
+# min/mo) fits; every 30 min does not. On a PUBLIC repo Actions minutes are
+# unlimited — make the repo public and drop the cron to "*/30 * * * *" if you
+# want fresher data. No secrets live in the code, so public is safe here.
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"        # every 2 hours (UTC); see note above
+  workflow_dispatch: {}          # manual "Run workflow" button in the Actions tab
+
+concurrency:                     # never let two runs overlap on the same DB
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Scrape upcoming dates -> Supabase
+        env:
+          # Set this in the repo: Settings -> Secrets and variables -> Actions
+          # -> New repository secret, name DATABASE_URL. Use the libpq keyword
+          # form (no URL-encoding headaches with special chars in the password):
+          #   host=db.<ref>.supabase.co port=5432 user=postgres password=<pw> dbname=postgres sslmode=require
+          # If the runner can't connect (Supabase direct host is sometimes
+          # IPv6-only), use the IPv4 pooler instead: Supabase -> Settings ->
+          # Database -> Connection pooling -> Session mode, port 5432.
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python run_pipeline.py --days 2
+
+      # OPTIONAL — keep n8n Cloud in the loop for alerting only. Create an n8n
+      # Webhook workflow, add its URL as the secret N8N_ALERT_WEBHOOK, and
+      # uncomment. Fires only when the scrape step above fails.
+      # - name: Notify n8n on failure
+      #   if: failure()
+      #   run: curl -fsS -X POST "${{ secrets.N8N_ALERT_WEBHOOK }}"
+      #        -H "Content-Type: application/json"
+      #        -d '{"status":"failed","run":"${{ github.run_id }}"}'

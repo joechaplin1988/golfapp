@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+psycopg[binary]
+# truststore is only needed on machines that run HTTPS-scanning antivirus or a
+# TLS-intercepting proxy (e.g. Joe's Windows laptop with AVG). Clean servers —
+# GitHub Actions, a VPS — don't need it; the scrapers import it optionally.
+# Install it locally with:  pip install truststore

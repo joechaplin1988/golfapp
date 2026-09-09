@@ -1,0 +1,13 @@
+# Scraper outputs — regenerated every run, not source
+tee_times_*.json
+run_*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Never commit secrets. DATABASE_URL lives in GitHub Actions secrets / n8n env,
+# never in the repo.
+.env
