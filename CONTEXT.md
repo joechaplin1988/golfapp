@@ -117,13 +117,21 @@ secret. Default cadence every 2h (fits free tier on a private repo; go public
 + 30-min for fresher). requirements.txt + .gitignore added. The self-hosted
 n8n workflow (n8n/golf_pipeline.workflow.json) is kept but only works on
 self-hosted n8n. n8n Cloud can still do failure alerting via a webhook
-(commented step in the Actions file). Full options in README ("Automating the
-pipeline"). NOT YET DONE by Joe: push repo to GitHub, set DATABASE_URL secret.
+(commented step in the Actions file). **LIVE as of 2026-09-09**: repo pushed to github.com/joechaplin1988/golfapp
+(private), Actions workflow active, runs every 2h. Verified end-to-end — a
+scheduled-style run from GitHub Actions wrote ~1,880 rows to Supabase.
+Two gotchas resolved during setup, both now reflected in scrape.yml + README:
+(1) the secret is named GOLF_APP, not DATABASE_URL (workflow feeds GOLF_APP
+into the DATABASE_URL env var); a stray malformed DATABASE_URL secret can be
+deleted. (2) GitHub runners are IPv4-only and Supabase's direct db host is
+IPv6 — MUST use the IPv4 session pooler string
+(aws-1-eu-west-1.pooler.supabase.com:5432, user postgres.<ref>).
 
 **Next candidates** (not started, Joe to choose):
-- Turn on scheduling: push repo to GitHub, add DATABASE_URL secret, enable
-  `.github/workflows/scrape.yml` (Actions cron). This is the go-live for the
-  automated refresh loop.
+- Housekeeping: delete the stray malformed `DATABASE_URL` GitHub secret;
+  confirm the DB password was rotated (the working one is in GOLF_APP). The
+  Node 20 deprecation warning in Actions is harmless (bump checkout@v5 /
+  setup-python@v6 whenever).
 - The user-facing search: a thin page/endpoint calling the search_tee_times
   RPC via the Supabase anon key (radius + date + players + price). This is
   what turns the working backend into something a person can use.

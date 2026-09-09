@@ -183,17 +183,25 @@ Python host, so there's no server to run. Setup:
 1. Put this project in a GitHub repo (`git init`, commit, push — `.gitignore`
    is included and keeps the scraper outputs/secrets out).
 2. Repo → **Settings → Secrets and variables → Actions → New repository
-   secret**, name `DATABASE_URL`, value = the libpq keyword string
-   (`host=db.<ref>.supabase.co port=5432 user=postgres password=<pw> dbname=postgres sslmode=require`).
-   Keyword form avoids URL-encoding the password's special characters.
+   secret**, name **`GOLF_APP`** (the workflow feeds it into the
+   `DATABASE_URL` env var the code reads). Value = the libpq keyword string
+   for Supabase's **IPv4 session pooler** — NOT the direct host. GitHub's
+   runners are IPv4-only and Supabase's direct `db.<ref>.supabase.co` host
+   resolves to IPv6, so a direct string fails with "Network is unreachable".
+   Get the pooler details from Supabase → **Connect → Session pooler**; it
+   looks like:
+   ```
+   host=aws-1-<region>.pooler.supabase.com port=5432 user=postgres.<ref> password=<pw> dbname=postgres sslmode=require
+   ```
+   Note the pooler needs the project ref *in the username* (`postgres.<ref>`).
+   Keyword form avoids URL-encoding special characters in the password.
 3. It runs every 2 hours by default (fits the free tier on a private repo).
    For 30-min freshness, make the repo public (Actions minutes are then
    unlimited and there are no secrets in the code) and edit the `cron` line.
    There's also a **Run workflow** button for manual runs.
 
-If the runner can't reach Supabase (the direct DB host is sometimes IPv6-only),
-switch `DATABASE_URL` to the IPv4 **connection pooler**, session mode
-(Supabase → Settings → Database → Connection pooling). Noted in the workflow file.
+Verified live 2026-09-09: a run from GitHub Actions through the session
+pooler wrote ~1,880 tee-time rows to Supabase.
 
 n8n Cloud can still own **alerting** if you want: add an n8n Webhook workflow
 and uncomment the "Notify n8n on failure" step in the workflow.
