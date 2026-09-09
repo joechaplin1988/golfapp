@@ -180,6 +180,8 @@ plain requests: the JSON API only needs the club page loaded first on the
 same session (context cookie) + the app's headers + a Referer of the club
 page. Prices are per-party TOTALS (Pyecombe 4-ball £150 vs £40 single -
 never multiply). First run: 9 ok / 0 error, 340 tee times for one day.
+First scheduled run with BRS: 131 ok / 25 empty / 0 error, **3,243 tee
+times** (403 of them BRS), all nine BRS courses status ok in the DB.
 **Search page pagination fixed (2026-09-09)**: PostgREST caps any response
 at 1,000 rows and the page was silently truncating (a Sevenoaks 20mi search
 had 1,017). Now pages 200 at a time via `?limit=&offset=` on the RPC with

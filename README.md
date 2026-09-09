@@ -677,6 +677,11 @@ prices are per-party TOTALS (stored as-is, never multiplied); Lydd 07:00
 £38 matched the sheet. The deep link `visitors.brsgolf.com/<slug>#/course/1`
 opens the club's live sheet.
 
+First scheduled run with BRS in (GitHub Actions, 2026-09-09): `Upserted 61
+club(s) and 78 course(s)` then `Done: 131 ok, 25 empty, 0 error; 3243
+tee-time row(s) written` — all nine BRS courses `ok`, 403 BRS rows in the
+database for the 2-day window.
+
 What the first recon got wrong: BRS is **not** Cloudflare-challenged for
 plain requests. The API just needs the club page loaded first on the same
 session (context cookie) plus the app's own headers and a `Referer` of the
