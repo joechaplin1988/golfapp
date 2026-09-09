@@ -314,11 +314,18 @@ anon key is injected at deploy from the `SUPABASE_ANON_KEY` env var into
 
 PostgREST caps any response at **1,000 rows**, which a busy search exceeds
 (Sevenoaks, 20 mi, 2 players, tomorrow: 1,017). Exactly 1,000 results is the
-tell. The page therefore pages 200 at a time with `?limit=&offset=` on the
-RPC URL and sends `Prefer: count=exact`, reading the true total from the
-`Content-Range` header (`0-199/1017`) to show "Showing 200 of 1,017", with a
-"Show more" button for the next page. Note a `Range` header does *not*
-limit RPC calls — only the query parameters do.
+tell. The page therefore loads every page up front (`?limit=1000&offset=`
+on the RPC URL with `Prefer: count=exact`, reading the true total from the
+`Content-Range` header) and then does all filtering locally. Note a `Range`
+header does *not* limit RPC calls — only the query parameters do.
+
+Results are **grouped one card per course** (name, distance, "N tee times
+from HH:MM", "from £X"), expanding to the individual times with Book links —
+so a 20-mile search is ~25 cards, not 1,000 rows. A filter bar appears after
+the first search: "Play between" (05:00–21:00, half-hour steps, default
+06:00–20:00), holes, max total price and sort (nearest / cheapest / earliest).
+Filters apply instantly to the loaded rows; only postcode/date/players/radius
+go to the database.
 
 ## Finding a new Intelligent Golf club's config
 
@@ -678,6 +685,14 @@ Two platform-specific notes worth keeping:
   records legitimately vary between `{"1"}`, `{"1","2"}` and `{"1".."4"}`.
   That's remaining-capacity data, not a bug — the player-count filter should
   use it.
+
+### Pipeline now threaded per platform; 7-day window (2026-09-09)
+`run_pipeline.py` scrapes each platform in its own thread (same per-club
+pacing, own session; DB writes stay on the main thread), so a run takes about
+as long as the slowest platform: the 17-sheet residue config went from ~65s
+serial to 26s. The workflow has two crons — `0 */2 * * *` with `--days 3`
+and `30 5,17 * * *` with `--days 7` — so the search page has a week of data
+and the next three days stay fresh. Manual runs default to 7 days.
 
 ### Residue pass — 17 sheets, 633 tee times over 2 days (2026-09-09)
 `run_pipeline.py --config <only the new rows> --no-db --days 2` → `Done: 16
