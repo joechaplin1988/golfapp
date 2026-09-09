@@ -1,0 +1,5 @@
+# Netlify: serve the static search page in web/. No build step — it's plain
+# HTML/JS that talks to Supabase's REST API from the browser.
+[build]
+  publish = "web"
+  command = ""
