@@ -31,7 +31,11 @@ log = logging.getLogger("golf")
 # layer can collapse those duplicates (see search_tee_times in schema.sql).
 # Provisional — the shared slots being the same booking is inferred, not
 # confirmed with the club.
-SHARED_NINES_CLUBS = {"The Heron"}
+SHARED_NINES_CLUBS = {
+    "The Heron",              # Heron/Hawk/Vixen -> 3 combos
+    "Singing Hills Golf Course",  # Lake/River/Valley -> 6 combos, each slot on 2 sheets
+    "Stonelees Golf Centre",  # Executive + Heights + a 9/9 combo of both
+}
 
 
 def slugify(name: str) -> str:

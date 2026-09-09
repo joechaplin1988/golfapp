@@ -147,12 +147,22 @@ manual DB step (verified in production: "Upserted 31 clubs / 39 courses").
 Whole county fingerprinted in three batches (40 + 45 + 42 clubs). Batch 1:
 12 ready (an initial 17 included five ClubV1 hubs whose visitor booking is
 switched off - hence the access=not_available state). Batch 2: 15 ready.
-19 clubs approved by Joe and LIVE so far -> **44 clubs / 55 sheets, ~2,500
-tee times per run** (batch 1: Sundridge Park E/W, Hever Castle
+Batch 3: 17 ready, 8 clubs approved. 27 clubs approved by Joe in total and
+LIVE -> **52 clubs / 69 sheets** (batch 1: Sundridge Park E/W, Hever Castle
 Championship/Princes, Royal Blackheath, West Kent, Pedham Place, Chelsfield
 Lakes; batch 2: Chestfield, Weald of Kent, Langley Park, West Sussex,
 Seaford, Mid Sussex, Ham Manor, Stonelees x3, North Foreland x2,
-Etchinghill, Kings Hill, Bognor Regis, Sheerness). Batch 3 awaiting review.
+Etchinghill, Kings Hill, Bognor Regis, Sheerness; batch 3: Ifield, Royal
+Ashdown Forest Old/West, Holtye, Selsey, Singing Hills x6, Dyke,
+Littlehampton, Hill Barn). Whole county first-pass fingerprinted.
+Catches worth remembering from batch 3: REGC came back under its full name
+with a /memberbooking/ URL (dedup now has acronym aliases; members' paths
+and memberbooking URLs are refused); Hill Barn's site carries a second ESP
+clubid that is actually Horton Park in Surrey (dropped); Avisford Park is
+GolfNow-only (access=out_of_scope by policy). Shared-nines dedupe flag now
+set on The Heron, Singing Hills and Stonelees - the search RPC does NOT yet
+collapse those duplicates (read-layer TODO; needs a DB session to change
+the function).
 Real platform mix (first 40): ClubV1 7 (survey said 1! but only 1 of the 7
 has visitor booking open), IG 6, Gladstone 3 (MyTime Active council courses
 - a leisure booking system, no scraper), ESP 2, BRS 2, Chronogolf 1

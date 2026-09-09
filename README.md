@@ -1,8 +1,8 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **four platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1) — **~2,500 tee times across 44 clubs / 55 sheets per scheduled run
-(2026-09-09)**, refreshed every 2h by GitHub Actions into Supabase, searchable
+ClubV1) — **52 clubs / 69 sheets per scheduled run (2026-09-09)**, the
+whole of Kent & Sussex fingerprinted, refreshed every 2h by GitHub Actions into Supabase, searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
 
@@ -498,14 +498,16 @@ that don't offer 9-hole rounds.
 
 ## Club coverage
 
-**Configured and confirmed returning live data (55 sheets / 44 clubs)** —
-the 16 clubs below from the original survey, plus 19 found by the discovery
+**Configured and confirmed returning live data (69 sheets / 52 clubs)** —
+the 16 clubs below from the original survey, plus 27 found by the discovery
 pipeline (2026-09-09). Batch 1: Sundridge Park (East + West), Hever Castle
 (Championship + Princes), Royal Blackheath, West Kent, Pedham Place,
 Chelsfield Lakes. Batch 2: Chestfield, Weald of Kent, Langley Park, West
 Sussex, Seaford, Mid Sussex, Ham Manor, Stonelees (Executive, Heights,
 Exec-9/Heights-9), North Foreland (main, Par-3 Northcliffe), Etchinghill,
-Kings Hill, Bognor Regis, Sheerness. Original survey clubs:
+Kings Hill, Bognor Regis, Sheerness. Batch 3: Ifield, Royal Ashdown Forest
+(Old + West), Holtye, Selsey, Singing Hills (6 combinations of 3 nines),
+Dyke, Littlehampton, Hill Barn. Original survey clubs:
 The Ridge, Wildernesse, Knole Park, Lamberhurst, Canterbury, Cooden Beach,
 Crowborough, Piltdown, Haywards Heath, Cinque Ports, Nizels, West Malling
 (Spitfire + Hurricane), REGC (Devonshire + Hartington 9), Mannings Heath
