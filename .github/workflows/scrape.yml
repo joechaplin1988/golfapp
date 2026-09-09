@@ -32,13 +32,14 @@ jobs:
       - name: Scrape upcoming dates -> Supabase
         env:
           # Set this in the repo: Settings -> Secrets and variables -> Actions
-          # -> New repository secret, name DATABASE_URL. Use the libpq keyword
+          # -> New repository secret. This repo's secret is named GOLF_APP
+          # (fed into the DATABASE_URL env var the code reads). Use the libpq keyword
           # form (no URL-encoding headaches with special chars in the password):
           #   host=db.<ref>.supabase.co port=5432 user=postgres password=<pw> dbname=postgres sslmode=require
           # If the runner can't connect (Supabase direct host is sometimes
           # IPv6-only), use the IPv4 pooler instead: Supabase -> Settings ->
           # Database -> Connection pooling -> Session mode, port 5432.
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DATABASE_URL: ${{ secrets.GOLF_APP }}
         run: python run_pipeline.py --days 2
 
       # OPTIONAL — keep n8n Cloud in the loop for alerting only. Create an n8n
