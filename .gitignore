@@ -11,3 +11,6 @@ venv/
 # Never commit secrets. DATABASE_URL lives in GitHub Actions secrets / n8n env,
 # never in the repo.
 .env
+
+# Netlify writes this at deploy time from the SUPABASE_ANON_KEY env var
+web/config.js

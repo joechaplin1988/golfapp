@@ -107,13 +107,17 @@
   </footer>
 </div>
 
+<script src="config.js"></script>
 <script>
 // ---- Config -----------------------------------------------------------------
 // SUPABASE_ANON_KEY is the *public* key — safe to ship in a browser; Row-Level
 // Security on the database allows only read + the search RPC, never writes.
 // This is NOT the service_role key, which must never appear in frontend code.
 const SUPABASE_URL = "https://uvvrtzkbzoahgppszuvg.supabase.co";
-const SUPABASE_ANON_KEY = "__PASTE_YOUR_SUPABASE_ANON_KEY_HERE__";
+// The anon key is injected at deploy time from Netlify's SUPABASE_ANON_KEY
+// environment variable (see netlify.toml, which writes it into config.js).
+// Falls back to a placeholder for local dev when config.js isn't present.
+const SUPABASE_ANON_KEY = (window.CONFIG && window.CONFIG.SUPABASE_ANON_KEY) || "__PASTE_YOUR_SUPABASE_ANON_KEY_HERE__";
 
 const MILES_PER_KM = 0.621371;
 const $ = (id) => document.getElementById(id);

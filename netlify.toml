@@ -1,5 +1,7 @@
-# Netlify: serve the static search page in web/. No build step — it's plain
-# HTML/JS that talks to Supabase's REST API from the browser.
+# Netlify: serve the static search page in web/. The only "build" step writes
+# web/config.js from the SUPABASE_ANON_KEY environment variable (set in the
+# Netlify UI), so the public anon key is injected at deploy time and never
+# committed to the repo. Change the env var + redeploy to rotate it.
 [build]
   publish = "web"
-  command = ""
+  command = "printf 'window.CONFIG={SUPABASE_ANON_KEY:\"%s\"};' \"$SUPABASE_ANON_KEY\" > web/config.js"
