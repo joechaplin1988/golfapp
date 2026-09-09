@@ -2,6 +2,12 @@
 # web/config.js from the SUPABASE_ANON_KEY environment variable (set in the
 # Netlify UI), so the public anon key is injected at deploy time and never
 # committed to the repo. Change the env var + redeploy to rotate it.
+#
+# `ignore` stops Netlify rebuilding on pushes that don't touch the site —
+# scraper code, clubs_config.csv and docs change far more often than web/,
+# and each build spends Netlify credits. Exit 0 = skip the build. Netlify
+# sets CACHED_COMMIT_REF (last deployed commit) and COMMIT_REF (this one).
 [build]
   publish = "web"
   command = "printf 'window.CONFIG={SUPABASE_ANON_KEY:\"%s\"};' \"$SUPABASE_ANON_KEY\" > web/config.js"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- web/ netlify.toml"

@@ -1,7 +1,7 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **five platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS) — **61 clubs / 78 sheets per scheduled run (2026-09-09)**, the
+ClubV1, BRS) — **77 clubs / 95 sheets per scheduled run (2026-09-09)**, the
 whole of Kent & Sussex fingerprinted, refreshed every 2h by GitHub Actions into Supabase, searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
@@ -514,9 +514,17 @@ that don't offer 9-hole rounds.
 
 ## Club coverage
 
-**Configured and confirmed returning live data (78 sheets / 61 clubs)** —
-the 16 clubs below from the original survey, plus 36 found by the discovery
-pipeline (2026-09-09). BRS batch (one scraper, nine clubs): Lewes,
+**Configured and confirmed returning live data (95 sheets / 77 clubs)** —
+the 16 clubs below from the original survey, plus 52 found by the discovery
+pipeline (2026-09-09). Residue pass (clubs the plain-requests fingerprint
+couldn't resolve, re-checked with a browser user agent, the in-app browser
+and web search — 16 clubs / 17 sheets): Intelligent Golf — Cuckfield,
+Tilgate Forest, Rookwood, Slinfold (Main + Academy), Nevill, Horsham (Oaks;
+the Firs course isn't bookable online); BRS — Cherry Lodge, Leeds Castle,
+St Augustine's (1st tee; the 9th-tee sheet is empty), Broome Park (1st tee);
+ESP — Sedlescombe, Darenth Valley, Cottesmore; ClubV1 — Ashford, Tenterden,
+Bexleyheath. Not added: Wrotham Heath (IG sheet exists but no visitor slot
+in 14 days — like Rye, re-probe later). BRS batch (one scraper, nine clubs): Lewes,
 Lindfield, Lydd, Hythe Imperial, Peacehaven, Pyecombe, Seaford Head, Walmer
 & Kingsdown, Westgate & Birchington — Highwoods has a BRS hub but visitor
 booking switched off (0 slots on every date, both tees), so it is not added. Batch 1: Sundridge Park (East + West), Hever Castle
@@ -665,6 +673,33 @@ Two platform-specific notes worth keeping:
   records legitimately vary between `{"1"}`, `{"1","2"}` and `{"1".."4"}`.
   That's remaining-capacity data, not a bug — the player-count filter should
   use it.
+
+### Residue pass — 17 sheets, 633 tee times over 2 days (2026-09-09)
+`run_pipeline.py --config <only the new rows> --no-db --days 2` → `Done: 16
+ok, 18 empty, 0 error; 633 tee-time row(s)` (the empties are same-day
+sheets). What the re-check taught us, worth keeping:
+- Most "blocked" (403) and "error" (TLS) sites were just rejecting the
+  scraper's user agent or had a certificate for a different host — a browser
+  user agent and the bare domain got in (Cherry Lodge, Cuckfield,
+  St Augustine's, Sene Valley, Bexleyheath, Tenterden all surfaced this way).
+- A club's IG subdomain (`<slug>.intelligentgolf.co.uk/visitorbooking/`)
+  is worth probing whenever its site links the vendor at all — Tilgate,
+  Rookwood, Cuckfield and Horsham only exist there.
+- Two more platform families appear in the county: council courses on
+  Gladstone (MyTime Active: Bromley, High Elms, Barnehurst, Cobtree,
+  Orpington ×2; TM Active: Poult Wood ×2) and a hotel-group tee booking app
+  at `book.<hotel>.co.uk/golf` (Dale Hill, Tudor Park, East Sussex
+  National). Neither has a scraper yet. One-offs: Rustington (Fusemetrix),
+  Tonbridge Golf Centre (BookingHound), Lullingstone (Chronogolf).
+- Confirmed not bookable online: Shortlands (members'-guest only), Whitstable
+  & Seasalter, Upchurch River Valley (ESP members' login only), Sene Valley
+  (ClubV1 hub, visitor booking off), Gillingham and Cowdray (IG subdomain,
+  no visitor sheet), Rochester & Cobham and Worthing (IG, login required),
+  Horam Park, Villa, Bay View, Dewlands Manor, Fawkham Valley, Burgess Hill
+  (turn up and play), Great Chart, Hilden Park, Manston, Boars Head (site
+  down), Gravesend Golf Centre, Kingsnorth/Homelands (site dead), Shooters
+  Hill (domain parked), Kent & Surrey (site returns Database Error),
+  Ashdown Park, Cottesmore's Griffin course and Effingham Park (GolfNow only).
 
 ### BRS Golf — 9 clubs, 340 tee times for 2026-09-10 (2026-09-09)
 `python brs_scraper.py clubs_config.csv --date 2026-09-10` → `brs: 9 ok, 0

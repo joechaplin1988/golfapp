@@ -193,8 +193,25 @@ are IN). Four real bugs were caught and fixed building this (county-page CMS
 credit false positive; name-matching gaps; nested-scheme URLs; set()
 non-determinism) - details in README "Discovering new clubs".
 
-**Next candidates** (Joe to choose) - the county's first pass is DONE and
-the BRS scraper is built:
+**Residue pass DONE (2026-09-09)** - the ~60 unresolved clubs re-checked
+(browser UA, in-app browser, web search): +16 clubs / 17 sheets verified
+and live -> **77 clubs / 95 sheets** (IG: Cuckfield, Tilgate Forest,
+Rookwood, Slinfold x2, Nevill, Horsham; BRS: Cherry Lodge, Leeds Castle,
+St Augustine's, Broome Park; ESP: Sedlescombe, Darenth Valley, Cottesmore;
+ClubV1: Ashford, Tenterden, Bexleyheath). Lesson: a 403/TLS "error" is
+usually the scraper UA or a wrong-host certificate, not a real block; and
+probe `<slug>.intelligentgolf.co.uk/visitorbooking/` whenever IG is hinted.
+Remaining unscraped platforms in the county: Gladstone council courses (8
+sheets across MyTime Active + TM Active), a hotel-group booking app at
+book.<hotel>.co.uk/golf (Dale Hill, Tudor Park, East Sussex National),
+plus one-offs (Rustington/Fusemetrix, Tonbridge GC/BookingHound,
+Lullingstone/Chronogolf). Full not-bookable list in README. Wrotham Heath
+and Rye: IG sheets with no visitor slot in 14 days - re-probe later.
+**Deploy rule (Joe, 2026-09-09): don't rebuild Netlify on every push** -
+netlify.toml now has an `ignore` rule so only pushes touching web/ or
+netlify.toml build; batch web changes until a milestone.
+
+**Next candidates** (Joe to choose):
 - Residue browser-check: ~60 clubs across the three batches that plain
   requests couldn't resolve (blocked 403s, JS-rendered "unknown", no_site).
   Many no_site rows are pay-and-play centres/ranges with no online booking
