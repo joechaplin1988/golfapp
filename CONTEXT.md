@@ -154,7 +154,10 @@ Lakes; batch 2: Chestfield, Weald of Kent, Langley Park, West Sussex,
 Seaford, Mid Sussex, Ham Manor, Stonelees x3, North Foreland x2,
 Etchinghill, Kings Hill, Bognor Regis, Sheerness; batch 3: Ifield, Royal
 Ashdown Forest Old/West, Holtye, Selsey, Singing Hills x6, Dyke,
-Littlehampton, Hill Barn). Whole county first-pass fingerprinted.
+Littlehampton, Hill Barn). Whole county first-pass fingerprinted. Live run
+after batch 3: 117 ok / 19 empty / 2 error, **2,955 tee times** (the 2
+"errors" are a Singing Hills same-day empty state the IG parser mislabels -
+sheet present, no slots, no no-availability message; being classified).
 Catches worth remembering from batch 3: REGC came back under its full name
 with a /memberbooking/ URL (dedup now has acronym aliases; members' paths
 and memberbooking URLs are refused); Hill Barn's site carries a second ESP

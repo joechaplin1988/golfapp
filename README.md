@@ -646,3 +646,11 @@ Two platform-specific notes worth keeping:
   records legitimately vary between `{"1"}`, `{"1","2"}` and `{"1".."4"}`.
   That's remaining-capacity data, not a bug — the player-count filter should
   use it.
+
+### County-wide — 69 sheets / 52 clubs, 2,955 tee times (2026-09-09, GitHub Actions)
+After the three discovery batches: `Done: 117 ok, 19 empty, 2 error; 2955
+tee-time row(s) written`, every newly approved club scraping real slots on
+its first scheduled run. The 2 "errors" are one Intelligent Golf same-day
+empty state (sheet present, no slots, no no-availability message) that the
+three-way classifier reports as "markup may have changed" — a mislabel, not
+a failure; the same sheets parsed normally for the next day.
