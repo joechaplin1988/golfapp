@@ -144,12 +144,20 @@ via live-slot scan; course_id is often NOT 1) -> apply_approved.py (append
 verified rows) -> geocode -> push. run_pipeline.py now syncs the CSV into the
 DB at the start of every scheduled run, so pushed clubs go live with no
 manual DB step (verified in production: "Upserted 31 clubs / 39 courses").
-First batch of 40 Kent clubs: 17 ready-to-add; first 6 approved and LIVE
-(Sundridge Park E/W, Hever Castle Championship/Princes, Royal Blackheath,
-West Kent, Pedham Place, Chelsfield Lakes -> 31 clubs / 39 sheets total).
-Real platform mix in that 40: ClubV1 7 (survey said 1!), IG 6, Gladstone 3
-(MyTime Active council courses - a leisure booking system, no scraper),
-ESP 2, BRS 2, Chronogolf 1 (Everyone Active council course).
+Whole county fingerprinted in three batches (40 + 45 + 42 clubs). Batch 1:
+12 ready (an initial 17 included five ClubV1 hubs whose visitor booking is
+switched off - hence the access=not_available state). Batch 2: 15 ready.
+19 clubs approved by Joe and LIVE so far -> **44 clubs / 55 sheets, ~2,500
+tee times per run** (batch 1: Sundridge Park E/W, Hever Castle
+Championship/Princes, Royal Blackheath, West Kent, Pedham Place, Chelsfield
+Lakes; batch 2: Chestfield, Weald of Kent, Langley Park, West Sussex,
+Seaford, Mid Sussex, Ham Manor, Stonelees x3, North Foreland x2,
+Etchinghill, Kings Hill, Bognor Regis, Sheerness). Batch 3 awaiting review.
+Real platform mix (first 40): ClubV1 7 (survey said 1! but only 1 of the 7
+has visitor booking open), IG 6, Gladstone 3 (MyTime Active council courses
+- a leisure booking system, no scraper), ESP 2, BRS 2, Chronogolf 1
+(Everyone Active council course). BRS is now 4 clubs county-wide, all on
+visitors.brsgolf.com/<slug> - the strongest "next scraper" case.
 Joe's standing decisions: review batches before anything goes live; scope =
 anything publicly bookable online (council/leisure-trust and hotel courses
 are IN). Four real bugs were caught and fixed building this (county-page CMS
