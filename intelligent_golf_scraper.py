@@ -63,7 +63,17 @@ def parse(html: str, club: gc.ClubConfig, date_iso: str) -> tuple[list[gc.TeeTim
             log.info(f"[{club.club_name}] No availability on {date_iso} "
                      f"(club's page says so explicitly) — nothing to scrape")
             return results, "empty"
-        elif soup.select_one(TEE_SHEET_CONTAINER_SELECTOR):
+        elif (container := soup.select_one(TEE_SHEET_CONTAINER_SELECTOR)) is not None:
+            if not container.get_text(strip=True):
+                # Same-day late state (Singing Hills, 2026-09-09): the sheet
+                # container is present but holds only a "loading" placeholder
+                # and no text — the server rendered nothing because nothing is
+                # left to book. The same sheets rendered slots normally for the
+                # next day. An empty sheet, not a markup change: calling it
+                # "error" would keep stale rows instead of clearing them.
+                log.info(f"[{club.club_name}] Tee sheet rendered empty for {date_iso} "
+                         f"(no slots, placeholder only) — treating as no availability")
+                return results, "empty"
             log.warning(f"[{club.club_name}] Tee sheet found for {date_iso} but it has no slots "
                         f"AND no no-availability message — markup may have changed")
         else:

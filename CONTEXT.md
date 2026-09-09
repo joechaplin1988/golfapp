@@ -177,16 +177,24 @@ are IN). Four real bugs were caught and fixed building this (county-page CMS
 credit false positive; name-matching gaps; nested-scheme URLs; set()
 non-determinism) - details in README "Discovering new clubs".
 
-**Next candidates** (Joe to choose):
-- Approve the 6 new ClubV1 clubs the batch found (Mid Kent, Dartford,
-  Eltham Warren, Faversham, Sheerness, Bearsted) and keep running batches
-  for the remaining ~90 Kent/Sussex clubs.
-- Browser-check the residue that plain requests can't resolve (403-blocked:
-  Shortlands, Cherry Lodge; JS/unknown: Sidcup, Bromley GC, Leeds Castle,
-  Whitstable, Manston, Better/bettergolf.co.uk).
-- Scraper decision by REAL numbers once the county is fully fingerprinted:
-  Gladstone and Chronogolf (council courses), BRS (shared host pattern
-  visitors.brsgolf.com/<slug> seen). Concept/Shiji still deferred.
+**Next candidates** (Joe to choose) - the county's first pass is DONE:
+- **BRS scraper** - now the biggest remaining coverage win: 9 clubs
+  county-wide, all on visitors.brsgolf.com/<slug> (Hythe, Westgate &
+  Birchington, Walmer & Kingsdown, Highwoods, Seaford Head, Lindfield,
+  Peacehaven, Pyecombe, Lewes). Survey said Cloudflare cf_clearance - recon
+  first; the shared-host pattern suggests one scraper covers all nine.
+- Residue browser-check: ~60 clubs across the three batches that plain
+  requests couldn't resolve (blocked 403s, JS-rendered "unknown", no_site).
+  Many no_site rows are pay-and-play centres/ranges with no online booking
+  at all; realistic scrapable yield maybe 10-20. Rye: re-probe later (private
+  links, visitor slots rare - id unconfirmed, not added).
+- Council-course platforms: Gladstone (MyTime Active x3), Chronogolf
+  (Everyone Active x1), Better (bettergolf.co.uk, unknown) - decide whether
+  a leisure-system scraper is worth it.
+- Read-layer dedupe for shared-nines clubs (The Heron, Singing Hills,
+  Stonelees show each slot on 2-3 sheets in search). Change is in the
+  search_tee_times SQL function - needs a DB session or a Supabase SQL-editor
+  paste; the dedupe_courses flag is already set on those clubs.
 - Housekeeping: delete the stray malformed DATABASE_URL GitHub secret;
   confirm the DB password was rotated (working one is in GOLF_APP); Node 20
   deprecation warning in Actions is harmless.
