@@ -44,7 +44,7 @@ log = logging.getLogger("golf")
 
 USER_AGENT = "ServiceSynkGolfAggregator/0.1 (contact: joe@servicesynk.com)"
 REQUEST_DELAY_SECONDS = 2.0     # pause between clubs
-REQUEST_TIMEOUT_SECONDS = 20
+REQUEST_TIMEOUT_SECONDS = 45   # some Golf Manager hosts take 20-30s to answer init.api
 
 # Observed in a real 17-sheet run: one club returned RemoteDisconnected and
 # silently lost 55 tee times that were definitely there. One retry recovers

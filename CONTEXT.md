@@ -199,7 +199,10 @@ and live -> **77 clubs / 95 sheets**, then the survey-era re-check added
 Crowborough Beacon + Royal Cinque Ports -> **79 clubs / 97 sheets**;
 Shiji + Gladstone scrapers (2026-09-09) added Dale Hill x2, East Sussex
 National x2, High Elms x2, Orpington x3, Bromley GC x2, Poult Wood x2 ->
-**85 clubs / 110 sheets**. Gladstone has NO prices (only at basket-lease,
+**85 clubs / 110 sheets**; Surrey batch 1 (2026-09-09, Joe approved all
+verified) added 39 clubs / 42 sheets -> **124 clubs / 152 sheets**. Surrey
+residue (6 login-walled IG, ~20 platform-hinted, 29 no_site, 14 unknown)
+still to do. Gladstone has NO prices (only at basket-lease,
 which blocks real customers) - Joe chose to include them unpriced; the page
 says "price on club site" and max-price filters drop them. Shiji is
 per-player pence, verified constant across party sizes (multiply is safe). (IG: Cuckfield, Tilgate Forest,

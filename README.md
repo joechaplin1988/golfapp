@@ -1,8 +1,8 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **seven platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone) — **85 clubs / 110 sheets per scheduled run (2026-09-09)**, the
-whole of Kent & Sussex fingerprinted, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
+ClubV1, BRS, Shiji, Gladstone) — **124 clubs / 152 sheets per scheduled run (2026-09-09)**, the
+whole of Kent & Sussex plus Surrey's first batch fingerprinted, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
 
@@ -687,6 +687,25 @@ Two platform-specific notes worth keeping:
   records legitimately vary between `{"1"}`, `{"1","2"}` and `{"1".."4"}`.
   That's remaining-capacity data, not a bug — the player-count filter should
   use it.
+
+### Surrey batch 1 — 39 clubs / 42 sheets (2026-09-09)
+`discover_clubs.py enumerate --county surrey` (121 clubs; the Surrey union
+directory at surreygolf.org uses the same CMS as Kent/Sussex) →
+`fingerprint` (115 rows: IG 39, BRS 11, ESP 6, ClubV1 5, GM 2; 43
+ready) → `probe_course_ids.py --all` (52 proposed rows, 43 verified) →
+Joe approved all verified → `apply_approved` + geocode → test
+`run_pipeline.py --config <42 rows> --no-db --days 2`: `73 ok, 8 empty, 3
+error; 3208 tee-time row(s)`. The 3 errors were North Downs and Pyrford
+(Golf Manager) timing out at 20s; both answer in ~25s, so the shared request
+timeout is now 45s. Fixes made by hand before applying: Reigate Heath's site
+carries a Luton postcode (web agency) — set RH2 8QR; "Richmond Park Golf
+Course" had matched The Richmond Golf Club's ClubV1 hub (a different, public
+course) — dropped; a few blank postcodes filled from the clubs' contact pages.
+Unverified and left out: Hindhead, Hankley Common (IG sheets, no visitor
+slot in 14 days — private-club pattern), The Addington (ESP, no clubid on
+site), Coombe Wood's 8-hole/practice sheets and the 10th-tee sheets at
+Clandon, Surbiton and Lingfield Park (empty). Surrey residue (login-walled,
+unknown, no_site) still to do.
 
 ### Shiji + Gladstone — the last two Kent/Sussex platform families (2026-09-09)
 Recon → build in one afternoon; both verified with
