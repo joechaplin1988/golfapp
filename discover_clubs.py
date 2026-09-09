@@ -112,11 +112,24 @@ def norm_club_name(s: str) -> str:
     the same key. Used everywhere two name lists need matching in this file
     — kept as one function so a fix here can't miss a second call site (it
     did, once, during this script's own build)."""
-    s = re.sub(r"\b(golf|club|course|centre|center|links)\b", " ", s.lower())
+    # "and"/"the" stripped too: the county union writes "Rochester & Cobham
+    # Park" where OSM writes "Rochester and Cobham Park" — the "&" vanishes
+    # in the alnum collapse but "and" didn't, so the two never matched.
+    s = re.sub(r"\b(golf|club|course|centre|center|links|and|the)\b", " ", s.lower())
     return re.sub(r"[^a-z0-9]", "", s)
 
 
-def enumerate_osm(county: str) -> list[dict]:
+def enumerate_osm(county: str, refresh: bool = False) -> list[dict]:
+    # Cache aggressively: golf courses appear/disappear on a timescale of
+    # years, and the public Overpass mirrors are a shared free resource that
+    # 504'd/timed out on three separate runs while building this. Re-query
+    # only on --refresh.
+    cache = Path(f"osm_{county}.json")
+    if cache.exists() and not refresh:
+        clubs = json.loads(cache.read_text(encoding="utf-8"))
+        log.info(f"[{county}] OSM: {len(clubs)} clubs from cache {cache.name} (--refresh to re-query Overpass)")
+        return clubs
+
     areas = COUNTY_BOUNDS[county]
     area_defs = "\n".join(
         f'area["name"="{a}"]["admin_level"="6"]->.a{i};' for i, a in enumerate(areas)
@@ -149,7 +162,9 @@ def enumerate_osm(county: str) -> list[dict]:
         lon = el.get("lon") or (el.get("center") or {}).get("lon")
         seen.setdefault(name, {"name": name, "lat": lat, "lon": lon, "source": "osm"})
     log.info(f"[{county}] OSM: {len(elements)} raw features -> {len(seen)} distinct real clubs")
-    return list(seen.values())
+    clubs = list(seen.values())
+    cache.write_text(json.dumps(clubs, indent=2), encoding="utf-8")
+    return clubs
 
 
 # --- Stage 1b: county union directory ----------------------------------------
@@ -167,15 +182,27 @@ def _clean_url(u: str) -> Optional[str]:
     'http://http://site.co.uk' — collapse to a single valid scheme+host."""
     if not u:
         return None
-    m = re.search(r"https?://+([^/]+.*)", u)
-    if not m:
+    # Strip EVERY leading scheme, not just one: the directory emits
+    # 'http://https://site', 'http://http://site' and 'http:////site'. The
+    # first regex here only peeled one layer, leaving 'https://https://site'
+    # — which requests then tried to connect to as host='https'.
+    stripped = re.sub(r"^(?:https?:/+)+", "", u.strip())
+    if not stripped or "." not in stripped.split("/")[0]:
         return None
-    return "https://" + m.group(1).lstrip("/")
+    return "https://" + stripped
 
 
-def enumerate_county_union(county: str) -> dict[str, str]:
+def enumerate_county_union(county: str, refresh: bool = False) -> dict[str, str]:
     """Returns {club_name: official_website_url}. Verified NOT to expose the
-    club's booking platform (see module docstring) — only the site URL."""
+    club's booking platform (see module docstring) — only the site URL.
+    Cached like the OSM data: ~80 detail-page fetches per county that give
+    the same answer every time."""
+    cache = Path(f"union_{county}.json")
+    if cache.exists() and not refresh:
+        sites = json.loads(cache.read_text(encoding="utf-8"))
+        log.info(f"[{county}] union directory: {len(sites)} clubs from cache {cache.name} (--refresh to re-fetch)")
+        return sites
+
     base = COUNTY_UNION_URLS.get(county)
     if not base:
         log.warning(f"No county union URL configured for '{county}'")
@@ -205,12 +232,13 @@ def enumerate_county_union(county: str) -> dict[str, str]:
             log.warning(f"[{county} union] {name}: {e}")
         time.sleep(REQUEST_DELAY_SECONDS / 3)  # county pages are cheap same-host hits
     log.info(f"[{county}] union directory: {len(sites)}/{len(club_links)} clubs resolved to a website")
+    cache.write_text(json.dumps(sites, indent=2), encoding="utf-8")
     return sites
 
 
 def cmd_enumerate(args):
-    osm = enumerate_osm(args.county)
-    union_sites = enumerate_county_union(args.county)
+    osm = enumerate_osm(args.county, refresh=args.refresh)
+    union_sites = enumerate_county_union(args.county, refresh=args.refresh)
 
     # Fuzzy-match union site names onto OSM names (county union naming
     # ("Ashford (Kent) Golf Club") and OSM naming ("Ashford Golf Club",
@@ -246,6 +274,10 @@ PLATFORM_MARKERS = {
     "brs": ["brsgolf.com", "brs-golf.com"],
     "chronogolf": ["chronogolf.com", "lightspeedhq.com"],
     "shiji": ["shiji.aws.prop.cm", "conceptspaandgolf"],
+    # Not a golf platform — a generic leisure-centre booking system that
+    # council-run courses (MyTime Active: Orpington, Cobtree, Barnehurst)
+    # sit behind. Counted so the "is it worth a scraper?" question has a number.
+    "gladstone": ["gladstonego.cloud", "mytimeleisure.co.uk"],
     "golfnow": ["golfnow.co.uk", "golfnow.com"],  # explicitly out of scope, but worth logging as "seen"
 }
 
@@ -333,6 +365,26 @@ def _find_platform_links(html: str, base_url: str) -> list[tuple[str, str]]:
     return hits
 
 
+# A platform vendor's own marketing root. A "Powered by X" badge links here;
+# following it lands on the VENDOR's homepage, which would match the vendor's
+# domain marker and read as a confirmed hit — for a club whose tee sheet we
+# never actually reached. Only platform links with a club-specific part (a
+# non-www subdomain, or a real path) are worth following as evidence.
+VENDOR_ROOT_HOSTS = {
+    "intelligentgolf.co.uk", "www.intelligentgolf.co.uk",
+    "e-s-p.com", "www.e-s-p.com",
+    "golfmanager.com", "www.golfmanager.com",
+    "clubv1.com", "www.clubv1.com", "hub.clubv1.com",
+    "brsgolf.com", "www.brsgolf.com",
+    "chronogolf.com", "www.chronogolf.com",
+}
+
+
+def _is_club_specific(url: str) -> bool:
+    p = urlparse(url)
+    return not (p.netloc.lower() in VENDOR_ROOT_HOSTS and p.path in ("", "/"))
+
+
 def _get_with_retry(session, url, attempts=2):
     """One retry with a short backoff — matches the scrapers' retry policy.
     Sites can 403 transiently (a WAF rule tripping on request pattern, not a
@@ -375,11 +427,18 @@ def fingerprint_club(name: str, site: Optional[str], lat, lon, session: requests
         except requests.RequestException:
             pass
         if r.status_code != 200:
-            cand.platform = "blocked"
             cand.confidence = "low"
-            cand.note = f"homepage returned HTTP {r.status_code} — likely bot-blocked; needs a browser-based check"
+            if r.status_code in (404, 410):
+                # Not a block — the directory's URL for this club is stale.
+                # Needs a fresh website lookup, not a browser retry.
+                cand.platform = "dead_link"
+                cand.note = f"directory URL returned HTTP {r.status_code} — stale link, needs a fresh website lookup"
+            else:
+                cand.platform = "blocked"
+                cand.note = f"homepage returned HTTP {r.status_code} — likely bot-blocked; needs a browser-based check"
             return cand
 
+    hinted_urls: list[tuple[str, str]] = []  # (platform, url) of each platform link seen — followed directly below
     weak_platforms: list[str] = []  # hinted at, not yet confirmed — ORDER MATTERS:
     # first-seen wins, deterministically, when a page hints at more than one
     # platform. A plain set() was tried first and produced a real bug: the
@@ -405,9 +464,11 @@ def fingerprint_club(name: str, site: Optional[str], lat, lon, session: requests
             return ("confirmed", strong, r2.url)
         # WEAK: this page merely links out to a platform domain somewhere
         # (a badge/credit) — note it, don't trust it, caller may probe further.
-        for plat, _ in _find_platform_links(r2.text, r2.url):
+        for plat, link in _find_platform_links(r2.text, r2.url):
             if plat not in weak_platforms:
                 weak_platforms.append(plat)
+            if (plat, link) not in hinted_urls:
+                hinted_urls.append((plat, link))
         return ("weak", "", url)
 
     def booking_ish_links(html, base_url):
@@ -428,9 +489,11 @@ def fingerprint_club(name: str, site: Optional[str], lat, lon, session: requests
         return ordered
 
     # Homepage itself: any platform links present are a weak hint only.
-    for plat, _ in _find_platform_links(r.text, r.url):
+    for plat, link in _find_platform_links(r.text, r.url):
         if plat not in weak_platforms:
             weak_platforms.append(plat)
+        if (plat, link) not in hinted_urls:
+            hinted_urls.append((plat, link))
 
     to_visit = booking_ish_links(r.text, r.url)
     visited_pages: list[str] = []
@@ -476,6 +539,42 @@ def fingerprint_club(name: str, site: Optional[str], lat, lon, session: requests
                 cand.platform, cand.evidence_url, cand.access = plat, evidence, "public"
                 cand.confidence = "high"
                 return cand
+
+    # Follow the actual platform links we saw before falling back to guessed
+    # paths. A homepage "Members' Area" link pointing at <club>.hub.clubv1.com
+    # never matches the booking-word heuristic, so it was only ever recorded
+    # as a hint — fetching it lands on the platform's own domain, which IS a
+    # confirmed signal. (A whole batch of ClubV1 clubs sat at "medium" for
+    # exactly this reason.) Vendor marketing roots are skipped: landing on
+    # www.intelligentgolf.co.uk proves nothing about this club's sheet.
+    for plat, link in hinted_urls[:4]:
+        if not _is_club_specific(link):
+            continue
+        probe = link
+        if plat == "clubv1" and "hub.clubv1.com" in urlparse(link).netloc:
+            # A ClubV1 hub's root is the members' login; the PUBLIC visitor
+            # sheet is a fixed path off the same host (verified on Willingdon).
+            # Probe that, or a members-only login page would be misread as
+            # "visitor booking is gated".
+            p = urlparse(link)
+            probe = f"{p.scheme}://{p.netloc}/Visitors/booking"
+        res = check_page(probe)
+        if not res:
+            continue
+        kind, hit_plat, evidence = res
+        if kind == "confirmed":
+            cand.platform, cand.evidence_url, cand.access = hit_plat, evidence, "public"
+            cand.confidence = "high"
+            cand.note = "confirmed by following the platform link found on the club's own site"
+            return cand
+        if kind == "login" and probe != link:
+            # Only a VISITOR path answering with a login page means visitor
+            # booking is gated. A members-area root doing so is just normal.
+            cand.access = "login_required"
+            cand.platform = plat
+            cand.confidence = "high"
+            cand.note = f"visitor booking path requires login: {evidence}"
+            return cand
 
     # Nothing confirmed via crawling. If we have a weak hint AND that
     # platform has a known, near-universal booking-path convention, probe it
@@ -566,6 +665,8 @@ if __name__ == "__main__":
     p1 = sub.add_parser("enumerate", help="Build a candidate list for one county (OSM + union directory)")
     p1.add_argument("--county", required=True, choices=list(COUNTY_BOUNDS))
     p1.add_argument("--out", required=True)
+    p1.add_argument("--refresh", action="store_true",
+                    help="re-query Overpass and the county union instead of using cached osm_/union_ files")
     p1.set_defaults(func=cmd_enumerate)
 
     p2 = sub.add_parser("fingerprint", help="Detect each candidate's booking platform")

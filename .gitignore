@@ -21,3 +21,9 @@ candidates_sussex.json
 candidates_review.csv
 kent_sussex_osm_golf.json
 kent_directory_scan.json
+
+# discovery caches + working files
+osm_*.json
+union_*.json
+approved_rows.csv
+candidates_review_*.csv

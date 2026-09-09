@@ -52,6 +52,23 @@ def date_window(days: int, start: str | None) -> list[str]:
 def run(config_path: str, platforms: list[str], dates: list[str], to_db: bool) -> None:
     log.info(f"Pipeline: {len(platforms)} platform(s) x {len(dates)} date(s) "
              f"({dates[0]}..{dates[-1]}){' -> DB' if to_db else ' (no DB)'}")
+    if to_db:
+        # Keep the DB's clubs/courses in step with clubs_config.csv on every
+        # run, so a club added to the CSV and pushed goes live on the next
+        # scheduled run — no separate, credentialed loader step. Without this,
+        # refresh_tee_times raises "No course row" for any club the loader
+        # hasn't seen, and the scheduled job has no way to run the loader.
+        # Idempotent upserts; a few dozen rows, negligible cost per run.
+        try:
+            import load_config_to_db
+            clubs_cfg, _skipped = load_config_to_db.build_clubs(config_path)
+            load_config_to_db.load(clubs_cfg)
+        except Exception as e:
+            # Non-fatal by design: a sync failure must never stop the refresh
+            # of clubs the DB already knows. Any NEW club then logs "No course
+            # row" below and is skipped until the sync succeeds.
+            log.error(f"config -> DB sync failed (continuing with existing courses): {e}")
+
     conn = golf_db.get_connection() if to_db else None
     tally = {"ok": 0, "empty": 0, "error": 0, "rows": 0}
     try:
