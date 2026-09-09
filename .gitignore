@@ -14,3 +14,10 @@ venv/
 
 # Netlify writes this at deploy time from the SUPABASE_ANON_KEY env var
 web/config.js
+
+# Discovery pipeline outputs — regenerable, not source
+candidates_kent.json
+candidates_sussex.json
+candidates_review.csv
+kent_sussex_osm_golf.json
+kent_directory_scan.json

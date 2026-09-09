@@ -1,0 +1,579 @@
+"""
+Club discovery pipeline — finds which booking platform a golf club uses,
+without needing a search engine for most of them.
+
+WHY THIS EXISTS: manually identifying a club's platform (this session's
+approach for The Ridge, Cinque Ports, Nizels, The Heron etc.) takes real
+effort per club — DNS checks, fingerprinting requests, browser recon. Kent
+and Sussex alone have ~160 golf clubs (per OpenStreetMap); the original
+34-club survey covered a fraction of that. This script automates the
+mechanical parts.
+
+PIPELINE (three stages, each independently rerunnable):
+
+  1. enumerate  — pull the candidate club list. Two sources, both free and
+     needing no search API:
+       - OpenStreetMap Overpass API: every leisure=golf_course feature in a
+         region (name + coordinates). Gets us WHICH clubs exist.
+       - County golf union directories (kentgolf.org, sussexgolf.org):
+         structured club listings with each club's own website URL. Gets us
+         WHERE each club's site is, without a single WebSearch call.
+     IMPORTANT CAUGHT BUG: the county union pages also contain a generic
+     "Created by intelligentgolf version X" CMS credit in their OWN site
+     footer — this is about kentgolf.org's website, NOT about any club's
+     booking platform, and must not be read as a platform signal. Verified
+     this concretely: it appeared on Birchwood Park's county page, but
+     Birchwood Park is confirmed ESP, not Intelligent Golf. Only markers
+     found on the CLUB'S OWN site (fetched separately) count.
+
+  2. fingerprint — for each club with a known website, fetch that site (and
+     one likely booking-link hop) and match against the same platform
+     markers used by intelligent_golf_scraper.py / esp_scraper.py /
+     golf_manager_scraper.py / clubv1_scraper.py, plus markers for the
+     deferred platforms (BRS, Chronogolf, Shiji) so we can at least COUNT
+     them without building a scraper yet. Never writes to clubs_config.csv —
+     always to a review file (candidates_review.csv) for a human pass, per
+     the project's stated review-gate.
+
+  3. (separately, manual) once a batch is approved, a human — or a follow-up
+     script — moves confirmed rows from the review file into clubs_config.csv,
+     using the SAME per-platform course_id discovery already proven in each
+     scraper (a live-date probe to read course=/clubid=/courseId= off a real
+     booking link). Deliberately NOT automated in this script: getting the
+     course_id right needs a live availability check, which is exactly the
+     kind of per-club nuance (course_id often isn't 1, multi-course clubs,
+     login walls) that burned real time this session and deserves a look.
+
+Usage:
+    python discover_clubs.py enumerate --county kent   --out candidates_kent.json
+    python discover_clubs.py enumerate --county sussex --out candidates_sussex.json
+    python discover_clubs.py fingerprint candidates_kent.json candidates_sussex.json \
+        --config clubs_config.csv --out candidates_review.csv
+"""
+
+import argparse
+import csv
+import io
+import json
+import logging
+import re
+import time
+from dataclasses import asdict, dataclass, field
+from pathlib import Path
+from typing import Optional
+from urllib.parse import urljoin, urlparse
+
+try:
+    import truststore
+
+    truststore.inject_into_ssl()
+except ImportError:
+    pass
+
+import requests
+from bs4 import BeautifulSoup
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+log = logging.getLogger("discover")
+
+USER_AGENT = "ServiceSynkGolfAggregator/0.1 (contact: joe@servicesynk.com; research use)"
+REQUEST_TIMEOUT = 20
+REQUEST_DELAY_SECONDS = 1.5  # per-club pacing — same politeness stance as the scrapers
+
+# --- Stage 1a: OSM enumeration -----------------------------------------------
+
+# The public overpass-api.de instance is a shared free resource and can be
+# slow/504 under load. Try it once, then fall back to the kumi.systems
+# mirror — don't hammer either with repeated retries.
+OVERPASS_URLS = [
+    "https://overpass-api.de/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter",
+]
+
+# Names that show up as OSM leisure=golf_course but aren't a bookable full
+# course a visitor would tee off on: closed venues, pitch & putt, driving
+# ranges, standalone "academy" sub-features of a course already counted
+# under its own name.
+NOISE_NAME_RE = re.compile(
+    r"closed|pitch\s*&?\s*putt|driving range|academy course|par\s?3\b", re.I
+)
+
+COUNTY_BOUNDS = {
+    "kent": ["Kent"],
+    "sussex": ["East Sussex", "West Sussex"],
+}
+
+
+def norm_club_name(s: str) -> str:
+    """Loose match key for club names across sources that name the same club
+    differently — OSM says "Barnehurst Golf Course", the county union says
+    "Barnehurst Golf Club", our config just says "Barnehurst". Strip generic
+    suffix words BEFORE collapsing to alnum-only, so all three converge on
+    the same key. Used everywhere two name lists need matching in this file
+    — kept as one function so a fix here can't miss a second call site (it
+    did, once, during this script's own build)."""
+    s = re.sub(r"\b(golf|club|course|centre|center|links)\b", " ", s.lower())
+    return re.sub(r"[^a-z0-9]", "", s)
+
+
+def enumerate_osm(county: str) -> list[dict]:
+    areas = COUNTY_BOUNDS[county]
+    area_defs = "\n".join(
+        f'area["name"="{a}"]["admin_level"="6"]->.a{i};' for i, a in enumerate(areas)
+    )
+    area_queries = "\n".join(f"nwr[\"leisure\"=\"golf_course\"](area.a{i});" for i in range(len(areas)))
+    query = f"[out:json][timeout:60];\n{area_defs}\n(\n{area_queries}\n);\nout center tags;"
+
+    last_err = None
+    resp = None
+    for url in OVERPASS_URLS:
+        try:
+            resp = requests.post(url, data={"data": query},
+                                 headers={"User-Agent": USER_AGENT}, timeout=90)
+            resp.raise_for_status()
+            break
+        except requests.RequestException as e:
+            last_err = e
+            log.warning(f"Overpass endpoint {url} failed ({e}) — trying next")
+            resp = None
+    if resp is None:
+        raise last_err
+    elements = resp.json().get("elements", [])
+
+    seen = {}
+    for el in elements:
+        name = (el.get("tags") or {}).get("name")
+        if not name or NOISE_NAME_RE.search(name):
+            continue
+        lat = el.get("lat") or (el.get("center") or {}).get("lat")
+        lon = el.get("lon") or (el.get("center") or {}).get("lon")
+        seen.setdefault(name, {"name": name, "lat": lat, "lon": lon, "source": "osm"})
+    log.info(f"[{county}] OSM: {len(elements)} raw features -> {len(seen)} distinct real clubs")
+    return list(seen.values())
+
+
+# --- Stage 1b: county union directory ----------------------------------------
+
+COUNTY_UNION_URLS = {
+    "kent": "https://www.kentgolf.org/countyclubs.php",
+    "sussex": "https://www.sussexgolf.org/countyclubs.php",
+}
+
+SOCIAL_HOSTS = ("facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com", "youtube.com")
+
+
+def _clean_url(u: str) -> Optional[str]:
+    """County union pages have malformed hrefs like 'http:////site.co.uk' or
+    'http://http://site.co.uk' — collapse to a single valid scheme+host."""
+    if not u:
+        return None
+    m = re.search(r"https?://+([^/]+.*)", u)
+    if not m:
+        return None
+    return "https://" + m.group(1).lstrip("/")
+
+
+def enumerate_county_union(county: str) -> dict[str, str]:
+    """Returns {club_name: official_website_url}. Verified NOT to expose the
+    club's booking platform (see module docstring) — only the site URL."""
+    base = COUNTY_UNION_URLS.get(county)
+    if not base:
+        log.warning(f"No county union URL configured for '{county}'")
+        return {}
+    resp = requests.get(base, headers={"User-Agent": USER_AGENT}, timeout=REQUEST_TIMEOUT)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+    club_links = [a for a in soup.find_all("a", href=True) if "clubid=" in a["href"]]
+
+    sites: dict[str, str] = {}
+    for a in club_links:
+        name = a.get_text(strip=True)
+        href = a["href"] if a["href"].startswith("http") else urljoin(base, a["href"])
+        try:
+            r = requests.get(href, headers={"User-Agent": USER_AGENT}, timeout=REQUEST_TIMEOUT)
+            soup2 = BeautifulSoup(r.text, "html.parser")
+            ext = [
+                _clean_url(x["href"]) for x in soup2.find_all("a", href=True)
+                if x["href"].startswith("http")
+                and "kentgolf.org" not in x["href"] and "sussexgolf.org" not in x["href"]
+                and not any(s in x["href"] for s in SOCIAL_HOSTS)
+            ]
+            ext = [u for u in ext if u]
+            if ext:
+                sites[name] = ext[0]
+        except requests.RequestException as e:
+            log.warning(f"[{county} union] {name}: {e}")
+        time.sleep(REQUEST_DELAY_SECONDS / 3)  # county pages are cheap same-host hits
+    log.info(f"[{county}] union directory: {len(sites)}/{len(club_links)} clubs resolved to a website")
+    return sites
+
+
+def cmd_enumerate(args):
+    osm = enumerate_osm(args.county)
+    union_sites = enumerate_county_union(args.county)
+
+    # Fuzzy-match union site names onto OSM names (county union naming
+    # ("Ashford (Kent) Golf Club") and OSM naming ("Ashford Golf Club",
+    # or "...Golf Course") differ slightly — norm_club_name() strips the
+    # generic words so both converge).
+    union_by_norm = {norm_club_name(k): v for k, v in union_sites.items()}
+    for club in osm:
+        n = norm_club_name(club["name"])
+        site = union_by_norm.get(n)
+        if not site:
+            for uk, uv in union_sites.items():
+                if norm_club_name(uk) in n or n in norm_club_name(uk):
+                    site = uv
+                    break
+        club["official_site"] = site
+
+    with_site = sum(1 for c in osm if c.get("official_site"))
+    log.info(f"[{args.county}] matched {with_site}/{len(osm)} OSM clubs to a website via the county union")
+
+    Path(args.out).write_text(json.dumps(osm, indent=2), encoding="utf-8")
+    log.info(f"Wrote {len(osm)} candidate(s) -> {args.out}")
+
+
+# --- Stage 2: fingerprint each club's own site -------------------------------
+
+PLATFORM_MARKERS = {
+    "intelligent_golf": ["intelligentgolf.co.uk", "teebooking-teetimes"],
+    "esp": ["e-s-p.com/elitelive", "elitelive/book_"],
+    "golf_manager": ["golfmanager.com"],
+    "clubv1": ["hub.clubv1.com"],
+    # Deferred platforms — not yet scraped, but worth counting so future
+    # scraper-building is prioritised by real numbers, not the old survey.
+    "brs": ["brsgolf.com", "brs-golf.com"],
+    "chronogolf": ["chronogolf.com", "lightspeedhq.com"],
+    "shiji": ["shiji.aws.prop.cm", "conceptspaandgolf"],
+    "golfnow": ["golfnow.co.uk", "golfnow.com"],  # explicitly out of scope, but worth logging as "seen"
+}
+
+BOOKING_LINK_RE = re.compile(r"book|tee.?time|visitor|green.?fee", re.I)
+LOGIN_TITLE_RE = re.compile(r"login required|log in|sign in", re.I)
+
+# STRUCTURAL markers: the actual HTML/JS a platform's real booking page
+# renders (the same selectors each scraper keys off). These are a strong
+# same-domain signal — unlike a URL-domain match, they work for a
+# white-labeled club whose booking page never leaves the club's own domain
+# (theridge.co.uk, littlestonegolfclub.org.uk, ...), where there's no
+# foreign hostname to match against.
+PLATFORM_STRUCTURAL_MARKERS = {
+    "intelligent_golf": ["teebooking-teetimes", "teetimes-slot"],
+    "esp": ["espajax", "book_group.php", "book_date.php"],
+    "golf_manager": ["ebookings/init.api", "golfmanager"],
+    "clubv1": ["cv1hub-booking", "data-teetime"],
+}
+
+# Platforms with a fixed, near-universal booking-path convention, proven
+# across every club checked this session (The Ridge, Wildernesse, Nizels,
+# The Heron, Cinque Ports, Littlestone — all serve their sheet at exactly
+# this path off their own domain or subdomain). Worth probing directly
+# once we have ANY hint a club might be on this platform, rather than
+# relying on the homepage happening to link straight to it — several real
+# clubs' nav never links to the booking page directly at all.
+PLATFORM_PATH_CONVENTIONS = {
+    "intelligent_golf": "/visitorbooking/",
+}
+
+
+def _structural_hit(html: str) -> Optional[str]:
+    low = html.lower()
+    for plat, markers in PLATFORM_STRUCTURAL_MARKERS.items():
+        if any(m in low for m in markers):
+            return plat
+    return None
+
+
+@dataclass
+class Candidate:
+    name: str
+    official_site: Optional[str]
+    lat: Optional[float]
+    lon: Optional[float]
+    platform: str = "unknown"          # one of PLATFORM_MARKERS keys, or unknown/no_site/error/blocked
+    # Deliberately separate from `platform`: a club can be confirmed on a
+    # known platform AND still not be publicly bookable (Littlestone is
+    # genuinely Intelligent Golf, but its booking page requires a login —
+    # those are two different facts, and collapsing them into one field
+    # loses the second one).
+    access: str = "unknown"            # public | login_required | unknown
+    evidence_url: str = ""
+    confidence: str = "low"            # low | medium | high
+    note: str = ""
+
+
+def _fingerprint_url(url: str) -> Optional[str]:
+    """STRONG signal: we are actually standing on the platform's own domain
+    right now (redirected there, or a followed link landed us there)."""
+    low = url.lower()
+    for plat, markers in PLATFORM_MARKERS.items():
+        if any(m in low for m in markers):
+            return plat
+    return None
+
+
+def _find_platform_links(html: str, base_url: str) -> list[tuple[str, str]]:
+    """WEAK signal: this page's content merely LINKS to a platform domain
+    somewhere (a "Powered by X" credit badge, a members-login nav item).
+    Returns [(platform, absolute_url), ...] for those links so the caller can
+    follow one before trusting it — never returned as evidence on its own.
+    Caught concretely during this pipeline's own build: county-union pages
+    link to intelligentgolf.co.uk in their OWN footer regardless of what
+    platform any given club actually uses, and a club's own homepage can
+    carry the same kind of decorative badge without it meaning the specific
+    club's tee sheet is on that platform, or public."""
+    soup = BeautifulSoup(html, "html.parser")
+    hits = []
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        plat = _fingerprint_url(href) or _fingerprint_url(urljoin(base_url, href))
+        if plat:
+            hits.append((plat, urljoin(base_url, href)))
+    return hits
+
+
+def _get_with_retry(session, url, attempts=2):
+    """One retry with a short backoff — matches the scrapers' retry policy.
+    Sites can 403 transiently (a WAF rule tripping on request pattern, not a
+    real ban) as seen live during this pipeline's own validation run."""
+    last = None
+    for i in range(attempts):
+        try:
+            r = session.get(url, headers={"User-Agent": USER_AGENT}, timeout=REQUEST_TIMEOUT, allow_redirects=True)
+            return r
+        except requests.RequestException as e:
+            last = e
+            if i < attempts - 1:
+                time.sleep(3)
+    raise last
+
+
+def fingerprint_club(name: str, site: Optional[str], lat, lon, session: requests.Session) -> Candidate:
+    cand = Candidate(name=name, official_site=site, lat=lat, lon=lon)
+    if not site:
+        cand.platform = "no_site"
+        cand.note = "no official website resolved (not in county union directory)"
+        return cand
+
+    try:
+        r = _get_with_retry(session, site)
+    except requests.RequestException as e:
+        cand.platform = "error"
+        cand.note = f"homepage fetch failed: {e}"
+        return cand
+
+    if r.status_code != 200:
+        # A non-200 (esp. 403) on the homepage means we likely got a WAF
+        # challenge page, not real content — don't read platform markers out
+        # of that, and don't let it silently pass as "unknown". Retry once
+        # more after a longer pause; if it still fails, flag for a human/
+        # browser-based look rather than guessing.
+        time.sleep(5)
+        try:
+            r = _get_with_retry(session, site, attempts=1)
+        except requests.RequestException:
+            pass
+        if r.status_code != 200:
+            cand.platform = "blocked"
+            cand.confidence = "low"
+            cand.note = f"homepage returned HTTP {r.status_code} — likely bot-blocked; needs a browser-based check"
+            return cand
+
+    weak_platforms: list[str] = []  # hinted at, not yet confirmed — ORDER MATTERS:
+    # first-seen wins, deterministically, when a page hints at more than one
+    # platform. A plain set() was tried first and produced a real bug: the
+    # same club (Bearsted) came back as two different platforms across two
+    # runs, because Python's set iteration order for strings is randomized
+    # per-process. A review tool must give the same answer every run.
+
+    def check_page(url) -> "tuple[str, str, str] | None":
+        """Fetch url and classify it. Returns (kind, platform, evidence_url) where
+        kind is 'login' | 'confirmed' | 'weak' | None (fetch failed/nothing)."""
+        try:
+            r2 = _get_with_retry(session, url, attempts=1)
+        except requests.RequestException:
+            return None
+        if r2.status_code != 200:
+            return None
+        if LOGIN_TITLE_RE.search(r2.text[:2000]):
+            return ("login", "", url)
+        # STRONG: we're standing on the platform's own domain, or the page's
+        # actual markup is that platform's real tee-sheet structure.
+        strong = _fingerprint_url(r2.url) or _structural_hit(r2.text)
+        if strong:
+            return ("confirmed", strong, r2.url)
+        # WEAK: this page merely links out to a platform domain somewhere
+        # (a badge/credit) — note it, don't trust it, caller may probe further.
+        for plat, _ in _find_platform_links(r2.text, r2.url):
+            if plat not in weak_platforms:
+                weak_platforms.append(plat)
+        return ("weak", "", url)
+
+    def booking_ish_links(html, base_url):
+        soup = BeautifulSoup(html, "html.parser")
+        links = [
+            a["href"] for a in soup.find_all("a", href=True)
+            if BOOKING_LINK_RE.search(a.get_text(" ", strip=True)) or BOOKING_LINK_RE.search(a["href"])
+        ]
+        # "book" in the href itself outranks a generic "visitor info" page
+        # whose link text merely mentions the word.
+        strong = [l for l in links if re.search(r"book", l, re.I)]
+        ordered, seen = [], set()
+        for l in strong + [x for x in links if x not in strong]:
+            full = urljoin(base_url, l)
+            if full not in seen:
+                seen.add(full)
+                ordered.append(full)
+        return ordered
+
+    # Homepage itself: any platform links present are a weak hint only.
+    for plat, _ in _find_platform_links(r.text, r.url):
+        if plat not in weak_platforms:
+            weak_platforms.append(plat)
+
+    to_visit = booking_ish_links(r.text, r.url)
+    visited_pages: list[str] = []
+    for full in to_visit[:3]:
+        res = check_page(full)
+        visited_pages.append(full)
+        if not res:
+            continue
+        kind, plat, evidence = res
+        if kind == "login":
+            cand.access = "login_required"
+            cand.platform = weak_platforms[0] if weak_platforms else "unknown"
+            cand.confidence = "high"
+            cand.note = f"booking link requires login: {evidence}"
+            return cand
+        if kind == "confirmed":
+            cand.platform, cand.evidence_url, cand.access = plat, evidence, "public"
+            cand.confidence = "high"
+            return cand
+
+    # Bounded second hop from pages we actually reached but which resolved
+    # nothing (e.g. a "green fees" page that itself links onward to the real
+    # booking system — exactly how Littlestone is structured).
+    for page_url in visited_pages[:2]:
+        try:
+            r3 = _get_with_retry(session, page_url, attempts=1)
+        except requests.RequestException:
+            continue
+        if r3.status_code != 200:
+            continue
+        for full2 in booking_ish_links(r3.text, r3.url)[:2]:
+            res = check_page(full2)
+            if not res:
+                continue
+            kind, plat, evidence = res
+            if kind == "login":
+                cand.access = "login_required"
+                cand.platform = weak_platforms[0] if weak_platforms else "unknown"
+                cand.confidence = "high"
+                cand.note = f"booking link (2 hops in) requires login: {evidence}"
+                return cand
+            if kind == "confirmed":
+                cand.platform, cand.evidence_url, cand.access = plat, evidence, "public"
+                cand.confidence = "high"
+                return cand
+
+    # Nothing confirmed via crawling. If we have a weak hint AND that
+    # platform has a known, near-universal booking-path convention, probe it
+    # directly — this is exactly how Littlestone, Nizels and The Heron were
+    # actually resolved this session: not by finding a link, but by trying
+    # the platform's standard path once its identity was suspected.
+    for plat in weak_platforms:
+        path = PLATFORM_PATH_CONVENTIONS.get(plat)
+        if not path:
+            continue
+        probe_url = urljoin(site, path)
+        res = check_page(probe_url)
+        if not res:
+            continue
+        kind, hit_plat, evidence = res
+        if kind == "login":
+            cand.access = "login_required"
+            cand.platform = plat
+            cand.confidence = "high"
+            cand.note = f"{plat} convention path requires login: {evidence}"
+            return cand
+        if kind == "confirmed":
+            cand.platform, cand.evidence_url, cand.access = hit_plat, evidence, "public"
+            cand.confidence = "high"
+            cand.note = f"confirmed via {plat}'s standard booking path"
+            return cand
+
+    if weak_platforms:
+        cand.platform = weak_platforms[0]
+        cand.confidence = "medium"
+        cand.note = f"platform link(s) seen ({weak_platforms}) but no confirmed public booking page found"
+        return cand
+
+    cand.platform = "unknown"
+    cand.note = f"homepage loaded ({r.url}) but no platform signal found on it or {len(to_visit)} booking-ish link(s)"
+    return cand
+
+
+def cmd_fingerprint(args):
+    candidates = []
+    for path in args.inputs:
+        candidates.extend(json.loads(Path(path).read_text(encoding="utf-8")))
+    log.info(f"Loaded {len(candidates)} candidate(s) from {len(args.inputs)} file(s)")
+
+    already = set()
+    if args.config and Path(args.config).exists():
+        with open(args.config, newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                already.add(norm_club_name(row["club_name"].split(" (")[0].strip()))
+
+    todo = [
+        c for c in candidates
+        if not any(norm_club_name(c["name"]) == a or norm_club_name(c["name"]) in a or a in norm_club_name(c["name"])
+                   for a in already if a)
+    ]
+    log.info(f"{len(candidates) - len(todo)} already in {args.config}; {len(todo)} to fingerprint")
+
+    if args.limit:
+        todo = todo[: args.limit]
+        log.info(f"--limit applied: fingerprinting {len(todo)}")
+
+    session = requests.Session()
+    results: list[Candidate] = []
+    for i, c in enumerate(todo):
+        cand = fingerprint_club(c["name"], c.get("official_site"), c.get("lat"), c.get("lon"), session)
+        results.append(cand)
+        log.info(f"[{i+1}/{len(todo)}] {c['name']:35} -> {cand.platform:16} ({cand.confidence})")
+        time.sleep(REQUEST_DELAY_SECONDS)
+
+    out_path = Path(args.out)
+    with out_path.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=list(asdict(results[0]).keys()) if results else
+                           ["name","official_site","lat","lon","platform","evidence_url","confidence","note"])
+        w.writeheader()
+        for c in results:
+            w.writerow(asdict(c))
+    log.info(f"Wrote {len(results)} row(s) -> {out_path}")
+
+    from collections import Counter
+    dist = Counter(c.platform for c in results)
+    log.info(f"Platform distribution this batch: {dict(dist)}")
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser(description="Discover golf club booking platforms (enumerate + fingerprint)")
+    sub = ap.add_subparsers(dest="cmd", required=True)
+
+    p1 = sub.add_parser("enumerate", help="Build a candidate list for one county (OSM + union directory)")
+    p1.add_argument("--county", required=True, choices=list(COUNTY_BOUNDS))
+    p1.add_argument("--out", required=True)
+    p1.set_defaults(func=cmd_enumerate)
+
+    p2 = sub.add_parser("fingerprint", help="Detect each candidate's booking platform")
+    p2.add_argument("inputs", nargs="+", help="One or more enumerate --out files")
+    p2.add_argument("--config", default="clubs_config.csv", help="Skip clubs already configured")
+    p2.add_argument("--out", default="candidates_review.csv")
+    p2.add_argument("--limit", type=int, default=None, help="Only fingerprint the first N (for testing)")
+    p2.set_defaults(func=cmd_fingerprint)
+
+    a = ap.parse_args()
+    a.func(a)
