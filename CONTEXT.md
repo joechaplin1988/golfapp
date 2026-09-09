@@ -127,16 +127,48 @@ deleted. (2) GitHub runners are IPv4-only and Supabase's direct db host is
 IPv6 — MUST use the IPv4 session pooler string
 (aws-1-eu-west-1.pooler.supabase.com:5432, user postgres.<ref>).
 
-**Next candidates** (not started, Joe to choose):
-- Housekeeping: delete the stray malformed `DATABASE_URL` GitHub secret;
-  confirm the DB password was rotated (the working one is in GOLF_APP). The
-  Node 20 deprecation warning in Actions is harmless (bump checkout@v5 /
-  setup-python@v6 whenever).
-- The user-facing search: a thin page/endpoint calling the search_tee_times
-  RPC via the Supabase anon key (radius + date + players + price). This is
-  what turns the working backend into something a person can use.
-- Deferred platforms: BRS (Cloudflare cf_clearance hop), Concept/Shiji
-  (React + payments), Chronogolf (reCAPTCHA — go gentle). Harder tier.
+**Search page LIVE** (2026-09-09): golfbookingapp.netlify.app — static
+web/index.html on Netlify (Joe's existing hosting). Postcode -> Postcodes.io
+-> search_tee_times RPC via the Supabase anon key; results link out to each
+club's booking page. The anon key is injected at deploy from a Netlify env
+var (SUPABASE_ANON_KEY -> web/config.js via netlify.toml), not committed.
+Verified: a Sevenoaks search returned 422 real tee times on the live site.
+
+**Discovery pipeline built & used** (2026-09-09) — for beta-scale coverage.
+OSM says Kent+Sussex has ~160 real clubs vs the 34 hand-surveyed. Three
+scripts with a human review gate: discover_clubs.py (enumerate: OSM Overpass
++ county golf union directories for official sites, both cached; fingerprint:
+each club's OWN site -> platform / access / confidence / evidence -> review
+CSV, never the config) -> probe_course_ids.py (approved rows -> platform ids
+via live-slot scan; course_id is often NOT 1) -> apply_approved.py (append
+verified rows) -> geocode -> push. run_pipeline.py now syncs the CSV into the
+DB at the start of every scheduled run, so pushed clubs go live with no
+manual DB step (verified in production: "Upserted 31 clubs / 39 courses").
+First batch of 40 Kent clubs: 17 ready-to-add; first 6 approved and LIVE
+(Sundridge Park E/W, Hever Castle Championship/Princes, Royal Blackheath,
+West Kent, Pedham Place, Chelsfield Lakes -> 31 clubs / 39 sheets total).
+Real platform mix in that 40: ClubV1 7 (survey said 1!), IG 6, Gladstone 3
+(MyTime Active council courses - a leisure booking system, no scraper),
+ESP 2, BRS 2, Chronogolf 1 (Everyone Active council course).
+Joe's standing decisions: review batches before anything goes live; scope =
+anything publicly bookable online (council/leisure-trust and hotel courses
+are IN). Four real bugs were caught and fixed building this (county-page CMS
+credit false positive; name-matching gaps; nested-scheme URLs; set()
+non-determinism) - details in README "Discovering new clubs".
+
+**Next candidates** (Joe to choose):
+- Approve the 6 new ClubV1 clubs the batch found (Mid Kent, Dartford,
+  Eltham Warren, Faversham, Sheerness, Bearsted) and keep running batches
+  for the remaining ~90 Kent/Sussex clubs.
+- Browser-check the residue that plain requests can't resolve (403-blocked:
+  Shortlands, Cherry Lodge; JS/unknown: Sidcup, Bromley GC, Leeds Castle,
+  Whitstable, Manston, Better/bettergolf.co.uk).
+- Scraper decision by REAL numbers once the county is fully fingerprinted:
+  Gladstone and Chronogolf (council courses), BRS (shared host pattern
+  visitors.brsgolf.com/<slug> seen). Concept/Shiji still deferred.
+- Housekeeping: delete the stray malformed DATABASE_URL GitHub secret;
+  confirm the DB password was rotated (working one is in GOLF_APP); Node 20
+  deprecation warning in Actions is harmless.
 
 ## Platform survey — 34 clubs checked across Kent/Sussex, 7 distinct platforms found
 

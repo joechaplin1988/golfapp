@@ -632,6 +632,14 @@ def cmd_fingerprint(args):
     ]
     log.info(f"{len(candidates) - len(todo)} already in {args.config}; {len(todo)} to fingerprint")
 
+    if args.exclude:
+        done = set()
+        for path in args.exclude:
+            with open(path, newline="", encoding="utf-8") as f:
+                done |= {norm_club_name(r["name"]) for r in csv.DictReader(f)}
+        todo = [c for c in todo if norm_club_name(c["name"]) not in done]
+        log.info(f"--exclude: skipping {len(done)} already-reviewed club(s); {len(todo)} remain")
+
     if args.limit:
         todo = todo[: args.limit]
         log.info(f"--limit applied: fingerprinting {len(todo)}")
@@ -674,6 +682,8 @@ if __name__ == "__main__":
     p2.add_argument("--config", default="clubs_config.csv", help="Skip clubs already configured")
     p2.add_argument("--out", default="candidates_review.csv")
     p2.add_argument("--limit", type=int, default=None, help="Only fingerprint the first N (for testing)")
+    p2.add_argument("--exclude", nargs="*", default=[],
+                    help="review CSVs from earlier batches — clubs in them are skipped (resume without redoing)")
     p2.set_defaults(func=cmd_fingerprint)
 
     a = ap.parse_args()

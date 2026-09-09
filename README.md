@@ -1,8 +1,10 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **four platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1) — **909 tee times across 28 clubs in one run (2026-09-09)**. Every
-club is also geocoded (lat/long) for radius search. See "Verified runs".
+ClubV1) — **~1,830 tee times across 31 clubs / 39 sheets per scheduled run
+(2026-09-09)**, refreshed every 2h by GitHub Actions into Supabase, searchable
+at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
+discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
 
 ## Architecture
 
@@ -17,6 +19,10 @@ which platform a club runs:
 | `golf_manager_scraper.py` | Golf Manager | clean JSON API | 2 |
 | `clubv1_scraper.py` | ClubV1 | server HTML | 1 |
 | `geocode_clubs.py` | — | Postcodes.io | fills lat/long for all |
+| `discover_clubs.py` | — | OSM + county union + each club's site | finds clubs + their platform → review CSV |
+| `probe_course_ids.py` | — | live tee sheets | approved review rows → platform ids |
+| `apply_approved.py` | — | — | appends verified rows to the config |
+| `run_pipeline.py` | all | — | one command: syncs config → DB, scrapes a date window → DB |
 
 `golf_common.py` owns the shared contract: the `TeeTimeResult` shape, config
 loading (filtered by the new `platform` column), the polite-request policy
@@ -121,6 +127,68 @@ clubhouse, ~100m accurate — fine for radius search, not for directions.
 Distance itself isn't stored — compute it at query time from the two
 coordinate pairs (Haversine, or PostGIS — which the schema uses).
 
+## Discovering new clubs
+
+Kent & Sussex have **~160 real golf clubs** (OpenStreetMap); the original
+hand survey covered 34. Three scripts take a county from "which clubs
+exist" to config rows, with a **human review gate** in the middle — nothing
+goes live from discovery without being looked at.
+
+```
+# 1. enumerate: club list (OSM Overpass) + official websites (county golf
+#    union directory: kentgolf.org / sussexgolf.org). Both cached in
+#    osm_*.json / union_*.json — the public Overpass mirrors are flaky and
+#    the data changes on a timescale of years; --refresh re-queries.
+python discover_clubs.py enumerate --county kent   --out candidates_kent.json
+python discover_clubs.py enumerate --county sussex --out candidates_sussex.json
+
+# 2. fingerprint: visit each club's OWN site, identify platform + whether the
+#    booking page is actually public. Writes a review CSV, never the config.
+#    --limit N for a batch; --exclude earlier.csv to resume without redoing.
+python discover_clubs.py fingerprint candidates_kent.json candidates_sussex.json \
+    --config clubs_config.csv --out candidates_review.csv --limit 40
+
+# 3. YOU review candidates_review.csv (platform / access / confidence /
+#    evidence). Then find the platform ids for the ones you approve — a
+#    live-slot scan, because course_id is often NOT 1 (577, 578, 227, 2
+#    found in the first batch) and two-course clubs need a row each:
+python probe_course_ids.py candidates_review.csv --names "Mid Kent" "Dartford"
+
+# 4. append only rows that were verified against a live slot, geocode, push.
+#    The scheduled run syncs the CSV into the DB itself — no manual DB step.
+python apply_approved.py
+python geocode_clubs.py clubs_config.csv
+git add clubs_config.csv && git commit -m "add clubs" && git push
+```
+
+`platform` values: our four scrapers, plus `brs` / `chronogolf` / `shiji` /
+`gladstone` (seen, no scraper yet — counted so "which scraper next?" has
+real numbers), and `no_site` / `unknown` / `blocked` (403, check in a real
+browser) / `dead_link` (404, stale directory URL) / `error`. `access` is
+separate from platform on purpose: a club can be confirmed on Intelligent
+Golf *and* have a login-walled booking page (Littlestone, Chislehurst).
+
+Hard-won rules baked into the fingerprinting — each one was a real false
+positive during the build:
+- The county union pages carry a "Created by intelligentgolf" CMS credit in
+  their own footer. It says nothing about any club. Only markers on the
+  club's own site count.
+- A "Powered by X" badge on a club's homepage isn't confirmation either. Only
+  landing on the platform's domain, or seeing its actual tee-sheet markup,
+  is. Vendor marketing roots (www.intelligentgolf.co.uk) are never followed
+  as evidence.
+- Once a platform is *hinted*, probe its known path directly
+  (`/visitorbooking/` for Intelligent Golf, `/Visitors/booking` on a ClubV1
+  hub) — several real clubs never link to their booking page from the nav.
+- Results must be deterministic: a `set()` of hinted platforms once gave the
+  same club two different answers on two runs.
+
+First real batch (40 Kent clubs): **17 ready-to-add**, 12 on platforms we
+scrape. ClubV1 was 7 of the 40 — the original survey had it at 1. Council
+courses run by leisure trusts show up as **Gladstone** (MyTime Active),
+**Chronogolf** (Everyone Active) and Better — worth a scraper decision once
+the full county count is in.
+
 ## Loading into the database (Supabase)
 
 The DB layer: `db/schema.sql` (the schema), `golf_db.py` (shared access),
@@ -140,7 +208,9 @@ export DATABASE_URL='postgresql://postgres:<pw>@<host>:5432/postgres' # bash
 
 **Then the recurring pipeline** (this is what n8n will run on a cron):
 ```
-# 1. config → clubs/courses (only when clubs change; idempotent)
+# 1. config → clubs/courses (idempotent). run_pipeline.py now does this
+#    itself at the start of every run, so it's only needed by hand for a
+#    one-off load; a club pushed to the CSV goes live on the next run.
 python load_config_to_db.py clubs_config.csv        # --dry-run to preview
 
 # 2. scrape each platform for a date (writes tee_times_<p>.json + run_<p>.json)
@@ -414,7 +484,11 @@ that don't offer 9-hole rounds.
 
 ## Club coverage
 
-**Configured and confirmed returning live data (21 sheets / 16 clubs):**
+**Configured and confirmed returning live data (39 sheets / 31 clubs)** —
+the 16 clubs below from the original survey, plus the first six found by the
+discovery pipeline (2026-09-09): Sundridge Park (East + West), Hever Castle
+(Championship + Princes), Royal Blackheath, West Kent, Pedham Place,
+Chelsfield Lakes. Original survey clubs:
 The Ridge, Wildernesse, Knole Park, Lamberhurst, Canterbury, Cooden Beach,
 Crowborough, Piltdown, Haywards Heath, Cinque Ports, Nizels, West Malling
 (Spitfire + Hurricane), REGC (Devonshire + Hartington 9), Mannings Heath
