@@ -84,6 +84,15 @@ def parse(payload: dict, club: gc.ClubConfig, date_iso: str) -> tuple[list[gc.Te
         log.error(f"[{club.club_name}] Response had no 'availability' key — "
                   f"API shape may have changed or base_url is wrong")
         return results, "error"
+    if isinstance(availability, dict):
+        # Same-day sheet once the day is over (seen 2026-09-09, 20:30 BST, both
+        # GM clubs): `availability` comes back as {"nextDate": "...T06:32"}
+        # instead of a list — "nothing left today, next slot is tomorrow". An
+        # empty sheet, not a broken response; reporting "error" here would
+        # keep that day's stale rows in the DB.
+        log.info(f"[{club.club_name}] No availability on {date_iso} "
+                 f"(next slot {availability.get('nextDate', '?')}) — nothing to scrape")
+        return results, "empty"
 
     for entry in availability:
         if entry.get("slots", 0) < 1:
