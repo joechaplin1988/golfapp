@@ -372,24 +372,45 @@ def _find_platform_links(html: str, base_url: str) -> list[tuple[str, str]]:
     return hits
 
 
-# A platform vendor's own marketing root. A "Powered by X" badge links here;
-# following it lands on the VENDOR's homepage, which would match the vendor's
-# domain marker and read as a confirmed hit — for a club whose tee sheet we
-# never actually reached. Only platform links with a club-specific part (a
-# non-www subdomain, or a real path) are worth following as evidence.
-VENDOR_ROOT_HOSTS = {
+# Hosts that are ONLY the vendor's marketing site — a club's sheet never lives
+# here on ANY path (it lives on <slug>.<vendor> or the club's own domain).
+# A "Powered by X" badge links to the root; www.intelligentgolf.co.uk/tee_times
+# is the vendor's product page, and two council courses (Tilgate Forest,
+# Rookwood) link straight to it — an earlier version "confirmed" them by
+# landing there. e-s-p.com is the exception: its app genuinely lives on the
+# shared host under /elitelive/, so only its other pages are marketing.
+# www.chronogolf.com is NOT here: club widgets live under /club/<id>/.
+VENDOR_MARKETING_HOSTS = {
     "intelligentgolf.co.uk", "www.intelligentgolf.co.uk",
-    "e-s-p.com", "www.e-s-p.com",
     "golfmanager.com", "www.golfmanager.com",
     "clubv1.com", "www.clubv1.com", "hub.clubv1.com",
     "brsgolf.com", "www.brsgolf.com",
-    "chronogolf.com", "www.chronogolf.com",
 }
 
 
 def _is_club_specific(url: str) -> bool:
     p = urlparse(url)
-    return not (p.netloc.lower() in VENDOR_ROOT_HOSTS and p.path in ("", "/"))
+    host = p.netloc.lower()
+    if host in VENDOR_MARKETING_HOSTS:
+        return False
+    if host in ("e-s-p.com", "www.e-s-p.com"):
+        return "/elitelive" in p.path
+    return True
+
+
+# Landing on a platform's domain only counts as "visitor booking confirmed"
+# if it's the VISITOR-facing part of that platform. A ClubV1 hub root with
+# ?ReturnUrl=/members/... is the members' login (Kings Hill); a club's
+# <slug>.intelligentgolf.co.uk homepage is its members' site. Anything else
+# on the platform's domain is a hint to probe, not evidence.
+VISITOR_PATH_RE = {
+    "intelligent_golf": re.compile(r"/visitorbooking", re.I),
+    "clubv1": re.compile(r"/Visitors/", re.I),
+    "esp": re.compile(r"/elitelive/book_", re.I),
+    "golf_manager": re.compile(r"/consumer/|ebookings", re.I),
+    "brs": re.compile(r"visitors\.brsgolf\.com", re.I),
+    "chronogolf": re.compile(r"/club/", re.I),
+}
 
 
 def _get_with_retry(session, url, attempts=2):
@@ -466,11 +487,24 @@ def fingerprint_club(name: str, site: Optional[str], lat, lon, session: requests
             return ("login", "", url)
         if DENIED_RE.search(r2.text[:3000]):
             return ("denied", _fingerprint_url(r2.url) or "", url)
-        # STRONG: we're standing on the platform's own domain, or the page's
-        # actual markup is that platform's real tee-sheet structure.
-        strong = _fingerprint_url(r2.url) or _structural_hit(r2.text)
-        if strong:
-            return ("confirmed", strong, r2.url)
+        # STRONG: the page's actual markup is a real tee sheet, OR we're on
+        # the platform's VISITOR-facing path — not its marketing site, not a
+        # members' login/homepage that merely sits on the platform's domain.
+        structural = _structural_hit(r2.text)
+        if structural:
+            return ("confirmed", structural, r2.url)
+        by_url = _fingerprint_url(r2.url)
+        if by_url:
+            vp = VISITOR_PATH_RE.get(by_url)
+            if _is_club_specific(r2.url) and (vp is None or vp.search(r2.url)):
+                return ("confirmed", by_url, r2.url)
+            # On the platform's domain but not its visitor sheet: hint only,
+            # and remember the URL so the hinted-link probe can try the
+            # proper visitor path from it (e.g. hub root -> /Visitors/booking).
+            if by_url not in weak_platforms:
+                weak_platforms.append(by_url)
+            if (by_url, r2.url) not in hinted_urls:
+                hinted_urls.append((by_url, r2.url))
         # WEAK: this page merely links out to a platform domain somewhere
         # (a badge/credit) — note it, don't trust it, caller may probe further.
         for plat, link in _find_platform_links(r2.text, r2.url):
@@ -700,7 +734,9 @@ def cmd_recheck(args):
         rows = list(csv.DictReader(f))
         fields = f.fieldnames if hasattr(f, "fieldnames") else None
     fields = list(rows[0].keys()) if rows else FIELDS_FALLBACK
-    targets = [r for r in rows if not args.platform or r["platform"] in args.platform]
+    targets = [r for r in rows
+               if (not args.platform or r["platform"] in args.platform)
+               and (not args.access or r.get("access") in args.access)]
     log.info(f"rechecking {len(targets)} of {len(rows)} row(s)")
     session = requests.Session()
     changed = 0
@@ -749,6 +785,7 @@ if __name__ == "__main__":
     p3 = sub.add_parser("recheck", help="Re-fingerprint rows of an existing review CSV in place")
     p3.add_argument("review_csv")
     p3.add_argument("--platform", nargs="*", default=[], help="only rows whose platform is one of these")
+    p3.add_argument("--access", nargs="*", default=[], help="only rows whose access is one of these (e.g. public)")
     p3.set_defaults(func=cmd_recheck)
 
     a = ap.parse_args()
