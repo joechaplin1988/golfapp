@@ -71,6 +71,7 @@ def parse(html: str, club: gc.ClubConfig, date_iso: str) -> tuple[list[gc.TeeTim
                       f"tee sheet — check base_url/course_id, or the club may have changed platform")
         return results, "error"
 
+    unpriced: list[str] = []
     for slot in slots:
         fieldset = slot.find("fieldset")
         if not fieldset:
@@ -100,13 +101,21 @@ def parse(html: str, club: gc.ClubConfig, date_iso: str) -> tuple[list[gc.TeeTim
                 if p is not None:
                     prices[radio["value"]] = p
         if not prices:
-            log.warning(f"[{club.club_name}] Slot at {tee_time} had no parseable prices — skipping")
+            unpriced.append(tee_time)
             continue
 
         results.append(gc.TeeTimeResult(
             club_name=club.club_name, platform=PLATFORM, date=date_iso, time=tee_time,
             holes=holes, prices_by_players=prices, booking_url=booking_url,
         ))
+    if unpriced:
+        # Intelligent Golf renders a slot with no visitor price configured as
+        # "£0.00" and NO per-player price lines — just a Book button (seen on
+        # 9-hole combos at Stonelees and a twilight slot at Ham Manor, all
+        # holes=9). There's no honest price to show, so they're left out; say
+        # so once per sheet, not once per slot, so unattended logs stay readable.
+        shown = ", ".join(unpriced[:6]) + ("…" if len(unpriced) > 6 else "")
+        log.info(f"[{club.club_name}] {len(unpriced)} slot(s) skipped — no visitor price configured (£0.00): {shown}")
     return results, "ok"
 
 
