@@ -1,7 +1,7 @@
 # Golf Tee Time Scrapers — Usage Notes
 
-Status: **four platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1) — **52 clubs / 69 sheets per scheduled run (2026-09-09)**, the
+Status: **five platforms live** (Intelligent Golf, ESP, Golf Manager,
+ClubV1, BRS) — **61 clubs / 78 sheets per scheduled run (2026-09-09)**, the
 whole of Kent & Sussex fingerprinted, refreshed every 2h by GitHub Actions into Supabase, searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
@@ -18,6 +18,7 @@ which platform a club runs:
 | `esp_scraper.py` | ESP / EliteLive | session flow → HTML fragment | 6 |
 | `golf_manager_scraper.py` | Golf Manager | clean JSON API | 2 |
 | `clubv1_scraper.py` | ClubV1 | server HTML | 1 |
+| `brs_scraper.py` | BRS Golf | JSON API (club-context cookie + Referer) | 9 |
 | `geocode_clubs.py` | — | Postcodes.io | fills lat/long for all |
 | `discover_clubs.py` | — | OSM + county union + each club's site | finds clubs + their platform → review CSV |
 | `probe_course_ids.py` | — | live tee sheets | approved review rows → platform ids |
@@ -161,7 +162,7 @@ python geocode_clubs.py clubs_config.csv
 git add clubs_config.csv && git commit -m "add clubs" && git push
 ```
 
-`platform` values: our four scrapers, plus `brs` / `chronogolf` / `shiji` /
+`platform` values: our five scrapers, plus `chronogolf` / `shiji` /
 `gladstone` (seen, no scraper yet — counted so "which scraper next?" has
 real numbers), and `no_site` / `unknown` / `blocked` (403, check in a real
 browser) / `dead_link` (404, stale directory URL) / `error`. `access` is
@@ -303,6 +304,21 @@ A cheap always-on host (Fly.io / Render / a small VPS) running the same
 command on cron, or exposing a tiny HTTP endpoint that n8n Cloud's Schedule →
 HTTP Request node triggers — use this if you specifically want n8n Cloud
 orchestrating. More moving parts than GitHub Actions for the same result.
+
+## The search page (`web/index.html`)
+
+Static page on Netlify (golfbookingapp.netlify.app): postcode → Postcodes.io
+→ `search_tee_times` RPC → rows with a Book link to the club's own site. The
+anon key is injected at deploy from the `SUPABASE_ANON_KEY` env var into
+`web/config.js` (see `netlify.toml`); it is never committed.
+
+PostgREST caps any response at **1,000 rows**, which a busy search exceeds
+(Sevenoaks, 20 mi, 2 players, tomorrow: 1,017). Exactly 1,000 results is the
+tell. The page therefore pages 200 at a time with `?limit=&offset=` on the
+RPC URL and sends `Prefer: count=exact`, reading the true total from the
+`Content-Range` header (`0-199/1017`) to show "Showing 200 of 1,017", with a
+"Show more" button for the next page. Note a `Range` header does *not*
+limit RPC calls — only the query parameters do.
 
 ## Finding a new Intelligent Golf club's config
 
@@ -498,9 +514,12 @@ that don't offer 9-hole rounds.
 
 ## Club coverage
 
-**Configured and confirmed returning live data (69 sheets / 52 clubs)** —
-the 16 clubs below from the original survey, plus 27 found by the discovery
-pipeline (2026-09-09). Batch 1: Sundridge Park (East + West), Hever Castle
+**Configured and confirmed returning live data (78 sheets / 61 clubs)** —
+the 16 clubs below from the original survey, plus 36 found by the discovery
+pipeline (2026-09-09). BRS batch (one scraper, nine clubs): Lewes,
+Lindfield, Lydd, Hythe Imperial, Peacehaven, Pyecombe, Seaford Head, Walmer
+& Kingsdown, Westgate & Birchington — Highwoods has a BRS hub but visitor
+booking switched off (0 slots on every date, both tees), so it is not added. Batch 1: Sundridge Park (East + West), Hever Castle
 (Championship + Princes), Royal Blackheath, West Kent, Pedham Place,
 Chelsfield Lakes. Batch 2: Chestfield, Weald of Kent, Langley Park, West
 Sussex, Seaford, Mid Sussex, Ham Manor, Stonelees (Executive, Heights,
@@ -646,6 +665,24 @@ Two platform-specific notes worth keeping:
   records legitimately vary between `{"1"}`, `{"1","2"}` and `{"1".."4"}`.
   That's remaining-capacity data, not a bug — the player-count filter should
   use it.
+
+### BRS Golf — 9 clubs, 340 tee times for 2026-09-10 (2026-09-09)
+`python brs_scraper.py clubs_config.csv --date 2026-09-10` → `brs: 9 ok, 0
+empty, 0 error`, 340 records (316 × 18 holes, 24 × 9 holes — Peacehaven's
+early slots are 9-hole only). Through the pipeline for a 2-day window:
+`Done: 17 ok, 1 empty, 0 error; 418 tee-time row(s)` (the empty is Pyecombe
+same-day, which its own page confirms: "0 of 0 tee times"). Spot-checks:
+Pyecombe 13:45 £40/80/120/150 for 1–4 — the 4-ball discount proves BRS
+prices are per-party TOTALS (stored as-is, never multiplied); Lydd 07:00
+£38 matched the sheet. The deep link `visitors.brsgolf.com/<slug>#/course/1`
+opens the club's live sheet.
+
+What the first recon got wrong: BRS is **not** Cloudflare-challenged for
+plain requests. The API just needs the club page loaded first on the same
+session (context cookie) plus the app's own headers and a `Referer` of the
+club page — without the cookie it 500s "Could not get tee sheet", without
+the Referer it 400s "Object reference not set". The host is shared, so the
+scraper clears cookies before each club.
 
 ### County-wide — 69 sheets / 52 clubs, 2,955 tee times (2026-09-09, GitHub Actions)
 After the three discovery batches: `Done: 117 ok, 19 empty, 2 error; 2955

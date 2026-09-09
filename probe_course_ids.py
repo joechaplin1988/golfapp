@@ -205,7 +205,58 @@ def clubv1_rows(s, name, evidence_url):
     return rows
 
 
-HANDLERS = {"intelligent_golf": ig_rows, "esp": esp_rows, "golf_manager": gm_rows, "clubv1": clubv1_rows}
+# --- BRS ---------------------------------------------------------------------
+
+BRS_HOST = "https://visitors.brsgolf.com"
+BRS_HEADERS = {**UA, "Accept": "application/json",
+               "X-Requested-With": "XMLHttpRequest", "X-Booking-Source": "ui"}
+
+
+def brs_rows(s, name, evidence_url):
+    """Slug from the evidence URL -> courses from the API -> first date with a free slot."""
+    path = urlparse(evidence_url).path.strip("/")
+    slug = path.split("/")[0] if path else ""
+    base = f"{BRS_HOST}/{slug}"
+    s.cookies.clear()  # shared host: drop the previous club's context cookie
+    if not slug or not get(s, base):
+        return [row(club_name=name, platform="brs", base_url=base,
+                    verified=False, evidence="club page fetch failed (no context cookie)")]
+    # The API works out which club you mean from the context cookie AND the
+    # Referer — without the Referer it 400s "Object reference not set".
+    hdrs = {**BRS_HEADERS, "Referer": base}
+    try:
+        courses = s.get(f"{BRS_HOST}/api/courses/all", headers=hdrs, timeout=20).json()
+        time.sleep(DELAY)
+    except (requests.RequestException, ValueError):
+        courses = []
+    if not isinstance(courses, list) or not courses:
+        return [row(club_name=name, platform="brs", base_url=base,
+                    verified=False, evidence="/api/courses/all gave nothing")]
+    rows = []
+    for c in courses:
+        cid = str(c.get("id"))
+        found = ""
+        for i in range(14):
+            d = (date.today() + timedelta(days=i)).isoformat()
+            try:
+                r = s.get(f"{BRS_HOST}/api/casualBooking/teesheet?date={d}&course_id={cid}",
+                          headers=hdrs, timeout=20)
+                time.sleep(DELAY)
+                tt = r.json()["data"]["tee_times"]
+            except (requests.RequestException, ValueError, KeyError, TypeError):
+                continue
+            if any(sl.get("status") == "Available" for t in tt for sl in (t.get("slots") or {}).values()):
+                found = d
+                break
+        label = name if len(courses) == 1 else f"{name} ({c.get('name')})"
+        rows.append(row(club_name=label, platform="brs", base_url=base, course_id=cid,
+                        verified=bool(found),
+                        evidence=f"free slot on {found}" if found else "no free visitor slot in 14 days (booking may be off)"))
+    return rows
+
+
+HANDLERS = {"intelligent_golf": ig_rows, "esp": esp_rows, "golf_manager": gm_rows, "clubv1": clubv1_rows,
+            "brs": brs_rows}
 
 
 def main():

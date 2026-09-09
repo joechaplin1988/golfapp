@@ -139,27 +139,56 @@ async function geocode(postcode) {
   return { lat: j.result.latitude, lng: j.result.longitude, place: j.result.admin_district };
 }
 
-async function searchTeeTimes(params) {
-  const r = await fetch(SUPABASE_URL + "/rest/v1/rpc/search_tee_times", {
+// PostgREST caps any single response at 1,000 rows, so a busy search (a 20mi
+// radius on a weekend) silently lost results. Page through with limit/offset
+// and read the true total from Content-Range ("0-199/1017").
+const PAGE_SIZE = 200;
+async function searchTeeTimes(params, offset) {
+  const r = await fetch(SUPABASE_URL + "/rest/v1/rpc/search_tee_times?limit=" + PAGE_SIZE + "&offset=" + offset, {
     method: "POST",
     headers: {
       "apikey": SUPABASE_ANON_KEY,
       "Authorization": "Bearer " + SUPABASE_ANON_KEY,
       "Content-Type": "application/json",
+      "Prefer": "count=exact",
     },
     body: JSON.stringify(params),
   });
   if (!r.ok) throw new Error("Search failed (" + r.status + "). The database may still be waking up — try again in a moment.");
-  return r.json();
+  const rows = await r.json();
+  const range = r.headers.get("Content-Range") || "";
+  const total = Number(range.split("/")[1]);
+  return { rows, total: Number.isFinite(total) ? total : rows.length };
 }
 
-function render(rows) {
-  clearResults();
-  if (!rows.length) {
+// The current search, so "Show more" can fetch the next page with the same filters.
+let current = { params: null, loaded: 0, total: 0 };
+
+async function loadMore(btn) {
+  btn.disabled = true;
+  btn.textContent = "Loading…";
+  try {
+    const page = await searchTeeTimes(current.params, current.loaded);
+    btn.remove();
+    render(page.rows, page.total, true);
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = "Show more";
+    setStatus(err.message || "Something went wrong.");
+  }
+}
+
+function render(rows, total, append) {
+  if (!append) { clearResults(); current.loaded = 0; }
+  current.total = total;
+  current.loaded += rows.length;
+  if (!current.loaded) {
     setStatus("No tee times found for that search. Try a wider radius, a different date, or fewer players.");
     return;
   }
-  setStatus(rows.length + " tee time" + (rows.length === 1 ? "" : "s") + " found — nearest and cheapest first.");
+  const shown = current.loaded < total ? "Showing " + current.loaded.toLocaleString() + " of " + total.toLocaleString() + " tee times"
+                                       : total.toLocaleString() + " tee time" + (total === 1 ? "" : "s") + " found";
+  setStatus(shown + " — nearest and cheapest first.");
   for (const t of rows) {
     const miles = (t.distance_km * MILES_PER_KM).toFixed(1);
     const course = t.course_name && t.course_name !== t.club_name ? " · " + t.course_name : "";
@@ -176,6 +205,14 @@ function render(rows) {
       '<div class="price">' + price + '<span class="per">' + playersLabel() + '</span></div>' +
       '<a class="book" href="' + esc(t.booking_url) + '" target="_blank" rel="noopener noreferrer">Book</a>';
     resultsEl.appendChild(row);
+  }
+  if (current.loaded < total) {
+    const more = document.createElement("button");
+    more.type = "button";
+    more.className = "go more";
+    more.textContent = "Show more";
+    more.addEventListener("click", () => loadMore(more));
+    resultsEl.appendChild(more);
   }
 }
 
@@ -200,15 +237,16 @@ $("search").addEventListener("submit", async (e) => {
     setStatus("Searching clubs near " + (loc.place || "you") + "…");
     const maxprice = $("maxprice").value ? Number($("maxprice").value) : null;
     const holes = $("holes").value ? Number($("holes").value) : null;
-    const rows = await searchTeeTimes({
+    current.params = {
       in_lat: loc.lat, in_lng: loc.lng,
       in_radius_km: Number($("radius").value) / MILES_PER_KM,
       in_date: $("date").value,
       in_players: Number($("players").value),
       in_max_price: maxprice,
       in_holes: holes,
-    });
-    render(rows);
+    };
+    const page = await searchTeeTimes(current.params, 0);
+    render(page.rows, page.total, false);
   } catch (err) {
     setStatus(err.message || "Something went wrong.");
   } finally {

@@ -148,7 +148,8 @@ Whole county fingerprinted in three batches (40 + 45 + 42 clubs). Batch 1:
 12 ready (an initial 17 included five ClubV1 hubs whose visitor booking is
 switched off - hence the access=not_available state). Batch 2: 15 ready.
 Batch 3: 17 ready, 8 clubs approved. 27 clubs approved by Joe in total and
-LIVE -> **52 clubs / 69 sheets** (batch 1: Sundridge Park E/W, Hever Castle
+LIVE -> **52 clubs / 69 sheets**, then +9 BRS clubs (below) -> **61 clubs /
+78 sheets** (batch 1: Sundridge Park E/W, Hever Castle
 Championship/Princes, Royal Blackheath, West Kent, Pedham Place, Chelsfield
 Lakes; batch 2: Chestfield, Weald of Kent, Langley Park, West Sussex,
 Seaford, Mid Sussex, Ham Manor, Stonelees x3, North Foreland x2,
@@ -169,20 +170,29 @@ the function).
 Real platform mix (first 40): ClubV1 7 (survey said 1! but only 1 of the 7
 has visitor booking open), IG 6, Gladstone 3 (MyTime Active council courses
 - a leisure booking system, no scraper), ESP 2, BRS 2, Chronogolf 1
-(Everyone Active council course). BRS is now 4 clubs county-wide, all on
-visitors.brsgolf.com/<slug> - the strongest "next scraper" case.
+(Everyone Active council course).
+**BRS scraper BUILT and live (2026-09-09)** - `brs_scraper.py`, one scraper
+for all nine county clubs on visitors.brsgolf.com/<slug>: Lewes, Lindfield,
+Lydd, Hythe Imperial, Peacehaven, Pyecombe, Seaford Head, Walmer &
+Kingsdown, Westgate & Birchington (Highwoods: hub exists, visitor booking
+off, not added). The survey's "Cloudflare cf_clearance" fear was wrong for
+plain requests: the JSON API only needs the club page loaded first on the
+same session (context cookie) + the app's headers + a Referer of the club
+page. Prices are per-party TOTALS (Pyecombe 4-ball £150 vs £40 single -
+never multiply). First run: 9 ok / 0 error, 340 tee times for one day.
+**Search page pagination fixed (2026-09-09)**: PostgREST caps any response
+at 1,000 rows and the page was silently truncating (a Sevenoaks 20mi search
+had 1,017). Now pages 200 at a time via `?limit=&offset=` on the RPC with
+`Prefer: count=exact`, shows "Showing 200 of 1,017", and a "Show more"
+button loads the next page.
 Joe's standing decisions: review batches before anything goes live; scope =
 anything publicly bookable online (council/leisure-trust and hotel courses
 are IN). Four real bugs were caught and fixed building this (county-page CMS
 credit false positive; name-matching gaps; nested-scheme URLs; set()
 non-determinism) - details in README "Discovering new clubs".
 
-**Next candidates** (Joe to choose) - the county's first pass is DONE:
-- **BRS scraper** - now the biggest remaining coverage win: 9 clubs
-  county-wide, all on visitors.brsgolf.com/<slug> (Hythe, Westgate &
-  Birchington, Walmer & Kingsdown, Highwoods, Seaford Head, Lindfield,
-  Peacehaven, Pyecombe, Lewes). Survey said Cloudflare cf_clearance - recon
-  first; the shared-host pattern suggests one scraper covers all nine.
+**Next candidates** (Joe to choose) - the county's first pass is DONE and
+the BRS scraper is built:
 - Residue browser-check: ~60 clubs across the three batches that plain
   requests couldn't resolve (blocked 403s, JS-rendered "unknown", no_site).
   Many no_site rows are pay-and-play centres/ranges with no online booking
@@ -205,7 +215,7 @@ non-determinism) - details in README "Discovering new clubs".
 |---|---|---|---|---|
 | **Intelligent Golf** | 17 (half of all clubs surveyed) | Server-rendered HTML | None | Easiest — building this first |
 | ESP (e-s-p.com / EliteLive) | 6 | HTML fragment, 2-step (date click → AJAX time fetch) | Anonymous session cookie, no login | Easy |
-| BRS Golf (owned by GolfNow itself since 2013) | 3 | Clean JSON | Cloudflare `cf_clearance` challenge | Medium — needs a browser hop to get cookies, then can hit JSON API directly |
+| BRS Golf (owned by GolfNow itself since 2013) | 9 county-wide | Clean JSON | Club-context cookie + Referer (NOT Cloudflare-challenged for plain requests — the survey was wrong) | Easy — BUILT 2026-09-09 |
 | Concept Spa & Golf / Shiji | 3 | Likely JSON, React frontend | Unconfirmed | Unknown — has own payment layer, needs dedicated recon before building |
 | Golf Manager | 2 | Clean JSON | None apparent (only marketing cookies) | Easy |
 | Chronogolf (Lightspeed) | 1 in sample, but likely covers hundreds of UK clubs | Clean REST JSON | None for browsing, but reCAPTCHA present — be conservative on request volume/enumeration | Easy per-club, but treat carefully at scale |
@@ -215,8 +225,8 @@ non-determinism) - details in README "Discovering new clubs".
 
 **Build priority decided**: Intelligent Golf first (50% coverage alone),
 then ESP (→ 68% combined), then Golf Manager + ClubV1 as cheap bonus adds
-(→ 76% combined). BRS, Concept/Shiji, Chronogolf deferred until the easy
-platforms are proven and shipped.
+(→ 76% combined). BRS built 2026-09-09 once the four were live; Concept/
+Shiji, Chronogolf still deferred.
 
 ## Confirmed technical details — Intelligent Golf (this scraper)
 - URL pattern: `{base_url}?date=DD-MM-YYYY&course={course_id}` — confirmed
@@ -278,9 +288,8 @@ platforms are proven and shipped.
   booking directly — user always completes the booking on the club's own
   site. This keeps legal/liability exposure low and avoids Apple/Google
   in-app-purchase rules entirely unless a future in-app "Pro" tier is added
-- **BRS specifically** needs a two-tier approach: a real/headless browser
-  hop to pass Cloudflare and capture a valid `cf_clearance` cookie, then
-  reuse that cookie for fast direct JSON API calls until it expires
+- **BRS** (superseded 2026-09-09): no browser hop needed after all - plain
+  requests work, see brs_scraper.py's docstring
 
 ## Scraping ethics/legal stance agreed
 - Scraping publicly visible visitor tee-time pages (no login required) —
