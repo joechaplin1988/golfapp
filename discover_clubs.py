@@ -119,6 +119,13 @@ def norm_club_name(s: str) -> str:
     return re.sub(r"[^a-z0-9]", "", s)
 
 
+# norm_club_name() of a config entry -> norm_club_name() of the club's full
+# name as OSM / the county union write it. See cmd_fingerprint.
+KNOWN_ALIASES = {
+    "regc": "royaleastbourne",
+}
+
+
 def enumerate_osm(county: str, refresh: bool = False) -> list[dict]:
     # Cache aggressively: golf courses appear/disappear on a timescale of
     # years, and the public Overpass mirrors are a shared free resource that
@@ -290,6 +297,11 @@ LOGIN_TITLE_RE = re.compile(r"login required|log in|sign in", re.I)
 # on the platform's domain is NOT proof the sheet is open — the first version
 # of this script counted five such clubs as "confirmed public".
 DENIED_RE = re.compile(r"permission denied|do not have permission|access denied|not authori[sz]ed", re.I)
+
+# A members' booking page can render real tee-sheet markup without a login
+# (REGC's /memberbooking/ does), which the structural check would otherwise
+# read as a confirmed public sheet. Members' paths are never visitor booking.
+MEMBER_PATH_RE = re.compile(r"/memberbooking|/members?(?:/|$)", re.I)
 
 # STRUCTURAL markers: the actual HTML/JS a platform's real booking page
 # renders (the same selectors each scraper keys off). These are a strong
@@ -487,6 +499,12 @@ def fingerprint_club(name: str, site: Optional[str], lat, lon, session: requests
             return ("login", "", url)
         if DENIED_RE.search(r2.text[:3000]):
             return ("denied", _fingerprint_url(r2.url) or "", url)
+        if MEMBER_PATH_RE.search(urlparse(r2.url).path):
+            return ("denied", _fingerprint_url(r2.url) or _structural_hit(r2.text) or "", url)
+        if _fingerprint_url(r2.url) == "golfnow":
+            # A GolfNow listing, not the club's own booking. Excluded by policy
+            # (it's already visible on GolfNow), so never "public".
+            return ("denied", "golfnow", url)
         # STRONG: the page's actual markup is a real tee sheet, OR we're on
         # the platform's VISITOR-facing path — not its marketing site, not a
         # members' login/homepage that merely sits on the platform's domain.
@@ -515,10 +533,15 @@ def fingerprint_club(name: str, site: Optional[str], lat, lon, session: requests
         return ("weak", "", url)
 
     def _denied(plat_hint, evidence, where):
-        cand.access = "not_available"
         cand.platform = plat_hint or (weak_platforms[0] if weak_platforms else "unknown")
         cand.confidence = "high"
-        cand.note = f"platform hub reached but visitor booking is not enabled ({where}): {evidence}"
+        if plat_hint == "golfnow":
+            cand.access = "out_of_scope"
+            cand.note = f"GolfNow listing, not the club's own booking — excluded by policy: {evidence}"
+        else:
+            cand.access = "not_available"
+            cand.note = (f"platform reached but not a public visitor sheet ({where}; "
+                         f"members-only, or visitor booking not enabled): {evidence}")
         return cand
 
     def booking_ish_links(html, base_url):
@@ -682,6 +705,14 @@ def cmd_fingerprint(args):
         with open(args.config, newline="", encoding="utf-8") as f:
             for row in csv.DictReader(f):
                 already.add(norm_club_name(row["club_name"].split(" (")[0].strip()))
+    # Acronym-named config entries can't be matched by normalisation alone:
+    # "REGC (Devonshire)" vs OSM's "The Royal Eastbourne Golf Club" slipped
+    # through as a new club and would have been proposed again under its
+    # members' booking URL. Add an alias here whenever a config name is an
+    # acronym or nickname for what OSM / the county union call the club.
+    for short, long in KNOWN_ALIASES.items():
+        if short in already:
+            already.add(long)
 
     todo = [
         c for c in candidates

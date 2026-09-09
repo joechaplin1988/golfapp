@@ -58,6 +58,11 @@ def main():
         if key(r) in have:
             skipped.append((r["club_name"], "already in config"))
             continue
+        if "memberbooking" in r["base_url"].lower():
+            # Defence in depth: a members' booking URL is never a visitor
+            # sheet, whatever upstream said (REGC nearly re-entered this way).
+            skipped.append((r["club_name"], "members' booking URL — never a visitor sheet"))
+            continue
         to_add.append({f: r.get(f, "") for f in fields})
         have.add(key(r))
 
