@@ -166,7 +166,10 @@ git add clubs_config.csv && git commit -m "add clubs" && git push
 real numbers), and `no_site` / `unknown` / `blocked` (403, check in a real
 browser) / `dead_link` (404, stale directory URL) / `error`. `access` is
 separate from platform on purpose: a club can be confirmed on Intelligent
-Golf *and* have a login-walled booking page (Littlestone, Chislehurst).
+Golf *and* have a login-walled booking page (`login_required` — Littlestone,
+Chislehurst), or have visitor booking switched off entirely — a ClubV1 hub
+answers HTTP 200 with "Permission Denied" (`not_available`; five of the
+seven ClubV1 clubs in the first batch). Only `access = public` is bookable.
 
 Hard-won rules baked into the fingerprinting — each one was a real false
 positive during the build:
@@ -182,9 +185,20 @@ positive during the build:
   hub) — several real clubs never link to their booking page from the nav.
 - Results must be deterministic: a `set()` of hinted platforms once gave the
   same club two different answers on two runs.
+- Being on the platform's *domain* isn't confirmation either. A ClubV1 hub
+  root with `?ReturnUrl=/members/…` is the members' login (Kings Hill);
+  `www.intelligentgolf.co.uk/tee_times` is the vendor's product page (two
+  council courses link straight to it); a hub can exist with visitor booking
+  switched off. Only the visitor-facing path (`/visitorbooking`,
+  `/Visitors/`, `/elitelive/book_`, `visitors.brsgolf.com`…) or real
+  tee-sheet markup confirms — and `probe_course_ids.py` demands a real sheet
+  before anything can reach the config regardless.
 
-First real batch (40 Kent clubs): **17 ready-to-add**, 12 on platforms we
-scrape. ClubV1 was 7 of the 40 — the original survey had it at 1. Council
+First real batch (40 Kent clubs): **12 ready-to-add** (an earlier count of
+17 included five ClubV1 hubs whose visitor booking is switched off — the
+`not_available` state exists because of them). ClubV1 was 7 of the 40 — the
+original survey had it at 1 — but only one of those seven (Sheerness)
+actually has visitor booking open. Council
 courses run by leisure trusts show up as **Gladstone** (MyTime Active),
 **Chronogolf** (Everyone Active) and Better — worth a scraper decision once
 the full county count is in.
