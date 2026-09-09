@@ -1,8 +1,8 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **five platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS) — **77 clubs / 95 sheets per scheduled run (2026-09-09)**, the
-whole of Kent & Sussex fingerprinted, refreshed every 2h by GitHub Actions into Supabase, searchable
+ClubV1, BRS) — **79 clubs / 97 sheets per scheduled run (2026-09-09)**, the
+whole of Kent & Sussex fingerprinted, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
 
@@ -514,9 +514,14 @@ that don't offer 9-hole rounds.
 
 ## Club coverage
 
-**Configured and confirmed returning live data (95 sheets / 77 clubs)** —
-the 16 clubs below from the original survey, plus 52 found by the discovery
-pipeline (2026-09-09). Residue pass (clubs the plain-requests fingerprint
+**Configured and confirmed returning live data (97 sheets / 79 clubs)** —
+the 16 clubs below from the original survey, plus 54 found by the discovery
+pipeline (2026-09-09). Survey-era re-check (clubs from the original manual
+survey re-fingerprinted with the residue tricks): Crowborough Beacon (IG on
+its own domain) and Royal Cinque Ports (IG subdomain — visitor slots are
+rare, first seen 6 days out) added; Rye and Wrotham Heath still show no
+visitor slot in 14 days (IG sheets exist; re-probe occasionally); London
+Beach, Lottbridge and Tunbridge Wells have no online visitor booking. Residue pass (clubs the plain-requests fingerprint
 couldn't resolve, re-checked with a browser user agent, the in-app browser
 and web search — 16 clubs / 17 sheets): Intelligent Golf — Cuckfield,
 Tilgate Forest, Rookwood, Slinfold (Main + Academy), Nevill, Horsham (Oaks;

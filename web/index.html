@@ -19,11 +19,16 @@
   .wrap { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; }
   header h1 { font-size: 1.55rem; margin: 0 0 4px; letter-spacing: -.02em; }
   header p { margin: 0 0 20px; color: var(--muted); }
-  form { background:var(--card); border:1px solid var(--line); border-radius:14px;
+  form, .filters { background:var(--card); border:1px solid var(--line); border-radius:14px;
     padding:16px; box-shadow:var(--shadow);
     display:grid; grid-template-columns: repeat(2, 1fr); gap:12px; }
+  .filters { grid-template-columns: repeat(4, 1fr); margin-top:16px; }
+  .filters[hidden] { display:none; }
   .field { display:flex; flex-direction:column; gap:4px; }
   .field.wide { grid-column: 1 / -1; }
+  .field.between { grid-column: span 2; }
+  .between .pair { display:flex; align-items:center; gap:8px; }
+  .between .pair span { color:var(--muted); font-size:.85rem; }
   label { font-size:.8rem; color:var(--muted); font-weight:600; }
   input, select { font:inherit; padding:10px 12px; border:1px solid var(--line);
     border-radius:9px; background:var(--bg); color:var(--ink); width:100%; }
@@ -32,20 +37,34 @@
   button.go:disabled { opacity:.6; cursor:progress; }
   #status { margin:20px 2px 8px; color:var(--muted); min-height:1.2em; }
   .results { display:flex; flex-direction:column; gap:10px; margin-top:6px; }
-  .row { background:var(--card); border:1px solid var(--line); border-radius:12px;
-    box-shadow:var(--shadow); padding:12px 14px; display:flex; align-items:center; gap:14px; }
-  .time { font-size:1.35rem; font-weight:700; font-variant-numeric:tabular-nums; min-width:66px; }
+  details.club { background:var(--card); border:1px solid var(--line); border-radius:12px;
+    box-shadow:var(--shadow); }
+  details.club > summary { list-style:none; cursor:pointer; padding:12px 14px;
+    display:flex; align-items:center; gap:14px; }
+  details.club > summary::-webkit-details-marker { display:none; }
   .meta { flex:1; min-width:0; }
-  .club { font-weight:600; }
+  .club-name { font-weight:600; }
   .sub { color:var(--muted); font-size:.85rem; }
-  .price { text-align:right; font-weight:700; white-space:nowrap; }
+  .from { text-align:right; white-space:nowrap; }
+  .from b { font-size:1.15rem; }
+  .from span { display:block; color:var(--muted); font-size:.72rem; }
+  .chev { color:var(--muted); font-size:.9rem; transition:transform .15s; }
+  details[open] > summary .chev { transform:rotate(180deg); }
+  .times { border-top:1px solid var(--line); padding:6px 14px 10px; display:flex; flex-direction:column; }
+  .row { display:flex; align-items:center; gap:14px; padding:8px 0; border-bottom:1px dashed var(--line); }
+  .row:last-child { border-bottom:0; }
+  .time { font-size:1.15rem; font-weight:700; font-variant-numeric:tabular-nums; min-width:60px; }
+  .price { text-align:right; font-weight:700; white-space:nowrap; margin-left:auto; }
   .price .per { display:block; color:var(--muted); font-size:.72rem; font-weight:500; }
   a.book { flex-shrink:0; text-decoration:none; background:var(--accent); color:var(--accent-ink);
-    padding:9px 14px; border-radius:8px; font-weight:600; font-size:.9rem; }
+    padding:8px 13px; border-radius:8px; font-weight:600; font-size:.88rem; }
   .pill { display:inline-block; font-size:.72rem; color:var(--muted); border:1px solid var(--line);
     border-radius:999px; padding:1px 7px; margin-left:6px; }
   footer { margin-top:36px; color:var(--muted); font-size:.82rem; text-align:center; }
-  @media (max-width:560px){ form{grid-template-columns:1fr;} .row{flex-wrap:wrap;} .price{order:3;} a.book{order:4;margin-left:auto;} }
+  @media (max-width:560px){
+    form{grid-template-columns:1fr;} .filters{grid-template-columns:1fr 1fr;} .field.between{grid-column:1 / -1;}
+    details.club > summary{flex-wrap:wrap;} .from{order:3;} .row{flex-wrap:wrap;} a.book{margin-left:auto;}
+  }
 </style>
 </head>
 <body>
@@ -73,7 +92,7 @@
         <option value="4">4</option>
       </select>
     </div>
-    <div class="field">
+    <div class="field wide">
       <label for="radius">Within</label>
       <select id="radius">
         <option value="5">5 miles</option>
@@ -84,6 +103,17 @@
         <option value="50">50 miles</option>
       </select>
     </div>
+    <button class="go" type="submit">Search tee times</button>
+  </form>
+
+  <!-- Filters work on the results already loaded, so changing one is instant. -->
+  <div class="filters" id="filters" hidden>
+    <div class="field between">
+      <label for="from">Play between</label>
+      <div class="pair">
+        <select id="from"></select><span>and</span><select id="to"></select>
+      </div>
+    </div>
     <div class="field">
       <label for="holes">Holes</label>
       <select id="holes">
@@ -92,12 +122,19 @@
         <option value="9">9</option>
       </select>
     </div>
-    <div class="field wide">
-      <label for="maxprice">Max total price (£, optional)</label>
-      <input id="maxprice" name="maxprice" type="number" min="0" step="1" placeholder="no limit" />
+    <div class="field">
+      <label for="maxprice">Max total £</label>
+      <input id="maxprice" type="number" min="0" step="1" placeholder="no limit" />
     </div>
-    <button class="go" type="submit">Search tee times</button>
-  </form>
+    <div class="field wide">
+      <label for="sort">Sort clubs by</label>
+      <select id="sort">
+        <option value="distance">Nearest first</option>
+        <option value="price">Cheapest first</option>
+        <option value="time">Earliest tee time first</option>
+      </select>
+    </div>
+  </div>
 
   <div id="status"></div>
   <div id="results" class="results"></div>
@@ -121,15 +158,28 @@ const SUPABASE_ANON_KEY = (window.CONFIG && window.CONFIG.SUPABASE_ANON_KEY) || 
 
 const MILES_PER_KM = 0.621371;
 const $ = (id) => document.getElementById(id);
-const statusEl = $("status"), resultsEl = $("results");
+const statusEl = $("status"), resultsEl = $("results"), filtersEl = $("filters");
 
 // Default the date picker to today, and don't allow past dates.
 const today = new Date().toISOString().slice(0, 10);
 $("date").value = today;
 $("date").min = today;
 
+// "Play between" options: 05:00 .. 21:00 in half-hour steps.
+(function buildTimeOptions() {
+  const opts = [];
+  for (let h = 5; h <= 21; h++) for (const m of ["00", "30"]) {
+    if (h === 21 && m === "30") break;
+    opts.push(String(h).padStart(2, "0") + ":" + m);
+  }
+  for (const id of ["from", "to"]) {
+    $(id).innerHTML = opts.map(t => '<option value="' + t + '">' + t + '</option>').join("");
+  }
+  $("from").value = "06:00";
+  $("to").value = "20:00";
+})();
+
 function setStatus(msg) { statusEl.textContent = msg; }
-function clearResults() { resultsEl.innerHTML = ""; }
 
 async function geocode(postcode) {
   const r = await fetch("https://api.postcodes.io/postcodes/" + encodeURIComponent(postcode.trim()));
@@ -139,80 +189,144 @@ async function geocode(postcode) {
   return { lat: j.result.latitude, lng: j.result.longitude, place: j.result.admin_district };
 }
 
-// PostgREST caps any single response at 1,000 rows, so a busy search (a 20mi
-// radius on a weekend) silently lost results. Page through with limit/offset
-// and read the true total from Content-Range ("0-199/1017").
-const PAGE_SIZE = 200;
-async function searchTeeTimes(params, offset) {
-  const r = await fetch(SUPABASE_URL + "/rest/v1/rpc/search_tee_times?limit=" + PAGE_SIZE + "&offset=" + offset, {
-    method: "POST",
-    headers: {
-      "apikey": SUPABASE_ANON_KEY,
-      "Authorization": "Bearer " + SUPABASE_ANON_KEY,
-      "Content-Type": "application/json",
-      "Prefer": "count=exact",
-    },
-    body: JSON.stringify(params),
+// PostgREST caps any single response at 1,000 rows, so page through with
+// limit/offset (a Range header does NOT limit RPC calls) and read the true
+// total from Content-Range ("0-999/2317"). Everything is loaded up front so
+// the filters below never need another round trip.
+const PAGE_SIZE = 1000;
+async function fetchAllTeeTimes(params) {
+  const rows = [];
+  let total = null;
+  do {
+    const r = await fetch(SUPABASE_URL + "/rest/v1/rpc/search_tee_times?limit=" + PAGE_SIZE + "&offset=" + rows.length, {
+      method: "POST",
+      headers: {
+        "apikey": SUPABASE_ANON_KEY,
+        "Authorization": "Bearer " + SUPABASE_ANON_KEY,
+        "Content-Type": "application/json",
+        "Prefer": "count=exact",
+      },
+      body: JSON.stringify(params),
+    });
+    if (!r.ok) throw new Error("Search failed (" + r.status + "). The database may still be waking up — try again in a moment.");
+    const page = await r.json();
+    const range = r.headers.get("Content-Range") || "";
+    const t = Number(range.split("/")[1]);
+    total = Number.isFinite(t) ? t : page.length;
+    rows.push(...page);
+    if (!page.length) break;
+    if (rows.length < total) setStatus("Loading " + rows.length.toLocaleString() + " of " + total.toLocaleString() + " tee times…");
+  } while (rows.length < total);
+  return rows;
+}
+
+// ---- Results state + filtering ---------------------------------------------
+let allRows = [];   // every tee time the last search returned (one per course + time)
+
+function currentFilters() {
+  return {
+    from: $("from").value,
+    to: $("to").value,
+    holes: $("holes").value,
+    maxPrice: $("maxprice").value ? Number($("maxprice").value) : null,
+    sort: $("sort").value,
+  };
+}
+
+function applyFilters(rows, f) {
+  return rows.filter(t => {
+    const hhmm = String(t.tee_time).slice(0, 5);
+    if (hhmm < f.from || hhmm > f.to) return false;
+    if (f.holes && String(t.holes) !== f.holes) return false;
+    if (f.maxPrice != null && t.price != null && Number(t.price) > f.maxPrice) return false;
+    return true;
   });
-  if (!r.ok) throw new Error("Search failed (" + r.status + "). The database may still be waking up — try again in a moment.");
-  const rows = await r.json();
-  const range = r.headers.get("Content-Range") || "";
-  const total = Number(range.split("/")[1]);
-  return { rows, total: Number.isFinite(total) ? total : rows.length };
 }
 
-// The current search, so "Show more" can fetch the next page with the same filters.
-let current = { params: null, loaded: 0, total: 0 };
-
-async function loadMore(btn) {
-  btn.disabled = true;
-  btn.textContent = "Loading…";
-  try {
-    const page = await searchTeeTimes(current.params, current.loaded);
-    btn.remove();
-    render(page.rows, page.total, true);
-  } catch (err) {
-    btn.disabled = false;
-    btn.textContent = "Show more";
-    setStatus(err.message || "Something went wrong.");
+// One card per course: the club's tee times collapsed behind a summary line.
+function groupByCourse(rows) {
+  const groups = new Map();
+  for (const t of rows) {
+    const key = t.club_name + "|" + (t.course_name || "");
+    let g = groups.get(key);
+    if (!g) {
+      g = { club: t.club_name, course: t.course_name, distance_km: t.distance_km, times: [] };
+      groups.set(key, g);
+    }
+    g.times.push(t);
   }
+  for (const g of groups.values()) {
+    g.times.sort((a, b) => String(a.tee_time).localeCompare(String(b.tee_time)));
+    const priced = g.times.map(t => t.price).filter(p => p != null).map(Number);
+    g.minPrice = priced.length ? Math.min(...priced) : null;
+    g.earliest = String(g.times[0].tee_time).slice(0, 5);
+  }
+  return [...groups.values()];
 }
 
-function render(rows, total, append) {
-  if (!append) { clearResults(); current.loaded = 0; }
-  current.total = total;
-  current.loaded += rows.length;
-  if (!current.loaded) {
+function sortGroups(groups, sort) {
+  const byDistance = (a, b) => a.distance_km - b.distance_km;
+  if (sort === "price") {
+    groups.sort((a, b) => ((a.minPrice ?? Infinity) - (b.minPrice ?? Infinity)) || byDistance(a, b));
+  } else if (sort === "time") {
+    groups.sort((a, b) => a.earliest.localeCompare(b.earliest) || byDistance(a, b));
+  } else {
+    groups.sort(byDistance);
+  }
+  return groups;
+}
+
+function render() {
+  resultsEl.innerHTML = "";
+  const f = currentFilters();
+  const rows = applyFilters(allRows, f);
+  if (!allRows.length) {
     setStatus("No tee times found for that search. Try a wider radius, a different date, or fewer players.");
     return;
   }
-  const shown = current.loaded < total ? "Showing " + current.loaded.toLocaleString() + " of " + total.toLocaleString() + " tee times"
-                                       : total.toLocaleString() + " tee time" + (total === 1 ? "" : "s") + " found";
-  setStatus(shown + " — nearest and cheapest first.");
-  for (const t of rows) {
-    const miles = (t.distance_km * MILES_PER_KM).toFixed(1);
-    const course = t.course_name && t.course_name !== t.club_name ? " · " + t.course_name : "";
-    const price = t.price != null ? "£" + Number(t.price).toFixed(0) : "—";
-    const row = document.createElement("div");
-    row.className = "row";
-    row.innerHTML =
-      '<div class="time">' + String(t.tee_time).slice(0,5) + '</div>' +
-      '<div class="meta">' +
-        '<div class="club">' + esc(t.club_name) + esc(course) +
-          '<span class="pill">' + t.holes + ' holes</span></div>' +
-        '<div class="sub">' + miles + ' mi away</div>' +
-      '</div>' +
-      '<div class="price">' + price + '<span class="per">' + playersLabel() + '</span></div>' +
-      '<a class="book" href="' + esc(t.booking_url) + '" target="_blank" rel="noopener noreferrer">Book</a>';
-    resultsEl.appendChild(row);
+  if (!rows.length) {
+    setStatus("Nothing between " + f.from + " and " + f.to + " with those filters — " +
+              allRows.length.toLocaleString() + " tee times are available on this date if you widen them.");
+    return;
   }
-  if (current.loaded < total) {
-    const more = document.createElement("button");
-    more.type = "button";
-    more.className = "go more";
-    more.textContent = "Show more";
-    more.addEventListener("click", () => loadMore(more));
-    resultsEl.appendChild(more);
+  const groups = sortGroups(groupByCourse(rows), f.sort);
+  setStatus(rows.length.toLocaleString() + " tee time" + (rows.length === 1 ? "" : "s") + " at " +
+            groups.length + " course" + (groups.length === 1 ? "" : "s") +
+            " between " + f.from + " and " + f.to + ". Tap a club to see its times.");
+
+  for (const g of groups) {
+    const miles = (g.distance_km * MILES_PER_KM).toFixed(1);
+    const course = g.course && g.course !== g.club ? " · " + g.course : "";
+    const n = g.times.length;
+    const holesSet = [...new Set(g.times.map(t => t.holes))].sort((a, b) => b - a);
+    const card = document.createElement("details");
+    card.className = "club";
+    card.innerHTML =
+      '<summary>' +
+        '<div class="meta">' +
+          '<div class="club-name">' + esc(g.club) + esc(course) +
+            holesSet.map(h => '<span class="pill">' + h + ' holes</span>').join("") + '</div>' +
+          '<div class="sub">' + miles + ' mi away · ' + n + ' tee time' + (n === 1 ? "" : "s") +
+            ' from ' + g.earliest + '</div>' +
+        '</div>' +
+        '<div class="from">' + (g.minPrice != null ? '<b>from £' + g.minPrice.toFixed(0) + '</b>' : '<b>—</b>') +
+          '<span>' + playersLabel() + '</span></div>' +
+        '<div class="chev">▾</div>' +
+      '</summary>' +
+      '<div class="times"></div>';
+    const list = card.querySelector(".times");
+    for (const t of g.times) {
+      const price = t.price != null ? "£" + Number(t.price).toFixed(0) : "—";
+      const row = document.createElement("div");
+      row.className = "row";
+      row.innerHTML =
+        '<div class="time">' + String(t.tee_time).slice(0, 5) + '</div>' +
+        '<span class="pill">' + t.holes + ' holes</span>' +
+        '<div class="price">' + price + '<span class="per">' + playersLabel() + '</span></div>' +
+        '<a class="book" href="' + esc(t.booking_url) + '" target="_blank" rel="noopener noreferrer">Book</a>';
+      list.appendChild(row);
+    }
+    resultsEl.appendChild(card);
   }
 }
 
@@ -222,11 +336,15 @@ function playersLabel() {
 }
 function esc(s){ return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
 
+for (const id of ["from", "to", "holes", "maxprice", "sort"]) {
+  $(id).addEventListener("input", render);
+}
+
 $("search").addEventListener("submit", async (e) => {
   e.preventDefault();
   const btn = e.target.querySelector("button.go");
   btn.disabled = true;
-  clearResults();
+  resultsEl.innerHTML = "";
   try {
     if (SUPABASE_ANON_KEY.startsWith("__PASTE")) {
       setStatus("Not configured yet: the Supabase anon key hasn't been set in index.html.");
@@ -235,18 +353,16 @@ $("search").addEventListener("submit", async (e) => {
     setStatus("Finding your location…");
     const loc = await geocode($("postcode").value);
     setStatus("Searching clubs near " + (loc.place || "you") + "…");
-    const maxprice = $("maxprice").value ? Number($("maxprice").value) : null;
-    const holes = $("holes").value ? Number($("holes").value) : null;
-    current.params = {
+    allRows = await fetchAllTeeTimes({
       in_lat: loc.lat, in_lng: loc.lng,
       in_radius_km: Number($("radius").value) / MILES_PER_KM,
       in_date: $("date").value,
       in_players: Number($("players").value),
-      in_max_price: maxprice,
-      in_holes: holes,
-    };
-    const page = await searchTeeTimes(current.params, 0);
-    render(page.rows, page.total, false);
+      in_max_price: null,   // price, holes and time window are filtered client-side
+      in_holes: null,
+    });
+    filtersEl.hidden = false;
+    render();
   } catch (err) {
     setStatus(err.message || "Something went wrong.");
   } finally {

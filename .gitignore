@@ -28,3 +28,4 @@ union_*.json
 approved_rows.csv
 candidates_review_*.csv
 approved_rows_*.csv
+residue.csv
