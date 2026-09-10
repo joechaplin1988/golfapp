@@ -208,12 +208,15 @@ $$;
 
 grant execute on function search_tee_times to anon, authenticated;
 
--- 27-hole de-duplication: for clubs with dedupe_courses = true (The Heron),
--- the same physical slot can come back on two course rows. Collapse in the
--- app/query layer with, over the rows above:
---     distinct on (club_id, tee_date, tee_time) ... order by ..., price
--- Left out of the function on purpose so multi-course clubs whose courses do
--- NOT share holes (West Malling) keep both genuinely-separate options.
+-- 27-hole de-duplication: IMPLEMENTED 2026-09-10 in db/migrations/003 (this
+-- file predates it; the migration is the live definition). For clubs with
+-- dedupe_courses = true the function collapses on
+--     (club_id, tee_date, tee_time, holes)
+-- keeping the cheapest row, then the alphabetically-first course name so the
+-- choice is stable between runs. Holes is part of the key on purpose: Test
+-- Valley sells a full 18 and its own front 9 off the same start times, and
+-- those are different products. Clubs without the flag are untouched, so
+-- West Malling keeps Spitfire and Hurricane as separate options.
 
 
 -- ============================================================================
