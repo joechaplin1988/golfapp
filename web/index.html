@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Tee Times Near You — Kent & Sussex</title>
+<title>Tee Times Near You — South East England</title>
 <style>
   :root {
     --bg: #f6f7f5; --card: #ffffff; --ink: #1c2620; --muted: #5c6b60;
@@ -76,7 +76,8 @@
 <div class="wrap">
   <header>
     <h1>⛳ Tee Times Near You</h1>
-    <p>Visitor tee times across Kent &amp; Sussex golf clubs, in one place. Book on the club's own site.</p>
+    <p>Visitor tee times across the South East — Kent, Sussex, Surrey, Essex, Hampshire,
+       Hertfordshire, Berkshire and London — in one place. Book on the club's own site.</p>
   </header>
 
   <form id="search">
@@ -189,6 +190,16 @@ function setStatus(msg) { statusEl.textContent = msg; }
 
 // Postcode, part-postcode, or town name — people who know an area rarely
 // know a full postcode in it.
+// The areas we actually have courses in, as Postcodes.io names them. Used
+// only to order an ambiguous place list, never to reject one — a search
+// outside these will simply find nothing nearby, which is the honest answer.
+const COVERED = new Set([
+  "Kent", "Medway", "East Sussex", "West Sussex", "The City of Brighton and Hove",
+  "Surrey", "Essex", "Southend-on-Sea", "Thurrock", "Hampshire", "Southampton",
+  "Portsmouth", "Hertfordshire", "Reading", "West Berkshire", "Wokingham",
+  "Bracknell Forest", "Windsor and Maidenhead", "Slough", "Greater London",
+]);
+
 const FULL_POSTCODE_RE = /^[a-z]{1,2}\d[a-z\d]?\s*\d[a-z]{2}$/i;
 const OUTCODE_RE = /^[a-z]{1,2}\d[a-z\d]?$/i;
 
@@ -228,16 +239,35 @@ async function resolveLocation(input) {
   // longer one that merely starts with it ("Sevenoaks" vs "Sevenoaks Weald").
   const exact = places.filter(p => (p.name_1 || "").toLowerCase() === q.toLowerCase());
   const list = exact.length ? exact : places;
-  const options = list.slice(0, 6).map(p => ({
-    lat: p.latitude, lng: p.longitude,
-    place: p.name_1,
-    where: p.county_unitary || p.region || p.country || "",
-  }));
+  // Postcodes.io returns one row per settlement record, so a single town can
+  // come back several times under the same name and county — Swanley three
+  // times, Bromley six. Offering six identical buttons is not a choice, it's
+  // a wall, so collapse them: only genuinely different places (Brighton in
+  // Cornwall vs Brighton & Hove) should ever reach the user.
+  const seen = new Set();
+  const options = [];
+  for (const p of list) {
+    const place = p.name_1;
+    const where = p.county_unitary || p.region || p.country || "";
+    const key = (place + "|" + where).toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    options.push({ lat: p.latitude, lng: p.longitude, place, where });
+    if (options.length === 6) break;
+  }
+  // Somewhere we have courses beats somewhere we don't. Without this,
+  // "Guildford" offers Pembrokeshire above Surrey and "Swanley" offers
+  // Cheshire above Kent, purely because of the order the API returns.
+  options.sort((a, b) => (COVERED.has(b.where) ? 1 : 0) - (COVERED.has(a.where) ? 1 : 0));
   return options.length === 1 ? options[0] : { options };
 }
 
 function askWhichPlace(options) {
-  clearResults();
+  // Was clearResults() — a helper removed when render() was rewritten, which
+  // made EVERY ambiguous place name throw instead of offering a choice
+  // (Swanley, Brighton, Guildford, Bromley...). Unambiguous names were fine,
+  // so it hid in plain sight.
+  resultsEl.innerHTML = "";
   setStatus("More than one place matches. Which did you mean?");
   const box = document.createElement("div");
   box.className = "choices";

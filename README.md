@@ -1,7 +1,7 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **eight platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **233 clubs / 279 sheets per scheduled run (2026-09-10)**, Kent,
+ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **235 clubs / 281 sheets per scheduled run (2026-09-10)**, Kent,
 Sussex, Surrey, Essex, Hampshire, Hertfordshire, Berkshire and Greater London done, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
@@ -795,6 +795,29 @@ surfaced as "Worldham Golf Club: no availability in 14 days". Worldham has
 per day) and backs off on 429; the scraper paces its four party-size calls.
 Worth remembering: on this platform a rate limit is indistinguishable from
 an empty sheet unless you check the status code.
+
+### Town search was broken for every ambiguous name (2026-09-10)
+Joe typed "swanley" and got `clearResults is not defined`. My own bug: the
+page-v2 rewrite replaced that helper with a direct `innerHTML = ""`, but
+`askWhichPlace` still called it. **Unambiguous names worked**, so the whole
+feature looked fine — Sevenoaks, Woking, Reading and Dartford all resolve to
+one place and never touch the chooser. Swanley, Brighton, Guildford and
+Bromley all threw.
+
+Two more things the same bug hid:
+- Postcodes.io returns one row per settlement record, so a single town comes
+  back several times under the same name AND county: Swanley three times,
+  Bromley six. Six identical buttons is not a choice. Options are now
+  de-duplicated on name+county, so only genuinely different places are ever
+  offered.
+- The remaining options were in API order, which put **Guildford in
+  Pembrokeshire above Guildford in Surrey** and Swanley in Cheshire above
+  Swanley in Kent. They are now sorted so areas we actually cover come
+  first — used only for ORDER, never to reject a place.
+
+Lesson worth keeping: a feature verified only on its happy path is not
+verified. The chooser was tested when it was written, but only by calling
+`resolveLocation`, never `askWhichPlace`.
 
 ### Greater London — an area OSM files one level up (2026-09-10)
 Greater London is a **region**, not a county: `admin_level=5`. Our Overpass
