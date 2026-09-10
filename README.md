@@ -25,6 +25,8 @@ which platform a club runs:
 | `discover_clubs.py` | — | OSM + county union + each club's site | finds clubs + their platform → review CSV |
 | `probe_course_ids.py` | — | live tee sheets | approved review rows → platform ids |
 | `apply_approved.py` | — | — | appends verified rows to the config |
+| `enrich_courses.py` | — | each club's own site | proposes course type + yardage → `course_profiles.csv` |
+| `apply_migrations.py` | — | `db/migrations/*.sql` | applies pending schema changes (run by the workflow) |
 | `run_pipeline.py` | all | — | one command: syncs config → DB, scrapes a date window → DB |
 
 `golf_common.py` owns the shared contract: the `TeeTimeResult` shape, config
@@ -687,6 +689,46 @@ Two platform-specific notes worth keeping:
   records legitimately vary between `{"1"}`, `{"1","2"}` and `{"1".."4"}`.
   That's remaining-capacity data, not a bug — the player-count filter should
   use it.
+
+### Course character on the search page (2026-09-10)
+"20 tee times from £45" only helps someone who already knows the courses.
+Joe's call: show **course type and yardage**, in the **expanded panel**, not
+on the summary card — the card is at its limit and this is "help me choose",
+not "help me scan". Par, a pay-and-play flag and Google ratings were
+considered and held back; ratings are the most valuable of the three and the
+most complex (Places terms restrict caching, require attribution, and bill
+per call), so they're a separate decision once there are users.
+
+The data is static, so it does not belong in the 2-hourly scrape:
+`enrich_courses.py` proposes rows from each club's own website into
+`course_profiles.csv`, that file is **eyeballed**, and `load_config_to_db`
+syncs it into `courses.course_type` / `courses.yardage` on every run. Blank
+cells never overwrite a stored value (`coalesce` in `upsert_course`), so a
+half-filled file is safe to commit. Migration `002` adds the columns and
+rebuilds `search_tee_times` to return them (Postgres won't let CREATE OR
+REPLACE change a function's OUT columns — it has to be dropped first).
+
+Yardage is deliberately approximate: every course plays a different length
+off each tee. We take the medal/white figure, which is what clubs quote, and
+`enrich_courses.py` keeps every candidate it saw in `all_yardages` so a
+misread scorecard is visible at review time.
+
+### Parked courses, and Cloudflare vs the CI runner (2026-09-10)
+`clubs_config.csv` now has an optional `scrape_enabled` column; `false`
+parks a row (kept, with its reason, but not scraped). First use: the seven
+**Mytime Active** sheets (High Elms 18/9, Orpington Cray 18/9 + Ruxley 9,
+Bromley 18/9). Their tenant sits behind Cloudflare, which answers **403 to
+the GitHub runner** while the identical request — same code, same polite
+user agent — returns 200 from a home connection. Both our own user agent and
+a browser one work from home, so this is not about how we identify
+ourselves; it is the runner's address or its TLS fingerprint. Either is an
+anti-bot control, and working around it (proxies, TLS spoofing) is
+circumvention, so we don't. Parked rather than deleted: 49 identical errors
+a run would bury every real failure. Poult Wood is on TM Active's separate
+tenant and is unaffected — it scrapes fine (713 rows).
+
+To un-park: set `scrape_enabled` back to blank. Worth a note to Mytime
+Active asking for access if those courses matter.
 
 ### Schema migrations, and the constraint that ate two batches (2026-09-10)
 `courses.platform` had a CHECK listing every allowed platform name. It

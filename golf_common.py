@@ -74,6 +74,21 @@ class ClubConfig:
     longitude: Optional[float] = None
 
 
+DISABLED_VALUES = {"false", "0", "no", "n", "off"}
+
+
+def is_enabled(row: dict) -> bool:
+    """clubs_config.csv rows can be parked with scrape_enabled=false.
+
+    Used for courses we can reach but the scheduled job cannot — Mytime
+    Active's Cloudflare answers 403 to the CI runner. Deleting the row would
+    lose the club and the reason; leaving it enabled buries every real failure
+    under 49 identical errors a run. The column is optional: a missing or
+    blank value means enabled.
+    """
+    return str(row.get("scrape_enabled", "") or "").strip().lower() not in DISABLED_VALUES
+
+
 def load_clubs(config_path: str, platform: Optional[str] = None) -> list[ClubConfig]:
     """Rows with no base_url are skipped (logged) — safe to leave partially filled.
 
@@ -92,6 +107,9 @@ def load_clubs(config_path: str, platform: Optional[str] = None) -> list[ClubCon
                 continue
             if plat not in PLATFORMS:
                 log.warning(f"Skipping '{name}' — platform '{plat}' not one of {PLATFORMS}")
+                continue
+            if not is_enabled(row):
+                log.info(f"Skipping '{name}' — parked (scrape_enabled=false)")
                 continue
             clubs.append(ClubConfig(
                 club_name=name,

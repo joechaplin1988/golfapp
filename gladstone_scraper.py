@@ -33,8 +33,15 @@ Notes that shaped the parser:
 
 CONFIG: platform = gladstone, base_url = https://{tenant}.gladstonego.cloud,
 course_id = "SITE/GROUP" e.g. HEG/HEG18H (site id from /api/configuration/sites,
-group id from /api/configuration/activity-groups). One config row per group,
-because the 18- and 9-hole groups share tee times.
+group id from /api/configuration/activity-groups), optionally "SITE/GROUP/HOLES"
+e.g. GOLF/GOLF/18. One config row per group, because the 18- and 9-hole groups
+share tee times.
+
+The holes hint exists because tenants name activities differently: Mytime
+Active and TM Active call every tee time "18 Holes" / "9 Holes", but Impulse
+Leisure (Belhus Park) calls all 83 of them "Golf Tee Off". Rather than guess
+the round length from an opaque activity id like "GO5FG18S0700", the config
+says it outright — a wrong hole count is a wrong search result.
 
 Usage:
     python gladstone_scraper.py clubs_config.csv --date 2026-09-12
@@ -51,6 +58,10 @@ log = gc.log
 PLATFORM = "gladstone"
 LONDON = ZoneInfo("Europe/London")
 OPEN_TEE_TIME_RE = re.compile(r"^\s*(\d+)\s*holes?\b", re.I)
+# Only consulted when the config supplies a holes hint: even then, a lesson or
+# a buggy booking is not a tee time.
+NOT_A_ROUND_RE = re.compile(r"lesson|coach|academy|buggy|buggies|hire|footgolf|"
+                            r"range|junior|kidz|kids|society|senior|veteran", re.I)
 
 # tenant base_url -> True once the anonymous session is established this run.
 _sessions_started: set[str] = set()
@@ -79,7 +90,7 @@ def _local_hhmm(iso_utc: str) -> str | None:
     return dt.astimezone(LONDON).strftime("%H:%M")
 
 
-def parse(payload, club: gc.ClubConfig, date_iso: str) -> tuple[list[gc.TeeTimeResult], str]:
+def parse(payload, club: gc.ClubConfig, date_iso: str, holes_hint: str = "") -> tuple[list[gc.TeeTimeResult], str]:
     if not isinstance(payload, list):
         log.error(f"[{club.club_name}] Expected a list of sessions — got {type(payload).__name__}; "
                   f"check base_url / course_id (SITE/GROUP)")
@@ -90,9 +101,16 @@ def parse(payload, club: gc.ClubConfig, date_iso: str) -> tuple[list[gc.TeeTimeR
         if a.get("date") != date_iso or not a.get("webBookable", True):
             continue
         m = OPEN_TEE_TIME_RE.match(a.get("name") or "")
-        if not m:
+        if m:
+            holes = m.group(1)
+        elif holes_hint:
+            # Tenant doesn't put the round length in the activity name; the
+            # config row says it. Still skip the obvious non-golf blocks.
+            if NOT_A_ROUND_RE.search(a.get("name") or ""):
+                continue
+            holes = holes_hint
+        else:
             continue   # a society / seniors / lesson block, not an open tee time
-        holes = m.group(1)
         cap = int((a.get("capacity") or {}).get("maxInCentreBookees") or 4)
         for loc in a.get("locations") or []:
             for sl in loc.get("slots") or []:
@@ -118,9 +136,12 @@ def parse(payload, club: gc.ClubConfig, date_iso: str) -> tuple[list[gc.TeeTimeR
 def scrape_club(club: gc.ClubConfig, date_iso: str, session) -> tuple[list[gc.TeeTimeResult], str]:
     base = club.base_url.rstrip("/")
     if "/" not in club.course_id:
-        log.error(f"[{club.club_name}] course_id must be SITE/GROUP (e.g. HEG/HEG18H), got {club.course_id!r}")
+        log.error(f"[{club.club_name}] course_id must be SITE/GROUP[/HOLES] "
+                  f"(e.g. HEG/HEG18H or GOLF/GOLF/18), got {club.course_id!r}")
         return [], "error"
-    site, group = club.course_id.split("/", 1)
+    parts = club.course_id.split("/")
+    site, group = parts[0], parts[1]
+    holes_hint = parts[2] if len(parts) > 2 else ""
     if not _start_session(base, club, session):
         return [], "error"
     url = (f"{base}/api/availability/V2/sessions?webBookableOnly=true&siteIds={site}"
@@ -134,7 +155,7 @@ def scrape_club(club: gc.ClubConfig, date_iso: str, session) -> tuple[list[gc.Te
         log.error(f"[{club.club_name}] Sessions response wasn't JSON")
         return [], "error"
     try:
-        results, status = parse(payload, club, date_iso)
+        results, status = parse(payload, club, date_iso, holes_hint)
         if results:
             log.info(f"[{club.club_name}] Found {len(results)} available tee time(s) for {date_iso} (no prices — Gladstone)")
         elif status == "empty":

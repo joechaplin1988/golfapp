@@ -29,3 +29,5 @@ approved_rows.csv
 candidates_review_*.csv
 approved_rows_*.csv
 residue.csv
+candidates_recovered.json
+course_profiles.csv.bak

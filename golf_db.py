@@ -56,18 +56,28 @@ def upsert_club(cur, *, slug, name, postcode, latitude, longitude, dedupe_course
     return cur.fetchone()[0]
 
 
-def upsert_course(cur, *, club_id, name, platform, base_url, course_ref, scrape_enabled) -> int:
+def upsert_course(cur, *, club_id, name, platform, base_url, course_ref, scrape_enabled,
+                  course_type=None, yardage=None) -> int:
+    """`course_type`/`yardage` come from the hand-checked course_profiles.csv.
+
+    A blank there must NOT wipe a value already stored — coalesce keeps the
+    existing one — so a half-filled profiles file can be committed safely.
+    """
     cur.execute(
         """
-        insert into courses (club_id, name, platform, base_url, course_ref, scrape_enabled)
-        values (%s, %s, %s, %s, %s, %s)
+        insert into courses (club_id, name, platform, base_url, course_ref, scrape_enabled,
+                             course_type, yardage)
+        values (%s, %s, %s, %s, %s, %s, %s, %s)
         on conflict (platform, base_url, course_ref) do update set
             club_id = excluded.club_id,
             name = excluded.name,
-            scrape_enabled = excluded.scrape_enabled
+            scrape_enabled = excluded.scrape_enabled,
+            course_type = coalesce(excluded.course_type, courses.course_type),
+            yardage = coalesce(excluded.yardage, courses.yardage)
         returning id
         """,
-        (club_id, name, platform, base_url, course_ref or "", scrape_enabled),
+        (club_id, name, platform, base_url, course_ref or "", scrape_enabled,
+         course_type or None, yardage),
     )
     return cur.fetchone()[0]
 

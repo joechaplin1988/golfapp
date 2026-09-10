@@ -845,5 +845,68 @@
     "lon": -0.2069719,
     "source": "osm",
     "official_site": "https://www.bansteaddowns.co.uk"
+  },
+  {
+    "name": "Braeside Golf Club",
+    "official_site": "https://www.braesidegolfclub.com/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Charterhouse School Golf Club",
+    "official_site": "https://www.charterhousegolfclub.co.uk/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Coulsdon Court Golf Club",
+    "official_site": "https://ccgc.co.uk/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "David Lloyd Hampton Golf Golf Club",
+    "official_site": "https://www.dlgolf.co.uk/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Hampton Court Palace Golf Club",
+    "official_site": "https://hamptoncourtgolf.co.uk/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Moore Place Golf Club",
+    "official_site": "https://www.intelligentgolf.co.uk/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Royal Automobile Country Club Golf Club",
+    "official_site": "https://www.royalautomobileclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "White Lodge Golf Club",
+    "official_site": "https://whitelodgegolfclub.co.uk/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Windlemere Ladies Golf Club",
+    "official_site": "https://www.intelligentgolf.co.uk/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
   }
 ]

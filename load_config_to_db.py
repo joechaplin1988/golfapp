@@ -21,6 +21,7 @@ import logging
 import re
 import sys
 
+import golf_common
 import golf_db
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -48,10 +49,38 @@ def split_club_course(config_name: str) -> tuple[str, str]:
     return (m.group(1).strip(), m.group(2).strip()) if m else (config_name.strip(), config_name.strip())
 
 
+PROFILES_PATH = "course_profiles.csv"
+
+
+def load_profiles(path: str = PROFILES_PATH) -> dict:
+    """config club_name -> {course_type, yardage}, from the hand-checked CSV.
+
+    Optional and allowed to be partial: a missing file or a blank cell means
+    "leave whatever the DB already has" (see golf_db.upsert_course), never
+    "blank it".
+    """
+    profiles: dict[str, dict] = {}
+    try:
+        with open(path, newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                name = (row.get("club_name") or "").strip()
+                if not name:
+                    continue
+                y = (row.get("yardage") or "").strip()
+                profiles[name] = {
+                    "course_type": (row.get("course_type") or "").strip() or None,
+                    "yardage": int(y) if y.isdigit() else None,
+                }
+    except FileNotFoundError:
+        log.info(f"No {path} — course type/yardage left as they are")
+    return profiles
+
+
 def build_clubs(config_path: str) -> tuple[dict, list[str]]:
     """Group config rows into {base_name: club-with-courses}. Returns (clubs, skipped_names)."""
     clubs: dict[str, dict] = {}
     skipped: list[str] = []
+    profiles = load_profiles()
     with open(config_path, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
             name = (row.get("club_name") or "").strip()
@@ -69,12 +98,15 @@ def build_clubs(config_path: str) -> tuple[dict, list[str]]:
             if club["latitude"] is None and row.get("latitude"):
                 club["latitude"] = float(row["latitude"])
                 club["longitude"] = float(row["longitude"])
+            prof = profiles.get(name, {})
             club["courses"].append({
                 "name": course,
                 "platform": row["platform"].strip(),
                 "base_url": row["base_url"].strip(),
                 "course_ref": (row.get("course_id") or "").strip(),
-                "scrape_enabled": True,
+                "scrape_enabled": golf_common.is_enabled(row),
+                "course_type": prof.get("course_type"),
+                "yardage": prof.get("yardage"),
             })
     return clubs, skipped
 
@@ -86,7 +118,9 @@ def print_plan(clubs: dict, skipped: list[str]) -> None:
         flag = "  [dedupe_courses]" if c["dedupe_courses"] else ""
         print(f"  {c['name']}  ({c['postcode'] or '—'}, {geo}){flag}")
         for co in c["courses"]:
-            print(f"      - {co['name']:22} {co['platform']:16} ref={co['course_ref']!r}")
+            prof = " ".join(x for x in (co.get("course_type") or "",
+                                        f"{co['yardage']}yds" if co.get("yardage") else "") if x)
+            print(f"      - {co['name']:22} {co['platform']:16} ref={co['course_ref']!r:8} {prof}")
     if skipped:
         print(f"\nskipped (no base_url, not scraped): {', '.join(skipped)}")
 
@@ -114,6 +148,7 @@ def load(clubs: dict) -> None:
                             cur, club_id=club_id, name=co["name"], platform=co["platform"],
                             base_url=co["base_url"], course_ref=co["course_ref"],
                             scrape_enabled=co["scrape_enabled"],
+                            course_type=co.get("course_type"), yardage=co.get("yardage"),
                         )
                 n_clubs += 1
                 n_courses += len(c["courses"])

@@ -234,6 +234,24 @@ now has a scraper (7 platforms). Left: one-offs only (Rustington/Fusemetrix,
 Tonbridge GC/BookingHound, Lullingstone/Chronogolf), Tudor Park (host
 unreachable), Rye/Wrotham Heath re-probes. Next region
 order agreed: Surrey, Essex, Hampshire, Hertfordshire, Berkshire.
+**Course character (Joe's UX ask, 2026-09-10)**: search results told a
+stranger nothing beyond price/distance/availability. Decision: course TYPE +
+YARDAGE only, in the EXPANDED panel (card is full; this is help-me-choose not
+help-me-scan). Par + pay-and-play flag + Google rating deliberately held
+back; Joe rates Google highest value but highest complexity (Places caching
+terms, attribution, per-call billing) - revisit post-users. Static data ->
+enrich_courses.py proposes -> course_profiles.csv is hand-checked ->
+load_config_to_db syncs to courses.course_type/yardage (blank never
+overwrites). Migration 002 adds columns + rebuilds the RPC.
+
+**Mytime Active is unreachable from CI (2026-09-10)**: their Cloudflare
+403s the GitHub runner but serves a home connection fine, with either user
+agent - so it's the runner IP/TLS fingerprint, not our identity. Not worked
+around (that's circumvention). The 7 sheets are PARKED via a new optional
+`scrape_enabled` column in clubs_config.csv (false = keep the row and the
+reason, skip the scrape) so 49 errors a run stop masking real failures.
+Poult Wood (TM Active tenant) is fine.
+
 **Deploy rule (Joe, 2026-09-09): don't rebuild Netlify on every push** -
 netlify.toml now has an `ignore` rule so only pushes touching web/ or
 netlify.toml build; batch web changes until a milestone.

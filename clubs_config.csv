@@ -1,160 +1,160 @@
-club_name,platform,base_url,course_id,postcode,latitude,longitude
-The Ridge,intelligent_golf,https://www.theridge.co.uk/visitorbooking,1,ME17 3JB,51.222315,0.614479
-Wildernesse,intelligent_golf,https://wildernesse.intelligentgolf.co.uk/visitorbooking,1,TN15 0JE,51.282364,0.222425
-Knole Park,intelligent_golf,https://knolepark.intelligentgolf.co.uk/visitorbooking,1,TN15 0HJ,51.275988,0.202918
-Lamberhurst,intelligent_golf,https://lamberhurst.intelligentgolf.co.uk/visitorbooking,1,TN3 8DT,51.105582,0.397563
-Canterbury,intelligent_golf,https://canterbury.intelligentgolf.co.uk/visitorbooking,241,CT1 1TW,51.278872,1.112503
-Cooden Beach,intelligent_golf,https://coodenbeach.intelligentgolf.co.uk/visitorbooking,1,TN39 4TR,50.835456,0.427579
-Crowborough,intelligent_golf,https://crowborough.intelligentgolf.co.uk/visitorbooking,1,TN6 1UJ,51.048097,0.148172
-Piltdown,intelligent_golf,https://piltdown.intelligentgolf.co.uk/visitorbooking,144,TN22 3XB,50.983061,0.064041
-Haywards Heath,intelligent_golf,https://haywardsheath.intelligentgolf.co.uk/visitorbooking,855,RH16 1SL,51.018533,-0.097127
-West Malling (Spitfire),intelligent_golf,https://westmalling.intelligentgolf.co.uk/visitorbooking,129,ME19 5AR,51.301867,0.367121
-West Malling (Hurricane),intelligent_golf,https://westmalling.intelligentgolf.co.uk/visitorbooking,131,ME19 5AR,51.301867,0.367121
-REGC (Devonshire),intelligent_golf,https://royaleastbourne.intelligentgolf.co.uk/visitorbooking,98,BN20 8BP,50.767364,0.267066
-REGC (Hartington 9),intelligent_golf,https://royaleastbourne.intelligentgolf.co.uk/visitorbooking,99,BN20 8BP,50.767364,0.267066
-Mannings Heath (Waterfall),intelligent_golf,https://manningsheath.intelligentgolf.co.uk/visitorbooking,80,RH13 6PG,51.052704,-0.274781
-Mannings Heath (Kingfisher),intelligent_golf,https://manningsheath.intelligentgolf.co.uk/visitorbooking,1,RH13 6PG,51.052704,-0.274781
-Copthorne,intelligent_golf,https://copthorne.intelligentgolf.co.uk/visitorbooking,1,RH10 3LL,51.138227,-0.110078
-Copthorne (Back 9),intelligent_golf,https://copthorne.intelligentgolf.co.uk/visitorbooking,4,RH10 3LL,51.138227,-0.110078
-Cinque Ports,intelligent_golf,https://members.royalcinqueports.com/visitorbooking,1732,CT14 6RF,51.240676,1.396277
-Nizels,intelligent_golf,https://www.nizelsgolfclub.com/visitorbooking,1,TN11 8NU,51.229814,0.212544
-The Heron (Heron-Hawk),intelligent_golf,https://www.heroncountryclub.uk/visitorbooking,1,CM13 3LW,51.584599,0.362301
-The Heron (Hawk-Vixen),intelligent_golf,https://www.heroncountryclub.uk/visitorbooking,4,CM13 3LW,51.584599,0.362301
-The Heron (Vixen-Heron),intelligent_golf,https://www.heroncountryclub.uk/visitorbooking,3,CM13 3LW,51.584599,0.362301
-Westerham,esp,https://www.e-s-p.com/elitelive,615,TN16 1QN,51.269108,0.091155
-Chart Hills,esp,https://www.e-s-p.com/elitelive,1854,TN27 8JX,51.131130,0.648177
-Prince's,esp,https://www.e-s-p.com/elitelive,157,CT13 9QB,51.284215,1.376942
-Sweetwoods,esp,https://www.e-s-p.com/elitelive,803,TN8 7AY,51.137459,0.089403
-London Club,esp,https://www.e-s-p.com/elitelive,1773,TN15 7EH,51.345980,0.288429
-Birchwood Park,esp,https://www.e-s-p.com/elitelive,2070,DA2 7HJ,51.412630,0.160455
-Redlibbets,golf_manager,https://redlibbets.golfmanager.com,,TN15 7HT,51.366302,0.292689
-Eastbourne Downs,golf_manager,https://eastbourne.golfmanager.com,,BN20 8ES,50.765690,0.247159
-Willingdon,clubv1,https://willingdon.hub.clubv1.com,10566,BN20 9AA,50.789032,0.254947
-Sundridge Park Golf Course (SPGC East),intelligent_golf,https://www.sundridgeparkgolfclub.co.uk/visitorbooking,577,BR1 3NE,51.417647,0.025080
-Sundridge Park Golf Course (SPGC West),intelligent_golf,https://www.sundridgeparkgolfclub.co.uk/visitorbooking,578,BR1 3NE,51.417647,0.025080
-Pedham Place Golf Centre,esp,https://www.e-s-p.com/elitelive,1312,BR8 8PP,51.384027,0.197956
-Chelsfield Lakes Golf Club,esp,https://www.e-s-p.com/elitelive,1271,BR6 9BX,51.361656,0.115794
-Hever Castle Golf Club (Championship),intelligent_golf,https://hever.intelligentgolf.co.uk/visitorbooking,1,TN8 7NP,51.198667,0.113499
-Hever Castle Golf Club (Princes),intelligent_golf,https://hever.intelligentgolf.co.uk/visitorbooking,4,TN8 7NP,51.198667,0.113499
-Royal Blackheath Golf Club,intelligent_golf,https://www.royalblackheath.com/visitorbooking,227,SE9 5AF,51.446476,0.053153
-West Kent Golf Club,intelligent_golf,https://www.wkgc.co.uk/visitorbooking,2,BR6 7LD,51.333788,0.040709
-Sheerness Golf Club,clubv1,https://sheerness.hub.clubv1.com,30036,ME12 3AD,51.427465,0.777180
-Chestfield Golf Club,intelligent_golf,https://chestfield.intelligentgolf.co.uk/visitorbooking,1,CT5 3LU,51.350977,1.065323
-The Weald of Kent Golf Course,intelligent_golf,https://wealdofkent.intelligentgolf.co.uk/visitorbooking,1,TN27 9PT,51.189198,0.604474
-Kings Hill Golf Club,clubv1,https://kingshill.hub.clubv1.com,7925,ME19 4GF,51.268808,0.404115
-Stonelees Golf Centre (The Executive),intelligent_golf,https://stonelees.intelligentgolf.co.uk/visitorbooking,10,CT12 5DJ,51.314429,1.350670
-Stonelees Golf Centre (The Heights),intelligent_golf,https://stonelees.intelligentgolf.co.uk/visitorbooking,11,CT12 5DJ,51.314429,1.350670
-Stonelees Golf Centre (Executive 9/Heights 9),intelligent_golf,https://stonelees.intelligentgolf.co.uk/visitorbooking,13,CT12 5DJ,51.314429,1.350670
-North Foreland Golf Club (North Foreland),intelligent_golf,https://northforeland.intelligentgolf.co.uk/visitorbooking,1,CT10 3PU,51.377654,1.434799
-North Foreland Golf Club (Par 3 Northcliffe),intelligent_golf,https://northforeland.intelligentgolf.co.uk/visitorbooking,2,CT10 3PU,51.377654,1.434799
-Etchinghill Golf Club,esp,https://www.e-s-p.com/elitelive,687,CT18 8FA,51.118040,1.092330
-Langley Park Golf Course,intelligent_golf,https://langleypark.intelligentgolf.co.uk/visitorbooking,1,BR3 6SZ,51.387818,-0.007454
-Mid Sussex Golf Club,intelligent_golf,https://www.midsussexgolfclub.co.uk/visitorbooking,41,BN6 8XJ,50.928673,-0.096157
-Ham Manor,intelligent_golf,https://www.hammanor.co.uk/visitorbooking,881,BN16 4JE,50.822574,-0.498618
-West Sussex Golf Club,intelligent_golf,https://westsussex.intelligentgolf.co.uk/visitorbooking,1,RH20 2EN,50.939416,-0.477878
-Bognor Regis Golf Club,clubv1,https://bognorregis.hub.clubv1.com,1164,PO22 8JD,50.799066,-0.651084
-Seaford Golf Club,intelligent_golf,https://seaford.intelligentgolf.co.uk/visitorbooking,1,BN25 2JD,50.787655,0.108345
-Ifield Golf and Country Club,intelligent_golf,https://www.ifieldgolf.com/visitorbooking,174,RH11 0LN,51.118582,-0.228176
-Royal Ashdown Forest Golf Club (Old),intelligent_golf,https://www.royalashdown.co.uk/visitorbooking,6,RH18 5LR,51.087779,0.043139
-Royal Ashdown Forest Golf Club (West),intelligent_golf,https://www.royalashdown.co.uk/visitorbooking,2,RH18 5LR,51.087779,0.043139
-Dyke Golf Club,clubv1,https://dykegolfclub.hub.clubv1.com,9046,BN1 8YJ,50.872688,-0.200462
-Littlehampton Golf Club,clubv1,https://littlehampton.hub.clubv1.com,15348,BN17 5DL,50.806032,-0.545176
-Hill Barn Golf Club,esp,https://www.e-s-p.com/elitelive,1558,BN14 9QF,50.838266,-0.379351
-Selsey Golf Club,intelligent_golf,https://selsey.intelligentgolf.co.uk/visitorbooking,1,PO20 9DR,50.745615,-0.796206
-Singing Hills Golf Course (Lake/River),intelligent_golf,https://www.singinghillsgolfcourse.co.uk/visitorbooking,1,BN6 9EB,50.920715,-0.208726
-Singing Hills Golf Course (Lake/Valley),intelligent_golf,https://www.singinghillsgolfcourse.co.uk/visitorbooking,2,BN6 9EB,50.920715,-0.208726
-Singing Hills Golf Course (River/Valley),intelligent_golf,https://www.singinghillsgolfcourse.co.uk/visitorbooking,3,BN6 9EB,50.920715,-0.208726
-Singing Hills Golf Course (River/Lake),intelligent_golf,https://www.singinghillsgolfcourse.co.uk/visitorbooking,4,BN6 9EB,50.920715,-0.208726
-Singing Hills Golf Course (Valley/River),intelligent_golf,https://www.singinghillsgolfcourse.co.uk/visitorbooking,5,BN6 9EB,50.920715,-0.208726
-Singing Hills Golf Course (Valley/Lake),intelligent_golf,https://www.singinghillsgolfcourse.co.uk/visitorbooking,6,BN6 9EB,50.920715,-0.208726
-Holtye Golf Club,intelligent_golf,https://www.holtye.com/visitorbooking,1,TN8 7ED,51.131634,0.082708
-Lewes Golf Club,brs,https://visitors.brsgolf.com/lewes,1,BN7 2BB,50.874071,0.020618
-Lindfield Golf Course,brs,https://visitors.brsgolf.com/lindfield,1,RH16 2QN,51.014102,-0.054111
-Lydd Golf Club,brs,https://visitors.brsgolf.com/lydd,1,TN29 9LS,50.968484,0.923197
-Mercure Hythe Imperial Golf Course,brs,https://visitors.brsgolf.com/hythe,1,CT21 6AE,51.068196,1.094860
-Peacehaven Golf Course,brs,https://visitors.brsgolf.com/peacehaven9,1,BN9 9UH,50.789883,0.030933
-Pyecombe Golf Course,brs,https://visitors.brsgolf.com/pyecombe,1,BN45 7FF,50.901959,-0.159882
-Seaford Head Golf Club,brs,https://visitors.brsgolf.com/seafordhead,1,BN25 4JS,50.765807,0.112411
-Walmer and Kingsdown Golf Links,brs,https://visitors.brsgolf.com/walmerandkingsdown,1,CT14 8EP,51.178728,1.403298
-Westgate and Birchington Golf Club,brs,https://visitors.brsgolf.com/westgatebirchington,1,CT8 8LT,51.378688,1.331145
-Cuckfield Golf Centre,intelligent_golf,https://cuckfield.intelligentgolf.co.uk/visitorbooking,2,RH17 5HY,51.017213,-0.157262
-Tilgate Forest Golf Centre,intelligent_golf,https://tilgateforest.intelligentgolf.co.uk/visitorbooking,779,RH10 5EU,51.100601,-0.179887
-Rookwood Golf Course,intelligent_golf,https://rookwood.intelligentgolf.co.uk/visitorbooking,1,RH12 3RR,51.078661,-0.344669
-Slinfold Golf & Country Club (Slinfold Main),intelligent_golf,https://www.slinfoldclub.co.uk/visitorbooking,22,RH13 0RE,51.061590,-0.422556
-Slinfold Golf & Country Club (The Academy),intelligent_golf,https://www.slinfoldclub.co.uk/visitorbooking,145,RH13 0RE,51.061590,-0.422556
-Cherry Lodge Golf Club,brs,https://visitors.brsgolf.com/cherrylodge,1,TN16 3AX,51.314861,0.052324
-Leeds Castle Golf Course,brs,https://visitors.brsgolf.com/leedscastle,1,ME17 1PL,51.249028,0.630469
-St Augustine's Golf Club,brs,https://visitors.brsgolf.com/staugustines,1,CT12 5JN,51.328264,1.355670
-Sedlescombe Golf Club,esp,https://www.e-s-p.com/elitelive,1202,TN33 0SG,50.916377,0.537488
-Darenth Valley Golf Course,esp,https://www.e-s-p.com/elitelive,844,TN14 7SA,51.331431,0.187602
-Ashford Golf Club,clubv1,https://ashfordkent.hub.clubv1.com,8362,TN25 4NT,51.171793,0.856414
-Tenterden Golf Club,clubv1,https://tenterden.hub.clubv1.com,1926,TN30 7DR,51.074535,0.707977
-Bexleyheath Golf Club,clubv1,https://bexleyheath.hub.clubv1.com,2757,DA6 8JS,51.452139,0.129389
-Nevill Golf Club,intelligent_golf,https://www.nevillgolfclub.co.uk/visitorbooking,11,TN2 5JW,51.115467,0.279763
-Cottesmore Golf Club,esp,https://www.e-s-p.com/elitelive,143,RH11 9AT,51.085854,-0.223245
-Broome Park Golf Club,brs,https://visitors.brsgolf.com/broomepark,1,CT4 6QX,51.189959,1.177073
-Horsham Golf Club,intelligent_golf,https://horsham.intelligentgolf.co.uk/visitorbooking,1,RH13 0AX,51.047085,-0.336922
-Crowborough Beacon Golf Club,intelligent_golf,https://www.cbgc.co.uk/visitorbooking,1,TN6 1UJ,51.048097,0.148172
-Royal Cinque Ports Golf Club,intelligent_golf,https://royalcinqueports.intelligentgolf.co.uk/visitorbooking,1732,CT14 6RF,51.240676,1.396277
-Dale Hill Golf Club (Ian Woosnam),shiji,https://bookteetime.dalehill.co.uk,C02,TN5 7DQ,51.048977,0.422304
-Dale Hill Golf Club (Old),shiji,https://bookteetime.dalehill.co.uk,C01,TN5 7DQ,51.048977,0.422304
-East Sussex National (East),shiji,https://book.eastsussexnational.co.uk,ESN,BN8 5ES,50.889536,0.052298
-East Sussex National (West),shiji,https://book.eastsussexnational.co.uk,ESW,BN8 5ES,50.889536,0.052298
-High Elms Golf Course (18 Holes),gladstone,https://mytimeactive.gladstonego.cloud,HEG/HEG18H,BR6 7JL,51.341861,0.064988
-High Elms Golf Course (9 Holes),gladstone,https://mytimeactive.gladstonego.cloud,HEG/HEG9H,BR6 7JL,51.341861,0.064988
-Orpington Golf Centre (Cray 18 Holes),gladstone,https://mytimeactive.gladstonego.cloud,OGC/OGC18HC,BR5 3HY,51.405549,0.120810
-Orpington Golf Centre (Cray 9 Holes),gladstone,https://mytimeactive.gladstonego.cloud,OGC/OGC9HC,BR5 3HY,51.405549,0.120810
-Orpington Golf Centre (Ruxley 9 Holes),gladstone,https://mytimeactive.gladstonego.cloud,OGC/OGC9HR,BR5 3HY,51.405549,0.120810
-Bromley Golf Centre (18 Holes),gladstone,https://mytimeactive.gladstonego.cloud,BGC/BGC18H,BR2 8JF,51.383173,0.044570
-Bromley Golf Centre (9 Holes),gladstone,https://mytimeactive.gladstonego.cloud,BGC/BGC9H,BR2 8JF,51.383173,0.044570
-Poult Wood Golf Course (18 Holes),gladstone,https://tma.gladstonego.cloud,PWGC/PWG18H,TN11 9QR,51.220088,0.298161
-Poult Wood Golf Course (9 Holes),gladstone,https://tma.gladstonego.cloud,PWGC/PWG9HO,TN11 9QR,51.220088,0.298161
-The Richmond Golf Club,clubv1,https://therichmond.hub.clubv1.com,11700,TW10 7AS,51.439808,-0.296859
-The Woldingham Golf Club,esp,https://www.e-s-p.com/elitelive,1696,CR3 7HA,51.297910,-0.050926
-North Downs Golf Course,golf_manager,https://northdownsgolfclub.golfmanager.com,,CR3 7AA,51.277296,-0.033131
-Croham Hurst Golf Course,intelligent_golf,https://www.chgc.co.uk/visitorbooking,1,CR2 7HJ,51.358417,-0.078336
-Guildford Golf Club,intelligent_golf,https://guildford.intelligentgolf.co.uk/visitorbooking,303,GU1 2HL,51.240565,-0.536126
-Clandon Regis Golf Club,intelligent_golf,https://clandonregis.intelligentgolf.co.uk/visitorbooking,3,GU4 7TT,51.257107,-0.500216
-Abbey Moor Golf Club,brs,https://visitors.brsgolf.com/abbeymoor,1,KT15 2XU,51.376667,-0.502624
-Shirley Park Golf Club,intelligent_golf,https://www.shirleyparkgolfclub.co.uk/visitorbooking,1,CR0 7LB,51.375773,-0.061387
-Dorking Golf Club,intelligent_golf,https://www.dorkinggolfclub.co.uk/visitorbooking,59,RH5 4BX,51.225791,-0.319808
-Tyrrells Wood Golf Course,intelligent_golf,https://www.tyrrellswoodgolfclub.com/visitorbooking,1144,KT22 8QP,51.285400,-0.296567
-Reigate Hill Golf Club,intelligent_golf,https://reigatehill.intelligentgolf.co.uk/visitorbooking,1,RH2 0TU,51.262039,-0.179511
-Malden Golf Club,clubv1,https://malden.hub.clubv1.com,7465,KT3 4RS,51.410017,-0.258408
-Coombe Wood Golf Club,intelligent_golf,https://www.coombewoodgolf.com/visitorbooking,1,KT2 7NS,51.418696,-0.276071
-West Byfleet Golf Club,intelligent_golf,https://westbyfleet.intelligentgolf.co.uk/visitorbooking,312,KT14 6AA,51.334608,-0.511716
-Woodcote Park Golf Club,brs,https://visitors.brsgolf.com/woodcotepark,1,CR5 2QQ,51.328450,-0.150844
-Milford Golf Club,intelligent_golf,https://golf.milfordgolf.co.uk/visitorbooking,1,GU8 5HS,51.169848,-0.638982
-Sutton Green Golf Club,esp,https://www.e-s-p.com/elitelive,931,GU4 7QF,51.284932,-0.560586
-Clandon Golf,brs,https://visitors.brsgolf.com/clandon,1,GU4 7AA,51.245441,-0.524136
-Bramley Golf Club,intelligent_golf,https://www.bramleygolfclub.co.uk/visitorbooking,1,GU5 0AL,51.199043,-0.565625
-West Surrey Golf Club,intelligent_golf,https://www.wsgc.co.uk/visitorbooking,348,GU8 5AF,51.156445,-0.630896
-Reigate Heath Golf Club,intelligent_golf,https://members.reigateheathgc.com/visitorbooking,64,RH2 8QR,51.232963,-0.232211
-Surbiton Golf Club,brs,https://visitors.brsgolf.com/surbiton,1,KT9 1UG,51.369955,-0.324420
-Kingswood Golf & Country Club,intelligent_golf,https://www.kingswood-golf.co.uk/visitorbooking,61,KT20 6NE,51.284836,-0.206315
-Hurtmore Golf Club,brs,https://visitors.brsgolf.com/hurtmore,1,GU7 2RN,51.199115,-0.642471
-Surrey National Golf Club,esp,https://www.e-s-p.com/elitelive,72,CR3 5AA,51.282370,-0.104641
-Sunbury Golf (18 Hole),intelligent_golf,https://golf.sunburygolf.co.uk/visitorbooking,1,TW17 8QA,51.405588,-0.441335
-Sunbury Golf (9 Hole),intelligent_golf,https://golf.sunburygolf.co.uk/visitorbooking,2,TW17 8QA,51.405588,-0.441335
-Burhill Golf Club,esp,https://www.e-s-p.com/elitelive,675,KT12 4BX,51.352731,-0.417278
-Gatton Manor Golf Course,brs,https://visitors.brsgolf.com/gattonmanorgc,1,RH5 5PQ,51.138896,-0.388489
-Epsom Downs Golf Club,intelligent_golf,https://www.epsomgolfclub.co.uk/visitorbooking,1,KT17 4JR,51.323227,-0.244372
-Surrey Downs Golf Club,brs,https://visitors.brsgolf.com/surreydowns,1,KT20 6JS,51.289604,-0.188933
-Thames Ditton and Esher Golf Club,brs,https://visitors.brsgolf.com/thames,1,KT10 9AL,51.378537,-0.350619
-Pyrford Golf Club,golf_manager,https://pyrfordlakes.golfmanager.com,,GU22 8XR,51.315897,-0.495073
-Mitcham Golf Club,clubv1,https://mitcham.hub.clubv1.com,5586,CR4 4HN,51.393008,-0.157614
-Addington Court Golf Club (Falconwood),intelligent_golf,https://golf.addingtoncourt-golfclub.co.uk/visitorbooking,2,CR0 9AA,51.337607,-0.020989
-Addington Court Golf Club (Academy),intelligent_golf,https://golf.addingtoncourt-golfclub.co.uk/visitorbooking,3,CR0 9AA,51.337607,-0.020989
-Addington Court Golf Club (Championship),intelligent_golf,https://golf.addingtoncourt-golfclub.co.uk/visitorbooking,1,CR0 9AA,51.337607,-0.020989
-Lingfield Park Golf Course,brs,https://visitors.brsgolf.com/lingfield,1,RH7 6PQ,51.170161,-0.001329
-Chobham Golf Club,intelligent_golf,https://chobhamgolf.intelligentgolf.co.uk/visitorbooking,1,GU21 2TZ,51.329697,-0.614923
-Limpsfield Chart Golf Club,intelligent_golf,https://www.limpsfieldchartgolf.co.uk/visitorbooking,1,RH8 0SL,51.256559,0.023798
-The Leatherhead Club,intelligent_golf,https://www.theleatherheadclub.com/visitorbooking,1,KT22 0EE,51.320891,-0.330615
-Banstead Downs Golf Club,brs,https://visitors.brsgolf.com/bansteaddowns,1,SM2 7DD,51.339776,-0.203640
-Chipstead Golf Club,intelligent_golf,https://chipstead.intelligentgolf.co.uk/visitorbooking,41,CR5 3LN,51.307880,-0.163191
-The Drift Golf Club,intelligent_golf,https://drift.intelligentgolf.co.uk/visitorbooking,141,KT24 5HD,51.289225,-0.423878
-Addington Palace Golf Club,clubv1,https://addingtonpalace.hub.clubv1.com,6107,CR0 5BB,51.355280,-0.044170
-Silvermere Golf Club,brs,https://visitors.brsgolf.com/silvermere,1,KT11 1EF,51.335097,-0.452296
-Cranleigh Golf Club,esp,https://www.e-s-p.com/elitelive,1019,GU6 7NG,51.152088,-0.474968
-Royal St Georges,,,,,,
-Littlestone,,,,,,
+club_name,platform,base_url,course_id,postcode,latitude,longitude,scrape_enabled
+The Ridge,intelligent_golf,https://www.theridge.co.uk/visitorbooking,1,ME17 3JB,51.222315,0.614479,
+Wildernesse,intelligent_golf,https://wildernesse.intelligentgolf.co.uk/visitorbooking,1,TN15 0JE,51.282364,0.222425,
+Knole Park,intelligent_golf,https://knolepark.intelligentgolf.co.uk/visitorbooking,1,TN15 0HJ,51.275988,0.202918,
+Lamberhurst,intelligent_golf,https://lamberhurst.intelligentgolf.co.uk/visitorbooking,1,TN3 8DT,51.105582,0.397563,
+Canterbury,intelligent_golf,https://canterbury.intelligentgolf.co.uk/visitorbooking,241,CT1 1TW,51.278872,1.112503,
+Cooden Beach,intelligent_golf,https://coodenbeach.intelligentgolf.co.uk/visitorbooking,1,TN39 4TR,50.835456,0.427579,
+Crowborough,intelligent_golf,https://crowborough.intelligentgolf.co.uk/visitorbooking,1,TN6 1UJ,51.048097,0.148172,
+Piltdown,intelligent_golf,https://piltdown.intelligentgolf.co.uk/visitorbooking,144,TN22 3XB,50.983061,0.064041,
+Haywards Heath,intelligent_golf,https://haywardsheath.intelligentgolf.co.uk/visitorbooking,855,RH16 1SL,51.018533,-0.097127,
+West Malling (Spitfire),intelligent_golf,https://westmalling.intelligentgolf.co.uk/visitorbooking,129,ME19 5AR,51.301867,0.367121,
+West Malling (Hurricane),intelligent_golf,https://westmalling.intelligentgolf.co.uk/visitorbooking,131,ME19 5AR,51.301867,0.367121,
+REGC (Devonshire),intelligent_golf,https://royaleastbourne.intelligentgolf.co.uk/visitorbooking,98,BN20 8BP,50.767364,0.267066,
+REGC (Hartington 9),intelligent_golf,https://royaleastbourne.intelligentgolf.co.uk/visitorbooking,99,BN20 8BP,50.767364,0.267066,
+Mannings Heath (Waterfall),intelligent_golf,https://manningsheath.intelligentgolf.co.uk/visitorbooking,80,RH13 6PG,51.052704,-0.274781,
+Mannings Heath (Kingfisher),intelligent_golf,https://manningsheath.intelligentgolf.co.uk/visitorbooking,1,RH13 6PG,51.052704,-0.274781,
+Copthorne,intelligent_golf,https://copthorne.intelligentgolf.co.uk/visitorbooking,1,RH10 3LL,51.138227,-0.110078,
+Copthorne (Back 9),intelligent_golf,https://copthorne.intelligentgolf.co.uk/visitorbooking,4,RH10 3LL,51.138227,-0.110078,
+Cinque Ports,intelligent_golf,https://members.royalcinqueports.com/visitorbooking,1732,CT14 6RF,51.240676,1.396277,
+Nizels,intelligent_golf,https://www.nizelsgolfclub.com/visitorbooking,1,TN11 8NU,51.229814,0.212544,
+The Heron (Heron-Hawk),intelligent_golf,https://www.heroncountryclub.uk/visitorbooking,1,CM13 3LW,51.584599,0.362301,
+The Heron (Hawk-Vixen),intelligent_golf,https://www.heroncountryclub.uk/visitorbooking,4,CM13 3LW,51.584599,0.362301,
+The Heron (Vixen-Heron),intelligent_golf,https://www.heroncountryclub.uk/visitorbooking,3,CM13 3LW,51.584599,0.362301,
+Westerham,esp,https://www.e-s-p.com/elitelive,615,TN16 1QN,51.269108,0.091155,
+Chart Hills,esp,https://www.e-s-p.com/elitelive,1854,TN27 8JX,51.131130,0.648177,
+Prince's,esp,https://www.e-s-p.com/elitelive,157,CT13 9QB,51.284215,1.376942,
+Sweetwoods,esp,https://www.e-s-p.com/elitelive,803,TN8 7AY,51.137459,0.089403,
+London Club,esp,https://www.e-s-p.com/elitelive,1773,TN15 7EH,51.345980,0.288429,
+Birchwood Park,esp,https://www.e-s-p.com/elitelive,2070,DA2 7HJ,51.412630,0.160455,
+Redlibbets,golf_manager,https://redlibbets.golfmanager.com,,TN15 7HT,51.366302,0.292689,
+Eastbourne Downs,golf_manager,https://eastbourne.golfmanager.com,,BN20 8ES,50.765690,0.247159,
+Willingdon,clubv1,https://willingdon.hub.clubv1.com,10566,BN20 9AA,50.789032,0.254947,
+Sundridge Park Golf Course (SPGC East),intelligent_golf,https://www.sundridgeparkgolfclub.co.uk/visitorbooking,577,BR1 3NE,51.417647,0.025080,
+Sundridge Park Golf Course (SPGC West),intelligent_golf,https://www.sundridgeparkgolfclub.co.uk/visitorbooking,578,BR1 3NE,51.417647,0.025080,
+Pedham Place Golf Centre,esp,https://www.e-s-p.com/elitelive,1312,BR8 8PP,51.384027,0.197956,
+Chelsfield Lakes Golf Club,esp,https://www.e-s-p.com/elitelive,1271,BR6 9BX,51.361656,0.115794,
+Hever Castle Golf Club (Championship),intelligent_golf,https://hever.intelligentgolf.co.uk/visitorbooking,1,TN8 7NP,51.198667,0.113499,
+Hever Castle Golf Club (Princes),intelligent_golf,https://hever.intelligentgolf.co.uk/visitorbooking,4,TN8 7NP,51.198667,0.113499,
+Royal Blackheath Golf Club,intelligent_golf,https://www.royalblackheath.com/visitorbooking,227,SE9 5AF,51.446476,0.053153,
+West Kent Golf Club,intelligent_golf,https://www.wkgc.co.uk/visitorbooking,2,BR6 7LD,51.333788,0.040709,
+Sheerness Golf Club,clubv1,https://sheerness.hub.clubv1.com,30036,ME12 3AD,51.427465,0.777180,
+Chestfield Golf Club,intelligent_golf,https://chestfield.intelligentgolf.co.uk/visitorbooking,1,CT5 3LU,51.350977,1.065323,
+The Weald of Kent Golf Course,intelligent_golf,https://wealdofkent.intelligentgolf.co.uk/visitorbooking,1,TN27 9PT,51.189198,0.604474,
+Kings Hill Golf Club,clubv1,https://kingshill.hub.clubv1.com,7925,ME19 4GF,51.268808,0.404115,
+Stonelees Golf Centre (The Executive),intelligent_golf,https://stonelees.intelligentgolf.co.uk/visitorbooking,10,CT12 5DJ,51.314429,1.350670,
+Stonelees Golf Centre (The Heights),intelligent_golf,https://stonelees.intelligentgolf.co.uk/visitorbooking,11,CT12 5DJ,51.314429,1.350670,
+Stonelees Golf Centre (Executive 9/Heights 9),intelligent_golf,https://stonelees.intelligentgolf.co.uk/visitorbooking,13,CT12 5DJ,51.314429,1.350670,
+North Foreland Golf Club (North Foreland),intelligent_golf,https://northforeland.intelligentgolf.co.uk/visitorbooking,1,CT10 3PU,51.377654,1.434799,
+North Foreland Golf Club (Par 3 Northcliffe),intelligent_golf,https://northforeland.intelligentgolf.co.uk/visitorbooking,2,CT10 3PU,51.377654,1.434799,
+Etchinghill Golf Club,esp,https://www.e-s-p.com/elitelive,687,CT18 8FA,51.118040,1.092330,
+Langley Park Golf Course,intelligent_golf,https://langleypark.intelligentgolf.co.uk/visitorbooking,1,BR3 6SZ,51.387818,-0.007454,
+Mid Sussex Golf Club,intelligent_golf,https://www.midsussexgolfclub.co.uk/visitorbooking,41,BN6 8XJ,50.928673,-0.096157,
+Ham Manor,intelligent_golf,https://www.hammanor.co.uk/visitorbooking,881,BN16 4JE,50.822574,-0.498618,
+West Sussex Golf Club,intelligent_golf,https://westsussex.intelligentgolf.co.uk/visitorbooking,1,RH20 2EN,50.939416,-0.477878,
+Bognor Regis Golf Club,clubv1,https://bognorregis.hub.clubv1.com,1164,PO22 8JD,50.799066,-0.651084,
+Seaford Golf Club,intelligent_golf,https://seaford.intelligentgolf.co.uk/visitorbooking,1,BN25 2JD,50.787655,0.108345,
+Ifield Golf and Country Club,intelligent_golf,https://www.ifieldgolf.com/visitorbooking,174,RH11 0LN,51.118582,-0.228176,
+Royal Ashdown Forest Golf Club (Old),intelligent_golf,https://www.royalashdown.co.uk/visitorbooking,6,RH18 5LR,51.087779,0.043139,
+Royal Ashdown Forest Golf Club (West),intelligent_golf,https://www.royalashdown.co.uk/visitorbooking,2,RH18 5LR,51.087779,0.043139,
+Dyke Golf Club,clubv1,https://dykegolfclub.hub.clubv1.com,9046,BN1 8YJ,50.872688,-0.200462,
+Littlehampton Golf Club,clubv1,https://littlehampton.hub.clubv1.com,15348,BN17 5DL,50.806032,-0.545176,
+Hill Barn Golf Club,esp,https://www.e-s-p.com/elitelive,1558,BN14 9QF,50.838266,-0.379351,
+Selsey Golf Club,intelligent_golf,https://selsey.intelligentgolf.co.uk/visitorbooking,1,PO20 9DR,50.745615,-0.796206,
+Singing Hills Golf Course (Lake/River),intelligent_golf,https://www.singinghillsgolfcourse.co.uk/visitorbooking,1,BN6 9EB,50.920715,-0.208726,
+Singing Hills Golf Course (Lake/Valley),intelligent_golf,https://www.singinghillsgolfcourse.co.uk/visitorbooking,2,BN6 9EB,50.920715,-0.208726,
+Singing Hills Golf Course (River/Valley),intelligent_golf,https://www.singinghillsgolfcourse.co.uk/visitorbooking,3,BN6 9EB,50.920715,-0.208726,
+Singing Hills Golf Course (River/Lake),intelligent_golf,https://www.singinghillsgolfcourse.co.uk/visitorbooking,4,BN6 9EB,50.920715,-0.208726,
+Singing Hills Golf Course (Valley/River),intelligent_golf,https://www.singinghillsgolfcourse.co.uk/visitorbooking,5,BN6 9EB,50.920715,-0.208726,
+Singing Hills Golf Course (Valley/Lake),intelligent_golf,https://www.singinghillsgolfcourse.co.uk/visitorbooking,6,BN6 9EB,50.920715,-0.208726,
+Holtye Golf Club,intelligent_golf,https://www.holtye.com/visitorbooking,1,TN8 7ED,51.131634,0.082708,
+Lewes Golf Club,brs,https://visitors.brsgolf.com/lewes,1,BN7 2BB,50.874071,0.020618,
+Lindfield Golf Course,brs,https://visitors.brsgolf.com/lindfield,1,RH16 2QN,51.014102,-0.054111,
+Lydd Golf Club,brs,https://visitors.brsgolf.com/lydd,1,TN29 9LS,50.968484,0.923197,
+Mercure Hythe Imperial Golf Course,brs,https://visitors.brsgolf.com/hythe,1,CT21 6AE,51.068196,1.094860,
+Peacehaven Golf Course,brs,https://visitors.brsgolf.com/peacehaven9,1,BN9 9UH,50.789883,0.030933,
+Pyecombe Golf Course,brs,https://visitors.brsgolf.com/pyecombe,1,BN45 7FF,50.901959,-0.159882,
+Seaford Head Golf Club,brs,https://visitors.brsgolf.com/seafordhead,1,BN25 4JS,50.765807,0.112411,
+Walmer and Kingsdown Golf Links,brs,https://visitors.brsgolf.com/walmerandkingsdown,1,CT14 8EP,51.178728,1.403298,
+Westgate and Birchington Golf Club,brs,https://visitors.brsgolf.com/westgatebirchington,1,CT8 8LT,51.378688,1.331145,
+Cuckfield Golf Centre,intelligent_golf,https://cuckfield.intelligentgolf.co.uk/visitorbooking,2,RH17 5HY,51.017213,-0.157262,
+Tilgate Forest Golf Centre,intelligent_golf,https://tilgateforest.intelligentgolf.co.uk/visitorbooking,779,RH10 5EU,51.100601,-0.179887,
+Rookwood Golf Course,intelligent_golf,https://rookwood.intelligentgolf.co.uk/visitorbooking,1,RH12 3RR,51.078661,-0.344669,
+Slinfold Golf & Country Club (Slinfold Main),intelligent_golf,https://www.slinfoldclub.co.uk/visitorbooking,22,RH13 0RE,51.061590,-0.422556,
+Slinfold Golf & Country Club (The Academy),intelligent_golf,https://www.slinfoldclub.co.uk/visitorbooking,145,RH13 0RE,51.061590,-0.422556,
+Cherry Lodge Golf Club,brs,https://visitors.brsgolf.com/cherrylodge,1,TN16 3AX,51.314861,0.052324,
+Leeds Castle Golf Course,brs,https://visitors.brsgolf.com/leedscastle,1,ME17 1PL,51.249028,0.630469,
+St Augustine's Golf Club,brs,https://visitors.brsgolf.com/staugustines,1,CT12 5JN,51.328264,1.355670,
+Sedlescombe Golf Club,esp,https://www.e-s-p.com/elitelive,1202,TN33 0SG,50.916377,0.537488,
+Darenth Valley Golf Course,esp,https://www.e-s-p.com/elitelive,844,TN14 7SA,51.331431,0.187602,
+Ashford Golf Club,clubv1,https://ashfordkent.hub.clubv1.com,8362,TN25 4NT,51.171793,0.856414,
+Tenterden Golf Club,clubv1,https://tenterden.hub.clubv1.com,1926,TN30 7DR,51.074535,0.707977,
+Bexleyheath Golf Club,clubv1,https://bexleyheath.hub.clubv1.com,2757,DA6 8JS,51.452139,0.129389,
+Nevill Golf Club,intelligent_golf,https://www.nevillgolfclub.co.uk/visitorbooking,11,TN2 5JW,51.115467,0.279763,
+Cottesmore Golf Club,esp,https://www.e-s-p.com/elitelive,143,RH11 9AT,51.085854,-0.223245,
+Broome Park Golf Club,brs,https://visitors.brsgolf.com/broomepark,1,CT4 6QX,51.189959,1.177073,
+Horsham Golf Club,intelligent_golf,https://horsham.intelligentgolf.co.uk/visitorbooking,1,RH13 0AX,51.047085,-0.336922,
+Crowborough Beacon Golf Club,intelligent_golf,https://www.cbgc.co.uk/visitorbooking,1,TN6 1UJ,51.048097,0.148172,
+Royal Cinque Ports Golf Club,intelligent_golf,https://royalcinqueports.intelligentgolf.co.uk/visitorbooking,1732,CT14 6RF,51.240676,1.396277,
+Dale Hill Golf Club (Ian Woosnam),shiji,https://bookteetime.dalehill.co.uk,C02,TN5 7DQ,51.048977,0.422304,
+Dale Hill Golf Club (Old),shiji,https://bookteetime.dalehill.co.uk,C01,TN5 7DQ,51.048977,0.422304,
+East Sussex National (East),shiji,https://book.eastsussexnational.co.uk,ESN,BN8 5ES,50.889536,0.052298,
+East Sussex National (West),shiji,https://book.eastsussexnational.co.uk,ESW,BN8 5ES,50.889536,0.052298,
+High Elms Golf Course (18 Holes),gladstone,https://mytimeactive.gladstonego.cloud,HEG/HEG18H,BR6 7JL,51.341861,0.064988,false
+High Elms Golf Course (9 Holes),gladstone,https://mytimeactive.gladstonego.cloud,HEG/HEG9H,BR6 7JL,51.341861,0.064988,false
+Orpington Golf Centre (Cray 18 Holes),gladstone,https://mytimeactive.gladstonego.cloud,OGC/OGC18HC,BR5 3HY,51.405549,0.120810,false
+Orpington Golf Centre (Cray 9 Holes),gladstone,https://mytimeactive.gladstonego.cloud,OGC/OGC9HC,BR5 3HY,51.405549,0.120810,false
+Orpington Golf Centre (Ruxley 9 Holes),gladstone,https://mytimeactive.gladstonego.cloud,OGC/OGC9HR,BR5 3HY,51.405549,0.120810,false
+Bromley Golf Centre (18 Holes),gladstone,https://mytimeactive.gladstonego.cloud,BGC/BGC18H,BR2 8JF,51.383173,0.044570,false
+Bromley Golf Centre (9 Holes),gladstone,https://mytimeactive.gladstonego.cloud,BGC/BGC9H,BR2 8JF,51.383173,0.044570,false
+Poult Wood Golf Course (18 Holes),gladstone,https://tma.gladstonego.cloud,PWGC/PWG18H,TN11 9QR,51.220088,0.298161,
+Poult Wood Golf Course (9 Holes),gladstone,https://tma.gladstonego.cloud,PWGC/PWG9HO,TN11 9QR,51.220088,0.298161,
+The Richmond Golf Club,clubv1,https://therichmond.hub.clubv1.com,11700,TW10 7AS,51.439808,-0.296859,
+The Woldingham Golf Club,esp,https://www.e-s-p.com/elitelive,1696,CR3 7HA,51.297910,-0.050926,
+North Downs Golf Course,golf_manager,https://northdownsgolfclub.golfmanager.com,,CR3 7AA,51.277296,-0.033131,
+Croham Hurst Golf Course,intelligent_golf,https://www.chgc.co.uk/visitorbooking,1,CR2 7HJ,51.358417,-0.078336,
+Guildford Golf Club,intelligent_golf,https://guildford.intelligentgolf.co.uk/visitorbooking,303,GU1 2HL,51.240565,-0.536126,
+Clandon Regis Golf Club,intelligent_golf,https://clandonregis.intelligentgolf.co.uk/visitorbooking,3,GU4 7TT,51.257107,-0.500216,
+Abbey Moor Golf Club,brs,https://visitors.brsgolf.com/abbeymoor,1,KT15 2XU,51.376667,-0.502624,
+Shirley Park Golf Club,intelligent_golf,https://www.shirleyparkgolfclub.co.uk/visitorbooking,1,CR0 7LB,51.375773,-0.061387,
+Dorking Golf Club,intelligent_golf,https://www.dorkinggolfclub.co.uk/visitorbooking,59,RH5 4BX,51.225791,-0.319808,
+Tyrrells Wood Golf Course,intelligent_golf,https://www.tyrrellswoodgolfclub.com/visitorbooking,1144,KT22 8QP,51.285400,-0.296567,
+Reigate Hill Golf Club,intelligent_golf,https://reigatehill.intelligentgolf.co.uk/visitorbooking,1,RH2 0TU,51.262039,-0.179511,
+Malden Golf Club,clubv1,https://malden.hub.clubv1.com,7465,KT3 4RS,51.410017,-0.258408,
+Coombe Wood Golf Club,intelligent_golf,https://www.coombewoodgolf.com/visitorbooking,1,KT2 7NS,51.418696,-0.276071,
+West Byfleet Golf Club,intelligent_golf,https://westbyfleet.intelligentgolf.co.uk/visitorbooking,312,KT14 6AA,51.334608,-0.511716,
+Woodcote Park Golf Club,brs,https://visitors.brsgolf.com/woodcotepark,1,CR5 2QQ,51.328450,-0.150844,
+Milford Golf Club,intelligent_golf,https://golf.milfordgolf.co.uk/visitorbooking,1,GU8 5HS,51.169848,-0.638982,
+Sutton Green Golf Club,esp,https://www.e-s-p.com/elitelive,931,GU4 7QF,51.284932,-0.560586,
+Clandon Golf,brs,https://visitors.brsgolf.com/clandon,1,GU4 7AA,51.245441,-0.524136,
+Bramley Golf Club,intelligent_golf,https://www.bramleygolfclub.co.uk/visitorbooking,1,GU5 0AL,51.199043,-0.565625,
+West Surrey Golf Club,intelligent_golf,https://www.wsgc.co.uk/visitorbooking,348,GU8 5AF,51.156445,-0.630896,
+Reigate Heath Golf Club,intelligent_golf,https://members.reigateheathgc.com/visitorbooking,64,RH2 8QR,51.232963,-0.232211,
+Surbiton Golf Club,brs,https://visitors.brsgolf.com/surbiton,1,KT9 1UG,51.369955,-0.324420,
+Kingswood Golf & Country Club,intelligent_golf,https://www.kingswood-golf.co.uk/visitorbooking,61,KT20 6NE,51.284836,-0.206315,
+Hurtmore Golf Club,brs,https://visitors.brsgolf.com/hurtmore,1,GU7 2RN,51.199115,-0.642471,
+Surrey National Golf Club,esp,https://www.e-s-p.com/elitelive,72,CR3 5AA,51.282370,-0.104641,
+Sunbury Golf (18 Hole),intelligent_golf,https://golf.sunburygolf.co.uk/visitorbooking,1,TW17 8QA,51.405588,-0.441335,
+Sunbury Golf (9 Hole),intelligent_golf,https://golf.sunburygolf.co.uk/visitorbooking,2,TW17 8QA,51.405588,-0.441335,
+Burhill Golf Club,esp,https://www.e-s-p.com/elitelive,675,KT12 4BX,51.352731,-0.417278,
+Gatton Manor Golf Course,brs,https://visitors.brsgolf.com/gattonmanorgc,1,RH5 5PQ,51.138896,-0.388489,
+Epsom Downs Golf Club,intelligent_golf,https://www.epsomgolfclub.co.uk/visitorbooking,1,KT17 4JR,51.323227,-0.244372,
+Surrey Downs Golf Club,brs,https://visitors.brsgolf.com/surreydowns,1,KT20 6JS,51.289604,-0.188933,
+Thames Ditton and Esher Golf Club,brs,https://visitors.brsgolf.com/thames,1,KT10 9AL,51.378537,-0.350619,
+Pyrford Golf Club,golf_manager,https://pyrfordlakes.golfmanager.com,,GU22 8XR,51.315897,-0.495073,
+Mitcham Golf Club,clubv1,https://mitcham.hub.clubv1.com,5586,CR4 4HN,51.393008,-0.157614,
+Addington Court Golf Club (Falconwood),intelligent_golf,https://golf.addingtoncourt-golfclub.co.uk/visitorbooking,2,CR0 9AA,51.337607,-0.020989,
+Addington Court Golf Club (Academy),intelligent_golf,https://golf.addingtoncourt-golfclub.co.uk/visitorbooking,3,CR0 9AA,51.337607,-0.020989,
+Addington Court Golf Club (Championship),intelligent_golf,https://golf.addingtoncourt-golfclub.co.uk/visitorbooking,1,CR0 9AA,51.337607,-0.020989,
+Lingfield Park Golf Course,brs,https://visitors.brsgolf.com/lingfield,1,RH7 6PQ,51.170161,-0.001329,
+Chobham Golf Club,intelligent_golf,https://chobhamgolf.intelligentgolf.co.uk/visitorbooking,1,GU21 2TZ,51.329697,-0.614923,
+Limpsfield Chart Golf Club,intelligent_golf,https://www.limpsfieldchartgolf.co.uk/visitorbooking,1,RH8 0SL,51.256559,0.023798,
+The Leatherhead Club,intelligent_golf,https://www.theleatherheadclub.com/visitorbooking,1,KT22 0EE,51.320891,-0.330615,
+Banstead Downs Golf Club,brs,https://visitors.brsgolf.com/bansteaddowns,1,SM2 7DD,51.339776,-0.203640,
+Chipstead Golf Club,intelligent_golf,https://chipstead.intelligentgolf.co.uk/visitorbooking,41,CR5 3LN,51.307880,-0.163191,
+The Drift Golf Club,intelligent_golf,https://drift.intelligentgolf.co.uk/visitorbooking,141,KT24 5HD,51.289225,-0.423878,
+Addington Palace Golf Club,clubv1,https://addingtonpalace.hub.clubv1.com,6107,CR0 5BB,51.355280,-0.044170,
+Silvermere Golf Club,brs,https://visitors.brsgolf.com/silvermere,1,KT11 1EF,51.335097,-0.452296,
+Cranleigh Golf Club,esp,https://www.e-s-p.com/elitelive,1019,GU6 7NG,51.152088,-0.474968,
+Royal St Georges,,,,,,,
+Littlestone,,,,,,,

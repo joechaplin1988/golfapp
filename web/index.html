@@ -51,6 +51,7 @@
   .chev { color:var(--muted); font-size:.9rem; transition:transform .15s; }
   details[open] > summary .chev { transform:rotate(180deg); }
   .times { border-top:1px solid var(--line); padding:6px 14px 10px; display:flex; flex-direction:column; }
+  .profile { color:var(--muted); font-size:.82rem; padding:6px 0 2px; }
   .row { display:flex; align-items:center; gap:14px; padding:8px 0; border-bottom:1px dashed var(--line); }
   .row:last-child { border-bottom:0; }
   .time { font-size:1.15rem; font-weight:700; font-variant-numeric:tabular-nums; min-width:60px; }
@@ -251,7 +252,8 @@ function groupByCourse(rows) {
     const key = t.club_name + "|" + (t.course_name || "");
     let g = groups.get(key);
     if (!g) {
-      g = { club: t.club_name, course: t.course_name, distance_km: t.distance_km, times: [] };
+      g = { club: t.club_name, course: t.course_name, distance_km: t.distance_km,
+            courseType: t.course_type, yardage: t.yardage, times: [] };
       groups.set(key, g);
     }
     g.times.push(t);
@@ -317,6 +319,22 @@ function render() {
       '</summary>' +
       '<div class="times"></div>';
     const list = card.querySelector(".times");
+    // Course character, for someone who doesn't know the area. Lives in the
+    // expanded panel, not the summary line: the card is already at its limit,
+    // and this is "help me choose", not "help me scan". Either fact may be
+    // missing — show whichever we have, and nothing at all if neither.
+    // Capitalise the type in JS, not with text-transform: that would also
+    // turn "yds" into "Yds".
+    const facts = [
+      g.courseType ? g.courseType.charAt(0).toUpperCase() + g.courseType.slice(1) : null,
+      g.yardage ? Number(g.yardage).toLocaleString() + " yds" : null,
+    ].filter(Boolean);
+    if (facts.length) {
+      const p = document.createElement("div");
+      p.className = "profile";
+      p.textContent = facts.join(" · ");
+      list.appendChild(p);
+    }
     for (const t of g.times) {
       // Some council courses (Gladstone) publish availability but no price.
       const price = t.price != null ? "£" + Number(t.price).toFixed(0) : "see site";

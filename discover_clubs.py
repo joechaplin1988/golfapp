@@ -102,6 +102,9 @@ COUNTY_BOUNDS = {
     "kent": ["Kent"],
     "sussex": ["East Sussex", "West Sussex"],
     "surrey": ["Surrey"],
+    # Southend-on-Sea and Thurrock are unitary authorities, so OSM does not
+    # nest them under "Essex" — name them or the coast is missed.
+    "essex": ["Essex", "Southend-on-Sea", "Thurrock"],
 }
 
 
@@ -181,6 +184,7 @@ COUNTY_UNION_URLS = {
     "kent": "https://www.kentgolf.org/countyclubs.php",
     "sussex": "https://www.sussexgolf.org/countyclubs.php",
     "surrey": "https://www.surreygolf.org/countyclubs.php",   # same CMS, 111 clubs
+    "essex": "https://www.essexgolf.org/countyclubs.php",     # same CMS, 70 clubs
 }
 
 SOCIAL_HOSTS = ("facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com", "youtube.com")
@@ -245,6 +249,14 @@ def enumerate_county_union(county: str, refresh: bool = False) -> dict[str, str]
     return sites
 
 
+# County unions list artisan sections, ladies' sections and society groups as
+# separate "clubs". They play the host club's course and have no tee sheet of
+# their own, so they are not candidates.
+NOT_A_SEPARATE_COURSE_RE = re.compile(
+    r"\bartisans?\b|\bladies only\b|\bfriends of\b|\bsociety\b|\bseniors\b|\bveterans\b",
+    re.I)
+
+
 def cmd_enumerate(args):
     osm = enumerate_osm(args.county, refresh=args.refresh)
     union_sites = enumerate_county_union(args.county, refresh=args.refresh)
@@ -266,6 +278,30 @@ def cmd_enumerate(args):
 
     with_site = sum(1 for c in osm if c.get("official_site"))
     log.info(f"[{args.county}] matched {with_site}/{len(osm)} OSM clubs to a website via the county union")
+
+    # Clubs the county union lists but OSM has no feature for were silently
+    # DROPPED until 2026-09-10 — 49 across Kent/Sussex/Surrey/Essex, including
+    # Rochford Hundred, Romford, Southend-on-Sea and Gosfield Lake. OSM
+    # coverage of golf courses is good but not complete, and the union is the
+    # authoritative membership list, so keep both. No lat/lon on these: the
+    # postcode comes off the club's own site at probe time and geocode fills
+    # the coordinates, exactly as it does for an OSM club with no postcode.
+    osm_norms = {norm_club_name(c["name"]) for c in osm}
+
+    def already_have(name: str) -> bool:
+        n = norm_club_name(name)
+        return any(n == o or (n and (n in o or o in n)) for o in osm_norms)
+
+    extra = 0
+    for name, site in union_sites.items():
+        if already_have(name) or NOT_A_SEPARATE_COURSE_RE.search(name):
+            continue
+        osm.append({"name": name, "official_site": site, "lat": None, "lon": None,
+                    "source": "county_union"})
+        osm_norms.add(norm_club_name(name))
+        extra += 1
+    if extra:
+        log.info(f"[{args.county}] + {extra} club(s) the union lists that OSM does not have")
 
     Path(args.out).write_text(json.dumps(osm, indent=2), encoding="utf-8")
     log.info(f"Wrote {len(osm)} candidate(s) -> {args.out}")

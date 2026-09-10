@@ -311,11 +311,22 @@ def gladstone_rows(s, name, evidence_url):
     if not site:
         return [row(club_name=name, platform="gladstone", base_url=base, verified=False,
                     evidence="no site on this tenant matches the club name")]
-    golf_groups = [g for g in groups if g["id"].startswith(site["id"])
-                   and re.search(r"\b\d+\s*hole", g.get("description", ""), re.I)]
+    # "18 Holes" (Mytime/TM Active) or a generically-named tee-off group
+    # (Impulse Leisure calls Belhus Park's "Golf Course Tee Off"). Everything
+    # else on a leisure tenant — lessons, buggies, footgolf, hire — is noise.
+    def is_tee_off(g):
+        d = g.get("description", "")
+        if re.search(r"lesson|coach|buggy|buggies|hire|footgolf|range|kidz|kids|junior", d, re.I):
+            return False
+        return bool(re.search(r"\b\d+\s*hole", d, re.I)
+                    or re.search(r"tee[- ]?off|golf course", d, re.I))
+
+    golf_groups = [g for g in groups if g["id"].startswith(site["id"]) and is_tee_off(g)]
     rows = []
     for g in golf_groups:
-        club = gc.ClubConfig(club_name=name, platform="gladstone", base_url=base, course_id=f"{site['id']}/{g['id']}")
+        hint = "" if re.search(r"\b\d+\s*hole", g.get("description", ""), re.I) else "18"
+        ref = f"{site['id']}/{g['id']}" + (f"/{hint}" if hint else "")
+        club = gc.ClubConfig(club_name=name, platform="gladstone", base_url=base, course_id=ref)
         found = None
         for i in range(SCAN_DAYS):
             d = (date.today() + timedelta(days=i)).isoformat()
@@ -327,7 +338,7 @@ def gladstone_rows(s, name, evidence_url):
                 break
         label = re.sub(r"\(web\)", "", g["description"], flags=re.I).strip()
         rows.append(row(club_name=f"{name} ({label})", platform="gladstone", base_url=base,
-                        course_id=f"{site['id']}/{g['id']}", postcode=site.get("address", {}).get("postalCode", ""),
+                        course_id=ref, postcode=site.get("address", {}).get("postalCode", ""),
                         verified=bool(found),
                         evidence=f"{found[1]} slots on {found[0]}" if found else "no free slot in 14 days"))
     return rows
