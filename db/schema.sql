@@ -59,10 +59,10 @@ create table courses (
     name            text not null,                 -- 'Spitfire', 'Kingfisher'; = club name if single-course
 
     -- Which scraper owns this row (mirrors clubs_config.csv's platform column).
-    platform        text not null check (platform in (
-                        'intelligent_golf', 'esp', 'golf_manager', 'clubv1',
-                        'brs', 'concept_shiji', 'chronogolf'   -- deferred, listed so adding them needs no migration
-                    )),
+    -- Format check only. This was a list of allowed platform names once; it
+    -- drifted from golf_common.PLATFORMS and silently blocked two new
+    -- scrapers (see db/migrations/001). The scrapers own the vocabulary.
+    platform        text not null check (platform ~ '^[a-z][a-z0-9_]{2,31}$'),
     base_url        text not null,                 -- platform entry point
     course_ref      text not null default '',      -- the PLATFORM's own course id (IG course / ESP clubid /
                                                    -- GM idResource / ClubV1 courseId). '' where the platform needs

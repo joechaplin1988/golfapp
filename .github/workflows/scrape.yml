@@ -36,6 +36,11 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+      - name: Apply pending DB migrations
+        env:
+          DATABASE_URL: ${{ secrets.GOLF_APP }}
+        run: python apply_migrations.py
+
       - name: Scrape upcoming dates -> Supabase
         env:
           # Repo secret GOLF_APP holds the Supabase connection string in libpq

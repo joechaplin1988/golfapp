@@ -92,25 +92,36 @@ def print_plan(clubs: dict, skipped: list[str]) -> None:
 
 
 def load(clubs: dict) -> None:
+    """One transaction PER CLUB. The first version wrapped the whole sync in
+    one transaction, so when the DB rejected two new platforms (a CHECK
+    constraint on courses.platform, 2026-09-09) it silently rolled back every
+    other new club too — a whole Surrey batch scraped fine and then had no
+    course rows to write to. Now a bad club is logged and skipped, the rest
+    go live."""
+    n_clubs = n_courses = 0
+    failed: list[str] = []
     with golf_db.get_connection() as conn:
-        with conn.cursor() as cur:
-            n_clubs = n_courses = 0
-            for c in clubs.values():
-                club_id = golf_db.upsert_club(
-                    cur, slug=c["slug"], name=c["name"], postcode=c["postcode"],
-                    latitude=c["latitude"], longitude=c["longitude"],
-                    dedupe_courses=c["dedupe_courses"],
-                )
-                n_clubs += 1
-                for co in c["courses"]:
-                    golf_db.upsert_course(
-                        cur, club_id=club_id, name=co["name"], platform=co["platform"],
-                        base_url=co["base_url"], course_ref=co["course_ref"],
-                        scrape_enabled=co["scrape_enabled"],
+        for c in clubs.values():
+            try:
+                with conn.transaction(), conn.cursor() as cur:
+                    club_id = golf_db.upsert_club(
+                        cur, slug=c["slug"], name=c["name"], postcode=c["postcode"],
+                        latitude=c["latitude"], longitude=c["longitude"],
+                        dedupe_courses=c["dedupe_courses"],
                     )
-                    n_courses += 1
-        conn.commit()
-    log.info(f"Upserted {n_clubs} club(s) and {n_courses} course(s)")
+                    for co in c["courses"]:
+                        golf_db.upsert_course(
+                            cur, club_id=club_id, name=co["name"], platform=co["platform"],
+                            base_url=co["base_url"], course_ref=co["course_ref"],
+                            scrape_enabled=co["scrape_enabled"],
+                        )
+                n_clubs += 1
+                n_courses += len(c["courses"])
+            except Exception as e:
+                failed.append(c["name"])
+                log.error(f"config -> DB: skipped club {c['name']!r}: {e}")
+    log.info(f"Upserted {n_clubs} club(s) and {n_courses} course(s)"
+             + (f"; {len(failed)} club(s) skipped: {', '.join(failed)}" if failed else ""))
 
 
 if __name__ == "__main__":
