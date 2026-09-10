@@ -36,6 +36,9 @@ SHARED_NINES_CLUBS = {
     "The Heron",              # Heron/Hawk/Vixen -> 3 combos
     "Singing Hills Golf Course",  # Lake/River/Valley -> 6 combos, each slot on 2 sheets
     "Stonelees Golf Centre",  # Executive + Heights + a 9/9 combo of both
+    "Cams Hall Estate Golf Course",  # Creek + Park nines -> 5 combos
+    "Weybrook Park Golf Club",       # East + West nines -> 3 combos
+    "Test Valley Golf Club",         # full 18 + its own front 9
 }
 
 

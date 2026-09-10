@@ -1,8 +1,8 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **seven platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone) — **161 clubs / 189 sheets per scheduled run (2026-09-10)**, Kent,
-Sussex, Surrey and Essex done and Hampshire in progress, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
+ClubV1, BRS, Shiji, Gladstone) — **183 clubs / 221 sheets per scheduled run (2026-09-10)**, Kent,
+Sussex, Surrey, Essex and Hampshire fingerprinted, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
 
@@ -708,6 +708,22 @@ Two of the four "ready" were false: Chelmsford's `/visitorbooking/` is its
 **competition** booking page, and Colchester's needs a login. Both were
 caught by opening them, not by the pattern — the path convention is a hint,
 never proof.
+
+### Hampshire batch 1 — 22 clubs / 32 sheets (2026-09-10)
+88 fingerprinted → 25 ready → 22 clubs verified and live (IG 15, BRS 3,
+ClubV1 3, GM 1). `57 ok, 7 empty, 0 error; 2263 tee times`.
+
+**A Jersey club got through the name-based island filter.** "Wheatlands Golf
+Club" gives no clue in its name; only its postcode (JE3 7ED) does. Approved
+rows are now checked against Channel Islands / Isle of Man / Isle of Wight
+postcode prefixes, which doesn't depend on naming at all. Three duplicate
+sheets were also dropped, where the map lists one club under two names
+(Basingstoke Pitch and Putt, South Petersfield ×2).
+
+Three of these clubs sell the same holes as several combinations — Cams Hall
+(Creek + Park → 5 sheets), Weybrook Park (East + West → 3), Test Valley (18 +
+its own front 9) — so they join The Heron, Singing Hills and Stonelees in
+`SHARED_NINES_CLUBS`.
 
 ### Hampshire — mainland only (2026-09-10)
 The union is at hampshiregolf.org**.uk** (not .org) but is the same CMS, 77
