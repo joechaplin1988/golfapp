@@ -254,9 +254,11 @@ enrich_courses.py proposes -> course_profiles.csv is hand-checked ->
 load_config_to_db syncs to courses.course_type/yardage (blank never
 overwrites). Migration 002 adds columns + rebuilds the RPC.
 
-**Mytime Active is unreachable from CI (2026-09-10)**: their Cloudflare
-403s the GitHub runner but serves a home connection fine, with either user
-agent - so it's the runner IP/TLS fingerprint, not our identity. Not worked
+**2 of 3 Gladstone tenants are unreachable from CI (2026-09-10)**: Mytime
+Active AND Impulse Leisure (Belhus Park) 403 the GitHub runner but serve a
+home connection fine, with either user agent - so it's the runner IP/TLS
+fingerprint, not our identity. TM Active (Poult Wood) works, so it is
+per-tenant Cloudflare config. Not worked
 around (that's circumvention). The 7 sheets are PARKED via a new optional
 `scrape_enabled` column in clubs_config.csv (false = keep the row and the
 reason, skip the scrape) so 49 errors a run stop masking real failures.

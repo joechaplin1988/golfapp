@@ -774,9 +774,12 @@ hours and know resolves — is preferred over the directory.
 
 ### Parked courses, and Cloudflare vs the CI runner (2026-09-10)
 `clubs_config.csv` now has an optional `scrape_enabled` column; `false`
-parks a row (kept, with its reason, but not scraped). First use: the seven
-**Mytime Active** sheets (High Elms 18/9, Orpington Cray 18/9 + Ruxley 9,
-Bromley 18/9). Their tenant sits behind Cloudflare, which answers **403 to
+parks a row (kept, with its reason, but not scraped). Parked so far: the
+seven **Mytime Active** sheets (High Elms 18/9, Orpington Cray 18/9 +
+Ruxley 9, Bromley 18/9) and **Belhus Park** on the Impulse Leisure tenant.
+Two of the three Gladstone tenants block the runner; TM Active's does not,
+so this is per-tenant Cloudflare configuration, not something about
+Gladstone or about us. Their tenant sits behind Cloudflare, which answers **403 to
 the GitHub runner** while the identical request — same code, same polite
 user agent — returns 200 from a home connection. Both our own user agent and
 a browser one work from home, so this is not about how we identify
