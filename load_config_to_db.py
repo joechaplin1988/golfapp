@@ -39,6 +39,7 @@ SHARED_NINES_CLUBS = {
     "Cams Hall Estate Golf Course",  # Creek + Park nines -> 5 combos
     "Weybrook Park Golf Club",       # East + West nines -> 3 combos
     "Test Valley Golf Club",         # full 18 + its own front 9
+    "Royal Mid-Surrey Golf Club",    # Pam Barton + J H Taylor + a Composite of both
 }
 
 

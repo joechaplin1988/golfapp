@@ -213,6 +213,7 @@ North Downs Golf Course,live,surrey,golf_manager,1,CR3 7AA,,https://northdownsgo
 Pyrford Golf Club,live,surrey,golf_manager,1,GU22 8XR,,https://pyrfordlakes.golfmanager.com/consumer/ebookings?i=1&resourcetype=100070
 Reigate Heath Golf Club,live,surrey,intelligent_golf,1,RH2 8QR,,https://members.reigateheathgc.com/visitorbooking/
 Reigate Hill Golf Club,live,surrey,intelligent_golf,1,RH2 0TU,,https://reigatehill.intelligentgolf.co.uk/visitorbooking/?_ga=2.64304687.1214820610.1568516977-1622409640.1568516977
+Royal Mid-Surrey Golf Club,live,surrey,intelligent_golf,3,TW9 2SB,,
 Shirley Park Golf Club,live,surrey,intelligent_golf,1,CR0 7LB,,https://www.shirleyparkgolfclub.co.uk/visitorbooking/
 Silvermere Golf Club,live,surrey,brs,1,KT11 1EF,,
 Sunbury Golf,live,surrey,intelligent_golf,2,TW17 8QA,,https://golf.sunburygolf.co.uk/visitorbooking/
@@ -589,7 +590,6 @@ New Zealand Golf Club,unresolved,surrey,intelligent_golf,0,,intelligent_golf see
 Pachesham Golf Course,unresolved,surrey,no_site,0,,no working website found,
 Queenwood Golf Course,unresolved,surrey,unknown,0,,homepage loaded (https://www.queenwood.co.uk/) but no platform signal found on it or 0 booking-ish link(s),
 Richmond Park Golf Course,unresolved,surrey,clubv1,0,,clubv1 seen but no confirmed public visitor sheet — worth another look,https://therichmond.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-09
-Royal Mid-Surrey Golf Club,unresolved,surrey,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
 Sandown Park - Colt Course,unresolved,surrey,unknown,0,,homepage loaded (https://www.sandownparkgolf.com/) but no platform signal found on it or 5 booking-ish link(s),
 Sandown Park - Eclipse Course,unresolved,surrey,unknown,0,,homepage loaded (https://www.sandownparkgolf.com/) but no platform signal found on it or 5 booking-ish link(s),
 Sandown Park - Masters,unresolved,surrey,unknown,0,,homepage loaded (https://www.sandownparkgolf.com/) but no platform signal found on it or 5 booking-ish link(s),

@@ -1,7 +1,7 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **eight platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **235 clubs / 281 sheets per scheduled run (2026-09-10)**, Kent,
+ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **236 clubs / 284 sheets per scheduled run (2026-09-10)**, Kent,
 Sussex, Surrey, Essex, Hampshire, Hertfordshire, Berkshire and Greater London done, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
@@ -795,6 +795,39 @@ surfaced as "Worldham Golf Club: no availability in 14 days". Worldham has
 per day) and backs off on 429; the scraper paces its four party-size calls.
 Worth remembering: on this platform a rate limit is indistinguishable from
 an empty sheet unless you check the status code.
+
+### Settling the "IG seen, sheet unconfirmed" clubs (2026-09-10)
+41 clubs sat in `unresolved` because the fingerprint found an Intelligent
+Golf marker but never landed on a public sheet. That is not the same as "no
+visitor booking", and only opening the page settles it. `ig_check.py` does
+that and reports which of five things each club is:
+
+| outcome | n | meaning |
+|---|---|---|
+| `login` | 14 | sheet exists, wants a member login |
+| `unreachable` | 9 | nothing answered at any known path |
+| `public` | 6 | a real open visitor sheet |
+| `not_a_sheet` | 6 | the visitor path serves something else |
+| `already_live` | 6 | that exact sheet is already scraped |
+
+**`not_a_sheet` is a systematic trap, not a one-off.** Six clubs serve their
+**Competition Bookings** page at `/visitorbooking/` — Army, Chelmsford,
+Gillingham, North Hants, Wrotham Heath, Farleigh. Identical markup to a
+visitor sheet; only the `<title>` gives it away. Wrotham Heath had been
+sitting in the "re-probe later" pile for this reason.
+
+Of the 6 public sheets, 4 had no visitor slot in 14 days (Rochford Hundred,
+Rye, Hankley Common, Hindhead — the private-club pattern), leaving **Royal
+Mid-Surrey (3 sheets)** to add. It sells one physical 18 as Pam Barton,
+J H Taylor and a Composite, so it joins `SHARED_NINES_CLUBS`.
+
+**One duplicate the dedupe could not have caught.** "South Essex Golf Centre"
+probed clean with three courses — and its sheet's title reads *The Heron
+Country Club*, which we already scrape. One club, two hostnames
+(`southessex.intelligentgolf.co.uk` and `heroncountryclub.uk`), and the
+dedupe keys on base_url, so it saw two different clubs. The IG probe now
+records the sheet's own title in its evidence, so the next such mismatch is
+visible at review instead of shipping.
 
 ### Town search was broken for every ambiguous name (2026-09-10)
 Joe typed "swanley" and got `clearResults is not defined`. My own bug: the

@@ -1,0 +1,42 @@
+club,outcome,sheet_url,title,detail
+Rochford Hundred Golf Club,public,https://www.rochfordhundredgolfclub.co.uk/visitorbooking/,Visitor's Teetime Booking at Rochford Hundred Golf Club,public visitor tee sheet
+Army Golf Course,not_a_sheet,https://www.armygolfclub.com/visitorbooking/,Competition Bookings :: When visiting Army Golf Club you can be assured of a war,"tee-sheet markup, but the page is: Competition Bookings :: When visiting Army Golf Club you can be assured of a war"
+Barton on Sea Golf Club,login,https://bosgc.intelligentgolf.co.uk/visitorbooking/,Login Required - Barton-on-Sea Golf Club,tee sheet present but requires a member login
+Basingstoke Pitch and Putt,already_live,https://www.basingstokegolfclub.co.uk/visitorbooking/,Visitor's Teetime Booking at Basingstoke Golf Club,this sheet is already scraped under another club name
+Fleetlands Golf Club,unreachable,,,no visitor sheet found at any known path
+South Petersfield Golf Club,already_live,https://www.petersfieldgolfclub.co.uk/visitorbooking/,Visitor's Teetime Booking at Petersfield Golf Club,this sheet is already scraped under another club name
+Tournerbury Golf Course,unreachable,,,no visitor sheet found at any known path
+Chelmsford Golf Course,not_a_sheet,https://chelmsford.intelligentgolf.co.uk/visitorbooking/,Competition Bookings :: Chelmsford Golf Club,"tee-sheet markup, but the page is: Competition Bookings :: Chelmsford Golf Club"
+Colchester Golf Club,login,https://www.colchestergolfclub.com/visitorbooking/,"Login Required - Colchester Golf Club :: Golf Club, Essex, Colchester",tee sheet present but requires a member login
+Gillingham Golf Club,not_a_sheet,https://gillingham.intelligentgolf.co.uk/visitorbooking/,,no tee-sheet markup on the page
+Letchworth Golf Club,unreachable,,,no visitor sheet found at any known path
+Mill Ride Golf & Country Club,login,https://www.mill-ride.com/visitorbooking/,"Login Required - The Maidenhead Golf Club :: The Maidenhead Golf Club, Golf Cour",tee sheet present but requires a member login
+North Hants Golf Club,not_a_sheet,https://northhants.intelligentgolf.co.uk/visitorbooking/,Competition Bookings,"tee-sheet markup, but the page is: Competition Bookings"
+Play Golf Colchester (Lexden Wood Golf Course),login,https://www.colchestergolfclub.com/visitorbooking/,"Login Required - Colchester Golf Club :: Golf Club, Essex, Colchester",tee sheet present but requires a member login
+Rochester and Cobham Park Golf Club,login,https://rochester.intelligentgolf.co.uk/visitorbooking/,Login Required - Rochester & Cobham Park Golf Club :: Rochester &amp; Cobham Par,tee sheet present but requires a member login
+Rye Golf Club,public,https://www.ryegolfclub.co.uk/visitorbooking/,Visitor's Teetime Booking at Rye Golf Club,public visitor tee sheet
+Seaford College Golf Academy,already_live,https://seaford.intelligentgolf.co.uk/visitorbooking/,Visitor's Teetime Booking at Seaford Golf Club,this sheet is already scraped under another club name
+Sonning Golf Club,login,https://sonning.intelligentgolf.co.uk/visitorbooking/,Login Required - Sonning Golf Club,tee sheet present but requires a member login
+Wimbledon Park Golf Club,unreachable,,,no visitor sheet found at any known path
+Worthing Golf Club,login,https://worthing.intelligentgolf.co.uk/visitorbooking/,"Login Required - Worthing Golf Club :: WORTHING GOLF CLUB, with its two 18 hole ",tee sheet present but requires a member login
+Wrotham Heath Golf Club,not_a_sheet,https://www.wrothamheathgolfclub.co.uk/visitorbooking/,Competition Bookings :: Wrotham Heath Golf Club,"tee-sheet markup, but the page is: Competition Bookings :: Wrotham Heath Golf Club"
+Ashdown Golfers,already_live,https://www.royalashdown.co.uk/visitorbooking/,Visitor's Teetime Booking at Royal Ashdown Forest Golf Club,this sheet is already scraped under another club name
+Moore Place Golf Club,unreachable,,,no visitor sheet found at any known path
+Windlemere Ladies Golf Club,unreachable,,,no visitor sheet found at any known path
+Highgate Golf Club,login,https://highgate.intelligentgolf.co.uk/visitorbooking/,Login Required - Highgate Golf Club :: Putting our Members first at the closest ,tee sheet present but requires a member login
+Skylark Meadows Golf and Country Club,already_live,https://skylark.intelligentgolf.co.uk/visitorbooking/,Visitor's Teetime Booking at Skylark Country Club :: Skylark Golf Club,this sheet is already scraped under another club name
+Slinfold Park Golf and Country Club,already_live,https://www.slinfoldclub.co.uk/visitorbooking/,Visitor's Teetime Booking at Slinfold Club,this sheet is already scraped under another club name
+South Essex Golf Centre,public,https://southessex.intelligentgolf.co.uk/visitorbooking/,Visitor's Teetime Booking at The Heron Country Club,public visitor tee sheet
+Beaverbrook Golf Club,unreachable,,,no visitor sheet found at any known path
+Coombe Hill Golf Club,login,https://coombehill.intelligentgolf.co.uk/visitorbooking/,Login Required - Coombe Hill Golf Club,tee sheet present but requires a member login
+Dulwich and Sydenham Hill Golf Club,login,https://dulwich.intelligentgolf.co.uk/visitorbooking/,Login Required - Dulwich & Sydenham Hill Golf Club,tee sheet present but requires a member login
+Farleigh Golf Club,not_a_sheet,https://farleigh.intelligentgolf.co.uk/visitorbooking/,,no tee-sheet markup on the page
+Farnham Golf Club,login,https://farnham.intelligentgolf.co.uk/visitorbooking/,Login Required - Farnham Golf Club,tee sheet present but requires a member login
+Farnham Park Golf Course,login,https://farnham.intelligentgolf.co.uk/visitorbooking/,Login Required - Farnham Golf Club,tee sheet present but requires a member login
+Hankley Common Golf Club,public,https://hankleycommon.intelligentgolf.co.uk/visitorbooking/,Visitor's Teetime Booking at Hankley Common Golf Club :: Hankley Common Golf Clu,public visitor tee sheet
+Hindhead Golf Club,public,https://www.hindheadgolfclub.co.uk/visitorbooking/,Visitor's Teetime Booking at Hindhead Golf Club :: Hindhead Golf Club is set in ,public visitor tee sheet
+New Course,unreachable,,,no visitor sheet found at any known path
+New Zealand Golf Club,unreachable,,,no visitor sheet found at any known path
+Royal Mid-Surrey Golf Club,public,https://midsurrey.intelligentgolf.co.uk/visitorbooking/,Visitor's Teetime Booking at Royal Mid-Surrey Golf Club :: Royal Mid Surrey,public visitor tee sheet
+Woking Golf Club,login,https://woking.intelligentgolf.co.uk/visitorbooking/,Login Required - Woking Golf Club :: Woking Golf Club,tee sheet present but requires a member login
+Worplesdon Golf Club,login,https://worplesdon.intelligentgolf.co.uk/visitorbooking/,Login Required - Worplesdon Golf Club :: Worplesdon Golf Club,tee sheet present but requires a member login

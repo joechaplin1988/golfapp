@@ -90,6 +90,13 @@ def ig_rows(s, name, sheet_url):
         return [row(club_name=name, platform="intelligent_golf", base_url=base,
                     verified=False, evidence="sheet fetch failed")]
     soup = BeautifulSoup(r.text, "html.parser")
+    # The sheet's <title> names the club the way the PLATFORM knows it, which
+    # is the only reliable way to spot the same club reached by two
+    # hostnames. South Essex Golf Centre and The Heron Country Club are one
+    # club on two domains (southessex.intelligentgolf.co.uk and
+    # heroncountryclub.uk); the dedupe keys on base_url, so it saw two.
+    # Putting the title in the evidence makes the mismatch obvious at review.
+    sheet_title = (soup.title.get_text(strip=True) if soup.title else "")[:70]
 
     options = []
     for lab in soup.select("label.btn"):
@@ -123,7 +130,8 @@ def ig_rows(s, name, sheet_url):
             platform="intelligent_golf", base_url=base,
             course_id=found[2] if found else (cid or ""),
             verified=bool(found),
-            evidence=(f"{found[1]} slots on {found[0]}, href course={found[2]}" if found
+            evidence=((f"{found[1]} slots on {found[0]}, href course={found[2]}"
+                       + (f" | sheet says: {sheet_title}" if sheet_title else "")) if found
                       else f"no availability in {SCAN_DAYS} days for course={cid or '(default)'} — id unconfirmed"),
         ))
     return rows
