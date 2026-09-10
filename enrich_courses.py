@@ -68,7 +68,11 @@ LINKS_RE = (r"(?<!-)\b(?:championship|seaside|traditional|classic|true|original|
             r"coastal|old|magnificent)\s+links\b(?![- ]?(?:style|like|esque))"
             r"|\blinks\s+(?:course|golf|layout|land|holes?)\b(?![- ]?(?:style|like))"
             r"|\b(?:a|the)\s+links\s+(?:course|golf|experience)\b")
-LINKS_STYLE_RE = re.compile(r"links[- ]?(?:style|like|esque)", re.I)
+# "links-style", "links-like" and — the one that got through — "INLAND
+# links" all describe a course that plays a bit like one. The Caversham
+# sells itself as an "inland links championship course"; it is beside the
+# Thames in Reading. Someone filtering for links wants the coast.
+LINKS_STYLE_RE = re.compile(r"links[- ]?(?:style|like|esque)|inland\s+links", re.I)
 TYPES = [
     ("links", LINKS_RE),
     ("heathland", r"\bheath ?land\b"),
