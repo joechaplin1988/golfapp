@@ -460,3 +460,17 @@ Shiji, Chronogolf still deferred.
 - Web app first; mobile/PWA later; App Store in-app-purchase rules only
   matter if a future in-app "Pro" tier gets added, not for the core
   click-through model
+
+## Open items (nothing blocking; parked deliberately)
+- **Council-course access note** — 4 clubs (High Elms, Orpington, Bromley,
+  Belhus Park) are parked because Mytime Active's and Impulse Leisure's
+  Cloudflare blocks the CI runner while serving a normal connection fine.
+  Not worked around (that is circumvention). Resolution is a short email from
+  Joe to each operator asking for access; content sketched in README under
+  "Parked courses". Joe's call, deliberately deferred 2026-09-10.
+- **Google review ratings** — highest-value of the three held-back course
+  attributes, and the most complex (Places caching terms, attribution,
+  per-call billing). Joe: revisit once there are users.
+- **Course facts coverage** — 165 of 281 sheets. The blanks cluster in
+  pay-and-play and municipal courses, which are exactly the ones a newcomer
+  most needs described. Hand-filling would beat adding more clubs.

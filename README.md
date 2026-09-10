@@ -1047,8 +1047,16 @@ circumvention, so we don't. Parked rather than deleted: 49 identical errors
 a run would bury every real failure. Poult Wood is on TM Active's separate
 tenant and is unaffected — it scrapes fine (713 rows).
 
-To un-park: set `scrape_enabled` back to blank. Worth a note to Mytime
-Active asking for access if those courses matter.
+**OPEN ITEM — a note to send, when someone gets to it.** The honest way to
+un-park these is to ask. A short email to **Mytime Active** and **Impulse
+Leisure** (separately): who we are; the site links golfers to the club's own
+booking page and takes no bookings or payments; we refresh availability a few
+times a day from a cloud server; their bot protection currently blocks that;
+would they allow it, or would they rather we didn't. It has to come from Joe,
+not from the project — it is outbound contact with a real business, on behalf
+of the product, making a commitment about how their data is used. They may
+say no, in which case High Elms, Orpington, Bromley and Belhus Park stay
+parked. To un-park: set `scrape_enabled` back to blank.
 
 ### Schema migrations, and the constraint that ate two batches (2026-09-10)
 `courses.platform` had a CHECK listing every allowed platform name. It
