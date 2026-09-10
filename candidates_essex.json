@@ -4,6 +4,7 @@
     "lat": 51.6133015,
     "lon": 0.0746835,
     "source": "osm",
+    "osm_site": "https://www.chigwellgolfclub.co.uk/",
     "official_site": "https://www.chigwellgolfclub.co.uk"
   },
   {
@@ -11,6 +12,7 @@
     "lat": 51.6409419,
     "lon": 0.0936986,
     "source": "osm",
+    "osm_site": "https://www.woolstonmanor.co.uk/",
     "official_site": "https://www.woolstonmanor.co.uk"
   },
   {
@@ -18,6 +20,7 @@
     "lat": 51.6323105,
     "lon": 0.2172544,
     "source": "osm",
+    "osm_site": "https://staplefordabbottsgolf.co.uk/",
     "official_site": "https://www.staplefordabbottsgolf.co.uk"
   },
   {
@@ -25,13 +28,15 @@
     "lat": 51.637794,
     "lon": 0.2456019,
     "source": "osm",
-    "official_site": null
+    "osm_site": "https://www.brentwoodgolfclub.co.uk/",
+    "official_site": "https://www.brentwoodgolfclub.co.uk/"
   },
   {
     "name": "Bentley Golf Course",
     "lat": 51.6521551,
     "lon": 0.271707,
     "source": "osm",
+    "osm_site": "https://www.bentleygolfclub.com/",
     "official_site": "https://www.bentleygolfclub.com"
   },
   {
@@ -39,6 +44,7 @@
     "lat": 51.7333247,
     "lon": 0.038511,
     "source": "osm",
+    "osm_site": "https://www.nazeinggolfclub.co.uk/",
     "official_site": "https://www.nazeinggolfclub.co.uk"
   },
   {
@@ -46,6 +52,7 @@
     "lat": 51.8684067,
     "lon": 0.1884653,
     "source": "osm",
+    "osm_site": "",
     "official_site": null
   },
   {
@@ -53,6 +60,7 @@
     "lat": 51.6798399,
     "lon": 0.0937265,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.theydongolf.co.uk"
   },
   {
@@ -60,6 +68,7 @@
     "lat": 51.6507601,
     "lon": 0.0134039,
     "source": "osm",
+    "osm_site": "https://www.westessexgolfclub.co.uk/",
     "official_site": "https://www.westessexgolfclub.co.uk"
   },
   {
@@ -67,6 +76,7 @@
     "lat": 51.7200471,
     "lon": 0.1873414,
     "source": "osm",
+    "osm_site": "https://www.blakesgolfclub.com/",
     "official_site": "https://www.blakesgolfclub.com"
   },
   {
@@ -74,6 +84,7 @@
     "lat": 51.5411545,
     "lon": 0.3124113,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.topmeadow.co.uk"
   },
   {
@@ -81,20 +92,23 @@
     "lat": 51.5873851,
     "lon": 0.3667771,
     "source": "osm",
-    "official_site": null
+    "osm_site": "https://www.southessexgolf.co.uk/index.php",
+    "official_site": "https://www.southessexgolf.co.uk/index.php"
   },
   {
     "name": "Saffron Walden Golf Club",
     "lat": 52.0284342,
     "lon": 0.2252441,
     "source": "osm",
-    "official_site": null
+    "osm_site": "https://www.swgc.com/",
+    "official_site": "https://www.swgc.com/"
   },
   {
     "name": "Hainault Forest Golf Club",
     "lat": 51.6150622,
     "lon": 0.1404781,
     "source": "osm",
+    "osm_site": "https://www.hainaultgolfclub.co.uk/",
     "official_site": "https://www.hainaultforestgolfclub.co.uk"
   },
   {
@@ -102,6 +116,7 @@
     "lat": 51.5700492,
     "lon": 0.3706681,
     "source": "osm",
+    "osm_site": "",
     "official_site": null
   },
   {
@@ -109,6 +124,7 @@
     "lat": 51.7789698,
     "lon": 1.1277667,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.clactongolfclub.com"
   },
   {
@@ -116,6 +132,7 @@
     "lat": 51.5789554,
     "lon": 0.6976426,
     "source": "osm",
+    "osm_site": "",
     "official_site": null
   },
   {
@@ -123,6 +140,7 @@
     "lat": 51.714425,
     "lon": 0.4553482,
     "source": "osm",
+    "osm_site": "https://www.chelmsfordgc.co.uk/",
     "official_site": "https://www.chelmsfordgc.co.uk"
   },
   {
@@ -130,6 +148,7 @@
     "lat": 51.9107055,
     "lon": 0.8787967,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.colchestergolfclub.com"
   },
   {
@@ -137,6 +156,7 @@
     "lat": 51.8212754,
     "lon": 1.2333003,
     "source": "osm",
+    "osm_site": "https://www.frintongolfclub.com/",
     "official_site": "https://www.frintongolfclub.com"
   },
   {
@@ -144,6 +164,7 @@
     "lat": 51.5533865,
     "lon": 0.5696621,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.boycehillgolfclub.co.uk"
   },
   {
@@ -151,6 +172,7 @@
     "lat": 51.7870063,
     "lon": 1.1242501,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.millersbarngolf.co.uk"
   },
   {
@@ -158,6 +180,7 @@
     "lat": 51.9384419,
     "lon": 1.2425673,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.harwichanddovercourtgolfclub.com"
   },
   {
@@ -165,13 +188,15 @@
     "lat": 51.6626593,
     "lon": 0.0750045,
     "source": "osm",
-    "official_site": null
+    "osm_site": "https://www.loughtongolfclub.com/",
+    "official_site": "https://www.loughtongolfclub.com/"
   },
   {
     "name": "Maldon Golf Club",
     "lat": 51.7402597,
     "lon": 0.6688226,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.maldongolfclub.org"
   },
   {
@@ -179,6 +204,7 @@
     "lat": 51.6383137,
     "lon": 0.7856598,
     "source": "osm",
+    "osm_site": "https://www.burnhamgolfclub.co.uk/",
     "official_site": "https://www.burnhamgolfclub.co.uk"
   },
   {
@@ -186,6 +212,7 @@
     "lat": 51.8998657,
     "lon": 0.8617194,
     "source": "osm",
+    "osm_site": "https://playgolfcolchester.com/",
     "official_site": "https://www.colchestergolfclub.com"
   },
   {
@@ -193,6 +220,7 @@
     "lat": 51.7865084,
     "lon": 0.8018549,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.fivelakesgolfclub.co.uk"
   },
   {
@@ -200,6 +228,7 @@
     "lat": 51.8927396,
     "lon": 0.6080798,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.braintreegolfclub.co.uk"
   },
   {
@@ -207,6 +236,7 @@
     "lat": 51.7004013,
     "lon": 0.426785,
     "source": "osm",
+    "osm_site": "",
     "official_site": null
   },
   {
@@ -214,13 +244,15 @@
     "lat": 51.5075904,
     "lon": 0.4106565,
     "source": "osm",
-    "official_site": null
+    "osm_site": "https://stclereshallgolfclub.weebly.com/",
+    "official_site": "https://stclereshallgolfclub.weebly.com/"
   },
   {
     "name": "Orsett Golf Club",
     "lat": 51.4988069,
     "lon": 0.3903014,
     "source": "osm",
+    "osm_site": "https://www.orsettgolfclub.co.uk/",
     "official_site": "https://www.orsettgolfclub.co.uk"
   },
   {
@@ -228,6 +260,7 @@
     "lat": 51.553164,
     "lon": 0.742203,
     "source": "osm",
+    "osm_site": "https://www.garonparkgolf.co.uk/",
     "official_site": "https://www.garonparkgolf.co.uk"
   },
   {
@@ -235,6 +268,7 @@
     "lat": 51.5345688,
     "lon": 0.5801589,
     "source": "osm",
+    "osm_site": "https://www.glendalegolf.co.uk/Castle-point-golf-course",
     "official_site": "https://www.glendalegolf.co.uk/castle-point-golf-course/"
   },
   {
@@ -242,6 +276,7 @@
     "lat": 51.7799318,
     "lon": 0.6516371,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.theclubcompany.com"
   },
   {
@@ -249,6 +284,7 @@
     "lat": 51.7742879,
     "lon": 0.7056351,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.forrester-park.co.uk/golf/"
   },
   {
@@ -256,6 +292,7 @@
     "lat": 51.6096774,
     "lon": 0.6152569,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.therayleighclub.com"
   },
   {
@@ -263,6 +300,7 @@
     "lat": 51.8575377,
     "lon": 0.872314,
     "source": "osm",
+    "osm_site": "https://golf.tappages.com/",
     "official_site": "https://www.birchgrovegolfclub.com"
   },
   {
@@ -270,20 +308,23 @@
     "lat": 51.7821302,
     "lon": 0.4843131,
     "source": "osm",
-    "official_site": null
+    "osm_site": "https://www.golf-club-essex.co.uk/",
+    "official_site": "https://www.golf-club-essex.co.uk/"
   },
   {
     "name": "Haverhill Golf Club",
     "lat": 52.073723,
     "lon": 0.4685108,
     "source": "osm",
-    "official_site": null
+    "osm_site": "https://www.club-noticeboard.co.uk/haverhill/",
+    "official_site": "https://www.club-noticeboard.co.uk/haverhill/"
   },
   {
     "name": "Leigh Golf Range",
     "lat": 51.5394761,
     "lon": 0.6276746,
     "source": "osm",
+    "osm_site": "",
     "official_site": null
   },
   {
@@ -291,6 +332,7 @@
     "lat": 51.5891417,
     "lon": 0.306313,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.warleyparkgc.co.uk"
   },
   {
@@ -298,6 +340,7 @@
     "lat": 51.5959481,
     "lon": 0.34113,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.thorndonpark.com"
   },
   {
@@ -305,13 +348,15 @@
     "lat": 51.7988878,
     "lon": 1.0453793,
     "source": "osm",
-    "official_site": null
+    "osm_site": "https://www.haven.com/parks/essex/the-orchards/index.aspx",
+    "official_site": "https://www.haven.com/parks/essex/the-orchards/index.aspx"
   },
   {
     "name": "Ballards Gore",
     "lat": 51.6045031,
     "lon": 0.7475953,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.ballardsgore.com"
   },
   {
@@ -319,6 +364,7 @@
     "lat": 51.6931364,
     "lon": 0.1903662,
     "source": "osm",
+    "osm_site": "",
     "official_site": null
   },
   {
@@ -326,6 +372,7 @@
     "lat": 51.5344749,
     "lon": 0.7506511,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.thorpehallgc.co.uk"
   },
   {
@@ -333,6 +380,7 @@
     "lat": 51.7353377,
     "lon": 0.6034462,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.warrengolfclub.co.uk"
   },
   {
@@ -340,6 +388,7 @@
     "lat": 51.7297047,
     "lon": 0.6060625,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.warrengolfclub.co.uk"
   },
   {
@@ -347,6 +396,7 @@
     "lat": 51.8487884,
     "lon": 0.5788272,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.notleysgolfclub.co.uk"
   },
   {
@@ -354,6 +404,7 @@
     "lat": 51.6657585,
     "lon": 0.6608735,
     "source": "osm",
+    "osm_site": "https://www.threeriversclub.com/",
     "official_site": "https://www.threeriversclub.com"
   },
   {
@@ -361,6 +412,7 @@
     "lat": 51.513613,
     "lon": 0.2309576,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.ingrebournelinks.com"
   },
   {
@@ -368,6 +420,7 @@
     "lat": 51.5972229,
     "lon": 0.2953265,
     "source": "osm",
+    "osm_site": "https://www.ukgolfacademy.com/brentwood",
     "official_site": "https://www.brentwoodgolfclub.co.uk"
   },
   {
@@ -375,6 +428,7 @@
     "lat": 51.6754162,
     "lon": 0.4405046,
     "source": "osm",
+    "osm_site": "https://www.crondon.com/",
     "official_site": "https://www.crondon.com"
   },
   {
@@ -382,6 +436,7 @@
     "lat": 51.6846962,
     "lon": 0.1227412,
     "source": "osm",
+    "osm_site": "https://www.eppinggolfcourse.org.uk/",
     "official_site": "https://www.eppinggolfcourse.org.uk"
   },
   {
@@ -389,13 +444,15 @@
     "lat": 51.6818037,
     "lon": 0.1346143,
     "source": "osm",
-    "official_site": null
+    "osm_site": "https://www.hobbscrossgolfcentre.com/",
+    "official_site": "https://www.hobbscrossgolfcentre.com/"
   },
   {
     "name": "Abridge Golf and Country Club",
     "lat": 51.6665897,
     "lon": 0.1473394,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.abridgegolf.com"
   },
   {
@@ -403,6 +460,7 @@
     "lat": 51.6691508,
     "lon": 0.0322901,
     "source": "osm",
+    "osm_site": "",
     "official_site": null
   },
   {
@@ -410,6 +468,7 @@
     "lat": 51.5448708,
     "lon": 0.3954275,
     "source": "osm",
+    "osm_site": "https://www.golflangdon.co.uk/",
     "official_site": "https://www.langdonhillsgolfclub.co.uk"
   },
   {
@@ -417,6 +476,7 @@
     "lat": 51.9138383,
     "lon": 0.2519638,
     "source": "osm",
+    "osm_site": "https://www.elsenhamgolfandleisure.co.uk/",
     "official_site": "https://www.golfworldstansted.co.uk/"
   },
   {
@@ -424,13 +484,15 @@
     "lat": 52.059354,
     "lon": 0.2343221,
     "source": "osm",
-    "official_site": null
+    "osm_site": "https://www.chesterfordresearchpark.com/tenant-services/health-fitness/",
+    "official_site": "https://www.chesterfordresearchpark.com/tenant-services/health-fitness/"
   },
   {
     "name": "Mardyke Valley Golf Club",
     "lat": 51.5034246,
     "lon": 0.3039709,
     "source": "osm",
+    "osm_site": "https://www.mardykevalley.co.uk/",
     "official_site": "https://www.mardykevalley.co.uk"
   },
   {
@@ -438,6 +500,7 @@
     "lat": 51.773627,
     "lon": 0.0680143,
     "source": "osm",
+    "osm_site": "https://www.canonsbrook.com/",
     "official_site": "https://www.canonsbrook.com"
   },
   {
@@ -445,6 +508,7 @@
     "lat": 51.560473,
     "lon": 0.4701617,
     "source": "osm",
+    "osm_site": "https://basildongolfcourse.com/",
     "official_site": "https://www.basildongolfcourse.com"
   },
   {
@@ -452,6 +516,7 @@
     "lat": 51.6089316,
     "lon": 0.4039888,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.thebursteadgolfclub.com"
   },
   {
@@ -459,6 +524,7 @@
     "lat": 51.9057023,
     "lon": 0.6886241,
     "source": "osm",
+    "osm_site": "",
     "official_site": null
   },
   {
@@ -466,6 +532,7 @@
     "lat": 51.81886,
     "lon": 0.6534899,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.rivenhalloaksgolf.com"
   },
   {
@@ -473,6 +540,7 @@
     "lat": 51.6506119,
     "lon": 0.4240236,
     "source": "osm",
+    "osm_site": "",
     "official_site": null
   },
   {
@@ -480,13 +548,15 @@
     "lat": 51.7304554,
     "lon": 0.1666912,
     "source": "osm",
-    "official_site": null
+    "osm_site": "https://www.northwealdgolfclub.co.uk/",
+    "official_site": "https://www.northwealdgolfclub.co.uk/"
   },
   {
     "name": "Brentwood Golf Centre at Hartswood",
     "lat": 51.6072252,
     "lon": 0.3253312,
     "source": "osm",
+    "osm_site": "https://www.brentwood.gov.uk/index.php?cid=431",
     "official_site": "https://www.brentwoodgolfclub.co.uk"
   },
   {
@@ -494,6 +564,7 @@
     "lat": 51.6362288,
     "lon": 0.2056351,
     "source": "osm",
+    "osm_site": "https://staplefordabbottsgolf.co.uk/",
     "official_site": "https://www.staplefordabbottsgolf.co.uk"
   },
   {
@@ -501,6 +572,7 @@
     "lat": 51.9115416,
     "lon": 0.6850014,
     "source": "osm",
+    "osm_site": "",
     "official_site": "https://www.theclubcompany.com"
   },
   {

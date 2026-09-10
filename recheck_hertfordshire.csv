@@ -1,0 +1,37 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Brookmans Park Golf Course,,51.7261,-0.1935465,no_site,unknown,,low,still no website known
+Chadwell Springs Golf Club,,51.8036008,-0.0413514,no_site,unknown,,low,still no website known
+Verulam Golf Club,,51.7371796,-0.3250247,no_site,unknown,,low,still no website known
+Batchwood Hall Golf Club,,51.7650065,-0.3503593,no_site,unknown,,low,still no website known
+Cheshunt Park Golf Course,https://www.broxbourne.gov.uk/leisure-cheshunt-park-golf-centre/landing/cheshunt-park-golf-centre,51.7190876,-0.044089,dead_link,unknown,,low,site reachable (https://www.broxbourne.gov.uk:443/) but no visitor booking found on it or 0 sub-page(s)
+West Herts Golf Club,,51.664432,-0.4329873,no_site,unknown,,low,still no website known
+Sandy Lodge Golf Club,,51.6278758,-0.423274,no_site,unknown,,low,still no website known
+Hartsbourne Country Club,https://www.hartsbournecountryclub.co.uk/,51.6292564,-0.3553363,unknown,unknown,,low,site reachable (https://www.hartsbournecountryclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Bishop's Stortford Golf Club,,51.8684067,0.1884653,no_site,unknown,,low,still no website known
+Panshanger Golf Complex,https://www.finesseleisure.com/golf-complex,51.8084875,-0.1738601,unknown,unknown,,low,site reachable (https://finesseleisure.com/) but no visitor booking found on it or 0 sub-page(s)
+Welwyn Garden City Golf Club,https://www.welwyngardencitygolfclub.co.uk/,51.8041638,-0.2243423,unknown,unknown,,low,site reachable (https://www.welwyngardencitygolfclub.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Harpenden Common Golf Course,,51.7968219,-0.3471043,no_site,unknown,,low,still no website known
+Dyrham Park Country Club,,51.6730314,-0.2280053,no_site,unknown,,low,still no website known
+Wheathampstead Pay & Play Golf Course,https://www.wheathampsteadgolf.com/,51.8077996,-0.3113689,unknown,unknown,,low,site reachable (https://www.wheathampsteadgolfvillage.com/) but no visitor booking found on it or 1 sub-page(s)
+Ley Hill GC,,51.7075525,-0.5635208,no_site,unknown,,low,still no website known
+Letchworth Golf Club,https://www.letchworthgolfclub.co.uk,51.9622947,-0.2339869,intelligent_golf,unknown,mailto:info@intelligentgolf.co.uk,medium,site reachable (https://www.intelligentgolf.co.uk/notfound) but no visitor booking found on it or 1 sub-page(s)
+Stevenage Golf Centre,https://www.stevenage-leisure.co.uk/CentrenbspLocator/StevenageGolfConferenceCentre/tabid/207/Default.aspx,51.8810005,-0.1578221,error,unknown,,low,unreachable even with a browser user agent
+Shendish Manor Golf Course,,51.7300311,-0.4678039,no_site,unknown,,low,still no website known
+Barkway Park Golf Club,https://www.barkwayparkgolfclub.co.uk/,51.9898677,0.0253793,error,unknown,,low,unreachable even with a browser user agent
+East Herts Golf Club,https://www.easthertsgolfclub.co.uk/,51.900598,-0.0022672,unknown,unknown,,low,site reachable (https://www.easthertsgolfclub.co.uk/) but no visitor booking found on it or 3 sub-page(s)
+Three Lakes Golf Course,https://threelakespar3.co.uk/,51.8241247,-0.0577278,unknown,unknown,,low,site reachable (https://threelakespar3.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Knebworth Golf Course,,51.8774559,-0.1958838,no_site,unknown,,low,still no website known
+Stocks Golf Club,https://stocksgolfclub.co.uk/,51.8078484,-0.6104276,unknown,unknown,,low,site reachable (https://stocksgolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+The Grove,,51.6763941,-0.4348703,no_site,unknown,,low,still no website known
+Radlett Golf Academy,,51.6994923,-0.3190741,no_site,unknown,,low,still no website known
+Brickendon Grange Golf Club,,51.7517711,-0.0911097,no_site,unknown,,low,still no website known
+Chiltern Hills Golf Course,,51.6641639,-0.5270911,no_site,unknown,,low,still no website known
+Rickmansworth Golf Course,,51.6297254,-0.4505612,no_site,unknown,,low,still no website known
+Centurion Golf Club,,51.7355442,-0.3999947,no_site,unknown,,low,still no website known
+Palmerston Course,,51.8045651,-0.2378257,no_site,unknown,,low,still no website known
+Melbourne Course,,51.8007428,-0.2399185,no_site,unknown,,low,still no website known
+The Hertfordshire Golf & Country Club,https://www.thehertfordshiregolf.co.uk/,51.7444602,-0.041133,error,unknown,,low,unreachable even with a browser user agent
+The Manor of Groves Golf Course,https://www.manorofgroves.com/,51.8127842,0.1148774,unknown,unknown,,low,site reachable (https://www.manorofgroves.com/) but no visitor booking found on it or 2 sub-page(s)
+Briggens Park Golf Club,https://www.briggensparkgolfclub.com/,51.7815135,0.0490867,error,unknown,,low,unreachable even with a browser user agent
+Hanbury Manor Marriott Hotel & Country Club,https://www.marriott.co.uk/hotels/travel/stngs-hanbury-manor-marriott-hotel-and-country-club/,51.8293194,-0.0438607,unknown,unknown,,low,site reachable (https://www.marriott.com/en-gb/default.mi) but no visitor booking found on it or 1 sub-page(s)
+Chorleywood Golf Club,,51.6552715,-0.5101843,no_site,unknown,,low,still no website known

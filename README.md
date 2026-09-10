@@ -1,7 +1,7 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **eight platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **222 clubs / 268 sheets per scheduled run (2026-09-10)**, Kent,
+ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **225 clubs / 271 sheets per scheduled run (2026-09-10)**, Kent,
 Sussex, Surrey, Essex, Hampshire, Hertfordshire and Berkshire done, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
@@ -795,6 +795,35 @@ surfaced as "Worldham Golf Club: no availability in 14 days". Worldham has
 per day) and backs off on 429; the scraper paces its four party-size calls.
 Worth remembering: on this platform a rate limit is indistinguishable from
 an empty sheet unless you check the status code.
+
+### Residue passes across all seven counties (2026-09-10)
+Two different problems hide in the residue, and only one is worth rechecking:
+
+**A club with a website but no confirmed booking page** is what
+`recheck_residue.py` is for. Hertfordshire: 36 rechecked, **0** new.
+Berkshire: 32 rechecked, 3 looked ready, **1 added** (Goring & Streatley) —
+Sonning and Mill Ride turned out login-walled once opened, and Letchworth
+has a public sheet with no visitor slot in 14 days. The recheck did its job;
+the answer was genuinely no.
+
+**A club with NO website can't be rechecked at all** — there is nothing to
+fetch. 21 of Hertfordshire's 36 are in that state because its union
+directory is offline. The only lever is finding the website, so all five
+earlier counties were re-enumerated to harvest OSM's `website` tag, which
+they predate:
+
+- 272 clubs still unresolved; **179** now have a website from OSM
+- of those, **48** had a site we had never fingerprinted (the rest were
+  already-tried URLs)
+- 45 fingerprinted → 7 ready → 8 verified rows → **2 genuinely new clubs**
+  (Twisted Stone, Chartham Park)
+
+The other six verified rows were clubs we already had under a different
+name, caught by the dedupe on (platform, base_url, course_id): Weald Park =
+Brentwood at Hartswood, Skylark Meadows = Skylark, Slinfold Park = Slinfold,
+and The Cathedral/Tower Courses are both Chichester's ESP clubid. Worth
+noting how much of a county's "unresolved" pile is duplicate naming rather
+than missing clubs.
 
 ### Berkshire — a county OSM does not have (2026-09-10)
 Berkshire was abolished as an administrative county, so there is **no
