@@ -1,8 +1,8 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **seven platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone) — **129 clubs / 157 sheets per scheduled run (2026-09-10)**, the
-whole of Kent & Sussex and Surrey fingerprinted, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
+ClubV1, BRS, Shiji, Gladstone) — **158 clubs / 186 sheets per scheduled run (2026-09-10)**, Kent,
+Sussex, Surrey and Essex fingerprinted, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
 
@@ -690,6 +690,42 @@ Two platform-specific notes worth keeping:
   That's remaining-capacity data, not a bug — the player-count filter should
   use it.
 
+### Essex, and the clubs the enumerator was throwing away (2026-09-10)
+`cmd_enumerate` wrote only the OSM list. Clubs the county union lists but OSM
+has no feature for were **silently dropped** — 49 across Kent, Sussex, Surrey
+and Essex, including Rochford Hundred, Romford, Southend-on-Sea, Gosfield
+Lake, Brighton & Hove, East Brighton and Coulsdon Court. OSM's golf coverage
+is good but not complete, and the union is the authoritative membership list,
+so both are kept now. Union-only rows carry no lat/lon; the postcode comes off
+the club's site at probe time and geocode fills the rest, exactly as for an
+OSM club with no postcode. Artisan / ladies' / society sections are filtered
+out: the unions list them as clubs but they play the host course and have no
+tee sheet (the dedupe caught "Ashdown Golfers" = Royal Ashdown Forest anyway).
+
+| county | was | now |
+|---|---|---|
+| Essex | 72 | 90 |
+| Kent | 94 | 98 |
+| Sussex | 69 | 78 |
+| Surrey | 121 | 130 |
+
+**Essex batch 1**: 85 fingerprinted → 27 ready → 24 verified and live (BRS 9,
+IG 8, ESP 2, ClubV1 2, GM 1, Gladstone 1). **Recovered clubs**: 19
+fingerprinted → 6 ready → 5 new (Park Wood, Brighton & Hove, Chichester,
+East Brighton, Hampton Court Palace). Together `53 ok, 5 empty, 0 error;
+2492 tee times`. Hand fixes before applying: two clubs appeared twice because
+OSM has separate features for a course and its driving range pointing at one
+sheet (Brentwood, Stapleford Abbotts); four "(1st Tee)" qualifiers dropped
+where the second sheet had no visitor slot in 14 days; four postcodes read
+off the clubs' contact pages.
+
+**Belhus Park needed a scraper change.** Impulse Leisure is a third Gladstone
+tenant and names all 83 of its tee times "Golf Tee Off" — no hole count,
+unlike Mytime/TM Active's "18 Holes". Guessing the round length from an
+activity id like `GO5FG18S0700` would be a wrong search result, so
+`course_id` may now carry an explicit hint: `SITE/GROUP/HOLES`
+(`GOLF/GOLF/18`). Poult Wood retested unchanged.
+
 ### Course character on the search page (2026-09-10)
 "20 tee times from £45" only helps someone who already knows the courses.
 Joe's call: show **course type and yardage**, in the **expanded panel**, not
@@ -712,6 +748,29 @@ Yardage is deliberately approximate: every course plays a different length
 off each tee. We take the medal/white figure, which is what clubs quote, and
 `enrich_courses.py` keeps every candidate it saw in `all_yardages` so a
 misread scorecard is visible at review time.
+
+**Coverage is partial and that is fine** — 89 of 157 courses have at least
+one fact (30 both, 39 type only, 20 yardage only). The page omits the line
+entirely for the rest. Pulling facts off 157 unrelated club websites
+plateaus; the remainder wants hand-filling.
+
+**Two passes were thrown away before shipping, both for wrong labels:**
+1. A bare `\blinks\b` matched the "Quick Links" in site footers and labelled
+   27 courses links, Bramley and Chobham among them.
+2. Even with a golf-phrase pattern, "links" outranked the correct style
+   because it is first in the TYPES order, so Kings Hill (heathland),
+   Guildford and Seaford Head (downland) still came out links; and Thames
+   Ditton, an inland common-land course, describes itself as "links-style".
+   Now: a second, more specific style beats links, and "links-style" /
+   "links-like" does not count. Five courses are labelled links and all five
+   are coastal.
+
+Two related traps the first pass hit: the original-survey clubs (Knole Park,
+Wildernesse, West Malling, REGC) predate discovery and had no website on
+file, so `official_sites()` also reads `union_*.json` and the OSM candidate
+files; and a county-union URL can be stale (its entry for The Ridge points at
+a dead domain), so a club's own booking host — which we scrape every two
+hours and know resolves — is preferred over the directory.
 
 ### Parked courses, and Cloudflare vs the CI runner (2026-09-10)
 `clubs_config.csv` now has an optional `scrape_enabled` column; `false`

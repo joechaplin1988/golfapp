@@ -234,6 +234,16 @@ now has a scraper (7 platforms). Left: one-offs only (Rustington/Fusemetrix,
 Tonbridge GC/BookingHound, Lullingstone/Chronogolf), Tudor Park (host
 unreachable), Rye/Wrotham Heath re-probes. Next region
 order agreed: Surrey, Essex, Hampshire, Hertfordshire, Berkshire.
+**Essex + enumerator fix (2026-09-10)**: cmd_enumerate only wrote OSM clubs,
+so union-listed clubs OSM lacked were silently dropped - 49 across the four
+counties (Rochford Hundred, Romford, Southend-on-Sea, Brighton & Hove...).
+Fixed: union-only clubs are appended (no lat/lon; postcode from the club site
+at probe time), artisan/ladies/society sections filtered out. Essex batch 1
+= 24 clubs live; recovered set = 5 more -> **158 clubs / 186 sheets**.
+Belhus Park forced a gladstone change: Impulse Leisure (3rd tenant) names
+every tee time "Golf Tee Off", so course_id may carry a holes hint
+SITE/GROUP/HOLES rather than guessing from an activity id.
+
 **Course character (Joe's UX ask, 2026-09-10)**: search results told a
 stranger nothing beyond price/distance/availability. Decision: course TYPE +
 YARDAGE only, in the EXPANDED panel (card is full; this is help-me-choose not
