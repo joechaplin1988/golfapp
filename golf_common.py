@@ -54,7 +54,8 @@ REQUEST_TIMEOUT_SECONDS = 45   # some Golf Manager hosts take 20-30s to answer i
 MAX_ATTEMPTS = 2
 RETRY_BACKOFF_SECONDS = 3.0
 
-PLATFORMS = ("intelligent_golf", "esp", "golf_manager", "clubv1", "brs", "shiji", "gladstone")
+PLATFORMS = ("intelligent_golf", "esp", "golf_manager", "clubv1", "brs", "shiji", "gladstone",
+             "chronogolf")
 
 
 def setup_logging() -> None:

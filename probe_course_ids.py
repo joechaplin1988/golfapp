@@ -344,8 +344,101 @@ def gladstone_rows(s, name, evidence_url):
     return rows
 
 
+# --- Chronogolf (Lightspeed) -------------------------------------------------
+
+CHRONO_HOST = "https://www.chronogolf.com"
+# Player types that exist but are not "a visitor paying a green fee".
+CHRONO_NOT_VISITOR_RE = re.compile(
+    r"block|member|guest|ex-?member|junior|student|cardholder|county card|staff|twilight", re.I)
+
+
+def chronogolf_rows(s, name, evidence_url):
+    """club id from the widget URL -> each course -> the affiliation type that
+    actually yields availability.
+
+    The visitor player type has to be found per club, not assumed: at Bramshaw
+    the type named "Visitors" gives 44 bookable slots and the one named
+    "Public" gives none. So try the plausible ones and keep whichever produces
+    real availability.
+    """
+    import chronogolf_scraper
+    import golf_common as gc
+    m = re.search(r"/club/(\d+)", evidence_url or "")
+    base = f"{CHRONO_HOST}/club/{m.group(1)}" if m else ""
+    if not base:
+        return [row(club_name=name, platform="chronogolf", base_url=evidence_url or "",
+                    verified=False, evidence="no /club/<id> in the evidence URL")]
+    club_id = m.group(1)
+    hdr = {**UA, "Accept": "application/json", "Referer": f"{base}/widget"}
+    try:
+        courses = s.get(f"{CHRONO_HOST}/marketplace/clubs/{club_id}/courses",
+                        headers=hdr, timeout=25).json()
+        time.sleep(DELAY)
+        affs = s.get(f"{CHRONO_HOST}/marketplace/organizations/{club_id}/affiliation_types",
+                     headers=hdr, timeout=25).json()
+        time.sleep(DELAY)
+    except (requests.RequestException, ValueError) as e:
+        return [row(club_name=name, platform="chronogolf", base_url=base,
+                    verified=False, evidence=f"marketplace API failed: {e}")]
+
+    candidates = [a for a in affs
+                  if a.get("default_role") == "public"
+                  and a.get("bookable_on_marketplace")
+                  and not CHRONO_NOT_VISITOR_RE.search(a.get("name", ""))]
+    # Most clubs call it "Visitors" or "Public"; try those first.
+    candidates.sort(key=lambda a: 0 if re.search(r"visitor|public|green ?fee", a.get("name", ""), re.I) else 1)
+    if not candidates:
+        return [row(club_name=name, platform="chronogolf", base_url=base, verified=False,
+                    evidence="no public player type that looks like a visitor")]
+
+    rows = []
+    for c in courses:
+        cid, holes = str(c.get("id")), int(c.get("holes") or 18)
+        # A full scrape is four requests per day per player type; across
+        # 14 days and several candidate types that is enough to earn a 429
+        # from Chronogolf, which then looks exactly like "no availability".
+        # Ask the cheap question instead: one single-player request per day.
+        best = None
+        for aff in candidates[:4]:
+            for i in range(SCAN_DAYS):
+                d = (date.today() + timedelta(days=i)).isoformat()
+                url = chronogolf_scraper.teetimes_url(club_id, cid, aff["id"], holes, 1).format(date=d)
+                try:
+                    r = s.get(url, headers=hdr, timeout=25)
+                    time.sleep(DELAY)
+                except requests.RequestException:
+                    continue
+                if r.status_code == 429:
+                    print(f"      rate-limited on {name} — pausing")
+                    time.sleep(30)
+                    continue
+                try:
+                    slots = r.json()
+                except ValueError:
+                    continue
+                if not isinstance(slots, list):
+                    break   # e.g. "Player type provided is not valid" — try the next type
+                free = [x for x in slots if chronogolf_scraper.bookable(x)]
+                if free:
+                    best = (aff, d, len(free))
+                    break
+            if best:
+                break
+        label = c.get("name") or ""
+        rows.append(row(
+            club_name=f"{name} ({label})" if label and len(courses) > 1 else name,
+            platform="chronogolf", base_url=base,
+            course_id=f"{cid}/{best[0]['id']}" if best else f"{cid}/{candidates[0]['id']}",
+            verified=bool(best),
+            evidence=(f"{best[2]} slots on {best[1]} as '{best[0]['name']}' ({holes} holes)" if best
+                      else f"no availability in {SCAN_DAYS} days for any visitor player type"),
+        ))
+    return rows
+
+
 HANDLERS = {"intelligent_golf": ig_rows, "esp": esp_rows, "golf_manager": gm_rows, "clubv1": clubv1_rows,
-            "brs": brs_rows, "shiji": shiji_rows, "gladstone": gladstone_rows}
+            "brs": brs_rows, "shiji": shiji_rows, "gladstone": gladstone_rows,
+            "chronogolf": chronogolf_rows}
 
 
 def main():

@@ -43,6 +43,7 @@ import clubv1_scraper
 import brs_scraper
 import shiji_scraper
 import gladstone_scraper
+import chronogolf_scraper
 
 gc.setup_logging()
 log = gc.log
@@ -55,6 +56,7 @@ SCRAPE_FNS = {
     "brs": brs_scraper.scrape_club,
     "shiji": shiji_scraper.scrape_club,
     "gladstone": gladstone_scraper.scrape_club,
+    "chronogolf": chronogolf_scraper.scrape_club,
 }
 
 

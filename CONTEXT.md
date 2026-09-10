@@ -240,6 +240,22 @@ from Kent/Surrey, written down and re-runnable per county. Essex residue:
 / 189 sheets**. Trap: an IG `/visitorbooking/` path can be a COMPETITION
 booking page (Chelmsford) or need a login (Colchester) - open it, don't
 trust the convention.
+**Chronogolf scraper BUILT (2026-09-10, Joe approved)**: 5 clubs / 7 sheets
+(Bramshaw x2, Lullingstone x2, Old Thorns, Paultons, Worldham) -> **188
+clubs / 228 sheets**. Survey said reCAPTCHA - wrong, like "Cloudflare" for
+BRS. Open marketplace API at chronogolf.com/marketplace/. Two real gotchas:
+(1) party size = repeating affiliation_type_ids[] once per player, and
+green_fees returns one entry per player, so the total is the SUM - no
+multiplying, and per-slot party rules are real (112 of 398 records allow 2-4
+but NOT a single player); (2) the visitor player type is named differently
+per club ("Visitors"/"Visitor"/"Public"/"Pay & Play - Green Fee") and the
+wrong one returns a full sheet with everything restricted, which looks like
+zero availability rather than an error - so probe_course_ids tries
+candidates and stores the one that works, in course_id as course/affiliation.
+Also: Chronogolf 429s under the probe's old request volume, and a 429 is
+indistinguishable from an empty sheet (Worldham looked empty, actually has 77
+slots) - probe now uses 1 cheap request/day and backs off.
+
 **Hampshire started (2026-09-10)**: union at hampshiregolf.org.UK, same CMS,
 77 clubs; IoW + Channel Islands excluded by name (straight-line distance
 would put IoW ~15mi from Portsmouth, ferry required). 89 mainland

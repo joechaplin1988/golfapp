@@ -1,7 +1,7 @@
 # Golf Tee Time Scrapers — Usage Notes
 
-Status: **seven platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone) — **183 clubs / 221 sheets per scheduled run (2026-09-10)**, Kent,
+Status: **eight platforms live** (Intelligent Golf, ESP, Golf Manager,
+ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **188 clubs / 228 sheets per scheduled run (2026-09-10)**, Kent,
 Sussex, Surrey, Essex and Hampshire fingerprinted, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
@@ -21,6 +21,7 @@ which platform a club runs:
 | `brs_scraper.py` | BRS Golf | JSON API (club-context cookie + Referer) | 13 |
 | `shiji_scraper.py` | Shiji (hotel resorts) | open JSON API found via the booking page | 4 sheets / 2 clubs |
 | `gladstone_scraper.py` | Gladstone Go (council / leisure trusts) | JSON API, anonymous session + `X-Use-Sso` header; **no prices** | 9 sheets / 4 clubs |
+| `chronogolf_scraper.py` | Chronogolf (Lightspeed) | open marketplace JSON API | 7 sheets / 5 clubs |
 | `geocode_clubs.py` | — | Postcodes.io | fills lat/long for all |
 | `discover_clubs.py` | — | OSM + county union + each club's site | finds clubs + their platform → review CSV |
 | `probe_course_ids.py` | — | live tee sheets | approved review rows → platform ids |
@@ -708,6 +709,41 @@ Two of the four "ready" were false: Chelmsford's `/visitorbooking/` is its
 **competition** booking page, and Colchester's needs a login. Both were
 caught by opening them, not by the pattern — the path convention is a hint,
 never proof.
+
+### Chronogolf — the third platform the original survey got wrong (2026-09-10)
+The survey said reCAPTCHA. There is none on the endpoints that matter, and no
+auth or session either — the same story as BRS ("Cloudflare") and Gladstone.
+Each club's widget lives at `chronogolf.com/club/{id}/widget` and talks to an
+open marketplace API. 5 clubs, 7 sheets, `14 ok, 0 empty, 0 error; 738 tee
+times`.
+
+Two things make this platform unusual, and both are handled explicitly:
+
+**Party size is the request, not a filter.** `affiliation_type_ids[]` is
+repeated once per player, and `green_fees` comes back with one entry per
+player — so the party total is the SUM of that list. This is the only
+platform that hands us the real total for the party we asked about, which
+means a club with a discounted four-ball prices correctly without us
+assuming anything. The data shows its worth: of 398 records, 229 allow 1–4
+players, 112 allow **2–4 but not a single** and 17 allow only one. That is
+real per-slot policy we would have flattened if we had multiplied a unit
+price.
+
+**The visitor player type differs per club and must be discovered.** Across
+five clubs it is called "Visitors", "Visitor", "Public" and
+"Pay & Play - Green Fee". Worse, the wrong one looks like a working answer:
+at Bramshaw the type named "Public" returns the tee sheet with every slot
+restricted, i.e. zero availability, not an error. `probe_course_ids.py` tries
+the plausible public-role types and keeps whichever actually yields slots,
+storing its id in `course_id` as `{course}/{affiliation}`.
+
+**Rate limiting bit, and lied convincingly.** The first probe asked four
+party sizes × 14 days × several player types and earned a `429`, which
+surfaced as "Worldham Golf Club: no availability in 14 days". Worldham has
+77 slots. The probe now asks the cheap question (one single-player request
+per day) and backs off on 429; the scraper paces its four party-size calls.
+Worth remembering: on this platform a rate limit is indistinguishable from
+an empty sheet unless you check the status code.
 
 ### Hampshire batch 1 — 22 clubs / 32 sheets (2026-09-10)
 88 fingerprinted → 25 ready → 22 clubs verified and live (IG 15, BRS 3,
