@@ -1,0 +1,58 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+City Park Starter Shack,,36.8327389,-76.3701668,no_site,unknown,,low,still no website known
+New Forest Golf Club,https://www.newforestgolfclub.co.uk,50.8796172,-1.568931,brs,public,https://visitors.brsgolf.com/newforestengland#/open-competitions,high,found on https://newforestgolfclub.co.uk/
+Waterlooville Golf Course,https://www.waterloovillegolfclub.com,50.8946334,-1.0034757,clubv1,unknown,https://waterlooville.hub.clubv1.com/,medium,site reachable (https://waterloovillegolfclub.com/) but no visitor booking found on it or 1 sub-page(s)
+Tylney Park Golf Club,https://www.tylneypark.co.uk,51.2952432,-0.9799843,unknown,unknown,,low,site reachable (https://www.tylneypark.co.uk/) but no visitor booking found on it or 5 sub-page(s)
+Great Salterns Golf Course,,50.8155957,-1.0467125,no_site,unknown,,low,still no website known
+Portsmouth Golf Club,https://www.portsmouthgc.com,50.8554703,-1.0339579,error,unknown,,low,unreachable even with a browser user agent
+Rowlands Castle Golf Course,https://www.rowlandscastlegolfclub.co.uk,50.8933737,-0.9692407,unknown,unknown,,low,site reachable (https://rowlandscastlegolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+North Hants Golf Club,https://www.northhantsgolf.co.uk,51.2936527,-0.8380978,intelligent_golf,public,https://northhants.intelligentgolf.co.uk/visitorbooking/,high,club's own Intelligent Golf subdomain
+Eastney Pitch-and-Putt,,50.7818615,-1.0624763,no_site,unknown,,low,still no website known
+The Ageas Bowl County Golf Club,,50.9209744,-1.3226586,no_site,unknown,,low,still no website known
+Swanmore Golf Centre,,50.9296378,-1.1746133,no_site,unknown,,low,still no website known
+Chilworth Golf Centre,https://www.chilworthgolfclub.com,50.9684275,-1.4345947,chronogolf,unknown,https://cdn2.chronogolf.com/widgets/v2,medium,site reachable (https://www.chilworthgolfclub.com/) but no visitor booking found on it or 5 sub-page(s)
+Hartley Wintney Golf Course,https://www.hartleywintneygolfclub.com,51.3091972,-0.8896072,unknown,unknown,,low,site reachable (https://www.hartleywintneygolfclub.com/) but no visitor booking found on it or 1 sub-page(s)
+Dibden Golf Centre,https://www.bramshotthillgolfclub.org,50.8696104,-1.4308192,unknown,unknown,,low,site reachable (https://www.bramshotthillgolfclub.org/) but no visitor booking found on it or 0 sub-page(s)
+Elizabeth Manor Golf & Country Club,,36.8153617,-76.3932737,no_site,unknown,,low,still no website known
+Romsey Golf Club,https://www.romseygolfclub.com,50.9561047,-1.466845,unknown,unknown,,low,site reachable (https://www.romseygolfclub.com/) but no visitor booking found on it or 5 sub-page(s)
+Blackmoor Golf Club,https://www.blackmoorgolf.co.uk,51.1044489,-0.8878986,intelligent_golf,login_required,https://blackmoor.intelligentgolf.co.uk/visitorbooking/,high,club's own Intelligent Golf subdomain
+Army Golf Course,https://www.armygolfclub.com,51.2694615,-0.7690921,intelligent_golf,unknown,https://www.intelligentgolf.co.uk/,medium,site reachable (https://www.armygolfclub.com/) but no visitor booking found on it or 5 sub-page(s)
+Brokenhurst Manor Golf Club,https://www.brokenhurst-manor.org.uk,50.8079988,-1.5892879,intelligent_golf,login_required,https://brokenhurst.intelligentgolf.co.uk/visitorbooking/,high,club's own Intelligent Golf subdomain
+Otterbourne Golf Course,,51.0138848,-1.3631328,no_site,unknown,,low,still no website known
+Alresford Golf Club,https://www.alresfordgolf.co.uk,51.0764169,-1.1642899,intelligent_golf,unknown,https://alresford.intelligentgolf.co.uk/useful_information,medium,site reachable (https://www.alresfordgolf.co.uk/) but no visitor booking found on it or 3 sub-page(s)
+Meon Course,https://www.marriott.co.uk/hotels/travel/sougs-meon-valley-a-marriott-hotel-and-country-club,50.9225474,-1.2107309,unknown,unknown,,low,site reachable (https://www.marriott.com/en-gb/default.mi) but no visitor booking found on it or 1 sub-page(s)
+Walhampton Golf Club,https://www.walhamptongolf.org.uk,50.7634436,-1.5266293,error,unknown,,low,unreachable even with a browser user agent
+Southampton City Golf Course,https://www.southamptongolfclub.co.uk,50.9471609,-1.4168821,unknown,unknown,,low,site reachable (https://southamptongolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Town Meadow Golf Course,,51.2441065,-1.2691399,no_site,unknown,,low,still no website known
+Moors Valley Golf Course,,50.8574025,-1.8540958,no_site,unknown,,low,still no website known
+Hedge End Golf Centre,,50.9141738,-1.3167412,no_site,unknown,,low,still no website known
+Barton on Sea Golf Club,https://www.bosgc.co.uk,50.7356528,-1.6412723,intelligent_golf,login_required,https://bosgc.intelligentgolf.co.uk/visitorbooking/,high,club's own Intelligent Golf subdomain
+Turtle Hill Golf Club,,32.2523583,-64.8285808,no_site,unknown,,low,still no website known
+Port Royal Golf Course,,32.2624582,-64.8730099,no_site,unknown,,low,still no website known
+Bermuda Golf Academy,,32.2536264,-64.8648965,no_site,unknown,,low,still no website known
+Andover Golf Club,https://www.andovergolfclub.co.uk,51.1980299,-1.4771436,intelligent_golf,public,https://andover.intelligentgolf.co.uk/visitorbooking/,high,club's own Intelligent Golf subdomain
+The Hampshire Golf Club,https://www.thehampshiregolfclub.co.uk,51.1829799,-1.4710313,brs,unknown,https://members.brsgolf.com/hampshire/login,medium,site reachable (https://www.thehampshiregolfclub.co.uk/) but no visitor booking found on it or 3 sub-page(s)
+Charlton Lakeside Leisure Centre,,51.2193908,-1.5071826,no_site,unknown,,low,still no website known
+Chewton Glen Hotel Executive Course,,50.7443309,-1.6820295,no_site,unknown,,low,still no website known
+Blacknest Golf & Country Club,https://www.blacknestgolf.co.uk/,51.1627331,-0.8607506,unknown,unknown,,low,site reachable (https://www.blacknestcountryclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Leckford Golf Course,https://www.leckfordgolfcourse.co.uk/index.htm,51.1265138,-1.4696855,error,unknown,,low,unreachable even with a browser user agent
+Sandford Springs Hotel & Golf Club,https://www.sandfordsprings.co.uk,51.3250451,-1.2250729,unknown,unknown,,low,site reachable (https://www.sandfordsprings.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Hoburne Holiday Park Bashley,,50.7708154,-1.6482177,no_site,unknown,,low,still no website known
+Riversdown Golf Course,,51.0188175,-1.1425903,no_site,unknown,,low,still no website known
+Four Marks Golf,,51.1018089,-1.0245851,no_site,unknown,,low,still no website known
+Bide-A-Wee Golf Course,,36.8021364,-76.3386806,no_site,unknown,,low,still no website known
+Winchester Golf Academy,,51.0982532,-1.327415,no_site,unknown,,low,still no website known
+The Links at City park,,36.8305972,-76.3710241,no_site,unknown,,low,still no website known
+Mini Golf,,50.7814314,-1.069342,no_site,unknown,,low,still no website known
+Somerley Park Golf Club,,50.8726192,-1.8205837,no_site,unknown,,low,still no website known
+Village course,,51.2339356,-0.8538766,no_site,unknown,,low,still no website known
+Woodland course,,51.2303584,-0.8442901,no_site,unknown,,low,still no website known
+Denmead Golf Course,,50.8912734,-1.0695192,no_site,unknown,,low,still no website known
+Bishopswood Golf Course,https://www.bishopswoodgc.co.uk,51.3502579,-1.1539886,intelligent_golf,public,https://www.bishopswood.golf/visitorbooking,high,found on https://www.bishopswood.golf
+Liphook Golf Club,https://www.liphookgolfclub.com,51.0621112,-0.8092746,intelligent_golf,unknown,https://www.intelligentgolf.co.uk/,medium,site reachable (https://www.liphookgolfclub.com/) but no visitor booking found on it or 3 sub-page(s)
+Skylark Meadows Golf and Country Club,,50.877881,-1.2310377,no_site,unknown,,low,still no website known
+Tournerbury Golf Course,https://www.intelligentgolf.co.uk,50.7979392,-0.9657474,intelligent_golf,unknown,mailto:info@intelligentgolf.co.uk,medium,site reachable (https://www.intelligentgolf.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Ampfield Golf & Country Club,https://www.ampfieldgolf.com/,51.004717,-1.4284674,unknown,unknown,,low,site reachable (https://www.ampfieldgolf.com/) but no visitor booking found on it or 2 sub-page(s)
+Fleetlands Golf Club,https://www.intelligentgolf.co.uk,50.8345463,-1.1687098,intelligent_golf,unknown,mailto:info@intelligentgolf.co.uk,medium,site reachable (https://www.intelligentgolf.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Ordnance Survey Golf Club,https://www.ordnancesurveygolfclub.org.uk,,,error,unknown,,low,unreachable even with a browser user agent
+Southsea Golf Club,https://www.southsea-golf.co.uk,,,unknown,unknown,,low,site reachable (https://www.southsea-golf.co.uk/) but no visitor booking found on it or 0 sub-page(s)

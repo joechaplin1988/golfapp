@@ -240,6 +240,16 @@ from Kent/Surrey, written down and re-runnable per county. Essex residue:
 / 189 sheets**. Trap: an IG `/visitorbooking/` path can be a COMPETITION
 booking page (Chelmsford) or need a login (Colchester) - open it, don't
 trust the convention.
+**Dedupe shipped (migration 003, 2026-09-10)**: Singing Hills 50 rows/20
+duplicate times -> 19 rows/0 duplicates. Collapses on (club,date,time,HOLES)
+so Test Valley's 18 and front 9 both survive; unflagged clubs untouched.
+Club still shows as 3 cards not 1 (different times survive under different
+combo names) - one-card-per-flagged-club needs the RPC to expose
+dedupe_courses + a page change, batch it with other web work.
+**Hampshire residue (2026-09-10)**: +4 (Andover, Bishopswood, New Forest,
+Waterlooville) -> **192 clubs / 232 sheets**. Kent/Sussex/Surrey/Essex/
+Hampshire all now fingerprinted AND residue-checked.
+
 **Chronogolf scraper BUILT (2026-09-10, Joe approved)**: 5 clubs / 7 sheets
 (Bramshaw x2, Lullingstone x2, Old Thorns, Paultons, Worldham) -> **188
 clubs / 228 sheets**. Survey said reCAPTCHA - wrong, like "Cloudflare" for

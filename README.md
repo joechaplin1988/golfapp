@@ -1,8 +1,8 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **eight platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **188 clubs / 228 sheets per scheduled run (2026-09-10)**, Kent,
-Sussex, Surrey, Essex and Hampshire fingerprinted, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
+ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **192 clubs / 232 sheets per scheduled run (2026-09-10)**, Kent,
+Sussex, Surrey, Essex and Hampshire done, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
 
@@ -709,6 +709,29 @@ Two of the four "ready" were false: Chelmsford's `/visitorbooking/` is its
 **competition** booking page, and Colchester's needs a login. Both were
 caught by opening them, not by the pattern — the path convention is a hint,
 never proof.
+
+### Duplicate tee times at 27-hole clubs — fixed and measured (2026-09-10)
+Migration `003` shipped and applied. Same Burgess Hill search, before → after:
+
+| Singing Hills, 2026-09-12 | before | after |
+|---|---|---|
+| tee times listed | 50 | 19 |
+| times shown more than once | 20 | 0 |
+| cards for this one club | 6 | 3 |
+| cards in the whole search | 13 | 10 |
+
+Note the club still shows as **three** cards, not one: different tee times
+survive under different combination names, so the repetition is gone but the
+club is still split. Collapsing a flagged club to a single card needs the RPC
+to expose `dedupe_courses` and the page to group on club rather than course —
+a further migration plus a web change, so worth batching with other page work.
+
+### Hampshire residue — 4 more clubs (2026-09-10)
+57 rechecked → 4 ready + 1 platform-hinted probed → **Andover, Bishopswood,
+New Forest, Waterlooville**. `6 ok, 2 empty, 0 error; 161 tee times`. Out:
+North Hants (IG sheet, no visitor slot in 14 days), Alresford / Blackmoor /
+Brockenhurst / Barton on Sea (IG, login), The Hampshire (BRS members' login),
+Chilworth (Chronogolf widget, but no club id anywhere on its site).
 
 ### Chronogolf — the third platform the original survey got wrong (2026-09-10)
 The survey said reCAPTCHA. There is none on the endpoints that matter, and no

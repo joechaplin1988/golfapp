@@ -1,0 +1,60 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+City Park Starter Shack,,36.8327389,-76.3701668,no_site,unknown,,low,no official website resolved (not in county union directory)
+New Forest Golf Club,https://www.newforestgolfclub.co.uk,50.8796172,-1.568931,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Waterlooville Golf Course,https://www.waterloovillegolfclub.com,50.8946334,-1.0034757,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Tylney Park Golf Club,https://www.tylneypark.co.uk,51.2952432,-0.9799843,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Great Salterns Golf Course,,50.8155957,-1.0467125,no_site,unknown,,low,no official website resolved (not in county union directory)
+Portsmouth Golf Club,https://www.portsmouthgc.com,50.8554703,-1.0339579,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.portsmouthgc.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.portsmouthgc.com', port=443): Failed to resolve 'www.portsmouthgc.com' ([Errno 11001] getaddrinfo failed)""))"
+Rowlands Castle Golf Course,https://www.rowlandscastlegolfclub.co.uk,50.8933737,-0.9692407,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.rowlandscastlegolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+North Hants Golf Club,https://www.northhantsgolf.co.uk,51.2936527,-0.8380978,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Eastney Pitch-and-Putt,,50.7818615,-1.0624763,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Ageas Bowl County Golf Club,,50.9209744,-1.3226586,no_site,unknown,,low,no official website resolved (not in county union directory)
+Swanmore Golf Centre,,50.9296378,-1.1746133,no_site,unknown,,low,no official website resolved (not in county union directory)
+Chilworth Golf Centre,https://www.chilworthgolfclub.com,50.9684275,-1.4345947,unknown,unknown,,low,homepage loaded (https://www.chilworthgolfclub.com/) but no platform signal found on it or 3 booking-ish link(s)
+Hartley Wintney Golf Course,https://www.hartleywintneygolfclub.com,51.3091972,-0.8896072,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Dibden Golf Centre,https://www.bramshotthillgolfclub.org,50.8696104,-1.4308192,unknown,unknown,,low,homepage loaded (https://www.bramshotthillgolfclub.org/) but no platform signal found on it or 0 booking-ish link(s)
+Elizabeth Manor Golf & Country Club,,36.8153617,-76.3932737,no_site,unknown,,low,no official website resolved (not in county union directory)
+Romsey Golf Club,https://www.romseygolfclub.com,50.9561047,-1.466845,unknown,unknown,,low,homepage loaded (https://www.romseygolfclub.com/) but no platform signal found on it or 10 booking-ish link(s)
+Blackmoor Golf Club,https://www.blackmoorgolf.co.uk,51.1044489,-0.8878986,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Army Golf Course,https://www.armygolfclub.com,51.2694615,-0.7690921,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Brokenhurst Manor Golf Club,https://www.brokenhurst-manor.org.uk,50.8079988,-1.5892879,intelligent_golf,login_required,,high,intelligent_golf convention path requires login: https://www.brokenhurst-manor.org.uk/visitorbooking/
+Otterbourne Golf Course,,51.0138848,-1.3631328,no_site,unknown,,low,no official website resolved (not in county union directory)
+Alresford Golf Club,https://www.alresfordgolf.co.uk,51.0764169,-1.1642899,intelligent_golf,login_required,,high,intelligent_golf convention path requires login: https://www.alresfordgolf.co.uk/visitorbooking/
+Meon Course,https://www.marriott.co.uk/hotels/travel/sougs-meon-valley-a-marriott-hotel-and-country-club,50.9225474,-1.2107309,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Walhampton Golf Club,https://www.walhamptongolf.org.uk,50.7634436,-1.5266293,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.walhamptongolf.org.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.walhamptongolf.org.uk', port=443): Failed to resolve 'www.walhamptongolf.org.uk' ([Errno 11001] getaddrinfo failed)""))"
+Wellow Golf Club,https://www.wellowgolfclub.co.uk,50.9790386,-1.547693,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://wellow.hub.clubv1.com/Visitors/booking"
+Southampton City Golf Course,https://www.southamptongolfclub.co.uk,50.9471609,-1.4168821,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Town Meadow Golf Course,,51.2441065,-1.2691399,no_site,unknown,,low,no official website resolved (not in county union directory)
+Moors Valley Golf Course,,50.8574025,-1.8540958,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hedge End Golf Centre,,50.9141738,-1.3167412,no_site,unknown,,low,no official website resolved (not in county union directory)
+Barton on Sea Golf Club,https://www.bosgc.co.uk,50.7356528,-1.6412723,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Turtle Hill Golf Club,,32.2523583,-64.8285808,no_site,unknown,,low,no official website resolved (not in county union directory)
+Port Royal Golf Course,,32.2624582,-64.8730099,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bermuda Golf Academy,,32.2536264,-64.8648965,no_site,unknown,,low,no official website resolved (not in county union directory)
+Andover Golf Club,https://www.andovergolfclub.co.uk,51.1980299,-1.4771436,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+The Hampshire Golf Club,https://www.thehampshiregolfclub.co.uk,51.1829799,-1.4710313,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Charlton Lakeside Leisure Centre,,51.2193908,-1.5071826,no_site,unknown,,low,no official website resolved (not in county union directory)
+Chewton Glen Hotel Executive Course,,50.7443309,-1.6820295,no_site,unknown,,low,no official website resolved (not in county union directory)
+Blacknest Golf & Country Club,https://www.blacknestgolf.co.uk/,51.1627331,-0.8607506,unknown,unknown,,low,homepage loaded (https://www.blacknestcountryclub.co.uk/) but no platform signal found on it or 4 booking-ish link(s)
+Leckford Golf Course,https://www.leckfordgolfcourse.co.uk/index.htm,51.1265138,-1.4696855,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.leckfordgolfcourse.co.uk', port=443): Max retries exceeded with url: /index.htm (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.leckfordgolfcourse.co.uk', port=443) at 0x14e8f29a350>, 'Connection to www.leckfordgolfcourse.co.uk timed out. (connect timeout=20)'))"
+Sandford Springs Hotel & Golf Club,https://www.sandfordsprings.co.uk,51.3250451,-1.2250729,unknown,unknown,,low,homepage loaded (https://www.sandfordsprings.co.uk/) but no platform signal found on it or 9 booking-ish link(s)
+Hoburne Holiday Park Bashley,,50.7708154,-1.6482177,no_site,unknown,,low,no official website resolved (not in county union directory)
+Riversdown Golf Course,,51.0188175,-1.1425903,no_site,unknown,,low,no official website resolved (not in county union directory)
+Four Marks Golf,,51.1018089,-1.0245851,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bide-A-Wee Golf Course,,36.8021364,-76.3386806,no_site,unknown,,low,no official website resolved (not in county union directory)
+Winchester Golf Academy,,51.0982532,-1.327415,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Links at City park,,36.8305972,-76.3710241,no_site,unknown,,low,no official website resolved (not in county union directory)
+Mini Golf,,50.7814314,-1.069342,no_site,unknown,,low,no official website resolved (not in county union directory)
+Somerley Park Golf Club,,50.8726192,-1.8205837,no_site,unknown,,low,no official website resolved (not in county union directory)
+Village course,,51.2339356,-0.8538766,no_site,unknown,,low,no official website resolved (not in county union directory)
+Woodland course,,51.2303584,-0.8442901,no_site,unknown,,low,no official website resolved (not in county union directory)
+Denmead Golf Course,,50.8912734,-1.0695192,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bishopswood Golf Course,https://www.bishopswoodgc.co.uk,51.3502579,-1.1539886,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Corhampton Golf Club,https://www.corhamptongc.co.uk,50.9750256,-1.1623053,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://corhampton.hub.clubv1.com/Visitors/booking"
+Liphook Golf Club,https://www.liphookgolfclub.com,51.0621112,-0.8092746,intelligent_golf,login_required,,high,intelligent_golf convention path requires login: https://www.liphookgolfclub.com/visitorbooking/
+Skylark Meadows Golf and Country Club,,50.877881,-1.2310377,no_site,unknown,,low,no official website resolved (not in county union directory)
+Tournerbury Golf Course,https://www.intelligentgolf.co.uk,50.7979392,-0.9657474,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Ampfield Golf & Country Club,https://www.ampfieldgolf.com/,51.004717,-1.4284674,unknown,unknown,,low,homepage loaded (https://www.ampfieldgolf.com/) but no platform signal found on it or 3 booking-ish link(s)
+Fleetlands Golf Club,https://www.intelligentgolf.co.uk,50.8345463,-1.1687098,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Ordnance Survey Golf Club,https://www.ordnancesurveygolfclub.org.uk,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.ordnancesurveygolfclub.org.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.ordnancesurveygolfclub.org.uk', port=443): Failed to resolve 'www.ordnancesurveygolfclub.org.uk' ([Errno 11001] getaddrinfo failed)""))"
+Southsea Golf Club,https://www.southsea-golf.co.uk,,,unknown,unknown,,low,homepage loaded (https://www.southsea-golf.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
