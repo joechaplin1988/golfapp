@@ -250,6 +250,13 @@ dedupe_courses + a page change, batch it with other web work.
 Waterlooville) -> **192 clubs / 232 sheets**. Kent/Sussex/Surrey/Essex/
 Hampshire all now fingerprinted AND residue-checked.
 
+**Berkshire done (2026-09-10)** - the last on Joe's original list. +10 clubs
+-> **222 clubs / 268 sheets**, 7 counties. Trap: Berkshire has NO
+county-level OSM area (abolished; six unitaries - Reading, West Berkshire,
+Wokingham, Bracknell Forest, Windsor and Maidenhead, Slough) so naming
+"Berkshire" finds nothing at all. Union is BB&O, WordPress, no directory ->
+OSM-only, viable only because we now keep OSM's website tag.
+
 **Hertfordshire done (2026-09-10)**: +20 clubs / 26 sheets -> **212 clubs /
 258 sheets**. Its union site is DISABLED (runs on intelligentgolf, not the
 shared county CMS), so no directory - the county would have produced zero.

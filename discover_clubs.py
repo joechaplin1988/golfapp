@@ -110,6 +110,10 @@ COUNTY_BOUNDS = {
     # would show up 15 "miles" from Portsmouth and need a ferry.
     "hampshire": ["Hampshire", "Southampton", "Portsmouth"],
     "hertfordshire": ["Hertfordshire"],
+    # Berkshire has NO county-level area in OSM — it is six unitary
+    # authorities, so naming "Berkshire" alone would find nothing at all.
+    "berkshire": ["Reading", "West Berkshire", "Wokingham", "Bracknell Forest",
+                  "Windsor and Maidenhead", "Slough"],
 }
 
 # Clubs the county union lists that are not reachable by road from the county
@@ -221,6 +225,11 @@ COUNTY_UNION_URLS = {
     # No directory to merge, so that county is OSM-only and will miss any
     # club OSM lacks — re-check if the union site comes back.
     "hertfordshire": None,
+    # Berkshire's union is Berks/Bucks/Oxon (bbogolf.com), a WordPress site
+    # with no club directory to parse — and it would pull in two counties we
+    # aren't covering anyway. OSM-only, which now works because we keep OSM's
+    # own website tag.
+    "berkshire": None,
 }
 
 SOCIAL_HOSTS = ("facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com", "youtube.com")

@@ -1,0 +1,338 @@
+[
+  {
+    "name": "Wessex Downs Golf Course",
+    "lat": 51.4020343,
+    "lon": -1.1569004,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Bunker Indoor Golf Simulator",
+    "lat": 51.4131542,
+    "lon": -1.3613455,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Maidenhead Golf Course",
+    "lat": 51.5113453,
+    "lon": -0.7228731,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "East Berkshire Golf Club",
+    "lat": 51.3746501,
+    "lon": -0.8169052,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Sonning Golf Club",
+    "lat": 51.4695353,
+    "lon": -0.8944853,
+    "source": "osm",
+    "osm_site": "https://www.sonning-golf-club.co.uk/",
+    "official_site": "https://www.sonning-golf-club.co.uk/"
+  },
+  {
+    "name": "Richings Park Golf and Country Club",
+    "lat": 51.4976784,
+    "lon": -0.519644,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Calcot Park Golf Club",
+    "lat": 51.4468468,
+    "lon": -1.0372771,
+    "source": "osm",
+    "osm_site": "https://www.calcotpark.com",
+    "official_site": "https://www.calcotpark.com"
+  },
+  {
+    "name": "Reading Golf Club",
+    "lat": 51.4886548,
+    "lon": -0.9761052,
+    "source": "osm",
+    "osm_site": "https://www.readinggolfclub.com/",
+    "official_site": "https://www.readinggolfclub.com/"
+  },
+  {
+    "name": "Temple Golf Course",
+    "lat": 51.5380072,
+    "lon": -0.7950503,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Winter Hill Golf Course",
+    "lat": 51.5670853,
+    "lon": -0.7206497,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bearwood Lakes Golf Club",
+    "lat": 51.4088773,
+    "lon": -0.8844971,
+    "source": "osm",
+    "osm_site": "https://www.bearwoodlakes.co.uk/",
+    "official_site": "https://www.bearwoodlakes.co.uk/"
+  },
+  {
+    "name": "The Caversham",
+    "lat": 51.482704,
+    "lon": -1.0060581,
+    "source": "osm",
+    "osm_site": "https://thecaversham.co.uk/",
+    "official_site": "https://thecaversham.co.uk/"
+  },
+  {
+    "name": "The Club at Mapledurham",
+    "lat": 51.4886688,
+    "lon": -0.9973028,
+    "source": "osm",
+    "osm_site": "https://www.theclubatmapledurham.com/",
+    "official_site": "https://www.theclubatmapledurham.com/"
+  },
+  {
+    "name": "Lavender Park Golf Centre",
+    "lat": 51.410258,
+    "lon": -0.7051048,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Sand Martins Golf Club",
+    "lat": 51.3907106,
+    "lon": -0.8533896,
+    "source": "osm",
+    "osm_site": "https://www.sandmartins.com/",
+    "official_site": "https://www.sandmartins.com/"
+  },
+  {
+    "name": "The West Berkshire Golf Club",
+    "lat": 51.4817967,
+    "lon": -1.419966,
+    "source": "osm",
+    "osm_site": "https://www.thewbgc.co.uk/",
+    "official_site": "https://www.thewbgc.co.uk/"
+  },
+  {
+    "name": "Eton College Golf Course",
+    "lat": 51.4977333,
+    "lon": -0.6106072,
+    "source": "osm",
+    "osm_site": "https://www.etoncollege.com/ecgc-home.aspx",
+    "official_site": "https://www.etoncollege.com/ecgc-home.aspx"
+  },
+  {
+    "name": "Theale Golf Club",
+    "lat": 51.445702,
+    "lon": -1.0790811,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bradfield College Golf Club",
+    "lat": 51.4440175,
+    "lon": -1.1367529,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bird Hills Golf Centre",
+    "lat": 51.4631081,
+    "lon": -0.7496166,
+    "source": "osm",
+    "osm_site": "https://www.birdhills.co.uk/",
+    "official_site": "https://www.birdhills.co.uk/"
+  },
+  {
+    "name": "Billingbear Park Golf Course",
+    "lat": 51.4455344,
+    "lon": -0.8138261,
+    "source": "osm",
+    "osm_site": "https://www.billingbearpark.com/",
+    "official_site": "https://www.billingbearpark.com/"
+  },
+  {
+    "name": "Swinley Forest Golf Club",
+    "lat": 51.3838513,
+    "lon": -0.6885884,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Newbury & Crookham Golf Club",
+    "lat": 51.386625,
+    "lon": -1.2912879,
+    "source": "osm",
+    "osm_site": "https://www.newburygolf.co.uk/",
+    "official_site": "https://www.newburygolf.co.uk/"
+  },
+  {
+    "name": "Donnington Grove Country Club",
+    "lat": 51.4259354,
+    "lon": -1.3441051,
+    "source": "osm",
+    "osm_site": "https://www.donnington-grove.com/",
+    "official_site": "https://www.donnington-grove.com/"
+  },
+  {
+    "name": "Wellington College Golf Course",
+    "lat": 51.359137,
+    "lon": -0.8085478,
+    "source": "osm",
+    "osm_site": "https://www.wellingtoncollege.org.uk/2303/school-life/sports/golf",
+    "official_site": "https://www.wellingtoncollege.org.uk/2303/school-life/sports/golf"
+  },
+  {
+    "name": "Oakley Court Hotel Golf Course",
+    "lat": 51.4879854,
+    "lon": -0.6701535,
+    "source": "osm",
+    "osm_site": "https://www.oakleycourtwindsor.com/",
+    "official_site": "https://www.oakleycourtwindsor.com/"
+  },
+  {
+    "name": "Royal Ascot Golf Club",
+    "lat": 51.4195004,
+    "lon": -0.6661223,
+    "source": "osm",
+    "osm_site": "https://www.royalascotgolfclub.co.uk/",
+    "official_site": "https://www.royalascotgolfclub.co.uk/"
+  },
+  {
+    "name": "Donnington Valley Golf Club",
+    "lat": 51.4273099,
+    "lon": -1.3287844,
+    "source": "osm",
+    "osm_site": "https://www.donningtonvalley.co.uk",
+    "official_site": "https://www.donningtonvalley.co.uk"
+  },
+  {
+    "name": "Castle Royle Golf & Country Club",
+    "lat": 51.4992648,
+    "lon": -0.8169084,
+    "source": "osm",
+    "osm_site": "https://www.castleroyle.com/",
+    "official_site": "https://www.castleroyle.com/"
+  },
+  {
+    "name": "Mill Ride Golf & Country Club",
+    "lat": 51.4245859,
+    "lon": -0.6971927,
+    "source": "osm",
+    "osm_site": "https://www.mill-ride.com/",
+    "official_site": "https://www.mill-ride.com/"
+  },
+  {
+    "name": "Wokingham Family Golf",
+    "lat": 51.3903683,
+    "lon": -0.8420075,
+    "source": "osm",
+    "osm_site": "https://www.wokinghamfamilygolf.co.uk/",
+    "official_site": "https://www.wokinghamfamilygolf.co.uk/"
+  },
+  {
+    "name": "Hennerton Golf Club",
+    "lat": 51.5160988,
+    "lon": -0.8643053,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Deanwood Park Gold Course",
+    "lat": 51.4135279,
+    "lon": -1.3589076,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "GolfPlex Entertainment Centre",
+    "lat": 51.4288661,
+    "lon": -0.7827518,
+    "source": "osm",
+    "osm_site": "https://golfplex.co.uk/",
+    "official_site": "https://golfplex.co.uk/"
+  },
+  {
+    "name": "Datchet Golf Club",
+    "lat": 51.4884725,
+    "lon": -0.5885805,
+    "source": "osm",
+    "osm_site": "https://www.datchetgolfclub.co.uk/",
+    "official_site": "https://www.datchetgolfclub.co.uk/"
+  },
+  {
+    "name": "Goring & Streatley Golf Club",
+    "lat": 51.5228673,
+    "lon": -1.1614415,
+    "source": "osm",
+    "osm_site": "https://www.goringgolf.co.uk/",
+    "official_site": "https://www.goringgolf.co.uk/"
+  },
+  {
+    "name": "Bisham Abbey Golf Club",
+    "lat": 51.5591652,
+    "lon": -0.7776317,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Berkshire Golf Club",
+    "lat": 51.3852176,
+    "lon": -0.7132378,
+    "source": "osm",
+    "osm_site": "https://www.theberkshire.co.uk/",
+    "official_site": "https://www.theberkshire.co.uk/"
+  },
+  {
+    "name": "Downshire Golf Complex",
+    "lat": 51.3944417,
+    "lon": -0.7881244,
+    "source": "osm",
+    "osm_site": "https://www.bracknell-forest.gov.uk/downshiregolfcomplex",
+    "official_site": "https://www.bracknell-forest.gov.uk/downshiregolfcomplex"
+  },
+  {
+    "name": "Sunningdale Golf Club",
+    "lat": 51.3819099,
+    "lon": -0.6342329,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Wokefield Park",
+    "lat": 51.3856368,
+    "lon": -1.0290364,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Home Park Golf Course",
+    "lat": 51.4802665,
+    "lon": -0.5956126,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  }
+]

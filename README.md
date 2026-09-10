@@ -1,8 +1,8 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **eight platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **212 clubs / 258 sheets per scheduled run (2026-09-10)**, Kent,
-Sussex, Surrey, Essex, Hampshire and Hertfordshire done, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
+ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **222 clubs / 268 sheets per scheduled run (2026-09-10)**, Kent,
+Sussex, Surrey, Essex, Hampshire, Hertfordshire and Berkshire done, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
 
@@ -795,6 +795,24 @@ surfaced as "Worldham Golf Club: no availability in 14 days". Worldham has
 per day) and backs off on 429; the scraper paces its four party-size calls.
 Worth remembering: on this platform a rate limit is indistinguishable from
 an empty sheet unless you check the status code.
+
+### Berkshire — a county OSM does not have (2026-09-10)
+Berkshire was abolished as an administrative county, so there is **no
+county-level area in OSM at all**: it is six unitary authorities (Reading,
+West Berkshire, Wokingham, Bracknell Forest, Windsor and Maidenhead, Slough).
+Asking for `area["name"="Berkshire"]` returns nothing — silently, the same
+shape of trap that would have cost us the Essex coast. All six are named.
+
+Its union is Berks/Bucks/Oxon (bbogolf.com), a WordPress site with no
+parsable club directory, and it would pull in two counties we aren't
+covering. So Berkshire is OSM-only, which only works because we now keep
+OSM's website tag: 25 of 42 clubs had one.
+
+42 fingerprinted → 10 ready → **10 clubs live** (`18 ok, 2 empty, 0 error;
+451 tee times`), including Royal Ascot, Calcot Park and Newbury & Crookham.
+Two clubs geocode into South Oxfordshire (The Caversham, Mapledurham) —
+correct: they sit just over the river, and the search is distance-based, so
+county lines don't matter to a golfer.
 
 ### Hertfordshire — and the club websites OSM was already handing us (2026-09-10)
 Hertfordshire's union runs on Intelligent Golf rather than the shared county

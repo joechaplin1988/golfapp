@@ -31,6 +31,16 @@ West Malling,live,,intelligent_golf,2,ME19 5AR,,
 Westerham,live,,esp,1,TN16 1QN,,
 Wildernesse,live,,intelligent_golf,1,TN15 0JE,,
 Willingdon,live,,clubv1,1,BN20 9AA,,
+Billingbear Park Golf Course,live,berkshire,brs,1,RG40 5SJ,,https://visitors.brsgolf.com/billingbearold#/course/1
+Bird Hills Golf Centre,live,berkshire,intelligent_golf,1,SL6 3ST,,https://birdhills.intelligentgolf.co.uk/visitorbooking/
+Calcot Park Golf Club,live,berkshire,intelligent_golf,1,RG31 7RN,,https://www.calcotpark.com/visitorbooking/
+Donnington Grove Country Club,live,berkshire,brs,1,RG14 2LA,,https://visitors.brsgolf.com/donningtongrove#/course/1
+Donnington Valley Golf Club,live,berkshire,intelligent_golf,1,RG14 3AG,,https://donningtonvalley.intelligentgolf.co.uk/visitorbooking/
+Newbury & Crookham Golf Club,live,berkshire,intelligent_golf,1,RG19 8BZ,,https://newburygolf.intelligentgolf.co.uk/visitorbooking/
+Royal Ascot Golf Club,live,berkshire,intelligent_golf,1,SL5 7LJ,,https://royalascot.intelligentgolf.co.uk/visitorbooking/
+The Caversham,live,berkshire,intelligent_golf,1,RG4 7UT,,https://caversham.intelligentgolf.co.uk/visitorbooking/
+The Club at Mapledurham,live,berkshire,intelligent_golf,1,RG4 7UD,,https://golf.theclubatmapledurham.com/visitorbooking/
+The West Berkshire Golf Club,live,berkshire,brs,1,RG20 7DU,,https://visitors.brsgolf.com/westberkshire#/course/1
 Blakes Golf Course,live,essex,brs,1,CM16 6RZ,,https://visitors.brsgolf.com/blakes#/course/1
 Braintree Golf Club,live,essex,intelligent_golf,1,CM77 8DD,,https://www.braintreegolfclub.co.uk/visitorbooking/
 Brentwood Golf Centre at Hartswood,live,essex,brs,1,CM14 5RJ,,https://visitors.brsgolf.com/brentwood
@@ -211,6 +221,9 @@ Belhus Park Golf Club,parked,essex,gladstone,1,RM15 4QR,Impulse Leisure's Cloudf
 Bromley Golf Centre,parked,kent/sussex,gladstone,2,BR2 8JF,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),
 High Elms Golf Course,parked,kent/sussex,gladstone,2,BR6 7JL,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),
 Orpington Golf Centre,parked,kent/sussex,gladstone,3,BR5 3HY,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),https://mytimeactive.gladstonego.cloud/book
+Mill Ride Golf & Country Club,no_visitor_booking,berkshire,intelligent_golf,0,,booking page requires a member login,
+Sonning Golf Club,no_visitor_booking,berkshire,intelligent_golf,0,,booking page requires a member login,
+The Berkshire Golf Club,no_visitor_booking,berkshire,intelligent_golf,0,,booking page requires a member login,
 Basildon Golf Course,no_visitor_booking,essex,intelligent_golf,0,,"on intelligent_golf, but visitor booking is switched off",
 Boyce Hill Golf Course,no_visitor_booking,essex,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Burnham-on-Crouch Golf Club,no_visitor_booking,essex,clubv1,0,,"on clubv1, but visitor booking is switched off",
@@ -251,6 +264,35 @@ Puttenham Golf Club,no_visitor_booking,surrey,intelligent_golf,0,,booking page r
 Royal Wimbledon Golf Course,no_visitor_booking,surrey,intelligent_golf,0,,booking page requires a member login,
 West Hill Golf Club,no_visitor_booking,surrey,intelligent_golf,0,,booking page requires a member login,
 Avisford Park Golf Club,out_of_scope,kent/sussex,golfnow,0,,GolfNow/TeeItUp only — excluded by policy,
+Bearwood Lakes Golf Club,unresolved,berkshire,unknown,0,,homepage loaded (https://www.bearwoodlakes.co.uk/) but no platform signal found on it or 1 booking-ish link(s),
+Bisham Abbey Golf Club,unresolved,berkshire,no_site,0,,no working website found,
+Bradfield College Golf Club,unresolved,berkshire,no_site,0,,no working website found,
+Castle Royle Golf & Country Club,unresolved,berkshire,unknown,0,,homepage loaded (https://www.theclubcompany.com/castle-royle) but no platform signal found on it or 2 booking-,
+Datchet Golf Club,unresolved,berkshire,unknown,0,,homepage loaded (https://www.datchetgolfclub.co.uk/) but no platform signal found on it or 4 booking-ish link(,
+Deanwood Park Gold Course,unresolved,berkshire,no_site,0,,no working website found,
+Downshire Golf Complex,unresolved,berkshire,dead_link,0,,no working website found,
+East Berkshire Golf Club,unresolved,berkshire,no_site,0,,no working website found,
+Eton College Golf Course,unresolved,berkshire,unknown,0,,homepage loaded (https://www.etoncollege.com/) but no platform signal found on it or 3 booking-ish link(s),
+GolfPlex Entertainment Centre,unresolved,berkshire,unknown,0,,homepage loaded (https://golfplex.co.uk/) but no platform signal found on it or 2 booking-ish link(s),
+Goring & Streatley Golf Club,unresolved,berkshire,blocked,0,,site refused or failed to load,
+Hennerton Golf Club,unresolved,berkshire,no_site,0,,no working website found,
+Home Park Golf Course,unresolved,berkshire,no_site,0,,no working website found,
+Lavender Park Golf Centre,unresolved,berkshire,no_site,0,,no working website found,
+Maidenhead Golf Course,unresolved,berkshire,no_site,0,,no working website found,
+Oakley Court Hotel Golf Course,unresolved,berkshire,error,0,,site refused or failed to load,
+Reading Golf Club,unresolved,berkshire,error,0,,site refused or failed to load,
+Richings Park Golf and Country Club,unresolved,berkshire,no_site,0,,no working website found,
+Sand Martins Golf Club,unresolved,berkshire,unknown,0,,homepage loaded (https://www.sandmartins.com/) but no platform signal found on it or 5 booking-ish link(s),
+Sunningdale Golf Club,unresolved,berkshire,no_site,0,,no working website found,
+Swinley Forest Golf Club,unresolved,berkshire,no_site,0,,no working website found,
+Temple Golf Course,unresolved,berkshire,no_site,0,,no working website found,
+The Bunker Indoor Golf Simulator,unresolved,berkshire,no_site,0,,no working website found,
+Theale Golf Club,unresolved,berkshire,no_site,0,,no working website found,
+Wellington College Golf Course,unresolved,berkshire,dead_link,0,,no working website found,
+Wessex Downs Golf Course,unresolved,berkshire,no_site,0,,no working website found,
+Winter Hill Golf Course,unresolved,berkshire,no_site,0,,no working website found,
+Wokefield Park,unresolved,berkshire,no_site,0,,no working website found,
+Wokingham Family Golf,unresolved,berkshire,unknown,0,,homepage loaded (https://www.wokinghamfamilygolf.co.uk/) but no platform signal found on it or 2 booking-ish l,
 Ballards Gore,unresolved,essex,unknown,0,,homepage loaded (https://www.ballardsgore.com/) but no platform signal found on it or 3 booking-ish link(s),
 Belfairs Golf Club,unresolved,essex,unknown,0,,homepage loaded (https://www.belfairsgolfclub.co.uk/) but no platform signal found on it or 3 booking-ish link,
 Bentley Golf Course,unresolved,essex,unknown,0,,homepage loaded (https://bentleygolfclub.com/) but no platform signal found on it or 5 booking-ish link(s),
@@ -501,7 +543,6 @@ Shey Copse,unresolved,surrey,no_site,0,,no working website found,
 Short Course,unresolved,surrey,no_site,0,,no working website found,
 South Norwood Pitch and Putt,unresolved,surrey,no_site,0,,no working website found,
 St George's Hill Golf Club,unresolved,surrey,blocked,0,,site refused or failed to load,
-Sunningdale Golf Club,unresolved,surrey,error,0,,site refused or failed to load,
 The Addington Golf Club,unresolved,surrey,esp,0,,esp seen but no confirmed public visitor sheet — worth another look,https://www.e-s-p.com/elitelive/book_date.php
 The Church,unresolved,surrey,no_site,0,,no working website found,
 The Garden,unresolved,surrey,no_site,0,,no working website found,
