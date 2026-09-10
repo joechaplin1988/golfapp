@@ -1,8 +1,8 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **seven platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone) — **124 clubs / 152 sheets per scheduled run (2026-09-09)**, the
-whole of Kent & Sussex plus Surrey's first batch fingerprinted, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
+ClubV1, BRS, Shiji, Gladstone) — **129 clubs / 157 sheets per scheduled run (2026-09-10)**, the
+whole of Kent & Sussex and Surrey fingerprinted, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
 
@@ -687,6 +687,49 @@ Two platform-specific notes worth keeping:
   records legitimately vary between `{"1"}`, `{"1","2"}` and `{"1".."4"}`.
   That's remaining-capacity data, not a bug — the player-count filter should
   use it.
+
+### Schema migrations, and the constraint that ate two batches (2026-09-10)
+`courses.platform` had a CHECK listing every allowed platform name. It
+duplicated `golf_common.PLATFORMS`, drifted (it said `concept_shiji`, never
+had `gladstone`), and so the config→DB sync raised
+`violates check constraint "courses_platform_check"`. Two consequences, both
+worse than the constraint was ever worth:
+1. `load_config_to_db.load()` wrapped the whole sync in ONE transaction, so
+   one rejected club rolled back every other new club — a whole Surrey batch
+   scraped clean and then had no course rows to write to (49 "No course row"
+   errors, 0 rows stored). It now commits **per club** and names what it skipped.
+2. Fixing the constraint needed a psql session, which is exactly the reason
+   the shared-nines de-duplication had been stuck as a TODO for a day.
+
+So schema changes now ship as commits: `db/migrations/*.sql` +
+`apply_migrations.py` (records applied files in `schema_migrations`, one
+transaction each, exits non-zero on failure), run by the workflow before the
+scrape, where `DATABASE_URL` already lives. `001` replaces the platform list
+with a format check — the scrapers own that vocabulary.
+
+### Surrey residue — 5 more clubs, and unpriced BRS slots (2026-09-10)
+Same treatment as the Kent residue (browser UA, `<slug>.intelligentgolf.co.uk/visitorbooking/`
+probes, booking-subpage crawl): **Chipstead, The Drift** (IG),
+**Addington Palace** (ClubV1), **Silvermere** (BRS), **Cranleigh** (ESP) —
+`8 ok, 2 empty, 0 error; 221 tee times`.
+
+Silvermere exposed a real hole: it had 45 open slots and BRS returned
+`green_fee1_ball: null` for every one, so the parser dropped them all and the
+club vanished. Unpriced BRS slots are now **kept with null prices**, matching
+the Gladstone policy — a club with published availability should never be
+invisible because it doesn't publish a price. (Intelligent Golf's separate
+"£0.00, no per-player lines" case is still skipped; that's a handful of
+9-hole combos and £0.00 may mean something different.)
+
+Out: Oaks Sports Centre (BRS hub, no visitor slot in 14 days), Betchworth
+Park (ClubV1 "Permission Denied"), Dulwich & Sydenham (IG login), and the
+login-walled IG set (Camberley Heath, Cuddington, Purley Downs, Puttenham,
+Royal Wimbledon, West Hill, Woking, Worplesdon, Royal Mid-Surrey, Coombe
+Hill, Farnham). No public online visitor booking found: Wentworth, Queenwood,
+The Wisley, St George's Hill, Walton Heath, Sunningdale, Foxhills,
+Roehampton, Effingham Park, Hersham. One-offs left: Sandown Park
+(yourgolfbooking.com), Bletchingley (TeeItUp — GolfNow's white-label, needs
+a policy call).
 
 ### Surrey batch 1 — 39 clubs / 42 sheets (2026-09-09)
 `discover_clubs.py enumerate --county surrey` (121 clubs; the Surrey union

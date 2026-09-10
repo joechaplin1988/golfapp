@@ -29,6 +29,9 @@ Notes that shaped the parser:
   - green_feeN_ball is the TOTAL for a party of N — Pyecombe's 4-ball is
     £150 against a £40 single, so a group discount exists. Store as-is, never
     multiply (same trap as Intelligent Golf / ClubV1).
+  - Some clubs attach no green fee at all (Silvermere). Those slots are kept
+    with null prices rather than dropped, so the club still appears; the
+    search page shows "price on club site". Same policy as Gladstone.
   - `slots` is the four places on the tee; a party of N needs N "Available".
     So the bookable party sizes are 1..(number available), not always 1..4.
   - One tee time can carry several green_fees (Peacehaven lists an 18-hole
@@ -115,16 +118,21 @@ def parse(payload: dict, club: gc.ClubConfig, date_iso: str) -> tuple[list[gc.Te
                 if p is not None and p > 0:
                     prices[str(n)] = p
         if not prices:
+            # Some BRS clubs publish availability but no green fee at all
+            # (Silvermere: 45 open slots, every green_fee1_ball null). Dropping
+            # them hid the whole club — same "availability known, price not
+            # published" case as Gladstone, so same policy: keep the slot with
+            # null prices and let the page say "price on club site".
             unpriced.append(tee_time)
-            continue
+            prices = {str(n): None for n in range(1, min(4, n_avail) + 1)}
         results.append(gc.TeeTimeResult(
             club_name=club.club_name, platform=PLATFORM, date=date_iso, time=tee_time,
-            holes=str(fee.get("num_holes") or "18"), prices_by_players=prices,
+            holes=str(fee.get("num_holes") if fee else "18") or "18", prices_by_players=prices,
             booking_url=booking_url(club),
         ))
     if unpriced:
-        shown = ", ".join(unpriced[:6]) + ("…" if len(unpriced) > 6 else "")
-        log.info(f"[{club.club_name}] {len(unpriced)} open slot(s) skipped — no green fee attached: {shown}")
+        log.info(f"[{club.club_name}] {len(unpriced)} of {len(results)} slot(s) have no green fee "
+                 f"in BRS — kept without a price")
     return results, "ok" if results else "empty"
 
 
