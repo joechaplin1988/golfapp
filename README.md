@@ -1,8 +1,8 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **eight platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **225 clubs / 271 sheets per scheduled run (2026-09-10)**, Kent,
-Sussex, Surrey, Essex, Hampshire, Hertfordshire and Berkshire done, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
+ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **233 clubs / 279 sheets per scheduled run (2026-09-10)**, Kent,
+Sussex, Surrey, Essex, Hampshire, Hertfordshire, Berkshire and Greater London done, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
 
@@ -795,6 +795,26 @@ surfaced as "Worldham Golf Club: no availability in 14 days". Worldham has
 per day) and backs off on 429; the scraper paces its four party-size calls.
 Worth remembering: on this platform a rate limit is indistinguishable from
 an empty sheet unless you check the status code.
+
+### Greater London — an area OSM files one level up (2026-09-10)
+Greater London is a **region**, not a county: `admin_level=5`. Our Overpass
+query hardcoded 6, which returns nothing at all, silently — the second time
+in one day that shape of bug would have made a whole area look empty
+(Berkshire was the first, for a different reason). Checked all three
+plausible levels before running anything: 6 gives 0 features, 5 gives 128.
+The level is now per-area (`COUNTY_ADMIN_LEVEL`) with a comment, not a
+constant inside a query string.
+
+115 candidates, 52 with a website, and **29 already live** — London clubs
+sitting inside our Kent/Surrey/Essex boundaries. 76 fingerprinted → 8 ready
+→ **8 clubs live** (`14 ok, 2 empty, 0 error; 505 tee times`): Finchley,
+Hendon, Muswell Hill, The Inspiration Club, North Middlesex, Arkley, Fulwell
+and Dukes Meadows. This fills the obvious hole for anyone searching from
+north or west London, who previously got results from four counties around
+them and nothing in the middle.
+
+45 of the 76 have no website from either source — London has no single golf
+union to fill that gap, so it is the weakest county for the unresolved pile.
 
 ### Residue passes across all seven counties (2026-09-10)
 Two different problems hide in the residue, and only one is worth rechecking:

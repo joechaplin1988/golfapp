@@ -114,7 +114,15 @@ COUNTY_BOUNDS = {
     # authorities, so naming "Berkshire" alone would find nothing at all.
     "berkshire": ["Reading", "West Berkshire", "Wokingham", "Bracknell Forest",
                   "Windsor and Maidenhead", "Slough"],
+    # Greater London is a REGION, not a county: it sits at admin_level 5.
+    # Asking for it at 6 returns nothing at all, silently — the same trap
+    # Berkshire sets. 128 golf features at the right level.
+    "london": ["Greater London"],
 }
+
+# Areas whose OSM boundary is not at the usual admin_level 6.
+COUNTY_ADMIN_LEVEL = {"london": 5}
+DEFAULT_ADMIN_LEVEL = 6
 
 # Clubs the county union lists that are not reachable by road from the county
 # (see hampshire above). Applied only to the union-only additions.
@@ -166,8 +174,12 @@ def enumerate_osm(county: str, refresh: bool = False) -> list[dict]:
         return clubs
 
     areas = COUNTY_BOUNDS[county]
+    # Not every area we want sits at the same admin level: Greater London is
+    # a REGION (level 5), and asking for it at 6 matches nothing at all —
+    # the same silent zero Berkshire returns if you ask for it by name.
+    level = COUNTY_ADMIN_LEVEL.get(county, DEFAULT_ADMIN_LEVEL)
     area_defs = "\n".join(
-        f'area["name"="{a}"]["admin_level"="6"]->.a{i};' for i, a in enumerate(areas)
+        f'area["name"="{a}"]["admin_level"="{level}"]->.a{i};' for i, a in enumerate(areas)
     )
     area_queries = "\n".join(f"nwr[\"leisure\"=\"golf_course\"](area.a{i});" for i in range(len(areas)))
     query = f"[out:json][timeout:60];\n{area_defs}\n(\n{area_queries}\n);\nout center tags;"
@@ -230,6 +242,11 @@ COUNTY_UNION_URLS = {
     # aren't covering anyway. OSM-only, which now works because we keep OSM's
     # own website tag.
     "berkshire": None,
+    # There is no single London golf union; the county unions either side
+    # already list the boroughs' clubs, and many London clubs are already
+    # live because they sit inside our Kent/Surrey/Essex boundaries.
+    # OSM-only, plus its website tags.
+    "london": None,
 }
 
 SOCIAL_HOSTS = ("facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com", "youtube.com")

@@ -1,0 +1,922 @@
+[
+  {
+    "name": "Stockley Park Golf Club",
+    "lat": 51.5135428,
+    "lon": -0.4429594,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bush Hill Park Golf Club",
+    "lat": 51.6462836,
+    "lon": -0.0880528,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Trent Park Golf Course",
+    "lat": 51.6531621,
+    "lon": -0.1316881,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Enfield Golf Club",
+    "lat": 51.6501458,
+    "lon": -0.1028065,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hadley Wood Golf Course",
+    "lat": 51.6615782,
+    "lon": -0.1627983,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Old Fold Manor Golf Course",
+    "lat": 51.6651288,
+    "lon": -0.2051362,
+    "source": "osm",
+    "osm_site": "https://www.oldfoldmanor.co.uk/",
+    "official_site": "https://www.oldfoldmanor.co.uk/"
+  },
+  {
+    "name": "South Hertfordshire Golf course",
+    "lat": 51.6362423,
+    "lon": -0.190479,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lee Valley Golf Course",
+    "lat": 51.6324466,
+    "lon": -0.0341516,
+    "source": "osm",
+    "osm_site": "https://www.visitleevalley.org.uk/en/content/cms/outdoors/golf/golf-courses-in-london/",
+    "official_site": "https://www.visitleevalley.org.uk/en/content/cms/outdoors/golf/golf-courses-in-london/"
+  },
+  {
+    "name": "North Middlesex Golf Club",
+    "lat": 51.6221996,
+    "lon": -0.1691583,
+    "source": "osm",
+    "osm_site": "https://www.northmiddlesexgc.co.uk/",
+    "official_site": "https://www.northmiddlesexgc.co.uk/"
+  },
+  {
+    "name": "Hendon Golf Course",
+    "lat": 51.6026654,
+    "lon": -0.2163248,
+    "source": "osm",
+    "osm_site": "https://www.hendongolf.com/",
+    "official_site": "https://www.hendongolf.com/"
+  },
+  {
+    "name": "Stanmore Golf Club",
+    "lat": 51.6077478,
+    "lon": -0.3190764,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Sudbury Golf Course",
+    "lat": 51.5451536,
+    "lon": -0.315196,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ealing Golf Course",
+    "lat": 51.530265,
+    "lon": -0.3172018,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Airlinks Golf Course",
+    "lat": 51.4920774,
+    "lon": -0.3915032,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Roehampton Club Golf Course",
+    "lat": 51.4589623,
+    "lon": -0.2499627,
+    "source": "osm",
+    "osm_site": "https://www.roehamptonclub.co.uk/",
+    "official_site": "https://www.roehamptonclub.co.uk/"
+  },
+  {
+    "name": "Richmond Park Golf Course",
+    "lat": 51.4447146,
+    "lon": -0.2491151,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Stapleford Abbotts - Priors Golf Course",
+    "lat": 51.6323105,
+    "lon": 0.2172544,
+    "source": "osm",
+    "osm_site": "https://staplefordabbottsgolf.co.uk/",
+    "official_site": "https://staplefordabbottsgolf.co.uk/"
+  },
+  {
+    "name": "Risebridge Golf Centre",
+    "lat": 51.5983013,
+    "lon": 0.1934978,
+    "source": "osm",
+    "osm_site": "https://www.risebridgegolf.com/",
+    "official_site": "https://www.risebridgegolf.com/"
+  },
+  {
+    "name": "Romford Golf Club",
+    "lat": 51.59125,
+    "lon": 0.2005108,
+    "source": "osm",
+    "osm_site": "https://www.romfordgolfclub.com/",
+    "official_site": "https://www.romfordgolfclub.com/"
+  },
+  {
+    "name": "Wimbledon Park Golf Club",
+    "lat": 51.4351283,
+    "lon": -0.2085236,
+    "source": "osm",
+    "osm_site": "https://www.wpgc.co.uk/",
+    "official_site": "https://www.wpgc.co.uk/"
+  },
+  {
+    "name": "Highgate Golf Club",
+    "lat": 51.5785493,
+    "lon": -0.1634571,
+    "source": "osm",
+    "osm_site": "https://www.highgategc.co.uk/",
+    "official_site": "https://www.highgategc.co.uk/"
+  },
+  {
+    "name": "Coombe Hill Golf Club",
+    "lat": 51.4224141,
+    "lon": -0.2616748,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Royal Mid-Surrey Golf Club",
+    "lat": 51.4690269,
+    "lon": -0.3076576,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Richmond Golf Club",
+    "lat": 51.4387742,
+    "lon": -0.298691,
+    "source": "osm",
+    "osm_site": "https://www.therichmondgolfclub.com/",
+    "official_site": "https://www.therichmondgolfclub.com/"
+  },
+  {
+    "name": "Harrow Hill Golf Course",
+    "lat": 51.5773148,
+    "lon": -0.3281059,
+    "source": "osm",
+    "osm_site": "https://www.harrowhillgolfcourse.co.uk/",
+    "official_site": "https://www.harrowhillgolfcourse.co.uk/"
+  },
+  {
+    "name": "Sundridge Park Golf Course",
+    "lat": 51.4174066,
+    "lon": 0.0348027,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Sidcup Golf Club",
+    "lat": 51.4407549,
+    "lon": 0.1096302,
+    "source": "osm",
+    "osm_site": "https://www.sidcupgolfclub.co.uk/",
+    "official_site": "https://www.sidcupgolfclub.co.uk/"
+  },
+  {
+    "name": "Addington Palace Golf Club",
+    "lat": 51.3616452,
+    "lon": -0.0429925,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Orpington Golf Centre",
+    "lat": 51.405432,
+    "lon": 0.1311081,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Chelsfield Lakes Golf Club",
+    "lat": 51.3488135,
+    "lon": 0.1238428,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Tudor Park Footgolf Course",
+    "lat": 51.6567318,
+    "lon": -0.1784785,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Shooters Hill Golf Course",
+    "lat": 51.471235,
+    "lon": 0.0778669,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Royal Blackheath Golf Club",
+    "lat": 51.4435806,
+    "lon": 0.0578898,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Shortlands Golf Club",
+    "lat": 51.4109201,
+    "lon": 0.0003061,
+    "source": "osm",
+    "osm_site": "https://www.shortlandsgolfclub.com/",
+    "official_site": "https://www.shortlandsgolfclub.com/"
+  },
+  {
+    "name": "Croham Hurst Golf Course",
+    "lat": 51.3515641,
+    "lon": -0.0740446,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "West Kent Golf Club",
+    "lat": 51.3319576,
+    "lon": 0.0451715,
+    "source": "osm",
+    "osm_site": "https://www.wkgc.co.uk/",
+    "official_site": "https://www.wkgc.co.uk/"
+  },
+  {
+    "name": "Cherry Lodge Golf Club",
+    "lat": 51.3102519,
+    "lon": 0.0580314,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Barnehurst Golf Course",
+    "lat": 51.4601385,
+    "lon": 0.1727634,
+    "source": "osm",
+    "osm_site": "https://www.mytimeactive.co.uk/golf/centres/barnehurst/default.aspx",
+    "official_site": "https://www.mytimeactive.co.uk/golf/centres/barnehurst/default.aspx"
+  },
+  {
+    "name": "Harrow School Golf Course",
+    "lat": 51.5690218,
+    "lon": -0.3336431,
+    "source": "osm",
+    "osm_site": "https://www.harrowschool.org.uk/1541/outside-the-classroom/sport/",
+    "official_site": "https://www.harrowschool.org.uk/1541/outside-the-classroom/sport/"
+  },
+  {
+    "name": "Bexleyheath Golf Club",
+    "lat": 51.4503001,
+    "lon": 0.1322436,
+    "source": "osm",
+    "osm_site": "https://bexleyheath-golf.com/",
+    "official_site": "https://bexleyheath-golf.com/"
+  },
+  {
+    "name": "Royal Wimbledon Golf Course",
+    "lat": 51.423006,
+    "lon": -0.2406635,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Pinner Hill Golf Club",
+    "lat": 51.6103787,
+    "lon": -0.3946854,
+    "source": "osm",
+    "osm_site": "https://www.pinnerhillgc.co.uk/",
+    "official_site": "https://www.pinnerhillgc.co.uk/"
+  },
+  {
+    "name": "Chislehurst Golf Course",
+    "lat": 51.413725,
+    "lon": 0.0629256,
+    "source": "osm",
+    "osm_site": "https://www.chislehurstgolfclub.co.uk/",
+    "official_site": "https://www.chislehurstgolfclub.co.uk/"
+  },
+  {
+    "name": "Grims Dyke Golf Club",
+    "lat": 51.6207519,
+    "lon": -0.3631853,
+    "source": "osm",
+    "osm_site": "https://www.grimsdyke.co.uk",
+    "official_site": "https://www.grimsdyke.co.uk"
+  },
+  {
+    "name": "Hartsbourne Country Club",
+    "lat": 51.6292564,
+    "lon": -0.3553363,
+    "source": "osm",
+    "osm_site": "https://www.hartsbournecountryclub.co.uk/",
+    "official_site": "https://www.hartsbournecountryclub.co.uk/"
+  },
+  {
+    "name": "The Shire London",
+    "lat": 51.6658146,
+    "lon": -0.2161488,
+    "source": "osm",
+    "osm_site": "https://theshirelondon.com/",
+    "official_site": "https://theshirelondon.com/"
+  },
+  {
+    "name": "Haste Hill Golf Course",
+    "lat": 51.5992397,
+    "lon": -0.4240683,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "C & L Golf & Country Club",
+    "lat": 51.5459695,
+    "lon": -0.4023914,
+    "source": "osm",
+    "osm_site": "https://www.candlcountryclub.co.uk/",
+    "official_site": "https://www.candlcountryclub.co.uk/"
+  },
+  {
+    "name": "West London Golf Centre",
+    "lat": 51.5444118,
+    "lon": -0.3921697,
+    "source": "osm",
+    "osm_site": "https://westlondongolfcentre.com/",
+    "official_site": "https://westlondongolfcentre.com/"
+  },
+  {
+    "name": "Northolt Golf Course",
+    "lat": 51.5375225,
+    "lon": -0.379655,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hampstead Golf Club",
+    "lat": 51.5754908,
+    "lon": -0.1782088,
+    "source": "osm",
+    "osm_site": "https://www.hampsteadgolfclub.co.uk/",
+    "official_site": "https://www.hampsteadgolfclub.co.uk/"
+  },
+  {
+    "name": "Bromley Golf Centre",
+    "lat": 51.3841266,
+    "lon": 0.0493763,
+    "source": "osm",
+    "osm_site": "https://www.mytimeactive.co.uk/golf/centres/bromley/",
+    "official_site": "https://www.mytimeactive.co.uk/golf/centres/bromley/"
+  },
+  {
+    "name": "Oakhill 9 Hole Pitch and Putt",
+    "lat": 51.6374524,
+    "lon": -0.1509139,
+    "source": "osm",
+    "osm_site": "https://www.oakhillgolf.co.uk/",
+    "official_site": "https://www.oakhillgolf.co.uk/"
+  },
+  {
+    "name": "Eltham Warren Golf Club",
+    "lat": 51.4551627,
+    "lon": 0.0715997,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bigshots (Northwick Park)",
+    "lat": 51.571677,
+    "lon": -0.3198058,
+    "source": "osm",
+    "osm_site": "https://www.bigshotsgolfuk.com/",
+    "official_site": "https://www.bigshotsgolfuk.com/"
+  },
+  {
+    "name": "Championship Course",
+    "lat": 51.341938,
+    "lon": -0.0297388,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Birchwood Park Golf Course",
+    "lat": 51.414339,
+    "lon": 0.1603134,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Shirley Park Golf Club",
+    "lat": 51.370867,
+    "lon": -0.0596654,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Mill Hill Golf Course",
+    "lat": 51.633143,
+    "lon": -0.2601838,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Coulsdon Manor & Golf Club",
+    "lat": 51.3156531,
+    "lon": -0.1220411,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Dukes Meadows Golf, Tennis & Ski",
+    "lat": 51.4733146,
+    "lon": -0.2633762,
+    "source": "osm",
+    "osm_site": "https://dukesmeadows.com/",
+    "official_site": "https://dukesmeadows.com/"
+  },
+  {
+    "name": "Cuddington Golf Course",
+    "lat": 51.3367549,
+    "lon": -0.2209971,
+    "source": "osm",
+    "osm_site": "https://www.cuddingtongc.co.uk/",
+    "official_site": "https://www.cuddingtongc.co.uk/"
+  },
+  {
+    "name": "Metro Golf Centre",
+    "lat": 51.6055791,
+    "lon": -0.2245025,
+    "source": "osm",
+    "osm_site": "https://metrogolfcentre.co.uk/",
+    "official_site": "https://metrogolfcentre.co.uk/"
+  },
+  {
+    "name": "Malden Golf Club",
+    "lat": 51.4104507,
+    "lon": -0.2515186,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Coombe Wood Golf Course",
+    "lat": 51.4191095,
+    "lon": -0.2737329,
+    "source": "osm",
+    "osm_site": "https://www.coombewoodgolf.com/",
+    "official_site": "https://www.coombewoodgolf.com/"
+  },
+  {
+    "name": "David Lloyd Hampton",
+    "lat": 51.437079,
+    "lon": -0.3656648,
+    "source": "osm",
+    "osm_site": "https://www.davidlloyd.co.uk/club-finder/hampton/golf",
+    "official_site": "https://www.davidlloyd.co.uk/club-finder/hampton/golf"
+  },
+  {
+    "name": "Strawberry Hill Golf Club",
+    "lat": 51.4365988,
+    "lon": -0.343613,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Chingford Golf Course",
+    "lat": 51.6380381,
+    "lon": 0.0074827,
+    "source": "osm",
+    "osm_site": "https://www.chingfordgolfclub.org.uk/",
+    "official_site": "https://www.chingfordgolfclub.org.uk/"
+  },
+  {
+    "name": "Woodcote Park Golf Club",
+    "lat": 51.3299314,
+    "lon": -0.1506261,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cranham Golf Course",
+    "lat": 51.5557637,
+    "lon": 0.282267,
+    "source": "osm",
+    "osm_site": "https://www.cranhamgolfcourse.co.uk/",
+    "official_site": "https://www.cranhamgolfcourse.co.uk/"
+  },
+  {
+    "name": "Top Meadow",
+    "lat": 51.5411545,
+    "lon": 0.3124113,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Arkley Golf Club",
+    "lat": 51.65092,
+    "lon": -0.2377625,
+    "source": "osm",
+    "osm_site": "https://www.arkleygolfclub.co.uk/",
+    "official_site": "https://www.arkleygolfclub.co.uk/"
+  },
+  {
+    "name": "Maylands Golf Club",
+    "lat": 51.6120965,
+    "lon": 0.2488206,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hainault Forest Golf Club",
+    "lat": 51.6150622,
+    "lon": 0.1404781,
+    "source": "osm",
+    "osm_site": "https://www.hainaultgolfclub.co.uk/",
+    "official_site": "https://www.hainaultgolfclub.co.uk/"
+  },
+  {
+    "name": "Aquarius Golf Club",
+    "lat": 51.454989,
+    "lon": -0.0529638,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Dulwich and Sydenham Hill Golf Club",
+    "lat": 51.4389354,
+    "lon": -0.0738527,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Uxbridge Golf Course",
+    "lat": 51.5675832,
+    "lon": -0.4726439,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Northwood Golf Course",
+    "lat": 51.6055967,
+    "lon": -0.4281434,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Rowley Lane Golf Course",
+    "lat": 51.6495271,
+    "lon": -0.247466,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hillingdon Golf Course",
+    "lat": 51.5379074,
+    "lon": -0.4646046,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Grovelands' private golf course",
+    "lat": 51.6264803,
+    "lon": -0.1989253,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Queens Park Pitch and Putt",
+    "lat": 51.5366867,
+    "lon": -0.2120379,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cranfield Golf Course",
+    "lat": 51.5769437,
+    "lon": 0.1487923,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Wimbledon Common Golf Club & London Scottish Golf Club",
+    "lat": 51.4281314,
+    "lon": -0.2353351,
+    "source": "osm",
+    "osm_site": "https://www.wcgc.co.uk/",
+    "official_site": "https://www.wcgc.co.uk/"
+  },
+  {
+    "name": "Ingrebourne Links Golf Course",
+    "lat": 51.513613,
+    "lon": 0.2309576,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Purley Downs Golf Club",
+    "lat": 51.3355947,
+    "lon": -0.095157,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Horsenden Hill Activity Centre",
+    "lat": 51.5469265,
+    "lon": -0.3223811,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Brent Valley Public Golf Course",
+    "lat": 51.517354,
+    "lon": -0.3470841,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "World of Golf",
+    "lat": 51.4298767,
+    "lon": 0.0767976,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Falconwood Course",
+    "lat": 51.3474654,
+    "lon": -0.0276313,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hampton Court Palace Golf Club",
+    "lat": 51.3971113,
+    "lon": -0.3269149,
+    "source": "osm",
+    "osm_site": "https://www.hamptoncourtgolf.co.uk/",
+    "official_site": "https://www.hamptoncourtgolf.co.uk/"
+  },
+  {
+    "name": "Fulwell Golf Club",
+    "lat": 51.4342076,
+    "lon": -0.3600136,
+    "source": "osm",
+    "osm_site": "https://www.fulwellgolfclub.co.uk/",
+    "official_site": "https://www.fulwellgolfclub.co.uk/"
+  },
+  {
+    "name": "Woodford Golf Club",
+    "lat": 51.6165553,
+    "lon": 0.0171465,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "South Norwood Pitch and Putt",
+    "lat": 51.3971387,
+    "lon": -0.0599748,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Morden Park golf course",
+    "lat": 51.3914159,
+    "lon": -0.2066775,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Muswell Hill Golf Club",
+    "lat": 51.6047882,
+    "lon": -0.1388839,
+    "source": "osm",
+    "osm_site": "https://www.muswellhillgolfclub.co.uk/",
+    "official_site": "https://www.muswellhillgolfclub.co.uk/"
+  },
+  {
+    "name": "Hounslow Golf Park",
+    "lat": 51.4572978,
+    "lon": -0.3939173,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Addington Golf Club",
+    "lat": 51.364113,
+    "lon": -0.0389089,
+    "source": "osm",
+    "osm_site": "https://addingtongolf.com/",
+    "official_site": "https://addingtongolf.com/"
+  },
+  {
+    "name": "The Inspiration Club",
+    "lat": 51.5440145,
+    "lon": -0.4070514,
+    "source": "osm",
+    "osm_site": "https://theinspirationclub.co.uk/",
+    "official_site": "https://theinspirationclub.co.uk/"
+  },
+  {
+    "name": "The Oaks - Acorn Course",
+    "lat": 51.3421001,
+    "lon": -0.1768206,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Oaks Horley Course",
+    "lat": 51.3385455,
+    "lon": -0.1770933,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Oaks Sports Centre",
+    "lat": 51.3395795,
+    "lon": -0.1766159,
+    "source": "osm",
+    "osm_site": "https://theoaksgolf.co.uk/",
+    "official_site": "https://theoaksgolf.co.uk/"
+  },
+  {
+    "name": "Mitcham Golf Club",
+    "lat": 51.3939448,
+    "lon": -0.1512522,
+    "source": "osm",
+    "osm_site": "https://www.mitchamgolfcourse.co.uk/",
+    "official_site": "https://www.mitchamgolfcourse.co.uk/"
+  },
+  {
+    "name": "Wanstead Golf Club",
+    "lat": 51.5710067,
+    "lon": 0.0327127,
+    "source": "osm",
+    "osm_site": "https://www.wansteadgolf.org.uk/",
+    "official_site": "https://www.wansteadgolf.org.uk/"
+  },
+  {
+    "name": "Addington Court Golf Club",
+    "lat": 51.345989,
+    "lon": -0.0288394,
+    "source": "osm",
+    "osm_site": "https://www.addingtoncourt-golfclub.co.uk/",
+    "official_site": "https://www.addingtoncourt-golfclub.co.uk/"
+  },
+  {
+    "name": "Langley Park Golf Course",
+    "lat": 51.3849221,
+    "lon": -0.0101046,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Crews Hill Golf Course",
+    "lat": 51.6807448,
+    "lon": -0.1098606,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ilford Golf Club",
+    "lat": 51.5617846,
+    "lon": 0.0569362,
+    "source": "osm",
+    "osm_site": "https://www.ilfordgolfclub.co.uk/",
+    "official_site": "https://www.ilfordgolfclub.co.uk/"
+  },
+  {
+    "name": "Finchley Golf Course",
+    "lat": 51.6097942,
+    "lon": -0.2011644,
+    "source": "osm",
+    "osm_site": "https://www.finchleygolfclub.com/",
+    "official_site": "https://www.finchleygolfclub.com/"
+  },
+  {
+    "name": "Wyke Green Golf Club",
+    "lat": 51.491704,
+    "lon": -0.3350143,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ruislip Golf Course",
+    "lat": 51.5734219,
+    "lon": -0.4415417,
+    "source": "osm",
+    "osm_site": "https://www.hillingdon.gov.uk/index.jsp?articleid=11141",
+    "official_site": "https://www.hillingdon.gov.uk/index.jsp?articleid=11141"
+  },
+  {
+    "name": "Upminster Golf and Bowling Club",
+    "lat": 51.5652022,
+    "lon": 0.2504003,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "West Middlesex Golf Course",
+    "lat": 51.5137663,
+    "lon": -0.3569882,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Banstead Downs Golf Club",
+    "lat": 51.3347096,
+    "lon": -0.2069719,
+    "source": "osm",
+    "osm_site": "https://www.bansteaddowns.com/",
+    "official_site": "https://www.bansteaddowns.com/"
+  },
+  {
+    "name": "High Elms Golf Club",
+    "lat": 51.3471954,
+    "lon": 0.0722209,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  }
+]

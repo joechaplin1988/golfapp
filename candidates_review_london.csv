@@ -1,0 +1,77 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Stockley Park Golf Club,,51.5135428,-0.4429594,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bush Hill Park Golf Club,,51.6462836,-0.0880528,no_site,unknown,,low,no official website resolved (not in county union directory)
+Trent Park Golf Course,,51.6531621,-0.1316881,no_site,unknown,,low,no official website resolved (not in county union directory)
+Enfield Golf Club,,51.6501458,-0.1028065,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hadley Wood Golf Course,,51.6615782,-0.1627983,no_site,unknown,,low,no official website resolved (not in county union directory)
+South Hertfordshire Golf course,,51.6362423,-0.190479,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lee Valley Golf Course,https://www.visitleevalley.org.uk/en/content/cms/outdoors/golf/golf-courses-in-london/,51.6324466,-0.0341516,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+North Middlesex Golf Club,https://www.northmiddlesexgc.co.uk/,51.6221996,-0.1691583,clubv1,public,https://northmiddlesex.hub.clubv1.com/visitors/TeeSheet?date=2026-09-10,high,
+Hendon Golf Course,https://www.hendongolf.com/,51.6026654,-0.2163248,intelligent_golf,public,https://hendon.intelligentgolf.co.uk/visitorbooking/,high,
+Stanmore Golf Club,,51.6077478,-0.3190764,no_site,unknown,,low,no official website resolved (not in county union directory)
+Sudbury Golf Course,,51.5451536,-0.315196,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ealing Golf Course,,51.530265,-0.3172018,no_site,unknown,,low,no official website resolved (not in county union directory)
+Airlinks Golf Course,,51.4920774,-0.3915032,no_site,unknown,,low,no official website resolved (not in county union directory)
+Roehampton Club Golf Course,https://www.roehamptonclub.co.uk/,51.4589623,-0.2499627,unknown,unknown,,low,homepage loaded (https://www.roehamptonclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Wimbledon Park Golf Club,https://www.wpgc.co.uk/,51.4351283,-0.2085236,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.wpgc.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Highgate Golf Club,https://www.highgategc.co.uk/,51.5785493,-0.1634571,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Coombe Hill Golf Club,,51.4224141,-0.2616748,no_site,unknown,,low,no official website resolved (not in county union directory)
+Royal Mid-Surrey Golf Club,,51.4690269,-0.3076576,no_site,unknown,,low,no official website resolved (not in county union directory)
+Harrow Hill Golf Course,https://www.harrowhillgolfcourse.co.uk/,51.5773148,-0.3281059,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.harrowhillgolfcourse.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.harrowhillgolfcourse.co.uk', port=443): Failed to resolve 'www.harrowhillgolfcourse.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Sidcup Golf Club,https://www.sidcupgolfclub.co.uk/,51.4407549,0.1096302,unknown,unknown,,low,homepage loaded (https://sidcupgolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Tudor Park Footgolf Course,,51.6567318,-0.1784785,no_site,unknown,,low,no official website resolved (not in county union directory)
+Shooters Hill Golf Course,,51.471235,0.0778669,no_site,unknown,,low,no official website resolved (not in county union directory)
+Shortlands Golf Club,https://www.shortlandsgolfclub.com/,51.4109201,0.0003061,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Barnehurst Golf Course,https://www.mytimeactive.co.uk/golf/centres/barnehurst/default.aspx,51.4601385,0.1727634,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Harrow School Golf Course,https://www.harrowschool.org.uk/1541/outside-the-classroom/sport/,51.5690218,-0.3336431,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Royal Wimbledon Golf Course,,51.423006,-0.2406635,no_site,unknown,,low,no official website resolved (not in county union directory)
+Chislehurst Golf Course,https://www.chislehurstgolfclub.co.uk/,51.413725,0.0629256,intelligent_golf,login_required,,high,booking link requires login: https://www.chislehurstgolfclub.co.uk/visitors
+Hartsbourne Country Club,https://www.hartsbournecountryclub.co.uk/,51.6292564,-0.3553363,unknown,unknown,,low,homepage loaded (https://www.hartsbournecountryclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Haste Hill Golf Course,,51.5992397,-0.4240683,no_site,unknown,,low,no official website resolved (not in county union directory)
+C & L Golf & Country Club,https://www.candlcountryclub.co.uk/,51.5459695,-0.4023914,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.candlcountryclub.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.candlcountryclub.co.uk', port=443): Failed to resolve 'www.candlcountryclub.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Northolt Golf Course,,51.5375225,-0.379655,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hampstead Golf Club,https://www.hampsteadgolfclub.co.uk/,51.5754908,-0.1782088,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://hampsteadgc.hub.clubv1.com/Visitors/booking"
+Oakhill 9 Hole Pitch and Putt,https://www.oakhillgolf.co.uk/,51.6374524,-0.1509139,unknown,unknown,,low,homepage loaded (https://www.oakhillgolf.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Eltham Warren Golf Club,,51.4551627,0.0715997,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bigshots (Northwick Park),https://www.bigshotsgolfuk.com/,51.571677,-0.3198058,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.bigshotsgolfuk.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Championship Course,,51.341938,-0.0297388,no_site,unknown,,low,no official website resolved (not in county union directory)
+Mill Hill Golf Course,,51.633143,-0.2601838,no_site,unknown,,low,no official website resolved (not in county union directory)
+Coulsdon Manor & Golf Club,,51.3156531,-0.1220411,no_site,unknown,,low,no official website resolved (not in county union directory)
+"Dukes Meadows Golf, Tennis & Ski",https://dukesmeadows.com/,51.4733146,-0.2633762,brs,public,https://visitors.brsgolf.com/dukesmeadows#/course/1,high,
+Cuddington Golf Course,https://www.cuddingtongc.co.uk/,51.3367549,-0.2209971,intelligent_golf,login_required,,high,intelligent_golf convention path requires login: https://www.cuddingtongc.co.uk/visitorbooking/
+Metro Golf Centre,https://metrogolfcentre.co.uk/,51.6055791,-0.2245025,unknown,unknown,,low,homepage loaded (https://justgolfnorthlondon.com/) but no platform signal found on it or 9 booking-ish link(s)
+David Lloyd Hampton,https://www.davidlloyd.co.uk/club-finder/hampton/golf,51.437079,-0.3656648,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Strawberry Hill Golf Club,,51.4365988,-0.343613,no_site,unknown,,low,no official website resolved (not in county union directory)
+Chingford Golf Course,https://www.chingfordgolfclub.org.uk/,51.6380381,0.0074827,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Cranham Golf Course,https://www.cranhamgolfcourse.co.uk/,51.5557637,0.282267,unknown,unknown,,low,homepage loaded (https://www.cranhamgolfcourse.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Arkley Golf Club,https://www.arkleygolfclub.co.uk/,51.65092,-0.2377625,golf_manager,public,https://arkley9.golfmanager.com/consumer/ebookings?i=1&resourcetype=100031,high,
+Hainault Forest Golf Club,https://www.hainaultgolfclub.co.uk/,51.6150622,0.1404781,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.hainaultgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Aquarius Golf Club,,51.454989,-0.0529638,no_site,unknown,,low,no official website resolved (not in county union directory)
+Dulwich and Sydenham Hill Golf Club,,51.4389354,-0.0738527,no_site,unknown,,low,no official website resolved (not in county union directory)
+Northwood Golf Course,,51.6055967,-0.4281434,no_site,unknown,,low,no official website resolved (not in county union directory)
+Rowley Lane Golf Course,,51.6495271,-0.247466,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hillingdon Golf Course,,51.5379074,-0.4646046,no_site,unknown,,low,no official website resolved (not in county union directory)
+Grovelands' private golf course,,51.6264803,-0.1989253,no_site,unknown,,low,no official website resolved (not in county union directory)
+Queens Park Pitch and Putt,,51.5366867,-0.2120379,no_site,unknown,,low,no official website resolved (not in county union directory)
+Cranfield Golf Course,,51.5769437,0.1487923,no_site,unknown,,low,no official website resolved (not in county union directory)
+Purley Downs Golf Club,,51.3355947,-0.095157,no_site,unknown,,low,no official website resolved (not in county union directory)
+Horsenden Hill Activity Centre,,51.5469265,-0.3223811,no_site,unknown,,low,no official website resolved (not in county union directory)
+Brent Valley Public Golf Course,,51.517354,-0.3470841,no_site,unknown,,low,no official website resolved (not in county union directory)
+World of Golf,,51.4298767,0.0767976,no_site,unknown,,low,no official website resolved (not in county union directory)
+Falconwood Course,,51.3474654,-0.0276313,no_site,unknown,,low,no official website resolved (not in county union directory)
+Fulwell Golf Club,https://www.fulwellgolfclub.co.uk/,51.4342076,-0.3600136,brs,public,https://visitors.brsgolf.com/fulwell#/course/1%20,high,confirmed by following the platform link found on the club's own site
+Woodford Golf Club,,51.6165553,0.0171465,no_site,unknown,,low,no official website resolved (not in county union directory)
+South Norwood Pitch and Putt,,51.3971387,-0.0599748,no_site,unknown,,low,no official website resolved (not in county union directory)
+Morden Park golf course,,51.3914159,-0.2066775,no_site,unknown,,low,no official website resolved (not in county union directory)
+Muswell Hill Golf Club,https://www.muswellhillgolfclub.co.uk/,51.6047882,-0.1388839,intelligent_golf,public,https://muswellhill.intelligentgolf.co.uk/visitorbooking/,high,
+Hounslow Golf Park,,51.4572978,-0.3939173,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Inspiration Club,https://theinspirationclub.co.uk/,51.5440145,-0.4070514,intelligent_golf,public,https://inspirationclub.intelligentgolf.co.uk/visitorbooking/,high,
+The Oaks - Acorn Course,,51.3421001,-0.1768206,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Oaks Horley Course,,51.3385455,-0.1770933,no_site,unknown,,low,no official website resolved (not in county union directory)
+Oaks Sports Centre,https://theoaksgolf.co.uk/,51.3395795,-0.1766159,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Crews Hill Golf Course,,51.6807448,-0.1098606,no_site,unknown,,low,no official website resolved (not in county union directory)
+Finchley Golf Course,https://www.finchleygolfclub.com/,51.6097942,-0.2011644,intelligent_golf,public,https://www.finchleygolfclub.com/visitorbooking/,high,
+Wyke Green Golf Club,,51.491704,-0.3350143,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ruislip Golf Course,https://www.hillingdon.gov.uk/index.jsp?articleid=11141,51.5734219,-0.4415417,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Upminster Golf and Bowling Club,,51.5652022,0.2504003,no_site,unknown,,low,no official website resolved (not in county union directory)
+West Middlesex Golf Course,,51.5137663,-0.3569882,no_site,unknown,,low,no official website resolved (not in county union directory)
