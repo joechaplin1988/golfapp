@@ -52,6 +52,10 @@
   details[open] > summary .chev { transform:rotate(180deg); }
   .times { border-top:1px solid var(--line); padding:6px 14px 10px; display:flex; flex-direction:column; }
   .profile { color:var(--muted); font-size:.82rem; padding:6px 0 2px; }
+  .choices { display:flex; flex-wrap:wrap; gap:8px; margin:4px 2px 12px; }
+  .choices button { font:inherit; font-size:.9rem; padding:8px 12px; cursor:pointer;
+    background:var(--card); color:var(--ink); border:1px solid var(--line); border-radius:999px; }
+  .choices button:hover { border-color:var(--accent); }
   .row { display:flex; align-items:center; gap:14px; padding:8px 0; border-bottom:1px dashed var(--line); }
   .row:last-child { border-bottom:0; }
   .time { font-size:1.15rem; font-weight:700; font-variant-numeric:tabular-nums; min-width:60px; }
@@ -77,8 +81,9 @@
 
   <form id="search">
     <div class="field wide">
-      <label for="postcode">Your postcode</label>
-      <input id="postcode" name="postcode" placeholder="e.g. TN13 1XX" autocomplete="postal-code" required />
+      <label for="postcode">Where are you?</label>
+      <input id="postcode" name="postcode" placeholder="Postcode or town, e.g. TN13 1XX or Sevenoaks"
+             autocomplete="postal-code" required />
     </div>
     <div class="field">
       <label for="date">Date</label>
@@ -182,12 +187,68 @@ $("date").min = today;
 
 function setStatus(msg) { statusEl.textContent = msg; }
 
-async function geocode(postcode) {
-  const r = await fetch("https://api.postcodes.io/postcodes/" + encodeURIComponent(postcode.trim()));
-  if (r.status === 404) throw new Error("That postcode wasn't found — check it and try again.");
-  if (!r.ok) throw new Error("Couldn't look up that postcode right now.");
-  const j = await r.json();
-  return { lat: j.result.latitude, lng: j.result.longitude, place: j.result.admin_district };
+// Postcode, part-postcode, or town name — people who know an area rarely
+// know a full postcode in it.
+const FULL_POSTCODE_RE = /^[a-z]{1,2}\d[a-z\d]?\s*\d[a-z]{2}$/i;
+const OUTCODE_RE = /^[a-z]{1,2}\d[a-z\d]?$/i;
+
+async function getJson(url) {
+  const r = await fetch(url);
+  if (r.status === 404) return null;
+  if (!r.ok) throw new Error("Couldn't look up that location right now.");
+  return (await r.json()).result;
+}
+
+// Returns either a single {lat,lng,place} or {options:[...]} to choose from.
+// A chooser is not optional politeness here: Postcodes.io ranks "Brighton"
+// in Cornwall above Brighton & Hove, and "Richmond" in North Yorkshire above
+// Richmond upon Thames. Silently taking the first hit would send a Brighton
+// golfer to Cornwall.
+async function resolveLocation(input) {
+  const q = input.trim();
+  if (!q) throw new Error("Type a postcode or a town to search near.");
+
+  if (FULL_POSTCODE_RE.test(q)) {
+    const res = await getJson("https://api.postcodes.io/postcodes/" + encodeURIComponent(q));
+    if (!res) throw new Error("That postcode wasn't found — check it and try again.");
+    return { lat: res.latitude, lng: res.longitude, place: res.admin_district };
+  }
+  if (OUTCODE_RE.test(q)) {
+    const res = await getJson("https://api.postcodes.io/outcodes/" + encodeURIComponent(q));
+    if (res) {
+      return { lat: res.latitude, lng: res.longitude,
+               place: (res.admin_district && res.admin_district[0]) || res.outcode };
+    }
+  }
+  const places = await getJson("https://api.postcodes.io/places?limit=8&q=" + encodeURIComponent(q));
+  if (!places || !places.length) {
+    throw new Error("Couldn't find \"" + q + "\" — try a postcode, or a nearby town.");
+  }
+  // An exact name match is far more likely to be the place meant than a
+  // longer one that merely starts with it ("Sevenoaks" vs "Sevenoaks Weald").
+  const exact = places.filter(p => (p.name_1 || "").toLowerCase() === q.toLowerCase());
+  const list = exact.length ? exact : places;
+  const options = list.slice(0, 6).map(p => ({
+    lat: p.latitude, lng: p.longitude,
+    place: p.name_1,
+    where: p.county_unitary || p.region || p.country || "",
+  }));
+  return options.length === 1 ? options[0] : { options };
+}
+
+function askWhichPlace(options) {
+  clearResults();
+  setStatus("More than one place matches. Which did you mean?");
+  const box = document.createElement("div");
+  box.className = "choices";
+  for (const o of options) {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.textContent = o.where ? o.place + " · " + o.where : o.place;
+    b.addEventListener("click", () => runSearch(o));
+    box.appendChild(b);
+  }
+  resultsEl.appendChild(box);
 }
 
 // PostgREST caps any single response at 1,000 rows, so page through with
@@ -249,10 +310,13 @@ function applyFilters(rows, f) {
 function groupByCourse(rows) {
   const groups = new Map();
   for (const t of rows) {
-    const key = t.club_name + "|" + (t.course_name || "");
+    // A club that sells one physical course as several combinations (see
+    // migrations 003/004) is one card, not one card per combination.
+    const key = t.one_course ? t.club_name : t.club_name + "|" + (t.course_name || "");
     let g = groups.get(key);
     if (!g) {
-      g = { club: t.club_name, course: t.course_name, distance_km: t.distance_km,
+      g = { club: t.club_name, course: t.one_course ? null : t.course_name,
+            distance_km: t.distance_km,
             courseType: t.course_type, yardage: t.yardage, times: [] };
       groups.set(key, g);
     }
@@ -361,18 +425,11 @@ for (const id of ["from", "to", "holes", "maxprice", "sort"]) {
   $(id).addEventListener("input", render);
 }
 
-$("search").addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const btn = e.target.querySelector("button.go");
+async function runSearch(loc) {
+  const btn = $("search").querySelector("button.go");
   btn.disabled = true;
   resultsEl.innerHTML = "";
   try {
-    if (SUPABASE_ANON_KEY.startsWith("__PASTE")) {
-      setStatus("Not configured yet: the Supabase anon key hasn't been set in index.html.");
-      return;
-    }
-    setStatus("Finding your location…");
-    const loc = await geocode($("postcode").value);
     setStatus("Searching clubs near " + (loc.place || "you") + "…");
     allRows = await fetchAllTeeTimes({
       in_lat: loc.lat, in_lng: loc.lng,
@@ -384,6 +441,30 @@ $("search").addEventListener("submit", async (e) => {
     });
     filtersEl.hidden = false;
     render();
+  } catch (err) {
+    setStatus(err.message || "Something went wrong.");
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+$("search").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const btn = e.target.querySelector("button.go");
+  btn.disabled = true;
+  resultsEl.innerHTML = "";
+  try {
+    if (SUPABASE_ANON_KEY.startsWith("__PASTE")) {
+      setStatus("Not configured yet: the Supabase anon key hasn't been set in index.html.");
+      return;
+    }
+    setStatus("Finding that location…");
+    const loc = await resolveLocation($("postcode").value);
+    if (loc.options) {
+      askWhichPlace(loc.options);
+      return;
+    }
+    await runSearch(loc);
   } catch (err) {
     setStatus(err.message || "Something went wrong.");
   } finally {

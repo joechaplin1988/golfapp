@@ -325,6 +325,15 @@ on the RPC URL with `Prefer: count=exact`, reading the true total from the
 `Content-Range` header) and then does all filtering locally. Note a `Range`
 header does *not* limit RPC calls — only the query parameters do.
 
+Search accepts a **postcode, a part-postcode, or a town** — people who know
+an area rarely know a full postcode in it. `TN13 1AA` → `/postcodes`,
+`TN13` → `/outcodes`, anything else → `/places`. Where a name is ambiguous
+the page asks rather than guessing, because Postcodes.io ranks **Brighton in
+Cornwall above Brighton & Hove**, and Richmond in North Yorkshire above
+Richmond upon Thames; silently taking the first hit would send a Brighton
+golfer to Cornwall. An exact name match wins over a longer one that merely
+starts the same, so "Sevenoaks" doesn't offer Sevenoaks Weald.
+
 Results are **grouped one card per course** (name, distance, "N tee times
 from HH:MM", "from £X"), expanding to the individual times with Book links —
 so a 20-mile search is ~25 cards, not 1,000 rows. A filter bar appears after
@@ -720,11 +729,11 @@ Migration `003` shipped and applied. Same Burgess Hill search, before → after:
 | cards for this one club | 6 | 3 |
 | cards in the whole search | 13 | 10 |
 
-Note the club still shows as **three** cards, not one: different tee times
-survive under different combination names, so the repetition is gone but the
-club is still split. Collapsing a flagged club to a single card needs the RPC
-to expose `dedupe_courses` and the page to group on club rather than course —
-a further migration plus a web change, so worth batching with other page work.
+The club still showed as **three** cards after 003, not one: different tee
+times survive under different combination names. Migration `004` returns the
+flag as `one_course` and the page groups on club alone when it is set, so a
+shared-nines club is now a single card. Batched into the same deploy as the
+town-name search, to spend one Netlify build rather than two.
 
 ### Hampshire residue — 4 more clubs (2026-09-10)
 57 rechecked → 4 ready + 1 platform-hinted probed → **Andover, Bishopswood,
