@@ -245,6 +245,9 @@ def main() -> None:
     ap.add_argument("--config", default="clubs_config.csv")
     ap.add_argument("--out", default="course_profiles.csv")
     ap.add_argument("--only", nargs="*", default=[], help="club names (substring) to (re)do")
+    ap.add_argument("--missing", action="store_true",
+                    help="only rows --out has no entry for, and MERGE into it "
+                         "(the usual case after adding a county)")
     a = ap.parse_args()
 
     sites = official_sites()
@@ -252,6 +255,15 @@ def main() -> None:
         rows = [r for r in csv.DictReader(f) if r.get("base_url")]
     if a.only:
         rows = [r for r in rows if any(o.lower() in r["club_name"].lower() for o in a.only)]
+    existing: dict = {}
+    if a.missing:
+        try:
+            with open(a.out, newline="", encoding="utf-8") as f:
+                existing = {r["club_name"]: r for r in csv.DictReader(f)}
+        except FileNotFoundError:
+            existing = {}
+        rows = [r for r in rows if r["club_name"] not in existing]
+        log.info(f"{len(existing)} row(s) already in {a.out}; {len(rows)} to do")
 
     session = requests.Session()
     out = []
@@ -262,6 +274,13 @@ def main() -> None:
         log.info(f"[{i}/{len(rows)}] {r['club_name'][:38]:38} "
                  f"{prof['course_type'] or '-':11} {prof['yardage'] or '-':6} {prof['note'][:42]}")
 
+    if a.missing and existing:
+        # Merge, never clobber: course_profiles.csv is hand-checked, and a
+        # rerun must not throw away corrections made to rows it isn't redoing.
+        merged = dict(existing)
+        for r in out:
+            merged[r["club_name"]] = r
+        out = [merged[k] for k in sorted(merged)]
     with open(a.out, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS)
         w.writeheader()

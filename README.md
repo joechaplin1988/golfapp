@@ -868,10 +868,16 @@ off each tee. We take the medal/white figure, which is what clubs quote, and
 `enrich_courses.py` keeps every candidate it saw in `all_yardages` so a
 misread scorecard is visible at review time.
 
-**Coverage is partial and that is fine** — 89 of 157 courses have at least
-one fact (30 both, 39 type only, 20 yardage only). The page omits the line
-entirely for the rest. Pulling facts off 157 unrelated club websites
-plateaus; the remainder wants hand-filling.
+**Coverage is partial and that is fine** — 133 of 232 sheets have at least
+one fact (51 with both). The page omits the line entirely for the rest.
+Pulling facts off 200-odd unrelated club websites plateaus; the remainder
+wants hand-filling.
+
+Re-run after adding a county with `--missing`, which does only the rows the
+file has no entry for and **merges** into it. The first attempt used `--only`
+with a shell-built name list, quoted it wrong, and silently redid all 159
+rows — which would also have discarded the hand corrections below. Merging is
+the point: `course_profiles.csv` is the reviewed artefact.
 
 **Two passes were thrown away before shipping, both for wrong labels:**
 1. A bare `\blinks\b` matched the "Quick Links" in site footers and labelled
