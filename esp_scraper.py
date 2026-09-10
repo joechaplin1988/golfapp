@@ -61,6 +61,9 @@ def _to_ddmmyy(date_iso: str) -> str:
     return datetime.strptime(date_iso, "%Y-%m-%d").strftime("%d/%m/%y")
 
 
+ESP_BACKEND_ERROR_RE = re.compile(r"RestAPI error|Connection timed out after|Fatal error", re.I)
+
+
 def _find_18_hole_group(html: str) -> str | None:
     """Pick the visitor 18-hole group link from the chooser page, else None."""
     soup = BeautifulSoup(html, "html.parser")
@@ -133,8 +136,18 @@ def scrape_club(club: gc.ClubConfig, date_iso: str, session) -> tuple[list[gc.Te
     if not any(p in start.url for p in DATE_CHOOSER_PAGES):
         group_href = _find_18_hole_group(start.text)
         if not group_href:
-            log.error(f"[{club.club_name}] No booking group link and not on a date chooser — "
-                      f"clubid may be wrong or this club isn't a standard ESP visitor sheet")
+            # ESP's own backend sometimes fails behind its front end: the page
+            # renders normally, with the club's name, and simply has no groups
+            # plus a line like "ESP RestAPI error: Connection timed out after
+            # 10001 milliseconds" (seen on Cranleigh, which scrapes fine
+            # hours either side). Blaming the config for that sends whoever
+            # reads the log hunting for a wrong clubid.
+            if ESP_BACKEND_ERROR_RE.search(start.text):
+                log.error(f"[{club.club_name}] ESP's own backend errored on the group page "
+                          f"— transient on their side, not a config problem; keeping existing rows")
+            else:
+                log.error(f"[{club.club_name}] No booking group link and not on a date chooser — "
+                          f"clubid may be wrong or this club isn't a standard ESP visitor sheet")
             return [], "error"
         grp = gc.fetch(session, club.club_name, "GET", urljoin(start.url, group_href))
         if grp is None:
