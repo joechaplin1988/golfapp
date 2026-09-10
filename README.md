@@ -1,8 +1,8 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **seven platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone) — **158 clubs / 186 sheets per scheduled run (2026-09-10)**, Kent,
-Sussex, Surrey and Essex fingerprinted, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
+ClubV1, BRS, Shiji, Gladstone) — **161 clubs / 189 sheets per scheduled run (2026-09-10)**, Kent,
+Sussex, Surrey and Essex done and Hampshire in progress, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
 
@@ -27,6 +27,7 @@ which platform a club runs:
 | `apply_approved.py` | — | — | appends verified rows to the config |
 | `enrich_courses.py` | — | each club's own site | proposes course type + yardage → `course_profiles.csv` |
 | `apply_migrations.py` | — | `db/migrations/*.sql` | applies pending schema changes (run by the workflow) |
+| `recheck_residue.py` | — | club sites, browser UA | second pass over clubs the fingerprint couldn't resolve |
 | `run_pipeline.py` | all | — | one command: syncs config → DB, scrapes a date window → DB |
 
 `golf_common.py` owns the shared contract: the `TeeTimeResult` shape, config
@@ -689,6 +690,40 @@ Two platform-specific notes worth keeping:
   records legitimately vary between `{"1"}`, `{"1","2"}` and `{"1".."4"}`.
   That's remaining-capacity data, not a bug — the player-count filter should
   use it.
+
+### The residue pass is a script now (2026-09-10)
+Kent's residue recovered 16 clubs and Surrey's 5, both done by hand each
+time. `recheck_residue.py` is that method written down: re-fetch with a
+browser user agent and the bare domain (most "blocked"/"error" rows are a WAF
+rejecting an unusual agent or a certificate issued for another hostname),
+follow booking sub-pages one hop, then probe
+`<slug>.intelligentgolf.co.uk/visitorbooking/` if the site mentions IG at
+all. It skips `access=not_available` rows: a ClubV1 "Permission Denied" is
+already a settled answer, so re-asking wastes requests. Output is a review
+CSV in `fingerprint`'s shape, so it feeds `probe_course_ids.py` unchanged.
+
+Essex residue: 47 rechecked → 4 looked ready, plus 4 with a platform hint
+worth probing → **3 added** (West Essex, The Rayleigh Club, Three Rivers).
+Two of the four "ready" were false: Chelmsford's `/visitorbooking/` is its
+**competition** booking page, and Colchester's needs a login. Both were
+caught by opening them, not by the pattern — the path convention is a hint,
+never proof.
+
+### Hampshire — mainland only (2026-09-10)
+The union is at hampshiregolf.org**.uk** (not .org) but is the same CMS, 77
+clubs. It also covers the **Isle of Wight and the Channel Islands**, which
+are excluded: search distances are straight-line, so an IoW course would
+advertise itself ~15 miles from Portsmouth and then need a ferry. The
+exclusion matches club NAMES, because several give no island in their title
+(L'Ancresse, Les Mielles, La Grande Mare are Channel Islands). 107 → 89
+mainland candidates.
+
+A bug worth remembering: the first version of that exclusion never matched
+anything, because a `` written through a shell heredoc into a non-raw
+Python string became a literal backspace (0x08) in the regex. Everything
+looked right in the source. A sweep of every .py/.sql/.html for stray control
+characters found only those two lines, but that sweep is worth repeating
+after any heredoc-written regex.
 
 ### Essex, and the clubs the enumerator was throwing away (2026-09-10)
 `cmd_enumerate` wrote only the OSM list. Clubs the county union lists but OSM

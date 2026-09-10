@@ -234,6 +234,20 @@ now has a scraper (7 platforms). Left: one-offs only (Rustington/Fusemetrix,
 Tonbridge GC/BookingHound, Lullingstone/Chronogolf), Tudor Park (host
 unreachable), Rye/Wrotham Heath re-probes. Next region
 order agreed: Surrey, Essex, Hampshire, Hertfordshire, Berkshire.
+**Residue pass is now recheck_residue.py (2026-09-10)** - the by-hand method
+from Kent/Surrey, written down and re-runnable per county. Essex residue:
+47 rechecked -> 3 added (West Essex, Rayleigh, Three Rivers) -> **161 clubs
+/ 189 sheets**. Trap: an IG `/visitorbooking/` path can be a COMPETITION
+booking page (Chelmsford) or need a login (Colchester) - open it, don't
+trust the convention.
+**Hampshire started (2026-09-10)**: union at hampshiregolf.org.UK, same CMS,
+77 clubs; IoW + Channel Islands excluded by name (straight-line distance
+would put IoW ~15mi from Portsmouth, ferry required). 89 mainland
+candidates, fingerprinting. Bug worth remembering: `` written via a shell
+heredoc into a non-raw Python string became a literal 0x08 backspace in a
+regex, so the filter silently matched nothing - sweep for control chars
+after writing regexes that way.
+
 **Essex + enumerator fix (2026-09-10)**: cmd_enumerate only wrote OSM clubs,
 so union-listed clubs OSM lacked were silently dropped - 49 across the four
 counties (Rochford Hundred, Romford, Southend-on-Sea, Brighton & Hove...).

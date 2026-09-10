@@ -105,6 +105,25 @@ COUNTY_BOUNDS = {
     # Southend-on-Sea and Thurrock are unitary authorities, so OSM does not
     # nest them under "Essex" — name them or the coast is missed.
     "essex": ["Essex", "Southend-on-Sea", "Thurrock"],
+    # Mainland only. Hampshire's union also covers the Isle of Wight and the
+    # Channel Islands, but our distances are straight-line: an IoW course
+    # would show up 15 "miles" from Portsmouth and need a ferry.
+    "hampshire": ["Hampshire", "Southampton", "Portsmouth"],
+}
+
+# Clubs the county union lists that are not reachable by road from the county
+# (see hampshire above). Applied only to the union-only additions.
+COUNTY_UNION_EXCLUDE = {
+    # Hampshire's union also covers the Isle of Wight and the Channel Islands.
+    # Search distances are straight-line, so an IoW course would advertise
+    # itself as ~15 miles from Portsmouth and then need a ferry. Matched on
+    # club names, not island names: several give no island in their title
+    # (L'Ancresse, Les Mielles and La Grande Mare are all Channel Islands).
+    "hampshire": re.compile(
+        r"\b(alderney|jersey|guernsey|sark|herm|la moye|l'?ancresse|"
+        r"la grande mare|les mielles|les ormes|st\.? ?pierre park|st\.? ?clements|"
+        r"isle of wight|freshwater|shanklin|osborne|ryde|ventnor|cowes|"
+        r"newport|westridge)\b", re.I),
 }
 
 
@@ -185,6 +204,9 @@ COUNTY_UNION_URLS = {
     "sussex": "https://www.sussexgolf.org/countyclubs.php",
     "surrey": "https://www.surreygolf.org/countyclubs.php",   # same CMS, 111 clubs
     "essex": "https://www.essexgolf.org/countyclubs.php",     # same CMS, 70 clubs
+    # .org.uk, not .org — and the union's own "/clubs" page is a different
+    # layout, but countyclubs.php is there and is the same CMS. 77 clubs.
+    "hampshire": "https://www.hampshiregolf.org.uk/countyclubs.php"
 }
 
 SOCIAL_HOSTS = ("facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com", "youtube.com")
@@ -293,8 +315,11 @@ def cmd_enumerate(args):
         return any(n == o or (n and (n in o or o in n)) for o in osm_norms)
 
     extra = 0
+    off_county = COUNTY_UNION_EXCLUDE.get(args.county)
     for name, site in union_sites.items():
         if already_have(name) or NOT_A_SEPARATE_COURSE_RE.search(name):
+            continue
+        if off_county and off_county.search(name):
             continue
         osm.append({"name": name, "official_site": site, "lat": None, "lon": None,
                     "source": "county_union"})
