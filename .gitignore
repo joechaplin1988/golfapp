@@ -18,16 +18,15 @@ web/config.js
 # Discovery pipeline outputs — regenerable, not source
 candidates_kent.json
 candidates_sussex.json
-candidates_review.csv
 kent_sussex_osm_golf.json
 kent_directory_scan.json
 
 # discovery caches + working files
+# (candidates_review_*.csv and recheck_*.csv are NOT ignored: they are the
+#  evidence behind coverage.csv, which is the reviewable list of every club)
 osm_*.json
 union_*.json
 approved_rows.csv
-candidates_review_*.csv
 approved_rows_*.csv
-residue.csv
 candidates_recovered.json
 course_profiles.csv.bak

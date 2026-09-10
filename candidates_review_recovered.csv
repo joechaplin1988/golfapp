@@ -1,0 +1,20 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Corinthian Golf Club,https://www.corinthiansportsclub.co.uk/golf-course,,,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Kingsnorth Golf Club,https://kingsnorthgolf.co.uk/,,,unknown,unknown,,low,homepage loaded (https://kingsnorthgolf.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Park Wood Golf Club,https://www.parkwoodgolf.co.uk/,,,brs,public,https://visitors.brsgolf.com/parkwood#/course/1,high,
+Sevenoaks Town Golf Club,https://www.stgcgolf.co.uk/,,,unknown,unknown,,low,homepage loaded (https://www.stgcgolf.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Ashdown Golfers,https://www.royalashdown.co.uk,,,intelligent_golf,public,https://www.royalashdown.co.uk/visitorbooking/,high,
+Brighton & Hove Golf Club,https://www.brightongolf.co.uk,,,intelligent_golf,public,https://brighton.intelligentgolf.co.uk/visitorbooking/,high,
+Chichester Golf Club,https://chichestergolf.com,,,esp,public,https://www.e-s-p.com/elitelive/book_date.php,high,
+East Brighton Golf Club,https://www.ebgc.co.uk,,,intelligent_golf,public,https://eastbrighton.intelligentgolf.co.uk/visitorbooking/,high,
+Golf At Goodwood,https://www.goodwood.com/golf/,,,intelligent_golf,login_required,,high,booking link requires login: https://goodwood.intelligentgolf.co.uk/visitorbooking/
+West Hove Golf Club,https://www.westhovegolfclub.com,,,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://westhove.hub.clubv1.com/Visitors/booking"
+Braeside Golf Club,https://www.braesidegolfclub.com/,,,unknown,unknown,,low,homepage loaded (https://www.braesidegolfclub.com/) but no platform signal found on it or 0 booking-ish link(s)
+Charterhouse School Golf Club,https://www.charterhousegolfclub.co.uk/,,,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Coulsdon Court Golf Club,https://ccgc.co.uk/,,,unknown,unknown,,low,homepage loaded (https://ccgc.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+David Lloyd Hampton Golf Golf Club,https://www.dlgolf.co.uk/,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.dlgolf.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Hampton Court Palace Golf Club,https://hamptoncourtgolf.co.uk/,,,golf_manager,public,https://hamptoncourtpalace.golfmanager.com/consumer/ebookings?i=1&resourcetype=100062,high,
+Moore Place Golf Club,https://www.intelligentgolf.co.uk/,,,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Royal Automobile Country Club Golf Club,https://www.royalautomobileclub.co.uk,,,unknown,login_required,,high,booking link (2 hops in) requires login: https://www.royalautomobileclub.co.uk/wp-login.php?redirect_to=https%3A%2F%2Fwww.royalautomobileclub.co.uk%2Fmotoring%2Ftrophies-and-awards%2Fmotoring-book-of-the-year%2F
+White Lodge Golf Club,https://whitelodgegolfclub.co.uk/,,,error,unknown,,low,homepage fetch failed: Exceeded 30 redirects.
+Windlemere Ladies Golf Club,https://www.intelligentgolf.co.uk/,,,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found

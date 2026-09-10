@@ -1,0 +1,86 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Chigwell Golf Club,https://www.chigwellgolfclub.co.uk,51.6133015,0.0746835,intelligent_golf,public,https://chigwell.intelligentgolf.co.uk/visitorbooking/,high,
+Woolston Manor Golf & Country Club,https://www.woolstonmanor.co.uk,51.6409419,0.0936986,brs,public,https://visitors.brsgolf.com/woolstonmanor#/course/1,high,
+Stapleford Abbotts - Priors Golf Course,https://www.staplefordabbottsgolf.co.uk,51.6323105,0.2172544,brs,public,https://visitors.brsgolf.com/staplefordabbottsgc#/course/1,high,
+Weald Park Hotel Golf and Country Club,,51.637794,0.2456019,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bentley Golf Course,https://www.bentleygolfclub.com,51.6521551,0.271707,unknown,unknown,,low,homepage loaded (https://bentleygolfclub.com/) but no platform signal found on it or 5 booking-ish link(s)
+Nazeing Golf Club,https://www.nazeinggolfclub.co.uk,51.7333247,0.038511,brs,public,https://visitors.brsgolf.com/nazeing#/course/1,high,confirmed by following the platform link found on the club's own site
+Bishop's Stortford Golf Club,,51.8684067,0.1884653,no_site,unknown,,low,no official website resolved (not in county union directory)
+Theydon Bois Golf Club,https://www.theydongolf.co.uk,51.6798399,0.0937265,intelligent_golf,public,https://theydonbois.intelligentgolf.co.uk/visitorbooking/,high,
+West Essex Golf Club,https://www.westessexgolfclub.co.uk,51.6507601,0.0134039,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Blakes Golf Course,https://www.blakesgolfclub.com,51.7200471,0.1873414,brs,public,https://visitors.brsgolf.com/blakes#/course/1,high,
+Top Meadow,https://www.topmeadow.co.uk,51.5411545,0.3124113,clubv1,public,https://topmeadow.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-10,high,
+South Essex Golf Centre,,51.5873851,0.3667771,no_site,unknown,,low,no official website resolved (not in county union directory)
+Saffron Walden Golf Club,,52.0284342,0.2252441,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hainault Forest Golf Club,https://www.hainaultforestgolfclub.co.uk,51.6150622,0.1404781,unknown,unknown,,low,homepage loaded (https://www.hainaultforestgolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Dunton Hills,,51.5700492,0.3706681,no_site,unknown,,low,no official website resolved (not in county union directory)
+Clacton-on-Sea Golf Club,https://www.clactongolfclub.com,51.7789698,1.1277667,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://clactongc.hub.clubv1.com/Visitors/booking"
+Rochford Hall Golf Course,,51.5789554,0.6976426,no_site,unknown,,low,no official website resolved (not in county union directory)
+Chelmsford Golf Course,https://www.chelmsfordgc.co.uk,51.714425,0.4553482,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Colchester Golf Club,https://www.colchestergolfclub.com,51.9107055,0.8787967,intelligent_golf,login_required,,high,booking link requires login: https://www.colchestergolfclub.com/visitorbooking
+Frinton Golf Club,https://www.frintongolfclub.com,51.8212754,1.2333003,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://frintongc.hub.clubv1.com/Visitors/booking"
+Boyce Hill Golf Course,https://www.boycehillgolfclub.co.uk,51.5533865,0.5696621,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://boycehill.hub.clubv1.com/Visitors/booking"
+Millers Barn Golf Park,https://www.millersbarngolf.co.uk,51.7870063,1.1242501,brs,public,https://visitors.brsgolf.com/millersbarn#/course/1,high,
+Harwich & Dovercourt Golf Club,https://www.harwichanddovercourtgolfclub.com,51.9384419,1.2425673,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://harwichanddovercourt.hub.clubv1.com/Visitors/booking"
+Loughton Golf Club,,51.6626593,0.0750045,no_site,unknown,,low,no official website resolved (not in county union directory)
+Maldon Golf Club,https://www.maldongolfclub.org,51.7402597,0.6688226,unknown,unknown,,low,homepage loaded (https://www.maldongolfclub.org/) but no platform signal found on it or 1 booking-ish link(s)
+Burnham-on-Crouch Golf Club,https://www.burnhamgolfclub.co.uk,51.6383137,0.7856598,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://burnham-on-crouch.hub.clubv1.com/Visitors/booking"
+Play Golf Colchester (Lexden Wood Golf Course),https://www.colchestergolfclub.com,51.8998657,0.8617194,intelligent_golf,login_required,,high,booking link requires login: https://www.colchestergolfclub.com/visitorbooking
+Five Lakes,https://www.fivelakesgolfclub.co.uk,51.7865084,0.8018549,intelligent_golf,public,https://www.fivelakesgolfclub.co.uk/visitorbooking/,high,
+Braintree Golf Club,https://www.braintreegolfclub.co.uk,51.8927396,0.6080798,intelligent_golf,public,https://www.braintreegolfclub.co.uk/visitorbooking/,high,
+Hylands Golf Complex & Academy,,51.7004013,0.426785,no_site,unknown,,low,no official website resolved (not in county union directory)
+Saint Cleres Hall Golf Club,,51.5075904,0.4106565,no_site,unknown,,low,no official website resolved (not in county union directory)
+Orsett Golf Club,https://www.orsettgolfclub.co.uk,51.4988069,0.3903014,unknown,unknown,,low,homepage loaded (https://www.orsettgolfclub.co.uk/) but no platform signal found on it or 6 booking-ish link(s)
+Garon Park Golf Complex,https://www.garonparkgolf.co.uk,51.553164,0.742203,esp,public,https://www.e-s-p.com/elitelive/book_group.php,high,
+Castle Point Golf Course,https://www.glendalegolf.co.uk/castle-point-golf-course/,51.5345688,0.5801589,intelligent_golf,public,https://castlepoint.intelligentgolf.co.uk/visitorbooking/,high,
+Benton Hall Golf and Country Club,https://www.theclubcompany.com,51.7799318,0.6516371,unknown,unknown,,low,homepage loaded (https://www.theclubcompany.com/) but no platform signal found on it or 1 booking-ish link(s)
+Forrester Park Golf Club,https://www.forrester-park.co.uk/golf/,51.7742879,0.7056351,unknown,unknown,,low,homepage loaded (https://www.forrester-park.co.uk/golf/) but no platform signal found on it or 6 booking-ish link(s)
+The Rayleigh Club,https://www.therayleighclub.com,51.6096774,0.6152569,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.therayleighclub.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Birch Grove Golf Club,https://www.birchgrovegolfclub.com,51.8575377,0.872314,unknown,unknown,,low,homepage loaded (https://birchgrovegolfclub.com/) but no platform signal found on it or 3 booking-ish link(s)
+Channels Golf Club,,51.7821302,0.4843131,no_site,unknown,,low,no official website resolved (not in county union directory)
+Haverhill Golf Club,,52.073723,0.4685108,no_site,unknown,,low,no official website resolved (not in county union directory)
+Leigh Golf Range,,51.5394761,0.6276746,no_site,unknown,,low,no official website resolved (not in county union directory)
+Warley Park Golf Club,https://www.warleyparkgc.co.uk,51.5891417,0.306313,golf_manager,public,https://warleypark.golfmanager.com/consumer/ebookings?i=1&resourcetype=100080,high,
+Thorndon Park Golf Club,https://www.thorndonpark.com,51.5959481,0.34113,clubv1,public,https://thorndonpark.hub.clubv1.com/visitors/TeeSheet?date=2026-09-10,high,
+The Orchards Holiday Village Golf Course,,51.7988878,1.0453793,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ballards Gore,https://www.ballardsgore.com,51.6045031,0.7475953,unknown,unknown,,low,homepage loaded (https://www.ballardsgore.com/) but no platform signal found on it or 3 booking-ish link(s)
+Toot Hill Golf Course,,51.6931364,0.1903662,no_site,unknown,,low,no official website resolved (not in county union directory)
+Thorpe Hall Golf Course,https://www.thorpehallgc.co.uk,51.5344749,0.7506511,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://thorpehall.hub.clubv1.com/Visitors/booking"
+Bunsay Downs Golf Club,https://www.warrengolfclub.co.uk,51.7353377,0.6034462,unknown,unknown,,low,homepage loaded (https://www.thewarrenestate.co.uk/golf) but no platform signal found on it or 4 booking-ish link(s)
+The Warren Golf Club,https://www.warrengolfclub.co.uk,51.7297047,0.6060625,unknown,unknown,,low,homepage loaded (https://www.thewarrenestate.co.uk/golf) but no platform signal found on it or 4 booking-ish link(s)
+Notley Golf Course,https://www.notleysgolfclub.co.uk,51.8487884,0.5788272,brs,public,https://visitors.brsgolf.com/notleys#/course/1,high,confirmed by following the platform link found on the club's own site
+Three Rivers Golf & Country Club,https://www.threeriversclub.com,51.6657585,0.6608735,esp,unknown,,medium,platform link(s) seen (['esp']) but no confirmed public booking page found
+Ingrebourne Links Golf Course,https://www.ingrebournelinks.com,51.513613,0.2309576,esp,public,http://www.e-s-p.com/elitelive/book_date.php,high,confirmed by following the platform link found on the club's own site
+Brentwood Golf Range (UK Golf Academy),https://www.brentwoodgolfclub.co.uk,51.5972229,0.2953265,brs,public,https://visitors.brsgolf.com/brentwood,high,
+Crondon Park Golf & Country Club,https://www.crondon.com,51.6754162,0.4405046,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.crondon.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Epping Golf Course,https://www.eppinggolfcourse.org.uk,51.6846962,0.1227412,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://epping.hub.clubv1.com/Visitors/booking"
+Hobbs Cross Golf Centre,,51.6818037,0.1346143,no_site,unknown,,low,no official website resolved (not in county union directory)
+High Beech Golf Course,,51.6691508,0.0322901,no_site,unknown,,low,no official website resolved (not in county union directory)
+Langdon Hills Golf and Country Club,https://www.langdonhillsgolfclub.co.uk,51.5448708,0.3954275,unknown,unknown,,low,homepage loaded (https://www.langdonhillsgolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Elsenham Golf and Leisure,https://www.golfworldstansted.co.uk/,51.9138383,0.2519638,unknown,unknown,,low,homepage loaded (https://golfworldstansted.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Chesterford Research Park Golf Course,,52.059354,0.2343221,no_site,unknown,,low,no official website resolved (not in county union directory)
+Canons Brook Golf Course,https://www.canonsbrook.com,51.773627,0.0680143,brs,public,https://visitors.brsgolf.com/canonsbrook,high,
+Basildon Golf Course,https://www.basildongolfcourse.com,51.560473,0.4701617,intelligent_golf,not_available,,high,"platform reached but not a public visitor sheet (booking link; members-only, or visitor booking not enabled): https://basildon.intelligentgolf.co.uk/memberbooking/"
+The Burstead Golf Club,https://www.thebursteadgolfclub.com,51.6089316,0.4039888,esp,unknown,,medium,platform link(s) seen (['esp']) but no confirmed public booking page found
+The Essex Golf Academy,,51.9057023,0.6886241,no_site,unknown,,low,no official website resolved (not in county union directory)
+Rivenhall Oaks Golf Centre,https://www.rivenhalloaksgolf.com,51.81886,0.6534899,unknown,unknown,,low,homepage loaded (https://www.rivenhalloaksgolf.com/) but no platform signal found on it or 3 booking-ish link(s)
+Stock Brook Country Club,,51.6506119,0.4240236,no_site,unknown,,low,no official website resolved (not in county union directory)
+North Weald Golf Course,,51.7304554,0.1666912,no_site,unknown,,low,no official website resolved (not in county union directory)
+Brentwood Golf Centre at Hartswood,https://www.brentwoodgolfclub.co.uk,51.6072252,0.3253312,brs,public,https://visitors.brsgolf.com/brentwood,high,
+Stapleford Abbotts Golf Course,https://www.staplefordabbottsgolf.co.uk,51.6362288,0.2056351,brs,public,https://visitors.brsgolf.com/staplefordabbottsgc#/course/1,high,
+The Essex Golf and Country Club,https://www.theclubcompany.com,51.9115416,0.6850014,unknown,unknown,,low,homepage loaded (https://www.theclubcompany.com/) but no platform signal found on it or 1 booking-ish link(s)
+Belfairs Golf Club,https://www.belfairsgolfclub.co.uk,,,unknown,unknown,,low,homepage loaded (https://www.belfairsgolfclub.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+Belhus Park Golf Club,https://www.impulseleisure.co.uk,,,gladstone,public,https://impulseleisure.gladstonego.cloud/book,high,
+Colne Valley Golf Club,https://www.colnevalleygolfclub.co.uk,,,intelligent_golf,public,https://colnevalley.intelligentgolf.co.uk/visitorbooking/,high,
+Crowlands Heath Golf Club,https://www.crowlandsheath.co.uk,,,unknown,unknown,,low,homepage loaded (https://www.crowlandsheath.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Golf Kingdom,https://golfkingdom.net,,,intelligent_golf,public,https://chadwellheath.intelligentgolf.co.uk/visitorbooking/,high,
+Gosfield Lake Golf Club,https://www.gosfield-lake-golf-club.co.uk,,,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://gosfieldlake.hub.clubv1.com/Visitors/booking"
+Maylands Golf Club,https://www.maylandsgolf.com,,,brs,public,https://visitors.brsgolf.com/maylands#/course/1,high,confirmed by following the platform link found on the club's own site
+Rochford Hundred Golf Club,https://www.rochfordhundredgolfclub.co.uk,,,intelligent_golf,public,https://www.rochfordhundredgolfclub.co.uk/visitorbooking/,high,
+Romford Golf Club,https://www.romfordgolfclub.com,,,intelligent_golf,public,https://www.romfordgolfclub.com/visitorbooking/,high,
+Southend-on-Sea Golf Club,https://www.southendgolf.co.uk,,,unknown,unknown,,low,homepage loaded (https://southendgolf.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Stock Brook Manor Golf Club,https://www.stockbrook.com,,,unknown,unknown,,low,homepage loaded (https://stockbrook.com/) but no platform signal found on it or 3 booking-ish link(s)
+Stoke by Nayland Golf Club,https://www.stokebynayland.com,,,unknown,unknown,,low,homepage loaded (https://www.stokebynayland.com/) but no platform signal found on it or 5 booking-ish link(s)
+Upminster Golf Club,https://www.upminstergolfclub.co.uk,,,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://upminster.hub.clubv1.com/Visitors/booking"
+Wanstead Golf Club,https://www.wgclondon.co.uk,,,brs,public,https://visitors.brsgolf.com/wanstead#/course/1,high,
+Woodford Golf Club,https://www.woodfordgolf.co.uk,,,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://woodford.hub.clubv1.com/Visitors/booking"

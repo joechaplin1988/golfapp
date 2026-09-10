@@ -28,6 +28,7 @@ which platform a club runs:
 | `apply_approved.py` | — | — | appends verified rows to the config |
 | `enrich_courses.py` | — | each club's own site | proposes course type + yardage → `course_profiles.csv` |
 | `apply_migrations.py` | — | `db/migrations/*.sql` | applies pending schema changes (run by the workflow) |
+| `coverage_report.py` | — | config + every review file | **`coverage.csv`: one row per club — in, out, and why** |
 | `recheck_residue.py` | — | club sites, browser UA | second pass over clubs the fingerprint couldn't resolve |
 | `run_pipeline.py` | all | — | one command: syncs config → DB, scrapes a date window → DB |
 
@@ -535,6 +536,24 @@ to `holes: "18"`). So the per-slot holes detection degrades cleanly on clubs
 that don't offer 9-hole rounds.
 
 ## Club coverage
+
+**`coverage.csv` is the single list to review** — every club we know about,
+one row each, with a status and a plain-English reason. Rebuild it any time
+with `python coverage_report.py`. Until it existed the answer to "which clubs
+are in, which are out, and why?" was spread over `clubs_config.csv`, seven
+per-county review files and several intermediates, most of which were
+gitignored and so not even in the repo.
+
+| status | meaning | count (2026-09-10) |
+|---|---|---|
+| `live` | scraped every run and searchable | 188 clubs / 224 sheets |
+| `parked` | in the config but skipped; their host blocks our CI runner | 4 clubs / 8 sheets |
+| `no_visitor_booking` | real club, no public online visitor booking (platform off, or member login) | 38 |
+| `out_of_scope` | GolfNow / TeeItUp only — excluded by policy | 1 |
+| `unresolved` | we couldn't tell; where future recovery comes from | 231 |
+
+`unresolved` is the honest bucket, not a dead one: residue passes have been
+converting roughly one in six of them into live clubs.
 
 **Configured and confirmed returning live data (97 sheets / 79 clubs)** —
 the 16 clubs below from the original survey, plus 54 found by the discovery

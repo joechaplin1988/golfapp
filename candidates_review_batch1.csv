@@ -1,0 +1,41 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Sundridge Park Golf Course,https://www.sundridgeparkgolfclub.co.uk/,51.4174066,0.0348027,intelligent_golf,public,https://www.sundridgeparkgolfclub.co.uk/visitorbooking/,high,
+Sidcup Golf Club,https://www.sidcupgolfclub.co.uk/,51.4407549,0.1096302,unknown,unknown,,low,homepage loaded (https://sidcupgolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Mid Kent Golf Club,https://www.mkgc.co.uk/,51.4220989,0.3652536,clubv1,unknown,,medium,platform link(s) seen (['clubv1']) but no confirmed public booking page found
+Lullingstone Park Golf Course,https://https://everyonegolf.com/venues/lullingstone-park-golf-course/,51.3596077,0.1755755,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //everyonegolf.com/venues/lullingstone-park-golf-course/ (Caused by NameResolutionError(""HTTPSConnection(host='https', port=443): Failed to resolve 'https' ([Errno 11001] getaddrinfo failed)""))"
+Pedham Place Golf Centre,https://www.ppgc.co.uk/,51.3798992,0.201096,esp,public,https://www.e-s-p.com/elitelive/login.php,high,
+Orpington Golf Centre,https://www.mytimeactive.co.uk/orpington,51.405432,0.1311081,unknown,unknown,,low,homepage loaded (https://www.mytimeactive.co.uk/locations/orpington-golf-centre) but no platform signal found on it or 7 booking-ish link(s)
+Wrotham Heath Golf Club,https://www.wrothamheathgolfclub.co.uk/,51.293364,0.3435,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Chelsfield Lakes Golf Club,https://chelsfieldlakes.co.uk/,51.3488135,0.1238428,esp,public,https://www.e-s-p.com/elitelive/book_group.php,high,
+Hever Castle Golf Club,https://www.hevercastle.co.uk/golf/,51.1947378,0.1203853,intelligent_golf,public,https://hever.intelligentgolf.co.uk/visitorbooking/,high,
+Kent & Surrey Golf & Country Club,,51.201982,0.0425917,no_site,unknown,,low,no official website resolved (not in county union directory)
+Shooters Hill Golf Course,https://www.shgc.uk.com/,51.471235,0.0778669,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.shgc.uk.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.shgc.uk.com', port=443) at 0x232ce71d590>, 'Connection to www.shgc.uk.com timed out. (connect timeout=20)'))"
+Royal Blackheath Golf Club,https://www.royalblackheath.com/,51.4435806,0.0578898,intelligent_golf,public,https://www.royalblackheath.com/visitorbooking/,high,
+Shortlands Golf Club,https://www.shortlandsgolfclub.com/,51.4109201,0.0003061,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+West Kent Golf Club,https://www.wkgc.co.uk/,51.3319576,0.0451715,intelligent_golf,public,https://www.wkgc.co.uk/visitorbooking/,high,
+Cherry Lodge Golf Club,https://www.cherrylodgegc.co.uk/,51.3102519,0.0580314,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Dartford Golf Club,https://www.dartfordgolfclub.co.uk/,51.4350688,0.2004498,clubv1,unknown,,medium,platform link(s) seen (['clubv1']) but no confirmed public booking page found
+Barnehurst Golf Course,https://www.mytimeactive.co.uk/barnehurst,51.4601385,0.1727634,blocked,unknown,,low,homepage returned HTTP 404 — likely bot-blocked; needs a browser-based check
+Bexleyheath Golf Club,https://bexleyheath-golf.com/,51.4503001,0.1322436,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='bexleyheath-golf.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Chislehurst Golf Course,https://www.chislehurstgolfclub.co.uk/,51.413725,0.0629256,intelligent_golf,login_required,,high,booking link requires login: https://www.chislehurstgolfclub.co.uk/visitors
+Bromley Golf Centre,https://www.bromleygolfclub.co.uk/,51.3841266,0.0493763,unknown,unknown,,low,homepage loaded (https://www.bromleygolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Eltham Warren Golf Club,https://www.elthamwarrengolfclub.co.uk/,51.4551627,0.0715997,clubv1,unknown,,medium,platform link(s) seen (['clubv1']) but no confirmed public booking page found
+Hilden Golf Centre,,51.2121671,0.2302202,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ashford Golf Club,https://www.ashfordgolfclub.co.uk/,51.167283,0.8612081,clubv1,unknown,,medium,platform link(s) seen (['clubv1']) but no confirmed public booking page found
+Faversham Golf Course,https://www.favershamgolf.co.uk/,51.2793364,0.8531063,clubv1,unknown,,medium,platform link(s) seen (['clubv1']) but no confirmed public booking page found
+Rochester and Cobham Park Golf Club,,51.3947615,0.4289166,no_site,unknown,,low,no official website resolved (not in county union directory)
+Valley Course,https://www.mytimeactive.co.uk/orpington,51.1180807,1.1000691,unknown,unknown,,low,homepage loaded (https://www.mytimeactive.co.uk/locations/orpington-golf-centre) but no platform signal found on it or 7 booking-ish link(s)
+Sheerness Golf Club,https://sheernessgolfclub.co.uk/,51.4294299,0.7878284,clubv1,unknown,,medium,platform link(s) seen (['clubv1']) but no confirmed public booking page found
+Aquarius Golf Club,https://http://www.aquariusgolfclub.co.uk,51.454989,-0.0529638,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='http', port=443): Max retries exceeded with url: //www.aquariusgolfclub.co.uk (Caused by NameResolutionError(""HTTPSConnection(host='http', port=443): Failed to resolve 'http' ([Errno 11001] getaddrinfo failed)""))"
+Cobtree Manor Park Golf Club,https://www.mytimeactive.co.uk/cobtree,51.3032674,0.5069751,unknown,unknown,,low,homepage loaded (https://www.mytimeactive.co.uk/locations) but no platform signal found on it or 2 booking-ish link(s)
+Fawkham Valley Golf Club,,51.3852987,0.2944366,no_site,unknown,,low,no official website resolved (not in county union directory)
+Whitstable and Seasalter Golf Club,,51.3539283,1.0172325,no_site,unknown,,low,no official website resolved (not in county union directory)
+Tonbridge Golf Centre,,51.2000147,0.2878356,no_site,unknown,,low,no official website resolved (not in county union directory)
+Leeds Castle Golf Club,https://www.leeds-castle.com,51.2501213,0.6349484,unknown,unknown,,low,homepage loaded (https://www.leeds-castle.com/) but no platform signal found on it or 6 booking-ish link(s)
+Bearsted Golf Club,https://www.bearstedgolfclub.co.uk/,51.2794414,0.5734822,clubv1,unknown,,medium,"platform link(s) seen (['clubv1', 'brs']) but no confirmed public booking page found"
+Homelands Golf Centre,,51.1031653,0.8603174,no_site,unknown,,low,no official website resolved (not in county union directory)
+Eastwell Manor,,51.1899675,0.8869144,no_site,unknown,,low,no official website resolved (not in county union directory)
+Mercure Hythe Imperial Golf Course,https://hythegolfclub.com/,51.0695049,1.1013174,brs,public,https://visitors.brsgolf.com/hythe,high,
+Sene Valley Golf Club,https://www.senevalleygolfclub.com/,51.0773687,1.1052178,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.senevalleygolfclub.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError('A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider.')))"
+Villa Golf Club,,51.1415332,0.1479719,no_site,unknown,,low,no official website resolved (not in county union directory)
+St Augustine's Golf Club,https://www.staugustinesgolfclub.co.uk/,51.3240422,1.3601672,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.staugustinesgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"

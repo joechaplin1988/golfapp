@@ -1,0 +1,46 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Roundwood Hall Golf Club,https://www.roundwoodhall.co.uk,51.1330294,1.0472864,unknown,unknown,,low,homepage loaded (https://www.roundwoodhall.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Chestfield Golf Club,https://www.chestfield-golfclub.co.uk/,51.3450613,1.0703327,intelligent_golf,public,https://chestfield.intelligentgolf.co.uk/visitorbooking/,high,
+Broome Park Golf Club,https://www.broomepark.co.uk/,51.1941197,1.1731318,unknown,unknown,,low,homepage loaded (https://broomepark.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Sittingbourne & Milton Regis Golf Club,https://www.sittingbournegolfclub.com/,51.337981,0.6681799,intelligent_golf,login_required,,high,booking link requires login: https://www.sittingbournegolfclub.com/visitorbooking/
+Nevill Golf Club,,51.1116452,0.2835953,no_site,unknown,,low,no official website resolved (not in county union directory)
+Tenterden Golf Club,https://www.tenterden.golf/home/,51.0765925,0.7133208,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.tenterden.golf', port=443): Max retries exceeded with url: /home/ (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+The Weald of Kent Golf Course,https://www.weald-of-kent.co.uk/,51.1914495,0.6083433,intelligent_golf,public,https://wealdofkent.intelligentgolf.co.uk/visitorbooking/,high,confirmed by following the platform link found on the club's own site
+Tudor Park Country Club,https://www.marriottgolf.co.uk/club/tudor-park,51.2620354,0.5891547,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.marriottgolf.co.uk', port=443): Max retries exceeded with url: /club/tudor-park (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Kings Hill Golf Club,https://kingshillgolf.com/,51.2649269,0.4013062,clubv1,public,https://kingshill.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-09,high,
+Village Golf & Sports Club,,51.1731729,0.5424468,no_site,unknown,,low,no official website resolved (not in county union directory)
+Folkestone Sports Centre,,51.0880536,1.1660497,no_site,unknown,,low,no official website resolved (not in county union directory)
+Leas Course,,51.1194521,1.0880686,no_site,unknown,,low,no official website resolved (not in county union directory)
+Allhallows Golf Course,,51.4705633,0.651518,no_site,unknown,,low,no official website resolved (not in county union directory)
+Allhallows Holiday Park Golf Course,,51.4748259,0.6365954,no_site,unknown,,low,no official website resolved (not in county union directory)
+Upchurch River Valley North Course,https://www.urvgc.co.uk/Home.aspx,51.3708125,0.6356366,blocked,unknown,,low,homepage returned HTTP 500 — likely bot-blocked; needs a browser-based check
+Upchurch River Valley South Course,https://www.urvgc.co.uk/Home.aspx,51.3632954,0.6342862,blocked,unknown,,low,homepage returned HTTP 500 — likely bot-blocked; needs a browser-based check
+Upchurch River Valley West Course,https://www.urvgc.co.uk/Home.aspx,51.3676705,0.6348436,blocked,unknown,,low,homepage returned HTTP 500 — likely bot-blocked; needs a browser-based check
+World of Golf,,51.4298767,0.0767976,no_site,unknown,,low,no official website resolved (not in county union directory)
+Stonelees Golf Centre,https://stonelees.com/,51.3198695,1.3535676,intelligent_golf,public,https://stonelees.intelligentgolf.co.uk/visitorbooking/,high,
+Darenth Valley Golf Course,https://www.dvgc.co.uk/,51.3268771,0.183612,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.dvgc.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.dvgc.co.uk', port=443): Failed to resolve 'www.dvgc.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+North Foreland Golf Club,https://www.northforeland.co.uk/,51.3807803,1.4383928,intelligent_golf,public,https://northforeland.intelligentgolf.co.uk/visitorbooking/,high,
+Westgate and Birchington Golf Club,https://www.westgate-and-birchington-golfclub.co.uk/,51.3800382,1.3237296,brs,public,https://visitors.brsgolf.com/westgatebirchington#/course/1,high,
+Gillingham Golf Club,https://www.gillinghamgolfclub.co.uk/,51.3759735,0.5674296,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Poult Wood Golf Course - 18 Hole,https://www.tmactive.co.uk/locations/poult-wood,51.2230216,0.302703,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Great Chart Golf & Leisure,,51.1511614,0.8020456,no_site,unknown,,low,no official website resolved (not in county union directory)
+Gravesend Golf Centre,,51.4224286,0.4054855,no_site,unknown,,low,no official website resolved (not in county union directory)
+Boughton Golf Club,https://www.boughtongolfclub.com/,51.2901591,0.9406052,clubv1,not_available,,high,platform hub reached but visitor booking is not enabled (platform link): https://boughton.hub.clubv1.com/Visitors/booking
+Etchinghill Golf Club,https://www.etchinghillgolf.co.uk/,51.1185526,1.0951541,esp,public,https://www.e-s-p.com/elitelive/book_group.php,high,
+Walmer and Kingsdown Golf Links,https://www.kingsdowngolf.co.uk/,51.1728387,1.3954372,brs,public,https://visitors.brsgolf.com/walmerandkingsdown#/course/1,high,
+Langley Park Golf Course,https://www.langleyparkgolf.co.uk/,51.3849221,-0.0101046,intelligent_golf,public,https://langleypark.intelligentgolf.co.uk/visitorbooking/,high,
+Poult Wood Golf Course - 9 Hole,https://www.tmactive.co.uk/locations/poult-wood,51.2240505,0.2961872,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+High Elms Golf Club,https://www.hegc.org/home/index.php,51.3471954,0.0722209,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+GolfPark - Maresfield,,50.9929865,0.0766027,no_site,unknown,,low,no official website resolved (not in county union directory)
+Tilgate Forest Golf Centre,https://www.intelligentgolf.co.uk,51.0974303,-0.1669171,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Mid Sussex Golf Club,https://www.midsussexgolfclub.co.uk,50.9328183,-0.0884228,intelligent_golf,public,https://www.midsussexgolfclub.co.uk/visitorbooking/,high,
+The Cathedral Course,,50.7989874,-0.7743946,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ham Manor,https://www.hammanor.co.uk,50.825132,-0.4928794,intelligent_golf,public,https://www.hammanor.co.uk/visitorbooking/,high,
+West Sussex Golf Club,https://www.westsussexgolf.co.uk,50.940751,-0.4755383,intelligent_golf,public,https://westsussex.intelligentgolf.co.uk/visitorbooking/,high,
+Beauport Park Golf Course,https://www.beauportparkgolf.club,50.8990874,0.5351444,clubv1,not_available,,high,platform hub reached but visitor booking is not enabled (platform link): https://beauportpark.hub.clubv1.com/Visitors/booking
+Highwoods Golf Club,https://www.highwoodsgolfclub.co.uk,50.8542887,0.4438203,brs,public,https://visitors.brsgolf.com/highwoodsgc#/visitor-booking,high,
+Wellshurst Golf and Country Club,https://wellshurst.com,50.9113947,0.2404198,unknown,unknown,,low,homepage loaded (https://wellshurst.com/) but no platform signal found on it or 2 booking-ish link(s)
+East Sussex National Golf Resort and Spa,https://www.eastsussexnational.co.uk,50.941156,0.0960468,unknown,unknown,,low,homepage loaded (https://eastsussexnational.co.uk/) but no platform signal found on it or 7 booking-ish link(s)
+Rookwood Golf Course,https://www.intelligentgolf.co.uk,51.0795615,-0.3375037,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Bognor Regis Golf Club,https://www.bognorgolfclub.co.uk,50.8035662,-0.653422,clubv1,public,https://bognorregis.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-09,high,
+Seaford Golf Club,https://www.seafordgolfclub.co.uk,50.7937769,0.1132099,intelligent_golf,public,https://seaford.intelligentgolf.co.uk/visitorbooking/,high,

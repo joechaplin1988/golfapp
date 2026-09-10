@@ -109,6 +109,7 @@ COUNTY_BOUNDS = {
     # Channel Islands, but our distances are straight-line: an IoW course
     # would show up 15 "miles" from Portsmouth and need a ferry.
     "hampshire": ["Hampshire", "Southampton", "Portsmouth"],
+    "hertfordshire": ["Hertfordshire"],
 }
 
 # Clubs the county union lists that are not reachable by road from the county
@@ -206,7 +207,12 @@ COUNTY_UNION_URLS = {
     "essex": "https://www.essexgolf.org/countyclubs.php",     # same CMS, 70 clubs
     # .org.uk, not .org — and the union's own "/clubs" page is a different
     # layout, but countyclubs.php is there and is the same CMS. 77 clubs.
-    "hampshire": "https://www.hampshiregolf.org.uk/countyclubs.php"
+    "hampshire": "https://www.hampshiregolf.org.uk/countyclubs.php",
+    # Hertfordshire's union runs on Intelligent Golf rather than the shared
+    # county CMS, and as of 2026-09-10 its site answers "Website Disabled".
+    # No directory to merge, so that county is OSM-only and will miss any
+    # club OSM lacks — re-check if the union site comes back.
+    "hertfordshire": None,
 }
 
 SOCIAL_HOSTS = ("facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com", "youtube.com")
@@ -239,7 +245,7 @@ def enumerate_county_union(county: str, refresh: bool = False) -> dict[str, str]
         return sites
 
     base = COUNTY_UNION_URLS.get(county)
-    if not base:
+    if not base:   # None or absent — county has no usable directory
         log.warning(f"No county union URL configured for '{county}'")
         return {}
     resp = requests.get(base, headers={"User-Agent": USER_AGENT}, timeout=REQUEST_TIMEOUT)

@@ -1,0 +1,42 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+The Royal Eastbourne Golf Club,https://www.regc.co.uk/,50.764641,0.2612116,intelligent_golf,not_available,,high,"platform reached but not a public visitor sheet (booking link; members-only, or visitor booking not enabled): https://www.regc.co.uk/memberbooking"
+Sedlescombe Golf Club,https://www.sedlescombegolfclub.co.uk,50.9131932,0.532839,esp,unknown,,medium,platform link(s) seen (['esp']) but no confirmed public booking page found
+Ifield Golf and Country Club,https://www.ifieldgolf.com,51.115938,-0.234726,intelligent_golf,public,https://www.ifieldgolf.com/visitorbooking/,high,
+Bay View Park Executive Golf Course,,50.8027654,0.3368791,no_site,unknown,,low,no official website resolved (not in county union directory)
+Horam Park Golf Club,https://horamparkgolfclub.co.uk,50.9265663,0.2273653,unknown,unknown,,low,homepage loaded (https://www.horamparkgolfclub.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Seaford Head Golf Club,https://www.seafordheadgolfcourse.co.uk,50.7636312,0.1184482,brs,public,https://visitors.brsgolf.com/seafordhead#/course/1,high,confirmed by following the platform link found on the club's own site
+Lindfield Golf Course,https://www.lindfieldgolfclub.co.uk,51.0161171,-0.0598972,brs,public,https://visitors.brsgolf.com/lindfield#/course/1,high,
+Cowdray Park Golf Club,https://www.cowdray.co.uk/sport/golf/,50.9954783,-0.7120112,esp,unknown,,medium,"platform link(s) seen (['esp', 'intelligent_golf']) but no confirmed public booking page found"
+Rye Golf Club,https://www.ryegolfclub.co.uk,50.9380666,0.7731585,intelligent_golf,public,https://www.ryegolfclub.co.uk/visitorbooking/,high,confirmed via intelligent_golf's standard booking path
+Cuckfield Golf Course,https://cuckfieldgolf.co.uk,51.0213545,-0.1498638,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Boars Head Golf Centre,,51.0681321,0.189432,no_site,unknown,,low,no official website resolved (not in county union directory)
+Dewlands Manor Golf Course,,51.0402229,0.2099029,no_site,unknown,,low,no official website resolved (not in county union directory)
+Royal Ashdown Forest Golf Club,https://www.royalashdown.co.uk/contact_us,51.0845461,0.0425042,intelligent_golf,public,https://www.royalashdown.co.uk/visitorbooking/,high,
+Ashdown Park,,51.0710952,0.0365432,no_site,unknown,,low,no official website resolved (not in county union directory)
+Birch House Golf Course,,51.0508334,0.0049287,no_site,unknown,,low,no official website resolved (not in county union directory)
+Dyke Golf Club,https://dykegolfclub.co.uk/,50.877676,-0.2018202,clubv1,public,https://dykegolfclub.hub.clubv1.com/visitors/TeeSheet?date=2026-09-09,high,
+Peacehaven Golf Course,https://www.peacehavengc.com/,50.7935097,0.0328942,brs,public,https://visitors.brsgolf.com/peacehaven9#/course/1,high,
+Burgess Hill Golf Centre,,50.9694514,-0.145463,no_site,unknown,,low,no official website resolved (not in county union directory)
+Pyecombe Golf Course,https://www.pyecombegolfclub.com,50.8978831,-0.151156,brs,public,https://visitors.brsgolf.com/pyecombe#/course/1,high,confirmed by following the platform link found on the club's own site
+Littlehampton Golf Club,https://www.littlehamptongolf.co.uk,50.8042308,-0.5517867,clubv1,public,https://littlehampton.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-09,high,confirmed by following the platform link found on the club's own site
+Lewes Golf Club,https://www.lewesgolfclub.co.uk,50.8761619,0.03267,brs,public,https://visitors.brsgolf.com/lewes?iframe=1,high,
+Seaford College Golf Academy,https://www.seafordgolfclub.co.uk,50.9418061,-0.6487301,intelligent_golf,public,https://seaford.intelligentgolf.co.uk/visitorbooking/,high,
+Park House Hotel & Spa,,50.9603831,-0.7728914,no_site,unknown,,low,no official website resolved (not in county union directory)
+Rustington Golf Centre,https://rgcgolf.com,50.8248926,-0.5053852,unknown,unknown,,low,homepage loaded (https://rgcgolf.com/) but no platform signal found on it or 17 booking-ish link(s)
+Effingham Park Golf Course,,51.1417644,-0.0893402,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hill Barn Golf Club,https://www.hillbarngolf.com,50.8414936,-0.3776223,esp,public,http://www.e-s-p.com/elitelive/book_group.php,high,
+Selsey Golf Club,https://www.selseycountryclub.co.uk/selsey-golf-club,50.7473464,-0.7924387,intelligent_golf,public,https://selsey.intelligentgolf.co.uk/visitorbooking/,high,
+Singing Hills Golf Course,https://www.singinghillsgolfcourse.co.uk,50.9225106,-0.2089508,intelligent_golf,public,https://www.singinghillsgolfcourse.co.uk/visitorbooking/,high,
+Cottesmore Hotel Golf & Country Club,,51.087647,-0.2216605,no_site,unknown,,low,no official website resolved (not in county union directory)
+Goffs Park Pitch and Putt,,51.113391,-0.2053931,no_site,unknown,,low,no official website resolved (not in county union directory)
+Slinfold Park Golf and Country Club,,51.0668588,-0.4273733,no_site,unknown,,low,no official website resolved (not in county union directory)
+Putting Green,,50.7799259,-0.6901386,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bede's Golf Course,,50.8631727,0.2009352,no_site,unknown,,low,no official website resolved (not in county union directory)
+Horton Golf Club,,50.9144616,-0.2629242,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Tower Course,,50.7964861,-0.7789591,no_site,unknown,,low,no official website resolved (not in county union directory)
+Avisford Park Golf Club,https://avisfordparkhotel.com/leisure/golf/,50.8470307,-0.6149301,golfnow,out_of_scope,,high,"GolfNow listing, not the club's own booking — excluded by policy: https://www.golfnow.co.uk/courses/-5141-avisford-park-golf-club-details"
+Dale Hill Golf Club,https://www.dalehill.co.uk,51.0487174,0.4328756,unknown,unknown,,low,homepage loaded (https://www.dalehill.co.uk/) but no platform signal found on it or 9 booking-ish link(s)
+Liphook Golf Club,,51.0621112,-0.8092746,no_site,unknown,,low,no official website resolved (not in county union directory)
+Holtye Golf Club,https://www.holtye.com,51.1352959,0.0810669,intelligent_golf,public,https://www.holtye.com/visitorbooking/,high,
+Worthing Golf Club,https://www.worthinggolf.com,50.8469358,-0.380677,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Denne Park Golf Course,,51.0437861,-0.3391467,no_site,unknown,,low,no official website resolved (not in county union directory)
