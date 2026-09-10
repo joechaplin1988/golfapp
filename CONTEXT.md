@@ -250,6 +250,16 @@ dedupe_courses + a page change, batch it with other web work.
 Waterlooville) -> **192 clubs / 232 sheets**. Kent/Sussex/Surrey/Essex/
 Hampshire all now fingerprinted AND residue-checked.
 
+**Hertfordshire done (2026-09-10)**: +20 clubs / 26 sheets -> **212 clubs /
+258 sheets**. Its union site is DISABLED (runs on intelligentgolf, not the
+shared county CMS), so no directory - the county would have produced zero.
+Fix: OSM's own `website` tag was being discarded by enumerate_osm even
+though the query asks for tags; keeping it took Herts from 0 -> 39 club
+websites and gives EVERY county a fallback where the union has no entry.
+Also tightened PC_RE: "P89 9CM" was accepted as Great Hadham's postcode, but
+a UK inward code can never end in C/I/K/M/O/V - an invalid postcode geocodes
+to nothing and silently drops the club from radius search.
+
 **Chronogolf scraper BUILT (2026-09-10, Joe approved)**: 5 clubs / 7 sheets
 (Bramshaw x2, Lullingstone x2, Old Thorns, Paultons, Worldham) -> **188
 clubs / 228 sheets**. Survey said reCAPTCHA - wrong, like "Cloudflare" for

@@ -49,7 +49,7 @@ import requests
 from bs4 import BeautifulSoup
 
 UA = {"User-Agent": "ServiceSynkGolfAggregator/0.1 (contact: joe@servicesynk.com; research use)"}
-PC_RE = re.compile(r"\b([A-Z]{1,2}\d[A-Z\d]?)\s?(\d[A-Z]{2})\b")
+PC_RE = re.compile(r"\b([A-Z]{1,2}\d[A-Z\d]?)\s?(\d[ABD-HJLNP-UW-Z]{2})\b")
 DELAY = 1.5
 SCAN_DAYS = 14
 

@@ -186,12 +186,20 @@ def enumerate_osm(county: str, refresh: bool = False) -> list[dict]:
 
     seen = {}
     for el in elements:
-        name = (el.get("tags") or {}).get("name")
+        tags = el.get("tags") or {}
+        name = tags.get("name")
         if not name or NOISE_NAME_RE.search(name):
             continue
         lat = el.get("lat") or (el.get("center") or {}).get("lat")
         lon = el.get("lon") or (el.get("center") or {}).get("lon")
-        seen.setdefault(name, {"name": name, "lat": lat, "lon": lon, "source": "osm"})
+        # The query has always asked for tags; we were only keeping name and
+        # coordinates and throwing the rest away. Plenty of OSM golf features
+        # carry the club's website, which is exactly what fingerprinting
+        # needs — and it is the ONLY source for a county whose union has no
+        # usable directory (Hertfordshire's is offline).
+        site = tags.get("website") or tags.get("contact:website") or tags.get("url") or ""
+        seen.setdefault(name, {"name": name, "lat": lat, "lon": lon, "source": "osm",
+                               "osm_site": _clean_url(site) or ""})
     log.info(f"[{county}] OSM: {len(elements)} raw features -> {len(seen)} distinct real clubs")
     clubs = list(seen.values())
     cache.write_text(json.dumps(clubs, indent=2), encoding="utf-8")
@@ -302,7 +310,9 @@ def cmd_enumerate(args):
                 if norm_club_name(uk) in n or n in norm_club_name(uk):
                     site = uv
                     break
-        club["official_site"] = site
+        # OSM's own website tag is the fallback when the union has no entry
+        # (or no directory at all).
+        club["official_site"] = site or club.get("osm_site") or None
 
     with_site = sum(1 for c in osm if c.get("official_site"))
     log.info(f"[{args.county}] matched {with_site}/{len(osm)} OSM clubs to a website via the county union")

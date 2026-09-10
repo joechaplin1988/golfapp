@@ -1,8 +1,8 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **eight platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **192 clubs / 232 sheets per scheduled run (2026-09-10)**, Kent,
-Sussex, Surrey, Essex and Hampshire done, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
+ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **212 clubs / 258 sheets per scheduled run (2026-09-10)**, Kent,
+Sussex, Surrey, Essex, Hampshire and Hertfordshire done, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
 
@@ -795,6 +795,30 @@ surfaced as "Worldham Golf Club: no availability in 14 days". Worldham has
 per day) and backs off on 429; the scraper paces its four party-size calls.
 Worth remembering: on this platform a rate limit is indistinguishable from
 an empty sheet unless you check the status code.
+
+### Hertfordshire — and the club websites OSM was already handing us (2026-09-10)
+Hertfordshire's union runs on Intelligent Golf rather than the shared county
+CMS, and its site answers **"Website Disabled"**. No directory, so the
+enumeration returned 61 clubs and **zero websites** — and `fingerprint` can
+do nothing without one. The county was about to yield nothing.
+
+The fix was in our own code: the Overpass query has always asked for `tags`,
+and plenty of `leisure=golf_course` features carry the club's `website`, but
+the parser kept only name and coordinates and threw the rest away. Keeping it
+took Hertfordshire from 0 websites to 39, and gives every county a fallback
+for clubs its union directory misses.
+
+58 fingerprinted → 21 ready → **20 clubs / 26 sheets live**
+(`50 ok, 2 empty, 0 error; 2173 tee times`). Little Hay is the Chronogolf
+scraper's second county, a week after it was built.
+
+**A postcode that could never exist got through.** Great Hadham was recorded
+as `P89 9CM`; the last two letters of a UK inward code can never be C, I, K,
+M, O or V. It geocodes to nothing, which quietly leaves the club out of every
+radius search rather than failing loudly. `PC_RE` in `probe_course_ids.py`
+now excludes those letters. Two clubs legitimately share `WD3 1JS` (Batchworth
+Park and The Nine of Herts are both on London Road, Rickmansworth) — checked
+rather than assumed to be a bug.
 
 ### Hampshire batch 1 — 22 clubs / 32 sheets (2026-09-10)
 88 fingerprinted → 25 ready → 22 clubs verified and live (IG 15, BRS 3,

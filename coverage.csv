@@ -81,6 +81,26 @@ Test Valley Golf Club,live,hampshire,intelligent_golf,2,RG25 3DS,,https://testva
 Weybrook Park Golf Club,live,hampshire,intelligent_golf,3,RG24 9NT,,https://weybrookpark.intelligentgolf.co.uk/visitorbooking/
 Wickham Park Golf Course,live,hampshire,intelligent_golf,1,PO17 5PJ,,https://golf.wickhamparkgolf.co.uk/visitorbooking/
 Worldham Golf Club,live,hampshire,chronogolf,1,GU34 3BF,,https://www.chronogolf.com/club/19730/widget?medium=widget&source=club
+Aldenham Golf Club,live,hertfordshire,brs,2,WD25 8NN,,https://visitors.brsgolf.com/aldenham
+Aldwickbury Park Golf Course,live,hertfordshire,esp,1,AL5 1AB,,https://www.e-s-p.com/elitelive/book_date.php
+Ash Valley Golf Club,live,hertfordshire,brs,2,SG10 6HD,,https://visitors.brsgolf.com/ashvalley#/course/1
+Batchworth Park Golf Club,live,hertfordshire,intelligent_golf,1,WD3 1JS,,https://batchworthpark.intelligentgolf.co.uk/visitorbooking/
+Berkhamsted Golf Club,live,hertfordshire,intelligent_golf,1,HP4 2QB,,https://www.berkhamstedgolfclub.co.uk/visitorbooking/
+Brocket Hall,live,hertfordshire,intelligent_golf,2,AL8 7XG,,https://brocket.intelligentgolf.co.uk/visitorbooking/
+Chesfield Downs Golf Club,live,hertfordshire,intelligent_golf,2,SG4 7EQ,,https://golf.chesfielddownsgolf.co.uk/visitorbooking/
+Essendon Country Club,live,hertfordshire,intelligent_golf,2,AL9 6HN,,https://www.essendoncc.co.uk/visitorbooking/
+Great Hadham Golf Course,live,hertfordshire,intelligent_golf,1,SG10 6JE,,https://greathadham.intelligentgolf.co.uk/visitorbooking/
+Harpenden Golf Course,live,hertfordshire,intelligent_golf,1,AL5 2AX,,https://harpenden.intelligentgolf.co.uk/visitorbooking/
+Little Hay Golf Complex,live,hertfordshire,chronogolf,2,HP3 0DT,,https://www.chronogolf.com/en/club/18832/widget?medium=widget&source=club
+Mid Herts Golf Club,live,hertfordshire,intelligent_golf,1,AL4 8RS,,https://www.midhertsgolfclub.co.uk/visitorbooking/
+Mill Green Golf Club,live,hertfordshire,golf_manager,1,AL7 4TY,,https://millgreen.golfmanager.com/consumer/home?area=100001
+Old Fold Manor Golf Course,live,hertfordshire,intelligent_golf,1,EN5 4QN,,https://www.oldfoldmanor.co.uk/visitorbooking/
+Pinner Hill Golf Club,live,hertfordshire,intelligent_golf,1,HA5 3YA,,https://www.pinnerhillgc.co.uk/visitorbooking/
+Porters Park Golf Club,live,hertfordshire,intelligent_golf,1,WD7 7AZ,,https://www.portersparkgolfclub.co.uk/visitorbooking/
+Redbourn Golf Club,live,hertfordshire,esp,1,AL3 7QA,,https://www.e-s-p.com/elitelive/book_date.php
+Royston Golf Club,live,hertfordshire,intelligent_golf,1,SG8 5BG,,https://www.roystongolfclub.co.uk/visitorbooking/
+The Nine of Herts,live,hertfordshire,intelligent_golf,1,WD3 1JS,,https://nineofherts.intelligentgolf.co.uk/visitorbooking/
+Whitehill Golf,live,hertfordshire,brs,1,SG12 0JS,,https://visitors.brsgolf.com/whitehill#/course/1
 Andover Golf Club,live,kent/sussex,intelligent_golf,1,SP10 2EF,,https://andover.intelligentgolf.co.uk/visitorbooking/
 Ashford Golf Club,live,kent/sussex,clubv1,1,TN25 4NT,,
 Bexleyheath Golf Club,live,kent/sussex,clubv1,1,DA6 8JS,,
@@ -207,6 +227,7 @@ Brokenhurst Manor Golf Club,no_visitor_booking,hampshire,intelligent_golf,0,,boo
 Corhampton Golf Club,no_visitor_booking,hampshire,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Liphook Golf Club,no_visitor_booking,hampshire,intelligent_golf,0,,booking page requires a member login,
 Wellow Golf Club,no_visitor_booking,hampshire,clubv1,0,,"on clubv1, but visitor booking is switched off",
+Moor Park Golf Club,no_visitor_booking,hertfordshire,intelligent_golf,0,,"on intelligent_golf, but visitor booking is switched off",
 Aquarius Golf Club,no_visitor_booking,kent/sussex,unknown,0,,booking page requires a member login,
 Bearsted Golf Club,no_visitor_booking,kent/sussex,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Beauport Park Golf Course,no_visitor_booking,kent/sussex,clubv1,0,,"on clubv1, but visitor booking is switched off",
@@ -323,6 +344,42 @@ Walhampton Golf Club,unresolved,hampshire,error,0,,site refused or failed to loa
 Wheatlands Golf Club,unresolved,hampshire,brs,0,,brs seen but no confirmed public visitor sheet — worth another look,https://visitors.brsgolf.com/wheatlands
 Winchester Golf Academy,unresolved,hampshire,no_site,0,,no working website found,
 Woodland course,unresolved,hampshire,no_site,0,,no working website found,
+Barkway Park Golf Club,unresolved,hertfordshire,error,0,,site refused or failed to load,
+Batchwood Hall Golf Club,unresolved,hertfordshire,no_site,0,,no working website found,
+Brickendon Grange Golf Club,unresolved,hertfordshire,no_site,0,,no working website found,
+Briggens Park Golf Club,unresolved,hertfordshire,error,0,,site refused or failed to load,
+Brookmans Park Golf Course,unresolved,hertfordshire,no_site,0,,no working website found,
+Centurion Golf Club,unresolved,hertfordshire,no_site,0,,no working website found,
+Chadwell Springs Golf Club,unresolved,hertfordshire,no_site,0,,no working website found,
+Cheshunt Park Golf Course,unresolved,hertfordshire,dead_link,0,,no working website found,
+Chiltern Hills Golf Course,unresolved,hertfordshire,no_site,0,,no working website found,
+Chorleywood Golf Club,unresolved,hertfordshire,no_site,0,,no working website found,
+Dyrham Park Country Club,unresolved,hertfordshire,no_site,0,,no working website found,
+East Herts Golf Club,unresolved,hertfordshire,unknown,0,,homepage loaded (https://www.easthertsgolfclub.co.uk/) but no platform signal found on it or 4 booking-ish lin,
+Hanbury Manor Marriott Hotel & Country Club,unresolved,hertfordshire,blocked,0,,site refused or failed to load,
+Harpenden Common Golf Course,unresolved,hertfordshire,no_site,0,,no working website found,
+Hartsbourne Country Club,unresolved,hertfordshire,unknown,0,,homepage loaded (https://www.hartsbournecountryclub.co.uk/) but no platform signal found on it or 0 booking-is,
+Knebworth Golf Course,unresolved,hertfordshire,no_site,0,,no working website found,
+Letchworth Golf Club,unresolved,hertfordshire,error,0,,site refused or failed to load,
+Ley Hill GC,unresolved,hertfordshire,no_site,0,,no working website found,
+Melbourne Course,unresolved,hertfordshire,no_site,0,,no working website found,
+Palmerston Course,unresolved,hertfordshire,no_site,0,,no working website found,
+Panshanger Golf Complex,unresolved,hertfordshire,blocked,0,,site refused or failed to load,
+Radlett Golf Academy,unresolved,hertfordshire,no_site,0,,no working website found,
+Rickmansworth Golf Course,unresolved,hertfordshire,no_site,0,,no working website found,
+Sandy Lodge Golf Club,unresolved,hertfordshire,no_site,0,,no working website found,
+Shendish Manor Golf Course,unresolved,hertfordshire,no_site,0,,no working website found,
+Stevenage Golf Centre,unresolved,hertfordshire,error,0,,site refused or failed to load,
+Stocks Golf Club,unresolved,hertfordshire,unknown,0,,homepage loaded (https://stocksgolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s),
+The Grove,unresolved,hertfordshire,no_site,0,,no working website found,
+The Hertfordshire Golf & Country Club,unresolved,hertfordshire,error,0,,site refused or failed to load,
+The Hertsmere,unresolved,hertfordshire,golf_manager,0,,golf_manager seen but no confirmed public visitor sheet — worth another look,https://www.thehertsmere.co.uk/the-course/pay-and-play/
+The Manor of Groves Golf Course,unresolved,hertfordshire,unknown,0,,homepage loaded (https://www.manorofgroves.com/) but no platform signal found on it or 3 booking-ish link(s),
+Three Lakes Golf Course,unresolved,hertfordshire,unknown,0,,homepage loaded (https://threelakespar3.co.uk/) but no platform signal found on it or 0 booking-ish link(s),
+Verulam Golf Club,unresolved,hertfordshire,no_site,0,,no working website found,
+Welwyn Garden City Golf Club,unresolved,hertfordshire,unknown,0,,homepage loaded (https://www.welwyngardencitygolfclub.co.uk/) but no platform signal found on it or 2 booking-,
+West Herts Golf Club,unresolved,hertfordshire,no_site,0,,no working website found,
+Wheathampstead Pay & Play Golf Course,unresolved,hertfordshire,unknown,0,,homepage loaded (https://www.wheathampsteadgolfvillage.com/) but no platform signal found on it or 1 booking-i,
 Allhallows Golf Course,unresolved,kent/sussex,no_site,0,,no working website found,
 Allhallows Holiday Park Golf Course,unresolved,kent/sussex,no_site,0,,no working website found,
 Ashdown Park,unresolved,kent/sussex,no_site,0,,no working website found,
