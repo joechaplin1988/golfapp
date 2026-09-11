@@ -31,7 +31,7 @@ import dataclasses
 import logging
 import queue
 import threading
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 
 import golf_common as gc
 import golf_db
@@ -66,6 +66,7 @@ def date_window(days: int, start: str | None) -> list[str]:
 
 
 def run(config_path: str, platforms: list[str], dates: list[str], to_db: bool) -> None:
+    started_at = datetime.now(timezone.utc)
     log.info(f"Pipeline: {len(platforms)} platform(s) x {len(dates)} date(s) "
              f"({dates[0]}..{dates[-1]}){' -> DB' if to_db else ' (no DB)'}")
     if to_db:
@@ -138,6 +139,23 @@ def run(config_path: str, platforms: list[str], dates: list[str], to_db: bool) -
 
     log.info(f"Done: {tally['ok']} ok, {tally['empty']} empty, {tally['error']} error; "
              f"{tally['rows']} tee-time row(s) {'written' if to_db else 'found'}")
+
+    if to_db:
+        # Its own connection: the one above is closed, and a failure to record
+        # the run must never be mistaken for a failure of the run itself.
+        try:
+            with golf_db.get_connection() as c2:
+                with c2.cursor() as cur:
+                    golf_db.record_scrape_run(
+                        cur, started_at=started_at, days=len(dates),
+                        platforms=",".join(sorted(work)),
+                        courses=sum(len(v) for v in work.values()) * len(dates),
+                        ok=tally["ok"], empty=tally["empty"], error=tally["error"],
+                        rows_written=tally["rows"],
+                    )
+                c2.commit()
+        except Exception as e:
+            log.warning(f"couldn't record this run in scrape_runs (scrape itself was fine): {e}")
     # Non-zero exit if EVERY course errored — lets n8n alert on a total failure
     # (e.g. site-wide block or bad DATABASE_URL) without crying over one club.
     if tally["error"] and tally["ok"] == 0 and tally["empty"] == 0:

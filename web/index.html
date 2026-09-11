@@ -164,6 +164,41 @@ const SUPABASE_URL = "https://uvvrtzkbzoahgppszuvg.supabase.co";
 const SUPABASE_ANON_KEY = (window.CONFIG && window.CONFIG.SUPABASE_ANON_KEY) || "__PASTE_YOUR_SUPABASE_ANON_KEY_HERE__";
 
 const MILES_PER_KM = 0.621371;
+
+// ---- Usage recording --------------------------------------------------------
+// Two things worth knowing: how much traffic we send each club, and what
+// people searched for when we had nothing. Row-Level Security lets the anon
+// key INSERT into these tables and nothing else — it cannot read anyone's
+// events back, including its own.
+//
+// No cookies, no identifiers, and NEVER a full postcode: a postcode plus a
+// timestamp can identify a household. We send the outward code or the town.
+// Recording is best-effort — a golfer's click must never wait on it, and a
+// failure here must never surface as a broken search.
+function outwardOnly(input) {
+  const q = (input || "").trim();
+  const m = q.match(/^([a-z]{1,2}\d[a-z\d]?)\s*\d[a-z]{2}$/i);
+  return m ? m[1].toUpperCase() : q.slice(0, 40);
+}
+
+function record(table, row) {
+  try {
+    fetch(SUPABASE_URL + "/rest/v1/" + table, {
+      method: "POST",
+      headers: {
+        "apikey": SUPABASE_ANON_KEY,
+        "Authorization": "Bearer " + SUPABASE_ANON_KEY,
+        "Content-Type": "application/json",
+        "Prefer": "return=minimal",
+      },
+      body: JSON.stringify(row),
+      // The click navigates away immediately; keepalive lets the request
+      // outlive the page. sendBeacon can't be used — it cannot set the
+      // apikey header PostgREST requires.
+      keepalive: true,
+    }).catch(() => {});
+  } catch (e) { /* never let recording break the page */ }
+}
 const $ = (id) => document.getElementById(id);
 const statusEl = $("status"), resultsEl = $("results"), filtersEl = $("filters");
 
@@ -439,6 +474,12 @@ function render() {
         '<span class="pill">' + t.holes + ' holes</span>' +
         '<div class="price">' + price + '<span class="per">' + playersLabel() + '</span></div>' +
         '<a class="book" href="' + esc(t.booking_url) + '" target="_blank" rel="noopener noreferrer">Book</a>';
+      row.querySelector("a.book").addEventListener("click", () => record("click_events", {
+        club_id: t.club_id, club_name: t.club_name, course_name: t.course_name,
+        platform: t.platform, tee_date: t.tee_date, tee_time: t.tee_time,
+        players: Number($("players").value) || null,
+        price: t.price != null ? Number(t.price) : null,
+      }));
       list.appendChild(row);
     }
     resultsEl.appendChild(card);
@@ -471,6 +512,14 @@ async function runSearch(loc) {
     });
     filtersEl.hidden = false;
     render();
+    record("search_events", {
+      area: outwardOnly($("postcode").value),
+      radius_km: Number($("radius").value) / MILES_PER_KM,
+      tee_date: $("date").value,
+      players: Number($("players").value) || null,
+      result_count: allRows.length,
+      club_count: new Set(allRows.map(r => r.club_name)).size,
+    });
   } catch (err) {
     setStatus(err.message || "Something went wrong.");
   } finally {

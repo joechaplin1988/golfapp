@@ -30,6 +30,7 @@ which platform a club runs:
 | `enrich_courses.py` | — | each club's own site | proposes course type + yardage → `course_profiles.csv` |
 | `apply_migrations.py` | — | `db/migrations/*.sql` | applies pending schema changes (run by the workflow) |
 | `coverage_report.py` | — | config + every review file | **`coverage.csv`: one row per club — in, out, and why** |
+| `usage_report.py` | — | `click_events` / `search_events` / `scrape_runs` | who we send traffic to, what found nothing, run health |
 | `recheck_residue.py` | — | club sites, browser UA | second pass over clubs the fingerprint couldn't resolve |
 | `run_pipeline.py` | all | — | one command: syncs config → DB, scrapes a date window → DB |
 
@@ -535,6 +536,34 @@ Also worth noting: Wildernesse shows only an "18 holes" option, no 9-hole
 toggle at all, and the scraper handles that correctly (everything defaults
 to `holes: "18"`). So the per-slot holes detection degrades cleanly on clubs
 that don't offer 9-hole rounds.
+
+## Measuring what the thing actually does (2026-09-11)
+
+Three separate questions, three tables (`db/migrations/005`):
+
+| table | question it answers | written by |
+|---|---|---|
+| `click_events` | how much traffic do we send each club? | the page, on a Book click |
+| `search_events` | what did people search for, and did we have anything? | the page, after a search |
+| `scrape_runs` | how hard do we hit the platforms, and is it healthy? | `run_pipeline.py` |
+
+`click_events` is the commercially interesting one and no off-the-shelf
+analytics can produce it, because it has to join to OUR club records.
+`courses` already holds the latest status per sheet; `scrape_runs` is the
+history, which is what answers "how often do you hit us?" if a club asks.
+
+**Privacy, decided deliberately.** No cookies, no identifiers, no IP, and
+**never a full postcode** — a postcode plus a timestamp can identify a
+household, which would make this personal data. The page sends the outward
+code (`TN13`) or the town, and a CHECK constraint on `search_events.area`
+enforces it rather than trusting the caller.
+
+**Permissions.** RLS gives the anon key INSERT on these two tables and
+nothing else: it cannot read anyone's events back, including its own. Reading
+is `usage_report.py`, which needs `DATABASE_URL`. The page records
+best-effort with `keepalive` so a click never waits on it and a failure can't
+surface as a broken search. (`sendBeacon` is unusable here — it cannot set
+the `apikey` header PostgREST requires.)
 
 ## Club coverage
 

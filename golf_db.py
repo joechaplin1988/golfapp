@@ -82,6 +82,22 @@ def upsert_course(cur, *, club_id, name, platform, base_url, course_ref, scrape_
     return cur.fetchone()[0]
 
 
+def record_scrape_run(cur, *, started_at, days, platforms, courses, ok, empty, error,
+                      rows_written) -> None:
+    """One row per scheduled run. `courses` already holds the LATEST status per
+    sheet; this is the history, which is what answers "how often do you hit us?"
+    if a club ever asks — and what shows a platform degrading over days rather
+    than only in the run that finally fails."""
+    cur.execute(
+        """
+        insert into scrape_runs (started_at, days, platforms, courses, ok, empty,
+                                 error, rows_written)
+        values (%s, %s, %s, %s, %s, %s, %s, %s)
+        """,
+        (started_at, days, platforms, courses, ok, empty, error, rows_written),
+    )
+
+
 def refresh_tee_times(cur, *, platform, base_url, course_ref, date_iso, results, status,
                       error: Optional[str] = None) -> int:
     """Apply one scrape's outcome for one (course, date). Mirrors the recipe in schema.sql.
