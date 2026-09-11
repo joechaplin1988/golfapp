@@ -1,0 +1,42 @@
+name: Usage report
+
+# Reading the usage tables needs the database credentials, and the anon key
+# deliberately cannot do it — the website may only ADD events, never read them
+# back. So the report runs here, where DATABASE_URL already lives, rather than
+# needing the connection string on anyone's laptop.
+#
+# Run it from the Actions tab: "Usage report" -> Run workflow. The numbers
+# appear in the run's summary page, not just the log.
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "How many days to report on"
+        default: "30"
+        required: false
+  schedule:
+    - cron: "0 7 * * 1"      # Monday morning, so there's a weekly record
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Clicks, searches and scrape health
+        env:
+          DATABASE_URL: ${{ secrets.GOLF_APP }}
+          DAYS: ${{ github.event.inputs.days || '30' }}
+        run: |
+          python usage_report.py --days "$DAYS" | tee report.txt
+          {
+            echo "## Usage — last $DAYS days"
+            echo '```'
+            cat report.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

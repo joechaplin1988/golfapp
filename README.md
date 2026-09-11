@@ -559,8 +559,22 @@ code (`TN13`) or the town, and a CHECK constraint on `search_events.area`
 enforces it rather than trusting the caller.
 
 **Permissions.** RLS gives the anon key INSERT on these two tables and
-nothing else: it cannot read anyone's events back, including its own. Reading
-is `usage_report.py`, which needs `DATABASE_URL`. The page records
+nothing else: it cannot read anyone's events back, including its own.
+
+**Where to read it.** Two places today, neither of them a dashboard:
+1. **Actions → "Usage report" → Run workflow** (`.github/workflows/usage.yml`).
+   Numbers land on the run's summary page. Also runs Monday mornings so there
+   is a weekly record. This exists because reading needs `DATABASE_URL`, which
+   lives in the repo secret — not on anyone's laptop.
+2. **Supabase's own table/SQL editor**, for anything ad hoc.
+
+**Why there is no admin page on the site.** The anon key cannot read these
+tables, by design — that is the same property that stops anyone else reading
+your click data with a key that ships in every browser. An admin UI therefore
+needs real authentication (Supabase Auth with a policy for your account), NOT
+a service-role key in the frontend, which would hand full database access to
+anyone who viewed source. Worth building when the numbers are worth looking at
+daily; the workflow is the honest interim. The page records
 best-effort with `keepalive` so a click never waits on it and a failure can't
 surface as a broken search. (`sendBeacon` is unusable here — it cannot set
 the `apikey` header PostgREST requires.)
