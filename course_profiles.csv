@@ -1,5 +1,5 @@
 club_name,course_type,yardage,all_yardages,source_url,note
-Abbey Hill Golf Centre,,,,https://abbeyhillgc.co.uk/,no yardage found
+Abbey Hill Golf Centre,,6050,6050,https://abbeyhillgc.co.uk/golf-courses/,
 Abbey Moor Golf Club,,,,https://www.playgolfgroup.com/abbeymoor/,no yardage found
 Addington Court Golf Club (Academy),,,,https://golf.addingtoncourt-golfclub.co.uk,no yardage found
 Addington Court Golf Club (Championship),,,,https://golf.addingtoncourt-golfclub.co.uk,no yardage found
@@ -28,14 +28,14 @@ Birchwood Park,parkland,,,https://birchwoodparkgc.co.uk/golf/,no yardage found
 Bird Hills Golf Centre,,,,https://www.birdhills.co.uk/,no yardage found
 Bishopswood Golf Course,parkland,6350,6350 6070 5528,https://www.bishopswood.golf/the_course,several yardages — check which tee
 Blackwater Valley Golf Centre,,,,https://www.bvgolfcentre.com,no yardage found
-Blakes Golf Course,,,,https://www.blakesgolfclub.com/,"no yardage found; hand: inland, not links"
-Bognor Regis Golf Club,,,,https://www.bognorgolfclub.co.uk,no yardage found
+Blakes Golf Course,,,,https://www.blakesgolfclub.com/top-golf-courses-in-essex/,"hand: Epping Forest, inland — not links"
+Bognor Regis Golf Club,,6103,6103 6100 5764 5744 5523,https://www.bognorgolfclub.co.uk/Page/CustomPage?pageId=15639,several yardages — check which tee
 Boundary Lakes Golf Club,parkland,,,https://www.ageasbowl.com/golf/,no yardage found
 Braintree Golf Club,parkland,,,https://www.braintreegolfclub.co.uk/,no yardage found
 Bramley Golf Club,,5891,5891 5546 5298 4406,https://www.bramleygolfclub.co.uk/course,several yardages — check which tee
-Bramshaw Golf Course (Forest Course),,,,https://www.chronogolf.com,no yardage found
-Bramshaw Golf Course (Manor Course),,,,https://www.chronogolf.com,no yardage found
-Brentwood Golf Centre at Hartswood,,,,https://www.brentwoodgolfclub.co.uk,no yardage found
+Bramshaw Golf Course (Forest Course),parkland,5143,5143,https://www.chronogolf.com/club/cannock-park-golf-course,
+Bramshaw Golf Course (Manor Course),parkland,5143,5143,https://www.chronogolf.com/club/cannock-park-golf-course,
+Brentwood Golf Centre at Hartswood,,6532,6532,https://www.brentwoodgolfclub.co.uk/course/scorecard/,
 Brighton & Hove Golf Club,downland,5057,5057 4838,https://www.brightongolf.co.uk/,types seen: downland/links; several yardages — check which tee
 Brocket Hall (Melbourne 2026),,,,https://www.brocket-hall.co.uk/golf/,no yardage found
 Brocket Hall (Palmerston 2026),,,,https://www.brocket-hall.co.uk/golf/,no yardage found
@@ -60,7 +60,7 @@ Cherry Lodge Golf Club,,6395,6395 6372,https://cherrylodgegc.co.uk/about-us/,sev
 Chesfield Downs Golf Club (Chesfield Downs),,,,https://golf.chesfielddownsgolf.co.uk,no yardage found
 Chesfield Downs Golf Club (Par 3),,,,https://golf.chesfielddownsgolf.co.uk,no yardage found
 Chestfield Golf Club,downland,,,https://www.chestfield-golfclub.co.uk/,no yardage found
-Chichester Golf Club,,,,https://chichestergolf.com,no yardage found
+Chichester Golf Club,parkland,,,https://chichestergolf.com/the-cathedral-course/,no yardage found
 Chigwell Golf Club,parkland,6309,6309,https://www.chigwellgolfclub.co.uk/,
 Chiltern Forest Golf Course,parkland,5687,5687,https://chilternforest.co.uk/,
 Chipstead Golf Club,,,,https://www.chipsteadgolf.co.uk/,no yardage found
@@ -97,7 +97,7 @@ Eastbourne Downs,downland,,,https://www.eastbournedownsgolf.co.uk/,no yardage fo
 Epsom Downs Golf Club,downland,5780,5780 5490 5076,https://www.epsomgolfclub.co.uk/,several yardages — check which tee
 Essendon Country Club (New),,7000,7000 6700 6085 5654 4046,https://www.essendoncc.co.uk/new_course,several yardages — check which tee
 Essendon Country Club (Old),,7000,7000 6700 6085 5654 4046,https://www.essendoncc.co.uk/new_course,several yardages — check which tee
-Etchinghill Golf Club,,,,https://www.etchinghillgolf.co.uk/,no yardage found
+Etchinghill Golf Club,downland,6101,6101 5592,https://www.etchinghillgolf.co.uk/golf/our-courses/,types seen: downland/parkland; several yardages — check which tee
 Finchley Golf Course,parkland,6302,6302 5978 5691 5554,https://www.finchleygolfclub.com/,several yardages — check which tee
 Five Lakes (Lakes),,6734,6734 6267 5725,https://www.fivelakesgolfclub.co.uk/,several yardages — check which tee
 Fulwell Golf Club,,6607,6607 6470 6145 5855 5531 4295,https://www.fulwellgolfclub.co.uk/,several yardages — check which tee
@@ -130,21 +130,21 @@ Ingrebourne Links Golf Course,parkland,,,https://ingrebournelinks.com/,types see
 Ivinghoe Golf Club,parkland,,,https://ivinghoegolfclub.co.uk/,no yardage found
 Kings Hill Golf Club,heathland,,,https://kingshillgolf.com/,types seen: heathland/links; no yardage found
 Kingswood Golf & Country Club,parkland,6900,6900,https://www.kingswood-golf.co.uk/,
-Knole Park,,,,https://www.knoleparkgolfclub.co.uk/,no yardage found
+Knole Park,,6669,6669 6480 6205 5907 5478,https://www.knoleparkgolfclub.co.uk/the_course_overview,several yardages — check which tee
 Lamberhurst,parkland,6448,6448,https://www.lamberhurstgolfclub.com/,
-Langley Park Golf Course,,,,https://www.langleyparkgolf.co.uk/,no yardage found
+Langley Park Golf Course,,6477,6477 6311 6071 5861 5082,https://www.langleyparkgolf.co.uk/the_course_overview,several yardages — check which tee
 Lee-on-the-Solent Golf Course,heathland,5911,5911 5752 5656 5594 5471 5423,https://www.leegolf.co.uk/,types seen: heathland/parkland; several yardages — check which tee
 Leeds Castle Golf Course,parkland,,,https://www.leeds-castle.com/,no yardage found
 Lewes Golf Club,downland,,,https://www.lewesgolfclub.co.uk/,no yardage found
 Limpsfield Chart Golf Club,heathland,5736,5736 5481 5289 5205 5127,https://www.limpsfieldchartgolf.co.uk/course_tour,several yardages — check which tee
 Lindfield Golf Course,parkland,5957,5957,https://www.lindfieldgolfclub.co.uk/,
 Lingfield Park Golf Course,,,,https://www.lingfieldpark.co.uk/golf/,no yardage found
-Little Hay Golf Complex,,,,https://www.chronogolf.com,no yardage found
-Little Hay Golf Complex (Pitch & Putt),,,,https://www.chronogolf.com,no yardage found
+Little Hay Golf Complex,parkland,5143,5143,https://www.chronogolf.com/club/cannock-park-golf-course,
+Little Hay Golf Complex (Pitch & Putt),parkland,5143,5143,https://www.chronogolf.com/club/cannock-park-golf-course,
 Littlehampton Golf Club,links,6226,6226 5864 5638 5615 4372,https://www.littlehamptongolf.co.uk/,several yardages — check which tee
 London Club,downland,,,https://londongolf.co.uk/,no yardage found
-Lullingstone Park Golf Course (Castle Course),,,,https://www.chronogolf.com,no yardage found
-Lullingstone Park Golf Course (Valley Course),,,,https://www.chronogolf.com,no yardage found
+Lullingstone Park Golf Course (Castle Course),parkland,5143,5143,https://www.chronogolf.com/club/cannock-park-golf-course,
+Lullingstone Park Golf Course (Valley Course),parkland,5143,5143,https://www.chronogolf.com/club/cannock-park-golf-course,
 Lydd Golf Club,,6629,6629 6596 6300 5779,https://www.lyddgolfclub.co.uk/,several yardages — check which tee
 Malden Golf Club,parkland,,,https://www.maldengolfclub.com/,no yardage found
 Mannings Heath (Kingfisher),,,,https://www.manningsheath.com/golf,no yardage found
@@ -159,7 +159,7 @@ Millers Barn Golf Park,parkland,,,https://www.millersbarngolf.co.uk/course,no ya
 Mitcham Golf Club,parkland,5935,5935,https://www.mitchamgolfclub.co.uk/,
 Muswell Hill Golf Club,parkland,6411,6411,https://www.muswellhillgolfclub.co.uk/,
 Nazeing Golf Club,parkland,6521,6521,https://www.nazeinggolfclub.co.uk/,
-Nevill Golf Club,,,,https://www.nevillgolfclub.co.uk,no yardage found
+Nevill Golf Club,,6206,6206 5596,https://www.nevillgolfclub.co.uk/the_course_overview,several yardages — check which tee
 New Forest Golf Club,heathland,5500,5500,https://newforestgolfclub.co.uk/,types seen: heathland/parkland
 Newbury & Crookham Golf Club,heathland,6000,6000,https://www.newburygolf.co.uk/,
 Nizels,parkland,,,https://www.nizelsgolfclub.com/,no yardage found
@@ -170,12 +170,12 @@ North Middlesex Golf Club,parkland,5587,5587,https://www.northmiddlesexgc.co.uk/
 Notley Golf Course,parkland,6116,6116,https://notleysgolfclub.co.uk/,
 Oakland Park Golf Club,parkland,6835,6835,https://www.oaklandparkgolf.co.uk/,
 Old Fold Manor Golf Course,heathland,6500,6500,https://www.oldfoldmanor.co.uk/,types seen: heathland/links
-Old Thorns,,,,https://www.chronogolf.com,no yardage found
+Old Thorns,parkland,5143,5143,https://www.chronogolf.com/club/cannock-park-golf-course,
 Orpington Golf Centre (Cray 18 Holes),,,,https://www.mytimeactive.co.uk/orpington,no yardage found
 Orpington Golf Centre (Cray 9 Holes),,,,https://www.mytimeactive.co.uk/orpington,no yardage found
 Orpington Golf Centre (Ruxley 9 Holes),,,,https://www.mytimeactive.co.uk/orpington,no yardage found
 Park Wood Golf Club,parkland,6835,6835,https://www.parkwoodgolf.co.uk/,
-Paultons Golf Centre,,,,https://www.chronogolf.com,no yardage found
+Paultons Golf Centre,parkland,5143,5143,https://www.chronogolf.com/club/cannock-park-golf-course,
 Peacehaven Golf Course,downland,,,https://www.peacehavengc.com/,no yardage found
 Pedham Place Golf Centre,downland,,,https://www.ppgc.co.uk/,no yardage found
 Petersfield Golf Club,,6308,6308,https://www.petersfieldgolfclub.co.uk/course_introduction,
@@ -194,7 +194,7 @@ Redbourn Golf Club,,,,https://www.redbourngolfclub.co.uk/,no yardage found
 Redlibbets,parkland,,,https://www.redlibbets.co.uk/,no yardage found
 Reigate Heath Golf Club,,,,https://members.reigateheathgc.com,no yardage found
 Reigate Hill Golf Club,,,,https://www.reigatehillgolfclub.co.uk/,no yardage found
-Romford Golf Club,,,,https://www.romfordgolfclub.com,no yardage found
+Romford Golf Club,,6408,6408 6139 6111 5783 5426,https://www.romfordgolfclub.com/the_course,several yardages — check which tee
 Rookwood Golf Course,,,,https://www.intelligentgolf.co.uk,no yardage found
 Royal Ascot Golf Club,,6288,6288 6226,https://www.royalascotgolfclub.co.uk/the-course/course-overview/,several yardages — check which tee
 Royal Ashdown Forest Golf Club (Old),heathland,,,https://www.royalashdown.co.uk/,no yardage found
@@ -240,18 +240,18 @@ Surrey Downs Golf Club,parkland,6265,6265,https://www.surreydownsgc.co.uk/,
 Surrey National Golf Club,,7000,7000,https://surreynational.co.uk/golf/,
 Sutton Green Golf Club,parkland,6433,6433,https://www.suttongreengc.co.uk/,
 Sweetwoods,parkland,,,https://sweetwoods.co.uk/,no yardage found
-Tenterden Golf Club,,,,https://www.tenterden.golf/home/,no yardage found
+Tenterden Golf Club,parkland,,,https://www.tenterden.golf/golf-course,no yardage found
 Test Valley Golf Club,,,,https://www.testvalleygolf.com,no yardage found
 Test Valley Golf Club (Front 9),,,,https://www.testvalleygolf.com,no yardage found
 Thames Ditton and Esher Golf Club,,5190,5190,https://thamesdittonandeshergolfclub.com/,"hand: inland, not links"
 The Caversham,,7319,7319 5536,https://thecaversham.co.uk/,"several yardages — check which tee; hand: club says 'inland links' — not coastal, left blank"
 The Club at Mapledurham,,,,https://golf.theclubatmapledurham.com,no yardage found
 The Drift Golf Club,woodland,,,https://www.driftgolfclub.com/,no yardage found
-The Heron (Hawk-Vixen),,,,https://www.heroncountryclub.uk,no yardage found
-The Heron (Heron-Hawk),,,,https://www.heroncountryclub.uk,no yardage found
-The Heron (Vixen-Heron),,,,https://www.heroncountryclub.uk,no yardage found
+The Heron (Hawk-Vixen),parkland,6755,6755,https://www.heroncountryclub.uk/our_courses,
+The Heron (Heron-Hawk),parkland,6755,6755,https://www.heroncountryclub.uk/our_courses,
+The Heron (Vixen-Heron),parkland,6755,6755,https://www.heroncountryclub.uk/our_courses,
 The Inspiration Club,parkland,6610,6610 6100 5440,https://theinspirationclub.co.uk/,types seen: parkland/links; several yardages — check which tee
-The Leatherhead Club,,,,https://www.theleatherheadclub.com,no yardage found
+The Leatherhead Club,,5757,5757 5455,https://www.theleatherheadclub.com/the_course,several yardages — check which tee
 The Nine of Herts,,,,https://www.9ofherts.co.uk/,no yardage found
 The Rayleigh Club,,6616,6616 4670,https://www.therayleighclub.com/golf/,several yardages — check which tee
 The Richmond Golf Club,,6100,6100 6091,https://therichmondgolfclub.com/,several yardages — check which tee
@@ -272,22 +272,22 @@ Warley Park Golf Club,parkland,6055,6055,https://www.warleyparkgc.co.uk/,
 Waterlooville Golf Course,parkland,6550,6550,https://waterloovillegolfclub.com/,
 West Byfleet Golf Club,,6531,6531 5647,https://westbyfleetgolfclub.co.uk/,several yardages — check which tee
 West Essex Golf Club,parkland,6385,6385,https://westessexgolfclub.co.uk/,
-West Kent Golf Club,,,,https://www.wkgc.co.uk,no yardage found
+West Kent Golf Club,downland,6427,6427 6160 6151 6000 5971 5951,https://www.wkgc.co.uk/hole_1,types seen: downland/parkland; several yardages — check which tee
 West Malling (Hurricane),,,,https://www.westmallinggolf.com/,no yardage found
 West Malling (Spitfire),,,,https://www.westmallinggolf.com/,no yardage found
 West Surrey Golf Club,heathland,6482,6482 6415 6258,https://www.wsgc.co.uk/,types seen: heathland/parkland; several yardages — check which tee
 West Sussex Golf Club,heathland,,,https://westsussexgolf.co.uk/,no yardage found
 Westerham,woodland,6270,6270,https://westerhamgc.co.uk/,
 Westgate and Birchington Golf Club,,4877,4877,https://www.westgate-and-birchington-golfclub.co.uk/course-overview,
-Weybrook Park Golf Club (Combo East to WF9),,,,https://www.weybrookpark.co.uk,no yardage found
-Weybrook Park Golf Club (Weybrook Park East),,,,https://www.weybrookpark.co.uk,no yardage found
-Weybrook Park Golf Club (Weybrook Park West),,,,https://www.weybrookpark.co.uk,no yardage found
+Weybrook Park Golf Club (Combo East to WF9),parkland,6808,6808 6574 6189 5635,https://www.weybrookpark.co.uk/the-course/the-east-course,types seen: parkland/downland; several yardages — check which tee
+Weybrook Park Golf Club (Weybrook Park East),parkland,6808,6808 6574 6189 5635,https://www.weybrookpark.co.uk/the-course/the-east-course,types seen: parkland/downland; several yardages — check which tee
+Weybrook Park Golf Club (Weybrook Park West),parkland,6808,6808 6574 6189 5635,https://www.weybrookpark.co.uk/the-course/the-east-course,types seen: parkland/downland; several yardages — check which tee
 Whitehill Golf,,,,https://www.whitehillgolf.co.uk/,no yardage found
 Whiteleaf Golf Club,downland,,,https://www.whiteleafgolfclub.co.uk/scorecard,types seen: downland/parkland; no yardage found
 Wickham Park Golf Course,,,,https://golf.wickhamparkgolf.co.uk,no yardage found
-Wildernesse,,,,https://www.wildernesse.co.uk/,no yardage found
+Wildernesse,,6500,6500 6178 5943 5713,https://www.wildernesse.co.uk/the_course,several yardages — check which tee
 Willingdon,,6094,6094 5841 5527,https://www.willingdongolfclub.co.uk/,several yardages — check which tee
 Woodcote Park Golf Club,downland,6787,6787,https://www.woodcotepgc.com/,types seen: downland/parkland
-Woolston Manor Golf & Country Club,,,,https://www.woolstonmanor.co.uk,no yardage found
-Worldham Golf Club,,,,https://www.chronogolf.com,no yardage found
+Woolston Manor Golf & Country Club,,6496,6496,https://www.woolstonmanor.co.uk/golf/the-course,
+Worldham Golf Club,parkland,5143,5143,https://www.chronogolf.com/club/cannock-park-golf-course,
 Wycombe Heights Golf Centre,,6053,6053,https://wycombeheightsgc.co.uk/golf/courses/,

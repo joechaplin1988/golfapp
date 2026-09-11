@@ -103,6 +103,18 @@ CANDIDATE_PATHS = ["", "the-course", "course", "our-course", "golf-course", "the
                    "scorecard", "course/scorecard", "the-course/scorecard", "course/the-course",
                    "about", "about-us", "visitors", "green-fees", "play", "club/the-course"]
 
+# Guessed paths only work when a club uses conventional URLs. 117 sheets came
+# back with NO type and NO yardage despite having a website, which is a lot of
+# clubs to all be silent about their own course — the guesses simply never
+# landed on the right page. So follow the site's OWN navigation too: any
+# in-site link whose text or href talks about the course, the scorecard or
+# the layout.
+COURSE_LINK_RE = re.compile(
+    r"(the[-_ ]?course|our[-_ ]?course|golf[-_ ]?course|course[-_ ]?guide|scorecard|"
+    r"score[-_ ]?card|hole[-_ ]?by[-_ ]?hole|the[-_ ]?layout|course[-_ ]?tour|"
+    r"course[-_ ]?info|about[-_ ]?the[-_ ]?course)", re.I)
+MAX_FOLLOWED_LINKS = 6
+
 
 def clean_text(html: str) -> str:
     html = re.sub(r"<(script|style)[\s\S]*?</\1>", " ", html, flags=re.I)
@@ -185,6 +197,26 @@ def site_for(club_name: str, base_url: str, sites: dict) -> str:
     return ""
 
 
+def course_links(html: str, base_url: str) -> list:
+    """In-site links that look like they lead to the course description."""
+    out, seen = [], set()
+    host = urlparse(base_url).netloc
+    for m in re.finditer(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>(.*?)</a>', html, re.I | re.S):
+        href, text = m.group(1), re.sub(r"<[^>]+>", " ", m.group(2))
+        if re.search(r"\.(pdf|jpe?g|png|docx?)(\?|$)", href, re.I):
+            continue
+        if not (COURSE_LINK_RE.search(href) or COURSE_LINK_RE.search(text)):
+            continue
+        url = urljoin(base_url, href)
+        if urlparse(url).netloc != host or url in seen:
+            continue
+        seen.add(url)
+        out.append(url)
+        if len(out) >= MAX_FOLLOWED_LINKS:
+            break
+    return out
+
+
 def profile_for(session, club_name: str, site: str) -> dict:
     row = {f: "" for f in FIELDS}
     row["club_name"] = club_name
@@ -196,8 +228,9 @@ def profile_for(session, club_name: str, site: str) -> dict:
     seen_types = []
     yardages = []
     used_url = ""
-    for path in CANDIDATE_PATHS:
-        url = urljoin(site.rstrip("/") + "/", path)
+    urls = [urljoin(site.rstrip("/") + "/", p) for p in CANDIDATE_PATHS]
+    followed_from_home = False
+    for url in urls:
         try:
             resp = session.get(url, headers=BROWSER, timeout=25, verify=False)
             time.sleep(DELAY)
@@ -220,6 +253,12 @@ def profile_for(session, club_name: str, site: str) -> dict:
             used_url = resp.url
         if yardages and seen_types:
             break
+        # After the homepage, queue whatever IT says leads to the course.
+        if not followed_from_home and resp.url.rstrip("/") == site.rstrip("/"):
+            followed_from_home = True
+            for extra in course_links(resp.text, resp.url):
+                if extra not in urls:
+                    urls.insert(1, extra)
 
     # "links" outranks everything in the TYPES order because it is the most
     # distinctive style — but it is also the word most often used loosely
@@ -252,6 +291,9 @@ def main() -> None:
     ap.add_argument("--missing", action="store_true",
                     help="only rows --out has no entry for, and MERGE into it "
                          "(the usual case after adding a county)")
+    ap.add_argument("--blanks", action="store_true",
+                    help="redo rows that have NEITHER type nor yardage, and merge "
+                         "(for when the extraction itself has improved)")
     a = ap.parse_args()
 
     sites = official_sites()
@@ -260,7 +302,22 @@ def main() -> None:
     if a.only:
         rows = [r for r in rows if any(o.lower() in r["club_name"].lower() for o in a.only)]
     existing: dict = {}
-    if a.missing:
+    if a.blanks:
+        try:
+            with open(a.out, newline="", encoding="utf-8") as f:
+                existing = {r["club_name"]: r for r in csv.DictReader(f)}
+        except FileNotFoundError:
+            existing = {}
+        # A row a human deliberately BLANKED looks identical to one where
+        # nothing was found — and redoing it silently undoes the correction.
+        # Blakes Golf Course (Epping, inland) was hand-cleared of a wrong
+        # "links" label and this pass put it straight back. Notes starting
+        # "hand:" mark a decision, not a gap.
+        blank = {k for k, v in existing.items()
+                 if not (v["course_type"] or v["yardage"]) and "hand:" not in (v.get("note") or "")}
+        rows = [r for r in rows if r["club_name"] in blank]
+        log.info(f"{len(blank)} blank row(s) in {a.out}; redoing {len(rows)} of them")
+    elif a.missing:
         try:
             with open(a.out, newline="", encoding="utf-8") as f:
                 existing = {r["club_name"]: r for r in csv.DictReader(f)}
@@ -278,7 +335,7 @@ def main() -> None:
         log.info(f"[{i}/{len(rows)}] {r['club_name'][:38]:38} "
                  f"{prof['course_type'] or '-':11} {prof['yardage'] or '-':6} {prof['note'][:42]}")
 
-    if a.missing and existing:
+    if (a.missing or a.blanks) and existing:
         # Merge, never clobber: course_profiles.csv is hand-checked, and a
         # rerun must not throw away corrections made to rows it isn't redoing.
         merged = dict(existing)

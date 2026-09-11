@@ -1056,8 +1056,22 @@ off each tee. We take the medal/white figure, which is what clubs quote, and
 `enrich_courses.py` keeps every candidate it saw in `all_yardages` so a
 misread scorecard is visible at review time.
 
-**Coverage is partial and that is fine** — 133 of 232 sheets have at least
-one fact (51 with both). The page omits the line entirely for the rest.
+**Coverage is partial and that is fine** — 205 of 292 sheets have at least
+one fact (94 with both), up from 165/292.
+
+The jump came from how the crawler finds pages. Guessed paths
+(`/the-course`, `/scorecard`…) only work for clubs with conventional URLs;
+117 sheets came back with NO type and NO yardage despite all having working
+websites, which is too many clubs to all be silent about their own course.
+It now also follows the site's OWN navigation — any in-site link whose text
+or href mentions the course, scorecard or layout. Knole Park went from
+nothing to 6,669 yards off a page no guess list would have reached.
+
+`--blanks` redoes only the rows that came back empty, so improving the
+extraction costs 117 fetches rather than 292. It SKIPS rows whose note starts
+`hand:` — a row a human deliberately blanked is indistinguishable from one
+where nothing was found, and the first run of this flag silently put a wrong
+"links" label back on Blakes Golf Course after it had been cleared. The page omits the line entirely for the rest.
 Pulling facts off 200-odd unrelated club websites plateaus; the remainder
 wants hand-filling.
 
