@@ -25,7 +25,8 @@ except ImportError:
 import requests
 
 UA = {"User-Agent": "ServiceSynkGolfAggregator/0.1 (contact: joe@servicesynk.com)"}
-WAVES = ["a", "b", "c"]
+INPUTS = sys.argv[1:-1] or [f"approved_rows_wave2{w}.csv" for w in "abc"]
+OUT = sys.argv[-1] if len(sys.argv) > 1 else "approved_rows_wave2.csv"
 NOT_A_ROUND = re.compile(
     r"footgolf|foot golf|disc golf|mini golf|adventure|crazy golf|"
     r"pitch\s*(and|&)\s*putt|putting green|coaching diary|driving range", re.I)
@@ -48,8 +49,8 @@ def haversine(a, b, c, d):
 
 # --- load ---------------------------------------------------------------
 rows, seen = [], set()
-for w in WAVES:
-    for r in csv.DictReader(open(f"approved_rows_wave2{w}.csv", encoding="utf-8")):
+for src in INPUTS:
+    for r in csv.DictReader(open(src, encoding="utf-8")):
         if r["verified"].lower() != "true":
             continue
         k = (r["platform"], r["base_url"].rstrip("/"), r["course_id"])
@@ -130,8 +131,8 @@ for n, pc, dist in filled:
 still = [r["club_name"] for r in keep if not r["postcode"]]
 print(f"\n{len(keep)} rows kept; {len(still)} still without a postcode: {still}")
 
-with open("approved_rows_wave2.csv", "w", newline="", encoding="utf-8") as f:
+with open(OUT, "w", newline="", encoding="utf-8") as f:
     w = csv.DictWriter(f, fieldnames=list(keep[0].keys()))
     w.writeheader()
     w.writerows(keep)
-print("wrote approved_rows_wave2.csv")
+print(f"wrote {OUT}")
