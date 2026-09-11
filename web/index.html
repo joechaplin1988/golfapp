@@ -22,8 +22,16 @@
   form, .filters { background:var(--card); border:1px solid var(--line); border-radius:14px;
     padding:16px; box-shadow:var(--shadow);
     display:grid; grid-template-columns: repeat(2, 1fr); gap:12px; }
-  .filters { grid-template-columns: repeat(4, 1fr); margin-top:16px; }
-  .filters[hidden] { display:none; }
+  .filters { grid-template-columns: repeat(4, 1fr); border:0; box-shadow:none;
+    background:transparent; border-radius:0; padding:0 16px 16px; }
+  .filterbox { background:var(--card); border:1px solid var(--line); border-radius:14px;
+    box-shadow:var(--shadow); margin-top:16px; }
+  .filterbox > summary { list-style:none; cursor:pointer; padding:13px 16px;
+    font-size:.9rem; font-weight:600; color:var(--muted); }
+  .filterbox > summary::-webkit-details-marker { display:none; }
+  .filterbox > summary::after { content:"▾"; float:right; transition:transform .15s;
+    display:inline-block; }
+  .filterbox[open] > summary::after { transform:rotate(180deg); }
   .field { display:flex; flex-direction:column; gap:4px; }
   .field.wide { grid-column: 1 / -1; }
   .field.between { grid-column: span 2; }
@@ -67,7 +75,7 @@
     border-radius:999px; padding:1px 7px; margin-left:6px; }
   footer { margin-top:36px; color:var(--muted); font-size:.82rem; text-align:center; }
   @media (max-width:560px){
-    form{grid-template-columns:1fr;} .filters{grid-template-columns:1fr 1fr;} .field.between{grid-column:1 / -1;}
+    .filters{grid-template-columns:1fr 1fr;} .field.between{grid-column:1 / -1;}
     details.club > summary{flex-wrap:wrap;} .from{order:3;} .row{flex-wrap:wrap;} a.book{margin-left:auto;}
   }
 </style>
@@ -113,8 +121,11 @@
     <button class="go" type="submit">Search tee times</button>
   </form>
 
-  <!-- Filters work on the results already loaded, so changing one is instant. -->
-  <div class="filters" id="filters" hidden>
+  <!-- Filters work on the results already loaded, so changing one is instant. Collapsed
+       on a phone, where an always-open filter bar pushed the results off the screen. -->
+  <details class="filterbox" id="filters" hidden>
+    <summary>Filter and sort</summary>
+    <div class="filters">
     <div class="field between">
       <label for="from">Play between</label>
       <div class="pair">
@@ -141,7 +152,8 @@
         <option value="time">Earliest tee time first</option>
       </select>
     </div>
-  </div>
+    </div>
+  </details>
 
   <div id="status"></div>
   <div id="results" class="results"></div>
@@ -222,6 +234,17 @@ $("date").min = today;
 })();
 
 function setStatus(msg) { statusEl.textContent = msg; }
+// On a phone the whole answer — results, a place chooser, an error — sits below
+// the fold once the form is on screen. Bring it into view so a search visibly
+// does something. Not called from render(), which runs on every filter change.
+function showAnswer(el) {
+  const target = el || statusEl;
+  // Only when the answer is off the bottom of the screen, which is the phone
+  // case. On a desktop the results are already visible and a jump is jarring.
+  if (target.getBoundingClientRect().top > window.innerHeight * 0.6) {
+    target.scrollIntoView({ block: "start" });
+  }
+}
 
 // Postcode, part-postcode, or town name — people who know an area rarely
 // know a full postcode in it.
@@ -314,6 +337,7 @@ function askWhichPlace(options) {
     box.appendChild(b);
   }
   resultsEl.appendChild(box);
+  showAnswer();
 }
 
 // PostgREST caps any single response at 1,000 rows, so page through with
@@ -511,7 +535,12 @@ async function runSearch(loc) {
       in_holes: null,
     });
     filtersEl.hidden = false;
+    // A phone shows the form and nothing else, so without this the page looks
+    // like the Search button did nothing. Only on a fresh search, never on a
+    // filter change — that would yank the page while someone is adjusting it.
+    filtersEl.open = !window.matchMedia("(max-width: 560px)").matches;
     render();
+    showAnswer(filtersEl);
     record("search_events", {
       area: outwardOnly($("postcode").value),
       radius_km: Number($("radius").value) / MILES_PER_KM,
@@ -522,6 +551,7 @@ async function runSearch(loc) {
     });
   } catch (err) {
     setStatus(err.message || "Something went wrong.");
+    showAnswer();
   } finally {
     btn.disabled = false;
   }
@@ -546,6 +576,7 @@ $("search").addEventListener("submit", async (e) => {
     await runSearch(loc);
   } catch (err) {
     setStatus(err.message || "Something went wrong.");
+    showAnswer();
   } finally {
     btn.disabled = false;
   }

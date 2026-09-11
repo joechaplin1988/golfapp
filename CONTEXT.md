@@ -471,6 +471,16 @@ Shiji, Chronogolf still deferred.
 - **Google review ratings** — highest-value of the three held-back course
   attributes, and the most complex (Places caching terms, attribution,
   per-call billing). Joe: revisit once there are users.
-- **Course facts coverage** — 165 of 281 sheets. The blanks cluster in
+- **Course facts coverage** — 205 of 292 sheets. The blanks cluster in
   pay-and-play and municipal courses, which are exactly the ones a newcomer
   most needs described. Hand-filling would beat adding more clubs.
+
+## Phone layout (checked 2026-09-11)
+Most golfers will search on a phone, so the live page was measured at 375x812.
+Nothing overflowed sideways, but the first result sat 939px down — past the
+bottom of the screen — so tapping Search looked like it did nothing. Fixed by
+collapsing the filter bar into a "Filter and sort" card on narrow screens, and
+by scrolling the answer into view when it would otherwise be off the bottom
+(never on a filter change, and never on a desktop where it is already visible).
+Local testing: `.claude/launch.json` serves web/ on :8899; fetch web/config.js
+from the live site first, since Netlify writes it at deploy time.
