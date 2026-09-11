@@ -1,0 +1,47 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Goin' Golf,,52.9961323,-2.150529,no_site,unknown,,low,no official website resolved (not in county union directory)
+Aston Wood Golf Club,,52.6081126,-1.8535774,no_site,unknown,,low,no official website resolved (not in county union directory)
+Whiston Golf Club,,53.0220063,-1.9361921,no_site,unknown,,low,no official website resolved (not in county union directory)
+Wychnor Park Country Club,https://www.diamondresorts.com/Wychnor-Park-Country-Club,52.7480326,-1.7574355,blocked,unknown,,low,homepage returned HTTP 500 — likely bot-blocked; needs a browser-based check
+Beacon Park Golf Course,,52.6857796,-1.84111,no_site,unknown,,low,no official website resolved (not in county union directory)
+Aqualate Golf Centre,https://www.aqualategolf.co.uk/,52.767937,-2.3542656,unknown,unknown,,low,homepage loaded (https://www.aqualategolf.co.uk/) but no platform signal found on it or 5 booking-ish link(s)
+Wolstanton Golf Club,,53.031074,-2.2337383,no_site,unknown,,low,no official website resolved (not in county union directory)
+Newcastle Golf Club,,52.9971264,-2.2476252,no_site,unknown,,low,no official website resolved (not in county union directory)
+Uttoxeter Golf Course,,52.8876714,-1.8433867,no_site,unknown,,low,no official website resolved (not in county union directory)
+Essington Golf Course,,52.633798,-2.03811,no_site,unknown,,low,no official website resolved (not in county union directory)
+Denstone College Golf Club,https://www.denstonecollege.org/golf,52.9581869,-1.8701109,unknown,unknown,,low,homepage loaded (https://www.denstonecollege.org/golf) but no platform signal found on it or 2 booking-ish link(s)
+Ingestre Park Golf Club,,52.8148699,-2.0341286,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Chase Golf Club,,52.7238174,-2.050912,no_site,unknown,,low,no official website resolved (not in county union directory)
+Leek Golf Club,,53.0888687,-2.0247868,no_site,unknown,,low,no official website resolved (not in county union directory)
+Onneley Golf Club,,52.9892881,-2.3637143,no_site,unknown,,low,no official website resolved (not in county union directory)
+Himley Hall Golf Centre/Club,https://www.himleyhallgolfclub.com/,52.5236118,-2.1592388,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.himleyhallgolfclub.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.himleyhallgolfclub.com', port=443): Failed to resolve 'www.himleyhallgolfclub.com' ([Errno 11001] getaddrinfo failed)""))"
+Stafford Castle Golf Club,,52.8006099,-2.1363978,no_site,unknown,,low,no official website resolved (not in county union directory)
+Brocton Hall Golf Club,,52.7761699,-2.0551429,no_site,unknown,,low,no official website resolved (not in county union directory)
+Whittington Heath Golf Club,https://www.whittingtonheathgc.co.uk/,52.6653781,-1.7796013,intelligent_golf,public,https://whittingtonheath.intelligentgolf.co.uk/visitorbooking/,high,
+Westwood Golf Club,,53.0965949,-2.0473542,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lichfield Golf & Country Club,,52.7170718,-1.8562379,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Mount Golf & Country Club,https://www.mountgolfandcountryclub.co.uk/,52.5919307,-2.2215822,intelligent_golf,public,https://pertonpark.intelligentgolf.co.uk/visitorbooking/,high,
+Swindon Golf Club,https://www.swindongolfclub.co.uk/,52.5234655,-2.2353635,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.swindongolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Hawkesyard Golf Course,,52.7422838,-1.9024258,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Mark Butler Golf Academy (Sedgley Golf Centre),https://www.themarkbutlergolfacademy.co.uk/,52.5307407,-2.1366225,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.themarkbutlergolfacademy.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Greenfield Golf Club,https://greenfieldgolf.co.uk/,52.6359943,-2.1156344,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='greenfieldgolf.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError('A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider.')))"
+The Range Woodfarm,,52.6321501,-2.0305626,no_site,unknown,,low,no official website resolved (not in county union directory)
+Trentham Park Golf Course,,52.9690301,-2.215534,no_site,unknown,,low,no official website resolved (not in county union directory)
+Branston Golf & Country Club,https://branstonclub.co.uk/,52.7848451,-1.6494148,unknown,unknown,,low,homepage loaded (https://branstonclub.co.uk/) but no platform signal found on it or 8 booking-ish link(s)
+Burslem Golf Course,,53.062588,-2.1861786,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ledene Golf Centre,https://www.ledenegolf.co.uk/,52.639131,-2.2271728,unknown,unknown,,low,homepage loaded (https://www.ledenegolf.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Belmont Golf Club,https://www.belmontgolf.co.uk/,52.8290554,-1.712591,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.belmontgolf.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Cannock Park Golf Course,https://www.wlct.org/cannock/golf/,52.6974089,-2.0402482,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Barlaston Golf Club,,52.9332304,-2.1773608,no_site,unknown,,low,no official website resolved (not in county union directory)
+Greenway Hall Golf Club,,53.057861,-2.1205446,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Manor Golf Club Ltd,,52.8666012,-1.9332326,no_site,unknown,,low,no official website resolved (not in county union directory)
+Trentham Golf Club,,52.9603547,-2.1878626,no_site,unknown,,low,no official website resolved (not in county union directory)
+JCB Golf & Country Club,https://www.jcbgolfandcountryclub.com,52.9437734,-1.8609118,intelligent_golf,public,https://www.jcbgolfandcountryclub.com/visitorbooking/,high,confirmed via intelligent_golf's standard booking path
+Beau Desert Golf Club,,52.7187336,-1.9719475,no_site,unknown,,low,no official website resolved (not in county union directory)
+Penn Common Golf Course,https://www.penngolfclub.co.uk/,52.5484289,-2.1519137,brs,public,https://visitors.brsgolf.com/penn#/course/1,high,
+Enville Golf Club,https://www.envillegolfclub.com/,52.4964847,-2.2331825,unknown,unknown,,low,homepage loaded (https://www.envillegolfclub.com/) but no platform signal found on it or 0 booking-ish link(s)
+Three Hammers Golf Complex,https://www.3hammers.co.uk/,52.6505998,-2.1276866,unknown,unknown,,low,homepage loaded (https://3hammers.co.uk/) but no platform signal found on it or 5 booking-ish link(s)
+Darnford Moors Golf Course,https://www.darnfordmoors.com/,52.6764051,-1.7939813,unknown,unknown,,low,homepage loaded (https://www.darnfordmoors.com/) but no platform signal found on it or 0 booking-ish link(s)
+"Patshull Park Hotel, Golf & Country Club",https://www.patshull-park.co.uk/golf.aspx,52.6011761,-2.293767,unknown,unknown,,low,homepage loaded (https://www.patshull-park.co.uk/golf.aspx) but no platform signal found on it or 0 booking-ish link(s)
+Aqualate Golf Centre,https://www.aqualategolf.co.uk/,52.767937,-2.3542656,unknown,unknown,,low,homepage loaded (https://www.aqualategolf.co.uk/) but no platform signal found on it or 5 booking-ish link(s)
+"Patshull Park Hotel, Golf & Country Club",https://www.patshull-park.co.uk/golf.aspx,52.6011761,-2.293767,unknown,unknown,,low,homepage loaded (https://www.patshull-park.co.uk/golf.aspx) but no platform signal found on it or 0 booking-ish link(s)

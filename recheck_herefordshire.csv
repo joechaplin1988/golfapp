@@ -1,0 +1,8 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Summerhill Golf Club,,52.087004,-3.1102391,no_site,unknown,,low,still no website known
+Sapey Golf Club,https://www.sapeygolf.co.uk,52.2603222,-2.4702429,unknown,unknown,,low,site reachable (https://sapeygolf.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Brampton Golf Course,,52.0344097,-2.8642207,no_site,unknown,,low,still no website known
+Brockington Hall Golf Club,https://www.brockingtonhall.co.uk,52.1561253,-2.6642892,error,unknown,,low,unreachable even with a browser user agent
+Alexander Park Resort,https://www.apresort.co.uk/,52.0548648,-2.5163689,unknown,unknown,,low,site reachable (https://www.apresort.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+MFA Adventure Golf,,52.062039,-2.7103616,no_site,unknown,,low,still no website known
+Burghill Valley Golf Club,https://www.burghill-valley-golf-club.co.uk/,52.096785,-2.7816547,unknown,unknown,,low,site reachable (https://www.burghill-valley-golf-club.co.uk/) but no visitor booking found on it or 0 sub-page(s)

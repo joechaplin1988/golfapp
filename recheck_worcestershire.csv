@@ -1,0 +1,26 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Hollywood Golf Club,https://www.hollywoodgolfclub.co.uk/,52.3967467,-1.8757673,error,unknown,,low,unreachable even with a browser user agent
+Kings Norton Golf Course,,52.371674,-1.9068388,no_site,unknown,,low,still no website known
+Pitcheroak Golf Course,,52.2995188,-1.9523381,no_site,unknown,,low,still no website known
+Worcestershire Golf Club,,52.0891315,-2.3248195,no_site,unknown,,low,still no website known
+Boughton Park (Worcester Golf and Country Club),,52.1783274,-2.247998,no_site,unknown,,low,still no website known
+Churchill & Blakedown Golf Club,,52.4076069,-2.1866646,no_site,unknown,,low,still no website known
+Gaudet Luce Golf Course,,52.257626,-2.1306399,no_site,unknown,,low,still no website known
+Droitwich Golf Course,,52.2808919,-2.1479017,no_site,unknown,,low,still no website known
+Worcester Golf Range,,52.1744245,-2.2275656,no_site,unknown,,low,still no website known
+Broadway Golf Club,,52.042561,-1.8315097,no_site,unknown,,low,still no website known
+Little Lakes,,52.3527252,-2.3494481,no_site,unknown,,low,still no website known
+Comberton Golf Club,https://www.combertongolf.co.uk/,52.0843627,-2.0672111,unknown,unknown,,low,site reachable (https://www.allenscaravans.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Hagley Golf & Country Club,https://www.hagleygolfandcountryclub.co.uk/,52.4363819,-2.0983238,error,unknown,,low,unreachable even with a browser user agent
+Habberley Golf Club,,52.4039853,-2.2924702,no_site,unknown,,low,still no website known
+Blackwell Golf Club,,52.3453617,-2.0068761,no_site,unknown,,low,still no website known
+Golf Range,,52.2487281,-2.1674213,no_site,unknown,,low,still no website known
+Ravenmeadow Pitch and Putt,,52.2229187,-2.2097862,no_site,unknown,,low,still no website known
+The Abbey Hotel,,52.3201886,-1.9268197,no_site,unknown,,low,still no website known
+Redditch Golf Course,,52.2913807,-1.9654675,no_site,unknown,,low,still no website known
+Cadmore Golf Club,,52.2952203,-2.6235055,no_site,unknown,,low,still no website known
+The Vale Golf and Country Club,,52.1508135,-1.9927616,no_site,unknown,,low,still no website known
+Bransford Golf Club,,52.167172,-2.3050262,no_site,unknown,,low,still no website known
+Ravenmeadow Golf Club,,52.2207916,-2.2069054,no_site,unknown,,low,still no website known
+Tidbury Green Golf Course,,52.3859699,-1.855513,no_site,unknown,,low,still no website known
+Ombersley Golf Club,https://www.ombersleygolfclub.co.uk,52.3039493,-2.2490295,esp,unknown,http://www.e-s-p.com/elitelive/?clubid=1350,medium,site reachable (https://www.ombersleygolfclub.co.uk/) but no visitor booking found on it or 4 sub-page(s)

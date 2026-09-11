@@ -35,3 +35,7 @@ course_profiles.csv.bak
 fp_*.log
 probe_*.log
 rc_*.log
+fp3_*.log
+probe3_*.log
+rc3_*.log
+enrich.log

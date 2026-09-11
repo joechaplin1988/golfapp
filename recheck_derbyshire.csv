@@ -1,0 +1,28 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Tower Course,,52.9735365,-1.4084701,no_site,unknown,,low,still no website known
+Birley Wood Golf Club,,53.3384857,-1.3986682,no_site,unknown,,low,still no website known
+Dore and Totley Golf Club,,53.3143806,-1.4938601,no_site,unknown,,low,still no website known
+Buxton and High Peak Golf Club,,53.2679332,-1.8927459,no_site,unknown,,low,still no website known
+Derby Golf Club,,52.8829306,-1.4756683,no_site,unknown,,low,still no website known
+Burton-on-Trent Golf Club,https://www.burtonontrentgolfclub.co.uk/,52.7994215,-1.5799761,error,unknown,,low,unreachable even with a browser user agent
+Breadsall Priory Golf Course - Priory Course,https://www.marriott.com/hotels/hotel-information/golf-courses/emags-breadsall-priory-marriott-hotel-and-country-club/,52.9666972,-1.4343747,dead_link,unknown,,low,site reachable (https://www.marriott.com/default.mi) but no visitor booking found on it or 0 sub-page(s)
+Derby Golf Centre,https://derbygolfacademy.wordpress.com/,52.9132473,-1.3911025,unknown,unknown,,low,site reachable (https://derbygolfacademy.wordpress.com/) but no visitor booking found on it or 1 sub-page(s)
+Chevin Vale Golf Course,,53.0024774,-1.492627,no_site,unknown,,low,still no website known
+Cavendish Golf Club,,53.2599537,-1.9348702,no_site,unknown,,low,still no website known
+Tapton Park Golf Club,,53.2421932,-1.4110959,no_site,unknown,,low,still no website known
+Matlock Golf Club,,53.1552702,-1.5311761,no_site,unknown,,low,still no website known
+The Pastures Golf Club,https://pasturesgolfclub.co.uk/,52.8961094,-1.5527718,unknown,unknown,,low,site reachable (https://pasturesgolfclub.co.uk/) but no visitor booking found on it or 3 sub-page(s)
+Glossop & District Golf Club,,53.4435256,-1.921776,no_site,unknown,,low,still no website known
+Birchall Golf and Leisure,,53.2820581,-1.4474737,no_site,unknown,,low,still no website known
+Stanedge Golf Club,,53.2060064,-1.4971303,no_site,unknown,,low,still no website known
+South Chesterfield Golf Club,,53.2051027,-1.3942769,no_site,unknown,,low,still no website known
+Tapton Park Golf Club (Dobbin Course),,53.2379864,-1.4069502,no_site,unknown,,low,still no website known
+Barlborough Links Golf Club,,53.278688,-1.2806884,no_site,unknown,,low,still no website known
+Broughton Heath Golf Course,https://www.broughtonheathgolfclub.co.uk/,52.888538,-1.6775584,dead_link,unknown,,low,site reachable (https://broughtonheathgolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+New Mills Golf Club,,53.3761741,-2.0116905,no_site,unknown,,low,still no website known
+Alfreton Golf Club,https://alfretongolfclub.co.uk/,53.0926964,-1.4119573,clubv1,unknown,https://alfreton.hub.clubv1.com/,medium,site reachable (https://alfretongolfclub.co.uk/) but no visitor booking found on it or 3 sub-page(s)
+Shirland Golf Club,,53.1143219,-1.4098929,no_site,unknown,,low,still no website known
+Swadlincote Golf Centre,https://justgolfswadlincote.com/,52.7754511,-1.588551,unknown,unknown,,low,site reachable (https://justgolfswadlincote.com/) but no visitor booking found on it or 0 sub-page(s)
+Breadsall Priory Golf Course - Moorland Course,,52.97288,-1.4353641,no_site,unknown,,low,still no website known
+Brailsford Golf Course,,52.9651041,-1.6228071,no_site,unknown,,low,still no website known
+Manor (Laceby) Golf Club,,53.5261235,-0.1535108,no_site,unknown,,low,still no website known

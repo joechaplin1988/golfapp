@@ -1,0 +1,8 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Summerhill Golf Club,,52.087004,-3.1102391,no_site,unknown,,low,no official website resolved (not in county union directory)
+Sapey Golf Club,https://www.sapeygolf.co.uk,52.2603222,-2.4702429,unknown,unknown,,low,homepage loaded (https://sapeygolf.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Brampton Golf Course,,52.0344097,-2.8642207,no_site,unknown,,low,no official website resolved (not in county union directory)
+Brockington Hall Golf Club,https://www.brockingtonhall.co.uk,52.1561253,-2.6642892,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.brockingtonhall.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.brockingtonhall.co.uk', port=443): Failed to resolve 'www.brockingtonhall.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Alexander Park Resort,https://www.apresort.co.uk/,52.0548648,-2.5163689,unknown,unknown,,low,homepage loaded (https://www.apresort.co.uk/) but no platform signal found on it or 8 booking-ish link(s)
+MFA Adventure Golf,,52.062039,-2.7103616,no_site,unknown,,low,no official website resolved (not in county union directory)
+Burghill Valley Golf Club,https://www.burghill-valley-golf-club.co.uk/,52.096785,-2.7816547,unknown,unknown,,low,homepage loaded (https://www.burghill-valley-golf-club.co.uk/) but no platform signal found on it or 0 booking-ish link(s)

@@ -1,0 +1,27 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Infinity Golf Studio,,52.5398148,-2.3398279,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Wrekin Golf Club,,52.6839498,-2.5228574,no_site,unknown,,low,no official website resolved (not in county union directory)
+Arscott,https://www.arscottgolfclub.co.uk/,52.6713268,-2.8426065,unknown,unknown,,low,homepage loaded (https://www.arscottgolfclub.co.uk/) but no platform signal found on it or 4 booking-ish link(s)
+Church Stretton Golf Club,,52.5491248,-2.8161951,no_site,unknown,,low,no official website resolved (not in county union directory)
+Oswestry Golf Course,https://www.oswestrygolfclub.co.uk/,52.834794,-2.9917827,brs,public,https://visitors.brsgolf.com/oswestry#/course/1,high,
+Chesterton Valley Golf Club,https://chestertonvalleygolfclub.com/,52.5712,-2.3291346,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='chestertonvalleygolfclub.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='chestertonvalleygolfclub.com', port=443): Failed to resolve 'chestertonvalleygolfclub.com' ([Errno 11002] getaddrinfo failed)""))"
+Elm Lodge Golf Course,,52.3816293,-2.7215722,no_site,unknown,,low,no official website resolved (not in county union directory)
+Saphire Course,,52.9804865,-2.6773716,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lilleshall Golf Course,,52.7235208,-2.3662895,no_site,unknown,,low,no official website resolved (not in county union directory)
+Shifnal Golf Club,https://www.shifnalgolfclub.com/,52.6831303,-2.3696727,brs,public,https://visitors.brsgolf.com/shifnal#/course/1,high,
+Llanymynech Golf Course,,52.7927764,-3.0909657,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hawkstone Course,,52.8610492,-2.6404431,no_site,unknown,,low,no official website resolved (not in county union directory)
+Market Drayton Golf Club,https://www.marketdraytongolfclub.co.uk/,52.8905441,-2.490717,intelligent_golf,public,https://www.marketdraytongolfclub.co.uk/visitorbooking/,high,
+Foxes Run,,52.3909673,-2.455474,no_site,unknown,,low,no official website resolved (not in county union directory)
+Badgers Sett,,52.3908945,-2.4493015,no_site,unknown,,low,no official website resolved (not in county union directory)
+Short Course,,52.7191258,-2.4073986,no_site,unknown,,low,no official website resolved (not in county union directory)
+Telford Hotel And Golf Resort,https://www.qhotels.co.uk/our-locations/telford-hotel-golf-resort/,52.6217458,-2.4428173,unknown,unknown,,low,homepage loaded (https://www.telfordhotelgolfresort.co.uk/) but no platform signal found on it or 19 booking-ish link(s)
+Ludlow Golf Club,https://www.ludlowgolfclub.com/,52.3942226,-2.7461384,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://ludlow.hub.clubv1.com/Visitors/booking"
+Meole Brace Golf Course,https://meolebracegolfclub.co.uk/,52.6923621,-2.7489704,unknown,unknown,,low,homepage loaded (https://meolebracegolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Horsehay Village Golf Centre,https://www.horsehayvillagegolfclub.co.uk,52.6679316,-2.4924818,gladstone,public,https://telfordandwrekinleisure.gladstonego.cloud/en_GB/book,high,
+Shrewsbury Golf Club,https://www.shrewsburygolfclub.co.uk/,52.6498708,-2.7628804,intelligent_golf,public,https://shrewsbury.intelligentgolf.co.uk/visitorbooking/,high,
+Mile End Golf Club,https://mileendgolfclub.co.uk/,52.8439166,-3.0239738,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Astbury Golf Course,,52.498503,-2.4080906,no_site,unknown,,low,no official website resolved (not in county union directory)
+Emerald Championship Course,,52.9816268,-2.6846328,no_site,unknown,,low,no official website resolved (not in county union directory)
+Henlle Park,,52.9077736,-3.0367711,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bridgnorth Golf Club,,52.5503566,-2.4120513,no_site,unknown,,low,no official website resolved (not in county union directory)

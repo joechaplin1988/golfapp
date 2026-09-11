@@ -1,0 +1,47 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Budock Vean Golf Club,https://www.budockvean.co.uk,50.1046481,-5.1324637,chronogolf,public,https://www.chronogolf.com/en/club/19557/widget?medium=widget&source=club,high,confirmed by following the platform link found on the club's own site
+China Fleet Country Club,https://www.china-fleet.co.uk,50.422302,-4.2174779,esp,public,https://www.e-s-p.com/elitelive/book_group.php,high,
+St. Mellion International Resort,https://www.st-mellion.co.uk,50.4683715,-4.2826961,unknown,unknown,,low,homepage loaded (https://www.st-mellion.co.uk/) but no platform signal found on it or 5 booking-ish link(s)
+Summerheights Golf Links,,45.0635712,-74.7345432,no_site,unknown,,low,no official website resolved (not in county union directory)
+Archie's Family Golf Centre,,45.0331354,-74.7685685,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lanhydrock Hotel & Golf Club,https://www.lanhydrockhotel.com,50.4471685,-4.7180972,brs,public,https://visitors.brsgolf.com/lanhydrockhotel#/course/1,high,confirmed by following the platform link found on the club's own site
+St Enodoc Golf Club,https://www.st-enodoc.co.uk,50.5532907,-4.9180424,intelligent_golf,public,https://stenodoc.intelligentgolf.co.uk/visitorbooking/,high,
+Truro Golf Club,https://www.trurogolfclub.co.uk,50.2665387,-5.0858424,brs,public,https://visitors.brsgolf.com/truro#/course/1,high,
+Newquay Golf Course,https://www.newquaygolfclub.co.uk,50.4157532,-5.0961896,intelligent_golf,public,https://www.newquaygolfclub.co.uk/visitorbooking/,high,
+Ivyleaf Golf Course,,50.8510988,-4.5064977,no_site,unknown,,low,no official website resolved (not in county union directory)
+Point at Polzeath Golf Course,https://www.thepointatpolzeath.co.uk,50.5655721,-4.9017529,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Falmouth Golf Club,https://www.falmouthgolfclub.com,50.1351188,-5.0824933,unknown,unknown,,low,homepage loaded (https://www.abovethebay.co.uk/golf) but no platform signal found on it or 4 booking-ish link(s)
+Sea Acres 9 hole course,https://www.parkdeanresorts.co.uk/location/cornwall/sea-acres/,50.0018445,-5.1695688,unknown,unknown,,low,homepage loaded (https://www.parkdeanresorts.co.uk/location/cornwall/sea-acres/) but no platform signal found on it or 7 booking-ish link(s)
+Mullion Golf Course,https://www.mulliongolfclub.co.uk,50.0390268,-5.2632076,intelligent_golf,public,https://mullion.intelligentgolf.co.uk/visitorbooking/,high,
+Killiow Country Club,,50.2382751,-5.0796366,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bude & North Cornwall Golf Course,https://www.budegolf.co.uk,50.8326479,-4.5421128,clubv1,public,https://budeandnorthcornwall.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,
+Trevose Golf & Country Club,https://www.trevose-gc.co.uk,50.5374828,-5.0165633,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Praa Sands Golf Course,https://haulfrynholidays.co.uk/welcome-to-praa-sands-holiday-park/,50.1111807,-5.3875515,unknown,unknown,,low,homepage loaded (https://haulfrynholidays.co.uk/holidays/welcome-to-praa-sands-holiday-park/) but no platform signal found on it or 5 booking-ish link(s)
+Retallack Resort Pitch and Putt Golf Course,https://www.retallackresort.co.uk,50.4580659,-4.9140498,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.retallackresort.co.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.retallackresort.co.uk', port=443) at 0x17fd2256e90>, 'Connection to www.retallackresort.co.uk timed out. (connect timeout=20)'))"
+Holywell Bay Golf Club,https://holywellbaygolf.co.uk/,50.3892381,-5.1321219,unknown,unknown,,low,homepage loaded (https://holywellbaygolf.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Hoburne Holiday Park Doublebois,https://www.hoburne.com/park-details/hoburne-doublebois,50.459625,-4.5370658,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+St Kew Golf Club,https://www.stkewgc.com/,50.5423581,-4.7891955,blocked,unknown,,low,homepage returned HTTP 522 — likely bot-blocked; needs a browser-based check
+Atlantic Reach Golf Course,https://www.atlanticreach.co.uk/,50.4038397,-4.9548964,unknown,unknown,,low,homepage loaded (https://atlanticreach.co.uk/) but no platform signal found on it or 7 booking-ish link(s)
+Trethorne Golf Club,https://www.trethornegolfclub.com,50.6266614,-4.4265789,unknown,unknown,,low,homepage loaded (https://trethornegolfclub.com/) but no platform signal found on it or 6 booking-ish link(s)
+Whitsand Bay Golf Club,https://www.whitsandbaygolf.com,50.3629503,-4.3015783,brs,public,https://visitors.brsgolf.com/whitsandbay#/,high,confirmed by following the platform link found on the club's own site
+Launceston Golf Club,https://www.launcestongolfclub.co.uk,50.6490158,-4.3817022,brs,public,https://visitors.brsgolf.com/launceston#/course/1,high,
+Radnor Golf and Leisure,https://www.intelligentgolf.co.uk,50.2541857,-5.2107166,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Helston Golf Course,,50.1231643,-5.2635006,no_site,unknown,,low,no official website resolved (not in county union directory)
+Perranporth Golf Club,https://www.perranporthgolfclub.co.uk,50.3508671,-5.1443077,brs,public,https://visitors.brsgolf.com/perranporth#/course/1,high,
+GwelanMor Golf Course,https://www.gwelanmor.com/,50.2523504,-5.2875148,unknown,unknown,,low,homepage loaded (https://cove.co.uk/other-resorts-and-scenic-parks/) but no platform signal found on it or 4 booking-ish link(s)
+St Austell Golf Course,https://www.staustellgolf.co.uk,50.3235041,-4.8088649,intelligent_golf,public,https://staustell.intelligentgolf.co.uk/visitorbooking/,high,
+Treloy Golf Club,https://www.treloygolfclub.co.uk,50.4251298,-5.0170066,unknown,unknown,,low,homepage loaded (https://treloygolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Mawgan Porth Golf Club,https://mawganporthgolfclub.co.uk,50.4693396,-5.0117143,brs,public,https://visitors.brsgolf.com/merlin#/course/1,high,
+Hengar Manor Country Park Pitch and Putt course,,50.5596661,-4.7137636,no_site,unknown,,low,no official website resolved (not in county union directory)
+Clowance Golf Course,,50.169799,-5.3146483,no_site,unknown,,low,no official website resolved (not in county union directory)
+Looe Golf Club,https://www.looegolfclub.co.uk,50.394402,-4.4244262,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.looegolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+St Erth Pitch and Putt,,50.1698976,-5.4308752,no_site,unknown,,low,no official website resolved (not in county union directory)
+West Cornwall Golf Club,https://www.westcornwallgolfclub.co.uk,50.1898143,-5.439333,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.westcornwallgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Porthpean Golf Club,https://www.porthpeangolfclub.co.uk,50.3232853,-4.7746971,brs,public,https://visitors.brsgolf.com/porthpean#/course/1,high,
+The Carlyon Bay Hotel Golf Club,https://www.carlyonbay.com,50.3389631,-4.7230783,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Tregenna Castle Resort,https://www.tregenna-castle.co.uk/businessandleisure/golf/,50.2041861,-5.4790786,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Tehidy Park Golf Club,https://www.tehidyparkgolfclub.co.uk,50.2453759,-5.2916362,intelligent_golf,public,https://tehidy.intelligentgolf.co.uk/visitorbooking/,high,
+Bowood Park Golf Course,https://www.bowoodpark.com,50.6078676,-4.6993197,brs,public,https://visitors.brsgolf.com/bowoodpark#/open-competitions,high,confirmed by following the platform link found on the club's own site
+Gillyflower Golf,,50.4168845,-4.6615494,no_site,unknown,,low,no official website resolved (not in county union directory)
+Cape Cornwall Club,https://www.capecornwallclub.com/golf/,50.1271213,-5.6986687,brs,public,https://visitors.brsgolf.com/capecornwallclub#/course/1,high,confirmed by following the platform link found on the club's own site
+Isles-of-Scilly Golf Club,https://www.islesofscillygolfandbowlsclub.co.uk,,,unknown,unknown,,low,homepage loaded (https://www.islesofscillygolfandbowlsclub.co.uk/) but no platform signal found on it or 2 booking-ish link(s)

@@ -1,0 +1,42 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Lutterworth Golf Club,,52.4491605,-1.198234,no_site,unknown,,low,no official website resolved (not in county union directory)
+Leicester Golf Centre,,52.6024704,-1.0982638,no_site,unknown,,low,no official website resolved (not in county union directory)
+Leicestershire Golf Club,,52.6181934,-1.0842821,no_site,unknown,,low,no official website resolved (not in county union directory)
+Humberstone Heights,,52.6531123,-1.0837079,no_site,unknown,,low,no official website resolved (not in county union directory)
+Scraptoft Golf Club,https://www.scraptoftgolfclub.co.uk/,52.6514929,-1.0415733,clubv1,public,https://scraptoft.hub.clubv1.com/Visitors/TeeSheet?date=2026-07-23,high,
+Birstall Golf Club,https://www.birstallgolfclub.co.uk/,52.6710382,-1.1388498,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://birstall.hub.clubv1.com/Visitors/booking"
+Kirby Muxloe Golf Club,https://www.kirbymuxloe-golf.co.uk/,52.6281136,-1.2389754,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Glen Gorse Golf Club,https://www.glengorsegolfclub.co.uk/,52.5814091,-1.0686497,intelligent_golf,public,https://www.glengorsegolfclub.co.uk/visitorbooking/,high,
+Longcliffe Golf Club,https://www.longcliffegolf.co.uk/,52.7520385,-1.2673322,clubv1,public,https://longcliffe.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,confirmed by following the platform link found on the club's own site
+Hinckley Golf Club,,52.5489537,-1.347253,no_site,unknown,,low,no official website resolved (not in county union directory)
+Melton Mowbray Town Estate Golf Course,,52.7633953,-0.9107085,no_site,unknown,,low,no official website resolved (not in county union directory)
+Enderby Golf & Leisure Centre,https://enderbygolfcourse.co.uk/,52.5827734,-1.2042118,unknown,unknown,,low,homepage loaded (https://www.enderbygolfcourse.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Charnwood Forest Golf Course,https://www.charnwoodforestgolfclub.com/,52.7318179,-1.2286946,intelligent_golf,public,https://www.charnwoodforestgolfclub.com/visitorbooking/,high,
+Melton Mowbray Golf Club,https://meltonmowbraygolfclub.com/,52.7853649,-0.8384054,intelligent_golf,public,https://www.meltonmowbraygolfclub.com/visitorbooking/,high,
+Willesley Park Golf Club,,52.7301177,-1.4919155,no_site,unknown,,low,no official website resolved (not in county union directory)
+Stapleford Park Golf Club,https://www.staplefordpark.com/golf/,52.7540704,-0.7902555,unknown,unknown,,low,homepage loaded (https://www.citizensadvicedaventryanddistrict.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Kibworth Golf Club,https://www.kibworthgolfclub.co.uk/,52.5291386,-0.9837628,clubv1,unknown,,medium,platform link(s) seen (['clubv1']) but no confirmed public booking page found
+Beedles Lake Golf Course,https://www.beedleslake.co.uk/,52.7160609,-1.0644474,brs,public,https://visitors.brsgolf.com/beedleslake,high,
+Charnwood Golf,,52.7859933,-1.2375916,no_site,unknown,,low,no official website resolved (not in county union directory)
+Forest Hill Golf & Conference Centre,https://www.foresthillgolfclub.co.uk/,52.6520372,-1.2853479,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://foresthill.hub.clubv1.com/Visitors/booking"
+Rothley Park Golf Club,,52.7002774,-1.1479658,no_site,unknown,,low,no official website resolved (not in county union directory)
+Breedon Priory Golf Centre (Main Course),https://www.breedonpriory.co.uk/,52.8110758,-1.4044152,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Rutland Water Golf Course,,52.639995,-0.6573771,no_site,unknown,,low,no official website resolved (not in county union directory)
+Cosby Golf Club,https://www.cosbygolfclub.co.uk/,52.5398201,-1.1926445,intelligent_golf,login_required,,high,booking link requires login: https://www.cosbygolfclub.co.uk/tee_bookings
+Pitch and Putt,,52.6706351,-0.6640659,no_site,unknown,,low,no official website resolved (not in county union directory)
+Whetstone Golf Club,https://www.whetstonegolfclub.co.uk/,52.5609866,-1.1926984,unknown,unknown,,low,homepage loaded (https://www.whetstonegolfclub.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+The Gallops Golf Course,,52.599021,-1.1011041,no_site,unknown,,low,no official website resolved (not in county union directory)
+Six Hills Golf Course,,52.7874058,-1.0356197,no_site,unknown,,low,no official website resolved (not in county union directory)
+Blaby Golf Centre,https://www.blabygolfcentre.co.uk/,52.5627833,-1.1640336,unknown,unknown,,low,homepage loaded (https://www.blabygolfcentre.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+The Golf Centre in Coalville,https://thegolfcentrecoalville.co.uk/,52.7222584,-1.3875861,unknown,unknown,,low,homepage loaded (https://thegolfcentrecoalville.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Ullesthorpe Court Hotel & Golf Club,,52.4902255,-1.2471068,no_site,unknown,,low,no official website resolved (not in county union directory)
+Greetham Valley Golf Course,https://greethamvalley.co.uk/golf/,52.7120599,-0.6067837,intelligent_golf,public,https://golf.greethamvalley.co.uk/visitorbooking/,high,
+Woolfox,,52.703944,-0.5651157,no_site,unknown,,low,no official website resolved (not in county union directory)
+Luffenham Heath Golf Club,,52.6105782,-0.5869217,no_site,unknown,,low,no official website resolved (not in county union directory)
+Breedon Priory Golf Centre,https://breedonpriorygolf.co.uk/,52.8026538,-1.4104364,unknown,unknown,,low,homepage loaded (https://breedonpriorygolf.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Rutland Water,,52.6397541,-0.6554329,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lingdale Golf Club,https://www.lingdalegolfclub.co.uk,52.7098476,-1.2217883,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Leicester City Football Club Golf Course,,52.7437233,-1.0765489,no_site,unknown,,low,no official website resolved (not in county union directory)
+Breedon Priory Golf Centre (Main Course),https://www.breedonpriory.co.uk/,52.8110758,-1.4044152,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Pitch and Putt,,50.4632991,-3.5399211,no_site,unknown,,low,no official website resolved (not in county union directory)
+Pitch and Putt,,50.4101821,-5.069896,no_site,unknown,,low,no official website resolved (not in county union directory)

@@ -1,0 +1,41 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Tower Course,,52.9735365,-1.4084701,no_site,unknown,,low,no official website resolved (not in county union directory)
+Birley Wood Golf Club,,53.3384857,-1.3986682,no_site,unknown,,low,no official website resolved (not in county union directory)
+Dore and Totley Golf Club,,53.3143806,-1.4938601,no_site,unknown,,low,no official website resolved (not in county union directory)
+Mickleover Golf Course,https://www.mickleovergolfclub.co.uk/,52.9027031,-1.5265761,intelligent_golf,public,https://mickleover.intelligentgolf.co.uk/visitorbooking/,high,
+Morley Hayes,https://www.morleyhayes.com/,52.9756452,-1.4038457,esp,public,http://www.e-s-p.com/elitelive/book_webpromotion.php?ref=MXExecroom&,high,confirmed by following the platform link found on the club's own site
+Buxton and High Peak Golf Club,,53.2679332,-1.8927459,no_site,unknown,,low,no official website resolved (not in county union directory)
+Derby Golf Club,,52.8829306,-1.4756683,no_site,unknown,,low,no official website resolved (not in county union directory)
+Burton-on-Trent Golf Club,https://www.burtonontrentgolfclub.co.uk/,52.7994215,-1.5799761,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.burtonontrentgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(""HTTPSConnection(host='www.burtonontrentgolfclub.co.uk', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it""))"
+Breadsall Priory Golf Course - Priory Course,https://www.marriott.com/hotels/hotel-information/golf-courses/emags-breadsall-priory-marriott-hotel-and-country-club/,52.9666972,-1.4343747,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Derby Golf Centre,https://derbygolfacademy.wordpress.com/,52.9132473,-1.3911025,unknown,unknown,,low,homepage loaded (https://derbygolfacademy.wordpress.com/) but no platform signal found on it or 1 booking-ish link(s)
+Chevin Vale Golf Course,,53.0024774,-1.492627,no_site,unknown,,low,no official website resolved (not in county union directory)
+Cavendish Golf Club,,53.2599537,-1.9348702,no_site,unknown,,low,no official website resolved (not in county union directory)
+Tapton Park Golf Club,,53.2421932,-1.4110959,no_site,unknown,,low,no official website resolved (not in county union directory)
+Matlock Golf Club,,53.1552702,-1.5311761,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ormonde Fields Golf Course,https://www.ormondefieldsgolfclub.co.uk/,53.0407672,-1.3604603,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://ormondefields.hub.clubv1.com/Visitors/booking"
+The Pastures Golf Club,https://pasturesgolfclub.co.uk/,52.8961094,-1.5527718,unknown,unknown,,low,homepage loaded (https://pasturesgolfclub.co.uk/) but no platform signal found on it or 4 booking-ish link(s)
+Ashbourne Golf Club,https://www.ashbournegolfclub.co.uk/,53.0040048,-1.7425535,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Glossop & District Golf Club,,53.4435256,-1.921776,no_site,unknown,,low,no official website resolved (not in county union directory)
+Birchall Golf and Leisure,,53.2820581,-1.4474737,no_site,unknown,,low,no official website resolved (not in county union directory)
+Sickleholme Golf Club,https://www.sickleholme.co.uk/,53.3396439,-1.6803155,clubv1,public,https://sickleholme.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,
+Stanedge Golf Club,,53.2060064,-1.4971303,no_site,unknown,,low,no official website resolved (not in county union directory)
+South Chesterfield Golf Club,,53.2051027,-1.3942769,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bakewell Golf Club,https://www.bakewellgolfclub.co.uk/,53.216049,-1.661877,brs,public,https://visitors.brsgolf.com/bakewell#/open-competitions,high,confirmed by following the platform link found on the club's own site
+Tapton Park Golf Club (Dobbin Course),,53.2379864,-1.4069502,no_site,unknown,,low,no official website resolved (not in county union directory)
+Barlborough Links Golf Club,,53.278688,-1.2806884,no_site,unknown,,low,no official website resolved (not in county union directory)
+Broughton Heath Golf Course,https://www.broughtonheathgolfclub.co.uk/,52.888538,-1.6775584,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+New Mills Golf Club,,53.3761741,-2.0116905,no_site,unknown,,low,no official website resolved (not in county union directory)
+Alfreton Golf Club,https://alfretongolfclub.co.uk/,53.0926964,-1.4119573,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Shirland Golf Club,,53.1143219,-1.4098929,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bondhay Golf Club and Academy,https://www.bondhaygolfclub.com/,53.2999685,-1.2298432,brs,public,https://visitors.brsgolf.com/bondhay#/course/1,high,confirmed by following the platform link found on the club's own site
+Horsley Lodge Golf Club,https://www.horsleylodge.co.uk/,52.9915784,-1.4242658,intelligent_golf,unknown,,medium,"platform link(s) seen (['intelligent_golf', 'chronogolf']) but no confirmed public booking page found"
+Swadlincote Golf Centre,https://justgolfswadlincote.com/,52.7754511,-1.588551,unknown,unknown,,low,homepage loaded (https://justgolfswadlincote.com/) but no platform signal found on it or 5 booking-ish link(s)
+Breadsall Priory Golf Course - Moorland Course,,52.97288,-1.4353641,no_site,unknown,,low,no official website resolved (not in county union directory)
+Kedleston Park Golf Club,https://www.kedlestonparkgolfclub.co.uk/,52.9630164,-1.5269622,intelligent_golf,public,https://www.kedlestonparkgolfclub.co.uk/visitorbooking/,high,
+Chesterfield Golf Club,https://www.chesterfieldgolfclub.co.uk/,53.2175055,-1.4503516,clubv1,public,https://chesterfield.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,confirmed by following the platform link found on the club's own site
+Chapel-en-le-Frith Golf Club,https://www.chapelgolf.co.uk/,53.3165355,-1.9389003,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://chapel.hub.clubv1.com/Visitors/booking"
+Hallowes Golf Club,https://www.hallowesgolfclub.co.uk/,53.2883265,-1.4663146,intelligent_golf,public,https://www.hallowesgolfclub.co.uk/visitorbooking/,high,
+Trent Lock Golf Centre,https://www.trentlock.co.uk/,52.8779152,-1.2830439,brs,public,https://visitors.brsgolf.com/trentlock#/course/1,high,confirmed by following the platform link found on the club's own site
+Brailsford Golf Course,,52.9651041,-1.6228071,no_site,unknown,,low,no official website resolved (not in county union directory)
+Manor (Laceby) Golf Club,,53.5261235,-0.1535108,no_site,unknown,,low,no official website resolved (not in county union directory)

@@ -1,0 +1,35 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Kilton Forest Golf Club,"https://www.bassetlaw.gov.uk/sports,_leisure_and_culture/leisure_centres/kilton_forest_golf_club.aspx",53.3144214,-1.1011021,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Ruddington Grange Golf Club,https://ruddingtongrange.com/,52.9031088,-1.1478949,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='ruddingtongrange.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError('A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.')))"
+Wollaton Park Golf Course,,52.9499495,-1.2017172,no_site,unknown,,low,no official website resolved (not in county union directory)
+Coxmoor Golf Club,https://www.coxmoorgolfclub.co.uk/,53.1122874,-1.2147054,unknown,unknown,,low,homepage loaded (https://www.coxmoorgolfclub.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+Wollaton Park Golf Club,https://www.wollatonparkgolfclub.com/,52.9453033,-1.2034076,brs,public,https://visitors.brsgolf.com/wollatonpark#/course/1,high,confirmed by following the platform link found on the club's own site
+Stanton on the Wolds Golf Course,,52.8730748,-1.0630409,no_site,unknown,,low,no official website resolved (not in county union directory)
+Radcliffe-on-Trent Golf Club,https://www.radcliffeontrentgc.co.uk/home.aspx?i=no,52.9417887,-1.0192357,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+College Pines Golf Club,https://www.collegepinesgolfclub.co.uk/,53.2844276,-1.1028651,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.collegepinesgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Nottingham City Golf Club,https://www.nottinghamcitygolfclub.co.uk/,53.0125103,-1.2044147,brs,public,https://visitors.brsgolf.com/bulwellhall#/course/1,high,confirmed by following the platform link found on the club's own site
+Bulwell Forest Golf Club,https://www.bulwellforestgolfclub.co.uk/,53.0058442,-1.1843104,intelligent_golf,public,https://www.bulwellforestgolfclub.co.uk/visitorbooking/,high,
+The Nottinghamshire Golf & Country Club,,52.9277929,-1.0610791,no_site,unknown,,low,no official website resolved (not in county union directory)
+Leen Valley Golf Course,,53.0358058,-1.1857724,no_site,unknown,,low,no official website resolved (not in county union directory)
+Rushcliffe Golf Club,,52.8484027,-1.1913596,no_site,unknown,,low,no official website resolved (not in county union directory)
+Riverside Golf Centre,,52.9256951,-1.1721842,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ramsdale Golf Centre,https://www.ramsdaleparkgc.co.uk/,53.0375673,-1.1116567,esp,public,https://www.e-s-p.com/elitelive/book_date.php,high,
+Mansfield Woodhouse Golf Course,,53.1797585,-1.1778947,no_site,unknown,,low,no official website resolved (not in county union directory)
+Oakmere Park Golf Club,https://www.oakmerepark.co.uk/,53.0707901,-1.0861635,clubv1,public,https://oakmerepark.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,confirmed by following the platform link found on the club's own site
+Springwater Golf Club,https://www.springwatergolfclub.com/,53.0311438,-1.0626105,brs,public,https://visitors.brsgolf.com/springwater#/course/1,high,confirmed by following the platform link found on the club's own site
+Southwell Golf Club,https://www.southwellgolfclub.com,53.0694637,-0.9056952,brs,public,https://visitors.brsgolf.com/southwell,high,confirmed by following the platform link found on the club's own site
+Hollinwell,https://www.hollinwell.co.uk/,53.0861215,-1.2148988,intelligent_golf,public,https://nottsgolfclub.intelligentgolf.co.uk/visitorbooking/,high,
+Worksop Golf Club,https://www.worksopgolfclub.com/,53.2913124,-1.0973036,clubv1,public,https://worksop.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,
+Sherwood Forest Golf Club,https://www.sherwoodforestgolfclub.co.uk/,53.1486949,-1.1282029,intelligent_golf,public,https://sherwoodforest.intelligentgolf.co.uk/visitorbooking/,high,
+Mansfield Golf Club,https://www.mansfieldgolfclub.co.uk/,53.1407874,-1.1390057,error,unknown,,low,"homepage fetch failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+Brierley Forest Golf Club,https://www.brierleyforestgolfclub.com/,53.1351645,-1.2967745,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Ratcliffe on Soar Power Station,,52.8613989,-1.2545342,no_site,unknown,,low,no official website resolved (not in county union directory)
+Norwood Park Golf Course,,53.0860091,-0.9752264,no_site,unknown,,low,no official website resolved (not in county union directory)
+Newark Golf Centre,https://www.newarkgolfcentre.co.uk/,53.0978315,-0.7763702,unknown,unknown,,low,homepage loaded (https://www.newarkgolfcentre.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Newark Golf Club,https://newarkgolfclub.co.uk/,53.0754848,-0.7287463,chronogolf,public,https://www.chronogolf.com/club/newark-golf-club?date=2025-10-13,high,confirmed by following the platform link found on the club's own site
+Chilwell Manor Golf Course,,52.9155808,-1.2223922,no_site,unknown,,low,no official website resolved (not in county union directory)
+Beeston Fields Golf Course,,52.9302086,-1.2309476,no_site,unknown,,low,no official website resolved (not in county union directory)
+Retford Golf Club,https://www.retfordgolfclub.co.uk/,53.3113302,-0.9632373,clubv1,public,https://retfordgc.hub.clubv1.com/visitors/TeeSheet?date=2026-09-11,high,
+Mapperley Golf Course,https://www.mapperleygolfclub.org/,52.9874559,-1.1060921,brs,public,https://visitors.brsgolf.com/mapperley#/course/1,high,confirmed by following the platform link found on the club's own site
+Styrrup Hall Golf & Country Club,https://www.styrrupgolf.co.uk/,53.4151284,-1.0915498,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.styrrupgolf.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.styrrupgolf.co.uk', port=443): Failed to resolve 'www.styrrupgolf.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Serlby Park Golf Club,https://www.serlbyparkgolfclub.co.uk/,53.3920866,-1.0433622,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.serlbyparkgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"

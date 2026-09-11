@@ -1,0 +1,32 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Hollywood Golf Club,https://www.hollywoodgolfclub.co.uk/,52.3967467,-1.8757673,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.hollywoodgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Kings Norton Golf Course,,52.371674,-1.9068388,no_site,unknown,,low,no official website resolved (not in county union directory)
+Pitcheroak Golf Course,,52.2995188,-1.9523381,no_site,unknown,,low,no official website resolved (not in county union directory)
+Worcestershire Golf Club,,52.0891315,-2.3248195,no_site,unknown,,low,no official website resolved (not in county union directory)
+Boughton Park (Worcester Golf and Country Club),,52.1783274,-2.247998,no_site,unknown,,low,no official website resolved (not in county union directory)
+Churchill & Blakedown Golf Club,,52.4076069,-2.1866646,no_site,unknown,,low,no official website resolved (not in county union directory)
+Gaudet Luce Golf Course,,52.257626,-2.1306399,no_site,unknown,,low,no official website resolved (not in county union directory)
+Droitwich Golf Course,,52.2808919,-2.1479017,no_site,unknown,,low,no official website resolved (not in county union directory)
+Evesham Golf Course,https://www.eveshamgolfclub.co.uk/,52.1209714,-2.0047045,clubv1,public,https://evesham.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,confirmed by following the platform link found on the club's own site
+Worcester Golf Range,,52.1744245,-2.2275656,no_site,unknown,,low,no official website resolved (not in county union directory)
+Broadway Golf Club,,52.042561,-1.8315097,no_site,unknown,,low,no official website resolved (not in county union directory)
+Little Lakes,,52.3527252,-2.3494481,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bromsgrove Golf Centre,https://bromsgrovegolfcentre.com/,52.3377218,-2.0397672,brs,public,https://visitors.brsgolf.com/bromsgrove#/course/1,high,confirmed by following the platform link found on the club's own site
+Fulford Heath Golf Club,https://www.fulfordheathgolfclub.co.uk/,52.371774,-1.8713041,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://fhgc.hub.clubv1.com/Visitors/booking"
+Comberton Golf Club,https://www.combertongolf.co.uk/,52.0843627,-2.0672111,unknown,unknown,,low,homepage loaded (https://www.allenscaravans.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Hagley Golf & Country Club,https://www.hagleygolfandcountryclub.co.uk/,52.4363819,-2.0983238,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.hagleygolfandcountryclub.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.hagleygolfandcountryclub.co.uk', port=443): Failed to resolve 'www.hagleygolfandcountryclub.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Bewdley Pines Golf Club,https://www.bewdleypines.co.uk,52.3906626,-2.2936951,brs,public,https://visitors.brsgolf.com/bewdleypines?iframe=1#/course/1,high,confirmed by following the platform link found on the club's own site
+Habberley Golf Club,,52.4039853,-2.2924702,no_site,unknown,,low,no official website resolved (not in county union directory)
+Blackwell Golf Club,,52.3453617,-2.0068761,no_site,unknown,,low,no official website resolved (not in county union directory)
+Wharton Park Golf & Country Club,https://www.whartonpark.co.uk/,52.3655685,-2.3458576,intelligent_golf,public,https://www.whartonpark.co.uk/visitorbooking/,high,
+Golf Range,,52.2487281,-2.1674213,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ravenmeadow Pitch and Putt,,52.2229187,-2.2097862,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Abbey Hotel,,52.3201886,-1.9268197,no_site,unknown,,low,no official website resolved (not in county union directory)
+Redditch Golf Course,,52.2913807,-1.9654675,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Kidderminster Golf Club,https://www.thekidderminstergolfclub.com/,52.3767595,-2.234536,intelligent_golf,public,https://kidderminster.intelligentgolf.co.uk/visitorbooking/,high,
+Cadmore Golf Club,,52.2952203,-2.6235055,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Vale Golf and Country Club,,52.1508135,-1.9927616,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bransford Golf Club,,52.167172,-2.3050262,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ravenmeadow Golf Club,,52.2207916,-2.2069054,no_site,unknown,,low,no official website resolved (not in county union directory)
+Tidbury Green Golf Course,,52.3859699,-1.855513,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ombersley Golf Club,https://www.ombersleygolfclub.co.uk,52.3039493,-2.2490295,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check

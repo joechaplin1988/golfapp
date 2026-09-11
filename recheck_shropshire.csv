@@ -1,0 +1,20 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Infinity Golf Studio,,52.5398148,-2.3398279,no_site,unknown,,low,still no website known
+The Wrekin Golf Club,,52.6839498,-2.5228574,no_site,unknown,,low,still no website known
+Arscott,https://www.arscottgolfclub.co.uk/,52.6713268,-2.8426065,golfnow,out_of_scope,https://091307cb-a6d5-4cc3-8714-39354a7b5824.play.teeitup.golf/,high,GolfNow/TeeItUp only — excluded by policy
+Church Stretton Golf Club,,52.5491248,-2.8161951,no_site,unknown,,low,still no website known
+Chesterton Valley Golf Club,https://chestertonvalleygolfclub.com/,52.5712,-2.3291346,error,unknown,,low,unreachable even with a browser user agent
+Elm Lodge Golf Course,,52.3816293,-2.7215722,no_site,unknown,,low,still no website known
+Saphire Course,,52.9804865,-2.6773716,no_site,unknown,,low,still no website known
+Lilleshall Golf Course,,52.7235208,-2.3662895,no_site,unknown,,low,still no website known
+Llanymynech Golf Course,,52.7927764,-3.0909657,no_site,unknown,,low,still no website known
+Hawkstone Course,,52.8610492,-2.6404431,no_site,unknown,,low,still no website known
+Foxes Run,,52.3909673,-2.455474,no_site,unknown,,low,still no website known
+Badgers Sett,,52.3908945,-2.4493015,no_site,unknown,,low,still no website known
+Short Course,,52.7191258,-2.4073986,no_site,unknown,,low,still no website known
+Telford Hotel And Golf Resort,https://www.qhotels.co.uk/our-locations/telford-hotel-golf-resort/,52.6217458,-2.4428173,unknown,unknown,,low,site reachable (https://www.telfordhotelgolfresort.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Meole Brace Golf Course,https://meolebracegolfclub.co.uk/,52.6923621,-2.7489704,unknown,unknown,,low,site reachable (https://meolebracegolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Astbury Golf Course,,52.498503,-2.4080906,no_site,unknown,,low,still no website known
+Emerald Championship Course,,52.9816268,-2.6846328,no_site,unknown,,low,still no website known
+Henlle Park,,52.9077736,-3.0367711,no_site,unknown,,low,still no website known
+Bridgnorth Golf Club,,52.5503566,-2.4120513,no_site,unknown,,low,still no website known

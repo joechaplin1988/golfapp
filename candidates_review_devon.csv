@@ -1,0 +1,61 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Dawlish Approach Golf,,50.5887312,-3.4608008,no_site,unknown,,low,no official website resolved (not in county union directory)
+Exeter Golf and Country Golf Club,https://www.exetergcc.co.uk,50.7002654,-3.4822224,intelligent_golf,public,https://exeter.intelligentgolf.co.uk/visitorbooking/,high,
+Teignmouth Golf Course,https://www.teignmouthgolfclub.co.uk,50.5706928,-3.5291813,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Torquay Golf Club,https://www.torquaygolfclub.co.uk,50.4892057,-3.5220986,intelligent_golf,public,https://www.torquaygolfclub.co.uk/visitorbooking/,high,
+East Devon Golf Club,https://www.edgc.co.uk,50.6260407,-3.3456283,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.edgc.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Dawlish Warren Golf Club,,50.6032095,-3.4360685,no_site,unknown,,low,no official website resolved (not in county union directory)
+Tiverton Golf Club,https://www.tivertongolfclub.co.uk,50.9134432,-3.4346645,intelligent_golf,public,https://tiverton.intelligentgolf.co.uk/visitorbooking/,high,confirmed by following the platform link found on the club's own site
+Thurlestone Hotel Golf Course,https://www.thurlestonegolfclub.co.uk,50.27014,-3.8605127,intelligent_golf,public,https://thurlestone.intelligentgolf.co.uk/visitorbooking/,high,
+Thurlestone Golf Course,https://www.thurlestonegolfclub.co.uk,50.2693468,-3.8697772,intelligent_golf,public,https://thurlestone.intelligentgolf.co.uk/visitorbooking/,high,
+Oak Meadow Golf Club,,50.6210537,-3.4492322,no_site,unknown,,low,no official website resolved (not in county union directory)
+Elfordleigh Hotel Golf & Country Club,https://www.elfordleigh.co.uk,50.4069825,-4.0491776,brs,public,https://visitors.brsgolf.com/elfordleigh#/course/1,high,
+Bovey Castle Golf Course,https://www.boveycastle.com,50.6468995,-3.798534,unknown,unknown,,low,homepage loaded (https://www.boveycastle.com/) but no platform signal found on it or 13 booking-ish link(s)
+Royal North Devon,https://www.royalnorthdevongolfclub.co.uk,51.0543833,-4.2224409,intelligent_golf,public,https://www.royalnorthdevongolfclub.co.uk/visitorbooking/,high,
+Bay Hotel Golf Course,,51.1713495,-4.2071392,no_site,unknown,,low,no official website resolved (not in county union directory)
+Boringdon Park Golf Club,https://www.boringdonpark.com,50.4012163,-4.0679511,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Cayman Golf (Pitch and Putt),,50.3952881,-3.5491355,no_site,unknown,,low,no official website resolved (not in county union directory)
+Tavistock Golf Club,https://www.tavistockgolfclub.org.uk,50.5433975,-4.1172182,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.tavistockgolfclub.org.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Holsworthy Golf Club,https://www.holsworthygolfclub.co.uk,50.8133106,-4.392536,brs,public,https://visitors.brsgolf.com/holsworthy#/course/1,high,
+Axe Cliff Golf Course,https://www.axecliffgolfclub.com,50.7064157,-3.0495681,brs,public,https://visitors.brsgolf.com/axecliff#/course/1,high,
+Woodbury Park Hotel & Golf Club,https://www.woodburypark.co.uk,50.6900975,-3.3696399,intelligent_golf,public,https://golf.woodburypark.co.uk/visitorbooking/,high,
+Mettaford Golf Course,,50.9925159,-4.4475483,no_site,unknown,,low,no official website resolved (not in county union directory)
+Fingle Glen Golf Club,https://www.fingleglengolfhotel.co.uk/,50.7304639,-3.6532037,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Hartland Forest,https://hartlandforestgolfclub.co.uk/,50.9466546,-4.4244343,unknown,unknown,,low,homepage loaded (https://hartlandforestgolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Westcountry Golf Academy,https://www.wgagolf.co.uk/,50.9182361,-3.3659988,unknown,unknown,,low,homepage loaded (https://www.wgagolf.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Great Torrington Golf Club,https://www.torringtongolfclub.co.uk,50.9604369,-4.1644295,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Mortehoe and Woolacombe Golf Club,https://www.woolacombegolf.co.uk,51.1859157,-4.1966753,unknown,unknown,,low,homepage loaded (https://www.woolacombe.co.uk/devon-holidays/golf-breaks) but no platform signal found on it or 11 booking-ish link(s)
+Stover Golf Club,https://www.stovergolfclub.co.uk,50.5567568,-3.6534003,intelligent_golf,public,https://stover.intelligentgolf.co.uk/visitorbooking/,high,
+Torbay Golf Centre (Pitch and Putt),,50.418913,-3.5643929,no_site,unknown,,low,no official website resolved (not in county union directory)
+Devon Golf & Conference Centre,,53.3660204,-113.7106965,no_site,unknown,,low,no official website resolved (not in county union directory)
+Yelverton Golf Club,https://www.yelvertongolf.co.uk,50.4737674,-4.0938558,clubv1,public,https://yelverton.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,confirmed by following the platform link found on the club's own site
+Illfracombe Golf Club,https://ilfracombegolfclub.com/,51.2106112,-4.0871029,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='ilfracombegolfclub.com', port=443): Read timed out. (read timeout=20)"
+Dartmouth Golf And Country Club,https://www.thedartmouthhotel.co.uk/,50.3633116,-3.662213,unknown,unknown,,low,homepage loaded (https://thedartmouthhotel.co.uk/) but no platform signal found on it or 7 booking-ish link(s)
+Dinnaton Golf Course,,50.3988125,-3.9410154,no_site,unknown,,low,no official website resolved (not in county union directory)
+Wrangaton Golf Course,,50.4067603,-3.8751178,no_site,unknown,,low,no official website resolved (not in county union directory)
+Sparkwell Golf Course,,50.4045847,-3.9930949,no_site,unknown,,low,no official website resolved (not in county union directory)
+Dainton Park Golf Club,https://www.daintonparkgolf.co.uk,50.4945194,-3.6219762,intelligent_golf,public,https://dainton.intelligentgolf.co.uk/visitorbooking/,high,
+Plymouth Golf Centre,,50.3693022,-4.0665675,no_site,unknown,,low,no official website resolved (not in county union directory)
+Portmore Golf Park,https://www.portmoregolfpark.co.uk,51.0682624,-4.022214,brs,public,https://visitors.brsgolf.com/portmorebarum29#/course/1,high,confirmed by following the platform link found on the club's own site
+Libbaton Golf Club,https://www.libbatongolfclub.co.uk,50.9574234,-3.9920916,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.libbatongolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(""HTTPSConnection(host='www.libbatongolfclub.co.uk', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it""))"
+Highbullen Golf Course,,50.967033,-3.9230628,no_site,unknown,,low,no official website resolved (not in county union directory)
+Thorn Park Golf Centre,,50.6976711,-3.2031313,no_site,unknown,,low,no official website resolved (not in county union directory)
+Exminster Golf Centre,https://www.exminstergolf.com,50.6703011,-3.4907925,brs,public,https://visitors.brsgolf.com/exminster#/course/1,high,confirmed by following the platform link found on the club's own site
+Vic Ambler Golf Centre,,50.7391352,-3.5355762,no_site,unknown,,low,no official website resolved (not in county union directory)
+Willingcott Valley Golf Course,,51.175077,-4.1517667,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bovey Tracey Golf Club,https://www.golfindevon.co.uk/wolleigh/,50.6021559,-3.6870625,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Bigbury Golf Club,https://www.bigburygolfclub.co.uk,50.2903366,-3.8709448,intelligent_golf,public,https://www.bigburygolfclub.co.uk/visitorbooking/,high,
+Otter Valley Golf Centre,https://www.otter-golf.co.uk/,50.841105,-3.1413605,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.otter-golf.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.otter-golf.co.uk', port=443): Failed to resolve 'www.otter-golf.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Churston Golf Club,https://www.churstongolf.com,50.4005625,-3.5430781,intelligent_golf,public,https://members.churstongolf.com/visitorbooking/,high,
+Honiton Golf Club,https://www.honitongolfclub.co.uk,50.7853596,-3.1713796,intelligent_golf,public,https://www.honitongolfclub.co.uk/visitorbooking/,high,
+Teign Valley Golf Club,https://teignvalleygolf.co.uk/,50.6397436,-3.640159,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='teignvalleygolf.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Sidmouth Golf Club,https://www.sidmouthgolfclub.co.uk,50.6840491,-3.2606515,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://sidmouth.hub.clubv1.com/Visitors/booking"
+Saunton Golf Course,https://www.sauntongolf.co.uk,51.1091103,-4.2046185,intelligent_golf,public,https://www.sauntongolf.co.uk/visitorbooking/,high,
+Okehampton Golf Course,https://www.okehamptongolfclub.co.uk,50.7267731,-4.0153854,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://okehampton.hub.clubv1.com/Visitors/booking"
+Ashbury Golf Course,https://www.ashburygolfhotel.com,50.7407466,-4.0744326,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.ashburygolfhotel.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.ashburygolfhotel.com', port=443): Failed to resolve 'www.ashburygolfhotel.com' ([Errno 11002] getaddrinfo failed)""))"
+Staddon Heights Golf Club,https://www.staddonheightsgolf.co.uk,50.3442115,-4.1196176,brs,public,https://visitors.brsgolf.com/staddonheights#/course/1,high,confirmed by following the platform link found on the club's own site
+Clovelly Golf Course,,47.6277959,-52.7072835,no_site,unknown,,low,no official website resolved (not in county union directory)
+Downes Crediton Golf Club,https://www.downescreditongc.co.uk,50.7796924,-3.6359623,intelligent_golf,public,https://www.downescreditongc.co.uk/visitorbooking/,high,
+Ilfracombe Golf Club,https://www.ilfracombegolfclub.com,,,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Warren Golf Club (Devon) Golf Club,https://www.dwgc.co.uk,,,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Welbeck Manor Golf Club,https://www.welbeckmanor.co.uk/sparkwell-golf-course/uncategorised/sparkwell-golf-course,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.welbeckmanor.co.uk', port=443): Max retries exceeded with url: /sparkwell-golf-course/uncategorised/sparkwell-golf-course (Caused by NameResolutionError(""HTTPSConnection(host='www.welbeckmanor.co.uk', port=443): Failed to resolve 'www.welbeckmanor.co.uk' ([Errno 11001] getaddrinfo failed)""))"

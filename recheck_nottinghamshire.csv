@@ -1,0 +1,21 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Kilton Forest Golf Club,"https://www.bassetlaw.gov.uk/sports,_leisure_and_culture/leisure_centres/kilton_forest_golf_club.aspx",53.3144214,-1.1011021,dead_link,unknown,,low,site reachable (https://www.bassetlaw.gov.uk/) but no visitor booking found on it or 0 sub-page(s)
+Ruddington Grange Golf Club,https://ruddingtongrange.com/,52.9031088,-1.1478949,unknown,unknown,,low,site reachable (https://ruddingtongrange.com/cgi-sys/suspendedpage.cgi) but no visitor booking found on it or 0 sub-page(s)
+Wollaton Park Golf Course,,52.9499495,-1.2017172,no_site,unknown,,low,still no website known
+Coxmoor Golf Club,https://www.coxmoorgolfclub.co.uk/,53.1122874,-1.2147054,unknown,unknown,,low,site reachable (https://www.coxmoorgolfclub.co.uk/) but no visitor booking found on it or 2 sub-page(s)
+Stanton on the Wolds Golf Course,,52.8730748,-1.0630409,no_site,unknown,,low,still no website known
+Radcliffe-on-Trent Golf Club,https://www.radcliffeontrentgc.co.uk/home.aspx?i=no,52.9417887,-1.0192357,intelligent_golf,public,https://radcliffe.intelligentgolf.co.uk/visitorbooking/,high,found on https://www.radcliffeontrentgc.co.uk/
+College Pines Golf Club,https://www.collegepinesgolfclub.co.uk/,53.2844276,-1.1028651,error,unknown,,low,unreachable even with a browser user agent
+The Nottinghamshire Golf & Country Club,,52.9277929,-1.0610791,no_site,unknown,,low,still no website known
+Leen Valley Golf Course,,53.0358058,-1.1857724,no_site,unknown,,low,still no website known
+Rushcliffe Golf Club,,52.8484027,-1.1913596,no_site,unknown,,low,still no website known
+Riverside Golf Centre,,52.9256951,-1.1721842,no_site,unknown,,low,still no website known
+Mansfield Woodhouse Golf Course,,53.1797585,-1.1778947,no_site,unknown,,low,still no website known
+Mansfield Golf Club,https://www.mansfieldgolfclub.co.uk/,53.1407874,-1.1390057,error,unknown,,low,unreachable even with a browser user agent
+Ratcliffe on Soar Power Station,,52.8613989,-1.2545342,no_site,unknown,,low,still no website known
+Norwood Park Golf Course,,53.0860091,-0.9752264,no_site,unknown,,low,still no website known
+Newark Golf Centre,https://www.newarkgolfcentre.co.uk/,53.0978315,-0.7763702,unknown,unknown,,low,site reachable (https://www.newarkgolfcentre.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Chilwell Manor Golf Course,,52.9155808,-1.2223922,no_site,unknown,,low,still no website known
+Beeston Fields Golf Course,,52.9302086,-1.2309476,no_site,unknown,,low,still no website known
+Styrrup Hall Golf & Country Club,https://www.styrrupgolf.co.uk/,53.4151284,-1.0915498,error,unknown,,low,unreachable even with a browser user agent
+Serlby Park Golf Club,https://www.serlbyparkgolfclub.co.uk/,53.3920866,-1.0433622,unknown,unknown,,low,site reachable (https://www.golfholidays.com/serlby-park-golf-club/) but no visitor booking found on it or 0 sub-page(s)
