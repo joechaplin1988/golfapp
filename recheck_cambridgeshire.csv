@@ -1,0 +1,16 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Girton Golf Club,,52.2477832,0.0721862,no_site,unknown,,low,still no website known
+Brampton Park Golf Club,https://www.bramptonparkgc.co.uk/,52.3185716,-0.2129145,clubv1,unknown,https://default.hub.clubv1.com/,medium,site reachable (https://bramptonparkgc.co.uk/) but no visitor booking found on it or 5 sub-page(s)
+Brampton Park Golf  Club,https://www.bramptonparkgc.co.uk/,52.312614,-0.2199288,clubv1,unknown,https://default.hub.clubv1.com/,medium,site reachable (https://bramptonparkgc.co.uk/) but no visitor booking found on it or 5 sub-page(s)
+Heydon Grange Golf & Country Club,https://www.heydongrangegolf.co.uk/,52.0633525,0.0681012,unknown,unknown,,low,site reachable (https://www.heydongrangegolf.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Tydd St Giles Golf Course,https://www.pureleisuregroup.com/parks/tydd-st-giles/golf,52.7319308,0.1224916,error,unknown,,low,unreachable even with a browser user agent
+Kawartha Golf & Country Club,,44.2860405,-78.3575676,no_site,unknown,,low,still no website known
+Peterborough Golf & Country Club,,44.3317522,-78.3034576,no_site,unknown,,low,still no website known
+Liftlock Golf Club,,44.3081059,-78.2980086,no_site,unknown,,low,still no website known
+St Neots Golf Club,https://www.stneotsgolfclub.co.uk/,52.2389635,-0.2750225,error,unknown,,low,unreachable even with a browser user agent
+Whaddon Golf Centre,,52.09861,-0.0291082,no_site,unknown,,low,still no website known
+Stilton Oaks Golf Course,,52.4825365,-0.2964624,no_site,unknown,,low,still no website known
+Ely On Par Golf Club,https://elydrivingrange.co.uk,52.411499,0.2473687,unknown,unknown,,low,site reachable (https://elydrivingrange.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Priory Golf & Activity Centre,,52.5208846,0.0858867,no_site,unknown,,low,still no website known
+Meridian Golf hole #1,,52.178033,-0.0013649,no_site,unknown,,low,still no website known
+The Old Nene Golf & Country Club,https://www.theoldnene.co.uk,52.4686294,-0.1050438,brs,public,https://visitors.brsgolf.com/oldnene#/course/1,high,found on https://theoldnene.co.uk/green-fees/

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Tee Times Near You — South East England</title>
+<title>Tee Times Near You — Southern England</title>
 <style>
   :root {
     --bg: #f6f7f5; --card: #ffffff; --ink: #1c2620; --muted: #5c6b60;
@@ -84,8 +84,9 @@
 <div class="wrap">
   <header>
     <h1>⛳ Tee Times Near You</h1>
-    <p>Visitor tee times across the South East — Kent, Sussex, Surrey, Essex, Hampshire,
-       Hertfordshire, Berkshire and London — in one place. Book on the club's own site.</p>
+    <p>Visitor tee times from clubs across southern England and the Midlands — the South East,
+       East Anglia, the West Country and the West Midlands — in one place.
+       Book on the club's own site.</p>
   </header>
 
   <form id="search">
@@ -251,11 +252,24 @@ function showAnswer(el) {
 // The areas we actually have courses in, as Postcodes.io names them. Used
 // only to order an ambiguous place list, never to reject one — a search
 // outside these will simply find nothing nearby, which is the honest answer.
+// Postcodes.io's county_unitary for somewhere we have courses, or its region
+// where that field is empty (big cities like Birmingham and Walsall have no
+// county_unitary at all, only "West Midlands").
 const COVERED = new Set([
   "Kent", "Medway", "East Sussex", "West Sussex", "The City of Brighton and Hove",
   "Surrey", "Essex", "Southend-on-Sea", "Thurrock", "Hampshire", "Southampton",
   "Portsmouth", "Hertfordshire", "Reading", "West Berkshire", "Wokingham",
   "Bracknell Forest", "Windsor and Maidenhead", "Slough", "Greater London",
+  "Buckinghamshire", "Milton Keynes", "Oxfordshire",
+  "Bedford", "Central Bedfordshire", "Luton",
+  "Cambridgeshire", "City of Peterborough",
+  "North Northamptonshire", "West Northamptonshire",
+  "Suffolk", "Norfolk",
+  "Wiltshire", "Swindon",
+  "Dorset", "Bournemouth, Christchurch and Poole",
+  "Somerset", "North Somerset", "Bath and North East Somerset", "City of Bristol",
+  "Gloucestershire", "South Gloucestershire",
+  "Warwickshire", "West Midlands",
 ]);
 
 const FULL_POSTCODE_RE = /^[a-z]{1,2}\d[a-z\d]?\s*\d[a-z]{2}$/i;
@@ -266,6 +280,33 @@ async function getJson(url) {
   if (r.status === 404) return null;
   if (!r.ok) throw new Error("Couldn't look up that location right now.");
   return (await r.json()).result;
+}
+
+// Club coordinates, fetched once and only when a place name is ambiguous —
+// the common path (a postcode) never loads it. A failure is not fatal: the
+// chooser falls back to its county ranking.
+let clubPointsCache;
+async function clubPoints() {
+  if (clubPointsCache !== undefined) return clubPointsCache;
+  try {
+    const r = await fetch("club_points.json");
+    clubPointsCache = r.ok ? await r.json() : null;
+  } catch {
+    clubPointsCache = null;
+  }
+  return clubPointsCache;
+}
+
+function countWithin(points, lat, lng, km) {
+  // Equirectangular is plenty for a "how many courses are around here" count
+  // over tens of kilometres, and avoids 350 trig calls per option.
+  const latKm = 111.0, lngKm = 111.0 * Math.cos(lat * Math.PI / 180);
+  let n = 0;
+  for (const [plat, plng] of points) {
+    const dy = (plat - lat) * latKm, dx = (plng - lng) * lngKm;
+    if (dy * dy + dx * dx <= km * km) n++;
+  }
+  return n;
 }
 
 // Returns either a single {lat,lng,place} or {options:[...]} to choose from.
@@ -313,11 +354,30 @@ async function resolveLocation(input) {
     options.push({ lat: p.latitude, lng: p.longitude, place, where });
     if (options.length === 6) break;
   }
-  // Somewhere we have courses beats somewhere we don't. Without this,
-  // "Guildford" offers Pembrokeshire above Surrey and "Swanley" offers
-  // Cheshire above Kent, purely because of the order the API returns.
-  options.sort((a, b) => (COVERED.has(b.where) ? 1 : 0) - (COVERED.has(a.where) ? 1 : 0));
-  return options.length === 1 ? options[0] : { options };
+  if (options.length === 1) return options[0];
+
+  // Which "Swanley" did they mean? Rank by how many of our courses are
+  // actually near each candidate, which is the only signal that separates
+  // two places we both cover — there is a Swanley in Kent and one in
+  // Gloucestershire, and a Cambridge in Cambridgeshire, Norfolk and
+  // Gloucestershire. County-level coverage used to decide this, and stopped
+  // working the moment we covered both counties.
+  const points = await clubPoints();
+  for (const o of options) o.nearby = points ? countWithin(points, o.lat, o.lng, 30) : 0;
+  // A county named after the town outranks the count, because a town that
+  // gave its name to its county is the one people mean: "Cambridgeshire"
+  // contains "Cambridge", and so it beats the Cambridge in Gloucestershire
+  // even though that one has more courses within 30 km. Same for Luton,
+  // Bedford, Swindon, Peterborough, Poole and Brighton. Only then the count,
+  // which is what settles Swanley (Kent 59, Gloucestershire 12), and last
+  // whether we cover the county at all, for when nothing else separates them.
+  const namesake = o => (o.where || "").toLowerCase().includes((o.place || "").toLowerCase());
+  const flag = (o, f) => (f(o) ? 1 : 0);
+  options.sort((a, b) =>
+    (flag(b, namesake) - flag(a, namesake)) ||
+    (b.nearby - a.nearby) ||
+    (flag(b, o => COVERED.has(o.where)) - flag(a, o => COVERED.has(o.where))));
+  return { options };
 }
 
 function askWhichPlace(options) {

@@ -484,3 +484,27 @@ by scrolling the answer into view when it would otherwise be off the bottom
 (never on a filter change, and never on a desktop where it is already visible).
 Local testing: `.claude/launch.json` serves web/ on :8899; fetch web/config.js
 from the live site first, since Netlify writes it at deploy time.
+
+## Second wave of regions (2026-09-11)
+Ten regions beyond the South East, done in one pass rather than county by
+county: Bedfordshire, Cambridgeshire, Northamptonshire, Suffolk, Norfolk,
+Wiltshire, Dorset, Somerset (with Bristol and Bath), Gloucestershire, and
+Warwickshire with the West Midlands. 246 -> 356 clubs, 292 -> 419 sheets.
+
+Boundary traps found by probing Overpass first, which is now the habit:
+"Bedfordshire" and "Northamptonshire" match no boundary at all (both counties
+were abolished, in 2009 and 2021, and OSM keeps only the unitaries), and West
+Midlands is a metropolitan county at admin_level 5 like Greater London.
+
+Only four of the ten have a county union running the shared CMS, so six were
+OSM-only. That works now that OSM's own website tags are kept.
+
+Two checks the probe cannot make for itself, both in wave2_clean.py: sheets
+that are not a round of golf (FootGolf, disc golf, mini golf, pitch-and-putt
+— par 3 courses stay), and postcodes that geocode perfectly to the wrong
+place (Cirencester came back as a Luton postcode, 110 km out).
+
+The town chooser now ranks by how many of our courses are within 30 km of
+each candidate, from web/club_points.json — county-level coverage used to
+decide it, and that stopped working the moment we covered both counties in a
+tie. Regenerate that file with build_club_points.py after every club batch.

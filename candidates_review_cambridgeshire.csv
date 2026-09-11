@@ -1,0 +1,24 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Girton Golf Club,,52.2477832,0.0721862,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ely City Golf Club,https://www.elygolf.co.uk/,52.3900611,0.254991,intelligent_golf,public,https://www.elygolf.co.uk/visitorbooking/,high,
+Kingsway Golf Club,https://www.kingswaygolfcentre.co.uk/,52.0901039,0.0410121,chronogolf,public,https://www.chronogolf.com/club/19693/widget?medium=widget&source=club,high,confirmed by following the platform link found on the club's own site
+Brampton Park Golf Club,https://www.bramptonparkgc.co.uk/,52.3185716,-0.2129145,unknown,unknown,,low,homepage loaded (https://bramptonparkgc.co.uk/) but no platform signal found on it or 6 booking-ish link(s)
+Brampton Park Golf  Club,https://www.bramptonparkgc.co.uk/,52.312614,-0.2199288,unknown,unknown,,low,homepage loaded (https://bramptonparkgc.co.uk/) but no platform signal found on it or 6 booking-ish link(s)
+Heydon Grange Golf & Country Club,https://www.heydongrangegolf.co.uk/,52.0633525,0.0681012,unknown,unknown,,low,homepage loaded (https://www.heydongrangegolf.co.uk/) but no platform signal found on it or 4 booking-ish link(s)
+Tydd St Giles Golf Course,https://www.pureleisuregroup.com/parks/tydd-st-giles/golf,52.7319308,0.1224916,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.pureleisuregroup.com', port=443): Max retries exceeded with url: /parks/tydd-st-giles/golf (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pureleisuregroup.com', port=443) at 0x226f724d950>, 'Connection to www.pureleisuregroup.com timed out. (connect timeout=20)'))"
+Kawartha Golf & Country Club,,44.2860405,-78.3575676,no_site,unknown,,low,no official website resolved (not in county union directory)
+Peterborough Golf & Country Club,,44.3317522,-78.3034576,no_site,unknown,,low,no official website resolved (not in county union directory)
+Liftlock Golf Club,,44.3081059,-78.2980086,no_site,unknown,,low,no official website resolved (not in county union directory)
+St Neots Golf Club,https://www.stneotsgolfclub.co.uk/,52.2389635,-0.2750225,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.stneotsgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.stneotsgolfclub.co.uk', port=443) at 0x226f724e850>, 'Connection to www.stneotsgolfclub.co.uk timed out. (connect timeout=20)'))"
+March Golf Club,https://marchgolfclub.co.uk/,52.527494,0.0682515,clubv1,public,https://marchgc.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,
+Whaddon Golf Centre,,52.09861,-0.0291082,no_site,unknown,,low,no official website resolved (not in county union directory)
+Stilton Oaks Golf Course,,52.4825365,-0.2964624,no_site,unknown,,low,no official website resolved (not in county union directory)
+St Ives Golf Club,https://www.stivesgolfclub.co.uk/,52.3410863,-0.0442203,chronogolf,public,https://www.chronogolf.com/club/st-ives-hunts-golf-club,high,
+Ely On Par Golf Club,https://elydrivingrange.co.uk,52.411499,0.2473687,unknown,unknown,,low,homepage loaded (https://elydrivingrange.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Ramsey Golf & Bowls Club,https://www.ramseyclub.co.uk/,52.4404312,-0.1060661,brs,public,https://visitors.brsgolf.com/ramsey#/course/1,high,confirmed by following the platform link found on the club's own site
+Elton Furze Golf Club,https://www.efgc.co.uk/,52.5321364,-0.3560918,clubv1,public,https://eltonfurze.hub.clubv1.com/visitors/TeeSheet?date=2026-09-11,high,
+Priory Golf & Activity Centre,,52.5208846,0.0858867,no_site,unknown,,low,no official website resolved (not in county union directory)
+Meridian Golf hole #1,,52.178033,-0.0013649,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lakeside Lodge Golf & Country Club,https://lakeside-lodge.co.uk/,52.3916649,-0.0325055,esp,unknown,,medium,platform link(s) seen (['esp']) but no confirmed public booking page found
+The Old Nene Golf & Country Club,https://www.theoldnene.co.uk,52.4686294,-0.1050438,unknown,unknown,,low,homepage loaded (https://theoldnene.co.uk/) but no platform signal found on it or 35 booking-ish link(s)
+Wandlebury,https://www.gogmagog.co.uk/,52.1630132,0.1815595,brs,unknown,,medium,"platform link(s) seen (['brs', 'intelligent_golf']) but no confirmed public booking page found"

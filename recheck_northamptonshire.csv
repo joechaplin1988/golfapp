@@ -1,0 +1,20 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Market Harborough Golf Club,,52.4565437,-0.9246459,no_site,unknown,,low,still no website known
+Farthingstone Hotel and Golf,https://www.farthingstone.co.uk/,52.1904426,-1.1229124,brs,unknown,https://www.brsgolf.com/farthingstone/visitor_home.php,medium,site reachable (https://www.farthingstone.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Cold Ashby Golf Club,https://www.coldashbygolfclub.com/,52.3771555,-1.0645898,error,unknown,,low,unreachable even with a browser user agent
+Delapre Golf Centre,https://delapregolfcentre.co.uk/,52.2206646,-0.8873606,unknown,unknown,,low,site reachable (https://delapregolfcentre.co.uk:443/login_up.php) but no visitor booking found on it or 0 sub-page(s)
+Rushden Golf Range,https://www.rushdengolfrange.co.uk/,52.2732297,-0.583151,error,unknown,,low,unreachable even with a browser user agent
+John White Golf Course,,52.2722871,-0.5816606,no_site,unknown,,low,still no website known
+Daventry & District Golf Club,https://www.daventrygolfclub.co.uk/,52.2638367,-1.1403887,unknown,unknown,,low,site reachable (https://daventrygolfclub.co.uk/) but no visitor booking found on it or 3 sub-page(s)
+Northamptonshire County Golf Course,,52.2758675,-0.9387313,no_site,unknown,,low,still no website known
+Brampton Health Golf Centre,,52.2767281,-0.932898,no_site,unknown,,low,still no website known
+Blackthorn Wood Golf Complex,https://blackthornwoodgc.co.uk/,52.4963695,-0.7452451,unknown,unknown,,low,site reachable (https://blackthornwoodgc.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Staverton Park,,52.2540052,-1.2019654,no_site,unknown,,low,still no website known
+Pytchley Golf Lodge,,52.3716075,-0.7262826,no_site,unknown,,low,still no website known
+Wellingborough Golf Glub,,52.331188,-0.7026363,no_site,unknown,,low,still no website known
+Stoke Albany Golf and Country Club,,52.488326,-0.8314235,no_site,unknown,,low,still no website known
+Northampton Golf Club,,52.2745929,-0.9812744,no_site,unknown,,low,still no website known
+Cherwell Edge Golf Club,https://www.cherwelledgegolfclub.co.uk/,52.0841295,-1.2783051,unknown,unknown,,low,site reachable (https://www.cherwelledgegolfclub.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Whittlebury Hall Golf Course,,52.0785534,-0.995465,no_site,unknown,,low,still no website known
+Silverstone Golf Club,,52.0627688,-1.041862,no_site,unknown,,low,still no website known
+Overstone Park Golf Club,,52.2778864,-0.817221,no_site,unknown,,low,still no website known

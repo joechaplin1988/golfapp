@@ -1,0 +1,45 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Fynn Valley Golf Club,,52.0994518,1.1841526,no_site,unknown,,low,no official website resolved (not in county union directory)
+Seckford Golf Club,https://www.seckfordgolf.co.uk/,52.0876432,1.2869223,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://seckford.hub.clubv1.com/Visitors/booking"
+Royal Worlington and Newmarket Golf Club,,52.3318215,0.4958,no_site,unknown,,low,no official website resolved (not in county union directory)
+St Clements Golf Club,,52.0457076,1.1943959,no_site,unknown,,low,no official website resolved (not in county union directory)
+Rushmere Golf Course,,52.0573123,1.209192,no_site,unknown,,low,no official website resolved (not in county union directory)
+Diss Golf Club,,52.3648662,1.1352286,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bramford Golf Centre / Suffolk Golf & Water Park,https://www.bramfordgc.co.uk/,52.0908756,1.0960602,unknown,unknown,,low,homepage loaded (https://www.bramfordgc.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+St Audrys Golf Club,https://www.staudrysgc.co.uk/,52.1159536,1.3389809,clubv1,public,https://staudrys.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,
+Ufford Park Golf Course,https://www.uffordpark.co.uk/,52.1155947,1.345616,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.uffordpark.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Felixstowe Ferry Golf Club - Martello Course,,51.9829493,1.384805,no_site,unknown,,low,no official website resolved (not in county union directory)
+Center Parcs Elveden Forest,https://www.centerparcs.co.uk/villages/elveden,52.3941818,0.6576028,unknown,login_required,,high,booking link requires login: https://www.centerparcs.co.uk/my-account/sign-in.html/myBooking
+Suffolk Golf Course,https://www.suffolkgolfcourse.org,36.7266245,-76.6138808,unknown,unknown,,low,homepage loaded (https://www.suffolkgolfcourse.org/) but no platform signal found on it or 3 booking-ish link(s)
+Bury St Edmunds Golf Club - Championship Course,https://www.burystedmundsgolfclub.co.uk/,52.2569646,0.6860521,brs,public,https://visitors.brsgolf.com/burystedmundsgc#/course/1,high,
+The Suffolk Golf & Spa Hotel,https://www.bespokehotels.com/suffolkgolfspahotel/,52.272546,0.7014782,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Southwold Golf Club,https://www.southwoldgolfclub.co.uk/,52.3265622,1.6706795,unknown,unknown,,low,homepage loaded (https://www.southwoldgolfclub.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+Flempton Golf Club,https://www.flemptongolfclub.co.uk/,52.3005533,0.6512334,unknown,unknown,,low,homepage loaded (https://www.flemptongolfclub.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Halesworth Golf Club - Championship Course,https://www.halesworthgolf.co.uk/,52.3311539,1.5242134,unknown,unknown,,low,homepage loaded (https://www.halesworthgolf.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Haverhill Golf Club,https://www.club-noticeboard.co.uk/haverhill/,52.073723,0.4685108,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.club-noticeboard.co.uk', port=443): Max retries exceeded with url: /haverhill/ (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Stowmarket Golf Club,https://www.stowmarketgolfclub.co.uk/,52.1870772,0.9450494,clubv1,public,https://stowmarket.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,confirmed by following the platform link found on the club's own site
+Stoke by Nayland Resort - Gainsborough Course,https://www.stokebynayland.com/content/golf,51.996773,0.8619587,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Newton Green Golf Course,https://www.newtongreengolfclub.co.uk/,52.0323313,0.7882695,unknown,unknown,,low,homepage loaded (https://www.newtongreengolfclub.co.uk/) but no platform signal found on it or 4 booking-ish link(s)
+Old Joe's Golfing Range,https://www.oldjoesgolfingrange.co.uk/,52.0291152,0.7768375,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.oldjoesgolfingrange.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.oldjoesgolfingrange.co.uk', port=443): Failed to resolve 'www.oldjoesgolfingrange.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Aldeburgh Golf Club - Championship Course,,52.1669392,1.5798292,no_site,unknown,,low,no official website resolved (not in county union directory)
+Rookery Park Golf Club - Main Course,https://www.rookeryparkgolfclub.co.uk/,52.45998,1.6796193,brs,public,https://visitors.brsgolf.com/rookerypark#/course/1,high,
+Stowmarket Golf & Archery Centre,https://www.stowmarketgolfcentre.co.uk/,52.1925795,0.9387964,unknown,unknown,,low,homepage loaded (https://www.stowmarketgolfcentre.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+RAF Lakenheath Breckland Pines Golf Course,https://www.lakenheathfss.com/brecklandpines/,52.4025054,0.5740075,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Bungay & Waveney Valley Golf Club,https://www.club-noticeboard.co.uk/bungay/,52.4617997,1.4229943,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.club-noticeboard.co.uk', port=443): Max retries exceeded with url: /bungay/ (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Alnesbourne Priory Golf Course,https://alnesbournepriorygolf.co.uk/,52.0167524,1.1926789,unknown,unknown,,low,homepage loaded (https://alnesbournepriorygolf.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Ipswich Golf Club,https://www.ipswichgolfclub.com/,52.0432096,1.2175447,clubv1,public,https://ipswichgc.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,confirmed by following the platform link found on the club's own site
+Stonham Barns Golf Centre,,52.1856401,1.1390019,no_site,unknown,,low,no official website resolved (not in county union directory)
+Brett Vale Golf Course,,52.0041268,0.9753194,no_site,unknown,,low,no official website resolved (not in county union directory)
+Cedar Point Country Club,,36.9021807,-76.4894798,no_site,unknown,,low,no official website resolved (not in county union directory)
+Aldeburgh Golf Club - River Course,,52.1636237,1.5751457,no_site,unknown,,low,no official website resolved (not in county union directory)
+Jacobsen Golf Course,,52.0325871,1.2130377,no_site,unknown,,low,no official website resolved (not in county union directory)
+Felixstowe Ferry Golf Club - Kingsfleet Course,,51.9835164,1.3809357,no_site,unknown,,low,no official website resolved (not in county union directory)
+Moon and Sixpence Golf Course,,52.0588789,1.2981395,no_site,unknown,,low,no official website resolved (not in county union directory)
+Gunton Hall Pitch and Putt,,52.5065865,1.7400965,no_site,unknown,,low,no official website resolved (not in county union directory)
+Stoke by Nayland Resort - Constable Course,https://www.stokebynayland.com/content/golf,51.9927654,0.8688219,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Bury St Edmunds Golf Club - Greene King Course,https://www.burystedmundsgolfclub.co.uk/,52.2622195,0.6828679,brs,public,https://visitors.brsgolf.com/burystedmundsgc#/course/1,high,
+Halesworth Golf Club - Valley Course,https://www.halesworthgolf.co.uk/,52.3301369,1.519172,unknown,unknown,,low,homepage loaded (https://www.halesworthgolf.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Thorpeness Hotel & Golf Club,https://www.thorpeness.co.uk/,52.1885138,1.6035327,intelligent_golf,public,https://thorpeness.intelligentgolf.co.uk/visitorbooking/,high,confirmed by following the platform link found on the club's own site
+Hintlesham Golf Club,https://www.hintleshamgolfclub.com/,52.0544484,1.0458158,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Sleepy Hole Golf Course,https://www.sleepyholegolfcourse.com/,36.8397388,-76.5174049,unknown,unknown,,low,homepage loaded (https://www.sleepyholegolfcourse.com/) but no platform signal found on it or 1 booking-ish link(s)
+Riverfront Golf Club,,36.8816673,-76.4459811,no_site,unknown,,low,no official website resolved (not in county union directory)

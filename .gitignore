@@ -34,3 +34,4 @@ course_profiles.csv.bak
 # Fingerprint/probe run logs — noise, the review CSVs are the evidence
 fp_*.log
 probe_*.log
+rc_*.log

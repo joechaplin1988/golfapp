@@ -1,0 +1,29 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Mowsbury Golf Course,https://www.mowsburygolfclub.co.uk,52.16488,-0.4395416,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://mowsbury.hub.clubv1.com/Visitors/booking"
+Warden Hills Course,,51.9227355,-0.419625,no_site,unknown,,low,no official website resolved (not in county union directory)
+Galley Hills Course,,51.9299852,-0.4146655,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bedfordshire Golf Club,https://www.bedfordshiregolf.com,52.1334296,-0.5528371,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Tilsworth Golf Course,https://www.tilsworthgolf.co.uk,51.9144329,-0.5728373,brs,public,https://visitors.brsgolf.com/tilsworth,high,
+John O'Gaunt Golf Course,https://www.johnogauntgolfclub.co.uk,52.1167748,-0.2228086,intelligent_golf,login_required,,high,intelligent_golf convention path requires login: https://www.johnogauntgolfclub.co.uk/visitorbooking/
+Beadlow Manor,,52.0262872,-0.3814267,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Millbrook Golf Club,https://www.themillbrook.com,52.0330991,-0.5349043,brs,public,https://visitors.brsgolf.com/millbrook,high,
+Colworth Golf Club,https://www.sharnbrookgolfclub.co.uk/,52.2261137,-0.570715,unknown,unknown,,low,homepage loaded (https://sharnbrookgolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Whipsnade Park Golf Club,,51.8375034,-0.5417199,no_site,unknown,,low,no official website resolved (not in county union directory)
+Leighton Buzzard Golf Club,https://www.lbgc.co.uk,51.9392603,-0.6636483,intelligent_golf,public,https://www.lbgc.co.uk/visitorbooking/,high,
+Bedford and County Golf Club,https://www.bandcgc.co.uk,52.1706006,-0.479639,intelligent_golf,public,https://bedfordcounty.intelligentgolf.co.uk/visitorbooking/,high,
+Pavenham Park Golf Club,https://www.pavenhampark.com,52.1945054,-0.5439103,unknown,unknown,,low,homepage loaded (https://www.pavenhampark.com/) but no platform signal found on it or 1 booking-ish link(s)
+Kingsway Golf Centre Biggleswade,https://www.kingswaygolfcentre.co.uk/biggleswade/,52.0905761,-0.2777884,chronogolf,public,https://www.chronogolf.com/club/19693/widget?medium=widget&source=club#?date=2025-12-15,high,confirmed by following the platform link found on the club's own site
+Caddington Golf Club,,51.8795729,-0.473474,no_site,unknown,,low,no official website resolved (not in county union directory)
+Dunstable Downs Golf Course,https://www.dunstabledownsgolf.co.uk,51.8721245,-0.5282056,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://dunstabledowns.hub.clubv1.com/Visitors/booking"
+Wyboston Lakes Golf Course,https://www.wybostonlakesgolfclub.co.uk,52.2034556,-0.2818353,unknown,unknown,,low,homepage loaded (https://www.wybostonlakesgolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Stockwood Park Golf Centre,https://www.stockwoodparkgolfclub,51.8614537,-0.4250147,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.stockwoodparkgolfclub', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.stockwoodparkgolfclub', port=443): Failed to resolve 'www.stockwoodparkgolfclub' ([Errno 11001] getaddrinfo failed)""))"
+Luton Hoo Golf Course,https://www.lutonhoo.co.uk/luton-hoo-golf-course,51.8548601,-0.4058304,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Colmworth and North Beds Golf Club,https://www.colmworthgolfclub.co.uk,52.199977,-0.3979868,chronogolf,public,https://www.chronogolf.com/club/colmworth-golf-club,high,
+South Beds Golf Club,https://www.southbedsgolfclub.co.uk,51.9273568,-0.4146655,clubv1,public,https://southbeds.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,
+Abbotsley Golf Hotel,https://www.abbotsley.com/,52.1963068,-0.2396806,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.abbotsley.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Aylesbury Vale Golf Club,https://www.avgc.co.uk,,,brs,public,https://visitors.brsgolf.com/aylesburyvale,high,
+Cainhoe Wood Golf Club,https://www.cainhoewoodgolf.co.uk,,,intelligent_golf,public,https://cainhoewood.intelligentgolf.co.uk/visitorbooking/,high,
+Chalgrave Manor Golf Club,https://www.chalgravegolf.co.uk,,,unknown,unknown,,low,homepage loaded (https://chalgravegolf.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Henlow Golf Club,https://www.henlowgolfclub.com,,,unknown,unknown,,low,homepage loaded (https://henlowgolfclub.com/) but no platform signal found on it or 3 booking-ish link(s)
+Sharnbrook Golf Club,https://www.sharnbrookgolfclub.co.uk,,,unknown,unknown,,low,homepage loaded (https://sharnbrookgolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Abbotsley Golf Hotel,https://www.abbotsley.com/,52.1963068,-0.2396806,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.abbotsley.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"

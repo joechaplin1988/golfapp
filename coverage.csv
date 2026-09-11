@@ -12,6 +12,7 @@ Drayton Park Golf Club,live,,brs,1,OX14 4LA,,
 Dukes Meadows Golf,live,,brs,1,W4 2SH,,
 East Sussex National,live,,shiji,2,BN8 5ES,,
 Eastbourne Downs,live,,golf_manager,1,BN20 8ES,,
+Eaton Golf Club,live,,brs,1,NR4 6ND,,
 Haywards Heath,live,,intelligent_golf,1,RH16 1SL,,
 Horsham Golf Club,live,,intelligent_golf,1,RH13 0AX,,
 Knole Park,live,,intelligent_golf,1,TN15 0HJ,,
@@ -33,6 +34,13 @@ West Malling,live,,intelligent_golf,2,ME19 5AR,,
 Westerham,live,,esp,1,TN16 1QN,,
 Wildernesse,live,,intelligent_golf,1,TN15 0JE,,
 Willingdon,live,,clubv1,1,BN20 9AA,,
+Aylesbury Vale Golf Club,live,bedfordshire,brs,1,LU7 0UJ,,https://visitors.brsgolf.com/aylesburyvale
+Bedford and County Golf Club,live,bedfordshire,intelligent_golf,1,MK41 6ET,,https://bedfordcounty.intelligentgolf.co.uk/visitorbooking/
+Cainhoe Wood Golf Club,live,bedfordshire,intelligent_golf,1,SG17 5PH,,https://cainhoewood.intelligentgolf.co.uk/visitorbooking/
+Leighton Buzzard Golf Club,live,bedfordshire,intelligent_golf,1,LU7 3JF,,https://www.lbgc.co.uk/visitorbooking/
+South Beds Golf Club,live,bedfordshire,clubv1,1,LU2 7AE,,https://southbeds.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
+The Millbrook Golf Club,live,bedfordshire,brs,1,MK45 2JB,,https://visitors.brsgolf.com/millbrook
+Tilsworth Golf Course,live,bedfordshire,brs,1,LU7 9PU,,https://visitors.brsgolf.com/tilsworth
 Billingbear Park Golf Course,live,berkshire,brs,1,RG40 5SJ,,https://visitors.brsgolf.com/billingbearold#/course/1
 Bird Hills Golf Centre,live,berkshire,intelligent_golf,1,SL6 3ST,,https://birdhills.intelligentgolf.co.uk/visitorbooking/
 Calcot Park Golf Club,live,berkshire,intelligent_golf,1,RG31 7RN,,https://www.calcotpark.com/visitorbooking/
@@ -51,6 +59,25 @@ Ivinghoe Golf Club,live,buckinghamshire,clubv1,1,LU7 9EF,,https://ivinghoe.hub.c
 Oakland Park Golf Club,live,buckinghamshire,brs,1,HP8 4LW,,https://visitors.brsgolf.com/oaklandpark#/course/1
 Whiteleaf Golf Club,live,buckinghamshire,clubv1,1,HP27 0LY,,https://whiteleaf.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
 Wycombe Heights Golf Centre,live,buckinghamshire,esp,1,HP10 9SZ,,https://www.e-s-p.com/elitelive/book_date.php
+Elton Furze Golf Club,live,cambridgeshire,clubv1,1,PE7 3TT,,https://eltonfurze.hub.clubv1.com/visitors/TeeSheet?date=2026-09-11
+Ely City Golf Club,live,cambridgeshire,intelligent_golf,1,CB7 4HX,,https://www.elygolf.co.uk/visitorbooking/
+March Golf Club,live,cambridgeshire,clubv1,1,PE15 0YH,,https://marchgc.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
+Ramsey Golf & Bowls Club,live,cambridgeshire,brs,1,PE26 1DD,,https://visitors.brsgolf.com/ramsey#/course/1
+Ashley Wood Golf Club,live,dorset,brs,1,DT11 9HN,,https://visitors.brsgolf.com/ashleywood#/course/1
+Broadstone Golf Club,live,dorset,intelligent_golf,1,BH18 8DQ,,https://broadstone.intelligentgolf.co.uk/visitorbooking/
+Bulbury Woods Golf Club,live,dorset,brs,1,BH16 6HR,,https://visitors.brsgolf.com/bulburywoods#/course/1
+Came Down Golf Club,live,dorset,brs,1,DT2 8NR,,https://visitors.brsgolf.com/camedown#/course/1
+Christchurch Golf Club - Stour Course,live,dorset,brs,1,BH7 7ES,,https://visitors.brsgolf.com/christchurchmightyclaws#/course/1
+Highcliffe Castle Golf Club,live,dorset,intelligent_golf,1,BH23 4LA,,https://www.highcliffecastlegolfclub.co.uk/visitorbooking/
+Isle of Purbeck Golf Course,live,dorset,intelligent_golf,2,BH19 3AB,,https://www.purbeckgolf.co.uk/visitorbooking/
+Lyme Regis Golf Club,live,dorset,brs,1,DT7 3HQ,,https://visitors.brsgolf.com/lymeregis#/course/1
+Meyrick Park Golf Course,live,dorset,intelligent_golf,1,BH2 6LH,,https://golf.theclubatmeyrickpark.com/visitorbooking/
+Parley Golf Centre Course,live,dorset,brs,1,BH23 6BB,,https://visitors.brsgolf.com/parley#/course/1
+Queen's Park Golf Course,live,dorset,brs,1,BH8 9HA,,https://visitors.brsgolf.com/queensparkgc#/course/1
+Sturminster Marshall Golf Club,live,dorset,brs,1,BH21 4BD,,https://visitors.brsgolf.com/sturminstermarshall#/course/1
+Wareham Golf Club,live,dorset,clubv1,1,BH20 4DH,,https://wareham.hub.clubv1.com/visitors/TeeSheet?date=2026-09-11
+Wessex Golf Centre,live,dorset,clubv1,1,DT4 9XH,,https://wessex.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
+Yeovil Golf Club,live,dorset,intelligent_golf,2,BA21 5BW,,https://www.yeovilgolfclub.com/visitorbooking/
 Blakes Golf Course,live,essex,brs,1,CM16 6RZ,,https://visitors.brsgolf.com/blakes#/course/1
 Braintree Golf Club,live,essex,intelligent_golf,1,CM77 8DD,,https://www.braintreegolfclub.co.uk/visitorbooking/
 Brentwood Golf Centre at Hartswood,live,essex,brs,1,CM14 5RJ,,https://visitors.brsgolf.com/brentwood
@@ -75,6 +102,24 @@ Top Meadow,live,essex,clubv1,1,RM14 3PR,,https://topmeadow.hub.clubv1.com/Visito
 Wanstead Golf Club,live,essex,brs,1,E11 2LW,,https://visitors.brsgolf.com/wanstead#/course/1
 Warley Park Golf Club,live,essex,golf_manager,1,CM13 3DX,,https://warleypark.golfmanager.com/consumer/ebookings?i=1&resourcetype=100080
 Woolston Manor Golf & Country Club,live,essex,brs,1,IG7 6BX,,https://visitors.brsgolf.com/woolstonmanor#/course/1
+Brickhampton Court Golf Complex,live,gloucestershire,chronogolf,1,GL2 9QF,,https://www.chronogolf.com/en/club/19511/widget?medium=widget&source=club
+Bristol Golf Club,live,gloucestershire,intelligent_golf,2,BS32 4DQ,,https://golf.bristolgolfclub.co.uk/visitorbooking/
+Cirencester Golf Club,live,gloucestershire,brs,1,GL7 7FA,,https://visitors.brsgolf.com/cirencester#/course/1
+Cleeve Hill Golf Club,live,gloucestershire,brs,1,GL52 3PR,,https://visitors.brsgolf.com/cleevehillch#/course/1
+Forest Hills Golf Club,live,gloucestershire,intelligent_golf,1,GL16 7QB,,https://foresthills.intelligentgolf.co.uk/visitorbooking/
+Gloucester Golf Club,live,gloucestershire,brs,1,GL4 6DX,,https://visitors.brsgolf.com/gloucester#/course/1
+Lilley Brook Golf Course,live,gloucestershire,clubv1,1,GL53 8EG,,https://lilleybrook.hub.clubv1.com/visitors/TeeSheet?date=2026-09-11
+Minchinhampton Golf Club,live,gloucestershire,intelligent_golf,3,GL6 9BE,,https://members.minchinhamptongolfclub.co.uk/visitorbooking/
+Naunton Downs Golf Club,live,gloucestershire,brs,1,GL54 3AE,,https://visitors.brsgolf.com/nauntondownsgc#/course/1
+Puckrup Hall Hotel & Golf Club,live,gloucestershire,brs,1,GL20 6EL,,https://visitors.brsgolf.com/puckruphall#/course/1
+Rodway Hill Golf Club,live,gloucestershire,brs,1,GL2 8DR,,https://visitors.brsgolf.com/rodwayhill#/course/1
+Ross-on-Wye Golf Club,live,gloucestershire,intelligent_golf,1,HR9 7UT,,https://rossonwye.intelligentgolf.co.uk/visitorbooking/
+Sherdons Golf Centre,live,gloucestershire,intelligent_golf,1,GL20 7BP,,https://sherdons.intelligentgolf.co.uk/visitorbooking/
+South Cerney Golf Course,live,gloucestershire,intelligent_golf,1,GL7 5QD,,https://southcerney.intelligentgolf.co.uk/visitorbooking/
+South Herefordshire Golf Club,live,gloucestershire,intelligent_golf,1,HR9 7UA,,https://www.south-herefordshiregc.co.uk/visitorbooking/
+Stinchcombe Hill Golf Course,live,gloucestershire,clubv1,1,GL11 6AQ,,https://stinchcombehill.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
+Thornbury Golf Centre,live,gloucestershire,esp,1,BS35 3XL,,https://www.e-s-p.com/elitelive/book_group.php
+Woodlands Golf & Country Club,live,gloucestershire,intelligent_golf,2,BS32 4JZ,,https://woodlands.intelligentgolf.co.uk/visitorbooking/
 Alton Golf Club,live,hampshire,clubv1,1,GU34 4BU,,https://alton.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-10
 Avington Park Golf Course,live,hampshire,intelligent_golf,1,SO21 1BZ,,https://www.avingtongolf.co.uk/visitorbooking/
 Basingstoke Golf Club,live,hampshire,intelligent_golf,1,RG25 2AD,,https://www.basingstokegolfclub.co.uk/visitorbooking/
@@ -123,10 +168,13 @@ The Nine of Herts,live,hertfordshire,intelligent_golf,1,WD3 1JS,,https://nineofh
 Whitehill Golf,live,hertfordshire,brs,1,SG12 0JS,,https://visitors.brsgolf.com/whitehill#/course/1
 Andover Golf Club,live,kent/sussex,intelligent_golf,1,SP10 2EF,,https://andover.intelligentgolf.co.uk/visitorbooking/
 Ashford Golf Club,live,kent/sussex,clubv1,1,TN25 4NT,,
+Barnham Broom,live,kent/sussex,clubv1,1,NR9 5DE,,https://barnham.hub.clubv1.com/Visitors/Booking
 Bexleyheath Golf Club,live,kent/sussex,clubv1,1,DA6 8JS,,
 Bishopswood Golf Course,live,kent/sussex,intelligent_golf,1,RG26 4AT,,https://www.bishopswood.golf/visitorbooking
 Bognor Regis Golf Club,live,kent/sussex,clubv1,1,PO22 8JD,,https://bognorregis.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-09
 Broome Park Golf Club,live,kent/sussex,brs,1,CT4 6QX,,
+Bungay & Waveney Valley Golf Club,live,kent/sussex,brs,1,NR35 1DS,,http://www.brsgolf.com/bungaywaveney/members_home.php
+Burnham & Berrow Golf Club,live,kent/sussex,intelligent_golf,2,TA8 2LX,,https://burnham.intelligentgolf.co.uk/visitorbooking/
 Chelsfield Lakes Golf Club,live,kent/sussex,esp,1,BR6 9BX,,https://www.e-s-p.com/elitelive/book_group.php
 Cherry Lodge Golf Club,live,kent/sussex,brs,1,TN16 3AX,,
 Chestfield Golf Club,live,kent/sussex,intelligent_golf,1,CT5 3LU,,https://chestfield.intelligentgolf.co.uk/visitorbooking/
@@ -138,6 +186,8 @@ Etchinghill Golf Club,live,kent/sussex,esp,1,CT18 8FA,,https://www.e-s-p.com/eli
 Goring & Streatley Golf Club,live,kent/sussex,intelligent_golf,1,RG8 9QA,,https://goring.intelligentgolf.co.uk/visitorbooking/
 Hainault Forest Golf Club,live,kent/sussex,intelligent_golf,2,IG7 4QW,,https://hainault.intelligentgolf.co.uk/visitorbooking/
 Ham Manor,live,kent/sussex,intelligent_golf,1,BN16 4JE,,https://www.hammanor.co.uk/visitorbooking/
+Hamptworth Golf & Country Club,live,kent/sussex,intelligent_golf,1,SP5 2DU,,https://hamptworth.intelligentgolf.co.uk/visitorbooking/
+Hatchford Brook Golf Course,live,kent/sussex,gladstone,1,B26 3SS,,https://mytimeactive.gladstonego.cloud/book
 Hever Castle Golf Club,live,kent/sussex,intelligent_golf,2,TN8 7NP,,https://hever.intelligentgolf.co.uk/visitorbooking/
 Hill Barn Golf Club,live,kent/sussex,esp,1,BN14 9QF,,http://www.e-s-p.com/elitelive/book_group.php
 Holtye Golf Club,live,kent/sussex,intelligent_golf,1,TN8 7ED,,https://www.holtye.com/visitorbooking/
@@ -154,6 +204,7 @@ Mercure Hythe Imperial Golf Course,live,kent/sussex,brs,1,CT21 6AE,,https://visi
 Mid Sussex Golf Club,live,kent/sussex,intelligent_golf,1,BN6 8XJ,,https://www.midsussexgolfclub.co.uk/visitorbooking/
 Nevill Golf Club,live,kent/sussex,intelligent_golf,1,TN2 5JW,,
 New Forest Golf Club,live,kent/sussex,brs,1,SO43 7BU,,https://visitors.brsgolf.com/newforestengland#/open-competitions
+Newton Green Golf Course,live,kent/sussex,brs,1,CO10 0QN,,https://visitors.brsgolf.com/newtongreen#/course/1
 North Foreland Golf Club,live,kent/sussex,intelligent_golf,2,CT10 3PU,,https://northforeland.intelligentgolf.co.uk/visitorbooking/
 Peacehaven Golf Course,live,kent/sussex,brs,1,BN9 9UH,,https://visitors.brsgolf.com/peacehaven9#/course/1
 Pedham Place Golf Centre,live,kent/sussex,esp,1,BR8 8PP,,https://www.e-s-p.com/elitelive/login.php
@@ -170,10 +221,13 @@ Singing Hills Golf Course,live,kent/sussex,intelligent_golf,6,BN6 9EB,,https://w
 St Augustine's Golf Club,live,kent/sussex,brs,1,CT12 5JN,,
 Stonelees Golf Centre,live,kent/sussex,intelligent_golf,3,CT12 5DJ,,https://stonelees.intelligentgolf.co.uk/visitorbooking/
 Sundridge Park Golf Course,live,kent/sussex,intelligent_golf,2,BR1 3NE,,https://www.sundridgeparkgolfclub.co.uk/visitorbooking/
+Swaffham Golf Club,live,kent/sussex,brs,1,PE37 8AE,,http://www.brsgolf.com/swaffham/members_home.php
 Tenterden Golf Club,live,kent/sussex,clubv1,1,TN30 7DR,,
+The Old Nene Golf & Country Club,live,kent/sussex,brs,1,PE26 2XQ,,https://visitors.brsgolf.com/oldnene#/course/1
 The Rayleigh Club,live,kent/sussex,clubv1,1,SS6 9QS,,https://therayleighclub.hub.clubv1.com/
 The Weald of Kent Golf Course,live,kent/sussex,intelligent_golf,1,TN27 9PT,,https://wealdofkent.intelligentgolf.co.uk/visitorbooking/
 Tilgate Forest Golf Centre,live,kent/sussex,intelligent_golf,1,RH10 5EU,,
+Ufford Park Golf Course,live,kent/sussex,brs,1,IP12 1QW,,https://www.brsgolf.com/uffordpark/visitor_menu.php
 Walmer and Kingsdown Golf Links,live,kent/sussex,brs,1,CT14 8EP,,https://visitors.brsgolf.com/walmerandkingsdown#/course/1
 Waterlooville Golf Course,live,kent/sussex,clubv1,1,PO8 8AP,,https://waterlooville.hub.clubv1.com/
 West Essex Golf Club,live,kent/sussex,intelligent_golf,1,E4 7QL,,https://westessex.intelligentgolf.co.uk/visitorbooking/
@@ -194,12 +248,43 @@ North Middlesex Golf Club,live,london,clubv1,1,N20 0NL,,https://northmiddlesex.h
 The Inspiration Club,live,london,intelligent_golf,1,UB5 6RD,,https://inspirationclub.intelligentgolf.co.uk/visitorbooking/
 Chartham Park,live,newsite,intelligent_golf,1,RH19 2JT,,https://golf.charthampark.com/visitorbooking/
 Twisted Stone Golf Course,live,newsite,brs,1,GU22 8UE,,https://visitors.brsgolf.com/twistedstonegc#/course/1
+Bawburgh Golf Course,live,norfolk,brs,1,NR9 3LU,,https://visitors.brsgolf.com/bawburgh#/course/1
+Caldecott Hall,live,norfolk,brs,1,NR31 9EY,,https://visitors.brsgolf.com/caldecotthall#/course/1
+Costessey Park Golf Course,live,norfolk,brs,1,NR8 5AL,,https://visitors.brsgolf.com/costessey#/course/1
+Great Yarmouth and Caister Golf Club,live,norfolk,brs,1,NR30 5TD,,https://visitors.brsgolf.com/greatyarmouth#/course/1
+Mattishall Golf Club,live,norfolk,brs,1,NR20 3JZ,,https://visitors.brsgolf.com/mattishall
+Thetford Golf Club,live,norfolk,intelligent_golf,1,IP24 3NE,,https://www.thetfordgolfclub.co.uk/visitorbooking/
+Collingtree Park Golf Club,live,northamptonshire,brs,1,NN4 0PA,,https://visitors.brsgolf.com/collingtree#/course/1
+Hellidon Lakes Golf Club,live,northamptonshire,brs,3,NN11 6GG,,https://visitors.brsgolf.com/hellidon#/
+Kilworth Springs,live,northamptonshire,intelligent_golf,1,LE17 6HJ,,https://kilworth.intelligentgolf.co.uk/visitorbooking/
+Kingsthorpe Golf Course,live,northamptonshire,brs,1,NN2 7BU,,https://visitors.brsgolf.com/kingsthorpe#/course/1
+Oundle Golf Club,live,northamptonshire,brs,1,PE8 5TN,,https://visitors.brsgolf.com/oundle#/course/1
+Rushden Golf Club,live,northamptonshire,clubv1,1,NN9 6AN,,https://rushden.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
 Bicester Golf Hotel & Spa,live,oxfordshire,clubv1,1,OX26 1TH,,https://bicester.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
 Burford Golf Club,live,oxfordshire,intelligent_golf,1,OX18 4JG,,https://burford.intelligentgolf.co.uk/visitorbooking/
 Henley Golf Club,live,oxfordshire,intelligent_golf,1,RG9 4HG,,https://www.henleygc.com/visitorbooking/
 Hinksey Heights Golf Course,live,oxfordshire,clubv1,1,OX1 5AB,,https://hinkseyheights.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
 Kirtlington Golf Club,live,oxfordshire,intelligent_golf,2,OX5 3JY,,https://members.kirtlingtongolfclub.com/visitorbooking/
 Oxford Golf Club,live,oxfordshire,brs,1,OX4 1PF,,https://visitors.brsgolf.com/oxford#/course/1
+Bath Golf Club,live,somerset,intelligent_golf,1,BA2 6JG,,https://www.bathgolfclub.org.uk/visitorbooking/
+Bristol & Clifton Golf Club,live,somerset,intelligent_golf,1,BS8 3TH,,https://www.bristolandcliftongolfclub.co.uk/visitorbooking/
+Clevedon Golf Club,live,somerset,intelligent_golf,1,BS21 7AA,,https://www.clevedongolfclub.co.uk/visitorbooking/
+Filton Golf Course,live,somerset,clubv1,1,BS10 6LL,,https://filton.hub.clubv1.com/visitors/TeeSheet?date=2026-09-11
+Henbury Golf Club,live,somerset,intelligent_golf,1,BS10 7QB,,https://www.henburygolfclub.co.uk/visitorbooking/
+Long Ashton Golf Club,live,somerset,intelligent_golf,1,BS41 9DN,,https://longashton.intelligentgolf.co.uk/visitorbooking/
+Mendip Spring Golf Club - Brinsea Championship Course,live,somerset,intelligent_golf,2,BS49 5JT,,https://www.mendipspringgolfclub.com/visitorbooking/
+Orchardleigh Golf Club,live,somerset,brs,1,BA11 2PB,,https://visitors.brsgolf.com/orchardleigh
+Saltford Golf Club,live,somerset,intelligent_golf,1,BS31 3AA,,https://www.saltfordgolfclub.co.uk/visitorbooking/
+Tall Pines Golf Club,live,somerset,intelligent_golf,1,BS48 3DJ,,https://tallpines.intelligentgolf.co.uk/visitorbooking/
+Tickenham Golf Club,live,somerset,brs,1,BS21 6RY,,https://visitors.brsgolf.com/tickenham#/course/1
+Wells Golf Club,live,somerset,intelligent_golf,1,BA5 3DS,,https://www.wellsgolfclub.co.uk/visitorbooking/
+Woodspring Golf & Country Club,live,somerset,intelligent_golf,3,BS41 9LR,,https://woodspring.intelligentgolf.co.uk/visitorbooking/
+Bury St Edmunds Golf Club - Championship Course,live,suffolk,brs,2,IP28 6LG,,https://visitors.brsgolf.com/burystedmundsgc#/course/1
+Ipswich Golf Club,live,suffolk,clubv1,1,IP3 8UQ,,https://ipswichgc.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
+Rookery Park Golf Club - Main Course,live,suffolk,brs,1,NR33 8HJ,,https://visitors.brsgolf.com/rookerypark#/course/1
+St Audrys Golf Club,live,suffolk,clubv1,1,IP12 1SX,,https://staudrys.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
+Stowmarket Golf Club,live,suffolk,clubv1,1,IP14 3EF,,https://stowmarket.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
+Thorpeness Hotel & Golf Club,live,suffolk,intelligent_golf,1,IP16 4NH,,https://thorpeness.intelligentgolf.co.uk/visitorbooking/
 Abbey Moor Golf Club,live,surrey,brs,1,KT15 2XU,,https://visitors.brsgolf.com/abbeymoor#/course/1
 Addington Court Golf Club,live,surrey,intelligent_golf,3,CR0 9AA,,https://golf.addingtoncourt-golfclub.co.uk/visitorbooking/
 Addington Palace Golf Club,live,surrey,clubv1,1,CR0 5BB,,
@@ -245,13 +330,46 @@ Tyrrells Wood Golf Course,live,surrey,intelligent_golf,1,KT22 8QP,,https://www.t
 West Byfleet Golf Club,live,surrey,intelligent_golf,1,KT14 6AA,,https://westbyfleet.intelligentgolf.co.uk/visitorbooking/
 West Surrey Golf Club,live,surrey,intelligent_golf,1,GU8 5AF,,https://www.wsgc.co.uk/visitorbooking/
 Woodcote Park Golf Club,live,surrey,brs,1,CR5 2QQ,,https://visitors.brsgolf.com/woodcotepark?iframe=1
+Kenilworth Golf Club,live,warwickshire,intelligent_golf,1,CV8 2EA,,https://www.kenilworthgolfclub.co.uk/visitorbooking/
+Lea Marston Golf Course,live,warwickshire,brs,1,B76 0BY,,https://visitors.brsgolf.com/leamarston#/course/1
+Stoneleigh Deer Park Golf Club,live,warwickshire,brs,3,CV8 3DR,,https://visitors.brsgolf.com/stoneleighdeer#/course/1
+Welford-on-Avon Golf Course,live,warwickshire,intelligent_golf,1,CV37 8EG,,https://welford.intelligentgolf.co.uk/visitorbooking/
+Whitefields,live,warwickshire,clubv1,1,CV23 9LF,,https://whitefields.hub.clubv1.com/visitors/TeeSheet?date=2026-09-11
+Calderfields Golf and Country Club,live,westmidlands,brs,1,WS4 2JS,,https://visitors.brsgolf.com/calderfields#/course/1
+Copt Heath Golf Club,live,westmidlands,intelligent_golf,1,B93 9LN,,https://www.coptheathgolf.co.uk/visitorbooking/
+Dudley Golf Club,live,westmidlands,intelligent_golf,1,B65 9DP,,https://www.dudleygolfclub.com/visitorbooking/
+Great Barr Golf Club,live,westmidlands,clubv1,1,B43 7BA,,https://greatbarrgc.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
+Lickey Hills Golf Course,live,westmidlands,gladstone,1,B45 8RR,,https://mytimeactive.gladstonego.cloud/book
+Little Aston Golf Club,live,westmidlands,intelligent_golf,1,B74 3UP,,https://littleaston.intelligentgolf.co.uk/visitorbooking/
+Nailcote Hall,live,westmidlands,brs,1,CV7 7DE,,https://visitors.brsgolf.com/nailcotehall#/course/1
+The South Staffordshire Golf Club,live,westmidlands,brs,1,WV6 9BQ,,https://visitors.brsgolf.com/southstaffordshire#/course/1
+Walsall Golf Club,live,westmidlands,clubv1,1,WS1 3EY,,https://walsallgc.hub.clubv1.com/visitors/TeeSheet?date=2026-09-11
+Wergs Golf Club,live,westmidlands,brs,1,WV6 8UA,,https://visitors.brsgolf.com/wergs#/course/1
+Basset Down Golf Course,live,wiltshire,intelligent_golf,1,SN4 9QW,,https://www.basset-down.com/visitorbooking/
+High Post Golf Club,live,wiltshire,intelligent_golf,1,SP4 6AT,,https://www.highpostgolfclub.co.uk/visitorbooking/
+Marlborough Golf Course,live,wiltshire,intelligent_golf,1,SN8 1DU,,https://www.marlboroughgolfclub.co.uk/visitorbooking/
+Ogbourne Downs Golf Club,live,wiltshire,intelligent_golf,1,SN8 1TB,,https://ogbournedowns.intelligentgolf.co.uk/visitorbooking/
+Rushmore Golf Club,live,wiltshire,intelligent_golf,1,SP5 5QB,,https://www.rushmoregolfclub.co.uk/visitorbooking/
+Salisbury Golf Centre,live,wiltshire,intelligent_golf,2,SP2 8PR,,https://salisbury.intelligentgolf.co.uk/visitorbooking/?course=1
+Tidworth Garrison Golf Club,live,wiltshire,intelligent_golf,1,SP9 7AF,,https://www.tidworthgolfclub.co.uk/visitorbooking/
+Upavon Golf Club,live,wiltshire,intelligent_golf,1,SN9 6BQ,,https://www.upavongolfclub.co.uk/visitorbooking/
+Whitley Golf Club,live,wiltshire,brs,1,SN12 8EQ,,https://visitors.brsgolf.com/whitley#/course/1
+Wiltshire Golf and Country Club,live,wiltshire,brs,2,SN4 7PB,,https://visitors.brsgolf.com/wiltshire#/course/1
 Belhus Park Golf Club,parked,essex,gladstone,1,RM15 4QR,Impulse Leisure's Cloudflare blocks the CI runner (works from a normal connection),https://impulseleisure.gladstonego.cloud/book
 Bromley Golf Centre,parked,kent/sussex,gladstone,2,BR2 8JF,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),
 High Elms Golf Course,parked,kent/sussex,gladstone,2,BR6 7JL,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),
 Orpington Golf Centre,parked,kent/sussex,gladstone,3,BR5 3HY,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),https://mytimeactive.gladstonego.cloud/book
+Dunstable Downs Golf Course,no_visitor_booking,bedfordshire,clubv1,0,,"on clubv1, but visitor booking is switched off",
+John O'Gaunt Golf Course,no_visitor_booking,bedfordshire,intelligent_golf,0,,booking page requires a member login,
+Mowsbury Golf Course,no_visitor_booking,bedfordshire,clubv1,0,,"on clubv1, but visitor booking is switched off",
 The Berkshire Golf Club,no_visitor_booking,berkshire,intelligent_golf,0,,booking page requires a member login,
 Buckingham Golf Club,no_visitor_booking,buckinghamshire,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Ellesborough Golf Club,no_visitor_booking,buckinghamshire,clubv1,0,,"on clubv1, but visitor booking is switched off",
+Bridport and West Dorset Golf Club,no_visitor_booking,dorset,clubv1,0,,"on clubv1, but visitor booking is switched off",
+Bridport Golf Club,no_visitor_booking,dorset,clubv1,0,,"on clubv1, but visitor booking is switched off",
+Crane Valley - Valley Course,no_visitor_booking,dorset,clubv1,0,,"on clubv1, but visitor booking is switched off",
+Crane Valley - Woodland Course,no_visitor_booking,dorset,clubv1,0,,"on clubv1, but visitor booking is switched off",
+Ferndown Golf Club,no_visitor_booking,dorset,intelligent_golf,0,,booking page requires a member login,
 Basildon Golf Course,no_visitor_booking,essex,intelligent_golf,0,,"on intelligent_golf, but visitor booking is switched off",
 Boyce Hill Golf Course,no_visitor_booking,essex,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Burnham-on-Crouch Golf Club,no_visitor_booking,essex,clubv1,0,,"on clubv1, but visitor booking is switched off",
@@ -263,6 +381,7 @@ Harwich & Dovercourt Golf Club,no_visitor_booking,essex,clubv1,0,,"on clubv1, bu
 Thorpe Hall Golf Course,no_visitor_booking,essex,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Upminster Golf Club,no_visitor_booking,essex,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Woodford Golf Club,no_visitor_booking,essex,clubv1,0,,"on clubv1, but visitor booking is switched off",
+Star Golf Golf Club,no_visitor_booking,gloucestershire,intelligent_golf,0,,"on intelligent_golf, but visitor booking is switched off",
 Alresford Golf Club,no_visitor_booking,hampshire,intelligent_golf,0,,booking page requires a member login,
 Brokenhurst Manor Golf Club,no_visitor_booking,hampshire,intelligent_golf,0,,booking page requires a member login,
 Corhampton Golf Club,no_visitor_booking,hampshire,clubv1,0,,"on clubv1, but visitor booking is switched off",
@@ -278,6 +397,7 @@ Chislehurst Golf Course,no_visitor_booking,kent/sussex,intelligent_golf,0,,booki
 Dartford Golf Club,no_visitor_booking,kent/sussex,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Eltham Warren Golf Club,no_visitor_booking,kent/sussex,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Faversham Golf Course,no_visitor_booking,kent/sussex,clubv1,0,,"on clubv1, but visitor booking is switched off",
+Kendleshire Golf Club,no_visitor_booking,kent/sussex,intelligent_golf,0,,booking page requires a member login,https://kendleshire.intelligentgolf.co.uk/visitorbooking/
 Mid Kent Golf Club,no_visitor_booking,kent/sussex,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Sittingbourne & Milton Regis Golf Club,no_visitor_booking,kent/sussex,intelligent_golf,0,,booking page requires a member login,
 The Royal Eastbourne Golf Club,no_visitor_booking,kent/sussex,intelligent_golf,0,,"on intelligent_golf, but visitor booking is switched off",
@@ -288,14 +408,45 @@ Cuddington Golf Course,no_visitor_booking,london,intelligent_golf,0,,booking pag
 Hampstead Golf Club,no_visitor_booking,london,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Coronation Course,no_visitor_booking,newsite,unknown,0,,booking page requires a member login,
 Saffron Walden Golf Club,no_visitor_booking,newsite,intelligent_golf,0,,booking page requires a member login,
+Fakenham Golf Club,no_visitor_booking,norfolk,clubv1,0,,"on clubv1, but visitor booking is switched off",
+Kettering Golf Club,no_visitor_booking,northamptonshire,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Studley Wood Golf Club,no_visitor_booking,oxfordshire,clubv1,0,,"on clubv1, but visitor booking is switched off",
+Center Parcs Elveden Forest,no_visitor_booking,suffolk,unknown,0,,booking page requires a member login,
+Seckford Golf Club,no_visitor_booking,suffolk,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Bletchingley Golf Course,no_visitor_booking,surrey,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Camberley Heath Golf Club,no_visitor_booking,surrey,intelligent_golf,0,,booking page requires a member login,
 Purley Downs Golf Club,no_visitor_booking,surrey,intelligent_golf,0,,booking page requires a member login,
 Puttenham Golf Club,no_visitor_booking,surrey,intelligent_golf,0,,booking page requires a member login,
 Royal Wimbledon Golf Course,no_visitor_booking,surrey,intelligent_golf,0,,booking page requires a member login,
 West Hill Golf Club,no_visitor_booking,surrey,intelligent_golf,0,,booking page requires a member login,
+Druids Heath Golf Club,no_visitor_booking,westmidlands,clubv1,0,,"on clubv1, but visitor booking is switched off",
+Fulford Heath Golf Club,no_visitor_booking,westmidlands,clubv1,0,,"on clubv1, but visitor booking is switched off",
+Halesowen Golf Club,no_visitor_booking,westmidlands,clubv1,0,,"on clubv1, but visitor booking is switched off",
+West Wilts Golf Club,no_visitor_booking,wiltshire,clubv1,0,,"on clubv1, but visitor booking is switched off",
+Painswick Golf Course,out_of_scope,gloucestershire,golfnow,0,,GolfNow/TeeItUp only — excluded by policy,
 Avisford Park Golf Club,out_of_scope,kent/sussex,golfnow,0,,GolfNow/TeeItUp only — excluded by policy,
+Ocean View Golf Course,out_of_scope,kent/sussex,golfnow,0,,GolfNow/TeeItUp only — excluded by policy,https://vip.teeitup.com/plus-template-4/email-club/
+Sleepy Hole Golf Course,out_of_scope,kent/sussex,golfnow,0,,GolfNow/TeeItUp only — excluded by policy,https://sleepy-hole-golf-course.book.teeitup.com
+Suffolk Golf Course,out_of_scope,kent/sussex,golfnow,0,,GolfNow/TeeItUp only — excluded by policy,https://suffolk-golf-course.book.teeitup.golf
+Worlebury Golf Course,out_of_scope,somerset,golfnow,0,,GolfNow/TeeItUp only — excluded by policy,
+Handsworth Golf Club,out_of_scope,westmidlands,golfnow,0,,GolfNow/TeeItUp only — excluded by policy,
+Abbotsley Golf Hotel,unresolved,bedfordshire,error,0,,site refused or failed to load,
+Beadlow Manor,unresolved,bedfordshire,no_site,0,,no working website found,
+Bedfordshire Golf Club,unresolved,bedfordshire,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
+Caddington Golf Club,unresolved,bedfordshire,no_site,0,,no working website found,
+Chalgrave Manor Golf Club,unresolved,bedfordshire,unknown,0,,homepage loaded (https://chalgravegolf.co.uk/) but no platform signal found on it or 2 booking-ish link(s),
+Colmworth and North Beds Golf Club,unresolved,bedfordshire,chronogolf,0,,chronogolf seen but no confirmed public visitor sheet — worth another look,https://www.chronogolf.com/club/colmworth-golf-club
+Colworth Golf Club,unresolved,bedfordshire,unknown,0,,homepage loaded (https://sharnbrookgolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s,
+Galley Hills Course,unresolved,bedfordshire,no_site,0,,no working website found,
+Henlow Golf Club,unresolved,bedfordshire,unknown,0,,homepage loaded (https://henlowgolfclub.com/) but no platform signal found on it or 3 booking-ish link(s),
+Kingsway Golf Centre Biggleswade,unresolved,bedfordshire,chronogolf,0,,chronogolf seen but no confirmed public visitor sheet — worth another look,https://www.chronogolf.com/club/19693/widget?medium=widget&source=club#?date=2025-12-15
+Luton Hoo Golf Course,unresolved,bedfordshire,blocked,0,,site refused or failed to load,
+Pavenham Park Golf Club,unresolved,bedfordshire,unknown,0,,homepage loaded (https://www.pavenhampark.com/) but no platform signal found on it or 1 booking-ish link(s),
+Sharnbrook Golf Club,unresolved,bedfordshire,unknown,0,,homepage loaded (https://sharnbrookgolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s,
+Stockwood Park Golf Centre,unresolved,bedfordshire,error,0,,site refused or failed to load,
+Warden Hills Course,unresolved,bedfordshire,no_site,0,,no working website found,
+Whipsnade Park Golf Club,unresolved,bedfordshire,no_site,0,,no working website found,
+Wyboston Lakes Golf Course,unresolved,bedfordshire,unknown,0,,homepage loaded (https://www.wybostonlakesgolfclub.co.uk/) but no platform signal found on it or 1 booking-ish,
 Bearwood Lakes Golf Club,unresolved,berkshire,unknown,0,,homepage loaded (https://www.bearwoodlakes.co.uk/) but no platform signal found on it or 1 booking-ish link(s),
 Bisham Abbey Golf Club,unresolved,berkshire,no_site,0,,no working website found,
 Bradfield College Golf Club,unresolved,berkshire,no_site,0,,no working website found,
@@ -324,7 +475,6 @@ Wessex Downs Golf Course,unresolved,berkshire,no_site,0,,no working website foun
 Winter Hill Golf Course,unresolved,berkshire,no_site,0,,no working website found,
 Wokefield Park,unresolved,berkshire,no_site,0,,no working website found,
 Wokingham Family Golf,unresolved,berkshire,unknown,0,,homepage loaded (https://www.wokinghamfamilygolf.co.uk/) but no platform signal found on it or 2 booking-ish l,
-Aylesbury Vale Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
 Bow Brickhill Heath,unresolved,buckinghamshire,no_site,0,,no working website found,
 Buckinghamshire Golf Course,unresolved,buckinghamshire,no_site,0,,no working website found,
 Burnham Beeches Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
@@ -349,9 +499,51 @@ Thorney Park Golf Club,unresolved,buckinghamshire,no_site,0,,no working website 
 Three Locks Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
 Weston Turville  Golf Club,unresolved,buckinghamshire,error,0,,site refused or failed to load,
 Wexham Park Golf Centre,unresolved,buckinghamshire,no_site,0,,no working website found,
-Whipsnade Park Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
 Windmill Hill Golf Centre,unresolved,buckinghamshire,no_site,0,,no working website found,
 Woburn Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
+Ely On Par Golf Club,unresolved,cambridgeshire,unknown,0,,homepage loaded (https://elydrivingrange.co.uk/) but no platform signal found on it or 2 booking-ish link(s),
+Girton Golf Club,unresolved,cambridgeshire,no_site,0,,no working website found,
+Heydon Grange Golf & Country Club,unresolved,cambridgeshire,unknown,0,,homepage loaded (https://www.heydongrangegolf.co.uk/) but no platform signal found on it or 4 booking-ish link,
+Kawartha Golf & Country Club,unresolved,cambridgeshire,no_site,0,,no working website found,
+Kingsway Golf Club,unresolved,cambridgeshire,chronogolf,0,,chronogolf seen but no confirmed public visitor sheet — worth another look,https://www.chronogolf.com/club/19693/widget?medium=widget&source=club
+Lakeside Lodge Golf & Country Club,unresolved,cambridgeshire,esp,0,,esp seen but no confirmed public visitor sheet — worth another look,
+Liftlock Golf Club,unresolved,cambridgeshire,no_site,0,,no working website found,
+Meridian Golf hole #1,unresolved,cambridgeshire,no_site,0,,no working website found,
+Peterborough Golf & Country Club,unresolved,cambridgeshire,no_site,0,,no working website found,
+Priory Golf & Activity Centre,unresolved,cambridgeshire,no_site,0,,no working website found,
+St Ives Golf Club,unresolved,cambridgeshire,chronogolf,0,,chronogolf seen but no confirmed public visitor sheet — worth another look,https://www.chronogolf.com/club/st-ives-hunts-golf-club
+St Neots Golf Club,unresolved,cambridgeshire,error,0,,site refused or failed to load,
+Stilton Oaks Golf Course,unresolved,cambridgeshire,no_site,0,,no working website found,
+Tydd St Giles Golf Course,unresolved,cambridgeshire,error,0,,site refused or failed to load,
+Wandlebury,unresolved,cambridgeshire,brs,0,,brs seen but no confirmed public visitor sheet — worth another look,
+Whaddon Golf Centre,unresolved,cambridgeshire,no_site,0,,no working website found,
+Barnbougle Dunes Golf Course,unresolved,dorset,no_site,0,,no working website found,
+Barnbougle Lost Farm Golf Course,unresolved,dorset,no_site,0,,no working website found,
+Canford Golf Club,unresolved,dorset,unknown,0,,homepage loaded (https://www.canford.com/golf-club) but no platform signal found on it or 3 booking-ish link(s,
+Charminster Golf Club,unresolved,dorset,error,0,,site refused or failed to load,
+Chewton Glen Hotel Executive Course,unresolved,dorset,dead_link,0,,no working website found,
+Dudmoor Farm Golf Course,unresolved,dorset,no_site,0,,no working website found,
+Dudsbury Golf Club & Hotel,unresolved,dorset,error,0,,site refused or failed to load,
+Ferndown Forest Golf Club,unresolved,dorset,golf_manager,0,,golf_manager seen but no confirmed public visitor sheet — worth another look,https://eu.golfmanager.com/ferndownforest/consumer/book?area=100&resourceType=100
+Folke Golf Centre,unresolved,dorset,error,0,,site refused or failed to load,
+Hamworthy Club,unresolved,dorset,unknown,0,,homepage loaded (https://www.hamworthyclub.co.uk/) but no platform signal found on it or 2 booking-ish link(s),
+Kirkwood Park,unresolved,dorset,no_site,0,,no working website found,
+Knighton Heath Golf Course,unresolved,dorset,unknown,0,,homepage loaded (https://www.knightonheathgolfclub.co.uk/) but no platform signal found on it or 4 booking-ish,
+Lodmoor Pitch and Putt,unresolved,dorset,no_site,0,,no working website found,
+Merley Park Golf Course,unresolved,dorset,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
+Milton Abbey Golf Course,unresolved,dorset,no_site,0,,no working website found,
+Moorina Golf Club,unresolved,dorset,no_site,0,,no working website found,
+Moors Valley Golf Course,unresolved,dorset,unknown,0,,homepage loaded (https://moors-valley.co.uk/wp-content/uploads/Golf-course.webp) but no platform signal found ,
+Parkstone Golf Club,unresolved,dorset,error,0,,site refused or failed to load,
+Remedy Oak,unresolved,dorset,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
+Ringarooma Golf Course,unresolved,dorset,no_site,0,,no working website found,
+Scottsdale Golf Course,unresolved,dorset,no_site,0,,no working website found,
+Sherborne Golf Club,unresolved,dorset,error,0,,site refused or failed to load,
+Solent Meads Golf Centre,unresolved,dorset,unknown,0,,homepage loaded (https://www.solentmeads.com/) but no platform signal found on it or 1 booking-ish link(s),
+Swanage Golf Games,unresolved,dorset,unknown,0,,homepage loaded (https://swanagegolfgames.com/) but no platform signal found on it or 1 booking-ish link(s),
+The Dorset Golf & Country Club & Resort,unresolved,dorset,blocked,0,,site refused or failed to load,
+Weymouth Golf Club,unresolved,dorset,brs,0,,brs seen but no confirmed public visitor sheet — worth another look,
+Wolfedale Golf Course,unresolved,dorset,no_site,0,,no working website found,
 Ballards Gore,unresolved,essex,unknown,0,,homepage loaded (https://www.ballardsgore.com/) but no platform signal found on it or 3 booking-ish link(s),
 Belfairs Golf Club,unresolved,essex,unknown,0,,homepage loaded (https://www.belfairsgolfclub.co.uk/) but no platform signal found on it or 3 booking-ish link,
 Bentley Golf Course,unresolved,essex,unknown,0,,homepage loaded (https://bentleygolfclub.com/) but no platform signal found on it or 5 booking-ish link(s),
@@ -391,6 +583,22 @@ The Essex Golf and Country Club,unresolved,essex,unknown,0,,homepage loaded (htt
 The Orchards Holiday Village Golf Course,unresolved,essex,no_site,0,,no working website found,
 The Warren Golf Club,unresolved,essex,unknown,0,,homepage loaded (https://www.thewarrenestate.co.uk/golf) but no platform signal found on it or 4 booking-ish l,
 Toot Hill Golf Course,unresolved,essex,no_site,0,,no working website found,
+Alexander Park Resort Golf Club,unresolved,gloucestershire,unknown,0,,homepage loaded (https://www.apresort.co.uk/golf/) but no platform signal found on it or 5 booking-ish link(s),
+Broadway Golf Club,unresolved,gloucestershire,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
+Canons Court Golf,unresolved,gloucestershire,no_site,0,,no working website found,
+Chipping Sodbury Golf Club,unresolved,gloucestershire,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
+Cotswold Edge Golf Club,unresolved,gloucestershire,unknown,0,,homepage loaded (https://www.cotswoldedgegolfclub.org.uk/) but no platform signal found on it or 1 booking-ish,
+Cotswold Hills Golf Club,unresolved,gloucestershire,unknown,0,,homepage loaded (https://www.cotswoldhills-golfclub.com/) but no platform signal found on it or 2 booking-ish ,
+Dymock Grange Golf Club,unresolved,gloucestershire,unknown,0,,homepage loaded (https://www.dymockgrangegolf.co.uk/) but no platform signal found on it or 1 booking-ish link,
+Lydney Golf Club,unresolved,gloucestershire,unknown,0,,homepage loaded (https://www.lydneygolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s,
+Newent Golf Club,unresolved,gloucestershire,unknown,0,,homepage loaded (https://www.newentgolf.co.uk/) but no platform signal found on it or 1 booking-ish link(s),
+Shipton Golf Course,unresolved,gloucestershire,unknown,0,,homepage loaded (https://www.shiptongolf.co.uk/) but no platform signal found on it or 2 booking-ish link(s),
+Shortwood Lodge Golf Club,unresolved,gloucestershire,no_site,0,,no working website found,
+Tewkesbury Park Golf Club,unresolved,gloucestershire,no_site,0,,no working website found,
+The Players Club,unresolved,gloucestershire,brs,0,,brs seen but no confirmed public visitor sheet — worth another look,
+Tracy Park Golf & Country Park,unresolved,gloucestershire,no_site,0,,no working website found,
+Ullenwood Manor Golf Course,unresolved,gloucestershire,error,0,,site refused or failed to load,
+Westonbirt Golf Course,unresolved,gloucestershire,no_site,0,,no working website found,
 Ampfield Golf & Country Club,unresolved,hampshire,unknown,0,,homepage loaded (https://www.ampfieldgolf.com/) but no platform signal found on it or 3 booking-ish link(s),
 Army Golf Course,unresolved,hampshire,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
 Barton on Sea Golf Club,unresolved,hampshire,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
@@ -399,7 +607,6 @@ Bermuda Golf Academy,unresolved,hampshire,no_site,0,,no working website found,
 Bide-A-Wee Golf Course,unresolved,hampshire,no_site,0,,no working website found,
 Blacknest Golf & Country Club,unresolved,hampshire,unknown,0,,homepage loaded (https://www.blacknestcountryclub.co.uk/) but no platform signal found on it or 4 booking-ish ,
 Charlton Lakeside Leisure Centre,unresolved,hampshire,no_site,0,,no working website found,
-Chewton Glen Hotel Executive Course,unresolved,hampshire,no_site,0,,no working website found,
 City Park Starter Shack,unresolved,hampshire,no_site,0,,no working website found,
 Denmead Golf Course,unresolved,hampshire,no_site,0,,no working website found,
 Dibden Golf Centre,unresolved,hampshire,unknown,0,,homepage loaded (https://www.bramshotthillgolfclub.org/) but no platform signal found on it or 0 booking-ish l,
@@ -414,7 +621,6 @@ Hoburne Holiday Park Bashley,unresolved,hampshire,no_site,0,,no working website 
 Leckford Golf Course,unresolved,hampshire,error,0,,site refused or failed to load,
 Meon Course,unresolved,hampshire,blocked,0,,site refused or failed to load,
 Mini Golf,unresolved,hampshire,no_site,0,,no working website found,
-Moors Valley Golf Course,unresolved,hampshire,no_site,0,,no working website found,
 Ordnance Survey Golf Club,unresolved,hampshire,error,0,,site refused or failed to load,
 Otterbourne Golf Course,unresolved,hampshire,no_site,0,,no working website found,
 Port Royal Golf Course,unresolved,hampshire,no_site,0,,no working website found,
@@ -481,6 +687,7 @@ Bay View Park Executive Golf Course,unresolved,kent/sussex,no_site,0,,no working
 Bede's Golf Course,unresolved,kent/sussex,no_site,0,,no working website found,
 Birch House Golf Course,unresolved,kent/sussex,no_site,0,,no working website found,
 Boars Head Golf Centre,unresolved,kent/sussex,no_site,0,,no working website found,
+Brampton Park Golf Club,unresolved,kent/sussex,clubv1,0,,clubv1 seen but no confirmed public visitor sheet — worth another look,https://default.hub.clubv1.com/
 Burgess Hill Golf Centre,unresolved,kent/sussex,no_site,0,,no working website found,
 Chelmsford Golf Course,unresolved,kent/sussex,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,https://chelmsford.intelligentgolf.co.uk/visitorbooking/
 Chilworth Golf Centre,unresolved,kent/sussex,chronogolf,0,,chronogolf seen but no confirmed public visitor sheet — worth another look,https://cdn2.chronogolf.com/widgets/v2
@@ -493,6 +700,7 @@ Dewlands Manor Golf Course,unresolved,kent/sussex,no_site,0,,no working website 
 East Sussex National Golf Resort and Spa,unresolved,kent/sussex,unknown,0,,homepage loaded (https://eastsussexnational.co.uk/) but no platform signal found on it or 7 booking-ish link(s,
 Eastwell Manor,unresolved,kent/sussex,no_site,0,,no working website found,
 Effingham Park Golf Course,unresolved,kent/sussex,no_site,0,,no working website found,
+Farthingstone Hotel and Golf,unresolved,kent/sussex,brs,0,,brs seen but no confirmed public visitor sheet — worth another look,https://www.brsgolf.com/farthingstone/visitor_home.php
 Fawkham Valley Golf Club,unresolved,kent/sussex,no_site,0,,no working website found,
 Folkestone Sports Centre,unresolved,kent/sussex,no_site,0,,no working website found,
 Gillingham Golf Club,unresolved,kent/sussex,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
@@ -502,6 +710,7 @@ Gravesend Golf Centre,unresolved,kent/sussex,no_site,0,,no working website found
 Great Chart Golf & Leisure,unresolved,kent/sussex,no_site,0,,no working website found,
 Highwoods Golf Club,unresolved,kent/sussex,brs,0,,brs seen but no confirmed public visitor sheet — worth another look,https://visitors.brsgolf.com/highwoodsgc#/visitor-booking
 Hilden Golf Centre,unresolved,kent/sussex,no_site,0,,no working website found,
+Hilltop Golf Course (Birmingham City Council),unresolved,kent/sussex,gladstone,0,,gladstone seen but no confirmed public visitor sheet — worth another look,https://mytimeactive.gladstonego.cloud/book
 Homelands Golf Centre,unresolved,kent/sussex,no_site,0,,no working website found,
 Horam Park Golf Club,unresolved,kent/sussex,unknown,0,,homepage loaded (https://www.horamparkgolfclub.co.uk/) but no platform signal found on it or 2 booking-ish lin,
 Horton Golf Club,unresolved,kent/sussex,no_site,0,,no working website found,
@@ -528,6 +737,7 @@ Shooters Hill Golf Course,unresolved,kent/sussex,error,0,,site refused or failed
 Shortlands Golf Club,unresolved,kent/sussex,blocked,0,,site refused or failed to load,
 Sidcup Golf Club,unresolved,kent/sussex,unknown,0,,homepage loaded (https://sidcupgolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s),
 Sonning Golf Club,unresolved,kent/sussex,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,https://sonning.intelligentgolf.co.uk/visitorbooking/
+Stockwood Vale Golf Club,unresolved,kent/sussex,esp,0,,esp seen but no confirmed public visitor sheet — worth another look,https://www.e-s-p.com/elitelive?clubid=1574&
 Tonbridge Golf Centre,unresolved,kent/sussex,no_site,0,,no working website found,
 Tudor Park Country Club,unresolved,kent/sussex,error,0,,site refused or failed to load,
 Upchurch River Valley North Course,unresolved,kent/sussex,blocked,0,,site refused or failed to load,
@@ -610,6 +820,52 @@ South Essex Golf Centre,unresolved,newsite,intelligent_golf,0,,intelligent_golf 
 The Cathedral Course,unresolved,newsite,esp,0,,esp seen but no confirmed public visitor sheet — worth another look,https://www.e-s-p.com/elitelive/book_date.php
 The Tower Course,unresolved,newsite,esp,0,,esp seen but no confirmed public visitor sheet — worth another look,https://www.e-s-p.com/elitelive/book_date.php
 Weald Park Hotel Golf and Country Club,unresolved,newsite,brs,0,,brs seen but no confirmed public visitor sheet — worth another look,https://visitors.brsgolf.com/brentwood
+5 Hole Golf Course,unresolved,norfolk,no_site,0,,no working website found,
+Browston Hall Golf Course,unresolved,norfolk,no_site,0,,no working website found,
+Crazy Golf,unresolved,norfolk,no_site,0,,no working website found,
+Denver Golf Club,unresolved,norfolk,no_site,0,,no working website found,
+Dereham Golf Club,unresolved,norfolk,no_site,0,,no working website found,
+Dunston Hall Golf Course,unresolved,norfolk,no_site,0,,no working website found,
+Eagles Golf Centre,unresolved,norfolk,unknown,0,,homepage loaded (https://www.eaglesgolfonline.co.uk/) but no platform signal found on it or 1 booking-ish link,
+Eaton Golf Club (Norwich),unresolved,norfolk,brs,0,,brs seen but no confirmed public visitor sheet — worth another look,https://visitors.brsgolf.com/eatonnorfolk#/course/1
+Eaton Park Pitch & Kick,unresolved,norfolk,unknown,0,,homepage loaded (https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities) bu,
+Gorleston Golf Club,unresolved,norfolk,no_site,0,,no working website found,
+Gorleston Putting Green,unresolved,norfolk,unknown,0,,homepage loaded (https://www.greatyarmouthservices.co.uk/open-spaces/book-sports-facilities/gorleston-cliffs-p,
+Hunstanton Golf Club,unresolved,norfolk,no_site,0,,no working website found,
+Hunstanton Putting Green,unresolved,norfolk,no_site,0,,no working website found,
+King’s Lynn Golf Club,unresolved,norfolk,error,0,,site refused or failed to load,
+Lambert's Point Golf Course,unresolved,norfolk,no_site,0,,no working website found,
+Middleton Hall Golf Club,unresolved,norfolk,unknown,0,,homepage loaded (https://www.middletonhallgolfclub.com/) but no platform signal found on it or 4 booking-ish l,
+Mundesley Golf Course,unresolved,norfolk,no_site,0,,no working website found,
+Norfolk Premier Golf,unresolved,norfolk,no_site,0,,no working website found,
+Norwich Family Golf Centre,unresolved,norfolk,no_site,0,,no working website found,
+RAF Feltwell Golf Course,unresolved,norfolk,no_site,0,,no working website found,
+Royal Cromer Golf Club,unresolved,norfolk,no_site,0,,no working website found,
+Royal Norwich Golf Club,unresolved,norfolk,no_site,0,,no working website found,
+Royal West Norfolk Golf Club,unresolved,norfolk,no_site,0,,no working website found,
+Ryston Park Golf Club,unresolved,norfolk,no_site,0,,no working website found,
+Sewells Point Golf Course,unresolved,norfolk,no_site,0,,no working website found,
+Sheringham Golf Links,unresolved,norfolk,no_site,0,,no working website found,
+Silfield Village Golf Course,unresolved,norfolk,no_site,0,,no working website found,
+Sprowston Manor Golf Club,unresolved,norfolk,no_site,0,,no working website found,
+Wensum Valley Hotel Golf Course,unresolved,norfolk,no_site,0,,no working website found,
+Blackthorn Wood Golf Complex,unresolved,northamptonshire,unknown,0,,homepage loaded (https://blackthornwoodgc.co.uk/) but no platform signal found on it or 0 booking-ish link(s),
+Brampton Health Golf Centre,unresolved,northamptonshire,no_site,0,,no working website found,
+Cherwell Edge Golf Club,unresolved,northamptonshire,unknown,0,,homepage loaded (https://www.cherwelledgegolfclub.co.uk/) but no platform signal found on it or 6 booking-ish ,
+Cold Ashby Golf Club,unresolved,northamptonshire,error,0,,site refused or failed to load,
+Daventry & District Golf Club,unresolved,northamptonshire,unknown,0,,homepage loaded (https://daventrygolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s),
+Delapre Golf Centre,unresolved,northamptonshire,error,0,,site refused or failed to load,
+John White Golf Course,unresolved,northamptonshire,no_site,0,,no working website found,
+Market Harborough Golf Club,unresolved,northamptonshire,no_site,0,,no working website found,
+Northampton Golf Club,unresolved,northamptonshire,no_site,0,,no working website found,
+Northamptonshire County Golf Course,unresolved,northamptonshire,no_site,0,,no working website found,
+Overstone Park Golf Club,unresolved,northamptonshire,no_site,0,,no working website found,
+Pytchley Golf Lodge,unresolved,northamptonshire,no_site,0,,no working website found,
+Rushden Golf Range,unresolved,northamptonshire,error,0,,site refused or failed to load,
+Staverton Park,unresolved,northamptonshire,no_site,0,,no working website found,
+Stoke Albany Golf and Country Club,unresolved,northamptonshire,no_site,0,,no working website found,
+Wellingborough Golf Glub,unresolved,northamptonshire,no_site,0,,no working website found,
+Whittlebury Hall Golf Course,unresolved,northamptonshire,no_site,0,,no working website found,
 Badgemore Park Golf Club,unresolved,oxfordshire,no_site,0,,no working website found,
 Chipping Norton Golf Club,unresolved,oxfordshire,no_site,0,,no working website found,
 Defence Academy Golf Course,unresolved,oxfordshire,unknown,0,,homepage loaded (https://dagc.org.uk/) but no platform signal found on it or 0 booking-ish link(s),
@@ -629,6 +885,59 @@ The Springs Golf Club,unresolved,oxfordshire,dead_link,0,,no working website fou
 The Wychwood Golf Club,unresolved,oxfordshire,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
 Waterstock Golf Club,unresolved,oxfordshire,unknown,0,,homepage loaded (https://waterstockgolf.co.uk/) but no platform signal found on it or 3 booking-ish link(s),
 Witney Lakes Resort,unresolved,oxfordshire,dead_link,0,,no working website found,
+Ashton Court Golf Course,unresolved,somerset,no_site,0,,no working website found,
+Bleadon Hill Golf Course,unresolved,somerset,unknown,0,,homepage loaded (https://www.bleadonhillgolfcourse.co.uk/) but no platform signal found on it or 4 booking-ish,
+Brean Golf Club,unresolved,somerset,brs,0,,brs seen but no confirmed public visitor sheet — worth another look,
+Cannington Golf Centre,unresolved,somerset,error,0,,site refused or failed to load,
+Cricket St Thomas Golf Course,unresolved,somerset,no_site,0,,no working website found,
+Enmore Park Golf Club,unresolved,somerset,no_site,0,,no working website found,
+Farrington Park Golf & Country Club,unresolved,somerset,unknown,0,,homepage loaded (https://www.madswans.com/) but no platform signal found on it or 2 booking-ish link(s),
+Fosseway Golf Club,unresolved,somerset,no_site,0,,no working website found,
+Golfbox,unresolved,somerset,no_site,0,,no working website found,
+Isle of Wedmore Golf Course,unresolved,somerset,no_site,0,,no working website found,
+Knowle Golf Club,unresolved,somerset,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
+Lansdown Golf Club,unresolved,somerset,brs,0,,brs seen but no confirmed public visitor sheet — worth another look,
+Long Sutton Golf Club,unresolved,somerset,no_site,0,,no working website found,
+Mendip Spring Golf Club - Lakeside Course,unresolved,somerset,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,https://www.mendipspringgolfclub.com/visitorbooking/
+Minehead & West Somerset Golf Club,unresolved,somerset,no_site,0,,no working website found,
+Oake Manor Golf Course,unresolved,somerset,no_site,0,,no working website found,
+Shirehampton Park Golf Club,unresolved,somerset,dead_link,0,,no working website found,
+Swingrite Golf Centre,unresolved,somerset,unknown,0,,homepage loaded (https://swingrite.co.uk/) but no platform signal found on it or 0 booking-ish link(s),
+The Mendip Golf Club,unresolved,somerset,no_site,0,,no working website found,
+Vivary Golf Course,unresolved,somerset,no_site,0,,no working website found,
+Weston-super-Mare Golf Club,unresolved,somerset,no_site,0,,no working website found,
+Wheathill Golf Club,unresolved,somerset,no_site,0,,no working website found,
+Wincanton Racecourse Golf,unresolved,somerset,no_site,0,,no working website found,
+Aldeburgh Golf Club - Championship Course,unresolved,suffolk,no_site,0,,no working website found,
+Aldeburgh Golf Club - River Course,unresolved,suffolk,no_site,0,,no working website found,
+Alnesbourne Priory Golf Course,unresolved,suffolk,unknown,0,,homepage loaded (https://alnesbournepriorygolf.co.uk/) but no platform signal found on it or 1 booking-ish lin,
+Bramford Golf Centre / Suffolk Golf & Water Park,unresolved,suffolk,unknown,0,,homepage loaded (https://www.bramfordgc.co.uk/) but no platform signal found on it or 1 booking-ish link(s),
+Brett Vale Golf Course,unresolved,suffolk,no_site,0,,no working website found,
+Bury St Edmunds Golf Club - Greene King Course,unresolved,suffolk,brs,0,,brs seen but no confirmed public visitor sheet — worth another look,https://visitors.brsgolf.com/burystedmundsgc#/course/1
+Cedar Point Country Club,unresolved,suffolk,no_site,0,,no working website found,
+Diss Golf Club,unresolved,suffolk,no_site,0,,no working website found,
+Felixstowe Ferry Golf Club - Kingsfleet Course,unresolved,suffolk,no_site,0,,no working website found,
+Felixstowe Ferry Golf Club - Martello Course,unresolved,suffolk,no_site,0,,no working website found,
+Flempton Golf Club,unresolved,suffolk,unknown,0,,homepage loaded (https://www.flemptongolfclub.co.uk/) but no platform signal found on it or 2 booking-ish link,
+Fynn Valley Golf Club,unresolved,suffolk,no_site,0,,no working website found,
+Gunton Hall Pitch and Putt,unresolved,suffolk,no_site,0,,no working website found,
+Halesworth Golf Club - Championship Course,unresolved,suffolk,unknown,0,,homepage loaded (https://www.halesworthgolf.co.uk/) but no platform signal found on it or 0 booking-ish link(s,
+Halesworth Golf Club - Valley Course,unresolved,suffolk,unknown,0,,homepage loaded (https://www.halesworthgolf.co.uk/) but no platform signal found on it or 0 booking-ish link(s,
+Hintlesham Golf Club,unresolved,suffolk,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
+Jacobsen Golf Course,unresolved,suffolk,no_site,0,,no working website found,
+Moon and Sixpence Golf Course,unresolved,suffolk,no_site,0,,no working website found,
+Old Joe's Golfing Range,unresolved,suffolk,error,0,,site refused or failed to load,
+RAF Lakenheath Breckland Pines Golf Course,unresolved,suffolk,dead_link,0,,no working website found,
+Riverfront Golf Club,unresolved,suffolk,no_site,0,,no working website found,
+Royal Worlington and Newmarket Golf Club,unresolved,suffolk,no_site,0,,no working website found,
+Rushmere Golf Course,unresolved,suffolk,no_site,0,,no working website found,
+Southwold Golf Club,unresolved,suffolk,unknown,0,,homepage loaded (https://www.southwoldgolfclub.co.uk/) but no platform signal found on it or 3 booking-ish lin,
+St Clements Golf Club,unresolved,suffolk,no_site,0,,no working website found,
+Stoke by Nayland Resort - Constable Course,unresolved,suffolk,dead_link,0,,no working website found,
+Stoke by Nayland Resort - Gainsborough Course,unresolved,suffolk,dead_link,0,,no working website found,
+Stonham Barns Golf Centre,unresolved,suffolk,no_site,0,,no working website found,
+Stowmarket Golf & Archery Centre,unresolved,suffolk,unknown,0,,homepage loaded (https://www.stowmarketgolfcentre.co.uk/) but no platform signal found on it or 2 booking-ish ,
+The Suffolk Golf & Spa Hotel,unresolved,suffolk,dead_link,0,,no working website found,
 Beaverbrook Golf Club,unresolved,surrey,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
 Betchworth Park Golf Club,unresolved,surrey,blocked,0,,site refused or failed to load,
 Coombe Hill Golf Club,unresolved,surrey,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
@@ -671,3 +980,77 @@ Windlesham Golf Club,unresolved,surrey,unknown,0,,homepage loaded (https://www.w
 Wisley practice facility,unresolved,surrey,unknown,0,,homepage loaded (https://www.thewisley.com/) but no platform signal found on it or 0 booking-ish link(s),
 Woking Golf Club,unresolved,surrey,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
 Worplesdon Golf Club,unresolved,surrey,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
+Ansty Golf Centre,unresolved,warwickshire,no_site,0,,no working website found,
+"Ardencote Manor Hotel, Country Club & Spa",unresolved,warwickshire,unknown,0,,homepage loaded (https://hiddenwell.com/welcome) but no platform signal found on it or 0 booking-ish link(s),
+Atherstone Golf Club,unresolved,warwickshire,no_site,0,,no working website found,
+Bidford Grange Golf Course,unresolved,warwickshire,no_site,0,,no working website found,
+Bramcote Waters Golf Course,unresolved,warwickshire,unknown,0,,homepage loaded (https://bramcotewatersgolfclub.co.uk/) but no platform signal found on it or 3 booking-ish li,
+Brandon Wood Golf Club,unresolved,warwickshire,no_site,0,,no working website found,
+Coventry Golf Club,unresolved,warwickshire,no_site,0,,no working website found,
+Feldon Valley Golf Club,unresolved,warwickshire,error,0,,site refused or failed to load,
+Forest of Arden Country Club,unresolved,warwickshire,blocked,0,,site refused or failed to load,
+Golf Range,unresolved,warwickshire,no_site,0,,no working website found,
+Ingon Manor Golf & Country Club,unresolved,warwickshire,blocked,0,,site refused or failed to load,
+Ladbrook Park Golf Club,unresolved,warwickshire,unknown,0,,homepage loaded (https://www.ladbrookparkgolf.co.uk/) but no platform signal found on it or 4 booking-ish link,
+Leam Valley Golf Centre,unresolved,warwickshire,no_site,0,,no working website found,
+Leamington and County Golf Club,unresolved,warwickshire,no_site,0,,no working website found,
+Maxstoke Park Golf Course,unresolved,warwickshire,no_site,0,,no working website found,
+Nuneaton Golf Club,unresolved,warwickshire,no_site,0,,no working website found,
+Purley Chase Golf Course,unresolved,warwickshire,no_site,0,,no working website found,
+Rugby Golf Club,unresolved,warwickshire,no_site,0,,no working website found,
+Stratford Oaks Golf Course,unresolved,warwickshire,no_site,0,,no working website found,
+Stratford on Avon Golf Club,unresolved,warwickshire,no_site,0,,no working website found,
+The Belfry Golf Course,unresolved,warwickshire,no_site,0,,no working website found,
+The Welcombe Golf Club,unresolved,warwickshire,no_site,0,,no working website found,
+Unique Indoor Golf,unresolved,warwickshire,unknown,0,,homepage loaded (https://uniqueindoorgolf.co.uk/) but no platform signal found on it or 4 booking-ish link(s),
+Warwick Golf Centre,unresolved,warwickshire,no_site,0,,no working website found,
+Warwickshire Golf and Country Club,unresolved,warwickshire,no_site,0,,no working website found,
+18-hole pitch and putt course,unresolved,westmidlands,no_site,0,,no working website found,
+Allesley Park Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Bloxwich Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Boldmere Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Cocks Moors Woods golf course (Birmingham City Council),unresolved,westmidlands,no_site,0,,no working website found,
+Copsewood Grange Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Dartmouth Golf Club,unresolved,westmidlands,no_site,0,,no working website found,
+Edgbaston Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Four Ashes Golf Centre,unresolved,westmidlands,unknown,0,,homepage loaded (https://fourashesgolfcentre.co.uk/) but no platform signal found on it or 2 booking-ish link(,
+Golfbug Wast Hills,unresolved,westmidlands,no_site,0,,no working website found,
+Greenfield Golf Club,unresolved,westmidlands,error,0,,site refused or failed to load,
+Harborne Church Farm 9 Hole Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Harborne Golf Club,unresolved,westmidlands,no_site,0,,no working website found,
+Hearsall Golf Club,unresolved,westmidlands,no_site,0,,no working website found,
+Hollywood Golf Club,unresolved,westmidlands,error,0,,site refused or failed to load,
+John Reay Golf Centre,unresolved,westmidlands,unknown,0,,homepage loaded (https://www.johnreaygolf.com/) but no platform signal found on it or 0 booking-ish link(s),
+Moor Hall Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Moseley Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+North Warwickshire Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Olton Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Oxley Park Golf Club,unresolved,westmidlands,no_site,0,,no working website found,
+Pype Hayes Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Robin Hood Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Rowley Regis Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Sandwell Park Golf Club,unresolved,westmidlands,no_site,0,,no working website found,
+Sutton Coldfield Golf Club,unresolved,westmidlands,no_site,0,,no working website found,
+The Mark Butler Golf Academy (Sedgley Golf Centre),unresolved,westmidlands,error,0,,site refused or failed to load,
+Tidbury Green Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Walmley Golf Club,unresolved,westmidlands,no_site,0,,no working website found,
+War Memorial Park 'FootGolf' Course,unresolved,westmidlands,no_site,0,,no working website found,
+Warley Woods Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Widney Manor Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Windmill Village Golf Course,unresolved,westmidlands,no_site,0,,no working website found,
+Wishaw Golf Club,unresolved,westmidlands,no_site,0,,no working website found,
+Bowood Golf & Country Club,unresolved,wiltshire,unknown,0,,homepage loaded (https://bowood.org/golf/) but no platform signal found on it or 5 booking-ish link(s),
+Bradford on Avon Golf Course,unresolved,wiltshire,no_site,0,,no working website found,
+Broome Manor Golf Complex,unresolved,wiltshire,error,0,,site refused or failed to load,
+Chippenham Golf Club,unresolved,wiltshire,error,0,,site refused or failed to load,
+Cricklade House Hotel & Spa,unresolved,wiltshire,no_site,0,,no working website found,
+Cumberwell Park,unresolved,wiltshire,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
+Dauntsey's School,unresolved,wiltshire,unknown,0,,homepage loaded (https://www.dauntseys.org/) but no platform signal found on it or 2 booking-ish link(s),
+Erlestoke Golf Course,unresolved,wiltshire,error,0,,site refused or failed to load,
+Monkton Park Golf Course,unresolved,wiltshire,no_site,0,,no working website found,
+North Wilts Golf Club,unresolved,wiltshire,unknown,0,,homepage loaded (https://www.northwiltsgolf.com/) but no platform signal found on it or 6 booking-ish link(s),
+Oaksey Park,unresolved,wiltshire,unknown,0,,homepage loaded (https://www.oakseygolfclub.co.uk/) but no platform signal found on it or 2 booking-ish link(s,
+Salisbury and South Wilts Golf Course,unresolved,wiltshire,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,https://salisbury.intelligentgolf.co.uk/visitorbooking/?course=1
+The Manor House Golf Club,unresolved,wiltshire,unknown,0,,homepage loaded (https://www.exclusive.co.uk/the-manor-house-golf-club/) but no platform signal found on it or,
+Westbury Golf Club,unresolved,wiltshire,unknown,0,,homepage loaded (https://www.westburygolfclub.com/) but no platform signal found on it or 3 booking-ish link(s,
+Wrag Barn Golf & Country Club,unresolved,wiltshire,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,

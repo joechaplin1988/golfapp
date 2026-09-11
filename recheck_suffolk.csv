@@ -1,0 +1,36 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Fynn Valley Golf Club,,52.0994518,1.1841526,no_site,unknown,,low,still no website known
+Royal Worlington and Newmarket Golf Club,,52.3318215,0.4958,no_site,unknown,,low,still no website known
+St Clements Golf Club,,52.0457076,1.1943959,no_site,unknown,,low,still no website known
+Rushmere Golf Course,,52.0573123,1.209192,no_site,unknown,,low,still no website known
+Diss Golf Club,,52.3648662,1.1352286,no_site,unknown,,low,still no website known
+Bramford Golf Centre / Suffolk Golf & Water Park,https://www.bramfordgc.co.uk/,52.0908756,1.0960602,unknown,unknown,,low,site reachable (https://www.bramfordgc.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Ufford Park Golf Course,https://www.uffordpark.co.uk/,52.1155947,1.345616,brs,unknown,https://www.brsgolf.com/uffordpark/visitor_menu.php,medium,site reachable (https://lqresorts.co.uk/ufford-park/) but no visitor booking found on it or 2 sub-page(s)
+Felixstowe Ferry Golf Club - Martello Course,,51.9829493,1.384805,no_site,unknown,,low,still no website known
+Center Parcs Elveden Forest,https://www.centerparcs.co.uk/villages/elveden,52.3941818,0.6576028,unknown,login_required,,high,site reachable (https://www.centerparcs.co.uk/discover-center-parcs/holiday-locations/elveden-forest.html) but no visitor booking found on it or 3 sub-page(s)
+Suffolk Golf Course,https://www.suffolkgolfcourse.org,36.7266245,-76.6138808,golfnow,out_of_scope,https://suffolk-golf-course.book.teeitup.golf,high,GolfNow/TeeItUp only — excluded by policy
+The Suffolk Golf & Spa Hotel,https://www.bespokehotels.com/suffolkgolfspahotel/,52.272546,0.7014782,dead_link,unknown,,low,site reachable (https://bespokehotels.com/) but no visitor booking found on it or 0 sub-page(s)
+Southwold Golf Club,https://www.southwoldgolfclub.co.uk/,52.3265622,1.6706795,unknown,unknown,,low,site reachable (https://www.southwoldgolfclub.co.uk/) but no visitor booking found on it or 4 sub-page(s)
+Flempton Golf Club,https://www.flemptongolfclub.co.uk/,52.3005533,0.6512334,unknown,unknown,,low,site reachable (https://www.flemptongolfclub.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Halesworth Golf Club - Championship Course,https://www.halesworthgolf.co.uk/,52.3311539,1.5242134,unknown,unknown,,low,site reachable (https://www.halesworthgolf.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Haverhill Golf Club,https://www.club-noticeboard.co.uk/haverhill/,52.073723,0.4685108,unknown,unknown,,low,site reachable (http://www.club-noticeboard.co.uk) but no visitor booking found on it or 0 sub-page(s)
+Stoke by Nayland Resort - Gainsborough Course,https://www.stokebynayland.com/content/golf,51.996773,0.8619587,dead_link,unknown,,low,site reachable (https://stokebynayland.com/) but no visitor booking found on it or 3 sub-page(s)
+Newton Green Golf Course,https://www.newtongreengolfclub.co.uk/,52.0323313,0.7882695,brs,public,https://visitors.brsgolf.com/newtongreen#/course/1,high,found on https://www.newtongreengolfclub.co.uk/booking
+Old Joe's Golfing Range,https://www.oldjoesgolfingrange.co.uk/,52.0291152,0.7768375,error,unknown,,low,unreachable even with a browser user agent
+Aldeburgh Golf Club - Championship Course,,52.1669392,1.5798292,no_site,unknown,,low,still no website known
+Stowmarket Golf & Archery Centre,https://www.stowmarketgolfcentre.co.uk/,52.1925795,0.9387964,unknown,unknown,,low,site reachable (https://www.stowmarketgolfcentre.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+RAF Lakenheath Breckland Pines Golf Course,https://www.lakenheathfss.com/brecklandpines/,52.4025054,0.5740075,dead_link,unknown,,low,site reachable (https://lakenheathfss.com/) but no visitor booking found on it or 2 sub-page(s)
+Bungay & Waveney Valley Golf Club,https://www.club-noticeboard.co.uk/bungay/,52.4617997,1.4229943,brs,unknown,http://www.brsgolf.com/bungaywaveney/members_home.php,medium,site reachable (https://www.club-noticeboard.co.uk/bungay/) but no visitor booking found on it or 0 sub-page(s)
+Alnesbourne Priory Golf Course,https://alnesbournepriorygolf.co.uk/,52.0167524,1.1926789,unknown,unknown,,low,site reachable (https://alnesbournepriorygolf.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Stonham Barns Golf Centre,,52.1856401,1.1390019,no_site,unknown,,low,still no website known
+Brett Vale Golf Course,,52.0041268,0.9753194,no_site,unknown,,low,still no website known
+Cedar Point Country Club,,36.9021807,-76.4894798,no_site,unknown,,low,still no website known
+Aldeburgh Golf Club - River Course,,52.1636237,1.5751457,no_site,unknown,,low,still no website known
+Jacobsen Golf Course,,52.0325871,1.2130377,no_site,unknown,,low,still no website known
+Felixstowe Ferry Golf Club - Kingsfleet Course,,51.9835164,1.3809357,no_site,unknown,,low,still no website known
+Moon and Sixpence Golf Course,,52.0588789,1.2981395,no_site,unknown,,low,still no website known
+Gunton Hall Pitch and Putt,,52.5065865,1.7400965,no_site,unknown,,low,still no website known
+Stoke by Nayland Resort - Constable Course,https://www.stokebynayland.com/content/golf,51.9927654,0.8688219,dead_link,unknown,,low,site reachable (https://stokebynayland.com/) but no visitor booking found on it or 3 sub-page(s)
+Halesworth Golf Club - Valley Course,https://www.halesworthgolf.co.uk/,52.3301369,1.519172,unknown,unknown,,low,site reachable (https://www.halesworthgolf.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Sleepy Hole Golf Course,https://www.sleepyholegolfcourse.com/,36.8397388,-76.5174049,golfnow,out_of_scope,https://sleepy-hole-golf-course.book.teeitup.com,high,GolfNow/TeeItUp only — excluded by policy
+Riverfront Golf Club,,36.8816673,-76.4459811,no_site,unknown,,low,still no website known

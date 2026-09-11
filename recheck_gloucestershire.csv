@@ -1,0 +1,15 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Shortwood Lodge Golf Club,,51.4753123,-2.4701072,no_site,unknown,,low,still no website known
+Cotswold Edge Golf Club,https://www.cotswoldedgegolfclub.org.uk/,51.6555011,-2.3290732,unknown,unknown,,low,site reachable (https://www.cotswoldedgegolfclub.org.uk/) but no visitor booking found on it or 1 sub-page(s)
+Tewkesbury Park Golf Club,,51.9796581,-2.1728163,no_site,unknown,,low,still no website known
+Canons Court Golf,,51.6433497,-2.3747961,no_site,unknown,,low,still no website known
+Tracy Park Golf & Country Park,,51.443961,-2.4110457,no_site,unknown,,low,still no website known
+Cotswold Hills Golf Club,https://www.cotswoldhills-golfclub.com/,51.8501433,-2.0720452,unknown,unknown,,low,site reachable (https://www.cotswoldhills-golfclub.com/) but no visitor booking found on it or 1 sub-page(s)
+Newent Golf Club,https://www.newentgolf.co.uk/,51.9449558,-2.4149642,unknown,unknown,,low,site reachable (https://www.newentgolf.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Kendleshire Golf Club,https://www.golf.kendleshire.com/,51.5118633,-2.4770237,intelligent_golf,login_required,https://kendleshire.intelligentgolf.co.uk/visitorbooking/,high,club's own Intelligent Golf subdomain
+Westonbirt Golf Course,,51.6019229,-2.2013317,no_site,unknown,,low,still no website known
+Ullenwood Manor Golf Course,https://www.stargolfsoc.com/,51.8475823,-2.0835698,error,unknown,,low,unreachable even with a browser user agent
+Shipton Golf Course,https://www.shiptongolf.co.uk/,51.8616157,-1.9695691,unknown,unknown,,low,site reachable (https://www.shiptongolf.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Lydney Golf Club,https://www.lydneygolfclub.co.uk/,51.7165581,-2.5139951,unknown,unknown,,low,site reachable (https://www.lydneygolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Dymock Grange Golf Club,https://www.dymockgrangegolf.co.uk/,51.9849942,-2.4537091,unknown,unknown,,low,site reachable (https://www.dymockgrangegolf.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Alexander Park Resort Golf Club,https://www.apresort.co.uk/golf/,,,unknown,unknown,,low,site reachable (https://www.apresort.co.uk/golf/) but no visitor booking found on it or 0 sub-page(s)

@@ -1,0 +1,48 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Golfbox,,51.4520357,-2.5891742,no_site,unknown,,low,no official website resolved (not in county union directory)
+Wells Golf Club,https://www.wellsgolfclub.co.uk/,51.2095271,-2.6207143,intelligent_golf,public,https://www.wellsgolfclub.co.uk/visitorbooking/,high,
+The Mendip Golf Club,,51.2216143,-2.5517167,no_site,unknown,,low,no official website resolved (not in county union directory)
+Fosseway Golf Club,,51.2747641,-2.4695421,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ashton Court Golf Course,,51.4500829,-2.6478541,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lansdown Golf Club,https://www.lansdowngolfclub.co.uk/,51.4222351,-2.406718,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Oake Manor Golf Course,,51.0187151,-3.2104492,no_site,unknown,,low,no official website resolved (not in county union directory)
+Minehead & West Somerset Golf Club,,51.2040178,-3.4462923,no_site,unknown,,low,no official website resolved (not in county union directory)
+Saltford Golf Club,https://www.saltfordgolfclub.co.uk/,51.393935,-2.4593261,intelligent_golf,public,https://www.saltfordgolfclub.co.uk/visitorbooking/,high,
+Knowle Golf Club,https://www.knowlegolfclub.co.uk/,51.4236749,-2.5488389,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Mendip Spring Golf Club - Brinsea Championship Course,https://www.mendipspringgolfclub.com/,51.3516469,-2.8171902,intelligent_golf,public,https://www.mendipspringgolfclub.com/visitorbooking/,high,
+Vivary Golf Course,,51.0070828,-3.1006282,no_site,unknown,,low,no official website resolved (not in county union directory)
+Wincanton Racecourse Golf,,51.0675993,-2.4199589,no_site,unknown,,low,no official website resolved (not in county union directory)
+Weston-super-Mare Golf Club,,51.3264404,-2.9855605,no_site,unknown,,low,no official website resolved (not in county union directory)
+Isle of Wedmore Golf Course,,51.2372593,-2.8138999,no_site,unknown,,low,no official website resolved (not in county union directory)
+Enmore Park Golf Club,,51.1147224,-3.0784976,no_site,unknown,,low,no official website resolved (not in county union directory)
+Brean Golf Club,https://www.breangolfclub.co.uk/,51.2842258,-3.003789,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Stockwood Vale Golf Club,https://www.stockwoodvale.com/pages.php/index.html,51.411629,-2.5260397,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Filton Golf Course,,51.5113848,-2.589466,no_site,unknown,,low,no official website resolved (not in county union directory)
+Shirehampton Park Golf Club,https://www.shirehamptonparkgolfclub.co.uk/live/index2.php?ts=1521727828467,51.489262,-2.6607673,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Clevedon Golf Club,https://www.clevedongolfclub.co.uk/,51.45512,-2.8401831,intelligent_golf,public,https://www.clevedongolfclub.co.uk/visitorbooking/,high,
+Farrington Park Golf & Country Club,https://farringtonpark.co.uk/,51.2886855,-2.5312032,unknown,unknown,,low,homepage loaded (https://www.madswans.com/) but no platform signal found on it or 2 booking-ish link(s)
+Long Sutton Golf Club,,51.0173731,-2.7533908,no_site,unknown,,low,no official website resolved (not in county union directory)
+Tall Pines Golf Club,https://www.tallpinesgolf.co.uk/,51.388425,-2.7289866,intelligent_golf,public,https://tallpines.intelligentgolf.co.uk/visitorbooking/,high,
+Cannington Golf Centre,https://www.canningtongolfcentre.co.uk/,51.1548301,-3.0552942,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.canningtongolfcentre.co.uk', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(""HTTPSConnection(host='www.canningtongolfcentre.co.uk', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it""))"
+Bristol & Clifton Golf Club,https://www.bristolandcliftongolfclub.co.uk/,51.4475346,-2.6797526,intelligent_golf,public,https://www.bristolandcliftongolfclub.co.uk/visitorbooking/,high,
+Orchardleigh Golf Club,https://www.orchardleighgolf.co.uk/,51.2609033,-2.3191149,brs,public,https://visitors.brsgolf.com/orchardleigh,high,
+Bleadon Hill Golf Course,https://www.bleadonhillgolfcourse.co.uk/,51.3164822,-2.9430861,unknown,unknown,,low,homepage loaded (https://www.bleadonhillgolfcourse.co.uk/) but no platform signal found on it or 4 booking-ish link(s)
+Swingrite Golf Centre,https://www.swingrite.co.uk/,51.0076833,-3.0582088,unknown,unknown,,low,homepage loaded (https://swingrite.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Wheathill Golf Club,,51.0723426,-2.5928029,no_site,unknown,,low,no official website resolved (not in county union directory)
+Cricket St Thomas Golf Course,,50.8831904,-2.8987236,no_site,unknown,,low,no official website resolved (not in county union directory)
+Tickenham Golf Club,https://www.tickenhamgolf.co.uk/,51.4467769,-2.7806675,brs,public,https://visitors.brsgolf.com/tickenham#/course/1,high,
+Burnham & Berrow Golf Club,https://burnhamandberrowgolfclub.co.uk/,51.263146,-3.0100968,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Woodspring Golf & Country Club,,51.4169571,-2.6498208,no_site,unknown,,low,no official website resolved (not in county union directory)
+Mendip Spring Golf Club - Lakeside Course,https://www.mendipspringgolfclub.com/,51.3495118,-2.8057035,intelligent_golf,public,https://www.mendipspringgolfclub.com/visitorbooking/,high,
+Henbury Golf Club,,51.4980817,-2.6298448,no_site,unknown,,low,no official website resolved (not in county union directory)
+Worlebury Golf Course,https://www.worleburygc.co.uk/,51.3645667,-2.9440557,golfnow,login_required,,high,booking link requires login: https://www.worleburygc.co.uk/visitorbooking
+Long Ashton Golf Club,https://www.longashtongolfclub.co.uk/,51.4354065,-2.6671047,intelligent_golf,public,https://longashton.intelligentgolf.co.uk/visitorbooking/,high,
+Bath Golf Club,https://www.bathgolfclub.org.uk/,51.3849091,-2.3291806,intelligent_golf,public,https://www.bathgolfclub.org.uk/visitorbooking/,high,
+Clevedon Golf Centre,https://www.clevedongolfcentre.co.uk/,51.4251209,-2.8746285,unknown,unknown,,low,homepage loaded (https://www.clevedongolfcentre.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Lansdown Golf Club,https://www.lansdowngolfclub.co.uk/,51.4222351,-2.406718,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Filton Golf Course,https://www.filtongolfclub.co.uk,51.5113848,-2.589466,clubv1,public,https://filton.hub.clubv1.com/visitors/TeeSheet?date=2026-09-11,high,
+Henbury Golf Club,https://www.henburygolfclub.co.uk,,,intelligent_golf,public,https://www.henburygolfclub.co.uk/visitorbooking/,high,
+Knowle Golf Club,https://www.knowlegolfclub.co.uk/,,,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Long Ashton Golf Club,https://www.longashtongolfclub.co.uk/,,,intelligent_golf,public,https://longashton.intelligentgolf.co.uk/visitorbooking/,high,
+Shirehampton Park Golf Club,https://spgc.shirehamptonparkgolfclub.co.uk,,,unknown,unknown,,low,homepage loaded (https://spgc.shirehamptonparkgolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Woodspring Golf & Country Club,https://www.woodspring-golf.com/,,,intelligent_golf,public,https://woodspring.intelligentgolf.co.uk/visitorbooking/,high,

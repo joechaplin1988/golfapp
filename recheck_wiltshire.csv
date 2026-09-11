@@ -1,0 +1,15 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Dauntsey's School,https://www.dauntseys.org/,51.288538,-1.9922898,unknown,unknown,,low,site reachable (https://www.dauntseys.org/) but no visitor booking found on it or 1 sub-page(s)
+Monkton Park Golf Course,,51.4578163,-2.1084093,no_site,unknown,,low,still no website known
+The Manor House Golf Club,https://www.manorhousegolf.co.uk,51.4994841,-2.2359382,unknown,unknown,,low,site reachable (https://www.exclusive.co.uk/the-manor-house-golf-club/) but no visitor booking found on it or 1 sub-page(s)
+Bradford on Avon Golf Course,,51.3422096,-2.2373709,no_site,unknown,,low,still no website known
+North Wilts Golf Club,https://www.northwiltsgolf.com/,51.4005656,-1.9714775,unknown,unknown,,low,site reachable (https://www.northwiltsgolf.com/) but no visitor booking found on it or 5 sub-page(s)
+Broome Manor Golf Complex,https://www.bmgc.co.uk,51.5376066,-1.7607362,error,unknown,,low,unreachable even with a browser user agent
+Chippenham Golf Club,https://www.chippenhamgolfclub.com,51.4821609,-2.138708,error,unknown,,low,unreachable even with a browser user agent
+Erlestoke Golf Course,https://erlestokegolfclub.co.uk,51.286004,-2.0591682,error,unknown,,low,unreachable even with a browser user agent
+Hamptworth Golf & Country Club,https://www.hamptworthgolf.co.uk,50.9815985,-1.6634686,intelligent_golf,public,https://hamptworth.intelligentgolf.co.uk/visitorbooking/,high,found on https://www.hamptworthgolf.co.uk/
+Westbury Golf Club,https://www.westburygolfclub.com,51.269243,-2.1614628,unknown,unknown,,low,site reachable (https://www.westburygolfclub.com/) but no visitor booking found on it or 3 sub-page(s)
+Cricklade House Hotel & Spa,,51.6364635,-1.8748349,no_site,unknown,,low,still no website known
+Chippenham Golf Centre,https://www.chippenhamgolfclub.com,51.4809319,-2.1818672,error,unknown,,low,unreachable even with a browser user agent
+Oaksey Park,https://www.oakseygolfclub.co.uk,51.6450021,-2.007298,unknown,unknown,,low,site reachable (https://www.oakseygolfclub.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Bowood Golf & Country Club,https://www.bowood.org/golf,,,unknown,unknown,,low,site reachable (https://bowood.org/golf/) but no visitor booking found on it or 1 sub-page(s)

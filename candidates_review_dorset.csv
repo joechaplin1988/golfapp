@@ -1,0 +1,50 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Swanage Golf Games,https://swanagegolfgames.com/,50.6127573,-1.9679751,unknown,unknown,,low,homepage loaded (https://swanagegolfgames.com/) but no platform signal found on it or 1 booking-ish link(s)
+Ferndown Golf Club,https://www.ferndowngolfclub.co.uk,50.7994292,-1.8775017,intelligent_golf,login_required,,high,intelligent_golf convention path requires login: https://www.ferndowngolfclub.co.uk/visitorbooking/
+Meyrick Park Golf Course,https://www.theclubatmeyrickpark.com,50.7286176,-1.8875548,intelligent_golf,public,https://golf.theclubatmeyrickpark.com/visitorbooking/,high,
+Knighton Heath Golf Course,https://www.knightonheathgolfclub.co.uk,50.7610016,-1.9373184,unknown,unknown,,low,homepage loaded (https://www.knightonheathgolfclub.co.uk/) but no platform signal found on it or 4 booking-ish link(s)
+Solent Meads Golf Centre,https://www.solentmeads.com/,50.7216863,-1.7735459,unknown,unknown,,low,homepage loaded (https://www.solentmeads.com/) but no platform signal found on it or 1 booking-ish link(s)
+Weymouth Golf Club,https://www.weymouthgolfclub.co.uk,50.6172336,-2.4778953,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Lyme Regis Golf Club,https://www.lymeregisgolfclub.co.uk,50.7398972,-2.922782,brs,public,https://visitors.brsgolf.com/lymeregis#/course/1,high,
+Came Down Golf Club,https://www.camedowngolfclub.co.uk,50.6767558,-2.444431,brs,public,https://visitors.brsgolf.com/camedown#/course/1,high,confirmed by following the platform link found on the club's own site
+Parley Golf Centre Course,https://www.parleygolf.co.uk,50.7733707,-1.8492363,brs,public,https://visitors.brsgolf.com/parley#/course/1,high,
+Moors Valley Golf Course,https://www.moors-valley.co.uk/things-to-do/golf-course,50.8574025,-1.8540958,unknown,unknown,,low,homepage loaded (https://moors-valley.co.uk/wp-content/uploads/Golf-course.webp) but no platform signal found on it or 0 booking-ish link(s)
+Bridport and West Dorset Golf Club,https://www.bridportgolfclub.co.uk,50.7081057,-2.749547,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://bridport.hub.clubv1.com/Visitors/booking"
+Broadstone Golf Club,https://www.broadstonegolfclub.com,50.7728943,-1.9941551,intelligent_golf,public,https://broadstone.intelligentgolf.co.uk/visitorbooking/,high,
+Sherborne Golf Club,https:// www.sherbornegolfclub.co.uk,50.968324,-2.5251565,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='%20www.sherbornegolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='%20www.sherbornegolfclub.co.uk', port=443): Failed to resolve '%20www.sherbornegolfclub.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Bulbury Woods Golf Club,https://www.bulbury-woods.co.uk,50.7442733,-2.1050514,brs,public,https://visitors.brsgolf.com/bulburywoods#/course/1,high,
+The Dorset Golf & Country Club & Resort,https://www.dorsetgolfresort.com,50.7067359,-2.1924263,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Highcliffe Castle Golf Club,https://www.highcliffecastlegolfclub.co.uk,50.7383648,-1.7201378,intelligent_golf,public,https://www.highcliffecastlegolfclub.co.uk/visitorbooking/,high,
+Barnbougle Dunes Golf Course,,-41.005309,147.4341662,no_site,unknown,,low,no official website resolved (not in county union directory)
+Barnbougle Lost Farm Golf Course,,-40.9985985,147.4593526,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ashley Wood Golf Club,https://www.ashleywoodgolfclub.com,50.8517029,-2.1125535,brs,public,https://visitors.brsgolf.com/ashleywood#/course/1,high,
+Chewton Glen Hotel Executive Course,https://www.chewtonglen.com/hotel/activities/on-site/golf.aspx,50.7443309,-1.6820295,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Queen's Park Golf Course,https://www.queensparkgolfcourse.com,50.7409714,-1.8439398,brs,public,https://visitors.brsgolf.com/queensparkgc#/course/1,high,confirmed by following the platform link found on the club's own site
+Sturminster Marshall Golf Club,https://www.sturminstermarshallgc.co.uk,50.7967161,-2.0683137,brs,public,https://visitors.brsgolf.com/sturminstermarshall#/course/1,high,
+Remedy Oak,https://www.remedyoak.com,50.8713907,-1.9199787,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Merley Park Golf Course,https://www.intelligentgolf.co.uk,50.7852645,-1.9803637,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Wareham Golf Club,https://www.warehamgolfclub.com,50.7008548,-2.1179925,clubv1,public,https://wareham.hub.clubv1.com/visitors/TeeSheet?date=2026-09-11,high,
+Lodmoor Pitch and Putt,,50.6279215,-2.4482027,no_site,unknown,,low,no official website resolved (not in county union directory)
+Dudsbury Golf Club & Hotel,https://www.dudsburygolfclub.co.uk/,50.7818366,-1.89983,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.dudsburygolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Moorina Golf Club,,-41.132474,147.8753044,no_site,unknown,,low,no official website resolved (not in county union directory)
+Crane Valley - Valley Course,https://www.crane-valley.co.uk,50.8761933,-1.8998701,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://crane.hub.clubv1.com/Visitors/booking"
+Crane Valley - Woodland Course,https://www.crane-valley.co.uk,50.8834013,-1.9048122,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://crane.hub.clubv1.com/Visitors/booking"
+Hamworthy Club,https://www.hamworthyclub.co.uk/,50.7792469,-1.9469597,unknown,unknown,,low,homepage loaded (https://www.hamworthyclub.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Wessex Golf Centre,https://wessexgolfcentre.com,50.6204976,-2.4882937,clubv1,public,https://wessex.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,
+Wolfedale Golf Course,,50.7394853,-2.4446373,no_site,unknown,,low,no official website resolved (not in county union directory)
+Scottsdale Golf Course,,-41.1539845,147.5065394,no_site,unknown,,low,no official website resolved (not in county union directory)
+Folke Golf Centre,https://www.folkegolfcentre.co.uk,50.9226473,-2.4879458,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.folkegolfcentre.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Isle of Purbeck Golf Course,https://www.purbeckgolf.co.uk,50.6403428,-1.9823864,intelligent_golf,public,https://www.purbeckgolf.co.uk/visitorbooking/,high,
+Ferndown Forest Golf Club,https://ferndownforestgolfcourse.co.uk,50.8209933,-1.896527,golf_manager,public,https://eu.golfmanager.com/ferndownforest/consumer/book?area=100&resourceType=100,high,
+Ringarooma Golf Course,,-41.2423156,147.6950121,no_site,unknown,,low,no official website resolved (not in county union directory)
+Dudmoor Farm Golf Course,,50.7614637,-1.7861903,no_site,unknown,,low,no official website resolved (not in county union directory)
+Canford Golf Club,https://www.canford.com/golf-club,50.7859729,-1.9479114,unknown,unknown,,low,homepage loaded (https://www.canford.com/golf-club) but no platform signal found on it or 3 booking-ish link(s)
+Christchurch Golf Club - Stour Course,https://www.christchurchgolf.club,50.7528686,-1.8102719,brs,public,https://visitors.brsgolf.com/christchurchmightyclaws#/course/1,high,confirmed by following the platform link found on the club's own site
+Milton Abbey Golf Course,,50.8192733,-2.2892531,no_site,unknown,,low,no official website resolved (not in county union directory)
+Kirkwood Park,,50.6121847,-1.9702827,no_site,unknown,,low,no official website resolved (not in county union directory)
+Yeovil Golf Club,https://www.yeovilgolfclub.com,50.9392529,-2.6064156,intelligent_golf,public,https://www.yeovilgolfclub.com/visitorbooking/,high,
+Isle of Purbeck Golf Club,https://www.purbeckgolf.co.uk,50.6354614,-1.9784338,intelligent_golf,public,https://www.purbeckgolf.co.uk/visitorbooking/,high,
+Bridport Golf Club,https://www.bridportgolfclub.co.uk,-40.996189,147.3797778,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://bridport.hub.clubv1.com/Visitors/booking"
+Parkstone Golf Club,https://www.parkstonegolfclub.com,50.7092351,-1.931462,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.parkstonegolfclub.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.parkstonegolfclub.com', port=443): Failed to resolve 'www.parkstonegolfclub.com' ([Errno 11001] getaddrinfo failed)""))"
+Charminster Golf Club,https://www.wolfedalegolf-dorset.co.uk/,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.wolfedalegolf-dorset.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.wolfedalegolf-dorset.co.uk', port=443): Failed to resolve 'www.wolfedalegolf-dorset.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Yeovil Golf Club,https://www.yeovilgolfclub.com/,50.9392529,-2.6064156,intelligent_golf,public,https://www.yeovilgolfclub.com/visitorbooking/,high,

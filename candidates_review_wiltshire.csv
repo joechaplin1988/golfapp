@@ -1,0 +1,30 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Dauntsey's School,https://www.dauntseys.org/,51.288538,-1.9922898,unknown,unknown,,low,homepage loaded (https://www.dauntseys.org/) but no platform signal found on it or 2 booking-ish link(s)
+Monkton Park Golf Course,,51.4578163,-2.1084093,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Manor House Golf Club,https://www.manorhousegolf.co.uk,51.4994841,-2.2359382,unknown,unknown,,low,homepage loaded (https://www.exclusive.co.uk/the-manor-house-golf-club/) but no platform signal found on it or 6 booking-ish link(s)
+Whitley Golf Club,https://www.whitleygolfclub.com,51.3922537,-2.1571687,brs,public,https://visitors.brsgolf.com/whitley#/course/1,high,confirmed by following the platform link found on the club's own site
+Bradford on Avon Golf Course,,51.3422096,-2.2373709,no_site,unknown,,low,no official website resolved (not in county union directory)
+Cumberwell Park,https://www.cumberwellpark.com,51.3712449,-2.2597371,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+North Wilts Golf Club,https://www.northwiltsgolf.com/,51.4005656,-1.9714775,unknown,unknown,,low,homepage loaded (https://www.northwiltsgolf.com/) but no platform signal found on it or 6 booking-ish link(s)
+Broome Manor Golf Complex,https://www.bmgc.co.uk,51.5376066,-1.7607362,error,unknown,,low,"homepage fetch failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+West Wilts Golf Club,https://www.westwiltsgolfclub.co.uk,51.2170619,-2.1772918,clubv1,not_available,,high,"platform reached but not a public visitor sheet (booking link; members-only, or visitor booking not enabled): https://westwilts.hub.clubv1.com/visitors/booking"
+Chippenham Golf Club,https://www.chippenhamgolfclub.com,51.4821609,-2.138708,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.chippenhamgolfclub.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError('A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider.')))"
+Erlestoke Golf Course,https://erlestokegolfclub.co.uk,51.286004,-2.0591682,error,unknown,,low,"homepage fetch failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+Rushmore Golf Club,https://www.rushmoregolfclub.co.uk,50.9638977,-2.0557494,intelligent_golf,public,https://www.rushmoregolfclub.co.uk/visitorbooking/,high,
+Ogbourne Downs Golf Club,https://www.ogbournedowns.co.uk,51.4749587,-1.7057149,intelligent_golf,public,https://ogbournedowns.intelligentgolf.co.uk/visitorbooking/,high,
+Marlborough Golf Course,https://www.marlboroughgolfclub.co.uk,51.4319313,-1.7370682,intelligent_golf,public,https://www.marlboroughgolfclub.co.uk/visitorbooking/,high,
+Wiltshire Golf and Country Club,https://www.the-wiltshire.co.uk,51.5233674,-1.9311977,brs,public,https://visitors.brsgolf.com/wiltshire#/course/1,high,confirmed by following the platform link found on the club's own site
+Hamptworth Golf & Country Club,https://www.hamptworthgolf.co.uk,50.9815985,-1.6634686,unknown,unknown,,low,homepage loaded (https://www.hamptworthgolf.co.uk/) but no platform signal found on it or 5 booking-ish link(s)
+Wrag Barn Golf & Country Club,https://www.wragbarn.com,51.6174462,-1.7065477,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Westbury Golf Club,https://www.westburygolfclub.com,51.269243,-2.1614628,unknown,unknown,,low,homepage loaded (https://www.westburygolfclub.com/) but no platform signal found on it or 3 booking-ish link(s)
+Salisbury Golf Centre,https://www.salisburygolf.co.uk,51.0767187,-1.8323294,intelligent_golf,public,https://salisbury.intelligentgolf.co.uk/visitorbooking/?course=1,high,
+Tidworth Garrison Golf Club,https://www.tidworthgolfclub.co.uk,51.2298133,-1.6918472,intelligent_golf,public,https://www.tidworthgolfclub.co.uk/visitorbooking/,high,
+Cricklade House Hotel & Spa,,51.6364635,-1.8748349,no_site,unknown,,low,no official website resolved (not in county union directory)
+Upavon Golf Club,https://www.upavongolfclub.co.uk,51.2967463,-1.7839085,intelligent_golf,public,https://www.upavongolfclub.co.uk/visitorbooking/,high,
+Chippenham Golf Centre,https://www.chippenhamgolfclub.com,51.4809319,-2.1818672,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.chippenhamgolfclub.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError('A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider.')))"
+Oaksey Park,https://www.oakseygolfclub.co.uk,51.6450021,-2.007298,unknown,unknown,,low,homepage loaded (https://www.oakseygolfclub.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Salisbury and South Wilts Golf Course,https://www.salisburygolf.co.uk,51.058803,-1.8506044,intelligent_golf,public,https://salisbury.intelligentgolf.co.uk/visitorbooking/?course=1,high,
+Basset Down Golf Course,https://www.basset-down.com,51.5248596,-1.8417505,intelligent_golf,public,https://www.basset-down.com/visitorbooking/,high,confirmed via intelligent_golf's standard booking path
+High Post Golf Club,https://www.highpostgolfclub.co.uk,51.131386,-1.7806846,intelligent_golf,public,https://www.highpostgolfclub.co.uk/visitorbooking/,high,
+Bowood Golf & Country Club,https://www.bowood.org/golf,,,unknown,unknown,,low,homepage loaded (https://bowood.org/golf/) but no platform signal found on it or 5 booking-ish link(s)
+Rushmore Golf Club,https://www.rushmoregolfclub.co.uk,50.9638977,-2.0557494,intelligent_golf,public,https://www.rushmoregolfclub.co.uk/visitorbooking/,high,

@@ -1,0 +1,39 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Shortwood Lodge Golf Club,,51.4753123,-2.4701072,no_site,unknown,,low,no official website resolved (not in county union directory)
+Thornbury Golf Centre,https://www.thornburygc.co.uk/,51.5988426,-2.5372467,esp,public,https://www.e-s-p.com/elitelive/book_group.php,high,
+Gloucester Golf Club,https://www.gloucestergolf.com/,51.8312883,-2.2273919,brs,public,https://visitors.brsgolf.com/gloucester#/course/1,high,confirmed by following the platform link found on the club's own site
+Cotswold Edge Golf Club,https://www.cotswoldedgegolfclub.org.uk/,51.6555011,-2.3290732,unknown,unknown,,low,homepage loaded (https://www.cotswoldedgegolfclub.org.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Tewkesbury Park Golf Club,,51.9796581,-2.1728163,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lilley Brook Golf Course,https://www.lilleybrook.co.uk/,51.8699168,-2.0567067,clubv1,public,https://lilleybrook.hub.clubv1.com/visitors/TeeSheet?date=2026-09-11,high,
+Brickhampton Court Golf Complex,https://www.brickhampton.co.uk/,51.8958636,-2.189342,chronogolf,public,https://www.chronogolf.com/en/club/19511/widget?medium=widget&source=club,high,
+Chipping Sodbury Golf Club,https://www.chippingsodburygolfclub.co.uk/,51.5496908,-2.3907232,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Canons Court Golf,,51.6433497,-2.3747961,no_site,unknown,,low,no official website resolved (not in county union directory)
+Tracy Park Golf & Country Park,,51.443961,-2.4110457,no_site,unknown,,low,no official website resolved (not in county union directory)
+Cotswold Hills Golf Club,https://www.cotswoldhills-golfclub.com/,51.8501433,-2.0720452,unknown,unknown,,low,homepage loaded (https://www.cotswoldhills-golfclub.com/) but no platform signal found on it or 2 booking-ish link(s)
+Forest Hills Golf Club,https://foresthillsgolfclub.co.uk,51.8023788,-2.6076656,intelligent_golf,public,https://foresthills.intelligentgolf.co.uk/visitorbooking/,high,
+Stinchcombe Hill Golf Course,https://www.stinchcombehillgolfclub.com/,51.6838676,-2.3750966,clubv1,public,https://stinchcombehill.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,confirmed by following the platform link found on the club's own site
+Broadway Golf Club,https://www.broadwaygolfclub.co.uk,52.042561,-1.8315097,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Newent Golf Club,https://www.newentgolf.co.uk/,51.9449558,-2.4149642,unknown,unknown,,low,homepage loaded (https://www.newentgolf.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Naunton Downs Golf Club,https://www.nauntondowns.co.uk/,51.9045722,-1.8374179,brs,public,https://visitors.brsgolf.com/nauntondownsgc#/course/1,high,
+Kendleshire Golf Club,https://www.golf.kendleshire.com/,51.5118633,-2.4770237,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Westonbirt Golf Course,,51.6019229,-2.2013317,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ullenwood Manor Golf Course,https://www.stargolfsoc.com/,51.8475823,-2.0835698,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.stargolfsoc.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.stargolfsoc.com', port=443): Failed to resolve 'www.stargolfsoc.com' ([Errno 11001] getaddrinfo failed)""))"
+Shipton Golf Course,https://www.shiptongolf.co.uk/,51.8616157,-1.9695691,unknown,unknown,,low,homepage loaded (https://www.shiptongolf.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Lydney Golf Club,https://www.lydneygolfclub.co.uk/,51.7165581,-2.5139951,unknown,unknown,,low,homepage loaded (https://www.lydneygolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Woodlands Golf & Country Club,https://www.woodlands-golf.com/,51.5495949,-2.5407301,intelligent_golf,public,https://woodlands.intelligentgolf.co.uk/visitorbooking/,high,
+Bristol Golf Club,https://www.bristolgolfclub.co.uk/,51.5352319,-2.600168,intelligent_golf,public,https://golf.bristolgolfclub.co.uk/visitorbooking/,high,
+Cirencester Golf Club,https://www.cirencestergolfclub.co.uk/,51.743062,-1.9821709,brs,public,https://visitors.brsgolf.com/cirencester#/course/1,high,confirmed by following the platform link found on the club's own site
+South Cerney Golf Course,https://www.southcerneygolfcourse.co.uk/,51.6815168,-1.9202005,intelligent_golf,public,https://southcerney.intelligentgolf.co.uk/visitorbooking/,high,
+Sherdons Golf Centre,https://www.sherdons.co.uk/,51.9681348,-2.132385,intelligent_golf,public,https://sherdons.intelligentgolf.co.uk/visitorbooking/,high,confirmed by following the platform link found on the club's own site
+Bristol Golf Centre,https://www.bristolgolfclub.co.uk/,51.5048175,-2.5320178,intelligent_golf,public,https://golf.bristolgolfclub.co.uk/visitorbooking/,high,
+The Players Club,https://www.theplayersgolfclub.com/,51.5117464,-2.3772928,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Rodway Hill Golf Club,https://www.rodway-hill-golf-course.co.uk/,51.8811991,-2.3120337,brs,public,https://visitors.brsgolf.com/rodwayhill#/course/1,high,confirmed by following the platform link found on the club's own site
+Minchinhampton Golf Club,https://www.minchinhamptongolfclub.co.uk/,51.688716,-2.160399,intelligent_golf,public,https://members.minchinhamptongolfclub.co.uk/visitorbooking/,high,
+Cleeve Hill Golf Club,https://www.cleevehillgolfclub.co.uk/,51.9360492,-2.0169945,brs,public,https://visitors.brsgolf.com/cleevehillch#/course/1,high,
+Painswick Golf Course,https://www.painswickgolf.com/,51.8035767,-2.1899843,golfnow,out_of_scope,,high,"GolfNow listing, not the club's own booking — excluded by policy: https://www.golfnow.co.uk/tee-times/facility/12317-painswick-golf-club/search#facilitytype=0&sortby=Date&view=Grouping&holes=3&timemax=42&timemin=10&players=0&pricemax=10000&pricemin=0&promotedcampaignsonly=false"
+Dymock Grange Golf Club,https://www.dymockgrangegolf.co.uk/,51.9849942,-2.4537091,unknown,unknown,,low,homepage loaded (https://www.dymockgrangegolf.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Alexander Park Resort Golf Club,https://www.apresort.co.uk/golf/,,,unknown,unknown,,low,homepage loaded (https://www.apresort.co.uk/golf/) but no platform signal found on it or 5 booking-ish link(s)
+Puckrup Hall Hotel & Golf Club,https://www.puckruphallgolfclub.co.uk,,,brs,public,https://visitors.brsgolf.com/puckruphall#/course/1,high,
+Ross-on-Wye Golf Club,https://www.therossonwyegolfclub.co.uk,,,intelligent_golf,public,https://rossonwye.intelligentgolf.co.uk/visitorbooking/,high,
+South Herefordshire Golf Club,https://www.south-herefordshiregc.co.uk/,,,intelligent_golf,public,https://www.south-herefordshiregc.co.uk/visitorbooking/,high,
+Star Golf Golf Club,https://www.nationalstar.org/products-services-facilities/star-golf/,,,intelligent_golf,not_available,,high,"platform reached but not a public visitor sheet (booking link; members-only, or visitor booking not enabled): https://stargolf.intelligentgolf.co.uk/memberbooking/"

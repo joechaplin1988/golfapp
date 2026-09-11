@@ -1,0 +1,51 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Boldmere Golf Course,,52.55675,-1.8557212,no_site,unknown,,low,no official website resolved (not in county union directory)
+Pype Hayes Golf Course,,52.5324607,-1.8062029,no_site,unknown,,low,no official website resolved (not in county union directory)
+Moor Hall Golf Course,,52.5798123,-1.8134488,no_site,unknown,,low,no official website resolved (not in county union directory)
+Little Aston Golf Club,https://www.littleastongolf.co.uk/,52.5984868,-1.8784453,intelligent_golf,public,https://littleaston.intelligentgolf.co.uk/visitorbooking/,high,
+Sutton Coldfield Golf Club,,52.575814,-1.8687201,no_site,unknown,,low,no official website resolved (not in county union directory)
+Robin Hood Golf Course,,52.4254728,-1.8201799,no_site,unknown,,low,no official website resolved (not in county union directory)
+Druids Heath Golf Club,https://www.druidsheathgc.co.uk/,52.6096809,-1.9033298,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://druidsheath.hub.clubv1.com/Visitors/booking"
+Hatchford Brook Golf Course,https://www.mytimeactive.co.uk/golf/centres/hatchford-brook/default.aspx,52.456996,-1.7606959,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Moseley Golf Course,,52.4347583,-1.8776556,no_site,unknown,,low,no official website resolved (not in county union directory)
+Walsall Golf Club,https://www.walsallgolfclub.co.uk/,52.56695,-1.9599099,clubv1,public,https://walsallgc.hub.clubv1.com/visitors/TeeSheet?date=2026-09-11,high,
+Handsworth Golf Club,https://www.handsworthgc.co.uk/,52.5271939,-1.9464232,golfnow,out_of_scope,,high,"GolfNow listing, not the club's own booking — excluded by policy: https://www.golfnow.co.uk/courses/-3447-handsworth-golf-club-details"
+Olton Golf Course,,52.4289575,-1.7869496,no_site,unknown,,low,no official website resolved (not in county union directory)
+Cocks Moors Woods golf course (Birmingham City Council),,52.4169044,-1.8827506,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hollywood Golf Club,https://www.hollywoodgolfclub.co.uk/,52.3967467,-1.8757673,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.hollywoodgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Hilltop Golf Course (Birmingham City Council),https://www.mytimeactive.co.uk/golf/centres/hilltop/default.aspx,52.5254562,-1.9557947,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Sandwell Park Golf Club,,52.5156356,-1.9672523,no_site,unknown,,low,no official website resolved (not in county union directory)
+Harborne Church Farm 9 Hole Golf Course,,52.4517679,-1.9639524,no_site,unknown,,low,no official website resolved (not in county union directory)
+Harborne Golf Club,,52.4514147,-1.9714447,no_site,unknown,,low,no official website resolved (not in county union directory)
+Widney Manor Golf Course,,52.3905748,-1.7798055,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lickey Hills Golf Course,https://www.mytimeactive.co.uk/locations/lickey-hills-golf-course,52.383456,-2.0148534,gladstone,public,https://mytimeactive.gladstonego.cloud/book,high,
+Golfbug Wast Hills,,52.3932366,-1.9490415,no_site,unknown,,low,no official website resolved (not in county union directory)
+Great Barr Golf Club,https://www.greatbarrgolfclub.co.uk/,52.5655062,-1.9337666,clubv1,public,https://greatbarrgc.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,confirmed by following the platform link found on the club's own site
+Calderfields Golf and Country Club,https://www.calderfieldsgolfclub.co.uk/,52.5871092,-1.9510854,brs,public,https://visitors.brsgolf.com/calderfields#/course/1,high,confirmed by following the platform link found on the club's own site
+War Memorial Park 'FootGolf' Course,,52.3896266,-1.5232805,no_site,unknown,,low,no official website resolved (not in county union directory)
+Halesowen Golf Club,https://www.halesowengc.co.uk/,52.4562635,-2.0312674,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://halesowen.hub.clubv1.com/Visitors/booking"
+Dudley Golf Club,https://www.dudleygolfclub.com,52.4971093,-2.0537877,intelligent_golf,public,https://www.dudleygolfclub.com/visitorbooking/,high,
+Oxley Park Golf Club,,52.6104052,-2.1388057,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bloxwich Golf Course,,52.6333001,-1.9983651,no_site,unknown,,low,no official website resolved (not in county union directory)
+18-hole pitch and putt course,,52.4086601,-1.7882825,no_site,unknown,,low,no official website resolved (not in county union directory)
+Nailcote Hall,https://www.nailcotehall.co.uk/golf/,52.3933298,-1.612052,brs,public,https://visitors.brsgolf.com/nailcotehall#/course/1,high,confirmed by following the platform link found on the club's own site
+Dartmouth Golf Club,,52.5319851,-1.9771127,no_site,unknown,,low,no official website resolved (not in county union directory)
+Copt Heath Golf Club,https://www.coptheathgolf.co.uk/,52.3960722,-1.7491899,intelligent_golf,public,https://www.coptheathgolf.co.uk/visitorbooking/,high,
+Rowley Regis Golf Course,,52.4884356,-2.0465374,no_site,unknown,,low,no official website resolved (not in county union directory)
+Wergs Golf Club,https://www.wergsgolfclub.com/,52.6099376,-2.1817312,brs,public,https://visitors.brsgolf.com/wergs#/course/1,high,
+The South Staffordshire Golf Club,https://www.southstaffordshiregolfclub.co.uk/,52.6073062,-2.169397,brs,public,https://visitors.brsgolf.com/southstaffordshire#/course/1,high,
+Wishaw Golf Club,,52.5450024,-1.7718627,no_site,unknown,,low,no official website resolved (not in county union directory)
+Edgbaston Golf Course,,52.4557746,-1.9184511,no_site,unknown,,low,no official website resolved (not in county union directory)
+Windmill Village Golf Course,,52.4252966,-1.5799635,no_site,unknown,,low,no official website resolved (not in county union directory)
+Allesley Park Golf Course,,52.4192055,-1.5559907,no_site,unknown,,low,no official website resolved (not in county union directory)
+Fulford Heath Golf Club,https://www.fulfordheathgolfclub.co.uk/,52.371774,-1.8713041,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://fhgc.hub.clubv1.com/Visitors/booking"
+Copsewood Grange Golf Course,,52.400431,-1.4593023,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hearsall Golf Club,,52.3929612,-1.5403352,no_site,unknown,,low,no official website resolved (not in county union directory)
+Four Ashes Golf Centre,https://fourashesgolfcentre.co.uk/,52.3770243,-1.7735711,unknown,unknown,,low,homepage loaded (https://fourashesgolfcentre.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Warley Woods Golf Course,,52.4721389,-1.9848167,no_site,unknown,,low,no official website resolved (not in county union directory)
+North Warwickshire Golf Course,,52.433032,-1.6643503,no_site,unknown,,low,no official website resolved (not in county union directory)
+John Reay Golf Centre,https://www.johnreaygolf.com/,52.4451953,-1.5382384,unknown,unknown,,low,homepage loaded (https://www.johnreaygolf.com/) but no platform signal found on it or 0 booking-ish link(s)
+The Mark Butler Golf Academy (Sedgley Golf Centre),https://www.themarkbutlergolfacademy.co.uk/,52.5307407,-2.1366225,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.themarkbutlergolfacademy.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Greenfield Golf Club,https://greenfieldgolf.co.uk/,52.6359943,-2.1156344,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='greenfieldgolf.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError('A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider.')))"
+Walmley Golf Club,,52.5417915,-1.8146081,no_site,unknown,,low,no official website resolved (not in county union directory)
+Tidbury Green Golf Course,,52.3859699,-1.855513,no_site,unknown,,low,no official website resolved (not in county union directory)

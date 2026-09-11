@@ -1,0 +1,16 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Warden Hills Course,,51.9227355,-0.419625,no_site,unknown,,low,still no website known
+Galley Hills Course,,51.9299852,-0.4146655,no_site,unknown,,low,still no website known
+Beadlow Manor,,52.0262872,-0.3814267,no_site,unknown,,low,still no website known
+Colworth Golf Club,https://www.sharnbrookgolfclub.co.uk/,52.2261137,-0.570715,unknown,unknown,,low,site reachable (https://sharnbrookgolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Whipsnade Park Golf Club,,51.8375034,-0.5417199,no_site,unknown,,low,still no website known
+Pavenham Park Golf Club,https://www.pavenhampark.com,52.1945054,-0.5439103,unknown,unknown,,low,site reachable (https://www.pavenhampark.com/) but no visitor booking found on it or 0 sub-page(s)
+Caddington Golf Club,,51.8795729,-0.473474,no_site,unknown,,low,still no website known
+Wyboston Lakes Golf Course,https://www.wybostonlakesgolfclub.co.uk,52.2034556,-0.2818353,unknown,unknown,,low,site reachable (https://www.wybostonlakesgolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Stockwood Park Golf Centre,https://www.stockwoodparkgolfclub,51.8614537,-0.4250147,error,unknown,,low,unreachable even with a browser user agent
+Luton Hoo Golf Course,https://www.lutonhoo.co.uk/luton-hoo-golf-course,51.8548601,-0.4058304,unknown,unknown,,low,site reachable (https://www.lutonhoo.co.uk/) but no visitor booking found on it or 2 sub-page(s)
+Abbotsley Golf Hotel,https://www.abbotsley.com/,52.1963068,-0.2396806,unknown,unknown,,low,site reachable (https://www.abbotsley.com/) but no visitor booking found on it or 0 sub-page(s)
+Chalgrave Manor Golf Club,https://www.chalgravegolf.co.uk,,,unknown,unknown,,low,site reachable (https://chalgravegolf.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Henlow Golf Club,https://www.henlowgolfclub.com,,,unknown,unknown,,low,site reachable (https://henlowgolfclub.com/) but no visitor booking found on it or 1 sub-page(s)
+Sharnbrook Golf Club,https://www.sharnbrookgolfclub.co.uk,,,unknown,unknown,,low,site reachable (https://sharnbrookgolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Abbotsley Golf Hotel,https://www.abbotsley.com/,52.1963068,-0.2396806,unknown,unknown,,low,site reachable (https://www.abbotsley.com/) but no visitor booking found on it or 0 sub-page(s)

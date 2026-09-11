@@ -1,0 +1,32 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Crazy Golf,,52.6592365,1.7264886,no_site,unknown,,low,still no website known
+Dereham Golf Club,,52.690903,0.9335813,no_site,unknown,,low,still no website known
+Ryston Park Golf Club,,52.5832025,0.3907479,no_site,unknown,,low,still no website known
+Hunstanton Golf Club,,52.9613791,0.5174025,no_site,unknown,,low,still no website known
+Gorleston Golf Club,,52.549948,1.7305405,no_site,unknown,,low,still no website known
+King’s Lynn Golf Club,https://www.club-noticeboard.co.uk/kingslynn/,52.7844443,0.4547106,unknown,unknown,,low,site reachable (http://www.club-noticeboard.co.uk/coursereviews/kingslynn/) but no visitor booking found on it or 0 sub-page(s)
+RAF Feltwell Golf Course,,52.4751605,0.5232437,no_site,unknown,,low,still no website known
+Royal West Norfolk Golf Club,,52.9742198,0.6534356,no_site,unknown,,low,still no website known
+Sheringham Golf Links,,52.9443257,1.1900708,no_site,unknown,,low,still no website known
+Sprowston Manor Golf Club,,52.6656215,1.3450609,no_site,unknown,,low,still no website known
+Wensum Valley Hotel Golf Course,,52.6867257,1.1780861,no_site,unknown,,low,still no website known
+Swaffham Golf Club,https://www.club-noticeboard.co.uk/swaffham/,52.6308879,0.6648618,brs,unknown,http://www.brsgolf.com/swaffham/members_home.php,medium,site reachable (https://www.club-noticeboard.co.uk/swaffham/) but no visitor booking found on it or 2 sub-page(s)
+Gorleston Putting Green,https://www.greatyarmouthservices.co.uk/open-spaces/book-sports-facilities/gorleston-cliffs-putting-course,52.5631765,1.7310817,unknown,unknown,,low,site reachable (https://www.greatyarmouthservices.co.uk/welcome) but no visitor booking found on it or 5 sub-page(s)
+Silfield Village Golf Course,,52.5533002,1.1332821,no_site,unknown,,low,still no website known
+Dunston Hall Golf Course,,52.5702852,1.2833233,no_site,unknown,,low,still no website known
+Barnham Broom,https://www.barnham-broom.co.uk/golf,52.6345345,1.0944395,clubv1,public,https://barnham.hub.clubv1.com/Visitors/Booking,high,found on https://barnham-broom.co.uk/golf/
+Denver Golf Club,,52.5890195,0.3641646,no_site,unknown,,low,still no website known
+Royal Cromer Golf Club,,52.9218635,1.3261883,no_site,unknown,,low,still no website known
+Mundesley Golf Course,,52.8768305,1.4194909,no_site,unknown,,low,still no website known
+Middleton Hall Golf Club,https://www.middletonhallgolfclub.com/,52.7204015,0.4517552,unknown,unknown,,low,site reachable (https://www.middletonhallgolfclub.com/) but no visitor booking found on it or 1 sub-page(s)
+Lambert's Point Golf Course,,36.8830011,-76.3195525,no_site,unknown,,low,still no website known
+Ocean View Golf Course,https://www.oceanviewgc.com/,36.9463506,-76.251033,golfnow,out_of_scope,https://vip.teeitup.com/plus-template-4/email-club/,high,GolfNow/TeeItUp only — excluded by policy
+5 Hole Golf Course,,36.9531206,-76.3137088,no_site,unknown,,low,still no website known
+Browston Hall Golf Course,,52.5544162,1.6845131,no_site,unknown,,low,still no website known
+Norfolk Premier Golf,,52.6301211,1.4403109,no_site,unknown,,low,still no website known
+Sewells Point Golf Course,,36.9236542,-76.288068,no_site,unknown,,low,still no website known
+Norwich Family Golf Centre,,52.6468912,1.1657945,no_site,unknown,,low,still no website known
+Hunstanton Putting Green,,52.9415131,0.4876705,no_site,unknown,,low,still no website known
+Royal Norwich Golf Club,,52.7128864,1.1235183,no_site,unknown,,low,still no website known
+Eaton Park Pitch & Kick,https://www.norwich.gov.uk/pitchandkick,52.6191586,1.250527,unknown,unknown,,low,site reachable (https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities) but no visitor booking found on it or 1 sub-page(s)
+Eagles Golf Centre,https://www.eaglesgolfonline.co.uk/,52.7309355,0.3126843,unknown,unknown,,low,site reachable (https://www.eaglesgolfonline.co.uk/) but no visitor booking found on it or 0 sub-page(s)

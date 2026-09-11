@@ -1,0 +1,33 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+The Belfry Golf Course,,52.5579486,-1.7354297,no_site,unknown,,low,no official website resolved (not in county union directory)
+Unique Indoor Golf,https://www.uniqueindoorgolf.co.uk/,52.5827081,-1.5536484,unknown,unknown,,low,homepage loaded (https://uniqueindoorgolf.co.uk/) but no platform signal found on it or 4 booking-ish link(s)
+The Belfry,https://www.thebelfry.co.uk,52.5620421,-1.7353058,unknown,unknown,,low,homepage loaded (https://www.thebelfry.com/) but no platform signal found on it or 9 booking-ish link(s)
+Stoneleigh Deer Park Golf Club,https://www.stoneleighdeerparkgolfclub.com/,52.3467564,-1.5046775,brs,public,https://visitors.brsgolf.com/stoneleighdeer#/course/1,high,confirmed by following the platform link found on the club's own site
+Rugby Golf Club,,52.3749284,-1.2318057,no_site,unknown,,low,no official website resolved (not in county union directory)
+Maxstoke Park Golf Course,,52.49737,-1.6715177,no_site,unknown,,low,no official website resolved (not in county union directory)
+Purley Chase Golf Course,,52.5479821,-1.5521517,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ansty Golf Centre,,52.4496841,-1.4021544,no_site,unknown,,low,no official website resolved (not in county union directory)
+Brandon Wood Golf Club,,52.3750962,-1.421769,no_site,unknown,,low,no official website resolved (not in county union directory)
+Warwickshire Golf and Country Club,,52.3131975,-1.5864405,no_site,unknown,,low,no official website resolved (not in county union directory)
+Atherstone Golf Club,,52.564369,-1.5534587,no_site,unknown,,low,no official website resolved (not in county union directory)
+Coventry Golf Club,,52.3672416,-1.5064511,no_site,unknown,,low,no official website resolved (not in county union directory)
+Forest of Arden Country Club,https://www.marriott.co.uk/hotels/travel/cvtgs-forest-of-arden-marriott-hotel-and-country-club/,52.4639219,-1.663295,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+The Welcombe Golf Club,,52.2049957,-1.6911106,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bidford Grange Golf Course,,52.1660016,-1.8338829,no_site,unknown,,low,no official website resolved (not in county union directory)
+Whitefields Golf Course,,52.3348268,-1.3309899,no_site,unknown,,low,no official website resolved (not in county union directory)
+Leam Valley Golf Centre,,52.3150546,-1.3126106,no_site,unknown,,low,no official website resolved (not in county union directory)
+Feldon Valley Golf Club,https://www.feldonvalleygolf.co.uk/,52.0384144,-1.5524568,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.feldonvalleygolf.co.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.feldonvalleygolf.co.uk', port=443) at 0x138d341ec10>, 'Connection to www.feldonvalleygolf.co.uk timed out. (connect timeout=20)'))"
+Ladbrook Park Golf Club,https://www.ladbrookparkgolf.co.uk/,52.3456053,-1.8540737,unknown,unknown,,low,homepage loaded (https://www.ladbrookparkgolf.co.uk/) but no platform signal found on it or 4 booking-ish link(s)
+Stratford on Avon Golf Club,,52.1942887,-1.684006,no_site,unknown,,low,no official website resolved (not in county union directory)
+Nuneaton Golf Club,,52.5065022,-1.4185264,no_site,unknown,,low,no official website resolved (not in county union directory)
+Stratford Oaks Golf Course,,52.2452314,-1.715971,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ingon Manor Golf & Country Club,https://www.ingonmanor.co.uk/,52.2177872,-1.692971,blocked,unknown,,low,homepage returned HTTP 520 — likely bot-blocked; needs a browser-based check
+Warwick Golf Centre,,52.2828533,-1.6009945,no_site,unknown,,low,no official website resolved (not in county union directory)
+"Ardencote Manor Hotel, Country Club & Spa",https://ardencote.com/,52.2888107,-1.7050914,unknown,unknown,,low,homepage loaded (https://hiddenwell.com/welcome) but no platform signal found on it or 0 booking-ish link(s)
+Golf Range,,52.4868471,-1.3892683,no_site,unknown,,low,no official website resolved (not in county union directory)
+Kenilworth Golf Club,https://www.kenilworthgolfclub.co.uk/,52.3525517,-1.5468051,intelligent_golf,public,https://www.kenilworthgolfclub.co.uk/visitorbooking/,high,
+Leamington and County Golf Club,,52.2569342,-1.5203282,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lea Marston Golf Course,https://www.leamarstonhotel.co.uk/,52.5450264,-1.7087943,brs,public,https://visitors.brsgolf.com/leamarston#/course/1,high,confirmed by following the platform link found on the club's own site
+Bramcote Waters Golf Course,https://www.bramcotewatersgolfclub.co.uk/,52.4930211,-1.3924478,unknown,unknown,,low,homepage loaded (https://bramcotewatersgolfclub.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+Welford-on-Avon Golf Course,https://www.welfordgolf.co.uk/,52.156402,-1.7802537,intelligent_golf,public,https://welford.intelligentgolf.co.uk/visitorbooking/,high,
+Whitefields,https://www.whitefieldsgolfclub.co.uk/course/,52.3356284,-1.3309899,clubv1,public,https://whitefields.hub.clubv1.com/visitors/TeeSheet?date=2026-09-11,high,
