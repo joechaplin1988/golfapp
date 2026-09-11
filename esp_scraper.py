@@ -146,8 +146,15 @@ def scrape_club(club: gc.ClubConfig, date_iso: str, session) -> tuple[list[gc.Te
                 log.error(f"[{club.club_name}] ESP's own backend errored on the group page "
                           f"— transient on their side, not a config problem; keeping existing rows")
             else:
+                # Not always a config fault, and saying so sends people
+                # hunting. Prince's fails this way on one date and returns 50
+                # tee times on the next in the SAME run, alongside a
+                # RemoteDisconnected from the same host — ESP dropping the
+                # session, not a wrong clubid. Only a club that fails on every
+                # date, every run, is a config problem.
                 log.error(f"[{club.club_name}] No booking group link and not on a date chooser — "
-                          f"clubid may be wrong or this club isn't a standard ESP visitor sheet")
+                          f"ESP may have dropped the session (transient, retries next run); "
+                          f"if it fails on every date every run, check clubid={club.course_id}")
             return [], "error"
         grp = gc.fetch(session, club.club_name, "GET", urljoin(start.url, group_href))
         if grp is None:
