@@ -1,11 +1,14 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **eight platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **356 clubs / 419 sheets per scheduled run (2026-09-11)**
-across twenty areas: Kent, Sussex, Surrey, Essex, Hampshire, Hertfordshire, Berkshire,
-Greater London, Buckinghamshire, Oxfordshire, Bedfordshire, Cambridgeshire,
-Northamptonshire, Suffolk, Norfolk, Wiltshire, Dorset, Somerset (with Bristol and
-Bath), Gloucestershire, and Warwickshire with the West Midlands.
+ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **443 clubs / 516 sheets per scheduled run (2026-09-11)**
+across thirty areas, from Kent to Cornwall: the South East (Kent, Sussex, Surrey, Essex,
+Hampshire, Hertfordshire, Berkshire, Greater London, Buckinghamshire, Oxfordshire),
+East Anglia and the east (Bedfordshire, Cambridgeshire, Northamptonshire, Suffolk,
+Norfolk, Lincolnshire), the Midlands (Warwickshire, West Midlands, Leicestershire with
+Rutland, Nottinghamshire, Derbyshire, Staffordshire, Worcestershire, Herefordshire,
+Shropshire) and the West Country (Wiltshire, Dorset, Somerset with Bristol and Bath,
+Gloucestershire, Devon, Cornwall).
 Refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".

@@ -508,3 +508,21 @@ The town chooser now ranks by how many of our courses are within 30 km of
 each candidate, from web/club_points.json — county-level coverage used to
 decide it, and that stopped working the moment we covered both counties in a
 tie. Regenerate that file with build_club_points.py after every club batch.
+
+## Third wave of regions (2026-09-11)
+The Midlands and the West Country, ten more in one pass: Leicestershire with
+Rutland, Nottinghamshire, Derbyshire, Staffordshire, Worcestershire,
+Herefordshire, Shropshire, Lincolnshire, Devon, Cornwall. 354 -> 443 clubs,
+417 -> 516 sheets, thirty areas in all. Woodhall Spa's Hotchkin, Royal North
+Devon, Saunton, St Enodoc, Perranporth, Hollinwell and St Mellion are in.
+
+Boundary names: the two that needed care are "City of Leicester" and "City of
+Nottingham" (the bare names are level-8 districts inside them). Isles of
+Scilly left out on the Isle of Wight rule — straight-line distance would call
+a Scilly course 25 miles from Penzance and then need a boat.
+
+Found while enriching: Chronogolf's host is a marketplace, and the course-fact
+crawler walked off a club's booking page onto whatever the marketplace linked
+first, giving five unrelated clubs Cannock Park's yardage — Cornwall to
+Hampshire. chronogolf.com is now on SHARED_HOSTS with the other booking hosts,
+and those rows were cleared and re-read from each club's own site.

@@ -166,8 +166,13 @@ def norm(s: str) -> str:
 
 # Booking hosts that are the PLATFORM's, not the club's — never scrape these
 # for course facts, they describe the vendor.
+# chronogolf.com is the worst of them: its host is a marketplace, so the
+# crawler walked off the club's booking page onto WHOEVER the marketplace
+# linked first and attributed Cannock Park's 5,143 yards to five unrelated
+# clubs, Cornwall to Hampshire.
 SHARED_HOSTS = ("e-s-p.com", "brsgolf.com", "clubv1.com", "golfmanager.com",
-                "gladstonego.cloud", "intelligentgolf.co.uk", "shiji")
+                "gladstonego.cloud", "intelligentgolf.co.uk", "shiji",
+                "chronogolf.com")
 
 
 # config name -> the name the directories use. Same problem KNOWN_ALIASES
