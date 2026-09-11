@@ -48,6 +48,7 @@ PARK_REASONS = {
     "Bromley Golf Centre": "Mytime Active's Cloudflare blocks the CI runner (works from a normal connection)",
     "Belhus Park Golf Club": "Impulse Leisure's Cloudflare blocks the CI runner (works from a normal connection)",
     "Lickey Hills Golf Course": "Mytime Active's Cloudflare blocks the CI runner (works from a normal connection)",
+    "Hatchford Brook Golf Course": "Mytime Active's Cloudflare blocks the CI runner (works from a normal connection)",
 }
 
 

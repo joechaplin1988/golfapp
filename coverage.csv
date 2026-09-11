@@ -187,7 +187,6 @@ Goring & Streatley Golf Club,live,kent/sussex,intelligent_golf,1,RG8 9QA,,https:
 Hainault Forest Golf Club,live,kent/sussex,intelligent_golf,2,IG7 4QW,,https://hainault.intelligentgolf.co.uk/visitorbooking/
 Ham Manor,live,kent/sussex,intelligent_golf,1,BN16 4JE,,https://www.hammanor.co.uk/visitorbooking/
 Hamptworth Golf & Country Club,live,kent/sussex,intelligent_golf,1,SP5 2DU,,https://hamptworth.intelligentgolf.co.uk/visitorbooking/
-Hatchford Brook Golf Course,live,kent/sussex,gladstone,1,B26 3SS,,https://mytimeactive.gladstonego.cloud/book
 Hever Castle Golf Club,live,kent/sussex,intelligent_golf,2,TN8 7NP,,https://hever.intelligentgolf.co.uk/visitorbooking/
 Hill Barn Golf Club,live,kent/sussex,esp,1,BN14 9QF,,http://www.e-s-p.com/elitelive/book_group.php
 Holtye Golf Club,live,kent/sussex,intelligent_golf,1,TN8 7ED,,https://www.holtye.com/visitorbooking/
@@ -356,6 +355,7 @@ Whitley Golf Club,live,wiltshire,brs,1,SN12 8EQ,,https://visitors.brsgolf.com/wh
 Wiltshire Golf and Country Club,live,wiltshire,brs,2,SN4 7PB,,https://visitors.brsgolf.com/wiltshire#/course/1
 Belhus Park Golf Club,parked,essex,gladstone,1,RM15 4QR,Impulse Leisure's Cloudflare blocks the CI runner (works from a normal connection),https://impulseleisure.gladstonego.cloud/book
 Bromley Golf Centre,parked,kent/sussex,gladstone,2,BR2 8JF,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),
+Hatchford Brook Golf Course,parked,kent/sussex,gladstone,1,B26 3SS,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),https://mytimeactive.gladstonego.cloud/book
 High Elms Golf Course,parked,kent/sussex,gladstone,2,BR6 7JL,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),
 Orpington Golf Centre,parked,kent/sussex,gladstone,3,BR5 3HY,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),https://mytimeactive.gladstonego.cloud/book
 Lickey Hills Golf Course,parked,westmidlands,gladstone,1,B45 8RR,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),https://mytimeactive.gladstonego.cloud/book
