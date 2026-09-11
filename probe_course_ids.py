@@ -75,6 +75,26 @@ def postcode_from(s, url):
     return f"{m.group(1)} {m.group(2)}" if m else ""
 
 
+def valid_postcodes(codes: list) -> set:
+    """Which of these does Postcodes.io actually know? One bulk call."""
+    codes = [c for c in codes if c]
+    if not codes:
+        return set()
+    try:
+        r = requests.post("https://api.postcodes.io/postcodes",
+                          json={"postcodes": codes[:100]}, timeout=30)
+        return {x["query"] for x in r.json().get("result", []) if x.get("result")}
+    except (requests.RequestException, ValueError, KeyError):
+        # Don't drop good data because the lookup was down — just don't claim
+        # to have validated it.
+        log_unvalidated()
+        return set(codes)
+
+
+def log_unvalidated():
+    print("  (postcode validation unavailable — values written unchecked)")
+
+
 def row(**kw):
     d = {f: "" for f in FIELDS}
     d.update(kw)
@@ -481,6 +501,13 @@ def main():
             out.append(x)
             flag = "OK " if x["verified"] else "?? "
             print(f"  {flag} {x['club_name']:34} {x['platform']:16} course_id={x['course_id'] or '-':6} pc={pc or '-':9} {x['evidence'][:60]}")
+
+    good = valid_postcodes([x["postcode"] for x in out])
+    for x in out:
+        if x["postcode"] and x["postcode"] not in good:
+            print(f"  !! {x['club_name']}: {x['postcode']!r} is not a real postcode — cleared, fill it by hand")
+            x["evidence"] = (x["evidence"] + "; " if x["evidence"] else "") + f"rejected postcode {x['postcode']}"
+            x["postcode"] = ""
 
     with open(a.out, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS)

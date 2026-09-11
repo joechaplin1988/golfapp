@@ -118,6 +118,10 @@ COUNTY_BOUNDS = {
     # Asking for it at 6 returns nothing at all, silently — the same trap
     # Berkshire sets. 128 golf features at the right level.
     "london": ["Greater London"],
+    # Milton Keynes is a separate unitary and OSM calls it "City of Milton
+    # Keynes" — plain "Milton Keynes" matches no boundary at any level, and
+    # the Buckinghamshire boundary does not contain it.
+    "buckinghamshire": ["Buckinghamshire", "City of Milton Keynes"],
 }
 
 # Areas whose OSM boundary is not at the usual admin_level 6.
@@ -247,6 +251,9 @@ COUNTY_UNION_URLS = {
     # live because they sit inside our Kent/Surrey/Essex boundaries.
     # OSM-only, plus its website tags.
     "london": None,
+    # Same Berks/Bucks/Oxon union as Berkshire — WordPress, no parsable club
+    # directory. OSM-only, plus its website tags.
+    "buckinghamshire": None,
 }
 
 SOCIAL_HOSTS = ("facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com", "youtube.com")

@@ -1,4 +1,5 @@
 club_name,course_type,yardage,all_yardages,source_url,note
+Abbey Hill Golf Centre,,,,https://abbeyhillgc.co.uk/,no yardage found
 Abbey Moor Golf Club,,,,https://www.playgolfgroup.com/abbeymoor/,no yardage found
 Addington Court Golf Club (Academy),,,,https://golf.addingtoncourt-golfclub.co.uk,no yardage found
 Addington Court Golf Club (Championship),,,,https://golf.addingtoncourt-golfclub.co.uk,no yardage found
@@ -13,10 +14,12 @@ Arkley Golf Club,parkland,6030,6030,https://www.arkleygolfclub.co.uk/golf/the-co
 Ash Valley Golf Club (Little Links),parkland,6611,6611,https://www.ashvalley.co.uk/,types seen: parkland/links
 Ash Valley Golf Club (Valley Course),parkland,6611,6611,https://www.ashvalley.co.uk/,types seen: parkland/links
 Ashford Golf Club,parkland,6313,6313 6065 5490,https://www.ashfordgolfclub.co.uk/,several yardages — check which tee
+Aspley Guise & Woburn Sands Golf Club,heathland,5944,5944,https://www.aspleyguisegolfclub.co.uk/,types seen: heathland/parkland
 Avington Park Golf Course,parkland,,,https://www.avingtongolf.co.uk/,no yardage found
 Banstead Downs Golf Club,downland,6600,6600,https://www.bansteaddowns.co.uk/,
 Basingstoke Golf Club,downland,,,https://www.basingstokegolfclub.co.uk/,no yardage found
 Batchworth Park Golf Club,parkland,6723,6723,https://batchworthparkgolf.co.uk/,
+Beaconsfield Golf Club,parkland,,,https://www.beaconsfieldgolfclub.co.uk/,no yardage found
 Belhus Park Golf Club,parkland,,,https://www.impulseleisure.co.uk/golf,no yardage found
 Berkhamsted Golf Club,heathland,6605,6605,https://www.berkhamstedgolfclub.co.uk/,types seen: heathland/links
 Bexleyheath Golf Club,,,,https://bexleyheath-golf.com/,no yardage found
@@ -59,6 +62,7 @@ Chesfield Downs Golf Club (Par 3),,,,https://golf.chesfielddownsgolf.co.uk,no ya
 Chestfield Golf Club,downland,,,https://www.chestfield-golfclub.co.uk/,no yardage found
 Chichester Golf Club,,,,https://chichestergolf.com,no yardage found
 Chigwell Golf Club,parkland,6309,6309,https://www.chigwellgolfclub.co.uk/,
+Chiltern Forest Golf Course,parkland,5687,5687,https://chilternforest.co.uk/,
 Chipstead Golf Club,,,,https://www.chipsteadgolf.co.uk/,no yardage found
 Chobham Golf Club,parkland,5820,5820,https://www.chobhamgolfclub.co.uk/,
 Cinque Ports,links,,,https://members.royalcinqueports.com/,no yardage found
@@ -123,6 +127,7 @@ Horsham Golf Club,,,,https://horshamgolf.co.uk,no yardage found
 Hurtmore Golf Club,,,,https://www.hurtmore-golf.co.uk/,no yardage found
 Ifield Golf and Country Club,parkland,6319,6319,https://www.ifieldgolf.com/,
 Ingrebourne Links Golf Course,parkland,,,https://ingrebournelinks.com/,types seen: parkland/links; no yardage found
+Ivinghoe Golf Club,parkland,,,https://ivinghoegolfclub.co.uk/,no yardage found
 Kings Hill Golf Club,heathland,,,https://kingshillgolf.com/,types seen: heathland/links; no yardage found
 Kingswood Golf & Country Club,parkland,6900,6900,https://www.kingswood-golf.co.uk/,
 Knole Park,,,,https://www.knoleparkgolfclub.co.uk/,no yardage found
@@ -163,6 +168,7 @@ North Foreland Golf Club (North Foreland),clifftop,,,https://www.northforeland.c
 North Foreland Golf Club (Par 3 Northcliffe),clifftop,,,https://www.northforeland.co.uk/the-courses/,no yardage found
 North Middlesex Golf Club,parkland,5587,5587,https://www.northmiddlesexgc.co.uk/,
 Notley Golf Course,parkland,6116,6116,https://notleysgolfclub.co.uk/,
+Oakland Park Golf Club,parkland,6835,6835,https://www.oaklandparkgolf.co.uk/,
 Old Fold Manor Golf Course,heathland,6500,6500,https://www.oldfoldmanor.co.uk/,types seen: heathland/links
 Old Thorns,,,,https://www.chronogolf.com,no yardage found
 Orpington Golf Centre (Cray 18 Holes),,,,https://www.mytimeactive.co.uk/orpington,no yardage found
@@ -277,9 +283,11 @@ Weybrook Park Golf Club (Combo East to WF9),,,,https://www.weybrookpark.co.uk,no
 Weybrook Park Golf Club (Weybrook Park East),,,,https://www.weybrookpark.co.uk,no yardage found
 Weybrook Park Golf Club (Weybrook Park West),,,,https://www.weybrookpark.co.uk,no yardage found
 Whitehill Golf,,,,https://www.whitehillgolf.co.uk/,no yardage found
+Whiteleaf Golf Club,downland,,,https://www.whiteleafgolfclub.co.uk/scorecard,types seen: downland/parkland; no yardage found
 Wickham Park Golf Course,,,,https://golf.wickhamparkgolf.co.uk,no yardage found
 Wildernesse,,,,https://www.wildernesse.co.uk/,no yardage found
 Willingdon,,6094,6094 5841 5527,https://www.willingdongolfclub.co.uk/,several yardages — check which tee
 Woodcote Park Golf Club,downland,6787,6787,https://www.woodcotepgc.com/,types seen: downland/parkland
 Woolston Manor Golf & Country Club,,,,https://www.woolstonmanor.co.uk,no yardage found
 Worldham Golf Club,,,,https://www.chronogolf.com,no yardage found
+Wycombe Heights Golf Centre,,6053,6053,https://wycombeheightsgc.co.uk/golf/courses/,

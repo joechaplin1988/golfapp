@@ -42,6 +42,14 @@ Royal Ascot Golf Club,live,berkshire,intelligent_golf,1,SL5 7LJ,,https://royalas
 The Caversham,live,berkshire,intelligent_golf,1,RG4 7UT,,https://caversham.intelligentgolf.co.uk/visitorbooking/
 The Club at Mapledurham,live,berkshire,intelligent_golf,1,RG4 7UD,,https://golf.theclubatmapledurham.com/visitorbooking/
 The West Berkshire Golf Club,live,berkshire,brs,1,RG20 7DU,,https://visitors.brsgolf.com/westberkshire#/course/1
+Abbey Hill Golf Centre,live,buckinghamshire,esp,1,MK8 8AA,,https://www.e-s-p.com/elitelive/book_webpromotion.php?ref=AHcrazygolf&dt=CRAZYGOLF&
+Aspley Guise & Woburn Sands Golf Club,live,buckinghamshire,intelligent_golf,1,MK17 8DX,,https://aspley.intelligentgolf.co.uk/visitorbooking/
+Beaconsfield Golf Club,live,buckinghamshire,intelligent_golf,1,HP9 2UR,,https://www.beaconsfieldgolfclub.co.uk/visitorbooking/
+Chiltern Forest Golf Course,live,buckinghamshire,brs,1,HP22 5NQ,,https://visitors.brsgolf.com/chilternforest#/course/1
+Ivinghoe Golf Club,live,buckinghamshire,clubv1,1,LU7 9EF,,https://ivinghoe.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
+Oakland Park Golf Club,live,buckinghamshire,brs,1,HP8 4LW,,https://visitors.brsgolf.com/oaklandpark#/course/1
+Whiteleaf Golf Club,live,buckinghamshire,clubv1,1,HP27 0LY,,https://whiteleaf.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
+Wycombe Heights Golf Centre,live,buckinghamshire,esp,1,HP10 9SZ,,https://www.e-s-p.com/elitelive/book_date.php
 Blakes Golf Course,live,essex,brs,1,CM16 6RZ,,https://visitors.brsgolf.com/blakes#/course/1
 Braintree Golf Club,live,essex,intelligent_golf,1,CM77 8DD,,https://www.braintreegolfclub.co.uk/visitorbooking/
 Brentwood Golf Centre at Hartswood,live,essex,brs,1,CM14 5RJ,,https://visitors.brsgolf.com/brentwood
@@ -235,6 +243,8 @@ Bromley Golf Centre,parked,kent/sussex,gladstone,2,BR2 8JF,Mytime Active's Cloud
 High Elms Golf Course,parked,kent/sussex,gladstone,2,BR6 7JL,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),
 Orpington Golf Centre,parked,kent/sussex,gladstone,3,BR5 3HY,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),https://mytimeactive.gladstonego.cloud/book
 The Berkshire Golf Club,no_visitor_booking,berkshire,intelligent_golf,0,,booking page requires a member login,
+Buckingham Golf Club,no_visitor_booking,buckinghamshire,clubv1,0,,"on clubv1, but visitor booking is switched off",
+Ellesborough Golf Club,no_visitor_booking,buckinghamshire,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Basildon Golf Course,no_visitor_booking,essex,intelligent_golf,0,,"on intelligent_golf, but visitor booking is switched off",
 Boyce Hill Golf Course,no_visitor_booking,essex,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Burnham-on-Crouch Golf Club,no_visitor_booking,essex,clubv1,0,,"on clubv1, but visitor booking is switched off",
@@ -306,6 +316,34 @@ Wessex Downs Golf Course,unresolved,berkshire,no_site,0,,no working website foun
 Winter Hill Golf Course,unresolved,berkshire,no_site,0,,no working website found,
 Wokefield Park,unresolved,berkshire,no_site,0,,no working website found,
 Wokingham Family Golf,unresolved,berkshire,unknown,0,,homepage loaded (https://www.wokinghamfamilygolf.co.uk/) but no platform signal found on it or 2 booking-ish l,
+Aylesbury Vale Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
+Bow Brickhill Heath,unresolved,buckinghamshire,no_site,0,,no working website found,
+Buckinghamshire Golf Course,unresolved,buckinghamshire,no_site,0,,no working website found,
+Burnham Beeches Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
+Chiltern Hills Golf Course,unresolved,buckinghamshire,no_site,0,,no working website found,
+Chiltern Hospital Golf Course,unresolved,buckinghamshire,no_site,0,,no working website found,
+Flackwell Heath Golf Course,unresolved,buckinghamshire,no_site,0,,no working website found,
+Gerrards Cross Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
+Harewood Downs Golf Course,unresolved,buckinghamshire,no_site,0,,no working website found,
+Harleyford Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
+Hazlemere Golf Club,unresolved,buckinghamshire,error,0,,site refused or failed to load,
+Hedsor Golf Course,unresolved,buckinghamshire,no_site,0,,no working website found,
+Huntswood Golf Course,unresolved,buckinghamshire,no_site,0,,no working website found,
+Lambourne Golf Club,unresolved,buckinghamshire,error,0,,site refused or failed to load,
+Ley Hill GC,unresolved,buckinghamshire,no_site,0,,no working website found,
+Magnolia Park,unresolved,buckinghamshire,unknown,0,,homepage loaded (https://magnoliapark.co.uk/) but no platform signal found on it or 0 booking-ish link(s),
+Mentmore Golf and Country Club,unresolved,buckinghamshire,no_site,0,,no working website found,
+Silverstone Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
+Southfield,unresolved,buckinghamshire,no_site,0,,no working website found,
+Stoke Park Golf Course,unresolved,buckinghamshire,dead_link,0,,no working website found,
+The South Buckinghamshire Golf Course,unresolved,buckinghamshire,unknown,0,,homepage loaded (https://thesouthbuckinghamshire.co.uk/) but no platform signal found on it or 0 booking-ish l,
+Thorney Park Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
+Three Locks Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
+Weston Turville  Golf Club,unresolved,buckinghamshire,error,0,,site refused or failed to load,
+Wexham Park Golf Centre,unresolved,buckinghamshire,no_site,0,,no working website found,
+Whipsnade Park Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
+Windmill Hill Golf Centre,unresolved,buckinghamshire,no_site,0,,no working website found,
+Woburn Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
 Ballards Gore,unresolved,essex,unknown,0,,homepage loaded (https://www.ballardsgore.com/) but no platform signal found on it or 3 booking-ish link(s),
 Belfairs Golf Club,unresolved,essex,unknown,0,,homepage loaded (https://www.belfairsgolfclub.co.uk/) but no platform signal found on it or 3 booking-ish link,
 Bentley Golf Course,unresolved,essex,unknown,0,,homepage loaded (https://bentleygolfclub.com/) but no platform signal found on it or 5 booking-ish link(s),
@@ -402,7 +440,6 @@ Brookmans Park Golf Course,unresolved,hertfordshire,no_site,0,,no working websit
 Centurion Golf Club,unresolved,hertfordshire,no_site,0,,no working website found,
 Chadwell Springs Golf Club,unresolved,hertfordshire,no_site,0,,no working website found,
 Cheshunt Park Golf Course,unresolved,hertfordshire,dead_link,0,,no working website found,
-Chiltern Hills Golf Course,unresolved,hertfordshire,no_site,0,,no working website found,
 Chorleywood Golf Club,unresolved,hertfordshire,no_site,0,,no working website found,
 Dyrham Park Country Club,unresolved,hertfordshire,no_site,0,,no working website found,
 East Herts Golf Club,unresolved,hertfordshire,unknown,0,,homepage loaded (https://www.easthertsgolfclub.co.uk/) but no platform signal found on it or 4 booking-ish lin,
@@ -410,7 +447,6 @@ Hanbury Manor Marriott Hotel & Country Club,unresolved,hertfordshire,blocked,0,,
 Harpenden Common Golf Course,unresolved,hertfordshire,no_site,0,,no working website found,
 Hartsbourne Country Club,unresolved,hertfordshire,unknown,0,,homepage loaded (https://www.hartsbournecountryclub.co.uk/) but no platform signal found on it or 0 booking-is,
 Knebworth Golf Course,unresolved,hertfordshire,no_site,0,,no working website found,
-Ley Hill GC,unresolved,hertfordshire,no_site,0,,no working website found,
 Melbourne Course,unresolved,hertfordshire,no_site,0,,no working website found,
 Palmerston Course,unresolved,hertfordshire,no_site,0,,no working website found,
 Panshanger Golf Complex,unresolved,hertfordshire,blocked,0,,site refused or failed to load,

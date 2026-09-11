@@ -1,0 +1,41 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Aspley Guise & Woburn Sands Golf Club,https://www.aspleyguisegolfclub.co.uk/,52.0164912,-0.6396976,intelligent_golf,public,https://aspley.intelligentgolf.co.uk/visitorbooking/,high,
+Buckinghamshire Golf Course,,51.5726934,-0.4916732,no_site,unknown,,low,no official website resolved (not in county union directory)
+Richings Park Golf and Country Club,,51.4976784,-0.519644,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ley Hill GC,,51.7075525,-0.5635208,no_site,unknown,,low,no official website resolved (not in county union directory)
+Flackwell Heath Golf Course,,51.6002043,-0.6974482,no_site,unknown,,low,no official website resolved (not in county union directory)
+Whiteleaf Golf Club,https://www.whiteleafgolfclub.co.uk/,51.7343804,-0.8091153,clubv1,public,https://whiteleaf.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,confirmed by following the platform link found on the club's own site
+Stoke Park Golf Course,https://www.stokepark.com/golf,51.5349918,-0.6041676,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Windmill Hill Golf Centre,,51.9931742,-0.7752656,no_site,unknown,,low,no official website resolved (not in county union directory)
+Aylesbury Vale Golf Club,,51.9166102,-0.7400595,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ellesborough Golf Club,https://www.ellesboroughgolf.co.uk/,51.7549245,-0.7723663,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://ellesborough.hub.clubv1.com/Visitors/booking"
+Weston Turville  Golf Club,https://www.westonturvillegc.co.uk/,51.7964143,-0.7655076,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.westonturvillegc.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Harewood Downs Golf Course,,51.6511304,-0.5767964,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ivinghoe Golf Club,https://ivinghoegolfclub.co.uk/,51.8406602,-0.6293652,clubv1,public,https://ivinghoe.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,
+Buckingham Golf Club,https://www.buckinghamgolfclub.co.uk/,51.9982288,-1.0212139,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://buckingham.hub.clubv1.com/Visitors/booking"
+Hazlemere Golf Club,https://www.hazlemeregolfclub.co.uk/,51.6538556,-0.700088,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.hazlemeregolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Whipsnade Park Golf Club,,51.8375034,-0.5417199,no_site,unknown,,low,no official website resolved (not in county union directory)
+Chiltern Forest Golf Course,https://chilternforest.co.uk/,51.7878367,-0.7085744,brs,public,https://visitors.brsgolf.com/chilternforest#/course/1,high,confirmed by following the platform link found on the club's own site
+Home Park,,52.0280483,-1.0192566,no_site,unknown,,low,no official website resolved (not in county union directory)
+Southfield,,51.7603194,-0.9845586,no_site,unknown,,low,no official website resolved (not in county union directory)
+Huntswood Golf Course,,51.5414657,-0.6791287,no_site,unknown,,low,no official website resolved (not in county union directory)
+Magnolia Park,https://magnoliapark.co.uk/,51.8228063,-1.1021987,unknown,unknown,,low,homepage loaded (https://magnoliapark.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+The South Buckinghamshire Golf Course,https://www.thesouthbuckinghamshire.co.uk/,51.5441119,-0.6026328,unknown,unknown,,low,homepage loaded (https://thesouthbuckinghamshire.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Lambourne Golf Club,https://lambourneclub.co.uk,51.5576155,-0.6627781,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='lambourneclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Wycombe Heights Golf Centre,https://www.wycombeheightsgc.co.uk,51.6188018,-0.6948978,esp,public,https://www.e-s-p.com/elitelive/book_date.php,high,
+Beaconsfield Golf Club,https://www.beaconsfieldgolfclub.co.uk/,51.6100691,-0.6182759,intelligent_golf,public,https://www.beaconsfieldgolfclub.co.uk/visitorbooking/,high,confirmed via intelligent_golf's standard booking path
+Three Locks Golf Club,,51.9507332,-0.6994344,no_site,unknown,,low,no official website resolved (not in county union directory)
+Burnham Beeches Golf Club,,51.5492284,-0.6460634,no_site,unknown,,low,no official website resolved (not in county union directory)
+Chiltern Hospital Golf Course,,51.6888401,-0.6918583,no_site,unknown,,low,no official website resolved (not in county union directory)
+Oakland Park Golf Club,https://www.oaklandparkgolfclub.co.uk/,51.6239245,-0.5833162,brs,public,https://visitors.brsgolf.com/oaklandpark#/course/1,high,
+Harleyford Golf Club,,51.5595164,-0.8057276,no_site,unknown,,low,no official website resolved (not in county union directory)
+Silverstone Golf Club,,52.0627688,-1.041862,no_site,unknown,,low,no official website resolved (not in county union directory)
+Chiltern Hills Golf Course,,51.6641639,-0.5270911,no_site,unknown,,low,no official website resolved (not in county union directory)
+Gerrards Cross Golf Club,,51.5986803,-0.5435382,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hedsor Golf Course,,51.5763725,-0.6719051,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bow Brickhill Heath,,51.9977273,-0.6656566,no_site,unknown,,low,no official website resolved (not in county union directory)
+Thorney Park Golf Club,,51.506327,-0.4934834,no_site,unknown,,low,no official website resolved (not in county union directory)
+Mentmore Golf and Country Club,,51.8643963,-0.6926886,no_site,unknown,,low,no official website resolved (not in county union directory)
+Woburn Golf Club,,51.9927028,-0.6575053,no_site,unknown,,low,no official website resolved (not in county union directory)
+Abbey Hill Golf Centre,https://abbeyhillgc.co.uk/,52.0442567,-0.8117644,esp,public,https://www.e-s-p.com/elitelive/book_webpromotion.php?ref=AHcrazygolf&dt=CRAZYGOLF&,high,
+Wexham Park Golf Centre,,51.5381178,-0.5729347,no_site,unknown,,low,no official website resolved (not in county union directory)

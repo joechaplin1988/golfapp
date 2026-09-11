@@ -1,8 +1,9 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **eight platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **236 clubs / 284 sheets per scheduled run (2026-09-10)**, Kent,
-Sussex, Surrey, Essex, Hampshire, Hertfordshire, Berkshire and Greater London done, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
+ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **243 clubs / 292 sheets per scheduled run (2026-09-11)**, Kent,
+Sussex, Surrey, Essex, Hampshire, Hertfordshire, Berkshire, Greater London
+and Buckinghamshire done, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
 
@@ -795,6 +796,27 @@ surfaced as "Worldham Golf Club: no availability in 14 days". Worldham has
 per day) and backs off on 429; the scraper paces its four party-size calls.
 Worth remembering: on this platform a rate limit is indistinguishable from
 an empty sheet unless you check the status code.
+
+### Buckinghamshire (2026-09-11)
+Checked the admin level BEFORE enumerating this time — 6 gives 39 features,
+5 and 8 give none. Milton Keynes is a separate unitary and OSM calls it
+**"City of Milton Keynes"**; plain "Milton Keynes" matches no boundary at any
+level, and the Buckinghamshire boundary does not contain it, so Abbey Hill
+and Windmill Hill would have been missed. Same BB&O union as Berkshire, no
+parsable directory, so OSM-only.
+
+40 fingerprinted → 8 ready → **8 clubs live** (`15 ok, 1 empty, 0 error;
+631 tee times`): Beaconsfield, Chiltern Forest, Oakland Park, Whiteleaf,
+Ivinghoe, Wycombe Heights, Abbey Hill and Aspley Guise.
+
+**A second impossible postcode, so the check is now automatic.** Abbey Hill
+came back as `PV9G 6TZ` — "PV" is not a UK postcode area. Great Hadham's
+`P89 9CM` was the same class of error. Both look like postcodes to a regex,
+geocode to nothing, and leave the club scraped-but-invisible. The probe now
+validates every scraped postcode against Postcodes.io in one bulk call and
+CLEARS any it doesn't recognise, so the row arrives blank and obvious rather
+than plausible and wrong. If the lookup itself is unavailable it says so and
+writes the values unchecked, rather than discarding good data.
 
 ### Settling the "IG seen, sheet unconfirmed" clubs (2026-09-10)
 41 clubs sat in `unresolved` because the fingerprint found an Intelligent

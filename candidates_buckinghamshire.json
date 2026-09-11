@@ -1,0 +1,346 @@
+[
+  {
+    "name": "Aspley Guise & Woburn Sands Golf Club",
+    "lat": 52.0164912,
+    "lon": -0.6396976,
+    "source": "osm",
+    "osm_site": "https://www.aspleyguisegolfclub.co.uk/",
+    "official_site": "https://www.aspleyguisegolfclub.co.uk/"
+  },
+  {
+    "name": "Denham Golf Club",
+    "lat": 51.5839546,
+    "lon": -0.5186907,
+    "source": "osm",
+    "osm_site": "https://www.denhamgolfclub.co.uk/",
+    "official_site": "https://www.denhamgolfclub.co.uk/"
+  },
+  {
+    "name": "Buckinghamshire Golf Course",
+    "lat": 51.5726934,
+    "lon": -0.4916732,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Richings Park Golf and Country Club",
+    "lat": 51.4976784,
+    "lon": -0.519644,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ley Hill GC",
+    "lat": 51.7075525,
+    "lon": -0.5635208,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Flackwell Heath Golf Course",
+    "lat": 51.6002043,
+    "lon": -0.6974482,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Whiteleaf Golf Club",
+    "lat": 51.7343804,
+    "lon": -0.8091153,
+    "source": "osm",
+    "osm_site": "https://www.whiteleafgolfclub.co.uk/",
+    "official_site": "https://www.whiteleafgolfclub.co.uk/"
+  },
+  {
+    "name": "Stoke Park Golf Course",
+    "lat": 51.5349918,
+    "lon": -0.6041676,
+    "source": "osm",
+    "osm_site": "https://www.stokepark.com/golf",
+    "official_site": "https://www.stokepark.com/golf"
+  },
+  {
+    "name": "Windmill Hill Golf Centre",
+    "lat": 51.9931742,
+    "lon": -0.7752656,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Aylesbury Vale Golf Club",
+    "lat": 51.9166102,
+    "lon": -0.7400595,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ellesborough Golf Club",
+    "lat": 51.7549245,
+    "lon": -0.7723663,
+    "source": "osm",
+    "osm_site": "https://www.ellesboroughgolf.co.uk/",
+    "official_site": "https://www.ellesboroughgolf.co.uk/"
+  },
+  {
+    "name": "Weston Turville  Golf Club",
+    "lat": 51.7964143,
+    "lon": -0.7655076,
+    "source": "osm",
+    "osm_site": "https://www.westonturvillegc.co.uk/",
+    "official_site": "https://www.westonturvillegc.co.uk/"
+  },
+  {
+    "name": "Chartridge Park Golf Club",
+    "lat": 51.7194638,
+    "lon": -0.6415103,
+    "source": "osm",
+    "osm_site": "https://www.chartridgepark.co.uk/",
+    "official_site": "https://www.chartridgepark.co.uk/"
+  },
+  {
+    "name": "Harewood Downs Golf Course",
+    "lat": 51.6511304,
+    "lon": -0.5767964,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ivinghoe Golf Club",
+    "lat": 51.8406602,
+    "lon": -0.6293652,
+    "source": "osm",
+    "osm_site": "https://ivinghoegolfclub.co.uk/",
+    "official_site": "https://ivinghoegolfclub.co.uk/"
+  },
+  {
+    "name": "Buckingham Golf Club",
+    "lat": 51.9982288,
+    "lon": -1.0212139,
+    "source": "osm",
+    "osm_site": "https://www.buckinghamgolfclub.co.uk/",
+    "official_site": "https://www.buckinghamgolfclub.co.uk/"
+  },
+  {
+    "name": "Hazlemere Golf Club",
+    "lat": 51.6538556,
+    "lon": -0.700088,
+    "source": "osm",
+    "osm_site": "https://www.hazlemeregolfclub.co.uk/",
+    "official_site": "https://www.hazlemeregolfclub.co.uk/"
+  },
+  {
+    "name": "Whipsnade Park Golf Club",
+    "lat": 51.8375034,
+    "lon": -0.5417199,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Chiltern Forest Golf Course",
+    "lat": 51.7878367,
+    "lon": -0.7085744,
+    "source": "osm",
+    "osm_site": "https://chilternforest.co.uk/",
+    "official_site": "https://chilternforest.co.uk/"
+  },
+  {
+    "name": "Iver Golf Club",
+    "lat": 51.512399,
+    "lon": -0.5339507,
+    "source": "osm",
+    "osm_site": "https://www.ivergolfclub.co.uk/",
+    "official_site": "https://www.ivergolfclub.co.uk/"
+  },
+  {
+    "name": "Home Park",
+    "lat": 52.0280483,
+    "lon": -1.0192566,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Southfield",
+    "lat": 51.7603194,
+    "lon": -0.9845586,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Huntswood Golf Course",
+    "lat": 51.5414657,
+    "lon": -0.6791287,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Magnolia Park",
+    "lat": 51.8228063,
+    "lon": -1.1021987,
+    "source": "osm",
+    "osm_site": "https://magnoliapark.co.uk/",
+    "official_site": "https://magnoliapark.co.uk/"
+  },
+  {
+    "name": "The South Buckinghamshire Golf Course",
+    "lat": 51.5441119,
+    "lon": -0.6026328,
+    "source": "osm",
+    "osm_site": "https://www.thesouthbuckinghamshire.co.uk/",
+    "official_site": "https://www.thesouthbuckinghamshire.co.uk/"
+  },
+  {
+    "name": "Lambourne Golf Club",
+    "lat": 51.5576155,
+    "lon": -0.6627781,
+    "source": "osm",
+    "osm_site": "https://lambourneclub.co.uk",
+    "official_site": "https://lambourneclub.co.uk"
+  },
+  {
+    "name": "Wycombe Heights Golf Centre",
+    "lat": 51.6188018,
+    "lon": -0.6948978,
+    "source": "osm",
+    "osm_site": "https://www.wycombeheightsgc.co.uk",
+    "official_site": "https://www.wycombeheightsgc.co.uk"
+  },
+  {
+    "name": "Beaconsfield Golf Club",
+    "lat": 51.6100691,
+    "lon": -0.6182759,
+    "source": "osm",
+    "osm_site": "https://www.beaconsfieldgolfclub.co.uk/",
+    "official_site": "https://www.beaconsfieldgolfclub.co.uk/"
+  },
+  {
+    "name": "Three Locks Golf Club",
+    "lat": 51.9507332,
+    "lon": -0.6994344,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Burnham Beeches Golf Club",
+    "lat": 51.5492284,
+    "lon": -0.6460634,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Chiltern Hospital Golf Course",
+    "lat": 51.6888401,
+    "lon": -0.6918583,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Oakland Park Golf Club",
+    "lat": 51.6239245,
+    "lon": -0.5833162,
+    "source": "osm",
+    "osm_site": "https://www.oaklandparkgolfclub.co.uk/",
+    "official_site": "https://www.oaklandparkgolfclub.co.uk/"
+  },
+  {
+    "name": "Harleyford Golf Club",
+    "lat": 51.5595164,
+    "lon": -0.8057276,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Silverstone Golf Club",
+    "lat": 52.0627688,
+    "lon": -1.041862,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Chiltern Hills Golf Course",
+    "lat": 51.6641639,
+    "lon": -0.5270911,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Gerrards Cross Golf Club",
+    "lat": 51.5986803,
+    "lon": -0.5435382,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hedsor Golf Course",
+    "lat": 51.5763725,
+    "lon": -0.6719051,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bow Brickhill Heath",
+    "lat": 51.9977273,
+    "lon": -0.6656566,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Thorney Park Golf Club",
+    "lat": 51.506327,
+    "lon": -0.4934834,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Mentmore Golf and Country Club",
+    "lat": 51.8643963,
+    "lon": -0.6926886,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Woburn Golf Club",
+    "lat": 51.9927028,
+    "lon": -0.6575053,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Abbey Hill Golf Centre",
+    "lat": 52.0442567,
+    "lon": -0.8117644,
+    "source": "osm",
+    "osm_site": "https://abbeyhillgc.co.uk/",
+    "official_site": "https://abbeyhillgc.co.uk/"
+  },
+  {
+    "name": "Wexham Park Golf Centre",
+    "lat": 51.5381178,
+    "lon": -0.5729347,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  }
+]
