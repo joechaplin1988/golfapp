@@ -1,0 +1,241 @@
+[
+  {
+    "name": "Dauntsey's School",
+    "lat": 51.288538,
+    "lon": -1.9922898,
+    "source": "osm",
+    "osm_site": "https://www.dauntseys.org/",
+    "official_site": "https://www.dauntseys.org/"
+  },
+  {
+    "name": "Monkton Park Golf Course",
+    "lat": 51.4578163,
+    "lon": -2.1084093,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Manor House Golf Club",
+    "lat": 51.4994841,
+    "lon": -2.2359382,
+    "source": "osm",
+    "osm_site": "https://www.manorhousegolf.co.uk/",
+    "official_site": "https://www.manorhousegolf.co.uk"
+  },
+  {
+    "name": "Whitley Golf Club",
+    "lat": 51.3922537,
+    "lon": -2.1571687,
+    "source": "osm",
+    "osm_site": "https://www.whitleygolfclub.com/",
+    "official_site": "https://www.whitleygolfclub.com"
+  },
+  {
+    "name": "Kingsdown Golf Club",
+    "lat": 51.4050142,
+    "lon": -2.2658163,
+    "source": "osm",
+    "osm_site": "https://www.kingsdowngolfclub.co.uk/",
+    "official_site": "https://www.kingsdowngolfclub.co.uk"
+  },
+  {
+    "name": "Bradford on Avon Golf Course",
+    "lat": 51.3422096,
+    "lon": -2.2373709,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cumberwell Park",
+    "lat": 51.3712449,
+    "lon": -2.2597371,
+    "source": "osm",
+    "osm_site": "https://www.cumberwellpark.com/",
+    "official_site": "https://www.cumberwellpark.com"
+  },
+  {
+    "name": "North Wilts Golf Club",
+    "lat": 51.4005656,
+    "lon": -1.9714775,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.northwiltsgolf.com/"
+  },
+  {
+    "name": "Broome Manor Golf Complex",
+    "lat": 51.5376066,
+    "lon": -1.7607362,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.bmgc.co.uk"
+  },
+  {
+    "name": "West Wilts Golf Club",
+    "lat": 51.2170619,
+    "lon": -2.1772918,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.westwiltsgolfclub.co.uk"
+  },
+  {
+    "name": "Chippenham Golf Club",
+    "lat": 51.4821609,
+    "lon": -2.138708,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.chippenhamgolfclub.com"
+  },
+  {
+    "name": "Erlestoke Golf Course",
+    "lat": 51.286004,
+    "lon": -2.0591682,
+    "source": "osm",
+    "osm_site": "https://www.erlestokegolfclub.co.uk",
+    "official_site": "https://erlestokegolfclub.co.uk"
+  },
+  {
+    "name": "Rushmore Golf Club",
+    "lat": 50.9638977,
+    "lon": -2.0557494,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.rushmoregolfclub.co.uk"
+  },
+  {
+    "name": "Ogbourne Downs Golf Club",
+    "lat": 51.4749587,
+    "lon": -1.7057149,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.ogbournedowns.co.uk"
+  },
+  {
+    "name": "Marlborough Golf Course",
+    "lat": 51.4319313,
+    "lon": -1.7370682,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.marlboroughgolfclub.co.uk"
+  },
+  {
+    "name": "Wiltshire Golf and Country Club",
+    "lat": 51.5233674,
+    "lon": -1.9311977,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.the-wiltshire.co.uk"
+  },
+  {
+    "name": "Hamptworth Golf & Country Club",
+    "lat": 50.9815985,
+    "lon": -1.6634686,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.hamptworthgolf.co.uk"
+  },
+  {
+    "name": "Wrag Barn Golf & Country Club",
+    "lat": 51.6174462,
+    "lon": -1.7065477,
+    "source": "osm",
+    "osm_site": "https://www.wragbarn.com/",
+    "official_site": "https://www.wragbarn.com"
+  },
+  {
+    "name": "Westbury Golf Club",
+    "lat": 51.269243,
+    "lon": -2.1614628,
+    "source": "osm",
+    "osm_site": "https://www.westburygolf.com/",
+    "official_site": "https://www.westburygolfclub.com"
+  },
+  {
+    "name": "Salisbury Golf Centre",
+    "lat": 51.0767187,
+    "lon": -1.8323294,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.salisburygolf.co.uk"
+  },
+  {
+    "name": "Tidworth Garrison Golf Club",
+    "lat": 51.2298133,
+    "lon": -1.6918472,
+    "source": "osm",
+    "osm_site": "https://www.tidworthgolfclub.co.uk/",
+    "official_site": "https://www.tidworthgolfclub.co.uk"
+  },
+  {
+    "name": "Cricklade House Hotel & Spa",
+    "lat": 51.6364635,
+    "lon": -1.8748349,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Upavon Golf Club",
+    "lat": 51.2967463,
+    "lon": -1.7839085,
+    "source": "osm",
+    "osm_site": "https://www.upavongolfclub.co.uk/",
+    "official_site": "https://www.upavongolfclub.co.uk"
+  },
+  {
+    "name": "Chippenham Golf Centre",
+    "lat": 51.4809319,
+    "lon": -2.1818672,
+    "source": "osm",
+    "osm_site": "https://chippenhamgolfcentre.co.uk/",
+    "official_site": "https://www.chippenhamgolfclub.com"
+  },
+  {
+    "name": "Woodbridge Park (Brinkworth Golf Club)",
+    "lat": 51.5671417,
+    "lon": -1.9945606,
+    "source": "osm",
+    "osm_site": "https://www.brinkworthgolfclub.com/",
+    "official_site": "https://www.brinkworthgolfclub.co.uk"
+  },
+  {
+    "name": "Oaksey Park",
+    "lat": 51.6450021,
+    "lon": -2.007298,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.oakseygolfclub.co.uk"
+  },
+  {
+    "name": "Salisbury and South Wilts Golf Course",
+    "lat": 51.058803,
+    "lon": -1.8506044,
+    "source": "osm",
+    "osm_site": "https://www.salisburygolf.co.uk/",
+    "official_site": "https://www.salisburygolf.co.uk"
+  },
+  {
+    "name": "Basset Down Golf Course",
+    "lat": 51.5248596,
+    "lon": -1.8417505,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.basset-down.com"
+  },
+  {
+    "name": "High Post Golf Club",
+    "lat": 51.131386,
+    "lon": -1.7806846,
+    "source": "osm",
+    "osm_site": "https://www.highpostgolf.co.uk/",
+    "official_site": "https://www.highpostgolfclub.co.uk"
+  },
+  {
+    "name": "Bowood Golf & Country Club",
+    "official_site": "https://www.bowood.org/golf",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  }
+]

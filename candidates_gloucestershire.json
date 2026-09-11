@@ -1,0 +1,367 @@
+[
+  {
+    "name": "Shortwood Lodge Golf Club",
+    "lat": 51.4753123,
+    "lon": -2.4701072,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Thornbury Golf Centre",
+    "lat": 51.5988426,
+    "lon": -2.5372467,
+    "source": "osm",
+    "osm_site": "https://www.thornburygc.co.uk/",
+    "official_site": "https://www.thornburygc.co.uk/"
+  },
+  {
+    "name": "Lansdown Golf Club",
+    "lat": 51.4222351,
+    "lon": -2.406718,
+    "source": "osm",
+    "osm_site": "https://www.lansdowngolfclub.co.uk/",
+    "official_site": "https://www.lansdowngolfclub.co.uk/"
+  },
+  {
+    "name": "Gloucester Golf Club",
+    "lat": 51.8312883,
+    "lon": -2.2273919,
+    "source": "osm",
+    "osm_site": "https://www.gloucestergolf.com/",
+    "official_site": "https://www.gloucestergolf.com/"
+  },
+  {
+    "name": "Cotswold Edge Golf Club",
+    "lat": 51.6555011,
+    "lon": -2.3290732,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.cotswoldedgegolfclub.org.uk/"
+  },
+  {
+    "name": "Tewkesbury Park Golf Club",
+    "lat": 51.9796581,
+    "lon": -2.1728163,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lilley Brook Golf Course",
+    "lat": 51.8699168,
+    "lon": -2.0567067,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.lilleybrook.co.uk/"
+  },
+  {
+    "name": "Forest Golf Club",
+    "lat": 51.7868514,
+    "lon": -2.6066471,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://foresthillsgolfclub.co.uk"
+  },
+  {
+    "name": "Brickhampton Court Golf Complex",
+    "lat": 51.8958636,
+    "lon": -2.189342,
+    "source": "osm",
+    "osm_site": "https://www.brickhampton.co.uk",
+    "official_site": "https://www.brickhampton.co.uk/"
+  },
+  {
+    "name": "Chipping Sodbury Golf Club",
+    "lat": 51.5496908,
+    "lon": -2.3907232,
+    "source": "osm",
+    "osm_site": "https://www.chippingsodburygolfclub.co.uk/",
+    "official_site": "https://www.chippingsodburygolfclub.co.uk/"
+  },
+  {
+    "name": "Canons Court Golf",
+    "lat": 51.6433497,
+    "lon": -2.3747961,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Tracy Park Golf & Country Park",
+    "lat": 51.443961,
+    "lon": -2.4110457,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cotswold Hills Golf Club",
+    "lat": 51.8501433,
+    "lon": -2.0720452,
+    "source": "osm",
+    "osm_site": "https://www.cotswoldhills-golfclub.com/",
+    "official_site": "https://www.cotswoldhills-golfclub.com/"
+  },
+  {
+    "name": "Forest Hills Golf Club",
+    "lat": 51.8023788,
+    "lon": -2.6076656,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://foresthillsgolfclub.co.uk"
+  },
+  {
+    "name": "Stinchcombe Hill Golf Course",
+    "lat": 51.6838676,
+    "lon": -2.3750966,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.stinchcombehillgolfclub.com/"
+  },
+  {
+    "name": "Broadway Golf Club",
+    "lat": 52.042561,
+    "lon": -1.8315097,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.broadwaygolfclub.co.uk"
+  },
+  {
+    "name": "Filton Golf Course",
+    "lat": 51.5113848,
+    "lon": -2.589466,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.filtongolfclub.co.uk"
+  },
+  {
+    "name": "Newent Golf Club",
+    "lat": 51.9449558,
+    "lon": -2.4149642,
+    "source": "osm",
+    "osm_site": "https://www.newentgolf.co.uk/",
+    "official_site": "https://www.newentgolf.co.uk/"
+  },
+  {
+    "name": "Naunton Downs Golf Club",
+    "lat": 51.9045722,
+    "lon": -1.8374179,
+    "source": "osm",
+    "osm_site": "https://www.nauntondowns.co.uk/",
+    "official_site": "https://www.nauntondowns.co.uk/"
+  },
+  {
+    "name": "Kendleshire Golf Club",
+    "lat": 51.5118633,
+    "lon": -2.4770237,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.golf.kendleshire.com/"
+  },
+  {
+    "name": "Westonbirt Golf Course",
+    "lat": 51.6019229,
+    "lon": -2.2013317,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ullenwood Manor Golf Course",
+    "lat": 51.8475823,
+    "lon": -2.0835698,
+    "source": "osm",
+    "osm_site": "https://www.stargolfsoc.com/",
+    "official_site": "https://www.stargolfsoc.com/"
+  },
+  {
+    "name": "Shipton Golf Course",
+    "lat": 51.8616157,
+    "lon": -1.9695691,
+    "source": "osm",
+    "osm_site": "https://www.shiptongolf.co.uk/",
+    "official_site": "https://www.shiptongolf.co.uk/"
+  },
+  {
+    "name": "Lydney Golf Club",
+    "lat": 51.7165581,
+    "lon": -2.5139951,
+    "source": "osm",
+    "osm_site": "https://www.lydneygolfclub.co.uk/",
+    "official_site": "https://www.lydneygolfclub.co.uk/"
+  },
+  {
+    "name": "Woodlands Golf & Country Club",
+    "lat": 51.5495949,
+    "lon": -2.5407301,
+    "source": "osm",
+    "osm_site": "https://www.woodlands-golf.com/",
+    "official_site": "https://www.woodlands-golf.com/"
+  },
+  {
+    "name": "Bristol Golf Club",
+    "lat": 51.5352319,
+    "lon": -2.600168,
+    "source": "osm",
+    "osm_site": "https://www.bristolgolfclub.co.uk/",
+    "official_site": "https://www.bristolgolfclub.co.uk/"
+  },
+  {
+    "name": "Cirencester Golf Club",
+    "lat": 51.743062,
+    "lon": -1.9821709,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.cirencestergolfclub.co.uk/"
+  },
+  {
+    "name": "South Cerney Golf Course",
+    "lat": 51.6815168,
+    "lon": -1.9202005,
+    "source": "osm",
+    "osm_site": "https://www.southcerneygolfcourse.co.uk/",
+    "official_site": "https://www.southcerneygolfcourse.co.uk/"
+  },
+  {
+    "name": "Sherdons Golf Centre",
+    "lat": 51.9681348,
+    "lon": -2.132385,
+    "source": "osm",
+    "osm_site": "https://www.sherdons.co.uk/",
+    "official_site": "https://www.sherdons.co.uk/"
+  },
+  {
+    "name": "Bristol Golf Centre",
+    "lat": 51.5048175,
+    "lon": -2.5320178,
+    "source": "osm",
+    "osm_site": "https://bristolgolfcentre.com/",
+    "official_site": "https://www.bristolgolfclub.co.uk/"
+  },
+  {
+    "name": "The Players Club",
+    "lat": 51.5117464,
+    "lon": -2.3772928,
+    "source": "osm",
+    "osm_site": "https://www.theplayersgolfclub.com/",
+    "official_site": "https://www.theplayersgolfclub.com/"
+  },
+  {
+    "name": "Rodway Hill Golf Club",
+    "lat": 51.8811991,
+    "lon": -2.3120337,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.rodway-hill-golf-course.co.uk/"
+  },
+  {
+    "name": "Minchinhampton Golf Club",
+    "lat": 51.688716,
+    "lon": -2.160399,
+    "source": "osm",
+    "osm_site": "https://www.minchinhamptongolfclub.co.uk/",
+    "official_site": "https://www.minchinhamptongolfclub.co.uk/"
+  },
+  {
+    "name": "Cleeve Hill Golf Club",
+    "lat": 51.9360492,
+    "lon": -2.0169945,
+    "source": "osm",
+    "osm_site": "https://www.cleevehillgolfclub.co.uk/",
+    "official_site": "https://www.cleevehillgolfclub.co.uk/"
+  },
+  {
+    "name": "Painswick Golf Course",
+    "lat": 51.8035767,
+    "lon": -2.1899843,
+    "source": "osm",
+    "osm_site": "https://www.painswickgolf.com/",
+    "official_site": "https://www.painswickgolf.com/"
+  },
+  {
+    "name": "Dymock Grange Golf Club",
+    "lat": 51.9849942,
+    "lon": -2.4537091,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.dymockgrangegolf.co.uk/"
+  },
+  {
+    "name": "Alexander Park Resort Golf Club",
+    "official_site": "https://www.apresort.co.uk/golf/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Henbury Golf Club",
+    "official_site": "https://www.henburygolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Knowle Golf Club",
+    "official_site": "https://www.knowlegolfclub.co.uk/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Long Ashton Golf Club",
+    "official_site": "https://www.longashtongolfclub.co.uk/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Puckrup Hall Hotel & Golf Club",
+    "official_site": "https://www.puckruphallgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Ross-on-Wye Golf Club",
+    "official_site": "https://www.therossonwyegolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Shirehampton Park Golf Club",
+    "official_site": "https://spgc.shirehamptonparkgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "South Herefordshire Golf Club",
+    "official_site": "https://www.south-herefordshiregc.co.uk/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Star Golf Golf Club",
+    "official_site": "https://www.nationalstar.org/products-services-facilities/star-golf/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "TP Golf Club",
+    "official_site": "https://www.tewkesburypark.co.uk/golf.html",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Woodspring Golf & Country Club",
+    "official_site": "https://www.woodspring-golf.com/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  }
+]

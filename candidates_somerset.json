@@ -1,0 +1,346 @@
+[
+  {
+    "name": "Golfbox",
+    "lat": 51.4520357,
+    "lon": -2.5891742,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Wells Golf Club",
+    "lat": 51.2095271,
+    "lon": -2.6207143,
+    "source": "osm",
+    "osm_site": "https://www.wellsgolfclub.co.uk/",
+    "official_site": "https://www.wellsgolfclub.co.uk/"
+  },
+  {
+    "name": "The Mendip Golf Club",
+    "lat": 51.2216143,
+    "lon": -2.5517167,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Fosseway Golf Club",
+    "lat": 51.2747641,
+    "lon": -2.4695421,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ashton Court Golf Course",
+    "lat": 51.4500829,
+    "lon": -2.6478541,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lansdown Golf Club",
+    "lat": 51.4222351,
+    "lon": -2.406718,
+    "source": "osm",
+    "osm_site": "https://www.lansdowngolfclub.co.uk/",
+    "official_site": "https://www.lansdowngolfclub.co.uk/"
+  },
+  {
+    "name": "Oake Manor Golf Course",
+    "lat": 51.0187151,
+    "lon": -3.2104492,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Minehead & West Somerset Golf Club",
+    "lat": 51.2040178,
+    "lon": -3.4462923,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Saltford Golf Club",
+    "lat": 51.393935,
+    "lon": -2.4593261,
+    "source": "osm",
+    "osm_site": "https://www.saltfordgolfclub.co.uk/",
+    "official_site": "https://www.saltfordgolfclub.co.uk/"
+  },
+  {
+    "name": "Knowle Golf Club",
+    "lat": 51.4236749,
+    "lon": -2.5488389,
+    "source": "osm",
+    "osm_site": "https://www.knowlegolfclub.co.uk/",
+    "official_site": "https://www.knowlegolfclub.co.uk/"
+  },
+  {
+    "name": "Mendip Spring Golf Club - Brinsea Championship Course",
+    "lat": 51.3516469,
+    "lon": -2.8171902,
+    "source": "osm",
+    "osm_site": "https://www.mendipspringgolfclub.com/",
+    "official_site": "https://www.mendipspringgolfclub.com/"
+  },
+  {
+    "name": "Taunton & Pickeridge Golf Club",
+    "lat": 50.9651671,
+    "lon": -3.0836416,
+    "source": "osm",
+    "osm_site": "https://tauntongolf.co.uk",
+    "official_site": "https://tauntongolf.co.uk"
+  },
+  {
+    "name": "Vivary Golf Course",
+    "lat": 51.0070828,
+    "lon": -3.1006282,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Wincanton Racecourse Golf",
+    "lat": 51.0675993,
+    "lon": -2.4199589,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Weston-super-Mare Golf Club",
+    "lat": 51.3264404,
+    "lon": -2.9855605,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Isle of Wedmore Golf Course",
+    "lat": 51.2372593,
+    "lon": -2.8138999,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Enmore Park Golf Club",
+    "lat": 51.1147224,
+    "lon": -3.0784976,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Brean Golf Club",
+    "lat": 51.2842258,
+    "lon": -3.003789,
+    "source": "osm",
+    "osm_site": "https://www.breangolfclub.co.uk/",
+    "official_site": "https://www.breangolfclub.co.uk/"
+  },
+  {
+    "name": "Stockwood Vale Golf Club",
+    "lat": 51.411629,
+    "lon": -2.5260397,
+    "source": "osm",
+    "osm_site": "https://www.stockwoodvale.com/pages.php/index.html",
+    "official_site": "https://www.stockwoodvale.com/pages.php/index.html"
+  },
+  {
+    "name": "Filton Golf Course",
+    "lat": 51.5113848,
+    "lon": -2.589466,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Shirehampton Park Golf Club",
+    "lat": 51.489262,
+    "lon": -2.6607673,
+    "source": "osm",
+    "osm_site": "https://www.shirehamptonparkgolfclub.co.uk/live/index2.php?ts=1521727828467",
+    "official_site": "https://www.shirehamptonparkgolfclub.co.uk/live/index2.php?ts=1521727828467"
+  },
+  {
+    "name": "Clevedon Golf Club",
+    "lat": 51.45512,
+    "lon": -2.8401831,
+    "source": "osm",
+    "osm_site": "https://www.clevedongolfclub.co.uk/",
+    "official_site": "https://www.clevedongolfclub.co.uk/"
+  },
+  {
+    "name": "Farrington Park Golf & Country Club",
+    "lat": 51.2886855,
+    "lon": -2.5312032,
+    "source": "osm",
+    "osm_site": "https://farringtonpark.co.uk/",
+    "official_site": "https://farringtonpark.co.uk/"
+  },
+  {
+    "name": "Long Sutton Golf Club",
+    "lat": 51.0173731,
+    "lon": -2.7533908,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Tall Pines Golf Club",
+    "lat": 51.388425,
+    "lon": -2.7289866,
+    "source": "osm",
+    "osm_site": "https://www.tallpinesgolf.co.uk/",
+    "official_site": "https://www.tallpinesgolf.co.uk/"
+  },
+  {
+    "name": "Cannington Golf Centre",
+    "lat": 51.1548301,
+    "lon": -3.0552942,
+    "source": "osm",
+    "osm_site": "https://www.canningtongolfcentre.co.uk/",
+    "official_site": "https://www.canningtongolfcentre.co.uk/"
+  },
+  {
+    "name": "Bristol & Clifton Golf Club",
+    "lat": 51.4475346,
+    "lon": -2.6797526,
+    "source": "osm",
+    "osm_site": "https://www.bristolandcliftongolfclub.co.uk/",
+    "official_site": "https://www.bristolandcliftongolfclub.co.uk/"
+  },
+  {
+    "name": "Orchardleigh Golf Club",
+    "lat": 51.2609033,
+    "lon": -2.3191149,
+    "source": "osm",
+    "osm_site": "https://www.orchardleighgolf.co.uk/",
+    "official_site": "https://www.orchardleighgolf.co.uk/"
+  },
+  {
+    "name": "Bleadon Hill Golf Course",
+    "lat": 51.3164822,
+    "lon": -2.9430861,
+    "source": "osm",
+    "osm_site": "https://www.bleadonhillgolfcourse.co.uk/",
+    "official_site": "https://www.bleadonhillgolfcourse.co.uk/"
+  },
+  {
+    "name": "Henstridge Golf & Leasure",
+    "lat": 50.9839817,
+    "lon": -2.3687528,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Swingrite Golf Centre",
+    "lat": 51.0076833,
+    "lon": -3.0582088,
+    "source": "osm",
+    "osm_site": "https://www.swingrite.co.uk/",
+    "official_site": "https://www.swingrite.co.uk/"
+  },
+  {
+    "name": "Wheathill Golf Club",
+    "lat": 51.0723426,
+    "lon": -2.5928029,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cricket St Thomas Golf Course",
+    "lat": 50.8831904,
+    "lon": -2.8987236,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Tickenham Golf Club",
+    "lat": 51.4467769,
+    "lon": -2.7806675,
+    "source": "osm",
+    "osm_site": "https://www.tickenhamgolf.co.uk/",
+    "official_site": "https://www.tickenhamgolf.co.uk/"
+  },
+  {
+    "name": "Burnham & Berrow Golf Club",
+    "lat": 51.263146,
+    "lon": -3.0100968,
+    "source": "osm",
+    "osm_site": "https://burnhamandberrowgolfclub.co.uk/",
+    "official_site": "https://burnhamandberrowgolfclub.co.uk/"
+  },
+  {
+    "name": "Woodspring Golf & Country Club",
+    "lat": 51.4169571,
+    "lon": -2.6498208,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Mendip Spring Golf Club - Lakeside Course",
+    "lat": 51.3495118,
+    "lon": -2.8057035,
+    "source": "osm",
+    "osm_site": "https://www.mendipspringgolfclub.com/",
+    "official_site": "https://www.mendipspringgolfclub.com/"
+  },
+  {
+    "name": "Henbury Golf Club",
+    "lat": 51.4980817,
+    "lon": -2.6298448,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Yeovil Golf Club",
+    "lat": 50.9392529,
+    "lon": -2.6064156,
+    "source": "osm",
+    "osm_site": "https://www.yeovilgolfclub.com/",
+    "official_site": "https://www.yeovilgolfclub.com/"
+  },
+  {
+    "name": "Worlebury Golf Course",
+    "lat": 51.3645667,
+    "lon": -2.9440557,
+    "source": "osm",
+    "osm_site": "https://www.worleburygc.co.uk/",
+    "official_site": "https://www.worleburygc.co.uk/"
+  },
+  {
+    "name": "Long Ashton Golf Club",
+    "lat": 51.4354065,
+    "lon": -2.6671047,
+    "source": "osm",
+    "osm_site": "https://www.longashtongolfclub.co.uk/",
+    "official_site": "https://www.longashtongolfclub.co.uk/"
+  },
+  {
+    "name": "Bath Golf Club",
+    "lat": 51.3849091,
+    "lon": -2.3291806,
+    "source": "osm",
+    "osm_site": "https://www.bathgolfclub.org.uk/",
+    "official_site": "https://www.bathgolfclub.org.uk/"
+  },
+  {
+    "name": "Clevedon Golf Centre",
+    "lat": 51.4251209,
+    "lon": -2.8746285,
+    "source": "osm",
+    "osm_site": "https://www.clevedongolfcentre.co.uk/",
+    "official_site": "https://www.clevedongolfcentre.co.uk/"
+  }
+]

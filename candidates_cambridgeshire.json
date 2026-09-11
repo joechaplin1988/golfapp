@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Girton Golf Club",
+    "lat": 52.2477832,
+    "lon": 0.0721862,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ely City Golf Club",
+    "lat": 52.3900611,
+    "lon": 0.254991,
+    "source": "osm",
+    "osm_site": "https://www.elygolf.co.uk/",
+    "official_site": "https://www.elygolf.co.uk/"
+  },
+  {
+    "name": "Kingsway Golf Club",
+    "lat": 52.0901039,
+    "lon": 0.0410121,
+    "source": "osm",
+    "osm_site": "https://www.kingswaygolfcentre.co.uk/",
+    "official_site": "https://www.kingswaygolfcentre.co.uk/"
+  },
+  {
+    "name": "Cambridge Meridian Golf Course",
+    "lat": 52.1807633,
+    "lon": -0.0056296,
+    "source": "osm",
+    "osm_site": "https://cmgc.co.uk/",
+    "official_site": "https://cmgc.co.uk/"
+  },
+  {
+    "name": "Cambridge Country Club",
+    "lat": 52.1874347,
+    "lon": -0.053034,
+    "source": "osm",
+    "osm_site": "https://www.cambridgecountryclub.com/",
+    "official_site": "https://www.cambridgecountryclub.com/"
+  },
+  {
+    "name": "Links Golf Club",
+    "lat": 52.2266504,
+    "lon": 0.3791864,
+    "source": "osm",
+    "osm_site": "https://www.linksgolfclub.co.uk/",
+    "official_site": "https://www.linksgolfclub.co.uk/"
+  },
+  {
+    "name": "Kingsway Cambridge Lakes Golf Course",
+    "lat": 52.1868086,
+    "lon": 0.1158975,
+    "source": "osm",
+    "osm_site": "https://www.kingswaygolfcentre.co.uk/cambridge/",
+    "official_site": "https://www.kingswaygolfcentre.co.uk/cambridge/"
+  },
+  {
+    "name": "Menzies Cambridgeshire Golf Club",
+    "lat": 52.2498314,
+    "lon": 0.0345706,
+    "source": "osm",
+    "osm_site": "https://www.menzieshotels.co.uk/hotels/south-central/cambridge/golf/",
+    "official_site": "https://www.menzieshotels.co.uk/hotels/south-central/cambridge/golf/"
+  },
+  {
+    "name": "Brampton Park Golf Club",
+    "lat": 52.3185716,
+    "lon": -0.2129145,
+    "source": "osm",
+    "osm_site": "https://www.bramptonparkgc.co.uk/",
+    "official_site": "https://www.bramptonparkgc.co.uk/"
+  },
+  {
+    "name": "Brampton Park Golf  Club",
+    "lat": 52.312614,
+    "lon": -0.2199288,
+    "source": "osm",
+    "osm_site": "https://www.bramptonparkgc.co.uk/",
+    "official_site": "https://www.bramptonparkgc.co.uk/"
+  },
+  {
+    "name": "Heydon Grange Golf & Country Club",
+    "lat": 52.0633525,
+    "lon": 0.0681012,
+    "source": "osm",
+    "osm_site": "https://www.heydongrangegolf.co.uk/",
+    "official_site": "https://www.heydongrangegolf.co.uk/"
+  },
+  {
+    "name": "Tydd St Giles Golf Course",
+    "lat": 52.7319308,
+    "lon": 0.1224916,
+    "source": "osm",
+    "osm_site": "https://www.pureleisuregroup.com/parks/tydd-st-giles/golf",
+    "official_site": "https://www.pureleisuregroup.com/parks/tydd-st-giles/golf"
+  },
+  {
+    "name": "Kawartha Golf & Country Club",
+    "lat": 44.2860405,
+    "lon": -78.3575676,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Peterborough Golf & Country Club",
+    "lat": 44.3317522,
+    "lon": -78.3034576,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Liftlock Golf Club",
+    "lat": 44.3081059,
+    "lon": -78.2980086,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "St Neots Golf Club",
+    "lat": 52.2389635,
+    "lon": -0.2750225,
+    "source": "osm",
+    "osm_site": "https://www.stneotsgolfclub.co.uk/",
+    "official_site": "https://www.stneotsgolfclub.co.uk/"
+  },
+  {
+    "name": "March Golf Club",
+    "lat": 52.527494,
+    "lon": 0.0682515,
+    "source": "osm",
+    "osm_site": "https://marchgolfclub.co.uk/",
+    "official_site": "https://marchgolfclub.co.uk/"
+  },
+  {
+    "name": "Whaddon Golf Centre",
+    "lat": 52.09861,
+    "lon": -0.0291082,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Stilton Oaks Golf Course",
+    "lat": 52.4825365,
+    "lon": -0.2964624,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "St Ives Golf Club",
+    "lat": 52.3410863,
+    "lon": -0.0442203,
+    "source": "osm",
+    "osm_site": "https://www.stivesgolfclub.co.uk/",
+    "official_site": "https://www.stivesgolfclub.co.uk/"
+  },
+  {
+    "name": "Ely On Par Golf Club",
+    "lat": 52.411499,
+    "lon": 0.2473687,
+    "source": "osm",
+    "osm_site": "https://elydrivingrange.co.uk",
+    "official_site": "https://elydrivingrange.co.uk"
+  },
+  {
+    "name": "Ramsey Golf & Bowls Club",
+    "lat": 52.4404312,
+    "lon": -0.1060661,
+    "source": "osm",
+    "osm_site": "https://www.ramseyclub.co.uk/",
+    "official_site": "https://www.ramseyclub.co.uk/"
+  },
+  {
+    "name": "Elton Furze Golf Club",
+    "lat": 52.5321364,
+    "lon": -0.3560918,
+    "source": "osm",
+    "osm_site": "https://www.efgc.co.uk/",
+    "official_site": "https://www.efgc.co.uk/"
+  },
+  {
+    "name": "Priory Golf & Activity Centre",
+    "lat": 52.5208846,
+    "lon": 0.0858867,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Meridian Golf hole #1",
+    "lat": 52.178033,
+    "lon": -0.0013649,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lakeside Lodge Golf & Country Club",
+    "lat": 52.3916649,
+    "lon": -0.0325055,
+    "source": "osm",
+    "osm_site": "https://lakeside-lodge.co.uk/",
+    "official_site": "https://lakeside-lodge.co.uk/"
+  },
+  {
+    "name": "Abbotsley Golf Hotel",
+    "lat": 52.1963068,
+    "lon": -0.2396806,
+    "source": "osm",
+    "osm_site": "https://www.abbotsley.com/",
+    "official_site": "https://www.abbotsley.com/"
+  },
+  {
+    "name": "The Old Nene Golf & Country Club",
+    "lat": 52.4686294,
+    "lon": -0.1050438,
+    "source": "osm",
+    "osm_site": "https://www.theoldnene.co.uk",
+    "official_site": "https://www.theoldnene.co.uk"
+  },
+  {
+    "name": "Old Course",
+    "lat": 52.1655801,
+    "lon": 0.1746552,
+    "source": "osm",
+    "osm_site": "https://www.gogmagog.co.uk/",
+    "official_site": "https://www.gogmagog.co.uk/"
+  },
+  {
+    "name": "Wandlebury",
+    "lat": 52.1630132,
+    "lon": 0.1815595,
+    "source": "osm",
+    "osm_site": "https://www.gogmagog.co.uk/",
+    "official_site": "https://www.gogmagog.co.uk/"
+  }
+]

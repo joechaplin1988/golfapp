@@ -125,10 +125,34 @@ COUNTY_BOUNDS = {
     # Ordinary county at the usual level — checked before enumerating: 39
     # features at 6, none at 5 or 8.
     "oxfordshire": ["Oxfordshire"],
+
+    # --- Second wave, 2026-09-11: ten regions beyond the South East. Every
+    # name below was checked against Overpass FIRST (see the silent-zero
+    # traps above); the ones that needed rewriting are commented.
+    #
+    # "Bedfordshire" matches no boundary at all — the county was abolished in
+    # 2009 and OSM keeps only the three unitaries.
+    "bedfordshire": ["Bedford", "Central Bedfordshire", "Luton"],
+    "cambridgeshire": ["Cambridgeshire", "Peterborough"],
+    # Same story as Bedfordshire: "Northamptonshire" is gone (split in 2021).
+    "northamptonshire": ["North Northamptonshire", "West Northamptonshire"],
+    "suffolk": ["Suffolk"],
+    "norfolk": ["Norfolk"],
+    "wiltshire": ["Wiltshire", "Swindon"],
+    "dorset": ["Dorset", "Bournemouth, Christchurch and Poole"],
+    # Bristol is "City of Bristol" at level 6; plain "Bristol" also exists but
+    # matches a scatter of level-8 suburbs elsewhere in the country.
+    "somerset": ["Somerset", "North Somerset", "Bath and North East Somerset",
+                 "City of Bristol"],
+    "gloucestershire": ["Gloucestershire", "South Gloucestershire"],
+    "warwickshire": ["Warwickshire"],
+    # A metropolitan county, which OSM puts at admin_level 5 like Greater
+    # London — asking at 6 returns nothing, silently.
+    "west_midlands": ["West Midlands"],
 }
 
 # Areas whose OSM boundary is not at the usual admin_level 6.
-COUNTY_ADMIN_LEVEL = {"london": 5}
+COUNTY_ADMIN_LEVEL = {"london": 5, "west_midlands": 5}
 DEFAULT_ADMIN_LEVEL = 6
 
 # Clubs the county union lists that are not reachable by road from the county
@@ -260,6 +284,24 @@ COUNTY_UNION_URLS = {
     # Third county of the same Berks/Bucks/Oxon union — still no parsable
     # directory. OSM-only, plus its website tags.
     "oxfordshire": None,
+
+    # Second wave. Four of the ten run the same county CMS; the domain is not
+    # guessable from the county name, so each was probed for countyclubs.php
+    # before being listed here (.org.uk, not .org, for Bedfordshire).
+    "bedfordshire": "https://www.bedfordshiregolf.org.uk/countyclubs.php",
+    "wiltshire": "https://www.wiltshiregolf.org/countyclubs.php",
+    "dorset": "https://www.dorsetgolf.org/countyclubs.php",
+    "gloucestershire": "https://www.gloucestershiregolf.org/countyclubs.php",
+    # No countyclubs.php found on any plausible domain for these, so they are
+    # OSM-only — which is how Hertfordshire, Berkshire, London, Bucks and
+    # Oxfordshire were all built, now that OSM's own website tags are kept.
+    "cambridgeshire": None,
+    "northamptonshire": None,
+    "suffolk": None,
+    "norfolk": None,
+    "somerset": None,
+    "warwickshire": None,
+    "west_midlands": None,
 }
 
 SOCIAL_HOSTS = ("facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com", "youtube.com")

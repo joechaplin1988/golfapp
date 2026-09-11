@@ -1,0 +1,229 @@
+[
+  {
+    "name": "Mowsbury Golf Course",
+    "lat": 52.16488,
+    "lon": -0.4395416,
+    "source": "osm",
+    "osm_site": "https://www.fusion-lifestyle.com/centres/mowsbury-golf-and-squash-centre",
+    "official_site": "https://www.mowsburygolfclub.co.uk"
+  },
+  {
+    "name": "Aspley Guise & Woburn Sands Golf Club",
+    "lat": 52.0164912,
+    "lon": -0.6396976,
+    "source": "osm",
+    "osm_site": "https://www.aspleyguisegolfclub.co.uk/",
+    "official_site": "https://www.aspleyguisegolfclub.co.uk"
+  },
+  {
+    "name": "Warden Hills Course",
+    "lat": 51.9227355,
+    "lon": -0.419625,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Galley Hills Course",
+    "lat": 51.9299852,
+    "lon": -0.4146655,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bedfordshire Golf Club",
+    "lat": 52.1334296,
+    "lon": -0.5528371,
+    "source": "osm",
+    "osm_site": "https://www.bedfordshiregolf.com/",
+    "official_site": "https://www.bedfordshiregolf.com"
+  },
+  {
+    "name": "Tilsworth Golf Course",
+    "lat": 51.9144329,
+    "lon": -0.5728373,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.tilsworthgolf.co.uk"
+  },
+  {
+    "name": "John O'Gaunt Golf Course",
+    "lat": 52.1167748,
+    "lon": -0.2228086,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.johnogauntgolfclub.co.uk"
+  },
+  {
+    "name": "Beadlow Manor",
+    "lat": 52.0262872,
+    "lon": -0.3814267,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Millbrook Golf Club",
+    "lat": 52.0330991,
+    "lon": -0.5349043,
+    "source": "osm",
+    "osm_site": "https://www.themillbrook.com/",
+    "official_site": "https://www.themillbrook.com"
+  },
+  {
+    "name": "Colworth Golf Club",
+    "lat": 52.2261137,
+    "lon": -0.570715,
+    "source": "osm",
+    "osm_site": "https://www.sharnbrookgolfclub.co.uk/",
+    "official_site": "https://www.sharnbrookgolfclub.co.uk/"
+  },
+  {
+    "name": "Whipsnade Park Golf Club",
+    "lat": 51.8375034,
+    "lon": -0.5417199,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Leighton Buzzard Golf Club",
+    "lat": 51.9392603,
+    "lon": -0.6636483,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.lbgc.co.uk"
+  },
+  {
+    "name": "Bedford and County Golf Club",
+    "lat": 52.1706006,
+    "lon": -0.479639,
+    "source": "osm",
+    "osm_site": "https://www.bandcgc.co.uk/",
+    "official_site": "https://www.bandcgc.co.uk"
+  },
+  {
+    "name": "Pavenham Park Golf Club",
+    "lat": 52.1945054,
+    "lon": -0.5439103,
+    "source": "osm",
+    "osm_site": "https://www.pavenhampark.com/",
+    "official_site": "https://www.pavenhampark.com"
+  },
+  {
+    "name": "Kingsway Golf Centre Biggleswade",
+    "lat": 52.0905761,
+    "lon": -0.2777884,
+    "source": "osm",
+    "osm_site": "https://www.kingswaygolfcentre.co.uk/biggleswade/",
+    "official_site": "https://www.kingswaygolfcentre.co.uk/biggleswade/"
+  },
+  {
+    "name": "Caddington Golf Club",
+    "lat": 51.8795729,
+    "lon": -0.473474,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Dunstable Downs Golf Course",
+    "lat": 51.8721245,
+    "lon": -0.5282056,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.dunstabledownsgolf.co.uk"
+  },
+  {
+    "name": "Wyboston Lakes Golf Course",
+    "lat": 52.2034556,
+    "lon": -0.2818353,
+    "source": "osm",
+    "osm_site": "https://www.wybostonlakes.co.uk/",
+    "official_site": "https://www.wybostonlakesgolfclub.co.uk"
+  },
+  {
+    "name": "Stockwood Park Golf Centre",
+    "lat": 51.8614537,
+    "lon": -0.4250147,
+    "source": "osm",
+    "osm_site": "https://www.activeluton.co.uk/stockwood-park-golf-centre",
+    "official_site": "https://www.stockwoodparkgolfclub"
+  },
+  {
+    "name": "Luton Hoo Golf Course",
+    "lat": 51.8548601,
+    "lon": -0.4058304,
+    "source": "osm",
+    "osm_site": "https://www.lutonhoo.co.uk/luton-hoo-golf-course",
+    "official_site": "https://www.lutonhoo.co.uk/luton-hoo-golf-course"
+  },
+  {
+    "name": "Colmworth and North Beds Golf Club",
+    "lat": 52.199977,
+    "lon": -0.3979868,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.colmworthgolfclub.co.uk"
+  },
+  {
+    "name": "Woburn Golf Club",
+    "lat": 51.9927028,
+    "lon": -0.6575053,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.aspleyguisegolfclub.co.uk"
+  },
+  {
+    "name": "South Beds Golf Club",
+    "lat": 51.9273568,
+    "lon": -0.4146655,
+    "source": "osm",
+    "osm_site": "https://www.southbedsgolfclub.co.uk/",
+    "official_site": "https://www.southbedsgolfclub.co.uk"
+  },
+  {
+    "name": "Abbotsley Golf Hotel",
+    "lat": 52.1963068,
+    "lon": -0.2396806,
+    "source": "osm",
+    "osm_site": "https://www.abbotsley.com/",
+    "official_site": "https://www.abbotsley.com/"
+  },
+  {
+    "name": "Aylesbury Vale Golf Club",
+    "official_site": "https://www.avgc.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Cainhoe Wood Golf Club",
+    "official_site": "https://www.cainhoewoodgolf.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Chalgrave Manor Golf Club",
+    "official_site": "https://www.chalgravegolf.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Henlow Golf Club",
+    "official_site": "https://www.henlowgolfclub.com",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Sharnbrook Golf Club",
+    "official_site": "https://www.sharnbrookgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  }
+]

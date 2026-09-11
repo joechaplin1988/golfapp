@@ -1,0 +1,282 @@
+[
+  {
+    "name": "The Belfry Golf Course",
+    "lat": 52.5579486,
+    "lon": -1.7354297,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Unique Indoor Golf",
+    "lat": 52.5827081,
+    "lon": -1.5536484,
+    "source": "osm",
+    "osm_site": "https://www.uniqueindoorgolf.co.uk/",
+    "official_site": "https://www.uniqueindoorgolf.co.uk/"
+  },
+  {
+    "name": "The Belfry",
+    "lat": 52.5620421,
+    "lon": -1.7353058,
+    "source": "osm",
+    "osm_site": "https://www.thebelfry.co.uk",
+    "official_site": "https://www.thebelfry.co.uk"
+  },
+  {
+    "name": "Stoneleigh Deer Park Golf Club",
+    "lat": 52.3467564,
+    "lon": -1.5046775,
+    "source": "osm",
+    "osm_site": "https://www.stoneleighdeerparkgolfclub.com/",
+    "official_site": "https://www.stoneleighdeerparkgolfclub.com/"
+  },
+  {
+    "name": "Rugby Golf Club",
+    "lat": 52.3749284,
+    "lon": -1.2318057,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Maxstoke Park Golf Course",
+    "lat": 52.49737,
+    "lon": -1.6715177,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Purley Chase Golf Course",
+    "lat": 52.5479821,
+    "lon": -1.5521517,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ansty Golf Centre",
+    "lat": 52.4496841,
+    "lon": -1.4021544,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Brandon Wood Golf Club",
+    "lat": 52.3750962,
+    "lon": -1.421769,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Warwickshire Golf and Country Club",
+    "lat": 52.3131975,
+    "lon": -1.5864405,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Atherstone Golf Club",
+    "lat": 52.564369,
+    "lon": -1.5534587,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Coventry Golf Club",
+    "lat": 52.3672416,
+    "lon": -1.5064511,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Stonebridge Golf Course",
+    "lat": 52.4397845,
+    "lon": -1.6744775,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Forest of Arden Country Club",
+    "lat": 52.4639219,
+    "lon": -1.663295,
+    "source": "osm",
+    "osm_site": "https://www.marriott.co.uk/hotels/travel/cvtgs-forest-of-arden-marriott-hotel-and-country-club/",
+    "official_site": "https://www.marriott.co.uk/hotels/travel/cvtgs-forest-of-arden-marriott-hotel-and-country-club/"
+  },
+  {
+    "name": "The Welcombe Golf Club",
+    "lat": 52.2049957,
+    "lon": -1.6911106,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bidford Grange Golf Course",
+    "lat": 52.1660016,
+    "lon": -1.8338829,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Whitefields Golf Course",
+    "lat": 52.3348268,
+    "lon": -1.3309899,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Leam Valley Golf Centre",
+    "lat": 52.3150546,
+    "lon": -1.3126106,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Feldon Valley Golf Club",
+    "lat": 52.0384144,
+    "lon": -1.5524568,
+    "source": "osm",
+    "osm_site": "https://www.feldonvalleygolf.co.uk/",
+    "official_site": "https://www.feldonvalleygolf.co.uk/"
+  },
+  {
+    "name": "Hellidon Lakes Golf Club",
+    "lat": 52.2192397,
+    "lon": -1.2639088,
+    "source": "osm",
+    "osm_site": "https://hellidonlakeshotel.co.uk",
+    "official_site": "https://hellidonlakeshotel.co.uk"
+  },
+  {
+    "name": "Ladbrook Park Golf Club",
+    "lat": 52.3456053,
+    "lon": -1.8540737,
+    "source": "osm",
+    "osm_site": "https://www.ladbrookparkgolf.co.uk/",
+    "official_site": "https://www.ladbrookparkgolf.co.uk/"
+  },
+  {
+    "name": "Stratford on Avon Golf Club",
+    "lat": 52.1942887,
+    "lon": -1.684006,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Nuneaton Golf Club",
+    "lat": 52.5065022,
+    "lon": -1.4185264,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Stratford Oaks Golf Course",
+    "lat": 52.2452314,
+    "lon": -1.715971,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ingon Manor Golf & Country Club",
+    "lat": 52.2177872,
+    "lon": -1.692971,
+    "source": "osm",
+    "osm_site": "https://www.ingonmanor.co.uk/",
+    "official_site": "https://www.ingonmanor.co.uk/"
+  },
+  {
+    "name": "Warwick Golf Centre",
+    "lat": 52.2828533,
+    "lon": -1.6009945,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ardencote Manor Hotel, Country Club & Spa",
+    "lat": 52.2888107,
+    "lon": -1.7050914,
+    "source": "osm",
+    "osm_site": "https://ardencote.com/",
+    "official_site": "https://ardencote.com/"
+  },
+  {
+    "name": "Golf Range",
+    "lat": 52.4868471,
+    "lon": -1.3892683,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Kenilworth Golf Club",
+    "lat": 52.3525517,
+    "lon": -1.5468051,
+    "source": "osm",
+    "osm_site": "https://www.kenilworthgolfclub.co.uk/",
+    "official_site": "https://www.kenilworthgolfclub.co.uk/"
+  },
+  {
+    "name": "Leamington and County Golf Club",
+    "lat": 52.2569342,
+    "lon": -1.5203282,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lea Marston Golf Course",
+    "lat": 52.5450264,
+    "lon": -1.7087943,
+    "source": "osm",
+    "osm_site": "https://www.leamarstonhotel.co.uk/",
+    "official_site": "https://www.leamarstonhotel.co.uk/"
+  },
+  {
+    "name": "Bramcote Waters Golf Course",
+    "lat": 52.4930211,
+    "lon": -1.3924478,
+    "source": "osm",
+    "osm_site": "https://www.bramcotewatersgolfclub.co.uk/",
+    "official_site": "https://www.bramcotewatersgolfclub.co.uk/"
+  },
+  {
+    "name": "Welford-on-Avon Golf Course",
+    "lat": 52.156402,
+    "lon": -1.7802537,
+    "source": "osm",
+    "osm_site": "https://www.welfordgolf.co.uk/",
+    "official_site": "https://www.welfordgolf.co.uk/"
+  },
+  {
+    "name": "Oakridge Golf Club",
+    "lat": 52.5147732,
+    "lon": -1.5645185,
+    "source": "osm",
+    "osm_site": "https://www.oakridgegolfclub.co.uk/",
+    "official_site": "https://www.oakridgegolfclub.co.uk/"
+  },
+  {
+    "name": "Whitefields",
+    "lat": 52.3356284,
+    "lon": -1.3309899,
+    "source": "osm",
+    "osm_site": "https://www.whitefieldsgolfclub.co.uk/course/",
+    "official_site": "https://www.whitefieldsgolfclub.co.uk/course/"
+  }
+]

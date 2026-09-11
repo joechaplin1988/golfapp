@@ -1,0 +1,330 @@
+[
+  {
+    "name": "Crazy Golf",
+    "lat": 52.6592365,
+    "lon": 1.7264886,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Eaton Golf Club (Norwich)",
+    "lat": 52.605159,
+    "lon": 1.2667362,
+    "source": "osm",
+    "osm_site": "https://www.eatongc.co.uk/",
+    "official_site": "https://www.eatongc.co.uk/"
+  },
+  {
+    "name": "Costessey Park Golf Course",
+    "lat": 52.6572929,
+    "lon": 1.192245,
+    "source": "osm",
+    "osm_site": "https://www.costesseypark.com/",
+    "official_site": "https://www.costesseypark.com/"
+  },
+  {
+    "name": "Dereham Golf Club",
+    "lat": 52.690903,
+    "lon": 0.9335813,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ryston Park Golf Club",
+    "lat": 52.5832025,
+    "lon": 0.3907479,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hunstanton Golf Club",
+    "lat": 52.9613791,
+    "lon": 0.5174025,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Gorleston Golf Club",
+    "lat": 52.549948,
+    "lon": 1.7305405,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "King\u2019s Lynn Golf Club",
+    "lat": 52.7844443,
+    "lon": 0.4547106,
+    "source": "osm",
+    "osm_site": "https://www.club-noticeboard.co.uk/kingslynn/",
+    "official_site": "https://www.club-noticeboard.co.uk/kingslynn/"
+  },
+  {
+    "name": "Thetford Golf Club",
+    "lat": 52.4185548,
+    "lon": 0.7135235,
+    "source": "osm",
+    "osm_site": "https://www.thetfordgolfclub.co.uk/",
+    "official_site": "https://www.thetfordgolfclub.co.uk/"
+  },
+  {
+    "name": "RAF Feltwell Golf Course",
+    "lat": 52.4751605,
+    "lon": 0.5232437,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Royal West Norfolk Golf Club",
+    "lat": 52.9742198,
+    "lon": 0.6534356,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Sheringham Golf Links",
+    "lat": 52.9443257,
+    "lon": 1.1900708,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Sprowston Manor Golf Club",
+    "lat": 52.6656215,
+    "lon": 1.3450609,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Wensum Valley Hotel Golf Course",
+    "lat": 52.6867257,
+    "lon": 1.1780861,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Richmond Park Golf Club",
+    "lat": 52.5780498,
+    "lon": 0.8173377,
+    "source": "osm",
+    "osm_site": "https://www.richmondpark.co.uk/",
+    "official_site": "https://www.richmondpark.co.uk/"
+  },
+  {
+    "name": "Swaffham Golf Club",
+    "lat": 52.6308879,
+    "lon": 0.6648618,
+    "source": "osm",
+    "osm_site": "https://www.club-noticeboard.co.uk/swaffham/",
+    "official_site": "https://www.club-noticeboard.co.uk/swaffham/"
+  },
+  {
+    "name": "Gorleston Putting Green",
+    "lat": 52.5631765,
+    "lon": 1.7310817,
+    "source": "osm",
+    "osm_site": "https://www.greatyarmouthservices.co.uk/open-spaces/book-sports-facilities/gorleston-cliffs-putting-course",
+    "official_site": "https://www.greatyarmouthservices.co.uk/open-spaces/book-sports-facilities/gorleston-cliffs-putting-course"
+  },
+  {
+    "name": "Silfield Village Golf Course",
+    "lat": 52.5533002,
+    "lon": 1.1332821,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Great Yarmouth and Caister Golf Club",
+    "lat": 52.6381469,
+    "lon": 1.7327347,
+    "source": "osm",
+    "osm_site": "https://www.caistergolf.co.uk/",
+    "official_site": "https://www.caistergolf.co.uk/"
+  },
+  {
+    "name": "Bawburgh Golf Course",
+    "lat": 52.642382,
+    "lon": 1.1751831,
+    "source": "osm",
+    "osm_site": "https://bawburgh.com/",
+    "official_site": "https://bawburgh.com/"
+  },
+  {
+    "name": "Dunston Hall Golf Course",
+    "lat": 52.5702852,
+    "lon": 1.2833233,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Caldecott Hall",
+    "lat": 52.5571405,
+    "lon": 1.6480193,
+    "source": "osm",
+    "osm_site": "https://caldecotthall.co.uk/",
+    "official_site": "https://caldecotthall.co.uk/"
+  },
+  {
+    "name": "Barnham Broom",
+    "lat": 52.6345345,
+    "lon": 1.0944395,
+    "source": "osm",
+    "osm_site": "https://www.barnham-broom.co.uk/golf",
+    "official_site": "https://www.barnham-broom.co.uk/golf"
+  },
+  {
+    "name": "Denver Golf Club",
+    "lat": 52.5890195,
+    "lon": 0.3641646,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Royal Cromer Golf Club",
+    "lat": 52.9218635,
+    "lon": 1.3261883,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Mundesley Golf Course",
+    "lat": 52.8768305,
+    "lon": 1.4194909,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Middleton Hall Golf Club",
+    "lat": 52.7204015,
+    "lon": 0.4517552,
+    "source": "osm",
+    "osm_site": "https://www.middletonhallgolfclub.com/",
+    "official_site": "https://www.middletonhallgolfclub.com/"
+  },
+  {
+    "name": "Lambert's Point Golf Course",
+    "lat": 36.8830011,
+    "lon": -76.3195525,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ocean View Golf Course",
+    "lat": 36.9463506,
+    "lon": -76.251033,
+    "source": "osm",
+    "osm_site": "https://www.oceanviewgc.com/",
+    "official_site": "https://www.oceanviewgc.com/"
+  },
+  {
+    "name": "Heacham Manor Golf Club",
+    "lat": 52.920238,
+    "lon": 0.4856082,
+    "source": "osm",
+    "osm_site": "https://www.heacham-manor.co.uk/golf",
+    "official_site": "https://www.heacham-manor.co.uk/golf"
+  },
+  {
+    "name": "5 Hole Golf Course",
+    "lat": 36.9531206,
+    "lon": -76.3137088,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Browston Hall Golf Course",
+    "lat": 52.5544162,
+    "lon": 1.6845131,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Norfolk Premier Golf",
+    "lat": 52.6301211,
+    "lon": 1.4403109,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Mattishall Golf Club",
+    "lat": 52.6465622,
+    "lon": 1.0386642,
+    "source": "osm",
+    "osm_site": "https://www.mattishallgolfclub.co.uk/",
+    "official_site": "https://www.mattishallgolfclub.co.uk/"
+  },
+  {
+    "name": "Sewells Point Golf Course",
+    "lat": 36.9236542,
+    "lon": -76.288068,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Norwich Family Golf Centre",
+    "lat": 52.6468912,
+    "lon": 1.1657945,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hunstanton Putting Green",
+    "lat": 52.9415131,
+    "lon": 0.4876705,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Royal Norwich Golf Club",
+    "lat": 52.7128864,
+    "lon": 1.1235183,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Eaton Park Pitch & Kick",
+    "lat": 52.6191586,
+    "lon": 1.250527,
+    "source": "osm",
+    "osm_site": "https://www.norwich.gov.uk/pitchandkick",
+    "official_site": "https://www.norwich.gov.uk/pitchandkick"
+  },
+  {
+    "name": "Eagles Golf Centre",
+    "lat": 52.7309355,
+    "lon": 0.3126843,
+    "source": "osm",
+    "osm_site": "https://www.eaglesgolfonline.co.uk/",
+    "official_site": "https://www.eaglesgolfonline.co.uk/"
+  },
+  {
+    "name": "Fakenham Golf Club",
+    "lat": 52.823514,
+    "lon": 0.8590488,
+    "source": "osm",
+    "osm_site": "https://www.fakenhamgolfclub.co.uk/",
+    "official_site": "https://www.fakenhamgolfclub.co.uk/"
+  }
+]

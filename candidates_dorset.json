@@ -1,0 +1,408 @@
+[
+  {
+    "name": "Swanage Golf Games",
+    "lat": 50.6127573,
+    "lon": -1.9679751,
+    "source": "osm",
+    "osm_site": "https://swanagegolfgames.com/",
+    "official_site": "https://swanagegolfgames.com/"
+  },
+  {
+    "name": "Ferndown Golf Club",
+    "lat": 50.7994292,
+    "lon": -1.8775017,
+    "source": "osm",
+    "osm_site": "https://www.ferndowngolfclub.co.uk/",
+    "official_site": "https://www.ferndowngolfclub.co.uk"
+  },
+  {
+    "name": "Meyrick Park Golf Course",
+    "lat": 50.7286176,
+    "lon": -1.8875548,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.theclubatmeyrickpark.com"
+  },
+  {
+    "name": "Knighton Heath Golf Course",
+    "lat": 50.7610016,
+    "lon": -1.9373184,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.knightonheathgolfclub.co.uk"
+  },
+  {
+    "name": "Solent Meads Golf Centre",
+    "lat": 50.7216863,
+    "lon": -1.7735459,
+    "source": "osm",
+    "osm_site": "https://www.solentmeads.com/",
+    "official_site": "https://www.solentmeads.com/"
+  },
+  {
+    "name": "Weymouth Golf Club",
+    "lat": 50.6172336,
+    "lon": -2.4778953,
+    "source": "osm",
+    "osm_site": "https://www.weymouthgolfclub.co.uk/",
+    "official_site": "https://www.weymouthgolfclub.co.uk"
+  },
+  {
+    "name": "Lyme Regis Golf Club",
+    "lat": 50.7398972,
+    "lon": -2.922782,
+    "source": "osm",
+    "osm_site": "https://www.lymeregisgolfclub.co.uk/",
+    "official_site": "https://www.lymeregisgolfclub.co.uk"
+  },
+  {
+    "name": "Came Down Golf Club",
+    "lat": 50.6767558,
+    "lon": -2.444431,
+    "source": "osm",
+    "osm_site": "https://www.camedowngolfclub.co.uk/",
+    "official_site": "https://www.camedowngolfclub.co.uk"
+  },
+  {
+    "name": "Parley Golf Centre Course",
+    "lat": 50.7733707,
+    "lon": -1.8492363,
+    "source": "osm",
+    "osm_site": "https://www.parleygolf.co.uk/",
+    "official_site": "https://www.parleygolf.co.uk"
+  },
+  {
+    "name": "Moors Valley Golf Course",
+    "lat": 50.8574025,
+    "lon": -1.8540958,
+    "source": "osm",
+    "osm_site": "https://www.mackgolf.co.uk/moors-valley-golf-course/4",
+    "official_site": "https://www.moors-valley.co.uk/things-to-do/golf-course"
+  },
+  {
+    "name": "Bridport and West Dorset Golf Club",
+    "lat": 50.7081057,
+    "lon": -2.749547,
+    "source": "osm",
+    "osm_site": "https://www.bridportgolfclub.co.uk/",
+    "official_site": "https://www.bridportgolfclub.co.uk"
+  },
+  {
+    "name": "Broadstone Golf Club",
+    "lat": 50.7728943,
+    "lon": -1.9941551,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.broadstonegolfclub.com"
+  },
+  {
+    "name": "Sherborne Golf Club",
+    "lat": 50.968324,
+    "lon": -2.5251565,
+    "source": "osm",
+    "osm_site": "https://www.sherbornegolfclub.co.uk/",
+    "official_site": "https:// www.sherbornegolfclub.co.uk"
+  },
+  {
+    "name": "Rushmore Golf Club",
+    "lat": 50.9638977,
+    "lon": -2.0557494,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.rushmoregolfclub.co.uk"
+  },
+  {
+    "name": "Bulbury Woods Golf Club",
+    "lat": 50.7442733,
+    "lon": -2.1050514,
+    "source": "osm",
+    "osm_site": "https://www.bulbury-woods.co.uk/",
+    "official_site": "https://www.bulbury-woods.co.uk"
+  },
+  {
+    "name": "The Dorset Golf & Country Club & Resort",
+    "lat": 50.7067359,
+    "lon": -2.1924263,
+    "source": "osm",
+    "osm_site": "https://www.dorsetgolfresort.com/",
+    "official_site": "https://www.dorsetgolfresort.com"
+  },
+  {
+    "name": "Highcliffe Castle Golf Club",
+    "lat": 50.7383648,
+    "lon": -1.7201378,
+    "source": "osm",
+    "osm_site": "https://www.highcliffecastlegolfclub.co.uk/",
+    "official_site": "https://www.highcliffecastlegolfclub.co.uk"
+  },
+  {
+    "name": "Barnbougle Dunes Golf Course",
+    "lat": -41.005309,
+    "lon": 147.4341662,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Barnbougle Lost Farm Golf Course",
+    "lat": -40.9985985,
+    "lon": 147.4593526,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ashley Wood Golf Club",
+    "lat": 50.8517029,
+    "lon": -2.1125535,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.ashleywoodgolfclub.com"
+  },
+  {
+    "name": "Chewton Glen Hotel Executive Course",
+    "lat": 50.7443309,
+    "lon": -1.6820295,
+    "source": "osm",
+    "osm_site": "https://www.chewtonglen.com/hotel/activities/on-site/golf.aspx",
+    "official_site": "https://www.chewtonglen.com/hotel/activities/on-site/golf.aspx"
+  },
+  {
+    "name": "Queen's Park Golf Course",
+    "lat": 50.7409714,
+    "lon": -1.8439398,
+    "source": "osm",
+    "osm_site": "https://www.queensparkgolfcourse.com/",
+    "official_site": "https://www.queensparkgolfcourse.com"
+  },
+  {
+    "name": "Sturminster Marshall Golf Club",
+    "lat": 50.7967161,
+    "lon": -2.0683137,
+    "source": "osm",
+    "osm_site": "https://www.smgc.eu/",
+    "official_site": "https://www.sturminstermarshallgc.co.uk"
+  },
+  {
+    "name": "Remedy Oak",
+    "lat": 50.8713907,
+    "lon": -1.9199787,
+    "source": "osm",
+    "osm_site": "https://www.remedyoak.com/",
+    "official_site": "https://www.remedyoak.com"
+  },
+  {
+    "name": "Merley Park Golf Course",
+    "lat": 50.7852645,
+    "lon": -1.9803637,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.intelligentgolf.co.uk"
+  },
+  {
+    "name": "Wareham Golf Club",
+    "lat": 50.7008548,
+    "lon": -2.1179925,
+    "source": "osm",
+    "osm_site": "https://www.warehamgolfclub.com/",
+    "official_site": "https://www.warehamgolfclub.com"
+  },
+  {
+    "name": "Lodmoor Pitch and Putt",
+    "lat": 50.6279215,
+    "lon": -2.4482027,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Dudsbury Golf Club & Hotel",
+    "lat": 50.7818366,
+    "lon": -1.89983,
+    "source": "osm",
+    "osm_site": "https://www.dudsburygolfclub.co.uk/",
+    "official_site": "https://www.dudsburygolfclub.co.uk/"
+  },
+  {
+    "name": "Moorina Golf Club",
+    "lat": -41.132474,
+    "lon": 147.8753044,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Crane Valley - Valley Course",
+    "lat": 50.8761933,
+    "lon": -1.8998701,
+    "source": "osm",
+    "osm_site": "https://www.crane-valley.co.uk/",
+    "official_site": "https://www.crane-valley.co.uk"
+  },
+  {
+    "name": "Crane Valley - Woodland Course",
+    "lat": 50.8834013,
+    "lon": -1.9048122,
+    "source": "osm",
+    "osm_site": "https://www.crane-valley.co.uk/",
+    "official_site": "https://www.crane-valley.co.uk"
+  },
+  {
+    "name": "Hamworthy Club",
+    "lat": 50.7792469,
+    "lon": -1.9469597,
+    "source": "osm",
+    "osm_site": "https://www.hamworthyclub.co.uk/",
+    "official_site": "https://www.hamworthyclub.co.uk/"
+  },
+  {
+    "name": "Wessex Golf Centre",
+    "lat": 50.6204976,
+    "lon": -2.4882937,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://wessexgolfcentre.com"
+  },
+  {
+    "name": "Wolfedale Golf Course",
+    "lat": 50.7394853,
+    "lon": -2.4446373,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Scottsdale Golf Course",
+    "lat": -41.1539845,
+    "lon": 147.5065394,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Folke Golf Centre",
+    "lat": 50.9226473,
+    "lon": -2.4879458,
+    "source": "osm",
+    "osm_site": "https://folkegolfcentre.co.uk",
+    "official_site": "https://www.folkegolfcentre.co.uk"
+  },
+  {
+    "name": "Isle of Purbeck Golf Course",
+    "lat": 50.6403428,
+    "lon": -1.9823864,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.purbeckgolf.co.uk"
+  },
+  {
+    "name": "Ferndown Forest Golf Club",
+    "lat": 50.8209933,
+    "lon": -1.896527,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://ferndownforestgolfcourse.co.uk"
+  },
+  {
+    "name": "Ringarooma Golf Course",
+    "lat": -41.2423156,
+    "lon": 147.6950121,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Dudmoor Farm Golf Course",
+    "lat": 50.7614637,
+    "lon": -1.7861903,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Canford Golf Club",
+    "lat": 50.7859729,
+    "lon": -1.9479114,
+    "source": "osm",
+    "osm_site": "https://www.canford.com/open-to-the-public/canford-golf-club",
+    "official_site": "https://www.canford.com/golf-club"
+  },
+  {
+    "name": "Christchurch Golf Club - Stour Course",
+    "lat": 50.7528686,
+    "lon": -1.8102719,
+    "source": "osm",
+    "osm_site": "https://christchurchgolf.club/",
+    "official_site": "https://www.christchurchgolf.club"
+  },
+  {
+    "name": "Milton Abbey Golf Course",
+    "lat": 50.8192733,
+    "lon": -2.2892531,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Kirkwood Park",
+    "lat": 50.6121847,
+    "lon": -1.9702827,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Yeovil Golf Club",
+    "lat": 50.9392529,
+    "lon": -2.6064156,
+    "source": "osm",
+    "osm_site": "https://www.yeovilgolfclub.com/",
+    "official_site": "https://www.yeovilgolfclub.com"
+  },
+  {
+    "name": "Isle of Purbeck Golf Club",
+    "lat": 50.6354614,
+    "lon": -1.9784338,
+    "source": "osm",
+    "osm_site": "https://www.purbeckgolf.co.uk/",
+    "official_site": "https://www.purbeckgolf.co.uk"
+  },
+  {
+    "name": "Bridport Golf Club",
+    "lat": -40.996189,
+    "lon": 147.3797778,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.bridportgolfclub.co.uk"
+  },
+  {
+    "name": "Christchurch Golf Club - Bridge Course",
+    "lat": 50.7523139,
+    "lon": -1.8113388,
+    "source": "osm",
+    "osm_site": "https://christchurchgolf.club/",
+    "official_site": "https://www.christchurchgolf.club"
+  },
+  {
+    "name": "Parkstone Golf Club",
+    "lat": 50.7092351,
+    "lon": -1.931462,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.parkstonegolfclub.com"
+  },
+  {
+    "name": "Charminster Golf Club",
+    "official_site": "https://www.wolfedalegolf-dorset.co.uk/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Henstridge Sports and Leisure Golf Club",
+    "official_site": "https://www.henstridgegolfandleisure.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  }
+]

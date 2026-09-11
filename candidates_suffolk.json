@@ -1,0 +1,370 @@
+[
+  {
+    "name": "Fynn Valley Golf Club",
+    "lat": 52.0994518,
+    "lon": 1.1841526,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Seckford Golf Club",
+    "lat": 52.0876432,
+    "lon": 1.2869223,
+    "source": "osm",
+    "osm_site": "https://www.seckfordgolf.co.uk/",
+    "official_site": "https://www.seckfordgolf.co.uk/"
+  },
+  {
+    "name": "Royal Worlington and Newmarket Golf Club",
+    "lat": 52.3318215,
+    "lon": 0.4958,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Woodbridge Golf Club - Heath Course",
+    "lat": 52.0970584,
+    "lon": 1.3559669,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "St Clements Golf Club",
+    "lat": 52.0457076,
+    "lon": 1.1943959,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Rushmere Golf Course",
+    "lat": 52.0573123,
+    "lon": 1.209192,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Diss Golf Club",
+    "lat": 52.3648662,
+    "lon": 1.1352286,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bramford Golf Centre / Suffolk Golf & Water Park",
+    "lat": 52.0908756,
+    "lon": 1.0960602,
+    "source": "osm",
+    "osm_site": "https://www.bramfordgc.co.uk/",
+    "official_site": "https://www.bramfordgc.co.uk/"
+  },
+  {
+    "name": "St Audrys Golf Club",
+    "lat": 52.1159536,
+    "lon": 1.3389809,
+    "source": "osm",
+    "osm_site": "https://www.staudrysgc.co.uk/",
+    "official_site": "https://www.staudrysgc.co.uk/"
+  },
+  {
+    "name": "Ufford Park Golf Course",
+    "lat": 52.1155947,
+    "lon": 1.345616,
+    "source": "osm",
+    "osm_site": "https://www.uffordpark.co.uk/",
+    "official_site": "https://www.uffordpark.co.uk/"
+  },
+  {
+    "name": "Felixstowe Ferry Golf Club - Martello Course",
+    "lat": 51.9829493,
+    "lon": 1.384805,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Center Parcs Elveden Forest",
+    "lat": 52.3941818,
+    "lon": 0.6576028,
+    "source": "osm",
+    "osm_site": "https://www.centerparcs.co.uk/villages/elveden",
+    "official_site": "https://www.centerparcs.co.uk/villages/elveden"
+  },
+  {
+    "name": "Suffolk Golf Course",
+    "lat": 36.7266245,
+    "lon": -76.6138808,
+    "source": "osm",
+    "osm_site": "https://www.suffolkgolfcourse.org",
+    "official_site": "https://www.suffolkgolfcourse.org"
+  },
+  {
+    "name": "Bury St Edmunds Golf Club - Championship Course",
+    "lat": 52.2569646,
+    "lon": 0.6860521,
+    "source": "osm",
+    "osm_site": "https://www.burystedmundsgolfclub.co.uk/",
+    "official_site": "https://www.burystedmundsgolfclub.co.uk/"
+  },
+  {
+    "name": "The Suffolk Golf & Spa Hotel",
+    "lat": 52.272546,
+    "lon": 0.7014782,
+    "source": "osm",
+    "osm_site": "https://www.bespokehotels.com/suffolkgolfspahotel/",
+    "official_site": "https://www.bespokehotels.com/suffolkgolfspahotel/"
+  },
+  {
+    "name": "Southwold Golf Club",
+    "lat": 52.3265622,
+    "lon": 1.6706795,
+    "source": "osm",
+    "osm_site": "https://www.southwoldgolfclub.co.uk/",
+    "official_site": "https://www.southwoldgolfclub.co.uk/"
+  },
+  {
+    "name": "Flempton Golf Club",
+    "lat": 52.3005533,
+    "lon": 0.6512334,
+    "source": "osm",
+    "osm_site": "https://www.flemptongolfclub.co.uk/",
+    "official_site": "https://www.flemptongolfclub.co.uk/"
+  },
+  {
+    "name": "Halesworth Golf Club - Championship Course",
+    "lat": 52.3311539,
+    "lon": 1.5242134,
+    "source": "osm",
+    "osm_site": "https://www.halesworthgolf.co.uk/",
+    "official_site": "https://www.halesworthgolf.co.uk/"
+  },
+  {
+    "name": "Haverhill Golf Club",
+    "lat": 52.073723,
+    "lon": 0.4685108,
+    "source": "osm",
+    "osm_site": "https://www.club-noticeboard.co.uk/haverhill/",
+    "official_site": "https://www.club-noticeboard.co.uk/haverhill/"
+  },
+  {
+    "name": "Stowmarket Golf Club",
+    "lat": 52.1870772,
+    "lon": 0.9450494,
+    "source": "osm",
+    "osm_site": "https://www.stowmarketgolfclub.co.uk/",
+    "official_site": "https://www.stowmarketgolfclub.co.uk/"
+  },
+  {
+    "name": "Stoke by Nayland Resort - Gainsborough Course",
+    "lat": 51.996773,
+    "lon": 0.8619587,
+    "source": "osm",
+    "osm_site": "https://www.stokebynayland.com/content/golf",
+    "official_site": "https://www.stokebynayland.com/content/golf"
+  },
+  {
+    "name": "Newton Green Golf Course",
+    "lat": 52.0323313,
+    "lon": 0.7882695,
+    "source": "osm",
+    "osm_site": "https://www.newtongreengolfclub.co.uk/",
+    "official_site": "https://www.newtongreengolfclub.co.uk/"
+  },
+  {
+    "name": "Old Joe's Golfing Range",
+    "lat": 52.0291152,
+    "lon": 0.7768375,
+    "source": "osm",
+    "osm_site": "https://www.oldjoesgolfingrange.co.uk/",
+    "official_site": "https://www.oldjoesgolfingrange.co.uk/"
+  },
+  {
+    "name": "Aldeburgh Golf Club - Championship Course",
+    "lat": 52.1669392,
+    "lon": 1.5798292,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Rookery Park Golf Club - Main Course",
+    "lat": 52.45998,
+    "lon": 1.6796193,
+    "source": "osm",
+    "osm_site": "https://www.rookeryparkgolfclub.co.uk/",
+    "official_site": "https://www.rookeryparkgolfclub.co.uk/"
+  },
+  {
+    "name": "Stowmarket Golf & Archery Centre",
+    "lat": 52.1925795,
+    "lon": 0.9387964,
+    "source": "osm",
+    "osm_site": "https://www.stowmarketgolfcentre.co.uk/",
+    "official_site": "https://www.stowmarketgolfcentre.co.uk/"
+  },
+  {
+    "name": "RAF Lakenheath Breckland Pines Golf Course",
+    "lat": 52.4025054,
+    "lon": 0.5740075,
+    "source": "osm",
+    "osm_site": "https://www.lakenheathfss.com/brecklandpines/",
+    "official_site": "https://www.lakenheathfss.com/brecklandpines/"
+  },
+  {
+    "name": "Bungay & Waveney Valley Golf Club",
+    "lat": 52.4617997,
+    "lon": 1.4229943,
+    "source": "osm",
+    "osm_site": "https://www.club-noticeboard.co.uk/bungay/",
+    "official_site": "https://www.club-noticeboard.co.uk/bungay/"
+  },
+  {
+    "name": "Alnesbourne Priory Golf Course",
+    "lat": 52.0167524,
+    "lon": 1.1926789,
+    "source": "osm",
+    "osm_site": "https://alnesbournepriorygolf.co.uk/",
+    "official_site": "https://alnesbournepriorygolf.co.uk/"
+  },
+  {
+    "name": "Ipswich Golf Club",
+    "lat": 52.0432096,
+    "lon": 1.2175447,
+    "source": "osm",
+    "osm_site": "https://www.ipswichgolfclub.com/",
+    "official_site": "https://www.ipswichgolfclub.com/"
+  },
+  {
+    "name": "Stonham Barns Golf Centre",
+    "lat": 52.1856401,
+    "lon": 1.1390019,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Brett Vale Golf Course",
+    "lat": 52.0041268,
+    "lon": 0.9753194,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cedar Point Country Club",
+    "lat": 36.9021807,
+    "lon": -76.4894798,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Aldeburgh Golf Club - River Course",
+    "lat": 52.1636237,
+    "lon": 1.5751457,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Jacobsen Golf Course",
+    "lat": 52.0325871,
+    "lon": 1.2130377,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Felixstowe Ferry Golf Club - Kingsfleet Course",
+    "lat": 51.9835164,
+    "lon": 1.3809357,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Moon and Sixpence Golf Course",
+    "lat": 52.0588789,
+    "lon": 1.2981395,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Gunton Hall Pitch and Putt",
+    "lat": 52.5065865,
+    "lon": 1.7400965,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Woodbridge Golf Club - Forest Course",
+    "lat": 52.0955637,
+    "lon": 1.3612318,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Stoke by Nayland Resort - Constable Course",
+    "lat": 51.9927654,
+    "lon": 0.8688219,
+    "source": "osm",
+    "osm_site": "https://www.stokebynayland.com/content/golf",
+    "official_site": "https://www.stokebynayland.com/content/golf"
+  },
+  {
+    "name": "Bury St Edmunds Golf Club - Greene King Course",
+    "lat": 52.2622195,
+    "lon": 0.6828679,
+    "source": "osm",
+    "osm_site": "https://www.burystedmundsgolfclub.co.uk/",
+    "official_site": "https://www.burystedmundsgolfclub.co.uk/"
+  },
+  {
+    "name": "Halesworth Golf Club - Valley Course",
+    "lat": 52.3301369,
+    "lon": 1.519172,
+    "source": "osm",
+    "osm_site": "https://www.halesworthgolf.co.uk/",
+    "official_site": "https://www.halesworthgolf.co.uk/"
+  },
+  {
+    "name": "Thorpeness Hotel & Golf Club",
+    "lat": 52.1885138,
+    "lon": 1.6035327,
+    "source": "osm",
+    "osm_site": "https://www.thorpeness.co.uk/",
+    "official_site": "https://www.thorpeness.co.uk/"
+  },
+  {
+    "name": "Hintlesham Golf Club",
+    "lat": 52.0544484,
+    "lon": 1.0458158,
+    "source": "osm",
+    "osm_site": "https://www.hintleshamgolfclub.com/",
+    "official_site": "https://www.hintleshamgolfclub.com/"
+  },
+  {
+    "name": "Sleepy Hole Golf Course",
+    "lat": 36.8397388,
+    "lon": -76.5174049,
+    "source": "osm",
+    "osm_site": "https://www.sleepyholegolfcourse.com/",
+    "official_site": "https://www.sleepyholegolfcourse.com/"
+  },
+  {
+    "name": "Riverfront Golf Club",
+    "lat": 36.8816673,
+    "lon": -76.4459811,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  }
+]

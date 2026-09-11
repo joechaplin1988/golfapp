@@ -30,3 +30,7 @@ approved_rows.csv
 approved_rows_*.csv
 candidates_recovered.json
 course_profiles.csv.bak
+
+# Fingerprint/probe run logs — noise, the review CSVs are the evidence
+fp_*.log
+probe_*.log

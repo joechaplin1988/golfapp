@@ -1,0 +1,210 @@
+[
+  {
+    "name": "Market Harborough Golf Club",
+    "lat": 52.4565437,
+    "lon": -0.9246459,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Farthingstone Hotel and Golf",
+    "lat": 52.1904426,
+    "lon": -1.1229124,
+    "source": "osm",
+    "osm_site": "https://www.farthingstone.co.uk/",
+    "official_site": "https://www.farthingstone.co.uk/"
+  },
+  {
+    "name": "Kingsthorpe Golf Course",
+    "lat": 52.2601758,
+    "lon": -0.8875037,
+    "source": "osm",
+    "osm_site": "https://www.kingsthorpe-golf.co.uk/",
+    "official_site": "https://www.kingsthorpe-golf.co.uk/"
+  },
+  {
+    "name": "Kilworth Springs",
+    "lat": 52.4358357,
+    "lon": -1.0966875,
+    "source": "osm",
+    "osm_site": "https://www.kilworthsprings.co.uk/",
+    "official_site": "https://www.kilworthsprings.co.uk/"
+  },
+  {
+    "name": "Cold Ashby Golf Club",
+    "lat": 52.3771555,
+    "lon": -1.0645898,
+    "source": "osm",
+    "osm_site": "https://www.coldashbygolfclub.com/",
+    "official_site": "https://www.coldashbygolfclub.com/"
+  },
+  {
+    "name": "Delapre Golf Centre",
+    "lat": 52.2206646,
+    "lon": -0.8873606,
+    "source": "osm",
+    "osm_site": "https://delapregolfcentre.co.uk/",
+    "official_site": "https://delapregolfcentre.co.uk/"
+  },
+  {
+    "name": "Rushden Golf Range",
+    "lat": 52.2732297,
+    "lon": -0.583151,
+    "source": "osm",
+    "osm_site": "https://www.rushdengolfrange.co.uk/",
+    "official_site": "https://www.rushdengolfrange.co.uk/"
+  },
+  {
+    "name": "John White Golf Course",
+    "lat": 52.2722871,
+    "lon": -0.5816606,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Daventry & District Golf Club",
+    "lat": 52.2638367,
+    "lon": -1.1403887,
+    "source": "osm",
+    "osm_site": "https://www.daventrygolfclub.co.uk/",
+    "official_site": "https://www.daventrygolfclub.co.uk/"
+  },
+  {
+    "name": "Kettering Golf Club",
+    "lat": 52.3835528,
+    "lon": -0.7449412,
+    "source": "osm",
+    "osm_site": "https://www.kettering-golf.co.uk/",
+    "official_site": "https://www.kettering-golf.co.uk/"
+  },
+  {
+    "name": "Oundle Golf Club",
+    "lat": 52.479223,
+    "lon": -0.5020588,
+    "source": "osm",
+    "osm_site": "https://www.oundlegolfclub.com/",
+    "official_site": "https://www.oundlegolfclub.com/"
+  },
+  {
+    "name": "Northamptonshire County Golf Course",
+    "lat": 52.2758675,
+    "lon": -0.9387313,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Brampton Health Golf Centre",
+    "lat": 52.2767281,
+    "lon": -0.932898,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hellidon Lakes Golf Club",
+    "lat": 52.2192397,
+    "lon": -1.2639088,
+    "source": "osm",
+    "osm_site": "https://hellidonlakeshotel.co.uk",
+    "official_site": "https://hellidonlakeshotel.co.uk"
+  },
+  {
+    "name": "Blackthorn Wood Golf Complex",
+    "lat": 52.4963695,
+    "lon": -0.7452451,
+    "source": "osm",
+    "osm_site": "https://blackthornwoodgc.co.uk/",
+    "official_site": "https://blackthornwoodgc.co.uk/"
+  },
+  {
+    "name": "Staverton Park",
+    "lat": 52.2540052,
+    "lon": -1.2019654,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Pytchley Golf Lodge",
+    "lat": 52.3716075,
+    "lon": -0.7262826,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Wellingborough Golf Glub",
+    "lat": 52.331188,
+    "lon": -0.7026363,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Stoke Albany Golf and Country Club",
+    "lat": 52.488326,
+    "lon": -0.8314235,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Northampton Golf Club",
+    "lat": 52.2745929,
+    "lon": -0.9812744,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cherwell Edge Golf Club",
+    "lat": 52.0841295,
+    "lon": -1.2783051,
+    "source": "osm",
+    "osm_site": "https://www.cherwelledgegolfclub.co.uk/",
+    "official_site": "https://www.cherwelledgegolfclub.co.uk/"
+  },
+  {
+    "name": "Whittlebury Hall Golf Course",
+    "lat": 52.0785534,
+    "lon": -0.995465,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Silverstone Golf Club",
+    "lat": 52.0627688,
+    "lon": -1.041862,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Overstone Park Golf Club",
+    "lat": 52.2778864,
+    "lon": -0.817221,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Collingtree Park Golf Club",
+    "lat": 52.1987528,
+    "lon": -0.9040075,
+    "source": "osm",
+    "osm_site": "https://www.collingtreeparkgolf.com/",
+    "official_site": "https://www.collingtreeparkgolf.com/"
+  },
+  {
+    "name": "Rushden Golf Club",
+    "lat": 52.3074031,
+    "lon": -0.560494,
+    "source": "osm",
+    "osm_site": "https://www.rushdengolfclub.org/",
+    "official_site": "https://www.rushdengolfclub.org/"
+  }
+]
