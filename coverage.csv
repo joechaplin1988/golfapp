@@ -339,7 +339,6 @@ Calderfields Golf and Country Club,live,westmidlands,brs,1,WS4 2JS,,https://visi
 Copt Heath Golf Club,live,westmidlands,intelligent_golf,1,B93 9LN,,https://www.coptheathgolf.co.uk/visitorbooking/
 Dudley Golf Club,live,westmidlands,intelligent_golf,1,B65 9DP,,https://www.dudleygolfclub.com/visitorbooking/
 Great Barr Golf Club,live,westmidlands,clubv1,1,B43 7BA,,https://greatbarrgc.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
-Lickey Hills Golf Course,live,westmidlands,gladstone,1,B45 8RR,,https://mytimeactive.gladstonego.cloud/book
 Little Aston Golf Club,live,westmidlands,intelligent_golf,1,B74 3UP,,https://littleaston.intelligentgolf.co.uk/visitorbooking/
 Nailcote Hall,live,westmidlands,brs,1,CV7 7DE,,https://visitors.brsgolf.com/nailcotehall#/course/1
 The South Staffordshire Golf Club,live,westmidlands,brs,1,WV6 9BQ,,https://visitors.brsgolf.com/southstaffordshire#/course/1
@@ -359,6 +358,7 @@ Belhus Park Golf Club,parked,essex,gladstone,1,RM15 4QR,Impulse Leisure's Cloudf
 Bromley Golf Centre,parked,kent/sussex,gladstone,2,BR2 8JF,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),
 High Elms Golf Course,parked,kent/sussex,gladstone,2,BR6 7JL,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),
 Orpington Golf Centre,parked,kent/sussex,gladstone,3,BR5 3HY,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),https://mytimeactive.gladstonego.cloud/book
+Lickey Hills Golf Course,parked,westmidlands,gladstone,1,B45 8RR,Mytime Active's Cloudflare blocks the CI runner (works from a normal connection),https://mytimeactive.gladstonego.cloud/book
 Dunstable Downs Golf Course,no_visitor_booking,bedfordshire,clubv1,0,,"on clubv1, but visitor booking is switched off",
 John O'Gaunt Golf Course,no_visitor_booking,bedfordshire,intelligent_golf,0,,booking page requires a member login,
 Mowsbury Golf Course,no_visitor_booking,bedfordshire,clubv1,0,,"on clubv1, but visitor booking is switched off",
