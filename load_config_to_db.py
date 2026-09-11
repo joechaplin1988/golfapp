@@ -111,6 +111,9 @@ def build_clubs(config_path: str) -> tuple[dict, list[str]]:
                 "scrape_enabled": golf_common.is_enabled(row),
                 "course_type": prof.get("course_type"),
                 "yardage": prof.get("yardage"),
+                # Whether the profiles file mentions this course at all, which
+                # is what lets a blank in it clear a wrong value in the DB.
+                "profiled": name in profiles,
             })
     return clubs, skipped
 
@@ -153,6 +156,7 @@ def load(clubs: dict) -> None:
                             base_url=co["base_url"], course_ref=co["course_ref"],
                             scrape_enabled=co["scrape_enabled"],
                             course_type=co.get("course_type"), yardage=co.get("yardage"),
+                            profiled=co.get("profiled", False),
                         )
                 n_clubs += 1
                 n_courses += len(c["courses"])

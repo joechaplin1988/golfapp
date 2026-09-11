@@ -57,11 +57,14 @@ def upsert_club(cur, *, slug, name, postcode, latitude, longitude, dedupe_course
 
 
 def upsert_course(cur, *, club_id, name, platform, base_url, course_ref, scrape_enabled,
-                  course_type=None, yardage=None) -> int:
+                  course_type=None, yardage=None, profiled=False) -> int:
     """`course_type`/`yardage` come from the hand-checked course_profiles.csv.
 
-    A blank there must NOT wipe a value already stored — coalesce keeps the
-    existing one — so a half-filled profiles file can be committed safely.
+    A course the profiles file says nothing about keeps whatever is stored, so
+    a half-filled (or missing) profiles file can be committed safely. But when
+    the file DOES carry a row for this course, that row wins, blanks included
+    — otherwise a correction can never be applied. Clearing a yardage we had
+    read off the wrong course's scorecard is exactly why `profiled` exists.
     """
     cur.execute(
         """
@@ -72,12 +75,14 @@ def upsert_course(cur, *, club_id, name, platform, base_url, course_ref, scrape_
             club_id = excluded.club_id,
             name = excluded.name,
             scrape_enabled = excluded.scrape_enabled,
-            course_type = coalesce(excluded.course_type, courses.course_type),
-            yardage = coalesce(excluded.yardage, courses.yardage)
+            course_type = case when %s then excluded.course_type
+                               else coalesce(excluded.course_type, courses.course_type) end,
+            yardage = case when %s then excluded.yardage
+                           else coalesce(excluded.yardage, courses.yardage) end
         returning id
         """,
         (club_id, name, platform, base_url, course_ref or "", scrape_enabled,
-         course_type or None, yardage),
+         course_type or None, yardage, profiled, profiled),
     )
     return cur.fetchone()[0]
 
