@@ -29,7 +29,11 @@ concurrency:                     # never let two runs overlap on the same DB
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    # A full 7-day pass over 292 sheets takes about an hour now. At the old
+    # 45 minutes every one of them was killed mid-run (2026-09-11: cancelled
+    # on day 5 of 7), so the far end of the week was never refreshed and
+    # scrape_runs recorded nothing. Actions minutes are free on a public repo.
+    timeout-minutes: 100
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
