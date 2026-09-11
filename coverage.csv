@@ -12,7 +12,6 @@ Drayton Park Golf Club,live,,brs,1,OX14 4LA,,
 Dukes Meadows Golf,live,,brs,1,W4 2SH,,
 East Sussex National,live,,shiji,2,BN8 5ES,,
 Eastbourne Downs,live,,golf_manager,1,BN20 8ES,,
-Eaton Golf Club,live,,brs,1,NR4 6ND,,
 Haywards Heath,live,,intelligent_golf,1,RH16 1SL,,
 Horsham Golf Club,live,,intelligent_golf,1,RH13 0AX,,
 Knole Park,live,,intelligent_golf,1,TN15 0HJ,,
@@ -250,6 +249,7 @@ Twisted Stone Golf Course,live,newsite,brs,1,GU22 8UE,,https://visitors.brsgolf.
 Bawburgh Golf Course,live,norfolk,brs,1,NR9 3LU,,https://visitors.brsgolf.com/bawburgh#/course/1
 Caldecott Hall,live,norfolk,brs,1,NR31 9EY,,https://visitors.brsgolf.com/caldecotthall#/course/1
 Costessey Park Golf Course,live,norfolk,brs,1,NR8 5AL,,https://visitors.brsgolf.com/costessey#/course/1
+Eaton Golf Club Norwich,live,norfolk,brs,1,NR4 6ND,,https://visitors.brsgolf.com/eatonnorfolk#/course/1
 Great Yarmouth and Caister Golf Club,live,norfolk,brs,1,NR30 5TD,,https://visitors.brsgolf.com/greatyarmouth#/course/1
 Mattishall Golf Club,live,norfolk,brs,1,NR20 3JZ,,https://visitors.brsgolf.com/mattishall
 Thetford Golf Club,live,norfolk,intelligent_golf,1,IP24 3NE,,https://www.thetfordgolfclub.co.uk/visitorbooking/
@@ -827,7 +827,6 @@ Denver Golf Club,unresolved,norfolk,no_site,0,,no working website found,
 Dereham Golf Club,unresolved,norfolk,no_site,0,,no working website found,
 Dunston Hall Golf Course,unresolved,norfolk,no_site,0,,no working website found,
 Eagles Golf Centre,unresolved,norfolk,unknown,0,,homepage loaded (https://www.eaglesgolfonline.co.uk/) but no platform signal found on it or 1 booking-ish link,
-Eaton Golf Club (Norwich),unresolved,norfolk,brs,0,,brs seen but no confirmed public visitor sheet — worth another look,https://visitors.brsgolf.com/eatonnorfolk#/course/1
 Eaton Park Pitch & Kick,unresolved,norfolk,unknown,0,,homepage loaded (https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities) bu,
 Gorleston Golf Club,unresolved,norfolk,no_site,0,,no working website found,
 Gorleston Putting Green,unresolved,norfolk,unknown,0,,homepage loaded (https://www.greatyarmouthservices.co.uk/open-spaces/book-sports-facilities/gorleston-cliffs-p,
