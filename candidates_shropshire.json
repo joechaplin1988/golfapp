@@ -1,0 +1,250 @@
+[
+  {
+    "name": "Infinity Golf Studio",
+    "lat": 52.5398148,
+    "lon": -2.3398279,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Wrekin Golf Club",
+    "lat": 52.6839498,
+    "lon": -2.5228574,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Aqualate Golf Centre",
+    "lat": 52.767937,
+    "lon": -2.3542656,
+    "source": "osm",
+    "osm_site": "https://www.aqualategolf.co.uk/",
+    "official_site": "https://www.aqualategolf.co.uk/"
+  },
+  {
+    "name": "Arscott",
+    "lat": 52.6713268,
+    "lon": -2.8426065,
+    "source": "osm",
+    "osm_site": "https://www.arscottgolfclub.co.uk/",
+    "official_site": "https://www.arscottgolfclub.co.uk/"
+  },
+  {
+    "name": "Church Stretton Golf Club",
+    "lat": 52.5491248,
+    "lon": -2.8161951,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Oswestry Golf Course",
+    "lat": 52.834794,
+    "lon": -2.9917827,
+    "source": "osm",
+    "osm_site": "https://www.oswestrygolfclub.co.uk/",
+    "official_site": "https://www.oswestrygolfclub.co.uk/"
+  },
+  {
+    "name": "Chesterton Valley Golf Club",
+    "lat": 52.5712,
+    "lon": -2.3291346,
+    "source": "osm",
+    "osm_site": "https://chestertonvalleygolfclub.com/",
+    "official_site": "https://chestertonvalleygolfclub.com/"
+  },
+  {
+    "name": "Elm Lodge Golf Course",
+    "lat": 52.3816293,
+    "lon": -2.7215722,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Saphire Course",
+    "lat": 52.9804865,
+    "lon": -2.6773716,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lilleshall Golf Course",
+    "lat": 52.7235208,
+    "lon": -2.3662895,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Shifnal Golf Club",
+    "lat": 52.6831303,
+    "lon": -2.3696727,
+    "source": "osm",
+    "osm_site": "https://www.shifnalgolfclub.com/",
+    "official_site": "https://www.shifnalgolfclub.com/"
+  },
+  {
+    "name": "Llanymynech Golf Course",
+    "lat": 52.7927764,
+    "lon": -3.0909657,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Championship Course",
+    "lat": 52.8632646,
+    "lon": -2.648129,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hawkstone Course",
+    "lat": 52.8610492,
+    "lon": -2.6404431,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Market Drayton Golf Club",
+    "lat": 52.8905441,
+    "lon": -2.490717,
+    "source": "osm",
+    "osm_site": "https://www.marketdraytongolfclub.co.uk/",
+    "official_site": "https://www.marketdraytongolfclub.co.uk/"
+  },
+  {
+    "name": "Foxes Run",
+    "lat": 52.3909673,
+    "lon": -2.455474,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Deer Park",
+    "lat": 52.3869459,
+    "lon": -2.4510289,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Badgers Sett",
+    "lat": 52.3908945,
+    "lon": -2.4493015,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Main Course",
+    "lat": 52.7142805,
+    "lon": -2.4051997,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Short Course",
+    "lat": 52.7191258,
+    "lon": -2.4073986,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Telford Hotel And Golf Resort",
+    "lat": 52.6217458,
+    "lon": -2.4428173,
+    "source": "osm",
+    "osm_site": "https://www.qhotels.co.uk/our-locations/telford-hotel-golf-resort/",
+    "official_site": "https://www.qhotels.co.uk/our-locations/telford-hotel-golf-resort/"
+  },
+  {
+    "name": "Ludlow Golf Club",
+    "lat": 52.3942226,
+    "lon": -2.7461384,
+    "source": "osm",
+    "osm_site": "https://www.ludlowgolfclub.com/",
+    "official_site": "https://www.ludlowgolfclub.com/"
+  },
+  {
+    "name": "Meole Brace Golf Course",
+    "lat": 52.6923621,
+    "lon": -2.7489704,
+    "source": "osm",
+    "osm_site": "https://meolebracegolfclub.co.uk/",
+    "official_site": "https://meolebracegolfclub.co.uk/"
+  },
+  {
+    "name": "Patshull Park Hotel, Golf & Country Club",
+    "lat": 52.6011761,
+    "lon": -2.293767,
+    "source": "osm",
+    "osm_site": "https://www.patshull-park.co.uk/golf.aspx",
+    "official_site": "https://www.patshull-park.co.uk/golf.aspx"
+  },
+  {
+    "name": "Horsehay Village Golf Centre",
+    "lat": 52.6679316,
+    "lon": -2.4924818,
+    "source": "osm",
+    "osm_site": "https://www.horsehayvillagegolfclub.co.uk",
+    "official_site": "https://www.horsehayvillagegolfclub.co.uk"
+  },
+  {
+    "name": "Shrewsbury Golf Club",
+    "lat": 52.6498708,
+    "lon": -2.7628804,
+    "source": "osm",
+    "osm_site": "https://www.shrewsburygolfclub.co.uk/",
+    "official_site": "https://www.shrewsburygolfclub.co.uk/"
+  },
+  {
+    "name": "Mile End Golf Club",
+    "lat": 52.8439166,
+    "lon": -3.0239738,
+    "source": "osm",
+    "osm_site": "https://mileendgolfclub.co.uk/",
+    "official_site": "https://mileendgolfclub.co.uk/"
+  },
+  {
+    "name": "Astbury Golf Course",
+    "lat": 52.498503,
+    "lon": -2.4080906,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Emerald Championship Course",
+    "lat": 52.9816268,
+    "lon": -2.6846328,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Henlle Park",
+    "lat": 52.9077736,
+    "lon": -3.0367711,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bridgnorth Golf Club",
+    "lat": 52.5503566,
+    "lon": -2.4120513,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  }
+]

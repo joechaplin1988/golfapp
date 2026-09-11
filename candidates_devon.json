@@ -1,0 +1,495 @@
+[
+  {
+    "name": "Dawlish Approach Golf",
+    "lat": 50.5887312,
+    "lon": -3.4608008,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Exeter Golf and Country Golf Club",
+    "lat": 50.7002654,
+    "lon": -3.4822224,
+    "source": "osm",
+    "osm_site": "https://www.exetergcc.co.uk/",
+    "official_site": "https://www.exetergcc.co.uk"
+  },
+  {
+    "name": "Teignmouth Golf Course",
+    "lat": 50.5706928,
+    "lon": -3.5291813,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.teignmouthgolfclub.co.uk"
+  },
+  {
+    "name": "Torquay Golf Club",
+    "lat": 50.4892057,
+    "lon": -3.5220986,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.torquaygolfclub.co.uk"
+  },
+  {
+    "name": "East Devon Golf Club",
+    "lat": 50.6260407,
+    "lon": -3.3456283,
+    "source": "osm",
+    "osm_site": "https://www.eastdevongolfclub.co.uk/",
+    "official_site": "https://www.edgc.co.uk"
+  },
+  {
+    "name": "Dawlish Warren Golf Club",
+    "lat": 50.6032095,
+    "lon": -3.4360685,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Tiverton Golf Club",
+    "lat": 50.9134432,
+    "lon": -3.4346645,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.tivertongolfclub.co.uk"
+  },
+  {
+    "name": "Waterbridge Golf Club",
+    "lat": 50.8194121,
+    "lon": -3.7648905,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Thurlestone Hotel Golf Course",
+    "lat": 50.27014,
+    "lon": -3.8605127,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.thurlestonegolfclub.co.uk"
+  },
+  {
+    "name": "Thurlestone Golf Course",
+    "lat": 50.2693468,
+    "lon": -3.8697772,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.thurlestonegolfclub.co.uk"
+  },
+  {
+    "name": "Oak Meadow Golf Club",
+    "lat": 50.6210537,
+    "lon": -3.4492322,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Elfordleigh Hotel Golf & Country Club",
+    "lat": 50.4069825,
+    "lon": -4.0491776,
+    "source": "osm",
+    "osm_site": "https://www.elfordleigh.co.uk/",
+    "official_site": "https://www.elfordleigh.co.uk"
+  },
+  {
+    "name": "Bovey Castle Golf Course",
+    "lat": 50.6468995,
+    "lon": -3.798534,
+    "source": "osm",
+    "osm_site": "https://www.boveycastle.com/Golf.html",
+    "official_site": "https://www.boveycastle.com"
+  },
+  {
+    "name": "Royal North Devon",
+    "lat": 51.0543833,
+    "lon": -4.2224409,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.royalnorthdevongolfclub.co.uk"
+  },
+  {
+    "name": "Bay Hotel Golf Course",
+    "lat": 51.1713495,
+    "lon": -4.2071392,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Boringdon Park Golf Club",
+    "lat": 50.4012163,
+    "lon": -4.0679511,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.boringdonpark.com"
+  },
+  {
+    "name": "Cayman Golf (Pitch and Putt)",
+    "lat": 50.3952881,
+    "lon": -3.5491355,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Tavistock Golf Club",
+    "lat": 50.5433975,
+    "lon": -4.1172182,
+    "source": "osm",
+    "osm_site": "https://www.tavistockgolfclub.co.uk/",
+    "official_site": "https://www.tavistockgolfclub.org.uk"
+  },
+  {
+    "name": "Holsworthy Golf Club",
+    "lat": 50.8133106,
+    "lon": -4.392536,
+    "source": "osm",
+    "osm_site": "https://www.holsworthygolfclub.co.uk/",
+    "official_site": "https://www.holsworthygolfclub.co.uk"
+  },
+  {
+    "name": "Axe Cliff Golf Course",
+    "lat": 50.7064157,
+    "lon": -3.0495681,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.axecliffgolfclub.com"
+  },
+  {
+    "name": "Woodbury Park Hotel & Golf Club",
+    "lat": 50.6900975,
+    "lon": -3.3696399,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.woodburypark.co.uk"
+  },
+  {
+    "name": "Mettaford Golf Course",
+    "lat": 50.9925159,
+    "lon": -4.4475483,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Fingle Glen Golf Club",
+    "lat": 50.7304639,
+    "lon": -3.6532037,
+    "source": "osm",
+    "osm_site": "https://www.fingleglengolfhotel.co.uk/",
+    "official_site": "https://www.fingleglengolfhotel.co.uk/"
+  },
+  {
+    "name": "Hartland Forest",
+    "lat": 50.9466546,
+    "lon": -4.4244343,
+    "source": "osm",
+    "osm_site": "https://hartlandforestgolfclub.co.uk/",
+    "official_site": "https://hartlandforestgolfclub.co.uk/"
+  },
+  {
+    "name": "Westcountry Golf Academy",
+    "lat": 50.9182361,
+    "lon": -3.3659988,
+    "source": "osm",
+    "osm_site": "https://www.wgagolf.co.uk/",
+    "official_site": "https://www.wgagolf.co.uk/"
+  },
+  {
+    "name": "Great Torrington Golf Club",
+    "lat": 50.9604369,
+    "lon": -4.1644295,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.torringtongolfclub.co.uk"
+  },
+  {
+    "name": "Mortehoe and Woolacombe Golf Club",
+    "lat": 51.1859157,
+    "lon": -4.1966753,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.woolacombegolf.co.uk"
+  },
+  {
+    "name": "Stover Golf Club",
+    "lat": 50.5567568,
+    "lon": -3.6534003,
+    "source": "osm",
+    "osm_site": "https://www.stovergolfclub.co.uk/",
+    "official_site": "https://www.stovergolfclub.co.uk"
+  },
+  {
+    "name": "Torbay Golf Centre (Pitch and Putt)",
+    "lat": 50.418913,
+    "lon": -3.5643929,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Devon Golf & Conference Centre",
+    "lat": 53.3660204,
+    "lon": -113.7106965,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Yelverton Golf Club",
+    "lat": 50.4737674,
+    "lon": -4.0938558,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.yelvertongolf.co.uk"
+  },
+  {
+    "name": "Illfracombe Golf Club",
+    "lat": 51.2106112,
+    "lon": -4.0871029,
+    "source": "osm",
+    "osm_site": "https://ilfracombegolfclub.com/",
+    "official_site": "https://ilfracombegolfclub.com/"
+  },
+  {
+    "name": "Pitch and Putt",
+    "lat": 50.4632991,
+    "lon": -3.5399211,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Dartmouth Golf And Country Club",
+    "lat": 50.3633116,
+    "lon": -3.662213,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.thedartmouthhotel.co.uk/"
+  },
+  {
+    "name": "Dinnaton Golf Course",
+    "lat": 50.3988125,
+    "lon": -3.9410154,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Wrangaton Golf Course",
+    "lat": 50.4067603,
+    "lon": -3.8751178,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Sparkwell Golf Course",
+    "lat": 50.4045847,
+    "lon": -3.9930949,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Dainton Park Golf Club",
+    "lat": 50.4945194,
+    "lon": -3.6219762,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.daintonparkgolf.co.uk"
+  },
+  {
+    "name": "Plymouth Golf Centre",
+    "lat": 50.3693022,
+    "lon": -4.0665675,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Portmore Golf Park",
+    "lat": 51.0682624,
+    "lon": -4.022214,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.portmoregolfpark.co.uk"
+  },
+  {
+    "name": "Libbaton Golf Club",
+    "lat": 50.9574234,
+    "lon": -3.9920916,
+    "source": "osm",
+    "osm_site": "https://www.libbatongolfclub.co.uk/",
+    "official_site": "https://www.libbatongolfclub.co.uk"
+  },
+  {
+    "name": "Highbullen Golf Course",
+    "lat": 50.967033,
+    "lon": -3.9230628,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Thorn Park Golf Centre",
+    "lat": 50.6976711,
+    "lon": -3.2031313,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Exminster Golf Centre",
+    "lat": 50.6703011,
+    "lon": -3.4907925,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.exminstergolf.com"
+  },
+  {
+    "name": "Vic Ambler Golf Centre",
+    "lat": 50.7391352,
+    "lon": -3.5355762,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Willingcott Valley Golf Course",
+    "lat": 51.175077,
+    "lon": -4.1517667,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bovey Tracey Golf Club",
+    "lat": 50.6021559,
+    "lon": -3.6870625,
+    "source": "osm",
+    "osm_site": "https://boveytraceygolfclub.co.uk/",
+    "official_site": "https://www.golfindevon.co.uk/wolleigh/"
+  },
+  {
+    "name": "Bigbury Golf Club",
+    "lat": 50.2903366,
+    "lon": -3.8709448,
+    "source": "osm",
+    "osm_site": "https://www.bigburygolfclub.co.uk/",
+    "official_site": "https://www.bigburygolfclub.co.uk"
+  },
+  {
+    "name": "Otter Valley Golf Centre",
+    "lat": 50.841105,
+    "lon": -3.1413605,
+    "source": "osm",
+    "osm_site": "https://www.otter-golf.co.uk/",
+    "official_site": "https://www.otter-golf.co.uk/"
+  },
+  {
+    "name": "Churston Golf Club",
+    "lat": 50.4005625,
+    "lon": -3.5430781,
+    "source": "osm",
+    "osm_site": "https://www.churstongolf.com/",
+    "official_site": "https://www.churstongolf.com"
+  },
+  {
+    "name": "Honiton Golf Club",
+    "lat": 50.7853596,
+    "lon": -3.1713796,
+    "source": "osm",
+    "osm_site": "https://www.honitongolfclub.co.uk/",
+    "official_site": "https://www.honitongolfclub.co.uk"
+  },
+  {
+    "name": "Teign Valley Golf Club",
+    "lat": 50.6397436,
+    "lon": -3.640159,
+    "source": "osm",
+    "osm_site": "https://teignvalleygolf.co.uk/",
+    "official_site": "https://teignvalleygolf.co.uk/"
+  },
+  {
+    "name": "Sidmouth Golf Club",
+    "lat": 50.6840491,
+    "lon": -3.2606515,
+    "source": "osm",
+    "osm_site": "https://www.sidmouthgolfclub.co.uk/",
+    "official_site": "https://www.sidmouthgolfclub.co.uk"
+  },
+  {
+    "name": "Saunton Golf Course",
+    "lat": 51.1091103,
+    "lon": -4.2046185,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.sauntongolf.co.uk"
+  },
+  {
+    "name": "Okehampton Golf Course",
+    "lat": 50.7267731,
+    "lon": -4.0153854,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.okehamptongolfclub.co.uk"
+  },
+  {
+    "name": "Ashbury Golf Course",
+    "lat": 50.7407466,
+    "lon": -4.0744326,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.ashburygolfhotel.com"
+  },
+  {
+    "name": "Staddon Heights Golf Club",
+    "lat": 50.3442115,
+    "lon": -4.1196176,
+    "source": "osm",
+    "osm_site": "https://www.staddonheightsgolf.co.uk/",
+    "official_site": "https://www.staddonheightsgolf.co.uk"
+  },
+  {
+    "name": "Clovelly Golf Course",
+    "lat": 47.6277959,
+    "lon": -52.7072835,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Downes Crediton Golf Club",
+    "lat": 50.7796924,
+    "lon": -3.6359623,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.downescreditongc.co.uk"
+  },
+  {
+    "name": "Ilfracombe Golf Club",
+    "official_site": "https://www.ilfracombegolfclub.com",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Warren Golf Club (Devon) Golf Club",
+    "official_site": "https://www.dwgc.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Welbeck Manor Golf Club",
+    "official_site": "https://www.welbeckmanor.co.uk/sparkwell-golf-course/uncategorised/sparkwell-golf-course",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  }
+]

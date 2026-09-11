@@ -1,0 +1,458 @@
+[
+  {
+    "name": "The National Golf Centre (Woodhall Spa)",
+    "lat": 53.1551903,
+    "lon": -0.2057584,
+    "source": "osm",
+    "osm_site": "https://www.woodhallspagolf.com/",
+    "official_site": "https://www.woodhallspagolf.com/"
+  },
+  {
+    "name": "Lincolnshire Golf Academy",
+    "lat": 53.5284769,
+    "lon": -0.6868361,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Grimsby Golf Club",
+    "lat": 53.559415,
+    "lon": -0.126524,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Holme Hall Golf Course",
+    "lat": 53.5550806,
+    "lon": -0.6162288,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "DoubleTree by Hilton Forest Pines Spa & Golf Resort",
+    "lat": 53.5531651,
+    "lon": -0.568513,
+    "source": "osm",
+    "osm_site": "https://www.hilton.com/en/hotels/dsabfdi-doubletree-forest-pines-spa-and-golf-resort/",
+    "official_site": "https://www.hilton.com/en/hotels/dsabfdi-doubletree-forest-pines-spa-and-golf-resort/"
+  },
+  {
+    "name": "Normanby Hall Golf Course",
+    "lat": 53.6366262,
+    "lon": -0.6452927,
+    "source": "osm",
+    "osm_site": "https://www.northlincs.gov.uk/leisure/other-leisure-activities/outdoor-sites/normanby-hall-golf-course/",
+    "official_site": "https://www.northlincs.gov.uk/leisure/other-leisure-activities/outdoor-sites/normanby-hall-golf-course/"
+  },
+  {
+    "name": "Tetney Golf Club",
+    "lat": 53.4888646,
+    "lon": -0.031075,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Manor (Laceby) Golf Club",
+    "lat": 53.5261235,
+    "lon": -0.1535108,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cleethorpes Golf Club",
+    "lat": 53.5410488,
+    "lon": -0.0147492,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Market Rasen Golf Club",
+    "lat": 53.3765408,
+    "lon": -0.2990965,
+    "source": "osm",
+    "osm_site": "https://www.marketrasengolfclub.co.uk/",
+    "official_site": "https://www.marketrasengolfclub.co.uk/"
+  },
+  {
+    "name": "Carholme Golf Club",
+    "lat": 53.2368711,
+    "lon": -0.5677458,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "North Shore Golf Course",
+    "lat": 53.160073,
+    "lon": 0.3470062,
+    "source": "osm",
+    "osm_site": "https://northshoregolf.co.uk/",
+    "official_site": "https://northshoregolf.co.uk/"
+  },
+  {
+    "name": "Humberston Country Club Golf Course",
+    "lat": 53.5301717,
+    "lon": -0.035623,
+    "source": "osm",
+    "osm_site": "https://www.virginactive.co.uk/clubs/humberston",
+    "official_site": "https://www.virginactive.co.uk/clubs/humberston"
+  },
+  {
+    "name": "Cleethorpes Beach Golf Course",
+    "lat": 53.5234646,
+    "lon": 0.0084074,
+    "source": "osm",
+    "osm_site": "https://www.haven.com/parks/lincolnshire/cleethorpes-beach",
+    "official_site": "https://www.haven.com/parks/lincolnshire/cleethorpes-beach"
+  },
+  {
+    "name": "Millfield Golf Complex",
+    "lat": 53.2788618,
+    "lon": -0.7587846,
+    "source": "osm",
+    "osm_site": "https://www.millfieldgolfcomplex.co.uk/",
+    "official_site": "https://www.millfieldgolfcomplex.co.uk/"
+  },
+  {
+    "name": "Louth Golf Club",
+    "lat": 53.3589207,
+    "lon": -0.0192847,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ashby Decoy Golf Club",
+    "lat": 53.5617447,
+    "lon": -0.689438,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Club Golf",
+    "lat": 53.566411,
+    "lon": -0.1164539,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Belton Park Golf Club",
+    "lat": 52.9318632,
+    "lon": -0.6133346,
+    "source": "osm",
+    "osm_site": "https://www.beltonpark.co.uk/",
+    "official_site": "https://www.beltonpark.co.uk/"
+  },
+  {
+    "name": "Boston West Golf Club",
+    "lat": 52.9796985,
+    "lon": -0.1179849,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Kirton Holme Golf Club",
+    "lat": 52.9588319,
+    "lon": -0.1167323,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "South Kyme Golf Club",
+    "lat": 53.0361002,
+    "lon": -0.2382498,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Spalding Golf Club",
+    "lat": 52.8392666,
+    "lon": -0.1148629,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Willows Caravan Park Executive Course",
+    "lat": 53.322882,
+    "lon": 0.20916,
+    "source": "osm",
+    "osm_site": "https://www.donamottparks.com/willows-park.aspx",
+    "official_site": "https://www.donamottparks.com/willows-park.aspx"
+  },
+  {
+    "name": "Elsham Golf Club",
+    "lat": 53.5859751,
+    "lon": -0.4519388,
+    "source": "osm",
+    "osm_site": "https://www.elshamgolfclub.co.uk/",
+    "official_site": "https://www.elshamgolfclub.co.uk/"
+  },
+  {
+    "name": "Grange Park",
+    "lat": 53.5250331,
+    "lon": -0.6849664,
+    "source": "osm",
+    "osm_site": "https://www.grangepark.com/index.php?display=golf",
+    "official_site": "https://www.grangepark.com/index.php?display=golf"
+  },
+  {
+    "name": "Gainsborough Golf Club",
+    "lat": 53.4146625,
+    "lon": -0.7568008,
+    "source": "osm",
+    "osm_site": "https://www.gainsboroughgc.co.uk/",
+    "official_site": "https://www.gainsboroughgc.co.uk/"
+  },
+  {
+    "name": "Sleaford Golf Club",
+    "lat": 52.9799385,
+    "lon": -0.4676807,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Martin Moor Golf Club",
+    "lat": 53.1283619,
+    "lon": -0.3667685,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lakeside Park",
+    "lat": 53.441099,
+    "lon": 0.1630817,
+    "source": "osm",
+    "osm_site": "https://www.donamottparks.com/lakeside-park.aspx",
+    "official_site": "https://www.donamottparks.com/lakeside-park.aspx"
+  },
+  {
+    "name": "Redbourne Club Golf Course",
+    "lat": 53.5795947,
+    "lon": -0.6418843,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "RAF Cranwell Golf Course",
+    "lat": 53.0404927,
+    "lon": -0.5076046,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Toft Country House Hotel and Golf Club",
+    "lat": 52.7389861,
+    "lon": -0.4149177,
+    "source": "osm",
+    "osm_site": "https://www.toftgolfclub.co.uk/",
+    "official_site": "https://www.toftgolfclub.co.uk/"
+  },
+  {
+    "name": "Woodthorpe Hall Golf Course",
+    "lat": 53.2971247,
+    "lon": 0.15773,
+    "source": "osm",
+    "osm_site": "https://www.woodthorpeleisurepark.co.uk/leisure-activities/golf",
+    "official_site": "https://www.woodthorpeleisurepark.co.uk/leisure-activities/golf"
+  },
+  {
+    "name": "Addlethorpe Golf Club",
+    "lat": 53.1899645,
+    "lon": 0.3106513,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Sutton Bridge Golf Club",
+    "lat": 52.7743925,
+    "lon": 0.1952943,
+    "source": "osm",
+    "osm_site": "https://www.club-noticeboard.co.uk/suttonbridge/",
+    "official_site": "https://www.club-noticeboard.co.uk/suttonbridge/"
+  },
+  {
+    "name": "Southview Leisure Park",
+    "lat": 53.1634073,
+    "lon": 0.3071452,
+    "source": "osm",
+    "osm_site": "https://www.park-resorts.com/holiday-parks/east-anglia/southview-leisure-park/",
+    "official_site": "https://www.park-resorts.com/holiday-parks/east-anglia/southview-leisure-park/"
+  },
+  {
+    "name": "The Lincolnshire Golf Course",
+    "lat": 53.5824995,
+    "lon": -0.8268202,
+    "source": "osm",
+    "osm_site": "https://www.lincolnshiregolfcourse.co.uk/",
+    "official_site": "https://www.lincolnshiregolfcourse.co.uk/"
+  },
+  {
+    "name": "Lincoln Golf Club",
+    "lat": 53.3033189,
+    "lon": -0.7333697,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Waltham Windmill Golf Club",
+    "lat": 53.5087825,
+    "lon": -0.0841504,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Immingham Golf Club",
+    "lat": 53.6223797,
+    "lon": -0.2277532,
+    "source": "osm",
+    "osm_site": "https://www.immgc.co.uk/",
+    "official_site": "https://www.immgc.co.uk/"
+  },
+  {
+    "name": "Ropsley Golf Course",
+    "lat": 52.8941407,
+    "lon": -0.5327812,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bracken Hill Golf Course",
+    "lat": 53.2040134,
+    "lon": -0.4518421,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Seacroft Golf Course",
+    "lat": 53.1187148,
+    "lon": 0.3337361,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Nettleton Park Golf Course",
+    "lat": 53.4946007,
+    "lon": -0.3590324,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hovenden House Golf Course",
+    "lat": 52.8147507,
+    "lon": 0.0712016,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Gedney Hill Golf Club",
+    "lat": 52.6949199,
+    "lon": -0.017649,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Welton Manor Golf Centre",
+    "lat": 53.3168311,
+    "lon": -0.4847838,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lincoln Golf Centre",
+    "lat": 53.180723,
+    "lon": -0.6325158,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Stoke Rochford Golf Club",
+    "lat": 52.8446935,
+    "lon": -0.6334519,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Carwick Park Golf Club",
+    "lat": 53.2176095,
+    "lon": -0.5202144,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "RAF Woodhall Spa Golf Course",
+    "lat": 53.1366883,
+    "lon": -0.1948558,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "North Shore Pitch And Putt",
+    "lat": 53.1561265,
+    "lon": 0.3419481,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Kenwick Park Golf Club Ltd",
+    "lat": 53.3397186,
+    "lon": 0.0268026,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Boston Golf Club",
+    "lat": 53.0075061,
+    "lon": -0.0157976,
+    "source": "osm",
+    "osm_site": "https://www.bostongc.co.uk/",
+    "official_site": "https://www.bostongc.co.uk/"
+  },
+  {
+    "name": "Blankney Golf Club",
+    "lat": 53.1291133,
+    "lon": -0.4179095,
+    "source": "osm",
+    "osm_site": "https://www.blankneygolfclub.co.uk/",
+    "official_site": "https://www.blankneygolfclub.co.uk/"
+  },
+  {
+    "name": "Belton Woods Hotel",
+    "lat": 52.9411645,
+    "lon": -0.6374088,
+    "source": "osm",
+    "osm_site": "https://www.devere-hotels.co.uk/hotel-lodges/locations/belton-woods/golf/introduction.html",
+    "official_site": "https://www.devere-hotels.co.uk/hotel-lodges/locations/belton-woods/golf/introduction.html"
+  }
+]

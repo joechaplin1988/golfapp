@@ -1,0 +1,290 @@
+[
+  {
+    "name": "Kilton Forest Golf Club",
+    "lat": 53.3144214,
+    "lon": -1.1011021,
+    "source": "osm",
+    "osm_site": "https://www.bassetlaw.gov.uk/sports,_leisure_and_culture/leisure_centres/kilton_forest_golf_club.aspx",
+    "official_site": "https://www.bassetlaw.gov.uk/sports,_leisure_and_culture/leisure_centres/kilton_forest_golf_club.aspx"
+  },
+  {
+    "name": "Ruddington Grange Golf Club",
+    "lat": 52.9031088,
+    "lon": -1.1478949,
+    "source": "osm",
+    "osm_site": "https://ruddingtongrange.com/",
+    "official_site": "https://ruddingtongrange.com/"
+  },
+  {
+    "name": "Wollaton Park Golf Course",
+    "lat": 52.9499495,
+    "lon": -1.2017172,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Coxmoor Golf Club",
+    "lat": 53.1122874,
+    "lon": -1.2147054,
+    "source": "osm",
+    "osm_site": "https://www.coxmoorgolfclub.co.uk/",
+    "official_site": "https://www.coxmoorgolfclub.co.uk/"
+  },
+  {
+    "name": "Wollaton Park Golf Club",
+    "lat": 52.9453033,
+    "lon": -1.2034076,
+    "source": "osm",
+    "osm_site": "https://www.wollatonparkgolfclub.com/",
+    "official_site": "https://www.wollatonparkgolfclub.com/"
+  },
+  {
+    "name": "Stanton on the Wolds Golf Course",
+    "lat": 52.8730748,
+    "lon": -1.0630409,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Radcliffe-on-Trent Golf Club",
+    "lat": 52.9417887,
+    "lon": -1.0192357,
+    "source": "osm",
+    "osm_site": "https://www.radcliffeontrentgc.co.uk/home.aspx?i=no",
+    "official_site": "https://www.radcliffeontrentgc.co.uk/home.aspx?i=no"
+  },
+  {
+    "name": "College Pines Golf Club",
+    "lat": 53.2844276,
+    "lon": -1.1028651,
+    "source": "osm",
+    "osm_site": "https://www.collegepinesgolfclub.co.uk/",
+    "official_site": "https://www.collegepinesgolfclub.co.uk/"
+  },
+  {
+    "name": "Nottingham City Golf Club",
+    "lat": 53.0125103,
+    "lon": -1.2044147,
+    "source": "osm",
+    "osm_site": "https://www.nottinghamcitygolfclub.co.uk/",
+    "official_site": "https://www.nottinghamcitygolfclub.co.uk/"
+  },
+  {
+    "name": "Bulwell Forest Golf Club",
+    "lat": 53.0058442,
+    "lon": -1.1843104,
+    "source": "osm",
+    "osm_site": "https://www.bulwellforestgolfclub.co.uk/",
+    "official_site": "https://www.bulwellforestgolfclub.co.uk/"
+  },
+  {
+    "name": "The Nottinghamshire Golf & Country Club",
+    "lat": 52.9277929,
+    "lon": -1.0610791,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Leen Valley Golf Course",
+    "lat": 53.0358058,
+    "lon": -1.1857724,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Rufford Park Golf and Country Club",
+    "lat": 53.1764549,
+    "lon": -1.0269389,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Rushcliffe Golf Club",
+    "lat": 52.8484027,
+    "lon": -1.1913596,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Riverside Golf Centre",
+    "lat": 52.9256951,
+    "lon": -1.1721842,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ramsdale Golf Centre",
+    "lat": 53.0375673,
+    "lon": -1.1116567,
+    "source": "osm",
+    "osm_site": "https://www.ramsdaleparkgc.co.uk/",
+    "official_site": "https://www.ramsdaleparkgc.co.uk/"
+  },
+  {
+    "name": "Mansfield Woodhouse Golf Course",
+    "lat": 53.1797585,
+    "lon": -1.1778947,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Oakmere Park Golf Club",
+    "lat": 53.0707901,
+    "lon": -1.0861635,
+    "source": "osm",
+    "osm_site": "https://www.oakmerepark.co.uk/",
+    "official_site": "https://www.oakmerepark.co.uk/"
+  },
+  {
+    "name": "Springwater Golf Club",
+    "lat": 53.0311438,
+    "lon": -1.0626105,
+    "source": "osm",
+    "osm_site": "https://www.springwatergolfclub.com/",
+    "official_site": "https://www.springwatergolfclub.com/"
+  },
+  {
+    "name": "Edwalton Municipal Golf Course",
+    "lat": 52.9101864,
+    "lon": -1.1093667,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Southwell Golf Club",
+    "lat": 53.0694637,
+    "lon": -0.9056952,
+    "source": "osm",
+    "osm_site": "https://www.southwellgolfclub.com",
+    "official_site": "https://www.southwellgolfclub.com"
+  },
+  {
+    "name": "Hollinwell",
+    "lat": 53.0861215,
+    "lon": -1.2148988,
+    "source": "osm",
+    "osm_site": "https://www.hollinwell.co.uk/",
+    "official_site": "https://www.hollinwell.co.uk/"
+  },
+  {
+    "name": "Worksop Golf Club",
+    "lat": 53.2913124,
+    "lon": -1.0973036,
+    "source": "osm",
+    "osm_site": "https://www.worksopgolfclub.com/",
+    "official_site": "https://www.worksopgolfclub.com/"
+  },
+  {
+    "name": "Sherwood Forest Golf Club",
+    "lat": 53.1486949,
+    "lon": -1.1282029,
+    "source": "osm",
+    "osm_site": "https://www.sherwoodforestgolfclub.co.uk/",
+    "official_site": "https://www.sherwoodforestgolfclub.co.uk/"
+  },
+  {
+    "name": "Mansfield Golf Club",
+    "lat": 53.1407874,
+    "lon": -1.1390057,
+    "source": "osm",
+    "osm_site": "https://www.mansfieldgolfclub.co.uk/",
+    "official_site": "https://www.mansfieldgolfclub.co.uk/"
+  },
+  {
+    "name": "Brierley Forest Golf Club",
+    "lat": 53.1351645,
+    "lon": -1.2967745,
+    "source": "osm",
+    "osm_site": "https://www.brierleyforestgolfclub.com/",
+    "official_site": "https://www.brierleyforestgolfclub.com/"
+  },
+  {
+    "name": "Ratcliffe on Soar Power Station",
+    "lat": 52.8613989,
+    "lon": -1.2545342,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Norwood Park Golf Course",
+    "lat": 53.0860091,
+    "lon": -0.9752264,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Newark Golf Centre",
+    "lat": 53.0978315,
+    "lon": -0.7763702,
+    "source": "osm",
+    "osm_site": "https://www.newarkgolfcentre.co.uk/",
+    "official_site": "https://www.newarkgolfcentre.co.uk/"
+  },
+  {
+    "name": "Newark Golf Club",
+    "lat": 53.0754848,
+    "lon": -0.7287463,
+    "source": "osm",
+    "osm_site": "https://newarkgolfclub.co.uk/",
+    "official_site": "https://newarkgolfclub.co.uk/"
+  },
+  {
+    "name": "Chilwell Manor Golf Course",
+    "lat": 52.9155808,
+    "lon": -1.2223922,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Beeston Fields Golf Course",
+    "lat": 52.9302086,
+    "lon": -1.2309476,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Retford Golf Club",
+    "lat": 53.3113302,
+    "lon": -0.9632373,
+    "source": "osm",
+    "osm_site": "https://www.retfordgolfclub.co.uk/",
+    "official_site": "https://www.retfordgolfclub.co.uk/"
+  },
+  {
+    "name": "Mapperley Golf Course",
+    "lat": 52.9874559,
+    "lon": -1.1060921,
+    "source": "osm",
+    "osm_site": "https://www.mapperleygolfclub.org/",
+    "official_site": "https://www.mapperleygolfclub.org/"
+  },
+  {
+    "name": "Styrrup Hall Golf & Country Club",
+    "lat": 53.4151284,
+    "lon": -1.0915498,
+    "source": "osm",
+    "osm_site": "https://www.styrrupgolf.co.uk/",
+    "official_site": "https://www.styrrupgolf.co.uk/"
+  },
+  {
+    "name": "Serlby Park Golf Club",
+    "lat": 53.3920866,
+    "lon": -1.0433622,
+    "source": "osm",
+    "osm_site": "https://www.serlbyparkgolfclub.co.uk/",
+    "official_site": "https://www.serlbyparkgolfclub.co.uk/"
+  }
+]

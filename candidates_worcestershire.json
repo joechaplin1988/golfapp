@@ -1,0 +1,258 @@
+[
+  {
+    "name": "Hollywood Golf Club",
+    "lat": 52.3967467,
+    "lon": -1.8757673,
+    "source": "osm",
+    "osm_site": "https://www.hollywoodgolfclub.co.uk/",
+    "official_site": "https://www.hollywoodgolfclub.co.uk/"
+  },
+  {
+    "name": "Lickey Hills Golf Course",
+    "lat": 52.383456,
+    "lon": -2.0148534,
+    "source": "osm",
+    "osm_site": "https://www.mytimeactive.co.uk/locations/lickey-hills-golf-course",
+    "official_site": "https://www.mytimeactive.co.uk/locations/lickey-hills-golf-course"
+  },
+  {
+    "name": "Kings Norton Golf Course",
+    "lat": 52.371674,
+    "lon": -1.9068388,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Pitcheroak Golf Course",
+    "lat": 52.2995188,
+    "lon": -1.9523381,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Worcestershire Golf Club",
+    "lat": 52.0891315,
+    "lon": -2.3248195,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Boughton Park (Worcester Golf and Country Club)",
+    "lat": 52.1783274,
+    "lon": -2.247998,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Churchill & Blakedown Golf Club",
+    "lat": 52.4076069,
+    "lon": -2.1866646,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Gaudet Luce Golf Course",
+    "lat": 52.257626,
+    "lon": -2.1306399,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Droitwich Golf Course",
+    "lat": 52.2808919,
+    "lon": -2.1479017,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Evesham Golf Course",
+    "lat": 52.1209714,
+    "lon": -2.0047045,
+    "source": "osm",
+    "osm_site": "https://www.eveshamgolfclub.co.uk/",
+    "official_site": "https://www.eveshamgolfclub.co.uk/"
+  },
+  {
+    "name": "Worcester Golf Range",
+    "lat": 52.1744245,
+    "lon": -2.2275656,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Broadway Golf Club",
+    "lat": 52.042561,
+    "lon": -1.8315097,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Little Lakes",
+    "lat": 52.3527252,
+    "lon": -2.3494481,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bromsgrove Golf Centre",
+    "lat": 52.3377218,
+    "lon": -2.0397672,
+    "source": "osm",
+    "osm_site": "https://bromsgrovegolfcentre.com/",
+    "official_site": "https://bromsgrovegolfcentre.com/"
+  },
+  {
+    "name": "Fulford Heath Golf Club",
+    "lat": 52.371774,
+    "lon": -1.8713041,
+    "source": "osm",
+    "osm_site": "https://www.fulfordheathgolfclub.co.uk/",
+    "official_site": "https://www.fulfordheathgolfclub.co.uk/"
+  },
+  {
+    "name": "Comberton Golf Club",
+    "lat": 52.0843627,
+    "lon": -2.0672111,
+    "source": "osm",
+    "osm_site": "https://www.combertongolf.co.uk/",
+    "official_site": "https://www.combertongolf.co.uk/"
+  },
+  {
+    "name": "Hagley Golf & Country Club",
+    "lat": 52.4363819,
+    "lon": -2.0983238,
+    "source": "osm",
+    "osm_site": "https://www.hagleygolfandcountryclub.co.uk/",
+    "official_site": "https://www.hagleygolfandcountryclub.co.uk/"
+  },
+  {
+    "name": "Bewdley Pines Golf Club",
+    "lat": 52.3906626,
+    "lon": -2.2936951,
+    "source": "osm",
+    "osm_site": "https://www.bewdleypines.co.uk",
+    "official_site": "https://www.bewdleypines.co.uk"
+  },
+  {
+    "name": "Habberley Golf Club",
+    "lat": 52.4039853,
+    "lon": -2.2924702,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Blackwell Golf Club",
+    "lat": 52.3453617,
+    "lon": -2.0068761,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Wharton Park Golf & Country Club",
+    "lat": 52.3655685,
+    "lon": -2.3458576,
+    "source": "osm",
+    "osm_site": "https://www.whartonpark.co.uk/",
+    "official_site": "https://www.whartonpark.co.uk/"
+  },
+  {
+    "name": "Golf Range",
+    "lat": 52.2487281,
+    "lon": -2.1674213,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ravenmeadow Pitch and Putt",
+    "lat": 52.2229187,
+    "lon": -2.2097862,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Abbey Hotel",
+    "lat": 52.3201886,
+    "lon": -1.9268197,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Redditch Golf Course",
+    "lat": 52.2913807,
+    "lon": -1.9654675,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Kidderminster Golf Club",
+    "lat": 52.3767595,
+    "lon": -2.234536,
+    "source": "osm",
+    "osm_site": "https://www.thekidderminstergolfclub.com/",
+    "official_site": "https://www.thekidderminstergolfclub.com/"
+  },
+  {
+    "name": "Cadmore Golf Club",
+    "lat": 52.2952203,
+    "lon": -2.6235055,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Vale Golf and Country Club",
+    "lat": 52.1508135,
+    "lon": -1.9927616,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bransford Golf Club",
+    "lat": 52.167172,
+    "lon": -2.3050262,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ravenmeadow Golf Club",
+    "lat": 52.2207916,
+    "lon": -2.2069054,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Tidbury Green Golf Course",
+    "lat": 52.3859699,
+    "lon": -1.855513,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ombersley Golf Club",
+    "lat": 52.3039493,
+    "lon": -2.2490295,
+    "source": "osm",
+    "osm_site": "https://www.ombersleygolfclub.co.uk",
+    "official_site": "https://www.ombersleygolfclub.co.uk"
+  }
+]

@@ -1,0 +1,338 @@
+[
+  {
+    "name": "Manor Course",
+    "lat": 52.975268,
+    "lon": -1.3994364,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Tower Course",
+    "lat": 52.9735365,
+    "lon": -1.4084701,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Birley Wood Golf Club",
+    "lat": 53.3384857,
+    "lon": -1.3986682,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Dore and Totley Golf Club",
+    "lat": 53.3143806,
+    "lon": -1.4938601,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Mickleover Golf Course",
+    "lat": 52.9027031,
+    "lon": -1.5265761,
+    "source": "osm",
+    "osm_site": "https://www.mickleovergolfclub.co.uk/",
+    "official_site": "https://www.mickleovergolfclub.co.uk/"
+  },
+  {
+    "name": "Morley Hayes",
+    "lat": 52.9756452,
+    "lon": -1.4038457,
+    "source": "osm",
+    "osm_site": "https://www.morleyhayes.com/",
+    "official_site": "https://www.morleyhayes.com/"
+  },
+  {
+    "name": "Buxton and High Peak Golf Club",
+    "lat": 53.2679332,
+    "lon": -1.8927459,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Derby Golf Club",
+    "lat": 52.8829306,
+    "lon": -1.4756683,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Burton-on-Trent Golf Club",
+    "lat": 52.7994215,
+    "lon": -1.5799761,
+    "source": "osm",
+    "osm_site": "https://www.burtonontrentgolfclub.co.uk/",
+    "official_site": "https://www.burtonontrentgolfclub.co.uk/"
+  },
+  {
+    "name": "Breadsall Priory Golf Course - Priory Course",
+    "lat": 52.9666972,
+    "lon": -1.4343747,
+    "source": "osm",
+    "osm_site": "https://www.marriott.com/hotels/hotel-information/golf-courses/emags-breadsall-priory-marriott-hotel-and-country-club/",
+    "official_site": "https://www.marriott.com/hotels/hotel-information/golf-courses/emags-breadsall-priory-marriott-hotel-and-country-club/"
+  },
+  {
+    "name": "Derby Golf Centre",
+    "lat": 52.9132473,
+    "lon": -1.3911025,
+    "source": "osm",
+    "osm_site": "https://derbygolfacademy.wordpress.com/",
+    "official_site": "https://derbygolfacademy.wordpress.com/"
+  },
+  {
+    "name": "Chevin Vale Golf Course",
+    "lat": 53.0024774,
+    "lon": -1.492627,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cavendish Golf Club",
+    "lat": 53.2599537,
+    "lon": -1.9348702,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Tapton Park Golf Club",
+    "lat": 53.2421932,
+    "lon": -1.4110959,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Matlock Golf Club",
+    "lat": 53.1552702,
+    "lon": -1.5311761,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ormonde Fields Golf Course",
+    "lat": 53.0407672,
+    "lon": -1.3604603,
+    "source": "osm",
+    "osm_site": "https://www.ormondefieldsgolfclub.co.uk/",
+    "official_site": "https://www.ormondefieldsgolfclub.co.uk/"
+  },
+  {
+    "name": "The Pastures Golf Club",
+    "lat": 52.8961094,
+    "lon": -1.5527718,
+    "source": "osm",
+    "osm_site": "https://pasturesgolfclub.co.uk/",
+    "official_site": "https://pasturesgolfclub.co.uk/"
+  },
+  {
+    "name": "Ashbourne Golf Club",
+    "lat": 53.0040048,
+    "lon": -1.7425535,
+    "source": "osm",
+    "osm_site": "https://www.ashbournegolfclub.co.uk/",
+    "official_site": "https://www.ashbournegolfclub.co.uk/"
+  },
+  {
+    "name": "Breedon Priory Golf Centre (Main Course)",
+    "lat": 52.8110758,
+    "lon": -1.4044152,
+    "source": "osm",
+    "osm_site": "https://www.breedonpriory.co.uk/",
+    "official_site": "https://www.breedonpriory.co.uk/"
+  },
+  {
+    "name": "Glossop & District Golf Club",
+    "lat": 53.4435256,
+    "lon": -1.921776,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Birchall Golf and Leisure",
+    "lat": 53.2820581,
+    "lon": -1.4474737,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Sickleholme Golf Club",
+    "lat": 53.3396439,
+    "lon": -1.6803155,
+    "source": "osm",
+    "osm_site": "https://www.sickleholme.co.uk/",
+    "official_site": "https://www.sickleholme.co.uk/"
+  },
+  {
+    "name": "Stanedge Golf Club",
+    "lat": 53.2060064,
+    "lon": -1.4971303,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "South Chesterfield Golf Club",
+    "lat": 53.2051027,
+    "lon": -1.3942769,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bakewell Golf Club",
+    "lat": 53.216049,
+    "lon": -1.661877,
+    "source": "osm",
+    "osm_site": "https://www.bakewellgolfclub.co.uk/",
+    "official_site": "https://www.bakewellgolfclub.co.uk/"
+  },
+  {
+    "name": "Tapton Park Golf Club (Dobbin Course)",
+    "lat": 53.2379864,
+    "lon": -1.4069502,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Barlborough Links Golf Club",
+    "lat": 53.278688,
+    "lon": -1.2806884,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Broughton Heath Golf Course",
+    "lat": 52.888538,
+    "lon": -1.6775584,
+    "source": "osm",
+    "osm_site": "https://www.broughtonheathgolfclub.co.uk/",
+    "official_site": "https://www.broughtonheathgolfclub.co.uk/"
+  },
+  {
+    "name": "New Mills Golf Club",
+    "lat": 53.3761741,
+    "lon": -2.0116905,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Alfreton Golf Club",
+    "lat": 53.0926964,
+    "lon": -1.4119573,
+    "source": "osm",
+    "osm_site": "https://alfretongolfclub.co.uk/",
+    "official_site": "https://alfretongolfclub.co.uk/"
+  },
+  {
+    "name": "Shirland Golf Club",
+    "lat": 53.1143219,
+    "lon": -1.4098929,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bondhay Golf Club and Academy",
+    "lat": 53.2999685,
+    "lon": -1.2298432,
+    "source": "osm",
+    "osm_site": "https://www.bondhaygolfclub.com/",
+    "official_site": "https://www.bondhaygolfclub.com/"
+  },
+  {
+    "name": "Horsley Lodge Golf Club",
+    "lat": 52.9915784,
+    "lon": -1.4242658,
+    "source": "osm",
+    "osm_site": "https://www.horsleylodge.co.uk/",
+    "official_site": "https://www.horsleylodge.co.uk/"
+  },
+  {
+    "name": "Swadlincote Golf Centre",
+    "lat": 52.7754511,
+    "lon": -1.588551,
+    "source": "osm",
+    "osm_site": "https://justgolfswadlincote.com/",
+    "official_site": "https://justgolfswadlincote.com/"
+  },
+  {
+    "name": "Breadsall Priory Golf Course - Moorland Course",
+    "lat": 52.97288,
+    "lon": -1.4353641,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Kedleston Park Golf Club",
+    "lat": 52.9630164,
+    "lon": -1.5269622,
+    "source": "osm",
+    "osm_site": "https://www.kedlestonparkgolfclub.co.uk/",
+    "official_site": "https://www.kedlestonparkgolfclub.co.uk/"
+  },
+  {
+    "name": "Chesterfield Golf Club",
+    "lat": 53.2175055,
+    "lon": -1.4503516,
+    "source": "osm",
+    "osm_site": "https://www.chesterfieldgolfclub.co.uk/",
+    "official_site": "https://www.chesterfieldgolfclub.co.uk/"
+  },
+  {
+    "name": "Chapel-en-le-Frith Golf Club",
+    "lat": 53.3165355,
+    "lon": -1.9389003,
+    "source": "osm",
+    "osm_site": "https://www.chapelgolf.co.uk/",
+    "official_site": "https://www.chapelgolf.co.uk/"
+  },
+  {
+    "name": "Hallowes Golf Club",
+    "lat": 53.2883265,
+    "lon": -1.4663146,
+    "source": "osm",
+    "osm_site": "https://www.hallowesgolfclub.co.uk/",
+    "official_site": "https://www.hallowesgolfclub.co.uk/"
+  },
+  {
+    "name": "Trent Lock Golf Centre",
+    "lat": 52.8779152,
+    "lon": -1.2830439,
+    "source": "osm",
+    "osm_site": "https://www.trentlock.co.uk/",
+    "official_site": "https://www.trentlock.co.uk/"
+  },
+  {
+    "name": "Erewash Valley Golf Course",
+    "lat": 52.9360631,
+    "lon": -1.2977068,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Brailsford Golf Course",
+    "lat": 52.9651041,
+    "lon": -1.6228071,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Summerhill Golf Club",
+    "lat": 52.087004,
+    "lon": -3.1102391,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "South Herefordshire Golf Club",
+    "lat": 51.9235664,
+    "lon": -2.5150941,
+    "source": "osm",
+    "osm_site": "https://www.south-herefordshiregc.co.uk/",
+    "official_site": "https://www.south-herefordshiregc.co.uk/"
+  },
+  {
+    "name": "Herefordshire Golf Club",
+    "lat": 52.1251057,
+    "lon": -2.8265356,
+    "source": "osm",
+    "osm_site": "https://www.herefordshiregolfclub.co.uk/",
+    "official_site": "https://www.herefordshiregolfclub.co.uk/"
+  },
+  {
+    "name": "Sapey Golf Club",
+    "lat": 52.2603222,
+    "lon": -2.4702429,
+    "source": "osm",
+    "osm_site": "https://www.sapeygolf.co.uk",
+    "official_site": "https://www.sapeygolf.co.uk"
+  },
+  {
+    "name": "Brampton Golf Course",
+    "lat": 52.0344097,
+    "lon": -2.8642207,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Brockington Hall Golf Club",
+    "lat": 52.1561253,
+    "lon": -2.6642892,
+    "source": "osm",
+    "osm_site": "https://www.brockingtonhall.co.uk",
+    "official_site": "https://www.brockingtonhall.co.uk"
+  },
+  {
+    "name": "Alexander Park Resort",
+    "lat": 52.0548648,
+    "lon": -2.5163689,
+    "source": "osm",
+    "osm_site": "https://www.apresort.co.uk/",
+    "official_site": "https://www.apresort.co.uk/"
+  },
+  {
+    "name": "MFA Adventure Golf",
+    "lat": 52.062039,
+    "lon": -2.7103616,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Burghill Valley Golf Club",
+    "lat": 52.096785,
+    "lon": -2.7816547,
+    "source": "osm",
+    "osm_site": "https://www.burghill-valley-golf-club.co.uk/",
+    "official_site": "https://www.burghill-valley-golf-club.co.uk/"
+  }
+]

@@ -1,0 +1,322 @@
+[
+  {
+    "name": "Lutterworth Golf Club",
+    "lat": 52.4491605,
+    "lon": -1.198234,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Leicester Golf Centre",
+    "lat": 52.6024704,
+    "lon": -1.0982638,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Leicestershire Golf Club",
+    "lat": 52.6181934,
+    "lon": -1.0842821,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Humberstone Heights",
+    "lat": 52.6531123,
+    "lon": -1.0837079,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Scraptoft Golf Club",
+    "lat": 52.6514929,
+    "lon": -1.0415733,
+    "source": "osm",
+    "osm_site": "https://www.scraptoftgolfclub.co.uk/",
+    "official_site": "https://www.scraptoftgolfclub.co.uk/"
+  },
+  {
+    "name": "Birstall Golf Club",
+    "lat": 52.6710382,
+    "lon": -1.1388498,
+    "source": "osm",
+    "osm_site": "https://www.birstallgolfclub.co.uk/",
+    "official_site": "https://www.birstallgolfclub.co.uk/"
+  },
+  {
+    "name": "Kirby Muxloe Golf Club",
+    "lat": 52.6281136,
+    "lon": -1.2389754,
+    "source": "osm",
+    "osm_site": "https://www.kirbymuxloe-golf.co.uk/",
+    "official_site": "https://www.kirbymuxloe-golf.co.uk/"
+  },
+  {
+    "name": "Glen Gorse Golf Club",
+    "lat": 52.5814091,
+    "lon": -1.0686497,
+    "source": "osm",
+    "osm_site": "https://www.glengorsegolfclub.co.uk/",
+    "official_site": "https://www.glengorsegolfclub.co.uk/"
+  },
+  {
+    "name": "Longcliffe Golf Club",
+    "lat": 52.7520385,
+    "lon": -1.2673322,
+    "source": "osm",
+    "osm_site": "https://www.longcliffegolf.co.uk/",
+    "official_site": "https://www.longcliffegolf.co.uk/"
+  },
+  {
+    "name": "Hinckley Golf Club",
+    "lat": 52.5489537,
+    "lon": -1.347253,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Melton Mowbray Town Estate Golf Course",
+    "lat": 52.7633953,
+    "lon": -0.9107085,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Enderby Golf & Leisure Centre",
+    "lat": 52.5827734,
+    "lon": -1.2042118,
+    "source": "osm",
+    "osm_site": "https://enderbygolfcourse.co.uk/",
+    "official_site": "https://enderbygolfcourse.co.uk/"
+  },
+  {
+    "name": "Charnwood Forest Golf Course",
+    "lat": 52.7318179,
+    "lon": -1.2286946,
+    "source": "osm",
+    "osm_site": "https://www.charnwoodforestgolfclub.com/",
+    "official_site": "https://www.charnwoodforestgolfclub.com/"
+  },
+  {
+    "name": "Kilworth Springs",
+    "lat": 52.4358357,
+    "lon": -1.0966875,
+    "source": "osm",
+    "osm_site": "https://www.kilworthsprings.co.uk/",
+    "official_site": "https://www.kilworthsprings.co.uk/"
+  },
+  {
+    "name": "Melton Mowbray Golf Club",
+    "lat": 52.7853649,
+    "lon": -0.8384054,
+    "source": "osm",
+    "osm_site": "https://meltonmowbraygolfclub.com/",
+    "official_site": "https://meltonmowbraygolfclub.com/"
+  },
+  {
+    "name": "Willesley Park Golf Club",
+    "lat": 52.7301177,
+    "lon": -1.4919155,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Stapleford Park Golf Club",
+    "lat": 52.7540704,
+    "lon": -0.7902555,
+    "source": "osm",
+    "osm_site": "https://www.staplefordpark.com/golf/",
+    "official_site": "https://www.staplefordpark.com/golf/"
+  },
+  {
+    "name": "Kibworth Golf Club",
+    "lat": 52.5291386,
+    "lon": -0.9837628,
+    "source": "osm",
+    "osm_site": "https://www.kibworthgolfclub.co.uk/",
+    "official_site": "https://www.kibworthgolfclub.co.uk/"
+  },
+  {
+    "name": "Beedles Lake Golf Course",
+    "lat": 52.7160609,
+    "lon": -1.0644474,
+    "source": "osm",
+    "osm_site": "https://www.beedleslake.co.uk/",
+    "official_site": "https://www.beedleslake.co.uk/"
+  },
+  {
+    "name": "Charnwood Golf",
+    "lat": 52.7859933,
+    "lon": -1.2375916,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Forest Hill Golf & Conference Centre",
+    "lat": 52.6520372,
+    "lon": -1.2853479,
+    "source": "osm",
+    "osm_site": "https://www.foresthillgolfclub.co.uk/",
+    "official_site": "https://www.foresthillgolfclub.co.uk/"
+  },
+  {
+    "name": "Rothley Park Golf Club",
+    "lat": 52.7002774,
+    "lon": -1.1479658,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Breedon Priory Golf Centre (Main Course)",
+    "lat": 52.8110758,
+    "lon": -1.4044152,
+    "source": "osm",
+    "osm_site": "https://www.breedonpriory.co.uk/",
+    "official_site": "https://www.breedonpriory.co.uk/"
+  },
+  {
+    "name": "Rutland Water Golf Course",
+    "lat": 52.639995,
+    "lon": -0.6573771,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cosby Golf Club",
+    "lat": 52.5398201,
+    "lon": -1.1926445,
+    "source": "osm",
+    "osm_site": "https://www.cosbygolfclub.co.uk/",
+    "official_site": "https://www.cosbygolfclub.co.uk/"
+  },
+  {
+    "name": "Pitch and Putt",
+    "lat": 52.6706351,
+    "lon": -0.6640659,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Whetstone Golf Club",
+    "lat": 52.5609866,
+    "lon": -1.1926984,
+    "source": "osm",
+    "osm_site": "https://www.whetstonegolfclub.co.uk/",
+    "official_site": "https://www.whetstonegolfclub.co.uk/"
+  },
+  {
+    "name": "The Gallops Golf Course",
+    "lat": 52.599021,
+    "lon": -1.1011041,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Six Hills Golf Course",
+    "lat": 52.7874058,
+    "lon": -1.0356197,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Blaby Golf Centre",
+    "lat": 52.5627833,
+    "lon": -1.1640336,
+    "source": "osm",
+    "osm_site": "https://www.blabygolfcentre.co.uk/",
+    "official_site": "https://www.blabygolfcentre.co.uk/"
+  },
+  {
+    "name": "The Golf Centre in Coalville",
+    "lat": 52.7222584,
+    "lon": -1.3875861,
+    "source": "osm",
+    "osm_site": "https://thegolfcentrecoalville.co.uk/",
+    "official_site": "https://thegolfcentrecoalville.co.uk/"
+  },
+  {
+    "name": "Ullesthorpe Court Hotel & Golf Club",
+    "lat": 52.4902255,
+    "lon": -1.2471068,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Greetham Valley Golf Course",
+    "lat": 52.7120599,
+    "lon": -0.6067837,
+    "source": "osm",
+    "osm_site": "https://greethamvalley.co.uk/golf/",
+    "official_site": "https://greethamvalley.co.uk/golf/"
+  },
+  {
+    "name": "Woolfox",
+    "lat": 52.703944,
+    "lon": -0.5651157,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Luffenham Heath Golf Club",
+    "lat": 52.6105782,
+    "lon": -0.5869217,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Breedon Priory Golf Centre",
+    "lat": 52.8026538,
+    "lon": -1.4104364,
+    "source": "osm",
+    "osm_site": "https://breedonpriorygolf.co.uk/",
+    "official_site": "https://breedonpriorygolf.co.uk/"
+  },
+  {
+    "name": "RAF Cottesmore Golf Club",
+    "lat": 52.7369492,
+    "lon": -0.6614167,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Rutland Water",
+    "lat": 52.6397541,
+    "lon": -0.6554329,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lingdale Golf Club",
+    "lat": 52.7098476,
+    "lon": -1.2217883,
+    "source": "osm",
+    "osm_site": "https://www.lingdalegolfclub.co.uk",
+    "official_site": "https://www.lingdalegolfclub.co.uk"
+  },
+  {
+    "name": "Leicester City Football Club Golf Course",
+    "lat": 52.7437233,
+    "lon": -1.0765489,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  }
+]

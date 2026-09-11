@@ -1,0 +1,402 @@
+[
+  {
+    "name": "Goin' Golf",
+    "lat": 52.9961323,
+    "lon": -2.150529,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Little Aston Golf Club",
+    "lat": 52.5984868,
+    "lon": -1.8784453,
+    "source": "osm",
+    "osm_site": "https://www.littleastongolf.co.uk/",
+    "official_site": "https://www.littleastongolf.co.uk/"
+  },
+  {
+    "name": "Aston Wood Golf Club",
+    "lat": 52.6081126,
+    "lon": -1.8535774,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Whiston Golf Club",
+    "lat": 53.0220063,
+    "lon": -1.9361921,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Wychnor Park Country Club",
+    "lat": 52.7480326,
+    "lon": -1.7574355,
+    "source": "osm",
+    "osm_site": "https://www.diamondresorts.com/Wychnor-Park-Country-Club",
+    "official_site": "https://www.diamondresorts.com/Wychnor-Park-Country-Club"
+  },
+  {
+    "name": "Beacon Park Golf Course",
+    "lat": 52.6857796,
+    "lon": -1.84111,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Aqualate Golf Centre",
+    "lat": 52.767937,
+    "lon": -2.3542656,
+    "source": "osm",
+    "osm_site": "https://www.aqualategolf.co.uk/",
+    "official_site": "https://www.aqualategolf.co.uk/"
+  },
+  {
+    "name": "Wolstanton Golf Club",
+    "lat": 53.031074,
+    "lon": -2.2337383,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Newcastle Golf Club",
+    "lat": 52.9971264,
+    "lon": -2.2476252,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Uttoxeter Golf Course",
+    "lat": 52.8876714,
+    "lon": -1.8433867,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Essington Golf Course",
+    "lat": 52.633798,
+    "lon": -2.03811,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Denstone College Golf Club",
+    "lat": 52.9581869,
+    "lon": -1.8701109,
+    "source": "osm",
+    "osm_site": "https://www.denstonecollege.org/golf",
+    "official_site": "https://www.denstonecollege.org/golf"
+  },
+  {
+    "name": "Ingestre Park Golf Club",
+    "lat": 52.8148699,
+    "lon": -2.0341286,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Chase Golf Club",
+    "lat": 52.7238174,
+    "lon": -2.050912,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Leek Golf Club",
+    "lat": 53.0888687,
+    "lon": -2.0247868,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Onneley Golf Club",
+    "lat": 52.9892881,
+    "lon": -2.3637143,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Himley Hall Golf Centre/Club",
+    "lat": 52.5236118,
+    "lon": -2.1592388,
+    "source": "osm",
+    "osm_site": "https://www.himleyhallgolfclub.com/",
+    "official_site": "https://www.himleyhallgolfclub.com/"
+  },
+  {
+    "name": "Stafford Castle Golf Club",
+    "lat": 52.8006099,
+    "lon": -2.1363978,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Brocton Hall Golf Club",
+    "lat": 52.7761699,
+    "lon": -2.0551429,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Whittington Heath Golf Club",
+    "lat": 52.6653781,
+    "lon": -1.7796013,
+    "source": "osm",
+    "osm_site": "https://www.whittingtonheathgc.co.uk/",
+    "official_site": "https://www.whittingtonheathgc.co.uk/"
+  },
+  {
+    "name": "Westwood Golf Club",
+    "lat": 53.0965949,
+    "lon": -2.0473542,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Wergs Golf Club",
+    "lat": 52.6099376,
+    "lon": -2.1817312,
+    "source": "osm",
+    "osm_site": "https://www.wergsgolfclub.com/",
+    "official_site": "https://www.wergsgolfclub.com/"
+  },
+  {
+    "name": "The South Staffordshire Golf Club",
+    "lat": 52.6073062,
+    "lon": -2.169397,
+    "source": "osm",
+    "osm_site": "https://www.southstaffordshiregolfclub.co.uk/",
+    "official_site": "https://www.southstaffordshiregolfclub.co.uk/"
+  },
+  {
+    "name": "Lichfield Golf & Country Club",
+    "lat": 52.7170718,
+    "lon": -1.8562379,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Mount Golf & Country Club",
+    "lat": 52.5919307,
+    "lon": -2.2215822,
+    "source": "osm",
+    "osm_site": "https://www.mountgolfandcountryclub.co.uk/",
+    "official_site": "https://www.mountgolfandcountryclub.co.uk/"
+  },
+  {
+    "name": "Swindon Golf Club",
+    "lat": 52.5234655,
+    "lon": -2.2353635,
+    "source": "osm",
+    "osm_site": "https://www.swindongolfclub.co.uk/",
+    "official_site": "https://www.swindongolfclub.co.uk/"
+  },
+  {
+    "name": "Hawkesyard Golf Course",
+    "lat": 52.7422838,
+    "lon": -1.9024258,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Mark Butler Golf Academy (Sedgley Golf Centre)",
+    "lat": 52.5307407,
+    "lon": -2.1366225,
+    "source": "osm",
+    "osm_site": "https://www.themarkbutlergolfacademy.co.uk/",
+    "official_site": "https://www.themarkbutlergolfacademy.co.uk/"
+  },
+  {
+    "name": "Greenfield Golf Club",
+    "lat": 52.6359943,
+    "lon": -2.1156344,
+    "source": "osm",
+    "osm_site": "https://greenfieldgolf.co.uk/",
+    "official_site": "https://greenfieldgolf.co.uk/"
+  },
+  {
+    "name": "The Range Woodfarm",
+    "lat": 52.6321501,
+    "lon": -2.0305626,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Trentham Park Golf Course",
+    "lat": 52.9690301,
+    "lon": -2.215534,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Branston Golf & Country Club",
+    "lat": 52.7848451,
+    "lon": -1.6494148,
+    "source": "osm",
+    "osm_site": "https://branstonclub.co.uk/",
+    "official_site": "https://branstonclub.co.uk/"
+  },
+  {
+    "name": "Burslem Golf Course",
+    "lat": 53.062588,
+    "lon": -2.1861786,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Stone Golf Course",
+    "lat": 52.9007926,
+    "lon": -2.164626,
+    "source": "osm",
+    "osm_site": "https://www.stonegolfclub.co.uk/",
+    "official_site": "https://www.stonegolfclub.co.uk/"
+  },
+  {
+    "name": "Blythe Bridge Golf Club",
+    "lat": 52.9645059,
+    "lon": -2.0829255,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ledene Golf Centre",
+    "lat": 52.639131,
+    "lon": -2.2271728,
+    "source": "osm",
+    "osm_site": "https://www.ledenegolf.co.uk/",
+    "official_site": "https://www.ledenegolf.co.uk/"
+  },
+  {
+    "name": "Belmont Golf Club",
+    "lat": 52.8290554,
+    "lon": -1.712591,
+    "source": "osm",
+    "osm_site": "https://www.belmontgolf.co.uk/",
+    "official_site": "https://www.belmontgolf.co.uk/"
+  },
+  {
+    "name": "Cannock Park Golf Course",
+    "lat": 52.6974089,
+    "lon": -2.0402482,
+    "source": "osm",
+    "osm_site": "https://www.wlct.org/cannock/golf/",
+    "official_site": "https://www.wlct.org/cannock/golf/"
+  },
+  {
+    "name": "Stone Golf Centre",
+    "lat": 52.8791818,
+    "lon": -2.1883951,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Barlaston Golf Club",
+    "lat": 52.9332304,
+    "lon": -2.1773608,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Greenway Hall Golf Club",
+    "lat": 53.057861,
+    "lon": -2.1205446,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Manor Golf Club Ltd",
+    "lat": 52.8666012,
+    "lon": -1.9332326,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Trentham Golf Club",
+    "lat": 52.9603547,
+    "lon": -2.1878626,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "JCB Golf & Country Club",
+    "lat": 52.9437734,
+    "lon": -1.8609118,
+    "source": "osm",
+    "osm_site": "https://www.jcbgolfandcountryclub.com",
+    "official_site": "https://www.jcbgolfandcountryclub.com"
+  },
+  {
+    "name": "Beau Desert Golf Club",
+    "lat": 52.7187336,
+    "lon": -1.9719475,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Penn Common Golf Course",
+    "lat": 52.5484289,
+    "lon": -2.1519137,
+    "source": "osm",
+    "osm_site": "https://www.penngolfclub.co.uk/",
+    "official_site": "https://www.penngolfclub.co.uk/"
+  },
+  {
+    "name": "Enville Golf Club",
+    "lat": 52.4964847,
+    "lon": -2.2331825,
+    "source": "osm",
+    "osm_site": "https://www.envillegolfclub.com/",
+    "official_site": "https://www.envillegolfclub.com/"
+  },
+  {
+    "name": "Three Hammers Golf Complex",
+    "lat": 52.6505998,
+    "lon": -2.1276866,
+    "source": "osm",
+    "osm_site": "https://www.3hammers.co.uk/",
+    "official_site": "https://www.3hammers.co.uk/"
+  },
+  {
+    "name": "Darnford Moors Golf Course",
+    "lat": 52.6764051,
+    "lon": -1.7939813,
+    "source": "osm",
+    "osm_site": "https://www.darnfordmoors.com/",
+    "official_site": "https://www.darnfordmoors.com/"
+  },
+  {
+    "name": "Patshull Park Hotel, Golf & Country Club",
+    "lat": 52.6011761,
+    "lon": -2.293767,
+    "source": "osm",
+    "osm_site": "https://www.patshull-park.co.uk/golf.aspx",
+    "official_site": "https://www.patshull-park.co.uk/golf.aspx"
+  }
+]

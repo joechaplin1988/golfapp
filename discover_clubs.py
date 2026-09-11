@@ -149,6 +149,26 @@ COUNTY_BOUNDS = {
     # A metropolitan county, which OSM puts at admin_level 5 like Greater
     # London — asking at 6 returns nothing, silently.
     "west_midlands": ["West Midlands"],
+
+    # --- Third wave, 2026-09-11: the rest of the Midlands and the West
+    # Country. Every name probed against Overpass first, as before.
+    #
+    # The city is "City of Leicester" at level 6; plain "Leicester" is only a
+    # level-8 district inside it.
+    "leicestershire": ["Leicestershire", "City of Leicester", "Rutland"],
+    # Same shape: "City of Nottingham", not "Nottingham".
+    "nottinghamshire": ["Nottinghamshire", "City of Nottingham"],
+    "derbyshire": ["Derbyshire", "Derby"],
+    "staffordshire": ["Staffordshire", "Stoke-on-Trent"],
+    "worcestershire": ["Worcestershire"],
+    "herefordshire": ["Herefordshire"],
+    "shropshire": ["Shropshire", "Telford and Wrekin"],
+    "lincolnshire": ["Lincolnshire", "North Lincolnshire", "North East Lincolnshire"],
+    "devon": ["Devon", "Plymouth", "Torbay"],
+    # Isles of Scilly deliberately left out: straight-line distance would
+    # advertise a Scilly course as "25 miles" from Penzance and then need a
+    # boat or a plane. Same rule as the Isle of Wight.
+    "cornwall": ["Cornwall"],
 }
 
 # Areas whose OSM boundary is not at the usual admin_level 6.
@@ -302,6 +322,20 @@ COUNTY_UNION_URLS = {
     "somerset": None,
     "warwickshire": None,
     "west_midlands": None,
+
+    # Third wave. Only the two West Country unions run the shared CMS, and
+    # both are .org.uk. The eight Midlands counties had no countyclubs.php on
+    # any plausible domain, so they are OSM-only.
+    "devon": "https://www.devongolf.org.uk/countyclubs.php",
+    "cornwall": "https://www.cornwallgolf.org.uk/countyclubs.php",
+    "leicestershire": None,
+    "nottinghamshire": None,
+    "derbyshire": None,
+    "staffordshire": None,
+    "worcestershire": None,
+    "herefordshire": None,
+    "shropshire": None,
+    "lincolnshire": None,
 }
 
 SOCIAL_HOSTS = ("facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com", "youtube.com")
