@@ -122,6 +122,9 @@ COUNTY_BOUNDS = {
     # Keynes" — plain "Milton Keynes" matches no boundary at any level, and
     # the Buckinghamshire boundary does not contain it.
     "buckinghamshire": ["Buckinghamshire", "City of Milton Keynes"],
+    # Ordinary county at the usual level — checked before enumerating: 39
+    # features at 6, none at 5 or 8.
+    "oxfordshire": ["Oxfordshire"],
 }
 
 # Areas whose OSM boundary is not at the usual admin_level 6.
@@ -254,6 +257,9 @@ COUNTY_UNION_URLS = {
     # Same Berks/Bucks/Oxon union as Berkshire — WordPress, no parsable club
     # directory. OSM-only, plus its website tags.
     "buckinghamshire": None,
+    # Third county of the same Berks/Bucks/Oxon union — still no parsable
+    # directory. OSM-only, plus its website tags.
+    "oxfordshire": None,
 }
 
 SOCIAL_HOSTS = ("facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com", "youtube.com")

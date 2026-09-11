@@ -1,9 +1,9 @@
 # Golf Tee Time Scrapers — Usage Notes
 
 Status: **eight platforms live** (Intelligent Golf, ESP, Golf Manager,
-ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **243 clubs / 292 sheets per scheduled run (2026-09-11)**, Kent,
-Sussex, Surrey, Essex, Hampshire, Hertfordshire, Berkshire, Greater London
-and Buckinghamshire done, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
+ClubV1, BRS, Shiji, Gladstone, Chronogolf) — **250 clubs / 300 sheets per scheduled run (2026-09-11)**, Kent,
+Sussex, Surrey, Essex, Hampshire, Hertfordshire, Berkshire, Greater London,
+Buckinghamshire and Oxfordshire done, refreshed by GitHub Actions into Supabase (next 3 days every 2h, 7 days twice daily), searchable
 at golfbookingapp.netlify.app. Every club is geocoded for radius search. A
 discovery pipeline (below) finds new clubs and their platforms. See "Verified runs".
 
@@ -839,6 +839,15 @@ surfaced as "Worldham Golf Club: no availability in 14 days". Worldham has
 per day) and backs off on 429; the scraper paces its four party-size calls.
 Worth remembering: on this platform a rate limit is indistinguishable from
 an empty sheet unless you check the status code.
+
+### Oxfordshire (2026-09-11)
+An ordinary county at the usual admin level (checked first, as now routine).
+Third county of the same Berks/Bucks/Oxon union, still with no parsable
+directory, so OSM-only — 19 of 30 clubs had a website from OSM's own tags.
+
+28 fingerprinted → 7 ready → **7 clubs / 8 sheets live** (`14 ok, 2 empty,
+0 error; 391 tee times`): Oxford, Henley, Burford, Kirtlington (18 + Blenheim),
+Drayton Park, Bicester and Hinksey Heights.
 
 ### Buckinghamshire (2026-09-11)
 Checked the admin level BEFORE enumerating this time — 6 gives 39 features,

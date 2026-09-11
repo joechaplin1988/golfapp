@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Heythrop Park Golf",
+    "lat": 51.9368314,
+    "lon": -1.4717766,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Oxford Golf Club",
+    "lat": 51.7440386,
+    "lon": -1.2128174,
+    "source": "osm",
+    "osm_site": "https://www.oxfordgolfclub.co.uk/",
+    "official_site": "https://www.oxfordgolfclub.co.uk/"
+  },
+  {
+    "name": "Reading Golf Club",
+    "lat": 51.4886548,
+    "lon": -0.9761052,
+    "source": "osm",
+    "osm_site": "https://www.readinggolfclub.com/",
+    "official_site": "https://www.readinggolfclub.com/"
+  },
+  {
+    "name": "Frilford Heath Golf Course",
+    "lat": 51.6821352,
+    "lon": -1.3686472,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Springs Golf Club",
+    "lat": 51.576502,
+    "lon": -1.1189222,
+    "source": "osm",
+    "osm_site": "https://www.thespringshotel.com/golf/",
+    "official_site": "https://www.thespringshotel.com/golf/"
+  },
+  {
+    "name": "Hadden Hill Golf Course",
+    "lat": 51.6117674,
+    "lon": -1.2160785,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Caversham",
+    "lat": 51.482704,
+    "lon": -1.0060581,
+    "source": "osm",
+    "osm_site": "https://thecaversham.co.uk/",
+    "official_site": "https://thecaversham.co.uk/"
+  },
+  {
+    "name": "The Club at Mapledurham",
+    "lat": 51.4886688,
+    "lon": -0.9973028,
+    "source": "osm",
+    "osm_site": "https://www.theclubatmapledurham.com/",
+    "official_site": "https://www.theclubatmapledurham.com/"
+  },
+  {
+    "name": "Defence Academy Golf Course",
+    "lat": 51.600653,
+    "lon": -1.638571,
+    "source": "osm",
+    "osm_site": "https://www.dagc.org.uk/",
+    "official_site": "https://www.dagc.org.uk/"
+  },
+  {
+    "name": "Drayton Park Golf Club (Abingdon)",
+    "lat": 51.633722,
+    "lon": -1.3080288,
+    "source": "osm",
+    "osm_site": "https://www.draytonparkgolfclubabingdon.co.uk/",
+    "official_site": "https://www.draytonparkgolfclubabingdon.co.uk/"
+  },
+  {
+    "name": "Oxfordshire Golf Club",
+    "lat": 51.7319795,
+    "lon": -1.0131123,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Waterstock Golf Club",
+    "lat": 51.7415647,
+    "lon": -1.0825318,
+    "source": "osm",
+    "osm_site": "https://www.waterstockgolf.co.uk/",
+    "official_site": "https://www.waterstockgolf.co.uk/"
+  },
+  {
+    "name": "Witney Lakes Resort",
+    "lat": 51.7849789,
+    "lon": -1.5346174,
+    "source": "osm",
+    "osm_site": "https://www.witney-lakes.co.uk/golf.php",
+    "official_site": "https://www.witney-lakes.co.uk/golf.php"
+  },
+  {
+    "name": "Burford Golf Club",
+    "lat": 51.7996969,
+    "lon": -1.6423258,
+    "source": "osm",
+    "osm_site": "https://www.burfordgolfclub.co.uk/",
+    "official_site": "https://www.burfordgolfclub.co.uk/"
+  },
+  {
+    "name": "St. Edward's School Golf Course",
+    "lat": 51.7810841,
+    "lon": -1.2760635,
+    "source": "osm",
+    "osm_site": "https://www.stedwardsoxford.org/beyond-the-classroom/sports/other-sports/golf/",
+    "official_site": "https://www.stedwardsoxford.org/beyond-the-classroom/sports/other-sports/golf/"
+  },
+  {
+    "name": "Kirtlington Golf Club",
+    "lat": 51.8690677,
+    "lon": -1.2891946,
+    "source": "osm",
+    "osm_site": "https://www.kirtlingtongolfclub.com/",
+    "official_site": "https://www.kirtlingtongolfclub.com/"
+  },
+  {
+    "name": "Bicester Golf Hotel & Spa",
+    "lat": 51.8899163,
+    "lon": -1.1988247,
+    "source": "osm",
+    "osm_site": "https://www.bicesterhotelgolfandspa.com/",
+    "official_site": "https://www.bicesterhotelgolfandspa.com/"
+  },
+  {
+    "name": "The Wychwood Golf Club",
+    "lat": 51.8829008,
+    "lon": -1.6049686,
+    "source": "osm",
+    "osm_site": "https://www.thewychwood.com/",
+    "official_site": "https://www.thewychwood.com/"
+  },
+  {
+    "name": "Oxford Golf Centre",
+    "lat": 51.7565053,
+    "lon": -1.2844431,
+    "source": "osm",
+    "osm_site": "https://www.oxfordgolfcentre.co.uk/",
+    "official_site": "https://www.oxfordgolfcentre.co.uk/"
+  },
+  {
+    "name": "Rye Hill Golf Club",
+    "lat": 52.0145687,
+    "lon": -1.4237971,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Studley Wood Golf Club",
+    "lat": 51.799753,
+    "lon": -1.136288,
+    "source": "osm",
+    "osm_site": "https://www.studleywoodgolfclub.co.uk/",
+    "official_site": "https://www.studleywoodgolfclub.co.uk/"
+  },
+  {
+    "name": "Chipping Norton Golf Club",
+    "lat": 51.9384153,
+    "lon": -1.5131317,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Huntercombe Golf Club",
+    "lat": 51.5828599,
+    "lon": -1.0271567,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Greys Green Golf Course",
+    "lat": 51.5330267,
+    "lon": -0.9681583,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Henley Golf Club",
+    "lat": 51.519241,
+    "lon": -0.9151313,
+    "source": "osm",
+    "osm_site": "https://www.henleygc.com/",
+    "official_site": "https://www.henleygc.com/"
+  },
+  {
+    "name": "Radley College Golf Course",
+    "lat": 51.6952683,
+    "lon": -1.2542636,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Tadmarton Heath Golf Club",
+    "lat": 52.0172797,
+    "lon": -1.433101,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Badgemore Park Golf Club",
+    "lat": 51.544489,
+    "lon": -0.927273,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hinksey Heights Golf Course",
+    "lat": 51.7320399,
+    "lon": -1.2826276,
+    "source": "osm",
+    "osm_site": "https://www.oxford-golf.co.uk/",
+    "official_site": "https://www.oxford-golf.co.uk/"
+  },
+  {
+    "name": "Shrivenham Park Golf Club",
+    "lat": 51.6070062,
+    "lon": -1.6507842,
+    "source": "osm",
+    "osm_site": "https://www.shrivenhampark.com/",
+    "official_site": "https://www.shrivenhampark.com/"
+  }
+]

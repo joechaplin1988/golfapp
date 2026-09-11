@@ -1,0 +1,29 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Heythrop Park Golf,,51.9368314,-1.4717766,no_site,unknown,,low,no official website resolved (not in county union directory)
+Oxford Golf Club,https://www.oxfordgolfclub.co.uk/,51.7440386,-1.2128174,brs,public,https://visitors.brsgolf.com/oxford#/course/1,high,
+Reading Golf Club,https://www.readinggolfclub.com/,51.4886548,-0.9761052,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.readinggolfclub.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Frilford Heath Golf Course,,51.6821352,-1.3686472,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Springs Golf Club,https://www.thespringshotel.com/golf/,51.576502,-1.1189222,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Hadden Hill Golf Course,,51.6117674,-1.2160785,no_site,unknown,,low,no official website resolved (not in county union directory)
+Defence Academy Golf Course,https://www.dagc.org.uk/,51.600653,-1.638571,unknown,unknown,,low,homepage loaded (https://dagc.org.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Drayton Park Golf Club (Abingdon),https://www.draytonparkgolfclubabingdon.co.uk/,51.633722,-1.3080288,brs,public,https://visitors.brsgolf.com/draytonpark18#/course/1,high,confirmed by following the platform link found on the club's own site
+Oxfordshire Golf Club,,51.7319795,-1.0131123,no_site,unknown,,low,no official website resolved (not in county union directory)
+Waterstock Golf Club,https://www.waterstockgolf.co.uk/,51.7415647,-1.0825318,unknown,unknown,,low,homepage loaded (https://waterstockgolf.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+Witney Lakes Resort,https://www.witney-lakes.co.uk/golf.php,51.7849789,-1.5346174,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Burford Golf Club,https://www.burfordgolfclub.co.uk/,51.7996969,-1.6423258,intelligent_golf,public,https://burford.intelligentgolf.co.uk/visitorbooking/,high,
+St. Edward's School Golf Course,https://www.stedwardsoxford.org/beyond-the-classroom/sports/other-sports/golf/,51.7810841,-1.2760635,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Kirtlington Golf Club,https://www.kirtlingtongolfclub.com/,51.8690677,-1.2891946,intelligent_golf,public,https://members.kirtlingtongolfclub.com/visitorbooking/,high,
+Bicester Golf Hotel & Spa,https://www.bicesterhotelgolfandspa.com/,51.8899163,-1.1988247,clubv1,public,https://bicester.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,confirmed by following the platform link found on the club's own site
+The Wychwood Golf Club,https://www.thewychwood.com/,51.8829008,-1.6049686,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Oxford Golf Centre,https://www.oxfordgolfcentre.co.uk/,51.7565053,-1.2844431,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.oxfordgolfcentre.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Rye Hill Golf Club,,52.0145687,-1.4237971,no_site,unknown,,low,no official website resolved (not in county union directory)
+Studley Wood Golf Club,https://www.studleywoodgolfclub.co.uk/,51.799753,-1.136288,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://studleywood.hub.clubv1.com/Visitors/booking"
+Chipping Norton Golf Club,,51.9384153,-1.5131317,no_site,unknown,,low,no official website resolved (not in county union directory)
+Huntercombe Golf Club,,51.5828599,-1.0271567,no_site,unknown,,low,no official website resolved (not in county union directory)
+Greys Green Golf Course,,51.5330267,-0.9681583,no_site,unknown,,low,no official website resolved (not in county union directory)
+Henley Golf Club,https://www.henleygc.com/,51.519241,-0.9151313,intelligent_golf,public,https://www.henleygc.com/visitorbooking/,high,confirmed via intelligent_golf's standard booking path
+Radley College Golf Course,,51.6952683,-1.2542636,no_site,unknown,,low,no official website resolved (not in county union directory)
+Tadmarton Heath Golf Club,,52.0172797,-1.433101,no_site,unknown,,low,no official website resolved (not in county union directory)
+Badgemore Park Golf Club,,51.544489,-0.927273,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hinksey Heights Golf Course,https://www.oxford-golf.co.uk/,51.7320399,-1.2826276,clubv1,public,https://hinkseyheights.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,
+Shrivenham Park Golf Club,https://www.shrivenhampark.com/,51.6070062,-1.6507842,unknown,unknown,,low,homepage loaded (https://custommapposter.com/article/best/926?sd=shrivenhampark.com) but no platform signal found on it or 1 booking-ish link(s)

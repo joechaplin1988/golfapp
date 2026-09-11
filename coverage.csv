@@ -8,6 +8,7 @@ Copthorne,live,,intelligent_golf,2,RH10 3LL,,
 Cottesmore Golf Club,live,,esp,1,RH11 9AT,,
 Crowborough,live,,intelligent_golf,1,TN6 1UJ,,
 Crowborough Beacon Golf Club,live,,intelligent_golf,1,TN6 1UJ,,
+Drayton Park Golf Club,live,,brs,1,OX14 4LA,,
 Dukes Meadows Golf,live,,brs,1,W4 2SH,,
 East Sussex National,live,,shiji,2,BN8 5ES,,
 Eastbourne Downs,live,,golf_manager,1,BN20 8ES,,
@@ -193,6 +194,12 @@ North Middlesex Golf Club,live,london,clubv1,1,N20 0NL,,https://northmiddlesex.h
 The Inspiration Club,live,london,intelligent_golf,1,UB5 6RD,,https://inspirationclub.intelligentgolf.co.uk/visitorbooking/
 Chartham Park,live,newsite,intelligent_golf,1,RH19 2JT,,https://golf.charthampark.com/visitorbooking/
 Twisted Stone Golf Course,live,newsite,brs,1,GU22 8UE,,https://visitors.brsgolf.com/twistedstonegc#/course/1
+Bicester Golf Hotel & Spa,live,oxfordshire,clubv1,1,OX26 1TH,,https://bicester.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
+Burford Golf Club,live,oxfordshire,intelligent_golf,1,OX18 4JG,,https://burford.intelligentgolf.co.uk/visitorbooking/
+Henley Golf Club,live,oxfordshire,intelligent_golf,1,RG9 4HG,,https://www.henleygc.com/visitorbooking/
+Hinksey Heights Golf Course,live,oxfordshire,clubv1,1,OX1 5AB,,https://hinkseyheights.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11
+Kirtlington Golf Club,live,oxfordshire,intelligent_golf,2,OX5 3JY,,https://members.kirtlingtongolfclub.com/visitorbooking/
+Oxford Golf Club,live,oxfordshire,brs,1,OX4 1PF,,https://visitors.brsgolf.com/oxford#/course/1
 Abbey Moor Golf Club,live,surrey,brs,1,KT15 2XU,,https://visitors.brsgolf.com/abbeymoor#/course/1
 Addington Court Golf Club,live,surrey,intelligent_golf,3,CR0 9AA,,https://golf.addingtoncourt-golfclub.co.uk/visitorbooking/
 Addington Palace Golf Club,live,surrey,clubv1,1,CR0 5BB,,
@@ -281,6 +288,7 @@ Cuddington Golf Course,no_visitor_booking,london,intelligent_golf,0,,booking pag
 Hampstead Golf Club,no_visitor_booking,london,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Coronation Course,no_visitor_booking,newsite,unknown,0,,booking page requires a member login,
 Saffron Walden Golf Club,no_visitor_booking,newsite,intelligent_golf,0,,booking page requires a member login,
+Studley Wood Golf Club,no_visitor_booking,oxfordshire,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Bletchingley Golf Course,no_visitor_booking,surrey,clubv1,0,,"on clubv1, but visitor booking is switched off",
 Camberley Heath Golf Club,no_visitor_booking,surrey,intelligent_golf,0,,booking page requires a member login,
 Purley Downs Golf Club,no_visitor_booking,surrey,intelligent_golf,0,,booking page requires a member login,
@@ -602,6 +610,25 @@ South Essex Golf Centre,unresolved,newsite,intelligent_golf,0,,intelligent_golf 
 The Cathedral Course,unresolved,newsite,esp,0,,esp seen but no confirmed public visitor sheet — worth another look,https://www.e-s-p.com/elitelive/book_date.php
 The Tower Course,unresolved,newsite,esp,0,,esp seen but no confirmed public visitor sheet — worth another look,https://www.e-s-p.com/elitelive/book_date.php
 Weald Park Hotel Golf and Country Club,unresolved,newsite,brs,0,,brs seen but no confirmed public visitor sheet — worth another look,https://visitors.brsgolf.com/brentwood
+Badgemore Park Golf Club,unresolved,oxfordshire,no_site,0,,no working website found,
+Chipping Norton Golf Club,unresolved,oxfordshire,no_site,0,,no working website found,
+Defence Academy Golf Course,unresolved,oxfordshire,unknown,0,,homepage loaded (https://dagc.org.uk/) but no platform signal found on it or 0 booking-ish link(s),
+Drayton Park Golf Club (Abingdon),unresolved,oxfordshire,brs,0,,brs seen but no confirmed public visitor sheet — worth another look,https://visitors.brsgolf.com/draytonpark18#/course/1
+Frilford Heath Golf Course,unresolved,oxfordshire,no_site,0,,no working website found,
+Greys Green Golf Course,unresolved,oxfordshire,no_site,0,,no working website found,
+Hadden Hill Golf Course,unresolved,oxfordshire,no_site,0,,no working website found,
+Heythrop Park Golf,unresolved,oxfordshire,no_site,0,,no working website found,
+Huntercombe Golf Club,unresolved,oxfordshire,no_site,0,,no working website found,
+Oxfordshire Golf Club,unresolved,oxfordshire,no_site,0,,no working website found,
+Radley College Golf Course,unresolved,oxfordshire,no_site,0,,no working website found,
+Rye Hill Golf Club,unresolved,oxfordshire,no_site,0,,no working website found,
+Shrivenham Park Golf Club,unresolved,oxfordshire,unknown,0,,homepage loaded (https://custommapposter.com/article/best/926?sd=shrivenhampark.com) but no platform signal fo,
+St. Edward's School Golf Course,unresolved,oxfordshire,dead_link,0,,no working website found,
+Tadmarton Heath Golf Club,unresolved,oxfordshire,no_site,0,,no working website found,
+The Springs Golf Club,unresolved,oxfordshire,dead_link,0,,no working website found,
+The Wychwood Golf Club,unresolved,oxfordshire,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
+Waterstock Golf Club,unresolved,oxfordshire,unknown,0,,homepage loaded (https://waterstockgolf.co.uk/) but no platform signal found on it or 3 booking-ish link(s),
+Witney Lakes Resort,unresolved,oxfordshire,dead_link,0,,no working website found,
 Beaverbrook Golf Club,unresolved,surrey,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
 Betchworth Park Golf Club,unresolved,surrey,blocked,0,,site refused or failed to load,
 Coombe Hill Golf Club,unresolved,surrey,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
