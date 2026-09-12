@@ -1,0 +1,498 @@
+[
+ {
+  "name": "Whipsnade Park Golf Club",
+  "lat": 51.8375034,
+  "lon": -0.5417199,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.whipsnadeparkgolf.co.uk/"
+ },
+ {
+  "name": "Downshire Golf Complex",
+  "lat": 51.3944417,
+  "lon": -0.7881244,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.downshiregolf.co.uk/"
+ },
+ {
+  "name": "East Berkshire Golf Club",
+  "lat": 51.3746501,
+  "lon": -0.8169052,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.eastberkshiregolfclub.com/"
+ },
+ {
+  "name": "Hennerton Golf Club",
+  "lat": 51.5160988,
+  "lon": -0.8643053,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.hennertongolfclub.co.uk/"
+ },
+ {
+  "name": "Lavender Park Golf Centre",
+  "lat": 51.410258,
+  "lon": -0.7051048,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://lavenderparkgolf.co.uk/"
+ },
+ {
+  "name": "Maidenhead Golf Course",
+  "lat": 51.5113453,
+  "lon": -0.7228731,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.maidenheadgolf.co.uk/"
+ },
+ {
+  "name": "Richings Park Golf and Country Club",
+  "lat": 51.4976784,
+  "lon": -0.519644,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.richingspark.co.uk/"
+ },
+ {
+  "name": "Sunningdale Golf Club",
+  "lat": 51.3819099,
+  "lon": -0.6342329,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.sunningdalegolfclub.co.uk/"
+ },
+ {
+  "name": "Temple Golf Course",
+  "lat": 51.5380072,
+  "lon": -0.7950503,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.templegolfclub.co.uk/"
+ },
+ {
+  "name": "Theale Golf Club",
+  "lat": 51.445702,
+  "lon": -1.0790811,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.thealegolf.com/"
+ },
+ {
+  "name": "Winter Hill Golf Course",
+  "lat": 51.5670853,
+  "lon": -0.7206497,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.winterhillgolfclub.uk/"
+ },
+ {
+  "name": "Buckinghamshire Golf Course",
+  "lat": 51.5726934,
+  "lon": -0.4916732,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.buckinghamshiregc.com/"
+ },
+ {
+  "name": "Harleyford Golf Club",
+  "lat": 51.5595164,
+  "lon": -0.8057276,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.harleyfordgolf.co.uk/"
+ },
+ {
+  "name": "Hedsor Golf Course",
+  "lat": 51.5763725,
+  "lon": -0.6719051,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://hedsorgolfcourse.co.uk/"
+ },
+ {
+  "name": "Huntswood Golf Course",
+  "lat": 51.5414657,
+  "lon": -0.6791287,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.huntswoodgolf.com/"
+ },
+ {
+  "name": "Silverstone Golf Club",
+  "lat": 52.0627688,
+  "lon": -1.041862,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.silverstonegolfclub.co.uk/"
+ },
+ {
+  "name": "Thorney Park Golf Club",
+  "lat": 51.506327,
+  "lon": -0.4934834,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://thorneypark.com/"
+ },
+ {
+  "name": "Three Locks Golf Club",
+  "lat": 51.9507332,
+  "lon": -0.6994344,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.threelocksgolfclub.co.uk/"
+ },
+ {
+  "name": "Wexham Park Golf Centre",
+  "lat": 51.5381178,
+  "lon": -0.5729347,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.wexhamparkgolfcentre.co.uk/"
+ },
+ {
+  "name": "Windmill Hill Golf Centre",
+  "lat": 51.9931742,
+  "lon": -0.7752656,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.windmillhillgc.co.uk/"
+ },
+ {
+  "name": "Woburn Golf Club",
+  "lat": 51.9927028,
+  "lon": -0.6575053,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.woburngolf.co.uk/"
+ },
+ {
+  "name": "Haverhill Golf Club",
+  "lat": 52.073723,
+  "lon": 0.4685108,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.haverhillgc.co.uk/"
+ },
+ {
+  "name": "High Beech Golf Course",
+  "lat": 51.6691508,
+  "lon": 0.0322901,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://highbeechgolf.com/"
+ },
+ {
+  "name": "Stock Brook Country Club",
+  "lat": 51.6506119,
+  "lon": 0.4240236,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://stockbrook.com/"
+ },
+ {
+  "name": "Toot Hill Golf Course",
+  "lat": 51.6931364,
+  "lon": 0.1903662,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.toothillgolfclub.co.uk/"
+ },
+ {
+  "name": "Otterbourne Golf Course",
+  "lat": 51.0138848,
+  "lon": -1.3631328,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.otterbournegolfclub.com/"
+ },
+ {
+  "name": "Town Meadow Golf Course",
+  "lat": 51.2441065,
+  "lon": -1.2691399,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://orc.org.uk/golf/"
+ },
+ {
+  "name": "Chadwell Springs Golf Club",
+  "lat": 51.8036008,
+  "lon": -0.0413514,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.chadwellspringsproshop.co.uk/"
+ },
+ {
+  "name": "Chorleywood Golf Club",
+  "lat": 51.6552715,
+  "lon": -0.5101843,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.chorleywoodgolfclub.co.uk/"
+ },
+ {
+  "name": "Dyrham Park Country Club",
+  "lat": 51.6730314,
+  "lon": -0.2280053,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.dyrhampark.com/"
+ },
+ {
+  "name": "Harpenden Common Golf Course",
+  "lat": 51.7968219,
+  "lon": -0.3471043,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.harpendencommongolfclub.co.uk/"
+ },
+ {
+  "name": "Knebworth Golf Course",
+  "lat": 51.8774559,
+  "lon": -0.1958838,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.knebworthgolfclub.com/"
+ },
+ {
+  "name": "Sandy Lodge Golf Club",
+  "lat": 51.6278758,
+  "lon": -0.423274,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.sandylodge.co.uk/"
+ },
+ {
+  "name": "Shendish Manor Golf Course",
+  "lat": 51.7300311,
+  "lon": -0.4678039,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.shendishmanorgolfclub.co.uk/"
+ },
+ {
+  "name": "Verulam Golf Club",
+  "lat": 51.7371796,
+  "lon": -0.3250247,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.verulamgolf.co.uk/"
+ },
+ {
+  "name": "West Herts Golf Club",
+  "lat": 51.664432,
+  "lon": -0.4329873,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.westhertsgolfclub.co.uk/"
+ },
+ {
+  "name": "Ashdown Park",
+  "lat": 51.0710952,
+  "lon": 0.0365432,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.ashdownpark.com/"
+ },
+ {
+  "name": "Boars Head Golf Centre",
+  "lat": 51.0681321,
+  "lon": 0.189432,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.boarsheadgolf.com/"
+ },
+ {
+  "name": "Horton Golf Club",
+  "lat": 50.9144616,
+  "lon": -0.2629242,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.hortongolfclub.com/"
+ },
+ {
+  "name": "Villa Golf Club",
+  "lat": 51.1415332,
+  "lon": 0.1479719,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.villagolfcourse.co.uk/"
+ },
+ {
+  "name": "Crews Hill Golf Course",
+  "lat": 51.6807448,
+  "lon": -0.1098606,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.crewshillgolfclub.com/"
+ },
+ {
+  "name": "Ealing Golf Course",
+  "lat": 51.530265,
+  "lon": -0.3172018,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.ealinggolfclub.com/"
+ },
+ {
+  "name": "Enfield Golf Club",
+  "lat": 51.6501458,
+  "lon": -0.1028065,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.enfieldgolfclub.co.uk/"
+ },
+ {
+  "name": "Hadley Wood Golf Course",
+  "lat": 51.6615782,
+  "lon": -0.1627983,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.hadleywoodgc.com/"
+ },
+ {
+  "name": "Haste Hill Golf Course",
+  "lat": 51.5992397,
+  "lon": -0.4240683,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.hastehillgolfclub.co.uk/"
+ },
+ {
+  "name": "Hillingdon Golf Course",
+  "lat": 51.5379074,
+  "lon": -0.4646046,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.hillingdongolfclub.co.uk/"
+ },
+ {
+  "name": "Lee Valley Golf Course",
+  "lat": 51.6324466,
+  "lon": -0.0341516,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.leevalleygolfclub.com/"
+ },
+ {
+  "name": "Mill Hill Golf Course",
+  "lat": 51.633143,
+  "lon": -0.2601838,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.millhillgc.co.uk/"
+ },
+ {
+  "name": "Northwood Golf Course",
+  "lat": 51.6055967,
+  "lon": -0.4281434,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.northwoodgolf.co.uk/"
+ },
+ {
+  "name": "Stanmore Golf Club",
+  "lat": 51.6077478,
+  "lon": -0.3190764,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.stanmoregolfclub.co.uk/"
+ },
+ {
+  "name": "Stockley Park Golf Club",
+  "lat": 51.5135428,
+  "lon": -0.4429594,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.stockleyparkgolf.co.uk/"
+ },
+ {
+  "name": "Sudbury Golf Course",
+  "lat": 51.5451536,
+  "lon": -0.315196,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.sudburygc.co.uk/"
+ },
+ {
+  "name": "Trent Park Golf Course",
+  "lat": 51.6531621,
+  "lon": -0.1316881,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.trentparkgolf.co.uk/"
+ },
+ {
+  "name": "Wyke Green Golf Club",
+  "lat": 51.491704,
+  "lon": -0.3350143,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.wykegreengolfclub.co.uk/"
+ },
+ {
+  "name": "Badgemore Park Golf Club",
+  "lat": 51.544489,
+  "lon": -0.927273,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.badgemorepark.com/"
+ },
+ {
+  "name": "Frilford Heath Golf Course",
+  "lat": 51.6821352,
+  "lon": -1.3686472,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.frilfordheath.co.uk/"
+ },
+ {
+  "name": "Hadden Hill Golf Course",
+  "lat": 51.6117674,
+  "lon": -1.2160785,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.haddenhillgolf.co.uk/"
+ },
+ {
+  "name": "Heythrop Park Golf",
+  "lat": 51.9368314,
+  "lon": -1.4717766,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.warnerhotels.co.uk:443/hotels/heythrop-park-hotel"
+ },
+ {
+  "name": "Huntercombe Golf Club",
+  "lat": 51.5828599,
+  "lon": -1.0271567,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.huntercombegolfclub.co.uk/"
+ },
+ {
+  "name": "Rye Hill Golf Club",
+  "lat": 52.0145687,
+  "lon": -1.4237971,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.ryehill.co.uk/"
+ },
+ {
+  "name": "The Springs Golf Club",
+  "lat": 51.576502,
+  "lon": -1.1189222,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://verderesorts.co.uk/the-springs-resort-and-golf-club/golf-membership/?utm_source=springsgc.com&utm_medium=referral&utm_campaign=SPR+Redirect"
+ },
+ {
+  "name": "Pachesham Golf Course",
+  "lat": 51.3120029,
+  "lon": -0.347987,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.pacheshamgolf.co.uk/"
+ }
+]

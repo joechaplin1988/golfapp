@@ -70,7 +70,8 @@ NOT_THE_CLUB = ("golfnow", "facebook.", "hole19", "golfshake", "ncg.co.uk", "top
 PARKED = re.compile(
     r"domain (is|may be) for sale|buy this domain|this domain has expired|parked free|"
     r"hugedomains|sedo\.com|dan\.com|domain name is registered|coming soon to|"
-    r"account suspended|default web site page|welcome to nginx", re.I)
+    r"account suspended|default web site page|welcome to nginx|aftermarket\.com|"
+    r"[?&]tkn=", re.I)
 
 PC_RE = re.compile(r"\b([A-Z]{1,2}\d[A-Z\d]?)\s?(\d[ABD-HJLNP-UW-Z]{2})\b")
 
@@ -180,6 +181,11 @@ def find_for(club, session):
     name = club["name"]
     if NOT_A_CLUB.search(name):
         return {**club, "result": "skipped", "reason": "not a club a visitor books a round at"}
+    # OSM sometimes names a single COURSE at a multi-course venue — "The
+    # Church", "Village course", "The Garden". One generic word guesses its
+    # way onto churchgolf.com or a for-sale domain, never the club.
+    if "golf" not in name.lower() and len(core_words(name)) < 2:
+        return {**club, "result": "skipped", "reason": "a course name, not a club name; nothing to search on"}
     for domain in guesses(name):
         hit = check_site(domain, name, club.get("lat"), club.get("lon"), session)
         if hit:
