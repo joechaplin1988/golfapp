@@ -35,11 +35,12 @@ concurrency:                     # never let two runs overlap on the same DB
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    # A full 7-day pass took about an hour at 292 sheets and the club list has
-    # since grown to 516, so budget generously: being killed mid-run loses the
-    # far end of the week AND the scrape_runs record, which is how we noticed.
+    # Measured 2026-09-12: 65 minutes for 3 days over 711 sheets, so a full
+    # 7-day pass is around two and a half hours and climbing with every batch
+    # of clubs. Budget generously — being killed mid-run loses the far end of
+    # the week AND the scrape_runs record, which is how we noticed last time.
     # Actions minutes are free on a public repo.
-    timeout-minutes: 180
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
