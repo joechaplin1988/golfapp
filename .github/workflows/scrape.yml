@@ -4,8 +4,14 @@ name: Scrape tee times into Supabase
 # both the scheduler and the Python host (n8n Cloud can't run Python).
 #
 # Two cadences, because sheets change fastest close to the day:
-#   - every 2 hours  : the near window, today .. +2 days   (--days 3)
-#   - twice a day    : the full window, today .. +6 days   (--days 7)
+#   - every 4 hours  : the near window, today .. +2 days   (--days 3)
+#   - once a day     : the full window, today .. +6 days   (--days 7)
+#
+# The gap between them matters. A near run takes ~45 minutes at 516 sheets and
+# a full one about two hours, and the concurrency group lets only one run touch
+# the database at a time. On the old every-2-hours cadence the full run never
+# got a slot: it sat pending until the next near run queued behind it and
+# cancelled it, every time, so days 4-7 were never refreshed.
 # Platforms scrape in parallel threads inside one job, so a run is roughly
 # the slowest platform, not the sum. On a PUBLIC repo Actions minutes are
 # unlimited; on a private Free plan the allowance is 2,000 min/month, which
@@ -13,8 +19,8 @@ name: Scrape tee times into Supabase
 
 on:
   schedule:
-    - cron: "0 */2 * * *"        # near window (UTC)
-    - cron: "30 5,17 * * *"      # full 7-day window, morning + evening (UTC)
+    - cron: "0 */4 * * *"        # near window (UTC)
+    - cron: "30 2 * * *"         # full 7-day window, overnight (UTC)
   workflow_dispatch:             # manual "Run workflow" button in the Actions tab
     inputs:
       days:
@@ -29,11 +35,11 @@ concurrency:                     # never let two runs overlap on the same DB
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    # A full 7-day pass over 292 sheets takes about an hour now. At the old
-    # 45 minutes every one of them was killed mid-run (2026-09-11: cancelled
-    # on day 5 of 7), so the far end of the week was never refreshed and
-    # scrape_runs recorded nothing. Actions minutes are free on a public repo.
-    timeout-minutes: 100
+    # A full 7-day pass took about an hour at 292 sheets and the club list has
+    # since grown to 516, so budget generously: being killed mid-run loses the
+    # far end of the week AND the scrape_runs record, which is how we noticed.
+    # Actions minutes are free on a public repo.
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -52,7 +58,7 @@ jobs:
           # IPv6-only from GitHub runners):
           #   host=aws-1-eu-west-1.pooler.supabase.com port=5432 user=postgres.<ref> password=<pw> dbname=postgres sslmode=require
           DATABASE_URL: ${{ secrets.GOLF_APP }}
-          # The 7-day cron and manual runs get the full window; the 2-hourly
-          # cron only refreshes the next three days.
-          DAYS: ${{ github.event.inputs.days || (github.event.schedule == '30 5,17 * * *' && '7' || '3') }}
+          # The overnight cron and manual runs get the full window; the
+          # 4-hourly cron only refreshes the next three days.
+          DAYS: ${{ github.event.inputs.days || (github.event.schedule == '30 2 * * *' && '7' || '3') }}
         run: python run_pipeline.py --days "$DAYS"
