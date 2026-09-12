@@ -1,0 +1,21 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Springhead Golf Course,,53.7571448,-0.4229835,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hull Golf Club,,53.7538328,-0.4634045,no_site,unknown,,low,no official website resolved (not in county union directory)
+Brough Golf Club,https://www.brough-golfclub.co.uk/,53.7365726,-0.5775126,brs,public,https://visitors.brsgolf.com/brough#/course/1,high,
+Sutton Park Golf Course,,53.7819826,-0.2816777,no_site,unknown,,low,no official website resolved (not in county union directory)
+Cottingham Parks Golf and Leisure Club,https://www.cottinghamparks.co.uk/,53.794674,-0.4370681,intelligent_golf,public,https://www.cottinghamparks.co.uk/visitorbooking/,high,
+Hainsworth Park Golf Club,,53.9090808,-0.3112039,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bridlington Golf Club,https://www.bridlingtongolfclub.co.uk/,54.0709643,-0.2123647,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Far Grange Park & Golf Club,https://www.fargrangepark.com/golf-fishing-spa/golf.aspx,53.9653323,-0.1986562,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.fargrangepark.com', port=443): Max retries exceeded with url: /golf-fishing-spa/golf.aspx (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fargrangepark.com', port=443) at 0x1a96369f110>, 'Connection to www.fargrangepark.com timed out. (connect timeout=20)'))"
+Withernsea Golf Club,https://www.withernseagolfclub.co.uk/,53.7207964,0.0293887,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Flamborough Head Golf Club,https://www.flamboroughheadgolfclub.co.uk/,54.1211371,-0.0885587,unknown,unknown,,low,homepage loaded (https://flamboroughheadgolfclub.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Burstwick Country Club,,53.7437714,-0.1382038,no_site,unknown,,low,no official website resolved (not in county union directory)
+Cherry Burton Golf Course,,53.8680646,-0.4835416,no_site,unknown,,low,no official website resolved (not in county union directory)
+Boothferry Golf Club,https://boothferrygolfclub.co.uk/,53.7825296,-0.8590039,golfnow,out_of_scope,,high,"GolfNow listing, not the club's own booking — excluded by policy: https://www.golfnow.co.uk/tee-times/facility/14830-boothferry-golf-club/search#"
+Bridlington Links Golf & Leisure Estate,https://www.pureleisuregroup.com/parks/bridlington-links,54.1068035,-0.151545,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.pureleisuregroup.com', port=443): Max retries exceeded with url: /parks/bridlington-links (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pureleisuregroup.com', port=443) at 0x1a962a35f90>, 'Connection to www.pureleisuregroup.com timed out. (connect timeout=20)'))"
+Sewerby Park & Pitch and Putt,https://www.sewerbyhall.co.uk/,54.1057571,-0.1629007,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Cave Castle Golf Club,https://www.cavecastlegolfclub.co.uk/,53.7713403,-0.6124072,blocked,unknown,,low,homepage returned HTTP 522 — likely bot-blocked; needs a browser-based check
+Hessle Golf Club,,53.7720074,-0.4854456,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ganstead Park Golf & Events,https://www.gansteadpark.co.uk/,53.7926064,-0.2498646,brs,public,https://visitors.brsgolf.com/gansteadpark#/course/1,high,
+Driffield Golf Course,https://www.driffieldgolfclub.co.uk/,53.9886564,-0.4541151,clubv1,public,https://533.hub.clubv1.com/visitors/TeeSheet?date=2026-09-12,high,
+Hornsea Golf Club,https://www.hornseagolfclub.co.uk/,53.8879929,-0.1698659,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found

@@ -1,0 +1,17 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Appleby Golf Club,https://www.applebygolfclub.co.uk/,54.5715975,-2.4421701,brs,public,https://visitors.brsgolf.com/appleby#/course/1,high,found on https://applebygolfclub.co.uk/
+Beckside Golf Club,https://golfdealfinder.com/golf-courses/england/beckside-golf-club,54.3359862,-2.8383403,unknown,unknown,,low,site reachable (https://golfdealfinder.com/golf-courses/england/beckside-golf-club) but no visitor booking found on it or 0 sub-page(s)
+Eccle Riggs Leisure Club,https://eccleriggsleisureclub.co.uk/,54.2661986,-3.2141182,unknown,unknown,,low,site reachable (https://eccleriggsleisureclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Carus Green Golf Club,https://www.carusgreen.co.uk/,54.3493578,-2.750055,unknown,unknown,,low,site reachable (https://www.carusgreen.co.uk/) but no visitor booking found on it or 3 sub-page(s)
+Stony Holme Golf Club,https://www.stonyholmegolfclub.co.uk/,54.8989373,-2.9131419,error,unknown,,low,unreachable even with a browser user agent
+Kirkby Lonsdale Golf Club,https://www.kirkbylonsdalegolfclub.com/,54.2351791,-2.5895101,brs,public,https://visitors.brsgolf.com/kirkbylonsdale#/course/1,high,found on https://www.kirkbylonsdalegolfclub.com/
+Brayton Park Golf Club,https://braytonpark.co.uk/,54.7701292,-3.2967376,unknown,unknown,,low,site reachable (https://www.braytonpark.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Eskdale Golf Course,https://www.eskdalegolf.co.uk,54.3663307,-3.3591442,unknown,unknown,,low,site reachable (https://eskdalegolf.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Cowanhead Estate Golf Course,https://www.cowanhead.co.uk/golf/,54.3699298,-2.7812529,error,unknown,,low,unreachable even with a browser user agent
+Dalston Hall Holiday Park golf course,https://www.dalstonhallholidaypark.co.uk/,54.8544586,-2.9672278,unknown,unknown,,low,site reachable (https://www.dalstonhallholidaypark.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Barrow Golf Club,https://www.barrowgolfclub.co.uk/contact.htm,54.1454675,-3.2236073,brs,unknown,https://www.brsgolf.com/barrow/visitor_home.php,medium,site reachable (https://www.barrowgolfclub.co.uk/) but no visitor booking found on it or 5 sub-page(s)
+Riverside Public Golf Course,https://www.riverside-golf-club.co.uk,54.4345286,-2.4295808,unknown,unknown,,low,site reachable (https://www.riverside-golf-club.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Rampside Golf,,54.0934046,-3.1516434,no_site,unknown,,low,still no website known
+Penrith Golf Hub,https://www.penrithgolfhub.co.uk/,54.6507175,-2.778217,unknown,unknown,,low,site reachable (https://www.penrithgolfhub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Maryport Golf Club,https://www.maryportgolfclub.co.uk/Intro.aspx,54.734096,-3.47081,unknown,unknown,,low,site reachable (https://www.manchestereveningnews.co.uk/special-features/betting-sites-uk-popular-bookmakers-27018510) but no visitor booking found on it or 1 sub-page(s)
+Silecroft Golf Club,https://www.silecroftgolfclub.co.uk/,54.2113085,-3.3404406,unknown,unknown,,low,site reachable (https://silecroftgolfclub.co.uk/) but no visitor booking found on it or 3 sub-page(s)

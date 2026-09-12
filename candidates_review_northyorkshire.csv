@@ -1,0 +1,51 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Easingwold Golf Club,,54.1076968,-1.1687464,no_site,unknown,,low,no official website resolved (not in county union directory)
+Oakdale Golf Club,https://www.oakdalegolfclub.co.uk/,53.9970481,-1.5647689,intelligent_golf,public,https://oakdale.intelligentgolf.co.uk/visitorbooking/,high,
+Romanby Golf Club,https://www.romanby.com/,54.3391495,-1.4645944,brs,public,https://visitors.brsgolf.com/romanby#/course/1,high,confirmed by following the platform link found on the club's own site
+Harrogate Golf Club,https://www.harrogate-gc.co.uk/,54.0027189,-1.4843142,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Kirkbymoorside Golf,https://www.kirkbymoorsidegolf.co.uk/,54.282398,-0.9449585,clubv1,public,https://kirkbymoorside.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-12,high,
+Scalm Park Leisure,https://scalmparkleisure.co.uk/,53.784606,-1.1542389,unknown,unknown,,low,homepage loaded (https://www.scalmparkleisure.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Pike Hills Golf Club,https://www.pikehillsgolfclub.co.uk/,53.9243213,-1.1370856,brs,public,https://visitors.brsgolf.com/pikehills#/open-competitions,high,confirmed by following the platform link found on the club's own site
+Brigham Park Golf Course,,54.2214196,-0.7682431,no_site,unknown,,low,no official website resolved (not in county union directory)
+Forest of Galtres Golf Club,https://www.forestofgaltres.co.uk/,54.0126429,-1.1255809,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Filey Golf Club,https://www.fileygolfclub.com/,54.1947097,-0.2900386,brs,public,https://visitors.brsgolf.com/filey#/open-competitions,high,confirmed by following the platform link found on the club's own site
+Catterick Golf Club,https://www.catterickgolfclub.co.uk/,54.3691679,-1.7330078,clubv1,public,https://catterick.hub.clubv1.com/visitors/TeeSheet?date=2026-09-12,high,
+Forest Park Golf Club,https://www.forestparkgolfclub.co.uk/,53.9969208,-1.0096551,clubv1,public,https://forestpark.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-12,high,
+Tadcaster Golf Course,https://www.tadcastergolf.co.uk,53.8311576,-1.2533942,golf_manager,public,https://tadcaster.golfmanager.com/consumer/ebookings,high,
+Spofforth Golf Club,https://www.spofforthgolf.co.uk,53.9546967,-1.4616866,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.spofforthgolf.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.spofforthgolf.co.uk', port=443): Failed to resolve 'www.spofforthgolf.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Stokesley Golf Range,https://www.stokesleygolfrange.co.uk/,54.4686967,-1.172893,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Reighton Sands Holiday Park Golf Course,https://www.haven.com/parks/yorkshire/reighton-sands,54.1623369,-0.2544091,unknown,unknown,,low,homepage loaded (https://www.haven.com/parks/yorkshire/reighton-sands) but no platform signal found on it or 5 booking-ish link(s)
+Bedale Golf Course,https://bedalegolfclub.com/,54.2884886,-1.6047176,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Thirsk & Northallerton Golf Club,https://www.tngc.co.uk/,54.2575633,-1.3616915,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://thirsknorthallerton.hub.clubv1.com/Visitors/booking"
+York Golf Range,https://www.yorkgolfrange.com/,54.0136066,-1.0165385,unknown,unknown,,low,homepage loaded (https://www.yorkgolfrange.com/) but no platform signal found on it or 9 booking-ish link(s)
+Snainton Golf,https://www.golfscarborough.co.uk/,54.2282162,-0.6118397,unknown,unknown,,low,homepage loaded (https://golfscarborough.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Ganton Golf Club,https://www.gantongolfclub.com/,54.1863909,-0.4956182,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Swallow Hall Golf Course,https://www.swallowhall.com/,53.9066068,-1.0035539,unknown,unknown,,low,homepage loaded (https://www.swallowhall.com/) but no platform signal found on it or 2 booking-ish link(s)
+Drax Golf Club,https://www.draxgolfclub.com/,53.7260879,-1.002362,brs,public,https://visitors.brsgolf.com/drax#/open-competitions,high,confirmed by following the platform link found on the club's own site
+Sawdon Pines Golf Club,,54.244339,-0.5564024,no_site,unknown,,low,no official website resolved (not in county union directory)
+Sandburn Hall,https://www.sandburnhall.co.uk/golf/,54.0359436,-0.9707267,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Selby Golf Club,,53.7622379,-1.1233864,no_site,unknown,,low,no official website resolved (not in county union directory)
+Peasholm Pitch and Putt,,54.2903072,-0.4138674,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ripon City Golf Club,https://www.riponcitygolfclub.com/,54.1546254,-1.5292615,brs,public,https://visitors.brsgolf.com/riponcity#/course/1,high,
+Masham Golf Course,https://mashamgolfclub.co.uk/,54.2166436,-1.6688786,brs,public,https://visitors.brsgolf.com/masham#/open-competitions,high,
+Melodie Park,https://www.melodiepark.com,53.9898737,-1.0893635,unknown,unknown,,low,homepage loaded (https://www.melodiepark.com/) but no platform signal found on it or 0 booking-ish link(s)
+Akebar Park Golf Course,https://akebarpark.com/akebar-golf/,54.3069322,-1.7039343,brs,public,https://visitors.brsgolf.com/akebarpark#/course/1,high,confirmed by following the platform link found on the club's own site
+Conyngham Hall Leisure Park pitch and putt course,,54.0108581,-1.4761958,no_site,unknown,,low,no official website resolved (not in county union directory)
+Raven Hall Golf Course,,54.403005,-0.4950659,no_site,unknown,,low,no official website resolved (not in county union directory)
+York Golf Club,https://www.yorkgolfclub.co.uk/,54.0364973,-1.0173771,intelligent_golf,public,https://york.intelligentgolf.co.uk/visitorbooking/,high,
+Rosedale Abbey Golf,https://www.rosedaleabbeygolf.co.uk/,54.3498882,-0.8901722,unknown,unknown,,low,homepage loaded (https://rosedaleabbeygolf.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Wolds Way Golf Course,https://www.woldswaygolf.co.uk/,54.1748142,-0.5136996,unknown,unknown,,low,homepage loaded (https://www.woldswaygolf.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Heworth Golf Course York,https://www.heworthgolfclub.co.uk/,53.9722688,-1.0644009,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Fulford Golf Club,https://www.fulfordgolfclub.co.uk/,53.9317738,-1.0430518,brs,public,https://visitors.brsgolf.com/fulford,high,
+Scarborough South Cliff Golf Club,https://www.southcliffgolfclub.com/,54.2592816,-0.3904466,brs,public,https://visitors.brsgolf.com/scarboroughsouthcliff#/course/1,high,
+Rudding Park Golf Course,https://www.ruddingpark.co.uk/golf/,53.9723739,-1.4884088,brs,public,https://visitors.brsgolf.com/ruddingpark,high,confirmed by following the platform link found on the club's own site
+Hunmanby Hall Golf & Leisure,,54.1765226,-0.3216225,no_site,unknown,,low,no official website resolved (not in county union directory)
+Pannal Golf Club,https://www.pannalgc.co.uk/,53.9579357,-1.5206637,unknown,unknown,,low,homepage loaded (https://www.pannalgc.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+North Cliff Golf Club,https://www.ncgc.co.uk/,54.2981336,-0.4231359,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.ncgc.co.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ncgc.co.uk', port=443) at 0x1a9dc0b8b90>, 'Connection to www.ncgc.co.uk timed out. (connect timeout=20)'))"
+Whitby Golf Club,https://www.whitbygolfclub.co.uk/,54.4910243,-0.64491,clubv1,public,https://whitby.hub.clubv1.com/visitors/TeeSheet?date=2026-09-12,high,
+Aldwark Manor Golf Club,https://www.aldwarkmanorgolfclub.co.uk/,54.0585525,-1.2886158,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.aldwarkmanorgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.aldwarkmanorgolfclub.co.uk', port=443): Failed to resolve 'www.aldwarkmanorgolfclub.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Settle Golf Course,https://www.settlegolfclub.com/,54.0800718,-2.2990142,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.settlegolfclub.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError('A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider.')))"
+Bentham Golf Club,https://www.benthamgolfclub.co.uk/contact-us/,54.1275957,-2.4998425,brs,public,https://visitors.brsgolf.com/bentham#/course/1,high,
+Skipton Golf Club,https://www.skiptongolfclub.co.uk/,53.9747448,-2.0181558,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Gilling Castle Golf Club,https://www.ampleforthgolf.co.uk/,54.1816701,-1.0689589,unknown,login_required,,high,booking link requires login: https://www.ampleforthgolf.co.uk/visitors.htm
+Knaresborough Golf Club,https://www.knaresboroughgolfclub.co.uk/,54.0279458,-1.4463338,brs,public,https://visitors.brsgolf.com/knaresborough#/course/1,high,

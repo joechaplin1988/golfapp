@@ -1,0 +1,84 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Duxbury Park Golf Course,https://www.glendale-golf.com/course-5-duxbury-park.aspx,53.6304879,-2.6228922,error,unknown,,low,unreachable even with a browser user agent
+Shaw Hill Golf Club,https://www.shaw-hill.co.uk,53.6810246,-2.643493,brs,unknown,https://www.brsgolf.com/shawhill/visitor_home.php,medium,site reachable (https://www.shaw-hill.co.uk/) but no visitor booking found on it or 3 sub-page(s)
+Mytton Fold Golf Club,https://www.myttonfold.co.uk,53.8059665,-2.4371833,unknown,unknown,,low,site reachable (https://www.myttonfold.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Turton Golf Course,https://www.turtongolfclub.co.uk,53.6279119,-2.4202361,unknown,unknown,,low,site reachable (https://www.turtongolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Fishwick Golf Course,,53.7621202,-2.6547383,no_site,unknown,,low,still no website known
+Green Haworth Golf Club,https://www.green-haworth-gc.co.uk,53.7302963,-2.3664029,error,unknown,,low,unreachable even with a browser user agent
+Rolls Royce Leisure golf area,https://rollsleisurebarnoldswick.co.uk/,53.9246252,-2.1713525,unknown,unknown,,low,site reachable (https://rollsleisurebarnoldswick.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Charnock Richard Golf Club,,53.6316229,-2.6787269,no_site,unknown,,low,still no website known
+Marsden Park Golf Course,https://www.marsdenparkgolfcourse.co.uk,53.8379738,-2.1811157,unknown,unknown,,low,site reachable (https://ephemeral80s.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Highfield Golf Course,https://highfieldgolfcourse.co.uk/,53.6925788,-2.5875608,unknown,unknown,,low,site reachable (https://highfieldgolfcourse.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Lytham Golf Academy,https://www.lythamgolfacademy.co.uk/,53.7464335,-2.9204758,unknown,unknown,,low,site reachable (https://www.lythamgolfacademy.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Yarrow Valley Golf Course,https://www.yarrowvalleygolf.co.uk/home.html,53.6382678,-2.6618489,unknown,unknown,,low,site reachable (https://www.yarrowvalleygolf.co.uk/home.html) but no visitor booking found on it or 0 sub-page(s)
+Oak Royal Golf & Country Club,https://www.oakroyalgolf-countryclub.co.uk,53.70413,-2.5586698,unknown,unknown,,low,site reachable (https://www.oakroyalgolf-countryclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Lobden Golf Club,https://www.lobdengolfclub.co.uk,53.6503578,-2.1646179,unknown,unknown,,low,site reachable (https://www.lobdengolfclub.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Myerscough College Golf Complex,https://www.myerscough.ac.uk/,53.8539668,-2.7523455,unknown,unknown,,low,site reachable (https://www.myerscough.ac.uk/) but no visitor booking found on it or 0 sub-page(s)
+Short Course,,53.7499753,-3.0127586,no_site,unknown,,low,still no website known
+Stanley Park Golf Course,https://www.parkgolfclubsouthport.co.uk,53.8194024,-3.0182159,unknown,unknown,,low,site reachable (https://parkgolfclubsouthport.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Garstang Golf Course,https://www.garstanggolf.co.uk/,53.8892773,-2.7726801,unknown,login_required,,high,site reachable (https://www.garstanggolf.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Tee Time Golf Centre,https://teetimegolfcentre.com/,53.8616574,-3.0331025,unknown,unknown,,low,site reachable (https://teetimegolfcentre.com/) but no visitor booking found on it or 5 sub-page(s)
+Walmersley Golf Club,https://www.walmersleygolfclub.co.uk,53.6164847,-2.2779507,error,unknown,,low,unreachable even with a browser user agent
+Bacup Golf Course,https://www.bacupgolfclub.com,53.702887,-2.209818,unknown,unknown,,low,site reachable (https://www.bacupgolfclub.com/) but no visitor booking found on it or 0 sub-page(s)
+Beacon Park Golf Club,https://www.beaconparkgolf.com,,,unknown,unknown,,low,site reachable (https://www.beaconparkgolf.com/) but no visitor booking found on it or 0 sub-page(s)
+Bowring Golf Club,https://www.bowringgolfclub.com,,,error,unknown,,low,unreachable even with a browser user agent
+Castle Hawk Golf Club,https://www.castlehawk.co.uk,,,unknown,unknown,,low,site reachable (https://www.castlehawk.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Denton Golf Club,https://www.dentongolfclub.com,,,error,unknown,,low,unreachable even with a browser user agent
+Flixton Golf Club,https://www.flixtongolfclub.co.uk,,,brs,public,https://visitors.brsgolf.com/flixton#/open-competitions,high,found on https://www.flixtongolfclub.co.uk/members/make-a-booking/
+Gathurst Golf Club,https://www.gathurstgolfclub.co.uk,,,error,unknown,,low,unreachable even with a browser user agent
+Grand National Golf Club,https://www.aintree.co.uk/golf,,,unknown,unknown,,low,site reachable (https://www.aintree.co.uk/golf) but no visitor booking found on it or 0 sub-page(s)
+Grange-over-Sands Golf Club,https://grangegolfclub.co.uk,,,clubv1,public,https://grangeoversands.hub.clubv1.com/visitors/booking,high,found on https://grangegolfclub.co.uk/
+Great Lever & Farnworth Golf Club,https://www.greatleverfarnworthgolfclub.co.uk,,,error,unknown,,low,unreachable even with a browser user agent
+Haigh Hall Golf Club,https://www.haighhall-golfclub.co.uk,,,unknown,unknown,,low,site reachable (https://haighhall-golfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Heaton Park Golf Club,https://www.heatonparkgolfclub.co.uk,,,unknown,unknown,,low,site reachable (https://www.heatonparkgolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Hillside Golf Club,https://www.hillside-golfclub.co.uk,,,brs,unknown,https://members.brsgolf.com/hillside/,medium,site reachable (https://www.hillside-golfclub.co.uk/) but no visitor booking found on it or 5 sub-page(s)
+Kirkby Valley Golf Club,https://www.kirkbygolfclub.pwp.blueyonder.co.uk,,,error,unknown,,low,unreachable even with a browser user agent
+Lee Park Golf Club,https://www.leepark.co.uk,,,error,unknown,,low,unreachable even with a browser user agent
+Lowes Park Golf Club,https://www.lowesparkgolfclub.co.uk,,,error,unknown,,low,unreachable even with a browser user agent
+Manchester Golf Club,https://www.mangc.co.uk,,,brs,unknown,http://www.brsgolf.com/manchester/visitor_home.php,medium,site reachable (https://www.mangc.co.uk/) but no visitor booking found on it or 5 sub-page(s)
+Marriott Worsley Park Golf Club,https://www.marriott.co.uk/hotels/travel/mangs-worsley-park-a-marriott-hotel-and-country-club,,,unknown,unknown,,low,site reachable (https://www.marriott.com/en-gb/default.mi) but no visitor booking found on it or 1 sub-page(s)
+Oldham Golf Club,https://www.oldhamgolfclub.co.uk,,,error,unknown,,low,unreachable even with a browser user agent
+Pennington Golf Club,https://www.penningtongolfclub.co.uk,,,unknown,unknown,,low,site reachable (https://www.penningtongolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Regent Park Golf Club,https://www.regentparkgolfclub.net,,,unknown,unknown,,low,site reachable (https://www.regentparkgolfclub.net/) but no visitor booking found on it or 0 sub-page(s)
+Royal Birkdale Golf Club,https://www.royalbirkdale.com,,,intelligent_golf,public,https://birkdale.intelligentgolf.co.uk/visitorbooking/,high,club's own Intelligent Golf subdomain
+Sherdley Park Golf Club,https://www.sherdleyparkgolfclub.co.uk,,,unknown,unknown,,low,site reachable (https://sherdleyparkgolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Southport Old Links Golf Club,https://www.southportoldlinksgolfclub.co.uk,,,clubv1,public,https://solgc.hub.clubv1.com/visitors/booking,high,found on https://www.southportoldlinksgolfclub.co.uk/
+St Helens Golf Club,https://www.sthelensgolfclub.co.uk,,,error,unknown,,low,unreachable even with a browser user agent
+Tunshill Golf Club,https://www.tunshillgolfclub.co.uk,,,unknown,unknown,,low,site reachable (https://www.tunshillgolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Whittaker Golf Club,https://www.whittakergolfclub.co.uk,,,error,unknown,,low,unreachable even with a browser user agent
+Woolton Golf Club,https://www.wooltongolfclub.co.uk,,,intelligent_golf,public,https://www.wooltongolfclub.com/visitorbooking/,high,found on https://www.wooltongolfclub.com/
+Grange-over-Sands Golf Club,https://www.grangegolfclub.co.uk/,54.2019601,-2.8883403,clubv1,public,https://grangeoversands.hub.clubv1.com/visitors/booking,high,found on https://www.grangegolfclub.co.uk/
+Pennington Golf Course,,53.4905871,-2.5343698,no_site,unknown,,low,still no website known
+Regent Park Golf Course,https://regentparkgolfcourse.co.uk/,53.5751272,-2.5094587,unknown,unknown,,low,site reachable (https://regentparkgolfcourse.com/) but no visitor booking found on it or 2 sub-page(s)
+Bolton Golf Club,,53.5833904,-2.5071085,no_site,unknown,,low,still no website known
+Breightmet Golf Club,,53.5920677,-2.3751277,no_site,unknown,,low,still no website known
+Deane Golf Club,,53.5719656,-2.4753941,no_site,unknown,,low,still no website known
+Turton Golf Course,,53.6279119,-2.4202361,no_site,unknown,,low,still no website known
+Flixton Golf Club,,53.438795,-2.3744829,no_site,unknown,,low,still no website known
+Davyhulme Park Golf Club,,53.4552532,-2.3788108,no_site,unknown,,low,still no website known
+Manchester Golf Course,,53.576847,-2.1888177,no_site,unknown,,low,still no website known
+Blackley Golf Club,,53.531356,-2.1847866,no_site,unknown,,low,still no website known
+Greenmount Golf Club,https://www.greenmountgolfclub.co.uk/Intro.aspx,53.6244322,-2.3446351,brs,unknown,https://www.brsgolf.com/greenmountgc/visitor_menu.php,medium,site reachable (https://greenmountgolfclub.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Pike Fold Golf Club,,53.5584505,-2.2606066,no_site,unknown,,low,still no website known
+Lowes Park Golf Club,https://www.lowesparkgolfclub.co.uk/,53.6126266,-2.282703,error,unknown,,low,unreachable even with a browser user agent
+Great Lever & Farnworth Golf Course,,53.5486903,-2.4402914,no_site,unknown,,low,still no website known
+Rochdale Golf Course,,53.6195533,-2.1962751,no_site,unknown,,low,still no website known
+Haigh Hall (9 Hole),,53.5766376,-2.6153129,no_site,unknown,,low,still no website known
+Prestwich Golf Course,,53.518082,-2.2822708,no_site,unknown,,low,still no website known
+Castle Hawk Golf Club,https://www.castlehawk.co.uk/,53.5891494,-2.1905082,unknown,unknown,,low,site reachable (https://www.castlehawk.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Oldham Golf Club,,53.5262198,-2.0685962,no_site,unknown,,low,still no website known
+Tunshill Golf Club,,53.6120703,-2.0936734,no_site,unknown,,low,still no website known
+Lobden Golf Club,https://www.lobdengolfclub.co.uk/,53.6503578,-2.1646179,unknown,unknown,,low,site reachable (https://www.lobdengolfclub.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Denton Golf Course,,53.4613143,-2.1430489,no_site,unknown,,low,still no website known
+Heaton Park Golf Course,https://www.heatonparkgolfclub.co.uk/,53.5382697,-2.2454516,unknown,unknown,,low,site reachable (https://www.heatonparkgolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Walmersley Golf Club,https://www.walmersleygolfclub.co.uk/,53.6164847,-2.2779507,error,unknown,,low,unreachable even with a browser user agent
+Whittaker Golf  Club,https://www.whittakergolfclub.co.uk/,53.638835,-2.0767007,error,unknown,,low,unreachable even with a browser user agent
+Haigh Hall Golf Course,https://www.haighhall-golfclub.co.uk/,53.571055,-2.6123626,unknown,unknown,,low,site reachable (https://haighhall-golfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Woolton Golf Club,,53.3662977,-2.8576287,no_site,unknown,,low,still no website known
+Southport Old Links Golf Club,https://www.southportoldlinksgolfclub.co.uk/,53.6489766,-2.9581842,clubv1,public,https://solgc.hub.clubv1.com/visitors/booking,high,found on https://www.southportoldlinksgolfclub.co.uk/
+Royal Birkdale Golf Club,https://www.royalbirkdale.com/,53.6241663,-3.0396789,intelligent_golf,public,https://birkdale.intelligentgolf.co.uk/visitorbooking/,high,club's own Intelligent Golf subdomain
+Hillside Golf Club,https://www.hillside-golfclub.co.uk/,53.6150934,-3.0373165,brs,unknown,https://members.brsgolf.com/hillside/,medium,site reachable (https://www.hillside-golfclub.co.uk/) but no visitor booking found on it or 5 sub-page(s)
+Lee Park Golf Club,https://www.leepark.co.uk/,53.3849975,-2.8445688,error,unknown,,low,unreachable even with a browser user agent
+Bootle Golf Club,https://www.sefton.gov.uk/sport-leisure/activities/bootle-golf-club.aspx,53.4813182,-2.9769277,dead_link,unknown,,low,site reachable (https://sefton.gov.uk/) but no visitor booking found on it or 1 sub-page(s)
+Houghwood Golf Course,,53.5056445,-2.7264015,no_site,unknown,,low,still no website known
+Grange Park Golf Course,,53.4423764,-1.4227913,no_site,unknown,,low,still no website known

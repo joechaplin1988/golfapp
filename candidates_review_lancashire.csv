@@ -1,0 +1,192 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Great Harwood Golf Club,https://www.greatharwoodgolfclub.co.uk,53.793603,-2.3845151,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Ormskirk Golf Club,https://www.ormskirkgolfclub.com,53.5728024,-2.8415272,intelligent_golf,public,https://www.ormskirkgolfclub.com/visitorbooking/,high,
+Rishton Golf Club,https://www.rishtongolfclub.co.uk,53.7592319,-2.4136132,brs,public,https://visitors.brsgolf.com/rishton,high,
+Royal Lytham & St Annes Golf Course,https://www.royallytham.org,53.7460883,-3.0063034,brs,public,https://visitors.brsgolf.com/royallytham,high,
+Fairhaven Golf Club,https://www.fairhavengolfclub.co.uk,53.7484215,-2.9802009,brs,public,https://visitors.brsgolf.com/fairhaven#/course/1,high,
+Morecambe Golf Course,https://www.morecambegolfclub.com,54.0827587,-2.8285211,intelligent_golf,public,https://www.morecambegolfclub.com/visitorbooking/,high,
+Chorley Golf Club,https://www.chorleygolfclub.co.uk,53.6319578,-2.6017071,intelligent_golf,public,https://www.chorleygolfclub.co.uk/visitorbooking/,high,confirmed via intelligent_golf's standard booking path
+Duxbury Park Golf Course,https://www.glendale-golf.com/course-5-duxbury-park.aspx,53.6304879,-2.6228922,error,unknown,,low,"homepage fetch failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+Shaw Hill Golf Club,https://www.shaw-hill.co.uk,53.6810246,-2.643493,unknown,unknown,,low,homepage loaded (https://www.shaw-hill.co.uk/) but no platform signal found on it or 9 booking-ish link(s)
+Mossock Hall Golf Club,https://www.mossockhallgolfclub.co.uk,53.524683,-2.8932592,brs,public,https://visitors.brsgolf.com/mossockhall#/course/1,high,
+Southport Golf Academy,https://www.southport-golf.co.uk,53.657091,-2.8930666,brs,public,https://visitors.brsgolf.com/southportacademy#/course/1,high,
+Accrington and District Golf Club,https://www.accringtongolfclub.com,53.7565796,-2.409962,intelligent_golf,public,https://www.accringtongolfclub.com/visitorbooking/,high,
+Mytton Fold Golf Club,https://www.myttonfold.co.uk,53.8059665,-2.4371833,unknown,unknown,,low,homepage loaded (https://www.myttonfold.co.uk/) but no platform signal found on it or 5 booking-ish link(s)
+Whalley Golf Club,https://www.whalleygolfclub.com,53.8188371,-2.3900644,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Clitheroe Golf Course,https://www.clitheroegolfclub.com,53.8450868,-2.4034921,intelligent_golf,public,https://www.clitheroegolfclub.com/visitorbooking/,high,
+Turton Golf Course,https://www.turtongolfclub.co.uk,53.6279119,-2.4202361,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.turtongolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError('A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider.')))"
+Fleetwood Golf Course,https://www.fleetwoodgolf.co.uk,53.9183467,-3.0454525,intelligent_golf,login_required,,high,intelligent_golf convention path requires login: https://www.fleetwoodgolf.co.uk/visitorbooking/
+Penwortham Golf Course,https://www.penworthamgc.co.uk,53.7552608,-2.7389144,brs,public,https://visitors.brsgolf.com/penwortham#/course/1,high,confirmed by following the platform link found on the club's own site
+Baxenden Golf Course,https://www.baxendengolf.co.uk,53.7392831,-2.3355352,brs,public,https://visitors.brsgolf.com/baxendendistrict#/course/1,high,confirmed by following the platform link found on the club's own site
+Heysham Golf Club,https://www.heyshamgolfclub.co.uk,54.0298389,-2.9003774,intelligent_golf,public,https://www.heyshamgolfclub.co.uk/visitorbooking/,high,
+Knott End Golf Course,https://www.knottendgolfclub.com,53.9207462,-2.9930318,brs,public,https://visitors.brsgolf.com/knottend#/course/1,high,confirmed by following the platform link found on the club's own site
+Lansil Golf Club,https://www.lansilgolfclub.co.uk,54.0646215,-2.7791959,clubv1,public,https://lansil.hub.clubv1.com/visitors/TeeSheet?date=2026-09-12,high,
+Fishwick Golf Course,,53.7621202,-2.6547383,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lancaster Golf Club,https://www.lancastergc.co.uk,54.0124226,-2.8217111,intelligent_golf,public,https://www.lancastergc.co.uk/visitorbooking/,high,
+Green Haworth Golf Club,https://www.green-haworth-gc.co.uk,53.7302963,-2.3664029,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.green-haworth-gc.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.green-haworth-gc.co.uk', port=443): Failed to resolve 'www.green-haworth-gc.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Rolls Royce Leisure golf area,https://rollsleisurebarnoldswick.co.uk/,53.9246252,-2.1713525,unknown,unknown,,low,homepage loaded (https://rollsleisurebarnoldswick.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Nelson Golf Club,https://www.nelsongolfclub.com,53.8184101,-2.2070279,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://nelson.hub.clubv1.com/Visitors/booking"
+Poulton le Fylde Golf Club,https://www.poultonlefyldegolfclub.co.uk,53.8561289,-2.9911988,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Burnley Golf Club,https://www.burnleygolfclub.com,53.7676819,-2.2462216,intelligent_golf,public,https://www.burnleygolfclub.com/visitorbooking/,high,
+Charnock Richard Golf Club,,53.6316229,-2.6787269,no_site,unknown,,low,no official website resolved (not in county union directory)
+Marsden Park Golf Course,https://www.marsdenparkgolfcourse.co.uk,53.8379738,-2.1811157,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.marsdenparkgolfcourse.co.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.marsdenparkgolfcourse.co.uk', port=443) at 0x22dd4a97b10>, 'Connection to www.marsdenparkgolfcourse.co.uk timed out. (connect timeout=20)'))"
+Staining Lodge Golf Course,https://www.staininglodge.co.uk,53.8120783,-2.9733127,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Wilpshire Golf Course,https://www.wilpshiregolfclub.co.uk,53.7890562,-2.4674782,brs,public,https://visitors.brsgolf.com/wilpshire#/course/1,high,
+Highfield Golf Course,https://highfieldgolfcourse.co.uk/,53.6925788,-2.5875608,unknown,unknown,,low,homepage loaded (https://highfieldgolfcourse.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Ashton & Lea Golf Club,https://www.ashtonleagolfclub.co.uk,53.7716718,-2.7745935,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Ghyll Golf Club,https://www.ghyllgolfclub.co.uk/,53.9263375,-2.1614852,clubv1,public,https://ghyll.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-12,high,
+Blackburn Golf Club,https://www.blackburngolfclub.com,53.7597194,-2.5020179,brs,public,https://visitors.brsgolf.com/blackburn#/course/1,high,
+St Annes Old Links,https://www.stannesoldlinks.com,53.7665438,-3.0398403,intelligent_golf,unknown,,medium,"platform link(s) seen (['intelligent_golf', 'brs']) but no confirmed public booking page found"
+Lytham Green Drive Golf Course,https://www.lythamgreendrive.co.uk,53.7488131,-2.9552138,brs,public,https://visitors.brsgolf.com/lytham#/course/1,high,
+Lytham Golf Academy,https://www.lythamgolfacademy.co.uk/,53.7464335,-2.9204758,unknown,unknown,,low,homepage loaded (https://www.lythamgolfacademy.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+Rossendale Golf Club,https://www.rossendalegolfclub.net,53.6854903,-2.3201813,intelligent_golf,public,https://www.rossendalegolfclub.net/visitorbooking/,high,
+Hurlston Hall Golf Club,https://www.hurlstonhall.co.uk,53.5908141,-2.9118488,intelligent_golf,public,https://hurlston.intelligentgolf.co.uk/visitorbooking/,high,
+Leyland Golf Club,https://www.leylandgolfclub.co.uk,53.6900912,-2.6662111,intelligent_golf,public,https://www.leylandgolfclub.co.uk/visitorbooking/,high,
+Yarrow Valley Golf Course,https://www.yarrowvalleygolf.co.uk/home.html,53.6382678,-2.6618489,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.yarrowvalleygolf.co.uk', port=443): Max retries exceeded with url: /home.html (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Oak Royal Golf & Country Club,https://www.oakroyalgolf-countryclub.co.uk,53.70413,-2.5586698,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.oakroyalgolf-countryclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Silverdale Golf Club,https://www.silverdalegolfclub.co.uk/,54.1710447,-2.8036505,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Pleasington Golf Club,https://www.pleasington-golf.co.uk,53.7309341,-2.5540069,intelligent_golf,public,https://pleasington.intelligentgolf.co.uk/visitorbooking/,high,
+Darwen Golf Club,https://www.darwengolfclub.co.uk,53.7027341,-2.4961286,brs,public,https://visitors.brsgolf.com/darwen#/course/1,high,confirmed by following the platform link found on the club's own site
+Lobden Golf Club,https://www.lobdengolfclub.co.uk,53.6503578,-2.1646179,unknown,unknown,,low,homepage loaded (https://www.lobdengolfclub.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+Myerscough College Golf Complex,https://www.myerscough.ac.uk/,53.8539668,-2.7523455,unknown,unknown,,low,homepage loaded (https://www.myerscough.ac.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Short Course,,53.7499753,-3.0127586,no_site,unknown,,low,no official website resolved (not in county union directory)
+Preston Golf Club,https://www.prestongolfclub.com,53.7887787,-2.6903621,brs,public,https://visitors.brsgolf.com/preston#/course/1,high,confirmed by following the platform link found on the club's own site
+Stonyhurst Golf Club,https://www.stonyhurstpark.co.uk,53.8472151,-2.4833764,clubv1,public,https://stonyhurst.hub.clubv1.com/visitors/TeeSheet?date=2026-09-12,high,
+Stanley Park Golf Course,https://www.parkgolfclubsouthport.co.uk,53.8194024,-3.0182159,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Towneley Golf Club,https://www.towneleygolfclub.co.uk,53.7779281,-2.2266552,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://towneley.hub.clubv1.com/Visitors/booking"
+Garstang Golf Course,https://www.garstanggolf.co.uk/,53.8892773,-2.7726801,unknown,login_required,,high,booking link requires login: https://www.garstanggolf.co.uk/golf/
+Tee Time Golf Centre,https://teetimegolfcentre.com/,53.8616574,-3.0331025,unknown,unknown,,low,homepage loaded (https://teetimegolfcentre.com/) but no platform signal found on it or 26 booking-ish link(s)
+Dean Wood Golf Club,https://www.deanwoodgolfclub.co.uk,53.5480364,-2.7165758,intelligent_golf,public,https://www.deanwoodgolfclub.co.uk/visitorbooking/,high,
+Walmersley Golf Club,https://www.walmersleygolfclub.co.uk,53.6164847,-2.2779507,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.walmersleygolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Douglas Valley Golf Course,https://www.douglasvalleygolfclub.co.uk,53.601387,-2.583283,brs,public,https://visitors.brsgolf.com/douglasvalley#/course/1,high,
+Bacup Golf Course,https://www.bacupgolfclub.com,53.702887,-2.209818,unknown,unknown,,low,homepage loaded (https://www.bacupgolfclub.com/) but no platform signal found on it or 0 booking-ish link(s)
+Dunscar Golf Club,https://www.dunscargolfclub.com,53.6233824,-2.4502664,brs,public,https://visitors.brsgolf.com/dunscar#/course/1,high,
+Allerton Manor Golf Club,https://allertonmanorgolfclub.com/,,,intelligent_golf,public,https://allertonmanor.intelligentgolf.co.uk/visitorbooking/,high,
+Beacon Park Golf Club,https://www.beaconparkgolf.com,,,unknown,unknown,,low,homepage loaded (https://www.beaconparkgolf.com/) but no platform signal found on it or 0 booking-ish link(s)
+Berrington Hall Golf Club,https://www.berringtonhallgolfclub.co.uk/,,,brs,public,https://visitors.brsgolf.com/berringtonhall#/course/1,high,confirmed by following the platform link found on the club's own site
+Blackley Golf Club,https://www.blackleygolfclub.com,,,intelligent_golf,public,https://www.blackleygolfclub.com/visitorbooking/,high,
+Blackpool Park Golf Club,https://www.blackpoolparkgc.co.uk,,,golf_manager,public,https://eu.golfmanager.com/stanleyparklinkgolf/consumer/book,high,
+Blundells Hill Golf Club,https://www.blundellshill.co.uk,,,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://blundellshill.hub.clubv1.com/Visitors/booking"
+Bolton Golf Club,https://www.boltongolfclub.co.uk,,,brs,public,https://visitors.brsgolf.com/bolton#/course/1,high,
+Bootle Golf Club,https://www.intelligentgolf.co.uk,,,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Bowring Golf Club,https://www.bowringgolfclub.com,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.bowringgolfclub.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.bowringgolfclub.com', port=443): Failed to resolve 'www.bowringgolfclub.com' ([Errno 11001] getaddrinfo failed)""))"
+Breightmet Golf Club,https://www.breightmetgolfclub.co.uk,,,brs,public,https://visitors.brsgolf.com/breightmet#/course/1,high,confirmed by following the platform link found on the club's own site
+Brookdale Golf Club,https://www.brookdalegolf.co.uk,,,brs,public,https://visitors.brsgolf.com/brookdale,high,
+Castle Hawk Golf Club,https://www.castlehawk.co.uk,,,unknown,unknown,,low,homepage loaded (https://www.castlehawk.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Childwall Golf Club,https://www.childwallgolfclub.co.uk,,,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Crompton & Royton Golf Club,https://www.cromptonandroytongolfclub.co.uk,,,brs,public,https://visitors.brsgolf.com/cromptonroyton,high,
+Davyhulme Park Golf Club,https://www.davyhulmeparkgolfclub.co.uk,,,intelligent_golf,public,https://davyhulme.intelligentgolf.co.uk/visitorbooking/,high,
+Deane Golf Club,https://www.deanegolfclub.com,,,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://deane.hub.clubv1.com/Visitors/booking"
+Denton Golf Club,https://www.dentongolfclub.com,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.dentongolfclub.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Ellesmere Golf Club,https://www.ellesmeregolfclub.co.uk,,,brs,public,https://visitors.brsgolf.com/ellesmere#/open-competitions,high,
+Fairfield Golf Club,https://www.fairfieldgolfclub.co.uk,,,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Flixton Golf Club,https://www.flixtongolfclub.co.uk,,,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Formby Golf Club,https://www.formbygolfclub.co.uk,,,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Gathurst Golf Club,https://www.gathurstgolfclub.co.uk,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.gathurstgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Grand National Golf Club,https://www.aintree.co.uk/golf,,,unknown,unknown,,low,homepage loaded (https://www.aintree.co.uk/golf) but no platform signal found on it or 0 booking-ish link(s)
+Grange Park Golf Club (Lancashire) Golf Club,https://www.grangeparkgolfclub.co.uk,,,intelligent_golf,public,https://www.grangeparkgolfclub.co.uk/visitorbooking/,high,
+Grange-over-Sands Golf Club,https://grangegolfclub.co.uk,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='grangegolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError('A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.')))"
+Great Lever & Farnworth Golf Club,https://www.greatleverfarnworthgolfclub.co.uk,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.greatleverfarnworthgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.greatleverfarnworthgolfclub.co.uk', port=443): Failed to resolve 'www.greatleverfarnworthgolfclub.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Greenmount Golf Club,https://www.greenmountgolfclub.co.uk,,,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://greenmount.hub.clubv1.com/Visitors/booking"
+Haigh Hall Golf Club,https://www.haighhall-golfclub.co.uk,,,unknown,unknown,,low,homepage loaded (https://haighhall-golfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Hart Common Golf Club,https://www.hartcommongolfclub.co.uk,,,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Haydock Park Golf Club,https://www.haydockparkgc.co.uk,,,intelligent_golf,public,https://www.haydockparkgc.co.uk/visitorbooking/,high,
+Heaton Park Golf Club,https://www.heatonparkgolfclub.co.uk,,,unknown,unknown,,low,homepage loaded (https://www.heatonparkgolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Hesketh Golf Club,https://www.heskethgolfclub.co.uk,,,intelligent_golf,public,https://hesketh.intelligentgolf.co.uk/visitorbooking/,high,
+Hillside Golf Club,https://www.hillside-golfclub.co.uk,,,unknown,unknown,,low,homepage loaded (https://www.hillside-golfclub.co.uk/) but no platform signal found on it or 5 booking-ish link(s)
+Hindley Hall Golf Club,https://www.hindleyhallgolfclub.co.uk,,,intelligent_golf,public,https://www.hindleyhallgolfclub.co.uk/visitorbooking/,high,
+Houghwood Golf Club,https://www.houghwoodgolfclub.co.uk,,,intelligent_golf,public,https://houghwood.intelligentgolf.co.uk/visitorbooking/,high,
+Huyton & Prescot Golf Club,https://www.huytonandprescotgolf.co.uk,,,clubv1,public,https://huytonandprescot.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-12,high,confirmed by following the platform link found on the club's own site
+Kirkby Valley Golf Club,https://www.kirkbygolfclub.pwp.blueyonder.co.uk,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.kirkbygolfclub.pwp.blueyonder.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.kirkbygolfclub.pwp.blueyonder.co.uk', port=443): Failed to resolve 'www.kirkbygolfclub.pwp.blueyonder.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Lee Park Golf Club,https://www.leepark.co.uk,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.leepark.co.uk', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(""HTTPSConnection(host='www.leepark.co.uk', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it""))"
+Lowes Park Golf Club,https://www.lowesparkgolfclub.co.uk,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.lowesparkgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.lowesparkgolfclub.co.uk', port=443): Failed to resolve 'www.lowesparkgolfclub.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Manchester Golf Club,https://www.mangc.co.uk,,,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Marriott Worsley Park Golf Club,https://www.marriott.co.uk/hotels/travel/mangs-worsley-park-a-marriott-hotel-and-country-club,,,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Oldham Golf Club,https://www.oldhamgolfclub.co.uk,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.oldhamgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.oldhamgolfclub.co.uk', port=443): Failed to resolve 'www.oldhamgolfclub.co.uk' ([Errno 11002] getaddrinfo failed)""))"
+Pennington Golf Club,https://www.penningtongolfclub.co.uk,,,unknown,unknown,,low,homepage loaded (https://www.penningtongolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Pike Fold Golf Club,https://www.pikefold.co.uk,,,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://pikefold.hub.clubv1.com/Visitors/booking"
+Prestwich Golf Club,https://www.prestwichgolf.co.uk,,,brs,public,https://visitors.brsgolf.com/prestwich#/course/1,high,confirmed by following the platform link found on the club's own site
+Regent Park Golf Club,https://www.regentparkgolfclub.net,,,unknown,unknown,,low,homepage loaded (https://www.regentparkgolfclub.net/) but no platform signal found on it or 0 booking-ish link(s)
+Rochdale Golf Club,https://www.rochdalegolfclub.co.uk,,,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://rochdale.hub.clubv1.com/Visitors/booking"
+Royal Birkdale Golf Club,https://www.royalbirkdale.com,,,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Saddleworth Golf Club,https://www.saddleworthgolfclub.org.uk,,,brs,unknown,,medium,"platform link(s) seen (['brs', 'clubv1']) but no confirmed public booking page found"
+Sherdley Park Golf Club,https://www.sherdleyparkgolfclub.co.uk,,,unknown,unknown,,low,homepage loaded (https://sherdleyparkgolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Southport & Ainsdale Golf Club,https://www.sandagolfclub.co.uk,,,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Southport Old Links Golf Club,https://www.southportoldlinksgolfclub.co.uk,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.southportoldlinksgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError('A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.')))"
+Springfield Park Golf Club,https://www.intelligentgolf.co.uk,,,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+St Helens Golf Club,https://www.sthelensgolfclub.co.uk,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.sthelensgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.sthelensgolfclub.co.uk', port=443): Failed to resolve 'www.sthelensgolfclub.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Stand Golf Club,https://www.standgolfclub.co.uk,,,intelligent_golf,public,https://www.standgolfclub.co.uk/visitorbooking/,high,
+Tunshill Golf Club,https://www.tunshillgolfclub.co.uk,,,unknown,unknown,,low,homepage loaded (https://www.tunshillgolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Werneth Golf Club,https://www.wernethgolfclub.co.uk,,,brs,public,https://visitors.brsgolf.com/werneth,high,
+West Derby Golf Club,https://www.westderbygc.co.uk,,,brs,public,https://visitors.brsgolf.com/westderby#/course/1,high,
+West Lancashire Golf Club,https://www.westlancashiregolf.co.uk,,,brs,public,https://visitors.brsgolf.com/westlancashire,high,
+Westhoughton Golf Club,https://www.westhoughtongolfclub.co.uk,,,clubv1,public,https://westhoughton.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-12,high,
+Whittaker Golf Club,https://www.whittakergolfclub.co.uk,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.whittakergolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Widnes Golf Club,https://www.widnesgolfclub.co.uk,,,brs,public,https://visitors.brsgolf.com/widnes#/course/1,high,
+Wigan Golf Club,https://www.wigangolfclub.co.uk,,,intelligent_golf,login_required,,high,intelligent_golf convention path requires login: https://www.wigangolfclub.co.uk/visitorbooking/
+Woolton Golf Club,https://www.wooltongolfclub.co.uk,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.wooltongolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Grange-over-Sands Golf Club,https://www.grangegolfclub.co.uk/,54.2019601,-2.8883403,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.grangegolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError('A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.')))"
+Westhoughton Golf Club,https://www.westhoughtongolfclub.co.uk/,53.5517487,-2.5388792,clubv1,public,https://westhoughton.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-12,high,
+Haydock Park Golf Club,https://www.haydockparkgc.co.uk/,53.4642495,-2.6072549,intelligent_golf,public,https://www.haydockparkgc.co.uk/visitorbooking/,high,
+Pennington Golf Course,,53.4905871,-2.5343698,no_site,unknown,,low,no official website resolved (not in county union directory)
+Saddleworth Golf Club,https://www.saddleworthgolfclub.org.uk/,53.5488144,-2.0178755,brs,unknown,,medium,"platform link(s) seen (['brs', 'clubv1']) but no confirmed public booking page found"
+Regent Park Golf Course,https://regentparkgolfcourse.co.uk/,53.5751272,-2.5094587,unknown,unknown,,low,homepage loaded (https://regentparkgolfcourse.com/) but no platform signal found on it or 7 booking-ish link(s)
+Bolton Golf Club,,53.5833904,-2.5071085,no_site,unknown,,low,no official website resolved (not in county union directory)
+Breightmet Golf Club,,53.5920677,-2.3751277,no_site,unknown,,low,no official website resolved (not in county union directory)
+Deane Golf Club,,53.5719656,-2.4753941,no_site,unknown,,low,no official website resolved (not in county union directory)
+Turton Golf Course,,53.6279119,-2.4202361,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ellesmere Golf Club,https://www.ellesmeregolfclub.co.uk/,53.5166049,-2.3759857,brs,public,https://visitors.brsgolf.com/ellesmere#/open-competitions,high,
+Flixton Golf Club,,53.438795,-2.3744829,no_site,unknown,,low,no official website resolved (not in county union directory)
+Davyhulme Park Golf Club,,53.4552532,-2.3788108,no_site,unknown,,low,no official website resolved (not in county union directory)
+Manchester Golf Course,,53.576847,-2.1888177,no_site,unknown,,low,no official website resolved (not in county union directory)
+Blackley Golf Club,,53.531356,-2.1847866,no_site,unknown,,low,no official website resolved (not in county union directory)
+Greenmount Golf Club,https://www.greenmountgolfclub.co.uk/Intro.aspx,53.6244322,-2.3446351,blocked,unknown,,low,homepage returned HTTP 500 — likely bot-blocked; needs a browser-based check
+Pike Fold Golf Club,,53.5584505,-2.2606066,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lowes Park Golf Club,https://www.lowesparkgolfclub.co.uk/,53.6126266,-2.282703,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.lowesparkgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.lowesparkgolfclub.co.uk', port=443): Failed to resolve 'www.lowesparkgolfclub.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Great Lever & Farnworth Golf Course,,53.5486903,-2.4402914,no_site,unknown,,low,no official website resolved (not in county union directory)
+Crompton & Royton Golf Course,https://www.cromptonandroytongolfclub.co.uk/,53.572156,-2.1153753,brs,public,https://visitors.brsgolf.com/cromptonroyton,high,
+Rochdale Golf Course,,53.6195533,-2.1962751,no_site,unknown,,low,no official website resolved (not in county union directory)
+Brookdale Golf Club,https://www.brookdalegolf.co.uk/,53.4980594,-2.1390796,brs,public,https://visitors.brsgolf.com/brookdale,high,
+Hart Common Golf Club,https://www.hartcommongolfclub.co.uk/,53.5373293,-2.5476089,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Gathurst Golf Club,https://gathurstgc.co.uk/,53.5669597,-2.7043335,clubv1,public,https://gathurst.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-12,high,
+Haigh Hall (9 Hole),,53.5766376,-2.6153129,no_site,unknown,,low,no official website resolved (not in county union directory)
+Werneth Golf Course,https://www.wernethgolfclub.co.uk/,53.5181464,-2.1152922,brs,public,https://visitors.brsgolf.com/werneth,high,
+Prestwich Golf Course,,53.518082,-2.2822708,no_site,unknown,,low,no official website resolved (not in county union directory)
+Castle Hawk Golf Club,https://www.castlehawk.co.uk/,53.5891494,-2.1905082,unknown,unknown,,low,homepage loaded (https://www.castlehawk.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Hindley Hall Golf Club,https://www.hindleyhallgolfclub.co.uk/,53.549146,-2.5815879,intelligent_golf,public,https://www.hindleyhallgolfclub.co.uk/visitorbooking/,high,
+Oldham Golf Club,,53.5262198,-2.0685962,no_site,unknown,,low,no official website resolved (not in county union directory)
+Tunshill Golf Club,,53.6120703,-2.0936734,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lobden Golf Club,https://www.lobdengolfclub.co.uk/,53.6503578,-2.1646179,unknown,unknown,,low,homepage loaded (https://www.lobdengolfclub.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+Denton Golf Course,,53.4613143,-2.1430489,no_site,unknown,,low,no official website resolved (not in county union directory)
+Wigan Golf Course,https://www.wigangolfclub.co.uk/,53.5902124,-2.6276214,intelligent_golf,login_required,,high,intelligent_golf convention path requires login: https://www.wigangolfclub.co.uk/visitorbooking/
+Stand Golf Club,https://www.standgolfclub.co.uk/,53.5494675,-2.3124615,intelligent_golf,public,https://www.standgolfclub.co.uk/visitorbooking/,high,
+Dean Wood Golf Club,https://www.deanwoodgolfclub.co.uk/,53.5480364,-2.7165758,intelligent_golf,public,https://www.deanwoodgolfclub.co.uk/visitorbooking/,high,
+Heaton Park Golf Course,https://www.heatonparkgolfclub.co.uk/,53.5382697,-2.2454516,unknown,unknown,,low,homepage loaded (https://www.heatonparkgolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Walmersley Golf Club,https://www.walmersleygolfclub.co.uk/,53.6164847,-2.2779507,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.walmersleygolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Whittaker Golf  Club,https://www.whittakergolfclub.co.uk/,53.638835,-2.0767007,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.whittakergolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Haigh Hall Golf Course,https://www.haighhall-golfclub.co.uk/,53.571055,-2.6123626,unknown,unknown,,low,homepage loaded (https://haighhall-golfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Douglas Valley Golf Course,https://douglasvalleygolfclub.co.uk/,53.601387,-2.583283,brs,public,https://visitors.brsgolf.com/douglasvalley#/course/1,high,
+Fairfield Golf Course,https://www.fairfieldgolfclub.co.uk/,53.4665152,-2.1453829,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Dunscar Golf Club,https://www.dunscargolfclub.com/,53.6233824,-2.4502664,brs,public,https://visitors.brsgolf.com/dunscar#/course/1,high,
+Woolton Golf Club,,53.3662977,-2.8576287,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hesketh Golf Club,https://www.heskethgolfclub.co.uk/,53.6656441,-2.9836693,intelligent_golf,public,https://hesketh.intelligentgolf.co.uk/visitorbooking/,high,
+Southport Old Links Golf Club,https://www.southportoldlinksgolfclub.co.uk/,53.6489766,-2.9581842,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.southportoldlinksgolfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError('A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.')))"
+Royal Birkdale Golf Club,https://www.royalbirkdale.com/,53.6241663,-3.0396789,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Hillside Golf Club,https://www.hillside-golfclub.co.uk/,53.6150934,-3.0373165,unknown,unknown,,low,homepage loaded (https://www.hillside-golfclub.co.uk/) but no platform signal found on it or 5 booking-ish link(s)
+Southport and Ainsdale Golf Club,https://www.sandagolfclub.co.uk/,53.6108693,-3.0312529,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+The West Lancashire Golf Club,https://www.westlancashiregolf.co.uk/,53.5042119,-3.0559385,brs,public,https://visitors.brsgolf.com/westlancashire,high,
+Blundells Hill Golf Club,https://www.blundellshill.co.uk/,53.4051707,-2.7768584,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://blundellshill.hub.clubv1.com/Visitors/booking"
+Huyton & Prescot Golf Club,https://www.huytonandprescotgolf.co.uk/,53.4207359,-2.8190723,clubv1,public,https://huytonandprescot.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-12,high,confirmed by following the platform link found on the club's own site
+Childwall Golf Club,https://www.childwallgolfclub.co.uk/,53.3950463,-2.839684,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Lee Park Golf Club,https://www.leepark.co.uk/,53.3849975,-2.8445688,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.leepark.co.uk', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(""HTTPSConnection(host='www.leepark.co.uk', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it""))"
+Grange Park Golf Club,https://www.grangeparkgolfclub.co.uk/,53.4453678,-2.7729276,intelligent_golf,public,https://www.grangeparkgolfclub.co.uk/visitorbooking/,high,
+West Derby Golf Club,https://www.westderbygc.co.uk/,53.4301711,-2.887523,brs,public,https://visitors.brsgolf.com/westderby#/course/1,high,
+Mossock Hall Golf Club,https://mossockhallgolfclub.co.uk/,53.524683,-2.8932592,brs,public,https://visitors.brsgolf.com/mossockhall#/course/1,high,
+Bootle Golf Club,https://www.sefton.gov.uk/sport-leisure/activities/bootle-golf-club.aspx,53.4813182,-2.9769277,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Sherdley Park Golf Course,https://sherdleyparkgolfcourse.com,53.4346776,-2.7314602,intelligent_golf,public,https://sherdleypark.intelligentgolf.co.uk/visitorbooking/,high,
+Berrington Hall Golf Club,https://berringtonhallgolfclub.co.uk/,53.4811199,-2.7642079,brs,public,https://visitors.brsgolf.com/berringtonhall#/course/1,high,confirmed by following the platform link found on the club's own site
+Houghwood Golf Course,,53.5056445,-2.7264015,no_site,unknown,,low,no official website resolved (not in county union directory)
+Formby Golf Club,https://www.formbygolfclub.co.uk/,53.5722286,-3.0813811,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Widnes Golf Course,https://www.widnesgolfclub.co.uk/,53.3737115,-2.7445702,brs,public,https://visitors.brsgolf.com/widnes#/course/1,high,
+Grange Park Golf Course,,53.4423764,-1.4227913,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ghyll Golf Club,https://www.ghyllgolfclub.co.uk/,53.9263375,-2.1614852,clubv1,public,https://ghyll.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-12,high,

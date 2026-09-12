@@ -1,0 +1,11 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Tynemouth Golf Club,https://www.tynemouthgolfclub.co.uk,55.0206998,-1.4418667,error,unknown,,low,unreachable even with a browser user agent
+Wallsend Golf Course Centurion Park,https://centurionpark.com/,54.9950793,-1.5525254,unknown,unknown,,low,site reachable (https://centurionpark.com/) but no visitor booking found on it or 0 sub-page(s)
+George Washington Hotel Golf and Spa,https://www.georgewashington.co.uk/contact/,54.9276359,-1.530346,unknown,unknown,,low,site reachable (https://georgewashington.co.uk/contact/) but no visitor booking found on it or 0 sub-page(s)
+Wearside Golf Club,https://www.wearsidegolfclub.co.uk/,54.8955613,-1.4754537,unknown,unknown,,low,site reachable (https://www.wearsidegolfclub.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Whickham Golf Club,https://www.whickhamgolfclub.co.uk/Intro.aspx,54.9262077,-1.7033919,brs,unknown,https://www.brsgolf.com/whickham/visitor_home.php,medium,site reachable (https://whickhamgolfclub.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+South Shields Golf Club,https://www.ssgc.co.uk/,54.9667388,-1.3887003,error,unknown,,low,unreachable even with a browser user agent
+Birtley Golf Club,https://www.birtleyportobellogolfclub.co.uk/,54.8886715,-1.5713788,error,unknown,,low,unreachable even with a browser user agent
+Houghton-le-Spring Golf Club,https://www.houghtongolfclub.co.uk/,54.8376708,-1.442717,brs,unknown,http://www.brsgolf.com/houghtonlespring/visitor_menu.php,medium,site reachable (http://www.houghtongolfclub.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Garesfield Golf Course,https://www.garesfieldgolfclub.co.uk/,54.9302143,-1.7964121,brs,unknown,https://www.brsgolf.com/garesfield/visitor_home.php?framed=true,medium,site reachable (https://www.garesfieldgolfclub.co.uk/) but no visitor booking found on it or 5 sub-page(s)
+Newcastle United Golf Club,https://www.newcastleunitedgolfclub.co.uk/,54.9927557,-1.6445869,brs,unknown,https://www.brsgolf.com/newcastleunited/visitor_home.php?framed=true,medium,site reachable (https://www.newcastleunitedgolfclub.co.uk/) but no visitor booking found on it or 5 sub-page(s)

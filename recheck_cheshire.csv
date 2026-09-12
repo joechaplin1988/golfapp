@@ -1,0 +1,36 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Hartford Golf Club,,53.2538806,-2.5495126,no_site,unknown,,low,still no website known
+Styal Golf Club,,53.3527365,-2.2331219,no_site,unknown,,low,still no website known
+Sutton Hall Golf Club,https://www.suttonhallgolf.co.uk/,53.3045121,-2.6866581,unknown,unknown,,low,site reachable (https://www.suttonhallgolf.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Vale Royal Golf Club,,53.2246887,-2.5496435,no_site,unknown,,low,still no website known
+Poulton Golf Club,,53.4218958,-2.5578466,no_site,unknown,,low,still no website known
+Sandiway Golf Club,,53.2309283,-2.5745528,no_site,unknown,,low,still no website known
+Portal Golf and Country Club,,53.1707342,-2.6530431,no_site,unknown,,low,still no website known
+Runcorn Golf Course,,53.3218572,-2.7278706,no_site,unknown,,low,still no website known
+Heyrose Golf Club,,53.3114704,-2.4439692,no_site,unknown,,low,still no website known
+Tytherington Golf Club,,53.2822321,-2.1360545,no_site,unknown,,low,still no website known
+True Fit Golf Centre,https://www.truefitgolfcentre.com/,53.3761339,-2.6742333,unknown,unknown,,low,site reachable (https://truefitgolfcentre.com/) but no visitor booking found on it or 0 sub-page(s)
+Macclesfield Golf Club,,53.2475242,-2.1097895,no_site,unknown,,low,still no website known
+Westminster Park Municipal Golf Course,https://www.brioleisure.org/golf/westminster-park,53.175244,-2.9070386,gladstone,public,https://brio.gladstonego.cloud/book,high,found on https://www.brioleisure.org/bookings-prices
+TFG Golf Course (Penketh),,53.3749188,-2.6707503,no_site,unknown,,low,still no website known
+Alderley Edge Golf Club,,53.3102549,-2.2470996,no_site,unknown,,low,still no website known
+Wilmslow Golf Club,,53.2977685,-2.2745491,no_site,unknown,,low,still no website known
+Woodside Golf Club,,53.2227722,-2.3852746,no_site,unknown,,low,still no website known
+Marton Meadows Golf Course,https://www.martonmeadowsgolf.co.uk/,53.2094867,-2.2214018,error,unknown,,low,unreachable even with a browser user agent
+Disley Golf Course,,53.3660254,-2.0488298,no_site,unknown,,low,still no website known
+Adlington Golf Centre,https://adlingtongolfcentre.co.uk/,53.3325525,-2.1408925,unknown,unknown,,low,site reachable (https://adlingtongolfcentre.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Pott Shrigley Golf Club,,53.3159543,-2.089267,no_site,unknown,,low,still no website known
+Malkins Bank Golf Course,,53.1250673,-2.352018,no_site,unknown,,low,still no website known
+Alsager Golf and Country Club,,53.0856074,-2.2893084,no_site,unknown,,low,still no website known
+Ellesmere Port Golf Club,,53.2927883,-2.9402552,no_site,unknown,,low,still no website known
+Wychwood Park Golf Club,,53.050642,-2.398199,no_site,unknown,,low,still no website known
+Lymm Golf Club,https://www.lymm-golf-club.co.uk/,53.3891748,-2.4872004,intelligent_golf,public,https://www.lymmgolfclub.co.uk/visitorbooking/,high,found on https://www.lymmgolfclub.co.uk/visitor_tee_booking
+Antrobus Golf Course,,53.3257892,-2.5458307,no_site,unknown,,low,still no website known
+Mere Golf and Country Club,,53.3333794,-2.4043815,no_site,unknown,,low,still no website known
+Croft Golf Centre,https://www.croftgolfcentre.co.uk/,53.4328298,-2.5377187,unknown,unknown,,low,site reachable (https://www.croftgolfcentre.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Mottram Hall Golf Club,,53.3108273,-2.1746745,no_site,unknown,,low,still no website known
+Pryors Hayes Golf Club,,53.1912763,-2.7262631,no_site,unknown,,low,still no website known
+Astbury Golf Course,,53.1516305,-2.2088364,no_site,unknown,,low,still no website known
+Emerald Championship Course,,52.9816268,-2.6846328,no_site,unknown,,low,still no website known
+Cheshire Golf Course,,53.074014,-2.805326,no_site,unknown,,low,still no website known
+Nicklaus Golf Course,,53.0712699,-2.8142518,no_site,unknown,,low,still no website known

@@ -1,0 +1,44 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Bardsley Park Golf Centre,,53.5101916,-2.114132,no_site,unknown,,low,no official website resolved (not in county union directory)
+Chorlton-cum-Hardy Golf Club,,53.4266683,-2.2762328,no_site,unknown,,low,no official website resolved (not in county union directory)
+Northenden Golf Course,https://www.northendengolfclub.com/contact,53.4172492,-2.2562676,intelligent_golf,login_required,,high,booking link requires login: https://www.northendengolfclub.com/visitorbooking
+Withington Golf Club,https://www.withingtongolfclub.co.uk/Intro.aspx,53.4110833,-2.2467758,blocked,unknown,,low,homepage returned HTTP 500 — likely bot-blocked; needs a browser-based check
+Altrincham Golf Course,https://altrinchamgolfcourse.co.uk/,53.3871643,-2.3341171,intelligent_golf,public,https://altrincham.intelligentgolf.co.uk/visitorbooking/,high,confirmed by following the platform link found on the club's own site
+Stockport Golf Club,,53.3881445,-2.0919209,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hazel Grove Golf Club,,53.3738735,-2.0946783,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bramall Park Golf Club,https://www.bramallparkgolfclub.co.uk/,53.3676043,-2.1735352,intelligent_golf,public,https://www.bramallparkgolfclub.co.uk/visitorbooking/,high,
+Marple Golf Club,https://www.marplegolfclub.co.uk/,53.3853891,-2.0720086,brs,public,https://visitors.brsgolf.com/marple#/course/1,high,
+Bramhall Golf Club,,53.358743,-2.1494932,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ashton-in-Makerfield Golf Club,https://www.ashton-in-makerfieldgolfclub.co.uk/,53.4831648,-2.6541919,intelligent_golf,login_required,,high,booking link requires login: https://www.ashton-in-makerfieldgolfclub.co.uk/book_a_tee_time
+Reddish Vale Golf Course,,53.4312532,-2.1478285,no_site,unknown,,low,no official website resolved (not in county union directory)
+Dunham Forest Golf and Country Club,,53.3859075,-2.3769455,no_site,unknown,,low,no official website resolved (not in county union directory)
+Cheadle Golf Club,https://cheadlegolf.com/,53.3858359,-2.2048552,clubv1,public,https://cheadle.hub.clubv1.com/visitors/TeeSheet?date=2026-09-12,high,
+Bolton Old Links Golf Course,,53.5973481,-2.4822865,no_site,unknown,,low,no official website resolved (not in county union directory)
+Mariott Worsley Park Golf Club,https://www.marriott.co.uk/hotels/travel/mangs-worsley-park-marriott-hotel-and-country-club/,53.506155,-2.3979406,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Worsley Golf Course,,53.4972332,-2.3586295,no_site,unknown,,low,no official website resolved (not in county union directory)
+Stamford Golf Club,,53.5052235,-2.0333505,no_site,unknown,,low,no official website resolved (not in county union directory)
+Heaton Mersey Valley Golf Course,,53.4084512,-2.2118465,no_site,unknown,,low,no official website resolved (not in county union directory)
+Harwood Golf Club,,53.5998028,-2.3684927,no_site,unknown,,low,no official website resolved (not in county union directory)
+Romiley Golf Course,,53.4195664,-2.0722395,no_site,unknown,,low,no official website resolved (not in county union directory)
+Boysnope Park Golf Club,https://www.boysnope-golfclub.co.uk/,53.4619755,-2.4026717,unknown,unknown,,low,homepage loaded (https://boysnope-golfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Houldsworth Golf Course,https://www.houldsworthgolfclub.co.uk/,53.4414953,-2.1697776,clubv1,public,https://houldsworth.hub.clubv1.com/visitors/TeeSheet?date=2026-09-12,high,
+Avro Golf Club,,53.3302918,-2.1615521,no_site,unknown,,low,no official website resolved (not in county union directory)
+Pitch and Putt,,53.5715941,-2.0548404,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bowlee Park Golf Range,https://www.bowlee-park-range.co.uk/,53.5549052,-2.2326249,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.bowlee-park-range.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.bowlee-park-range.co.uk', port=443): Failed to resolve 'www.bowlee-park-range.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Trafford Golf Centre,https://traffordgolfcentre.co.uk/,53.4670624,-2.358712,unknown,unknown,,low,homepage loaded (https://www.traffordgolfcentre.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+Sale Golf Club,,53.4246801,-2.2849788,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ashton-under-Lyne Golf Club,https://www.ashtongolfclub.co.uk/,53.5076977,-2.0645847,clubv1,public,https://ashtonunderlyne.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-12,high,
+Dukinfield Golf Course,https://www.dukinfieldgolfclub.co.uk/,53.469593,-2.0530959,brs,public,https://visitors.brsgolf.com/dukinfield#/course/1,high,confirmed by following the platform link found on the club's own site
+Hale Golf Course,,53.3609577,-2.326314,no_site,unknown,,low,no official website resolved (not in county union directory)
+Porters Wood Golf Course,https://porterswoodgolfcourse.co.uk/,53.551518,-2.6970975,unknown,unknown,,low,homepage loaded (https://porterswoodgolfcourse.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Didsbury Golf Course,https://www.didsburygolfclub.com/,53.405554,-2.2437381,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.didsburygolfclub.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.didsburygolfclub.com', port=443): Failed to resolve 'www.didsburygolfclub.com' ([Errno 11001] getaddrinfo failed)""))"
+Marland Golf Course,https://www.link4life.org/centres/marland-golf-course,53.6049821,-2.1946619,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.link4life.org', port=443): Read timed out. (read timeout=20)"
+Werneth Low Golf Course,https://www.wernethlowgolf.co.uk/,53.432522,-2.0497675,brs,public,https://visitors.brsgolf.com/wernethlowgc#/course/1,high,
+Mellor and Townscliffe Golf Course,,53.3855643,-2.0375216,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ringway Golf Club,https://www.ringwaygolfclub.co.uk/,53.3707907,-2.3081098,intelligent_golf,login_required,,high,booking link requires login: https://www.ringwaygolfclub.co.uk/book_a_tee
+North Manchester Golf Course,https://www.nmgc.co.uk/,53.5502727,-2.2164133,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Ashton on Mersey Golf Club,,53.4359403,-2.3405841,no_site,unknown,,low,no official website resolved (not in county union directory)
+Heaton Moor Golf Club,,53.4273263,-2.1943277,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ashton-in-Makerfield Golf Club,https://www.ashton-in-makerfieldgolfclub.co.uk/,53.4831648,-2.6541919,intelligent_golf,login_required,,high,booking link requires login: https://www.ashton-in-makerfieldgolfclub.co.uk/book_a_tee_time
+Avro Golf Club,,53.3302918,-2.1615521,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hale Golf Course,,53.3609577,-2.326314,no_site,unknown,,low,no official website resolved (not in county union directory)

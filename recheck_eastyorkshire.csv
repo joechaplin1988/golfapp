@@ -1,0 +1,15 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Springhead Golf Course,,53.7571448,-0.4229835,no_site,unknown,,low,still no website known
+Hull Golf Club,,53.7538328,-0.4634045,no_site,unknown,,low,still no website known
+Sutton Park Golf Course,,53.7819826,-0.2816777,no_site,unknown,,low,still no website known
+Hainsworth Park Golf Club,,53.9090808,-0.3112039,no_site,unknown,,low,still no website known
+Bridlington Golf Club,https://www.bridlingtongolfclub.co.uk/,54.0709643,-0.2123647,brs,unknown,https://www.brsgolf.com/bridlington/members_home.php,medium,site reachable (https://bridlingtongolfclub.co.uk/) but no visitor booking found on it or 5 sub-page(s)
+Far Grange Park & Golf Club,https://www.fargrangepark.com/golf-fishing-spa/golf.aspx,53.9653323,-0.1986562,error,unknown,,low,unreachable even with a browser user agent
+Withernsea Golf Club,https://www.withernseagolfclub.co.uk/,53.7207964,0.0293887,dead_link,unknown,,low,site reachable (https://withernseagolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Flamborough Head Golf Club,https://www.flamboroughheadgolfclub.co.uk/,54.1211371,-0.0885587,unknown,unknown,,low,site reachable (https://flamboroughheadgolfclub.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Burstwick Country Club,,53.7437714,-0.1382038,no_site,unknown,,low,still no website known
+Cherry Burton Golf Course,,53.8680646,-0.4835416,no_site,unknown,,low,still no website known
+Bridlington Links Golf & Leisure Estate,https://www.pureleisuregroup.com/parks/bridlington-links,54.1068035,-0.151545,error,unknown,,low,unreachable even with a browser user agent
+Sewerby Park & Pitch and Putt,https://www.sewerbyhall.co.uk/,54.1057571,-0.1629007,unknown,unknown,,low,site reachable (https://www.sewerbyhall.co.uk/) but no visitor booking found on it or 2 sub-page(s)
+Cave Castle Golf Club,https://www.cavecastlegolfclub.co.uk/,53.7713403,-0.6124072,unknown,unknown,,low,site reachable (https://cavecastlegolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Hessle Golf Club,,53.7720074,-0.4854456,no_site,unknown,,low,still no website known

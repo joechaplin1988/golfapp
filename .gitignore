@@ -39,3 +39,6 @@ fp3_*.log
 probe3_*.log
 rc3_*.log
 enrich.log
+fp4_*.log
+probe4_*.log
+rc4_*.log

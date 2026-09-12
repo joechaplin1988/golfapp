@@ -1,0 +1,79 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Baildon Golf Club,,53.8556629,-1.7684536,no_site,unknown,,low,no official website resolved (not in county union directory)
+Normanton Golf Club,,53.703461,-1.4866961,no_site,unknown,,low,no official website resolved (not in county union directory)
+Barnsley Golf Club,https://www.barnsleygolfclub.co.uk/,53.5966302,-1.4923903,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Wakefield Golf Club,,53.6425977,-1.4852139,no_site,unknown,,low,no official website resolved (not in county union directory)
+Oulton Park Golf Course,,53.7452014,-1.4616925,no_site,unknown,,low,no official website resolved (not in county union directory)
+Low Laithes Golf Course,,53.6890912,-1.5469038,no_site,unknown,,low,no official website resolved (not in county union directory)
+Whitwood Golf Club,,53.7201517,-1.3910735,no_site,unknown,,low,no official website resolved (not in county union directory)
+Roundhay Golf Club,https://www.roundhaygc.co.uk/,53.8443187,-1.4961575,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.roundhaygc.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.roundhaygc.co.uk', port=443): Failed to resolve 'www.roundhaygc.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Gotts Park Golf Course,https://gottsparkgolfclub.co.uk/,53.8048374,-1.5995093,unknown,unknown,,low,homepage loaded (https://gottsparkgolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Outlane Golf Club,,53.6538712,-1.8651303,no_site,unknown,,low,no official website resolved (not in county union directory)
+Dewsbury Golf Course,,53.6644512,-1.6689979,no_site,unknown,,low,no official website resolved (not in county union directory)
+East Bierley Golf Club,https://www.eastbierleygolfclub.co.uk/,53.7614322,-1.7059712,clubv1,unknown,,medium,"platform link(s) seen (['clubv1', 'brs']) but no confirmed public booking page found"
+Fulneck Golf Club,https://fulneckgolfclub.co.uk/,53.7810486,-1.6688574,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Moortown Golf Club,,53.8568638,-1.5426975,no_site,unknown,,low,no official website resolved (not in county union directory)
+Woolley Park Golf Course,,53.6152464,-1.5050242,no_site,unknown,,low,no official website resolved (not in county union directory)
+Calverley Golf & Country Club,https://www.calverleygolf.co.uk/,53.8119909,-1.6971605,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.calverleygolf.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Woodhall Hills Golf Club,https://www.woodhallhillsgolfclub.com/,53.8196698,-1.6993468,brs,public,https://visitors.brsgolf.com/woodhallhills,high,
+Clayton Golf Club,https://www.claytongolfclub.co.uk/,53.7788412,-1.8088172,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Longley Park,,53.63895,-1.7721919,no_site,unknown,,low,no official website resolved (not in county union directory)
+Wetherby Golf Club,https://www.wetherbygolfclub.co.uk/,53.9187161,-1.4021725,clubv1,unknown,,medium,platform link(s) seen (['clubv1']) but no confirmed public booking page found
+East Morton Golf Club,https://eastmortongolf.co.uk/,53.8713721,-1.8596604,unknown,unknown,,low,homepage loaded (https://eastmortongolf.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Keighley Golf Course,https://www.keighleygolfclub.com/,53.8888137,-1.9148273,intelligent_golf,public,https://www.keighleygolfclub.com/visitorbooking/,high,
+Northcliffe Golf Course,https://www.northcliffegc.org.uk/login.php,53.8251684,-1.7960449,intelligent_golf,public,https://www.northcliffegc.org.uk/visitorbooking/,high,
+Ben Rhydding Golf Club,https://www.benrhyddinggolfclub.com/,53.9177421,-1.7939612,golfnow,out_of_scope,,high,"GolfNow listing, not the club's own booking — excluded by policy: https://www.golfnow.co.uk/tee-times/facility/2555-ben-rhydding-golf-club/search#sortby=Date&view=Grouping&holes=3&timemax=42&timemin=10&players=0&pricemax=10000&pricemin=0"
+Horsforth Golf Course,,53.8563113,-1.65571,no_site,unknown,,low,no official website resolved (not in county union directory)
+Crosland Heath Golf Course,https://croslandheath.co.uk/,53.6245548,-1.8360823,brs,public,https://visitors.brsgolf.com/croslandheath#/course/1,high,
+West End Golf Club,,53.7290383,-1.905323,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bingley St Ives Golf Club,https://bingleystivesgc.com/,53.8506699,-1.8689362,clubv1,public,https://bingley.hub.clubv1.com/visitors/TeeSheet?date=2026-09-12,high,
+Cleckheaton & District Golf Club,,53.7369611,-1.7360209,no_site,unknown,,low,no official website resolved (not in county union directory)
+Meltham Golf Club,,53.5877045,-1.8303106,no_site,unknown,,low,no official website resolved (not in county union directory)
+Huddersfield Golf Club,https://www.huddersfield-golf.co.uk/,53.6711937,-1.8003014,intelligent_golf,public,https://www.huddersfield-golf.co.uk/visitorbooking/,high,
+Todmorden Golf Club,https://todmordengolfclub.co.uk/,53.7236647,-2.0868659,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Rawdon Golf Course,,53.8494551,-1.6873517,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bradford Moor Golf Club,https://www.bradfordmoorgolfclub.co.uk/,53.8025419,-1.7280019,brs,public,https://visitors.brsgolf.com/bradfordmoor#/course/1,high,confirmed by following the platform link found on the club's own site
+South Bradford Golf Course,https://www.southbradfordgolfclub.co.uk/,53.7590646,-1.7517228,clubv1,public,https://southbradford.hub.clubv1.com/Visitors/TeeSheet?date=2024-09-03,high,
+Bracken Ghyll Golf Club,https://www.brackenghyll.co.uk,53.9518293,-1.897992,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.brackenghyll.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Queensbury Golf Club,https://queensburygc.co.uk/,53.7628157,-1.8334047,clubv1,public,https://queensbury.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-12,high,
+Lightcliffe Golf Club,https://www.lightcliffegolfclub.co.uk/,53.729024,-1.7955686,brs,public,https://visitors.brsgolf.com/lightcliffe#/course/1,high,
+Ryburn Golf Club,https://www.ryburngolfclub.co.uk/,53.6988754,-1.9070346,clubv1,public,https://ryburn.hub.clubv1.com/visitors/TeeSheet?date=2026-09-12,high,
+Howley Hall Golf Course,,53.7262241,-1.614838,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Village Golf Course,https://brandonandthevillagegolfcourses.co.uk/,53.8766538,-1.4839502,unknown,unknown,,low,homepage loaded (https://brandonandthevillagegolfcourses.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Brandon Golf Course,https://brandonandthevillagegolfcourses.co.uk/,53.8585597,-1.4914963,unknown,unknown,,low,homepage loaded (https://brandonandthevillagegolfcourses.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Sand Moor Golf Course,https://www.sandmoorgolf.co.uk/,53.8653384,-1.5422141,brs,public,https://visitors.brsgolf.com/sandmoor,high,
+Branshaw Golf Course,https://branshawgolfclub.co.uk/,53.8529868,-1.9455696,brs,public,https://visitors.brsgolf.com/branshaw#/course/1,high,confirmed by following the platform link found on the club's own site
+Temple Newsam Golf Course,,53.784883,-1.469535,no_site,unknown,,low,no official website resolved (not in county union directory)
+Headingley Golf Club,,53.8650443,-1.5743605,no_site,unknown,,low,no official website resolved (not in county union directory)
+Woodsome Hall Golf Club,https://www.woodsome.co.uk/,53.6246891,-1.7304745,intelligent_golf,public,https://www.woodsome.co.uk/visitorbooking/,high,
+Alwoodley Golf Club,https://alwoodleygolfclub.com/,53.8640153,-1.5120755,intelligent_golf,public,https://alwoodley.intelligentgolf.co.uk/visitorbooking/,high,
+Willow Valley Golf,,53.7091304,-1.7519494,no_site,unknown,,low,no official website resolved (not in county union directory)
+Headley Golf Course,,53.7863302,-1.8538222,no_site,unknown,,low,no official website resolved (not in county union directory)
+West Bradford Golf Course,https://westbradfordgolfclub.co.uk/,53.8116008,-1.820894,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Garforth Golf Club,,53.8114592,-1.3972967,no_site,unknown,,low,no official website resolved (not in county union directory)
+Moor Allerton Golf Course,https://moorallertongolfclub.co.uk/,53.8719543,-1.4762424,brs,public,https://visitors.brsgolf.com/moorallerton,high,
+Elland Golf Club,https://www.ellandgolfclub.plus.com/home.htm,53.679341,-1.8572332,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.ellandgolfclub.plus.com', port=443): Max retries exceeded with url: /home.htm (Caused by NewConnectionError(""HTTPSConnection(host='www.ellandgolfclub.plus.com', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it""))"
+Halifax Golf Club,https://www.halifaxgolfclub.co.uk/,53.7694497,-1.9121073,brs,public,https://visitors.brsgolf.com/halifax#/course/1,high,
+Crow Nest Park Golf Club,https://www.crownestgolf.co.uk/,53.7208729,-1.7963532,brs,public,https://visitors.brsgolf.com/crownestpark#/course/1,high,
+Shay Grange Golf Course,https://www.expressgolf.co.uk/,53.8202737,-1.8009571,brs,public,https://visitors.brsgolf.com/expressgcbradford#/course/1,high,confirmed by following the platform link found on the club's own site
+Midgley Lodge Motel & Golf Course,https://www.midgleylodgemotel.co.uk,53.6257544,-1.591918,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Hanging Heaton Golf Club,,53.6982251,-1.6201953,no_site,unknown,,low,no official website resolved (not in county union directory)
+Marsden Golf Club,https://marsdengolf.co.uk/,53.5904739,-1.9383151,brs,public,https://visitors.brsgolf.com/marsden#/course/1,high,confirmed by following the platform link found on the club's own site
+Bradford Golf Course,https://bradfordgolfclub.co.uk/,53.8676651,-1.7401874,brs,public,https://visitors.brsgolf.com/bradford#/course/1,high,confirmed by following the platform link found on the club's own site
+Mid Yorkshire Golf Club,,53.6789451,-1.2521036,no_site,unknown,,low,no official website resolved (not in county union directory)
+Castlefields Golf Club,,53.6921902,-1.7885354,no_site,unknown,,low,no official website resolved (not in county union directory)
+Halifax Bradley Hall Golf Club,,53.6798127,-1.8775162,no_site,unknown,,low,no official website resolved (not in county union directory)
+Shipley Golf Club,https://shipleygolf.club/,53.8404064,-1.8424688,clubv1,public,https://shipley.hub.clubv1.com/visitors/TeeSheet?date=2026-09-12,high,
+Pontefract and District Golf Club,https://www.pdgc.co.uk/,53.6959418,-1.3427118,brs,public,https://visitors.brsgolf.com/pontefract,high,
+Thornes Park Pitch and Putt,,53.6715653,-1.5075178,no_site,unknown,,low,no official website resolved (not in county union directory)
+City of Wakefield Golf Course,,53.6648369,-1.5262992,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ilkley Golf Club,https://www.ilkleygolfclub.co.uk/,53.9344986,-1.8486513,brs,public,https://visitors.brsgolf.com/ilkley#/course/1,high,confirmed by following the platform link found on the club's own site
+City Golf Leeds,https://www.citygolfleeds.co.uk/,53.806469,-1.5938145,unknown,unknown,,low,homepage loaded (https://www.citygolfleeds.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Scarcroft Golf Course,https://www.scarcroftgolfclub.co.uk/,53.8718289,-1.457387,brs,public,https://visitors.brsgolf.com/scarcroft,high,
+Waterton Park Golf Course,https://www.watertonpark.org.uk/,53.6413333,-1.45087,unknown,unknown,,low,homepage loaded (https://www.watertonpark.org.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Hollins Hall Golf Course,https://www.marriott.com/hotels/hotel-information/golf-courses/lbags-hollins-hall-marriott-hotel-and-country-club/,53.8625516,-1.7442414,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+South Leeds Golf Club,,53.7569125,-1.5608706,no_site,unknown,,low,no official website resolved (not in county union directory)
+Barnsley Golf Club,https://www.barnsleygolfclub.co.uk/,53.5966302,-1.4923903,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Bracken Ghyll Golf Club,https://www.brackenghyll.co.uk,53.9518293,-1.897992,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.brackenghyll.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Mid Yorkshire Golf Club,,53.6789451,-1.2521036,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ilkley Golf Club,https://www.ilkleygolfclub.co.uk/,53.9344986,-1.8486513,brs,public,https://visitors.brsgolf.com/ilkley#/course/1,high,confirmed by following the platform link found on the club's own site

@@ -1,0 +1,27 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Liverpool Municipal South (Allerton) Golf Course,https://liverpool.gov.uk/golf,53.3725186,-2.8839485,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
+Bromborough Golf Club,,53.3145919,-3.0008364,no_site,unknown,,low,no official website resolved (not in county union directory)
+Southport Municipal Golf Course,https://www.sefton.gov.uk/sport-leisure/golf-in-sefton/southport-golf-links/,53.6619552,-2.9922091,unknown,unknown,,low,homepage loaded (https://www.sefton.gov.uk/sport-leisure/golf-in-sefton/southport-golf-links/) but no platform signal found on it or 3 booking-ish link(s)
+Heswall Golf Course,https://www.heswallgolfclub.com/,53.3104772,-3.0945004,intelligent_golf,public,https://heswall.intelligentgolf.co.uk/visitorbooking/,high,
+Wirral Golf Club,,53.3877565,-3.0644183,no_site,unknown,,low,no official website resolved (not in county union directory)
+Mersey Valley Golf & Country Club,https://www.merseyvalleygolfandcountryclub.co.uk/,53.398622,-2.6896829,golf_manager,public,https://eu.golfmanager.com/merseyvalley/consumer/book?area=100,high,
+Eccleston Park Golf Club,,53.4281863,-2.7740322,no_site,unknown,,low,no official website resolved (not in county union directory)
+Moreton Hills Golf Centre,,53.4082763,-3.1220887,no_site,unknown,,low,no official website resolved (not in county union directory)
+Alder Root Golf Course,,53.4364032,-2.6180108,no_site,unknown,,low,no official website resolved (not in county union directory)
+Leasowe Golf Club,https://www.leasowegolfclub.co.uk/,53.4205899,-3.1017331,clubv1,public,https://leasowe.hub.clubv1.com/visitors/TeeSheet?date=2026-09-12,high,
+Wallasey Golf Club,,53.4279146,-3.0802004,no_site,unknown,,low,no official website resolved (not in county union directory)
+Eastham Golf Course,,53.3224635,-2.96254,no_site,unknown,,low,no official website resolved (not in county union directory)
+Warren Municipal Golf Club,https://wirralleisure.co.uk/golf-courses/warren-municipal-golf-course/,53.4328859,-3.063903,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='wirralleisure.co.uk', port=443): Max retries exceeded with url: /golf-courses/warren-municipal-golf-course/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Prenton Golf Course,,53.3626613,-3.0511729,no_site,unknown,,low,no official website resolved (not in county union directory)
+Royal Liverpool Golf Course,https://www.royal-liverpool-golf.com/,53.3825632,-3.1898669,clubv1,unknown,,medium,"platform link(s) seen (['clubv1', 'brs']) but no confirmed public booking page found"
+Hoylake Golf Club,https://www.hoylakegolfclub.com/,53.3848745,-3.1776596,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.hoylakegolfclub.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Wallasey Beach Pitch n'Putt,,53.4326619,-3.074958,no_site,unknown,,low,no official website resolved (not in county union directory)
+Liverpool Municipal North Golf Course,https://liverpool.gov.uk/lifestyles/find-an-activity/golf-courses/,53.4770159,-2.9144773,unknown,unknown,,low,homepage loaded (https://lifestyles.liverpool.gov.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Formby Ladies Golf Club,https://formbyladiesgolfclub.co.uk/the-course/,53.5711147,-3.0801526,intelligent_golf,public,https://formbyladies.intelligentgolf.co.uk/visitorbooking/,high,
+Bidston Golf Club,https://www.bidstongolfclub.com/,53.4127583,-3.0835761,clubv1,public,https://bidston.hub.clubv1.com/visitors/TeeSheet?date=2026-09-12,high,
+Bowring Park Golf Course,https://www.mackgolf.co.uk/bowring-park-golf-course/17,53.4042488,-2.8615487,error,unknown,,low,"homepage fetch failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+Arrowe Park Golf Course,https://www.arroweparkgolfclub.co.uk/,53.361981,-3.0960285,unknown,unknown,,low,homepage loaded (https://www.arroweparkgolfclub.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+Formby Hall Golf Course,https://www.formbyhallgolfresort.co.uk/,53.5796079,-3.0393406,unknown,unknown,,low,homepage loaded (https://www.formbyhallgolfresort.co.uk/) but no platform signal found on it or 8 booking-ish link(s)
+Caldy Golf Club,,53.3515685,-3.1593912,no_site,unknown,,low,no official website resolved (not in county union directory)
+Heswall Golf Course,https://www.heswallgolfclub.com/,53.3104772,-3.0945004,intelligent_golf,public,https://heswall.intelligentgolf.co.uk/visitorbooking/,high,
+Alder Root Golf Course,,53.4364032,-2.6180108,no_site,unknown,,low,no official website resolved (not in county union directory)

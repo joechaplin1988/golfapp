@@ -1,0 +1,26 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Easingwold Golf Club,,54.1076968,-1.1687464,no_site,unknown,,low,still no website known
+Scalm Park Leisure,https://scalmparkleisure.co.uk/,53.784606,-1.1542389,unknown,unknown,,low,site reachable (https://www.scalmparkleisure.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Brigham Park Golf Course,,54.2214196,-0.7682431,no_site,unknown,,low,still no website known
+Spofforth Golf Club,https://www.spofforthgolf.co.uk,53.9546967,-1.4616866,error,unknown,,low,unreachable even with a browser user agent
+Stokesley Golf Range,https://www.stokesleygolfrange.co.uk/,54.4686967,-1.172893,unknown,unknown,,low,site reachable (https://www.stokesleygolfrange.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Reighton Sands Holiday Park Golf Course,https://www.haven.com/parks/yorkshire/reighton-sands,54.1623369,-0.2544091,unknown,unknown,,low,site reachable (https://www.haven.com/parks/yorkshire/reighton-sands) but no visitor booking found on it or 1 sub-page(s)
+York Golf Range,https://www.yorkgolfrange.com/,54.0136066,-1.0165385,unknown,unknown,,low,site reachable (https://www.yorkgolfrange.com/) but no visitor booking found on it or 1 sub-page(s)
+Snainton Golf,https://www.golfscarborough.co.uk/,54.2282162,-0.6118397,unknown,unknown,,low,site reachable (https://golfscarborough.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Swallow Hall Golf Course,https://www.swallowhall.com/,53.9066068,-1.0035539,unknown,unknown,,low,site reachable (https://www.swallowhall.com/) but no visitor booking found on it or 0 sub-page(s)
+Sawdon Pines Golf Club,,54.244339,-0.5564024,no_site,unknown,,low,still no website known
+Selby Golf Club,,53.7622379,-1.1233864,no_site,unknown,,low,still no website known
+Peasholm Pitch and Putt,,54.2903072,-0.4138674,no_site,unknown,,low,still no website known
+Melodie Park,https://www.melodiepark.com,53.9898737,-1.0893635,unknown,unknown,,low,site reachable (https://www.melodiepark.com/) but no visitor booking found on it or 0 sub-page(s)
+Conyngham Hall Leisure Park pitch and putt course,,54.0108581,-1.4761958,no_site,unknown,,low,still no website known
+Raven Hall Golf Course,,54.403005,-0.4950659,no_site,unknown,,low,still no website known
+Rosedale Abbey Golf,https://www.rosedaleabbeygolf.co.uk/,54.3498882,-0.8901722,unknown,unknown,,low,site reachable (https://rosedaleabbeygolf.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Wolds Way Golf Course,https://www.woldswaygolf.co.uk/,54.1748142,-0.5136996,unknown,unknown,,low,site reachable (https://www.woldswaygolf.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Heworth Golf Course York,https://www.heworthgolfclub.co.uk/,53.9722688,-1.0644009,dead_link,unknown,,low,site reachable (https://heworthgolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Hunmanby Hall Golf & Leisure,,54.1765226,-0.3216225,no_site,unknown,,low,still no website known
+Pannal Golf Club,https://www.pannalgc.co.uk/,53.9579357,-1.5206637,unknown,unknown,,low,site reachable (https://www.pannalgc.co.uk/) but no visitor booking found on it or 3 sub-page(s)
+North Cliff Golf Club,https://www.ncgc.co.uk/,54.2981336,-0.4231359,error,unknown,,low,unreachable even with a browser user agent
+Aldwark Manor Golf Club,https://www.aldwarkmanorgolfclub.co.uk/,54.0585525,-1.2886158,error,unknown,,low,unreachable even with a browser user agent
+Settle Golf Course,https://www.settlegolfclub.com/,54.0800718,-2.2990142,unknown,unknown,,low,site reachable (https://settlegolfclub.co.uk) but no visitor booking found on it or 2 sub-page(s)
+Skipton Golf Club,https://www.skiptongolfclub.co.uk/,53.9747448,-2.0181558,brs,unknown,https://www.brsgolf.com/skipton/visitor_month.php?course_id=1,medium,site reachable (https://www.skiptongolfclub.co.uk/) but no visitor booking found on it or 3 sub-page(s)
+Gilling Castle Golf Club,https://www.ampleforthgolf.co.uk/,54.1816701,-1.0689589,unknown,login_required,,high,site reachable (https://www.ampleforthgolf.co.uk/) but no visitor booking found on it or 2 sub-page(s)

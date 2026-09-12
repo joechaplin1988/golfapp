@@ -1,0 +1,20 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Liverpool Municipal South (Allerton) Golf Course,https://liverpool.gov.uk/golf,53.3725186,-2.8839485,dead_link,unknown,,low,site reachable (https://liverpool.gov.uk/) but no visitor booking found on it or 1 sub-page(s)
+Bromborough Golf Club,,53.3145919,-3.0008364,no_site,unknown,,low,still no website known
+Southport Municipal Golf Course,https://www.sefton.gov.uk/sport-leisure/golf-in-sefton/southport-golf-links/,53.6619552,-2.9922091,unknown,unknown,,low,site reachable (https://www.sefton.gov.uk/sport-leisure/golf-in-sefton/southport-golf-links/) but no visitor booking found on it or 1 sub-page(s)
+Wirral Golf Club,,53.3877565,-3.0644183,no_site,unknown,,low,still no website known
+Eccleston Park Golf Club,,53.4281863,-2.7740322,no_site,unknown,,low,still no website known
+Moreton Hills Golf Centre,,53.4082763,-3.1220887,no_site,unknown,,low,still no website known
+Alder Root Golf Course,,53.4364032,-2.6180108,no_site,unknown,,low,still no website known
+Wallasey Golf Club,,53.4279146,-3.0802004,no_site,unknown,,low,still no website known
+Eastham Golf Course,,53.3224635,-2.96254,no_site,unknown,,low,still no website known
+Warren Municipal Golf Club,https://wirralleisure.co.uk/golf-courses/warren-municipal-golf-course/,53.4328859,-3.063903,error,unknown,,low,unreachable even with a browser user agent
+Prenton Golf Course,,53.3626613,-3.0511729,no_site,unknown,,low,still no website known
+Hoylake Golf Club,https://www.hoylakegolfclub.com/,53.3848745,-3.1776596,error,unknown,,low,unreachable even with a browser user agent
+Wallasey Beach Pitch n'Putt,,53.4326619,-3.074958,no_site,unknown,,low,still no website known
+Liverpool Municipal North Golf Course,https://liverpool.gov.uk/lifestyles/find-an-activity/golf-courses/,53.4770159,-2.9144773,unknown,unknown,,low,site reachable (https://lifestyles.liverpool.gov.uk/) but no visitor booking found on it or 1 sub-page(s)
+Bowring Park Golf Course,https://www.mackgolf.co.uk/bowring-park-golf-course/17,53.4042488,-2.8615487,error,unknown,,low,unreachable even with a browser user agent
+Arrowe Park Golf Course,https://www.arroweparkgolfclub.co.uk/,53.361981,-3.0960285,unknown,unknown,,low,site reachable (https://www.arroweparkgolfclub.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Formby Hall Golf Course,https://www.formbyhallgolfresort.co.uk/,53.5796079,-3.0393406,unknown,unknown,,low,site reachable (https://www.formbyhallgolfresort.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Caldy Golf Club,,53.3515685,-3.1593912,no_site,unknown,,low,still no website known
+Alder Root Golf Course,,53.4364032,-2.6180108,no_site,unknown,,low,still no website known
