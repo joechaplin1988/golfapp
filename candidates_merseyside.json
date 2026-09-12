@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Liverpool Municipal South (Allerton) Golf Course",
+    "lat": 53.3725186,
+    "lon": -2.8839485,
+    "source": "osm",
+    "osm_site": "https://liverpool.gov.uk/golf",
+    "official_site": "https://liverpool.gov.uk/golf"
+  },
+  {
+    "name": "Woolton Golf Club",
+    "lat": 53.3662977,
+    "lon": -2.8576287,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bromborough Golf Club",
+    "lat": 53.3145919,
+    "lon": -3.0008364,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hesketh Golf Club",
+    "lat": 53.6656441,
+    "lon": -2.9836693,
+    "source": "osm",
+    "osm_site": "https://www.heskethgolfclub.co.uk/",
+    "official_site": "https://www.heskethgolfclub.co.uk/"
+  },
+  {
+    "name": "Southport Municipal Golf Course",
+    "lat": 53.6619552,
+    "lon": -2.9922091,
+    "source": "osm",
+    "osm_site": "https://www.sefton.gov.uk/sport-leisure/golf-in-sefton/southport-golf-links/",
+    "official_site": "https://www.sefton.gov.uk/sport-leisure/golf-in-sefton/southport-golf-links/"
+  },
+  {
+    "name": "Southport Old Links Golf Club",
+    "lat": 53.6489766,
+    "lon": -2.9581842,
+    "source": "osm",
+    "osm_site": "https://www.southportoldlinksgolfclub.co.uk/",
+    "official_site": "https://www.southportoldlinksgolfclub.co.uk/"
+  },
+  {
+    "name": "Heswall Golf Course",
+    "lat": 53.3104772,
+    "lon": -3.0945004,
+    "source": "osm",
+    "osm_site": "https://www.heswallgolfclub.com/",
+    "official_site": "https://www.heswallgolfclub.com/"
+  },
+  {
+    "name": "Wirral Golf Club",
+    "lat": 53.3877565,
+    "lon": -3.0644183,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Royal Birkdale Golf Club",
+    "lat": 53.6241663,
+    "lon": -3.0396789,
+    "source": "osm",
+    "osm_site": "https://www.royalbirkdale.com/",
+    "official_site": "https://www.royalbirkdale.com/"
+  },
+  {
+    "name": "Hillside Golf Club",
+    "lat": 53.6150934,
+    "lon": -3.0373165,
+    "source": "osm",
+    "osm_site": "https://www.hillside-golfclub.co.uk/",
+    "official_site": "https://www.hillside-golfclub.co.uk/"
+  },
+  {
+    "name": "Southport and Ainsdale Golf Club",
+    "lat": 53.6108693,
+    "lon": -3.0312529,
+    "source": "osm",
+    "osm_site": "https://www.sandagolfclub.co.uk/",
+    "official_site": "https://www.sandagolfclub.co.uk/"
+  },
+  {
+    "name": "The West Lancashire Golf Club",
+    "lat": 53.5042119,
+    "lon": -3.0559385,
+    "source": "osm",
+    "osm_site": "https://www.westlancashiregolf.co.uk/",
+    "official_site": "https://www.westlancashiregolf.co.uk/"
+  },
+  {
+    "name": "Mersey Valley Golf & Country Club",
+    "lat": 53.398622,
+    "lon": -2.6896829,
+    "source": "osm",
+    "osm_site": "https://www.merseyvalleygolfandcountryclub.co.uk/",
+    "official_site": "https://www.merseyvalleygolfandcountryclub.co.uk/"
+  },
+  {
+    "name": "Eccleston Park Golf Club",
+    "lat": 53.4281863,
+    "lon": -2.7740322,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Blundells Hill Golf Club",
+    "lat": 53.4051707,
+    "lon": -2.7768584,
+    "source": "osm",
+    "osm_site": "https://www.blundellshill.co.uk/",
+    "official_site": "https://www.blundellshill.co.uk/"
+  },
+  {
+    "name": "Huyton & Prescot Golf Club",
+    "lat": 53.4207359,
+    "lon": -2.8190723,
+    "source": "osm",
+    "osm_site": "https://www.huytonandprescotgolf.co.uk/",
+    "official_site": "https://www.huytonandprescotgolf.co.uk/"
+  },
+  {
+    "name": "Childwall Golf Club",
+    "lat": 53.3950463,
+    "lon": -2.839684,
+    "source": "osm",
+    "osm_site": "https://www.childwallgolfclub.co.uk/",
+    "official_site": "https://www.childwallgolfclub.co.uk/"
+  },
+  {
+    "name": "Moreton Hills Golf Centre",
+    "lat": 53.4082763,
+    "lon": -3.1220887,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lee Park Golf Club",
+    "lat": 53.3849975,
+    "lon": -2.8445688,
+    "source": "osm",
+    "osm_site": "https://www.leepark.co.uk/",
+    "official_site": "https://www.leepark.co.uk/"
+  },
+  {
+    "name": "Alder Root Golf Course",
+    "lat": 53.4364032,
+    "lon": -2.6180108,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Grange Park Golf Club",
+    "lat": 53.4453678,
+    "lon": -2.7729276,
+    "source": "osm",
+    "osm_site": "https://www.grangeparkgolfclub.co.uk/",
+    "official_site": "https://www.grangeparkgolfclub.co.uk/"
+  },
+  {
+    "name": "West Derby Golf Club",
+    "lat": 53.4301711,
+    "lon": -2.887523,
+    "source": "osm",
+    "osm_site": "https://www.westderbygc.co.uk/",
+    "official_site": "https://www.westderbygc.co.uk/"
+  },
+  {
+    "name": "Mossock Hall Golf Club",
+    "lat": 53.524683,
+    "lon": -2.8932592,
+    "source": "osm",
+    "osm_site": "https://mossockhallgolfclub.co.uk/",
+    "official_site": "https://mossockhallgolfclub.co.uk/"
+  },
+  {
+    "name": "Ashton-in-Makerfield Golf Club",
+    "lat": 53.4831648,
+    "lon": -2.6541919,
+    "source": "osm",
+    "osm_site": "https://www.ashton-in-makerfieldgolfclub.co.uk/",
+    "official_site": "https://www.ashton-in-makerfieldgolfclub.co.uk/"
+  },
+  {
+    "name": "Bootle Golf Club",
+    "lat": 53.4813182,
+    "lon": -2.9769277,
+    "source": "osm",
+    "osm_site": "https://www.sefton.gov.uk/sport-leisure/activities/bootle-golf-club.aspx",
+    "official_site": "https://www.sefton.gov.uk/sport-leisure/activities/bootle-golf-club.aspx"
+  },
+  {
+    "name": "Leasowe Golf Club",
+    "lat": 53.4205899,
+    "lon": -3.1017331,
+    "source": "osm",
+    "osm_site": "https://www.leasowegolfclub.co.uk/",
+    "official_site": "https://www.leasowegolfclub.co.uk/"
+  },
+  {
+    "name": "Wallasey Golf Club",
+    "lat": 53.4279146,
+    "lon": -3.0802004,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Aintree Golf Course",
+    "lat": 53.4760158,
+    "lon": -2.9368434,
+    "source": "osm",
+    "osm_site": "https://www.aintree.co.uk/pages/aintree-golf-centre-and-driving-range/",
+    "official_site": "https://www.aintree.co.uk/pages/aintree-golf-centre-and-driving-range/"
+  },
+  {
+    "name": "Eastham Golf Course",
+    "lat": 53.3224635,
+    "lon": -2.96254,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Warren Municipal Golf Club",
+    "lat": 53.4328859,
+    "lon": -3.063903,
+    "source": "osm",
+    "osm_site": "https://wirralleisure.co.uk/golf-courses/warren-municipal-golf-course/",
+    "official_site": "https://wirralleisure.co.uk/golf-courses/warren-municipal-golf-course/"
+  },
+  {
+    "name": "Prenton Golf Course",
+    "lat": 53.3626613,
+    "lon": -3.0511729,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Royal Liverpool Golf Course",
+    "lat": 53.3825632,
+    "lon": -3.1898669,
+    "source": "osm",
+    "osm_site": "https://www.royal-liverpool-golf.com/",
+    "official_site": "https://www.royal-liverpool-golf.com/"
+  },
+  {
+    "name": "Hoylake Golf Club",
+    "lat": 53.3848745,
+    "lon": -3.1776596,
+    "source": "osm",
+    "osm_site": "https://www.hoylakegolfclub.com/",
+    "official_site": "https://www.hoylakegolfclub.com/"
+  },
+  {
+    "name": "Wallasey Beach Pitch n'Putt",
+    "lat": 53.4326619,
+    "lon": -3.074958,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Liverpool Municipal North Golf Course",
+    "lat": 53.4770159,
+    "lon": -2.9144773,
+    "source": "osm",
+    "osm_site": "https://liverpool.gov.uk/lifestyles/find-an-activity/golf-courses/",
+    "official_site": "https://liverpool.gov.uk/lifestyles/find-an-activity/golf-courses/"
+  },
+  {
+    "name": "Sherdley Park Golf Course",
+    "lat": 53.4346776,
+    "lon": -2.7314602,
+    "source": "osm",
+    "osm_site": "https://sherdleyparkgolfcourse.com",
+    "official_site": "https://sherdleyparkgolfcourse.com"
+  },
+  {
+    "name": "Berrington Hall Golf Club",
+    "lat": 53.4811199,
+    "lon": -2.7642079,
+    "source": "osm",
+    "osm_site": "https://berringtonhallgolfclub.co.uk/",
+    "official_site": "https://berringtonhallgolfclub.co.uk/"
+  },
+  {
+    "name": "Formby Ladies Golf Club",
+    "lat": 53.5711147,
+    "lon": -3.0801526,
+    "source": "osm",
+    "osm_site": "https://formbyladiesgolfclub.co.uk/the-course/",
+    "official_site": "https://formbyladiesgolfclub.co.uk/the-course/"
+  },
+  {
+    "name": "Bidston Golf Club",
+    "lat": 53.4127583,
+    "lon": -3.0835761,
+    "source": "osm",
+    "osm_site": "https://www.bidstongolfclub.com/",
+    "official_site": "https://www.bidstongolfclub.com/"
+  },
+  {
+    "name": "Bowring Park Golf Course",
+    "lat": 53.4042488,
+    "lon": -2.8615487,
+    "source": "osm",
+    "osm_site": "https://www.mackgolf.co.uk/bowring-park-golf-course/17",
+    "official_site": "https://www.mackgolf.co.uk/bowring-park-golf-course/17"
+  },
+  {
+    "name": "Arrowe Park Golf Course",
+    "lat": 53.361981,
+    "lon": -3.0960285,
+    "source": "osm",
+    "osm_site": "https://www.arroweparkgolfclub.co.uk/",
+    "official_site": "https://www.arroweparkgolfclub.co.uk/"
+  },
+  {
+    "name": "Houghwood Golf Course",
+    "lat": 53.5056445,
+    "lon": -2.7264015,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Formby Golf Club",
+    "lat": 53.5722286,
+    "lon": -3.0813811,
+    "source": "osm",
+    "osm_site": "https://www.formbygolfclub.co.uk/",
+    "official_site": "https://www.formbygolfclub.co.uk/"
+  },
+  {
+    "name": "Formby Hall Golf Course",
+    "lat": 53.5796079,
+    "lon": -3.0393406,
+    "source": "osm",
+    "osm_site": "https://www.formbyhallgolfresort.co.uk/",
+    "official_site": "https://www.formbyhallgolfresort.co.uk/"
+  },
+  {
+    "name": "Caldy Golf Club",
+    "lat": 53.3515685,
+    "lon": -3.1593912,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  }
+]

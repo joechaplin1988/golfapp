@@ -1,0 +1,1007 @@
+[
+  {
+    "name": "Great Harwood Golf Club",
+    "lat": 53.793603,
+    "lon": -2.3845151,
+    "source": "osm",
+    "osm_site": "https://www.greatharwoodgolfclub.co.uk/",
+    "official_site": "https://www.greatharwoodgolfclub.co.uk"
+  },
+  {
+    "name": "Ormskirk Golf Club",
+    "lat": 53.5728024,
+    "lon": -2.8415272,
+    "source": "osm",
+    "osm_site": "https://www.ormskirkgolfclub.com/",
+    "official_site": "https://www.ormskirkgolfclub.com"
+  },
+  {
+    "name": "Rishton Golf Club",
+    "lat": 53.7592319,
+    "lon": -2.4136132,
+    "source": "osm",
+    "osm_site": "https://www.rishtongolfclub.co.uk/",
+    "official_site": "https://www.rishtongolfclub.co.uk"
+  },
+  {
+    "name": "Royal Lytham & St Annes Golf Course",
+    "lat": 53.7460883,
+    "lon": -3.0063034,
+    "source": "osm",
+    "osm_site": "https://www.royallytham.org/",
+    "official_site": "https://www.royallytham.org"
+  },
+  {
+    "name": "Fairhaven Golf Club",
+    "lat": 53.7484215,
+    "lon": -2.9802009,
+    "source": "osm",
+    "osm_site": "https://www.fairhavengolfclub.co.uk/",
+    "official_site": "https://www.fairhavengolfclub.co.uk"
+  },
+  {
+    "name": "Morecambe Golf Course",
+    "lat": 54.0827587,
+    "lon": -2.8285211,
+    "source": "osm",
+    "osm_site": "https://www.morecambegolfclub.com/",
+    "official_site": "https://www.morecambegolfclub.com"
+  },
+  {
+    "name": "Blackpool North Shore Golf Course",
+    "lat": 53.84321,
+    "lon": -3.0456064,
+    "source": "osm",
+    "osm_site": "https://www.bnsgc.com/",
+    "official_site": "https://www.bnsgc.com"
+  },
+  {
+    "name": "Chorley Golf Club",
+    "lat": 53.6319578,
+    "lon": -2.6017071,
+    "source": "osm",
+    "osm_site": "https://www.chorleygolfclub.co.uk/",
+    "official_site": "https://www.chorleygolfclub.co.uk"
+  },
+  {
+    "name": "Duxbury Park Golf Course",
+    "lat": 53.6304879,
+    "lon": -2.6228922,
+    "source": "osm",
+    "osm_site": "https://www.glendalegolf.co.uk/Duxbury-Park-Golf-Course",
+    "official_site": "https://www.glendale-golf.com/course-5-duxbury-park.aspx"
+  },
+  {
+    "name": "Shaw Hill Golf Club",
+    "lat": 53.6810246,
+    "lon": -2.643493,
+    "source": "osm",
+    "osm_site": "https://www.shaw-hill.co.uk/golf",
+    "official_site": "https://www.shaw-hill.co.uk"
+  },
+  {
+    "name": "Mossock Hall Golf Club",
+    "lat": 53.524683,
+    "lon": -2.8932592,
+    "source": "osm",
+    "osm_site": "https://mossockhallgolfclub.co.uk/",
+    "official_site": "https://www.mossockhallgolfclub.co.uk"
+  },
+  {
+    "name": "Southport Golf Academy",
+    "lat": 53.657091,
+    "lon": -2.8930666,
+    "source": "osm",
+    "osm_site": "https://www.southport-golf.co.uk/",
+    "official_site": "https://www.southport-golf.co.uk"
+  },
+  {
+    "name": "Accrington and District Golf Club",
+    "lat": 53.7565796,
+    "lon": -2.409962,
+    "source": "osm",
+    "osm_site": "https://www.accringtongolfclub.com/",
+    "official_site": "https://www.accringtongolfclub.com"
+  },
+  {
+    "name": "Mytton Fold Golf Club",
+    "lat": 53.8059665,
+    "lon": -2.4371833,
+    "source": "osm",
+    "osm_site": "https://www.mytton-golf.co.uk/",
+    "official_site": "https://www.myttonfold.co.uk"
+  },
+  {
+    "name": "Whalley Golf Club",
+    "lat": 53.8188371,
+    "lon": -2.3900644,
+    "source": "osm",
+    "osm_site": "https://www.whalleygolfclub.co.uk/",
+    "official_site": "https://www.whalleygolfclub.com"
+  },
+  {
+    "name": "Clitheroe Golf Course",
+    "lat": 53.8450868,
+    "lon": -2.4034921,
+    "source": "osm",
+    "osm_site": "https://www.clitheroegolfclub.com/",
+    "official_site": "https://www.clitheroegolfclub.com"
+  },
+  {
+    "name": "Turton Golf Course",
+    "lat": 53.6279119,
+    "lon": -2.4202361,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.turtongolfclub.co.uk"
+  },
+  {
+    "name": "Fleetwood Golf Course",
+    "lat": 53.9183467,
+    "lon": -3.0454525,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.fleetwoodgolf.co.uk"
+  },
+  {
+    "name": "Penwortham Golf Course",
+    "lat": 53.7552608,
+    "lon": -2.7389144,
+    "source": "osm",
+    "osm_site": "https://www.penworthamgc.co.uk/",
+    "official_site": "https://www.penworthamgc.co.uk"
+  },
+  {
+    "name": "Baxenden Golf Course",
+    "lat": 53.7392831,
+    "lon": -2.3355352,
+    "source": "osm",
+    "osm_site": "https://baxendengolf.co.uk/",
+    "official_site": "https://www.baxendengolf.co.uk"
+  },
+  {
+    "name": "Heysham Golf Club",
+    "lat": 54.0298389,
+    "lon": -2.9003774,
+    "source": "osm",
+    "osm_site": "https://www.heyshamgolfclub.co.uk/",
+    "official_site": "https://www.heyshamgolfclub.co.uk"
+  },
+  {
+    "name": "Heron's Reach Golf Course",
+    "lat": 53.8164582,
+    "lon": -3.0030836,
+    "source": "osm",
+    "osm_site": "https://www.village-hotels.co.uk/hotels/blackpool/golf",
+    "official_site": "https://www.heronsreachgolf.co.uk/"
+  },
+  {
+    "name": "Knott End Golf Course",
+    "lat": 53.9207462,
+    "lon": -2.9930318,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": "https://www.knottendgolfclub.com"
+  },
+  {
+    "name": "Lansil Golf Club",
+    "lat": 54.0646215,
+    "lon": -2.7791959,
+    "source": "osm",
+    "osm_site": "https://www.lansilgolfclub.co.uk/",
+    "official_site": "https://www.lansilgolfclub.co.uk"
+  },
+  {
+    "name": "Fishwick Golf Course",
+    "lat": 53.7621202,
+    "lon": -2.6547383,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lancaster Golf Club",
+    "lat": 54.0124226,
+    "lon": -2.8217111,
+    "source": "osm",
+    "osm_site": "https://www.lancastergc.co.uk/",
+    "official_site": "https://www.lancastergc.co.uk"
+  },
+  {
+    "name": "Green Haworth Golf Club",
+    "lat": 53.7302963,
+    "lon": -2.3664029,
+    "source": "osm",
+    "osm_site": "https://greenhaworthgolf.co.uk/",
+    "official_site": "https://www.green-haworth-gc.co.uk"
+  },
+  {
+    "name": "Colne Golf Club",
+    "lat": 53.8700441,
+    "lon": -2.1399187,
+    "source": "osm",
+    "osm_site": "https://colnegolfclub.com/",
+    "official_site": "https://www.colnegolfclub.com"
+  },
+  {
+    "name": "Rolls Royce Leisure golf area",
+    "lat": 53.9246252,
+    "lon": -2.1713525,
+    "source": "osm",
+    "osm_site": "https://rollsleisurebarnoldswick.co.uk/",
+    "official_site": "https://rollsleisurebarnoldswick.co.uk/"
+  },
+  {
+    "name": "Nelson Golf Club",
+    "lat": 53.8184101,
+    "lon": -2.2070279,
+    "source": "osm",
+    "osm_site": "https://www.nelsongolfclub.com/",
+    "official_site": "https://www.nelsongolfclub.com"
+  },
+  {
+    "name": "Poulton le Fylde Golf Club",
+    "lat": 53.8561289,
+    "lon": -2.9911988,
+    "source": "osm",
+    "osm_site": "https://poultonlefyldegolfclub.co.uk/",
+    "official_site": "https://www.poultonlefyldegolfclub.co.uk"
+  },
+  {
+    "name": "Burnley Golf Club",
+    "lat": 53.7676819,
+    "lon": -2.2462216,
+    "source": "osm",
+    "osm_site": "https://www.burnleygolfclub.com/",
+    "official_site": "https://www.burnleygolfclub.com"
+  },
+  {
+    "name": "Charnock Richard Golf Club",
+    "lat": 53.6316229,
+    "lon": -2.6787269,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Marsden Park Golf Course",
+    "lat": 53.8379738,
+    "lon": -2.1811157,
+    "source": "osm",
+    "osm_site": "https://www.marsdenparkgolfcourse.co.uk/",
+    "official_site": "https://www.marsdenparkgolfcourse.co.uk"
+  },
+  {
+    "name": "Ashton Golf Centre",
+    "lat": 54.0084599,
+    "lon": -2.8279734,
+    "source": "osm",
+    "osm_site": "https://www.facebook.com/AshtonGolfCentre",
+    "official_site": "https://www.ashtonleagolfclub.co.uk"
+  },
+  {
+    "name": "Staining Lodge Golf Course",
+    "lat": 53.8120783,
+    "lon": -2.9733127,
+    "source": "osm",
+    "osm_site": "https://www.staininglodge.co.uk/",
+    "official_site": "https://www.staininglodge.co.uk"
+  },
+  {
+    "name": "Wilpshire Golf Course",
+    "lat": 53.7890562,
+    "lon": -2.4674782,
+    "source": "osm",
+    "osm_site": "https://www.wilpshiregolfclub.co.uk/",
+    "official_site": "https://www.wilpshiregolfclub.co.uk"
+  },
+  {
+    "name": "Highfield Golf Course",
+    "lat": 53.6925788,
+    "lon": -2.5875608,
+    "source": "osm",
+    "osm_site": "https://highfieldgolfcourse.co.uk/",
+    "official_site": "https://highfieldgolfcourse.co.uk/"
+  },
+  {
+    "name": "Ashton & Lea Golf Club",
+    "lat": 53.7716718,
+    "lon": -2.7745935,
+    "source": "osm",
+    "osm_site": "https://www.ashtonleagolfclub.co.uk/",
+    "official_site": "https://www.ashtonleagolfclub.co.uk"
+  },
+  {
+    "name": "Ghyll Golf Club",
+    "lat": 53.9263375,
+    "lon": -2.1614852,
+    "source": "osm",
+    "osm_site": "https://www.ghyllgolfclub.co.uk/",
+    "official_site": "https://www.ghyllgolfclub.co.uk/"
+  },
+  {
+    "name": "Blackburn Golf Club",
+    "lat": 53.7597194,
+    "lon": -2.5020179,
+    "source": "osm",
+    "osm_site": "https://www.blackburngolfclub.com/",
+    "official_site": "https://www.blackburngolfclub.com"
+  },
+  {
+    "name": "St Annes Old Links",
+    "lat": 53.7665438,
+    "lon": -3.0398403,
+    "source": "osm",
+    "osm_site": "https://www.stannesoldlinks.com/",
+    "official_site": "https://www.stannesoldlinks.com"
+  },
+  {
+    "name": "Lytham Green Drive Golf Course",
+    "lat": 53.7488131,
+    "lon": -2.9552138,
+    "source": "osm",
+    "osm_site": "https://www.lythamgreendrive.co.uk/",
+    "official_site": "https://www.lythamgreendrive.co.uk"
+  },
+  {
+    "name": "Lytham Golf Academy",
+    "lat": 53.7464335,
+    "lon": -2.9204758,
+    "source": "osm",
+    "osm_site": "https://www.lythamgolfacademy.co.uk/",
+    "official_site": "https://www.lythamgolfacademy.co.uk/"
+  },
+  {
+    "name": "Rossendale Golf Club",
+    "lat": 53.6854903,
+    "lon": -2.3201813,
+    "source": "osm",
+    "osm_site": "https://www.rossendalegolfclub.net/",
+    "official_site": "https://www.rossendalegolfclub.net"
+  },
+  {
+    "name": "Hurlston Hall Golf Club",
+    "lat": 53.5908141,
+    "lon": -2.9118488,
+    "source": "osm",
+    "osm_site": "https://www.hurlstonhall.co.uk/",
+    "official_site": "https://www.hurlstonhall.co.uk"
+  },
+  {
+    "name": "Leyland Golf Club",
+    "lat": 53.6900912,
+    "lon": -2.6662111,
+    "source": "osm",
+    "osm_site": "https://www.leylandgolfclub.co.uk/",
+    "official_site": "https://www.leylandgolfclub.co.uk"
+  },
+  {
+    "name": "Yarrow Valley Golf Course",
+    "lat": 53.6382678,
+    "lon": -2.6618489,
+    "source": "osm",
+    "osm_site": "https://www.yarrowvalleygolf.co.uk/home.html",
+    "official_site": "https://www.yarrowvalleygolf.co.uk/home.html"
+  },
+  {
+    "name": "Oak Royal Golf & Country Club",
+    "lat": 53.70413,
+    "lon": -2.5586698,
+    "source": "osm",
+    "osm_site": "https://www.oakroyalgolf-countryclub.co.uk",
+    "official_site": "https://www.oakroyalgolf-countryclub.co.uk"
+  },
+  {
+    "name": "Silverdale Golf Club",
+    "lat": 54.1710447,
+    "lon": -2.8036505,
+    "source": "osm",
+    "osm_site": "https://www.silverdalegolfclub.co.uk/",
+    "official_site": "https://www.silverdalegolfclub.co.uk/"
+  },
+  {
+    "name": "Pleasington Golf Club",
+    "lat": 53.7309341,
+    "lon": -2.5540069,
+    "source": "osm",
+    "osm_site": "https://www.pleasington-golf.co.uk/",
+    "official_site": "https://www.pleasington-golf.co.uk"
+  },
+  {
+    "name": "Darwen Golf Club",
+    "lat": 53.7027341,
+    "lon": -2.4961286,
+    "source": "osm",
+    "osm_site": "https://www.darwengolfclub.co.uk/",
+    "official_site": "https://www.darwengolfclub.co.uk"
+  },
+  {
+    "name": "Lobden Golf Club",
+    "lat": 53.6503578,
+    "lon": -2.1646179,
+    "source": "osm",
+    "osm_site": "https://www.lobdengolfclub.co.uk/",
+    "official_site": "https://www.lobdengolfclub.co.uk"
+  },
+  {
+    "name": "Myerscough College Golf Complex",
+    "lat": 53.8539668,
+    "lon": -2.7523455,
+    "source": "osm",
+    "osm_site": "https://www.myerscough.ac.uk/commercial-services-equine-events/myerscough-golf-complex/",
+    "official_site": "https://www.myerscough.ac.uk/"
+  },
+  {
+    "name": "Short Course",
+    "lat": 53.7499753,
+    "lon": -3.0127586,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Preston Golf Club",
+    "lat": 53.7887787,
+    "lon": -2.6903621,
+    "source": "osm",
+    "osm_site": "https://www.prestongolfclub.com/",
+    "official_site": "https://www.prestongolfclub.com"
+  },
+  {
+    "name": "Stonyhurst Golf Club",
+    "lat": 53.8472151,
+    "lon": -2.4833764,
+    "source": "osm",
+    "osm_site": "https://www.stonyhurstpark.co.uk/",
+    "official_site": "https://www.stonyhurstpark.co.uk"
+  },
+  {
+    "name": "Stanley Park Golf Course",
+    "lat": 53.8194024,
+    "lon": -3.0182159,
+    "source": "osm",
+    "osm_site": "https://linkgolfuk.com/course/stanley-park-golf-course",
+    "official_site": "https://www.parkgolfclubsouthport.co.uk"
+  },
+  {
+    "name": "Towneley Golf Club",
+    "lat": 53.7779281,
+    "lon": -2.2266552,
+    "source": "osm",
+    "osm_site": "https://www.towneleygolfclub.co.uk/",
+    "official_site": "https://www.towneleygolfclub.co.uk"
+  },
+  {
+    "name": "Garstang Golf Course",
+    "lat": 53.8892773,
+    "lon": -2.7726801,
+    "source": "osm",
+    "osm_site": "https://www.garstanggolf.co.uk/",
+    "official_site": "https://www.garstanggolf.co.uk/"
+  },
+  {
+    "name": "Tee Time Golf Centre",
+    "lat": 53.8616574,
+    "lon": -3.0331025,
+    "source": "osm",
+    "osm_site": "https://teetimegolfcentre.com/",
+    "official_site": "https://teetimegolfcentre.com/"
+  },
+  {
+    "name": "Dean Wood Golf Club",
+    "lat": 53.5480364,
+    "lon": -2.7165758,
+    "source": "osm",
+    "osm_site": "https://www.deanwoodgolfclub.co.uk/",
+    "official_site": "https://www.deanwoodgolfclub.co.uk"
+  },
+  {
+    "name": "Walmersley Golf Club",
+    "lat": 53.6164847,
+    "lon": -2.2779507,
+    "source": "osm",
+    "osm_site": "https://www.walmersleygolfclub.co.uk/",
+    "official_site": "https://www.walmersleygolfclub.co.uk"
+  },
+  {
+    "name": "Longridge Golf Club",
+    "lat": 53.8486468,
+    "lon": -2.568348,
+    "source": "osm",
+    "osm_site": "https://www.longridgegolfclub.co.uk/",
+    "official_site": "https://www.longridgegolfclub.com"
+  },
+  {
+    "name": "Douglas Valley Golf Course",
+    "lat": 53.601387,
+    "lon": -2.583283,
+    "source": "osm",
+    "osm_site": "https://douglasvalleygolfclub.co.uk/",
+    "official_site": "https://www.douglasvalleygolfclub.co.uk"
+  },
+  {
+    "name": "Bacup Golf Course",
+    "lat": 53.702887,
+    "lon": -2.209818,
+    "source": "osm",
+    "osm_site": "https://bacupgolfclub.co.uk/",
+    "official_site": "https://www.bacupgolfclub.com"
+  },
+  {
+    "name": "Dunscar Golf Club",
+    "lat": 53.6233824,
+    "lon": -2.4502664,
+    "source": "osm",
+    "osm_site": "https://www.dunscargolfclub.com/",
+    "official_site": "https://www.dunscargolfclub.com"
+  },
+  {
+    "name": "Allerton Manor Golf Club",
+    "official_site": "https://allertonmanorgolfclub.com/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Alt Golf Club",
+    "official_site": "https://www.intelligentgolf.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Beacon Park Golf Club",
+    "official_site": "https://www.beaconparkgolf.com",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Berrington Hall Golf Club",
+    "official_site": "https://www.berringtonhallgolfclub.co.uk/",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Blackley Golf Club",
+    "official_site": "https://www.blackleygolfclub.com",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Blackpool Park Golf Club",
+    "official_site": "https://www.blackpoolparkgc.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Blundells Hill Golf Club",
+    "official_site": "https://www.blundellshill.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Bolton Golf Club",
+    "official_site": "https://www.boltongolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Bootle Golf Club",
+    "official_site": "https://www.intelligentgolf.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Bowring Golf Club",
+    "official_site": "https://www.bowringgolfclub.com",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Breightmet Golf Club",
+    "official_site": "https://www.breightmetgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Brookdale Golf Club",
+    "official_site": "https://www.brookdalegolf.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Castle Hawk Golf Club",
+    "official_site": "https://www.castlehawk.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Childwall Golf Club",
+    "official_site": "https://www.childwallgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Crompton & Royton Golf Club",
+    "official_site": "https://www.cromptonandroytongolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Davyhulme Park Golf Club",
+    "official_site": "https://www.davyhulmeparkgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Deane Golf Club",
+    "official_site": "https://www.deanegolfclub.com",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Denton Golf Club",
+    "official_site": "https://www.dentongolfclub.com",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Ellesmere Golf Club",
+    "official_site": "https://www.ellesmeregolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Fairfield Golf Club",
+    "official_site": "https://www.fairfieldgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Flixton Golf Club",
+    "official_site": "https://www.flixtongolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Formby Golf Club",
+    "official_site": "https://www.formbygolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Gathurst Golf Club",
+    "official_site": "https://www.gathurstgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Grand National Golf Club",
+    "official_site": "https://www.aintree.co.uk/golf",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Grange Park Golf Club (Lancashire) Golf Club",
+    "official_site": "https://www.grangeparkgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Grange-over-Sands Golf Club",
+    "official_site": "https://grangegolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Great Lever & Farnworth Golf Club",
+    "official_site": "https://www.greatleverfarnworthgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Greenmount Golf Club",
+    "official_site": "https://www.greenmountgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Haigh Hall Golf Club",
+    "official_site": "https://www.haighhall-golfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Hart Common Golf Club",
+    "official_site": "https://www.hartcommongolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Haydock Park Golf Club",
+    "official_site": "https://www.haydockparkgc.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Heaton Park Golf Club",
+    "official_site": "https://www.heatonparkgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Hesketh Golf Club",
+    "official_site": "https://www.heskethgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Hillside Golf Club",
+    "official_site": "https://www.hillside-golfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Hindley Hall Golf Club",
+    "official_site": "https://www.hindleyhallgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Houghwood Golf Club",
+    "official_site": "https://www.houghwoodgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Huyton & Prescot Golf Club",
+    "official_site": "https://www.huytonandprescotgolf.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Kirkby Valley Golf Club",
+    "official_site": "https://www.kirkbygolfclub.pwp.blueyonder.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Lee Park Golf Club",
+    "official_site": "https://www.leepark.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Leigh Golf Club",
+    "official_site": "https://www.leighgolf.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Lowes Park Golf Club",
+    "official_site": "https://www.lowesparkgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Manchester Golf Club",
+    "official_site": "https://www.mangc.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Marriott Worsley Park Golf Club",
+    "official_site": "https://www.marriott.co.uk/hotels/travel/mangs-worsley-park-a-marriott-hotel-and-country-club",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Oldham Golf Club",
+    "official_site": "https://www.oldhamgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Pennington Golf Club",
+    "official_site": "https://www.penningtongolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Pike Fold Golf Club",
+    "official_site": "https://www.pikefold.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Prestwich Golf Club",
+    "official_site": "https://www.prestwichgolf.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Regent Park Golf Club",
+    "official_site": "https://www.regentparkgolfclub.net",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Rochdale Golf Club",
+    "official_site": "https://www.rochdalegolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Royal Birkdale Golf Club",
+    "official_site": "https://www.royalbirkdale.com",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Saddleworth Golf Club",
+    "official_site": "https://www.saddleworthgolfclub.org.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Sherdley Park Golf Club",
+    "official_site": "https://www.sherdleyparkgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Southport & Ainsdale Golf Club",
+    "official_site": "https://www.sandagolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Southport Old Links Golf Club",
+    "official_site": "https://www.southportoldlinksgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Springfield Park Golf Club",
+    "official_site": "https://www.intelligentgolf.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "St Helens Golf Club",
+    "official_site": "https://www.sthelensgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Stand Golf Club",
+    "official_site": "https://www.standgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Tunshill Golf Club",
+    "official_site": "https://www.tunshillgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Werneth Golf Club",
+    "official_site": "https://www.wernethgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "West Derby Golf Club",
+    "official_site": "https://www.westderbygc.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "West Lancashire Golf Club",
+    "official_site": "https://www.westlancashiregolf.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Westhoughton Golf Club",
+    "official_site": "https://www.westhoughtongolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Whitefield Golf Club",
+    "official_site": "https://www.whitefieldgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Whittaker Golf Club",
+    "official_site": "https://www.whittakergolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Widnes Golf Club",
+    "official_site": "https://www.widnesgolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Wigan Golf Club",
+    "official_site": "https://www.wigangolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  },
+  {
+    "name": "Woolton Golf Club",
+    "official_site": "https://www.wooltongolfclub.co.uk",
+    "lat": null,
+    "lon": null,
+    "source": "county_union"
+  }
+]

@@ -1,0 +1,450 @@
+[
+  {
+    "name": "Easingwold Golf Club",
+    "lat": 54.1076968,
+    "lon": -1.1687464,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Oakdale Golf Club",
+    "lat": 53.9970481,
+    "lon": -1.5647689,
+    "source": "osm",
+    "osm_site": "https://www.oakdalegolfclub.co.uk/",
+    "official_site": "https://www.oakdalegolfclub.co.uk/"
+  },
+  {
+    "name": "Romanby Golf Club",
+    "lat": 54.3391495,
+    "lon": -1.4645944,
+    "source": "osm",
+    "osm_site": "https://www.romanby.com/",
+    "official_site": "https://www.romanby.com/"
+  },
+  {
+    "name": "Harrogate Golf Club",
+    "lat": 54.0027189,
+    "lon": -1.4843142,
+    "source": "osm",
+    "osm_site": "https://www.harrogate-gc.co.uk/",
+    "official_site": "https://www.harrogate-gc.co.uk/"
+  },
+  {
+    "name": "Kirkbymoorside Golf",
+    "lat": 54.282398,
+    "lon": -0.9449585,
+    "source": "osm",
+    "osm_site": "https://www.kirkbymoorsidegolf.co.uk/",
+    "official_site": "https://www.kirkbymoorsidegolf.co.uk/"
+  },
+  {
+    "name": "Scalm Park Leisure",
+    "lat": 53.784606,
+    "lon": -1.1542389,
+    "source": "osm",
+    "osm_site": "https://scalmparkleisure.co.uk/",
+    "official_site": "https://scalmparkleisure.co.uk/"
+  },
+  {
+    "name": "Pike Hills Golf Club",
+    "lat": 53.9243213,
+    "lon": -1.1370856,
+    "source": "osm",
+    "osm_site": "https://www.pikehillsgolfclub.co.uk/",
+    "official_site": "https://www.pikehillsgolfclub.co.uk/"
+  },
+  {
+    "name": "Brigham Park Golf Course",
+    "lat": 54.2214196,
+    "lon": -0.7682431,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Forest of Galtres Golf Club",
+    "lat": 54.0126429,
+    "lon": -1.1255809,
+    "source": "osm",
+    "osm_site": "https://www.forestofgaltres.co.uk/",
+    "official_site": "https://www.forestofgaltres.co.uk/"
+  },
+  {
+    "name": "Filey Golf Club",
+    "lat": 54.1947097,
+    "lon": -0.2900386,
+    "source": "osm",
+    "osm_site": "https://www.fileygolfclub.com/",
+    "official_site": "https://www.fileygolfclub.com/"
+  },
+  {
+    "name": "Catterick Golf Club",
+    "lat": 54.3691679,
+    "lon": -1.7330078,
+    "source": "osm",
+    "osm_site": "https://www.catterickgolfclub.co.uk/",
+    "official_site": "https://www.catterickgolfclub.co.uk/"
+  },
+  {
+    "name": "Forest Park Golf Club",
+    "lat": 53.9969208,
+    "lon": -1.0096551,
+    "source": "osm",
+    "osm_site": "https://www.forestparkgolfclub.co.uk/",
+    "official_site": "https://www.forestparkgolfclub.co.uk/"
+  },
+  {
+    "name": "Tadcaster Golf Course",
+    "lat": 53.8311576,
+    "lon": -1.2533942,
+    "source": "osm",
+    "osm_site": "https://www.tadcastergolf.co.uk",
+    "official_site": "https://www.tadcastergolf.co.uk"
+  },
+  {
+    "name": "Bracken Ghyll Golf Club",
+    "lat": 53.9518293,
+    "lon": -1.897992,
+    "source": "osm",
+    "osm_site": "https://www.brackenghyll.co.uk",
+    "official_site": "https://www.brackenghyll.co.uk"
+  },
+  {
+    "name": "Richmond (Yorks) Golf Club",
+    "lat": 54.4159299,
+    "lon": -1.7335121,
+    "source": "osm",
+    "osm_site": "https://www.richmondyorksgolfclub.co.uk/",
+    "official_site": "https://www.richmondyorksgolfclub.co.uk/"
+  },
+  {
+    "name": "Spofforth Golf Club",
+    "lat": 53.9546967,
+    "lon": -1.4616866,
+    "source": "osm",
+    "osm_site": "https://www.spofforthgolf.co.uk",
+    "official_site": "https://www.spofforthgolf.co.uk"
+  },
+  {
+    "name": "Stokesley Golf Range",
+    "lat": 54.4686967,
+    "lon": -1.172893,
+    "source": "osm",
+    "osm_site": "https://www.stokesleygolfrange.co.uk/",
+    "official_site": "https://www.stokesleygolfrange.co.uk/"
+  },
+  {
+    "name": "Reighton Sands Holiday Park Golf Course",
+    "lat": 54.1623369,
+    "lon": -0.2544091,
+    "source": "osm",
+    "osm_site": "https://www.haven.com/parks/yorkshire/reighton-sands",
+    "official_site": "https://www.haven.com/parks/yorkshire/reighton-sands"
+  },
+  {
+    "name": "Bedale Golf Course",
+    "lat": 54.2884886,
+    "lon": -1.6047176,
+    "source": "osm",
+    "osm_site": "https://bedalegolfclub.com/",
+    "official_site": "https://bedalegolfclub.com/"
+  },
+  {
+    "name": "Thirsk & Northallerton Golf Club",
+    "lat": 54.2575633,
+    "lon": -1.3616915,
+    "source": "osm",
+    "osm_site": "https://www.tngc.co.uk/",
+    "official_site": "https://www.tngc.co.uk/"
+  },
+  {
+    "name": "York Golf Range",
+    "lat": 54.0136066,
+    "lon": -1.0165385,
+    "source": "osm",
+    "osm_site": "https://www.yorkgolfrange.com/",
+    "official_site": "https://www.yorkgolfrange.com/"
+  },
+  {
+    "name": "Snainton Golf",
+    "lat": 54.2282162,
+    "lon": -0.6118397,
+    "source": "osm",
+    "osm_site": "https://www.golfscarborough.co.uk/",
+    "official_site": "https://www.golfscarborough.co.uk/"
+  },
+  {
+    "name": "Ganton Golf Club",
+    "lat": 54.1863909,
+    "lon": -0.4956182,
+    "source": "osm",
+    "osm_site": "https://www.gantongolfclub.com/",
+    "official_site": "https://www.gantongolfclub.com/"
+  },
+  {
+    "name": "Swallow Hall Golf Course",
+    "lat": 53.9066068,
+    "lon": -1.0035539,
+    "source": "osm",
+    "osm_site": "https://www.swallowhall.com/",
+    "official_site": "https://www.swallowhall.com/"
+  },
+  {
+    "name": "Drax Golf Club",
+    "lat": 53.7260879,
+    "lon": -1.002362,
+    "source": "osm",
+    "osm_site": "https://www.draxgolfclub.com/",
+    "official_site": "https://www.draxgolfclub.com/"
+  },
+  {
+    "name": "Sawdon Pines Golf Club",
+    "lat": 54.244339,
+    "lon": -0.5564024,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Sandburn Hall",
+    "lat": 54.0359436,
+    "lon": -0.9707267,
+    "source": "osm",
+    "osm_site": "https://www.sandburnhall.co.uk/golf/",
+    "official_site": "https://www.sandburnhall.co.uk/golf/"
+  },
+  {
+    "name": "Selby Golf Club",
+    "lat": 53.7622379,
+    "lon": -1.1233864,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Malton & Norton Golf Club",
+    "lat": 54.1196098,
+    "lon": -0.8063316,
+    "source": "osm",
+    "osm_site": "https://www.maltonandnortongolfclub.co.uk/",
+    "official_site": "https://www.maltonandnortongolfclub.co.uk/"
+  },
+  {
+    "name": "Peasholm Pitch and Putt",
+    "lat": 54.2903072,
+    "lon": -0.4138674,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ripon City Golf Club",
+    "lat": 54.1546254,
+    "lon": -1.5292615,
+    "source": "osm",
+    "osm_site": "https://www.riponcitygolfclub.com/",
+    "official_site": "https://www.riponcitygolfclub.com/"
+  },
+  {
+    "name": "Ghyll Golf Club",
+    "lat": 53.9263375,
+    "lon": -2.1614852,
+    "source": "osm",
+    "osm_site": "https://www.ghyllgolfclub.co.uk/",
+    "official_site": "https://www.ghyllgolfclub.co.uk/"
+  },
+  {
+    "name": "Masham Golf Course",
+    "lat": 54.2166436,
+    "lon": -1.6688786,
+    "source": "osm",
+    "osm_site": "https://mashamgolfclub.co.uk/",
+    "official_site": "https://mashamgolfclub.co.uk/"
+  },
+  {
+    "name": "Melodie Park",
+    "lat": 53.9898737,
+    "lon": -1.0893635,
+    "source": "osm",
+    "osm_site": "https://www.melodiepark.com",
+    "official_site": "https://www.melodiepark.com"
+  },
+  {
+    "name": "Mid Yorkshire Golf Club",
+    "lat": 53.6789451,
+    "lon": -1.2521036,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Akebar Park Golf Course",
+    "lat": 54.3069322,
+    "lon": -1.7039343,
+    "source": "osm",
+    "osm_site": "https://akebarpark.com/akebar-golf/",
+    "official_site": "https://akebarpark.com/akebar-golf/"
+  },
+  {
+    "name": "Conyngham Hall Leisure Park pitch and putt course",
+    "lat": 54.0108581,
+    "lon": -1.4761958,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Raven Hall Golf Course",
+    "lat": 54.403005,
+    "lon": -0.4950659,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "York Golf Club",
+    "lat": 54.0364973,
+    "lon": -1.0173771,
+    "source": "osm",
+    "osm_site": "https://www.yorkgolfclub.co.uk/",
+    "official_site": "https://www.yorkgolfclub.co.uk/"
+  },
+  {
+    "name": "Rosedale Abbey Golf",
+    "lat": 54.3498882,
+    "lon": -0.8901722,
+    "source": "osm",
+    "osm_site": "https://www.rosedaleabbeygolf.co.uk/",
+    "official_site": "https://www.rosedaleabbeygolf.co.uk/"
+  },
+  {
+    "name": "Wolds Way Golf Course",
+    "lat": 54.1748142,
+    "lon": -0.5136996,
+    "source": "osm",
+    "osm_site": "https://www.woldswaygolf.co.uk/",
+    "official_site": "https://www.woldswaygolf.co.uk/"
+  },
+  {
+    "name": "Heworth Golf Course York",
+    "lat": 53.9722688,
+    "lon": -1.0644009,
+    "source": "osm",
+    "osm_site": "https://www.heworthgolfclub.co.uk/",
+    "official_site": "https://www.heworthgolfclub.co.uk/"
+  },
+  {
+    "name": "Fulford Golf Club",
+    "lat": 53.9317738,
+    "lon": -1.0430518,
+    "source": "osm",
+    "osm_site": "https://www.fulfordgolfclub.co.uk/",
+    "official_site": "https://www.fulfordgolfclub.co.uk/"
+  },
+  {
+    "name": "Ilkley Golf Club",
+    "lat": 53.9344986,
+    "lon": -1.8486513,
+    "source": "osm",
+    "osm_site": "https://www.ilkleygolfclub.co.uk/",
+    "official_site": "https://www.ilkleygolfclub.co.uk/"
+  },
+  {
+    "name": "Scarborough South Cliff Golf Club",
+    "lat": 54.2592816,
+    "lon": -0.3904466,
+    "source": "osm",
+    "osm_site": "https://www.southcliffgolfclub.com/",
+    "official_site": "https://www.southcliffgolfclub.com/"
+  },
+  {
+    "name": "Rudding Park Golf Course",
+    "lat": 53.9723739,
+    "lon": -1.4884088,
+    "source": "osm",
+    "osm_site": "https://www.ruddingpark.co.uk/golf/",
+    "official_site": "https://www.ruddingpark.co.uk/golf/"
+  },
+  {
+    "name": "Hunmanby Hall Golf & Leisure",
+    "lat": 54.1765226,
+    "lon": -0.3216225,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Pannal Golf Club",
+    "lat": 53.9579357,
+    "lon": -1.5206637,
+    "source": "osm",
+    "osm_site": "https://www.pannalgc.co.uk/",
+    "official_site": "https://www.pannalgc.co.uk/"
+  },
+  {
+    "name": "North Cliff Golf Club",
+    "lat": 54.2981336,
+    "lon": -0.4231359,
+    "source": "osm",
+    "osm_site": "https://www.ncgc.co.uk/",
+    "official_site": "https://www.ncgc.co.uk/"
+  },
+  {
+    "name": "Whitby Golf Club",
+    "lat": 54.4910243,
+    "lon": -0.64491,
+    "source": "osm",
+    "osm_site": "https://www.whitbygolfclub.co.uk/",
+    "official_site": "https://www.whitbygolfclub.co.uk/"
+  },
+  {
+    "name": "Aldwark Manor Golf Club",
+    "lat": 54.0585525,
+    "lon": -1.2886158,
+    "source": "osm",
+    "osm_site": "https://www.aldwarkmanorgolfclub.co.uk/",
+    "official_site": "https://www.aldwarkmanorgolfclub.co.uk/"
+  },
+  {
+    "name": "Settle Golf Course",
+    "lat": 54.0800718,
+    "lon": -2.2990142,
+    "source": "osm",
+    "osm_site": "https://www.settlegolfclub.com/",
+    "official_site": "https://www.settlegolfclub.com/"
+  },
+  {
+    "name": "Bentham Golf Club",
+    "lat": 54.1275957,
+    "lon": -2.4998425,
+    "source": "osm",
+    "osm_site": "https://www.benthamgolfclub.co.uk/contact-us/",
+    "official_site": "https://www.benthamgolfclub.co.uk/contact-us/"
+  },
+  {
+    "name": "Skipton Golf Club",
+    "lat": 53.9747448,
+    "lon": -2.0181558,
+    "source": "osm",
+    "osm_site": "https://www.skiptongolfclub.co.uk/",
+    "official_site": "https://www.skiptongolfclub.co.uk/"
+  },
+  {
+    "name": "Gilling Castle Golf Club",
+    "lat": 54.1816701,
+    "lon": -1.0689589,
+    "source": "osm",
+    "osm_site": "https://www.ampleforthgolf.co.uk/",
+    "official_site": "https://www.ampleforthgolf.co.uk/"
+  },
+  {
+    "name": "Knaresborough Golf Club",
+    "lat": 54.0279458,
+    "lon": -1.4463338,
+    "source": "osm",
+    "osm_site": "https://www.knaresboroughgolfclub.co.uk/",
+    "official_site": "https://www.knaresboroughgolfclub.co.uk/"
+  }
+]

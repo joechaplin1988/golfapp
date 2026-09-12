@@ -1,0 +1,218 @@
+[
+  {
+    "name": "High Gosforth Park Golf Club",
+    "lat": 55.0364772,
+    "lon": -1.6041017,
+    "source": "osm",
+    "osm_site": "https://www.newcastle-racecourse.co.uk/golf/welcome",
+    "official_site": "https://www.newcastle-racecourse.co.uk/golf/welcome"
+  },
+  {
+    "name": "Heworth Golf Club",
+    "lat": 54.9410917,
+    "lon": -1.5256587,
+    "source": "osm",
+    "osm_site": "https://www.theheworthgolfclub.co.uk/",
+    "official_site": "https://www.theheworthgolfclub.co.uk/"
+  },
+  {
+    "name": "Tynemouth Golf Club",
+    "lat": 55.0206998,
+    "lon": -1.4418667,
+    "source": "osm",
+    "osm_site": "https://www.tynemouthgolfclub.co.uk",
+    "official_site": "https://www.tynemouthgolfclub.co.uk"
+  },
+  {
+    "name": "Wallsend Golf Course Centurion Park",
+    "lat": 54.9950793,
+    "lon": -1.5525254,
+    "source": "osm",
+    "osm_site": "https://centurionpark.com/",
+    "official_site": "https://centurionpark.com/"
+  },
+  {
+    "name": "Tyneside Golf Club",
+    "lat": 54.9780625,
+    "lon": -1.777402,
+    "source": "osm",
+    "osm_site": "https://www.tynesidegolfclub.co.uk",
+    "official_site": "https://www.tynesidegolfclub.co.uk"
+  },
+  {
+    "name": "Ryton Golf Club",
+    "lat": 54.9813547,
+    "lon": -1.7880441,
+    "source": "osm",
+    "osm_site": "https://www.rytongolfclub.co.uk/",
+    "official_site": "https://www.rytongolfclub.co.uk/"
+  },
+  {
+    "name": "George Washington Hotel Golf and Spa",
+    "lat": 54.9276359,
+    "lon": -1.530346,
+    "source": "osm",
+    "osm_site": "https://www.georgewashington.co.uk/contact/",
+    "official_site": "https://www.georgewashington.co.uk/contact/"
+  },
+  {
+    "name": "Boldon Golf Club",
+    "lat": 54.937989,
+    "lon": -1.446477,
+    "source": "osm",
+    "osm_site": "https://boldongolfclub.co.uk/",
+    "official_site": "https://boldongolfclub.co.uk/"
+  },
+  {
+    "name": "Wearside Golf Club",
+    "lat": 54.8955613,
+    "lon": -1.4754537,
+    "source": "osm",
+    "osm_site": "https://www.wearsidegolfclub.co.uk/",
+    "official_site": "https://www.wearsidegolfclub.co.uk/"
+  },
+  {
+    "name": "Whitburn Golf Club",
+    "lat": 54.9716279,
+    "lon": -1.3795002,
+    "source": "osm",
+    "osm_site": "https://whitburngolfclub.co.uk/",
+    "official_site": "https://whitburngolfclub.co.uk/"
+  },
+  {
+    "name": "Whitley Bay Golf Club",
+    "lat": 55.0596319,
+    "lon": -1.4700043,
+    "source": "osm",
+    "osm_site": "https://www.whitleybaygolfclub.co.uk/",
+    "official_site": "https://www.whitleybaygolfclub.co.uk/"
+  },
+  {
+    "name": "Westerhope Golf Club",
+    "lat": 55.0067826,
+    "lon": -1.702018,
+    "source": "osm",
+    "osm_site": "https://www.westerhopegolfclub.com/",
+    "official_site": "https://www.westerhopegolfclub.com/"
+  },
+  {
+    "name": "City of Newcastle Golf Club",
+    "lat": 55.0209602,
+    "lon": -1.6316903,
+    "source": "osm",
+    "osm_site": "https://www.cityofnewcastlegolfclub.com/",
+    "official_site": "https://www.cityofnewcastlegolfclub.com/"
+  },
+  {
+    "name": "Whitley Bay Links Mini Golf 18 Hole Course",
+    "lat": 55.0636643,
+    "lon": -1.4568732,
+    "source": "osm",
+    "osm_site": "https://my.northtyneside.gov.uk/category/217/grass-pitches-and-mini-golf",
+    "official_site": "https://my.northtyneside.gov.uk/category/217/grass-pitches-and-mini-golf"
+  },
+  {
+    "name": "Whickham Golf Club",
+    "lat": 54.9262077,
+    "lon": -1.7033919,
+    "source": "osm",
+    "osm_site": "https://www.whickhamgolfclub.co.uk/Intro.aspx",
+    "official_site": "https://www.whickhamgolfclub.co.uk/Intro.aspx"
+  },
+  {
+    "name": "Sharpley Golf Course",
+    "lat": 54.847634,
+    "lon": -1.4013715,
+    "source": "osm",
+    "osm_site": "https://sharpleygolf.blogspot.co.at",
+    "official_site": "https://sharpleygolf.blogspot.co.at"
+  },
+  {
+    "name": "South Shields Golf Club",
+    "lat": 54.9667388,
+    "lon": -1.3887003,
+    "source": "osm",
+    "osm_site": "https://www.ssgc.co.uk/",
+    "official_site": "https://www.ssgc.co.uk/"
+  },
+  {
+    "name": "Backworth Golf Club",
+    "lat": 55.0397071,
+    "lon": -1.5307131,
+    "source": "osm",
+    "osm_site": "https://backworthgolf.com/",
+    "official_site": "https://backworthgolf.com/"
+  },
+  {
+    "name": "Whitley Bay Links Mini Golf 9 Hole Course",
+    "lat": 55.0610901,
+    "lon": -1.45571,
+    "source": "osm",
+    "osm_site": "https://my.northtyneside.gov.uk/category/217/grass-pitches-and-mini-golf",
+    "official_site": "https://my.northtyneside.gov.uk/category/217/grass-pitches-and-mini-golf"
+  },
+  {
+    "name": "Birtley Golf Club",
+    "lat": 54.8886715,
+    "lon": -1.5713788,
+    "source": "osm",
+    "osm_site": "https://www.birtleyportobellogolfclub.co.uk/",
+    "official_site": "https://www.birtleyportobellogolfclub.co.uk/"
+  },
+  {
+    "name": "Beamish Park Golf Club",
+    "lat": 54.9012187,
+    "lon": -1.6755156,
+    "source": "osm",
+    "osm_site": "https://www.beamish-park-hotel.co.uk/golf/",
+    "official_site": "https://www.beamish-park-hotel.co.uk/golf/"
+  },
+  {
+    "name": "Houghton-le-Spring Golf Club",
+    "lat": 54.8376708,
+    "lon": -1.442717,
+    "source": "osm",
+    "osm_site": "https://www.houghtongolfclub.co.uk/",
+    "official_site": "https://www.houghtongolfclub.co.uk/"
+  },
+  {
+    "name": "Garesfield Golf Course",
+    "lat": 54.9302143,
+    "lon": -1.7964121,
+    "source": "osm",
+    "osm_site": "https://www.garesfieldgolfclub.co.uk/",
+    "official_site": "https://www.garesfieldgolfclub.co.uk/"
+  },
+  {
+    "name": "Gosforth Golf Club",
+    "lat": 55.0148183,
+    "lon": -1.6075767,
+    "source": "osm",
+    "osm_site": "https://www.gosforthgolfclub.co.uk/",
+    "official_site": "https://www.gosforthgolfclub.co.uk/"
+  },
+  {
+    "name": "Northumberland Golf Club",
+    "lat": 55.0310124,
+    "lon": -1.6107417,
+    "source": "osm",
+    "osm_site": "https://www.thengc.co.uk/",
+    "official_site": "https://www.thengc.co.uk/"
+  },
+  {
+    "name": "Newcastle United Golf Club",
+    "lat": 54.9927557,
+    "lon": -1.6445869,
+    "source": "osm",
+    "osm_site": "https://www.newcastleunitedgolfclub.co.uk/",
+    "official_site": "https://www.newcastleunitedgolfclub.co.uk/"
+  },
+  {
+    "name": "Ravensworth Golf Club",
+    "lat": 54.9222534,
+    "lon": -1.5825414,
+    "source": "osm",
+    "osm_site": "https://www.ravensworthgolfclub.co.uk/",
+    "official_site": "https://www.ravensworthgolfclub.co.uk/"
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "name": "Carden Park Golf Club",
+    "lat": 53.0748606,
+    "lon": -2.8031208,
+    "source": "osm",
+    "osm_site": "https://www.cardenpark.co.uk/golf/",
+    "official_site": "https://www.cardenpark.co.uk/golf/"
+  },
+  {
+    "name": "Vicars Cross Golf Club",
+    "lat": 53.2008234,
+    "lon": -2.8222577,
+    "source": "osm",
+    "osm_site": "https://www.vicarscrossgolf.co.uk/",
+    "official_site": "https://www.vicarscrossgolf.co.uk/"
+  },
+  {
+    "name": "Hartford Golf Club",
+    "lat": 53.2538806,
+    "lon": -2.5495126,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Chester Golf Club",
+    "lat": 53.1870791,
+    "lon": -2.9109608,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Styal Golf Club",
+    "lat": 53.3527365,
+    "lon": -2.2331219,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Sutton Hall Golf Club",
+    "lat": 53.3045121,
+    "lon": -2.6866581,
+    "source": "osm",
+    "osm_site": "https://www.suttonhallgolf.co.uk/",
+    "official_site": "https://www.suttonhallgolf.co.uk/"
+  },
+  {
+    "name": "Vale Royal Golf Club",
+    "lat": 53.2246887,
+    "lon": -2.5496435,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Birchwood Golf Club",
+    "lat": 53.4236444,
+    "lon": -2.5396327,
+    "source": "osm",
+    "osm_site": "https://www.birchwoodgolfclub.co.uk/",
+    "official_site": "https://www.birchwoodgolfclub.co.uk/"
+  },
+  {
+    "name": "Poulton Golf Club",
+    "lat": 53.4218958,
+    "lon": -2.5578466,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Eaton Golf Club (Waverton)",
+    "lat": 53.1694076,
+    "lon": -2.7978672,
+    "source": "osm",
+    "osm_site": "https://www.eatongolfclub.co.uk/",
+    "official_site": "https://www.eatongolfclub.co.uk/"
+  },
+  {
+    "name": "Warrington Golf Club",
+    "lat": 53.3536139,
+    "lon": -2.5820224,
+    "source": "osm",
+    "osm_site": "https://www.warringtongolfclub.co.uk",
+    "official_site": "https://www.warringtongolfclub.co.uk"
+  },
+  {
+    "name": "Sandiway Golf Club",
+    "lat": 53.2309283,
+    "lon": -2.5745528,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Portal Golf and Country Club",
+    "lat": 53.1707342,
+    "lon": -2.6530431,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Widnes Golf Course",
+    "lat": 53.3737115,
+    "lon": -2.7445702,
+    "source": "osm",
+    "osm_site": "https://www.widnesgolfclub.co.uk/",
+    "official_site": "https://www.widnesgolfclub.co.uk/"
+  },
+  {
+    "name": "Queens Park Golf Club",
+    "lat": 53.0945784,
+    "lon": -2.474109,
+    "source": "osm",
+    "osm_site": "https://www.qpgc.net/",
+    "official_site": "https://www.qpgc.net/"
+  },
+  {
+    "name": "Heswall Golf Course",
+    "lat": 53.3104772,
+    "lon": -3.0945004,
+    "source": "osm",
+    "osm_site": "https://www.heswallgolfclub.com/",
+    "official_site": "https://www.heswallgolfclub.com/"
+  },
+  {
+    "name": "Runcorn Golf Course",
+    "lat": 53.3218572,
+    "lon": -2.7278706,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Heyrose Golf Club",
+    "lat": 53.3114704,
+    "lon": -2.4439692,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Tytherington Golf Club",
+    "lat": 53.2822321,
+    "lon": -2.1360545,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Alder Root Golf Course",
+    "lat": 53.4364032,
+    "lon": -2.6180108,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "True Fit Golf Centre",
+    "lat": 53.3761339,
+    "lon": -2.6742333,
+    "source": "osm",
+    "osm_site": "https://www.truefitgolfcentre.com/",
+    "official_site": "https://www.truefitgolfcentre.com/"
+  },
+  {
+    "name": "Macclesfield Golf Club",
+    "lat": 53.2475242,
+    "lon": -2.1097895,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Westminster Park Municipal Golf Course",
+    "lat": 53.175244,
+    "lon": -2.9070386,
+    "source": "osm",
+    "osm_site": "https://www.brioleisure.org/golf/westminster-park",
+    "official_site": "https://www.brioleisure.org/golf/westminster-park"
+  },
+  {
+    "name": "TFG Golf Course (Penketh)",
+    "lat": 53.3749188,
+    "lon": -2.6707503,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Alderley Edge Golf Club",
+    "lat": 53.3102549,
+    "lon": -2.2470996,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Wilmslow Golf Club",
+    "lat": 53.2977685,
+    "lon": -2.2745491,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Aldersey Green Golf Club",
+    "lat": 53.1026067,
+    "lon": -2.7999932,
+    "source": "osm",
+    "osm_site": "https://www.alderseygreengolfclub.co.uk/",
+    "official_site": "https://www.alderseygreengolfclub.co.uk/"
+  },
+  {
+    "name": "Woodside Golf Club",
+    "lat": 53.2227722,
+    "lon": -2.3852746,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Marton Meadows Golf Course",
+    "lat": 53.2094867,
+    "lon": -2.2214018,
+    "source": "osm",
+    "osm_site": "https://www.martonmeadowsgolf.co.uk/",
+    "official_site": "https://www.martonmeadowsgolf.co.uk/"
+  },
+  {
+    "name": "Disley Golf Course",
+    "lat": 53.3660254,
+    "lon": -2.0488298,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Adlington Golf Centre",
+    "lat": 53.3325525,
+    "lon": -2.1408925,
+    "source": "osm",
+    "osm_site": "https://adlingtongolfcentre.co.uk/",
+    "official_site": "https://adlingtongolfcentre.co.uk/"
+  },
+  {
+    "name": "Avro Golf Club",
+    "lat": 53.3302918,
+    "lon": -2.1615521,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Pott Shrigley Golf Club",
+    "lat": 53.3159543,
+    "lon": -2.089267,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Sandbach Golf Club",
+    "lat": 53.14841,
+    "lon": -2.3779242,
+    "source": "osm",
+    "osm_site": "https://sandbachgolfclub.co.uk/",
+    "official_site": "https://sandbachgolfclub.co.uk/"
+  },
+  {
+    "name": "Malkins Bank Golf Course",
+    "lat": 53.1250673,
+    "lon": -2.352018,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Alsager Golf and Country Club",
+    "lat": 53.0856074,
+    "lon": -2.2893084,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ellesmere Port Golf Club",
+    "lat": 53.2927883,
+    "lon": -2.9402552,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Wychwood Park Golf Club",
+    "lat": 53.050642,
+    "lon": -2.398199,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Crewe Golf Club",
+    "lat": 53.0905628,
+    "lon": -2.3816239,
+    "source": "osm",
+    "osm_site": "https://www.crewegolfclub.co.uk/",
+    "official_site": "https://www.crewegolfclub.co.uk/"
+  },
+  {
+    "name": "Lymm Golf Club",
+    "lat": 53.3891748,
+    "lon": -2.4872004,
+    "source": "osm",
+    "osm_site": "https://www.lymm-golf-club.co.uk/",
+    "official_site": "https://www.lymm-golf-club.co.uk/"
+  },
+  {
+    "name": "Antrobus Golf Course",
+    "lat": 53.3257892,
+    "lon": -2.5458307,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Mere Golf and Country Club",
+    "lat": 53.3333794,
+    "lon": -2.4043815,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "High Legh Park Golf Course",
+    "lat": 53.3519603,
+    "lon": -2.4407803,
+    "source": "osm",
+    "osm_site": "https://www.theclubcompany.com/high-legh-park",
+    "official_site": "https://www.theclubcompany.com/high-legh-park"
+  },
+  {
+    "name": "Croft Golf Centre",
+    "lat": 53.4328298,
+    "lon": -2.5377187,
+    "source": "osm",
+    "osm_site": "https://www.croftgolfcentre.co.uk/",
+    "official_site": "https://www.croftgolfcentre.co.uk/"
+  },
+  {
+    "name": "Prestbury Golf Club",
+    "lat": 53.2830675,
+    "lon": -2.1585303,
+    "source": "osm",
+    "osm_site": "https://www.prestburygolfclub.com/",
+    "official_site": "https://www.prestburygolfclub.com/"
+  },
+  {
+    "name": "Mottram Hall Golf Club",
+    "lat": 53.3108273,
+    "lon": -2.1746745,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Congleton Golf Club",
+    "lat": 53.1510705,
+    "lon": -2.1795491,
+    "source": "osm",
+    "osm_site": "https://www.congletongolfclub.co.uk/",
+    "official_site": "https://www.congletongolfclub.co.uk/"
+  },
+  {
+    "name": "Hale Golf Course",
+    "lat": 53.3609577,
+    "lon": -2.326314,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Pryors Hayes Golf Club",
+    "lat": 53.1912763,
+    "lon": -2.7262631,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Delamere Forest Golf Club",
+    "lat": 53.2289759,
+    "lon": -2.6507381,
+    "source": "osm",
+    "osm_site": "https://www.delameregolf.co.uk/",
+    "official_site": "https://www.delameregolf.co.uk/"
+  },
+  {
+    "name": "Walton Hall Golf Club",
+    "lat": 53.3570035,
+    "lon": -2.6004426,
+    "source": "osm",
+    "osm_site": "https://www.waltonhallgolfcourse.co.uk",
+    "official_site": "https://www.waltonhallgolfcourse.co.uk"
+  },
+  {
+    "name": "Leigh Golf Club",
+    "lat": 53.4591804,
+    "lon": -2.5364166,
+    "source": "osm",
+    "osm_site": "https://www.leighgolf.co.uk/",
+    "official_site": "https://www.leighgolf.co.uk/"
+  },
+  {
+    "name": "Helsby Golf Club",
+    "lat": 53.2570809,
+    "lon": -2.7730431,
+    "source": "osm",
+    "osm_site": "https://www.helsbygolfclub.org/",
+    "official_site": "https://www.helsbygolfclub.org/"
+  },
+  {
+    "name": "Upton-by-Chester Golf Club",
+    "lat": 53.2138323,
+    "lon": -2.8896289,
+    "source": "osm",
+    "osm_site": "https://www.uptongolf.co.uk/",
+    "official_site": "https://www.uptongolf.co.uk/"
+  },
+  {
+    "name": "Astbury Golf Course",
+    "lat": 53.1516305,
+    "lon": -2.2088364,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Emerald Championship Course",
+    "lat": 52.9816268,
+    "lon": -2.6846328,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Knutsford Golf Club",
+    "lat": 53.3138697,
+    "lon": -2.3772334,
+    "source": "osm",
+    "osm_site": "https://www.knutsfordgolf.com/",
+    "official_site": "https://www.knutsfordgolf.com/"
+  },
+  {
+    "name": "Davenport Golf Club",
+    "lat": 53.3511961,
+    "lon": -2.0952079,
+    "source": "osm",
+    "osm_site": "https://www.davenportgolf.co.uk/",
+    "official_site": "https://www.davenportgolf.co.uk/"
+  },
+  {
+    "name": "Cheshire Golf Course",
+    "lat": 53.074014,
+    "lon": -2.805326,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Nicklaus Golf Course",
+    "lat": 53.0712699,
+    "lon": -2.8142518,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  }
+]

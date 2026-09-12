@@ -1,0 +1,186 @@
+[
+  {
+    "name": "Springhead Golf Course",
+    "lat": 53.7571448,
+    "lon": -0.4229835,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hull Golf Club",
+    "lat": 53.7538328,
+    "lon": -0.4634045,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Brough Golf Club",
+    "lat": 53.7365726,
+    "lon": -0.5775126,
+    "source": "osm",
+    "osm_site": "https://www.brough-golfclub.co.uk/",
+    "official_site": "https://www.brough-golfclub.co.uk/"
+  },
+  {
+    "name": "Sutton Park Golf Course",
+    "lat": 53.7819826,
+    "lon": -0.2816777,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cottingham Parks Golf and Leisure Club",
+    "lat": 53.794674,
+    "lon": -0.4370681,
+    "source": "osm",
+    "osm_site": "https://www.cottinghamparks.co.uk/",
+    "official_site": "https://www.cottinghamparks.co.uk/"
+  },
+  {
+    "name": "Hainsworth Park Golf Club",
+    "lat": 53.9090808,
+    "lon": -0.3112039,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bridlington Golf Club",
+    "lat": 54.0709643,
+    "lon": -0.2123647,
+    "source": "osm",
+    "osm_site": "https://www.bridlingtongolfclub.co.uk/",
+    "official_site": "https://www.bridlingtongolfclub.co.uk/"
+  },
+  {
+    "name": "Far Grange Park & Golf Club",
+    "lat": 53.9653323,
+    "lon": -0.1986562,
+    "source": "osm",
+    "osm_site": "https://www.fargrangepark.com/golf-fishing-spa/golf.aspx",
+    "official_site": "https://www.fargrangepark.com/golf-fishing-spa/golf.aspx"
+  },
+  {
+    "name": "Withernsea Golf Club",
+    "lat": 53.7207964,
+    "lon": 0.0293887,
+    "source": "osm",
+    "osm_site": "https://www.withernseagolfclub.co.uk/",
+    "official_site": "https://www.withernseagolfclub.co.uk/"
+  },
+  {
+    "name": "Flamborough Head Golf Club",
+    "lat": 54.1211371,
+    "lon": -0.0885587,
+    "source": "osm",
+    "osm_site": "https://www.flamboroughheadgolfclub.co.uk/",
+    "official_site": "https://www.flamboroughheadgolfclub.co.uk/"
+  },
+  {
+    "name": "Burstwick Country Club",
+    "lat": 53.7437714,
+    "lon": -0.1382038,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cherry Burton Golf Course",
+    "lat": 53.8680646,
+    "lon": -0.4835416,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "KP Club",
+    "lat": 53.9385665,
+    "lon": -0.7575374,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Boothferry Golf Club",
+    "lat": 53.7825296,
+    "lon": -0.8590039,
+    "source": "osm",
+    "osm_site": "https://boothferrygolfclub.co.uk/",
+    "official_site": "https://boothferrygolfclub.co.uk/"
+  },
+  {
+    "name": "Bridlington Links Golf & Leisure Estate",
+    "lat": 54.1068035,
+    "lon": -0.151545,
+    "source": "osm",
+    "osm_site": "https://www.pureleisuregroup.com/parks/bridlington-links",
+    "official_site": "https://www.pureleisuregroup.com/parks/bridlington-links"
+  },
+  {
+    "name": "Sewerby Park & Pitch and Putt",
+    "lat": 54.1057571,
+    "lon": -0.1629007,
+    "source": "osm",
+    "osm_site": "https://www.sewerbyhall.co.uk/",
+    "official_site": "https://www.sewerbyhall.co.uk/"
+  },
+  {
+    "name": "Cave Castle Golf Club",
+    "lat": 53.7713403,
+    "lon": -0.6124072,
+    "source": "osm",
+    "osm_site": "https://www.cavecastlegolfclub.co.uk/",
+    "official_site": "https://www.cavecastlegolfclub.co.uk/"
+  },
+  {
+    "name": "The Oaks Golf Club",
+    "lat": 53.8322933,
+    "lon": -0.9042912,
+    "source": "osm",
+    "osm_site": "https://www.theoaksgolfclub.co.uk/",
+    "official_site": "https://www.theoaksgolfclub.co.uk/"
+  },
+  {
+    "name": "Hessle Golf Club",
+    "lat": 53.7720074,
+    "lon": -0.4854456,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Country Golf",
+    "lat": 53.7886227,
+    "lon": -0.2851001,
+    "source": "osm",
+    "osm_site": "https://www.countrygolfhull.co.uk",
+    "official_site": "https://www.countrygolfhull.co.uk"
+  },
+  {
+    "name": "Ganstead Park Golf & Events",
+    "lat": 53.7926064,
+    "lon": -0.2498646,
+    "source": "osm",
+    "osm_site": "https://www.gansteadpark.co.uk/",
+    "official_site": "https://www.gansteadpark.co.uk/"
+  },
+  {
+    "name": "Driffield Golf Course",
+    "lat": 53.9886564,
+    "lon": -0.4541151,
+    "source": "osm",
+    "osm_site": "https://www.driffieldgolfclub.co.uk/",
+    "official_site": "https://www.driffieldgolfclub.co.uk/"
+  },
+  {
+    "name": "Hornsea Golf Club",
+    "lat": 53.8879929,
+    "lon": -0.1698659,
+    "source": "osm",
+    "osm_site": "https://www.hornseagolfclub.co.uk/",
+    "official_site": "https://www.hornseagolfclub.co.uk/"
+  }
+]

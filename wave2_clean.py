@@ -48,15 +48,22 @@ def haversine(a, b, c, d):
 
 
 # --- load ---------------------------------------------------------------
-rows, seen = [], set()
+rows, bykey = [], {}
 for src in INPUTS:
     for r in csv.DictReader(open(src, encoding="utf-8")):
         if r["verified"].lower() != "true":
             continue
         k = (r["platform"], r["base_url"].rstrip("/"), r["course_id"])
-        if k in seen:
+        # The same club reaches us under two names when two counties' sources
+        # both list it — St Helens' Grange Park came through Merseyside's OSM
+        # as "Grange Park Golf Club" and Lancashire's union as "Grange Park
+        # Golf Club (Lancashire) Golf Club". Same sheet, so keep one, and keep
+        # the tidier name rather than whichever county was read first.
+        if k in bykey:
+            if len(r["club_name"]) < len(bykey[k]["club_name"]):
+                bykey[k]["club_name"] = r["club_name"]
             continue
-        seen.add(k)
+        bykey[k] = r
         rows.append(r)
 print(f"{len(rows)} unique verified rows")
 
@@ -74,8 +81,14 @@ for r in keep:
 keep = keep2
 
 # --- club coordinates from the enumeration ------------------------------
+# Only this wave's counties. Matching on name across every county file we
+# have ever written put a Lincolnshire club's coordinates on a St Helens club
+# of the same name — the kind of mistake that geocodes cleanly and puts a club
+# 180 km from where it is.
+import os
+COORDS_GLOB = os.environ.get("COORDS_GLOB", "candidates_*.json")
 coords = {}
-for p in Path(".").glob("candidates_*.json"):
+for p in Path(".").glob(COORDS_GLOB):
     try:
         for c in json.loads(p.read_text(encoding="utf-8")):
             if c.get("lat") and c.get("lon"):

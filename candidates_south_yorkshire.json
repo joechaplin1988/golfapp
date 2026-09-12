@@ -1,0 +1,314 @@
+[
+  {
+    "name": "Barnsley Golf Club",
+    "lat": 53.5966302,
+    "lon": -1.4923903,
+    "source": "osm",
+    "osm_site": "https://www.barnsleygolfclub.co.uk/",
+    "official_site": "https://www.barnsleygolfclub.co.uk/"
+  },
+  {
+    "name": "Town Moor Golf Course",
+    "lat": 53.5203801,
+    "lon": -1.0962298,
+    "source": "osm",
+    "osm_site": "https://dtmgc.co.uk/",
+    "official_site": "https://dtmgc.co.uk/"
+  },
+  {
+    "name": "Lees Hall Golf Club",
+    "lat": 53.3447618,
+    "lon": -1.4564082,
+    "source": "osm",
+    "osm_site": "https://www.leeshallgolfclub.co.uk/",
+    "official_site": "https://www.leeshallgolfclub.co.uk/"
+  },
+  {
+    "name": "Birley Wood Golf Club",
+    "lat": 53.3384857,
+    "lon": -1.3986682,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Dore and Totley Golf Club",
+    "lat": 53.3143806,
+    "lon": -1.4938601,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Phoenix Sports and Social Club",
+    "lat": 53.4127564,
+    "lon": -1.3756696,
+    "source": "osm",
+    "osm_site": "https://www.phoenixgolfclub.co.uk/",
+    "official_site": "https://www.phoenixgolfclub.co.uk/"
+  },
+  {
+    "name": "Concord Park Golf Club",
+    "lat": 53.4274778,
+    "lon": -1.4321684,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Rotherham Golf Club",
+    "lat": 53.4608716,
+    "lon": -1.2959694,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Sitwell Park Golf Course",
+    "lat": 53.4118059,
+    "lon": -1.3032655,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Owston Hall Golf Course",
+    "lat": 53.5929371,
+    "lon": -1.1788136,
+    "source": "osm",
+    "osm_site": "https://owstonhall.com/home/golf/",
+    "official_site": "https://owstonhall.com/home/golf/"
+  },
+  {
+    "name": "Tankersley Park Golf Course",
+    "lat": 53.4835525,
+    "lon": -1.4745116,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hickleton Golf Club",
+    "lat": 53.5465612,
+    "lon": -1.2783217,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Sandhill Golf Course",
+    "lat": 53.5459469,
+    "lon": -1.3538581,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Grange Park Golf Course",
+    "lat": 53.4423764,
+    "lon": -1.4227913,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Kingswood Golf Centre",
+    "lat": 53.5977498,
+    "lon": -0.9808012,
+    "source": "osm",
+    "osm_site": "https://www.kingswoodgolfcentre.co.uk/",
+    "official_site": "https://www.kingswoodgolfcentre.co.uk/"
+  },
+  {
+    "name": "Thorne Golf Club",
+    "lat": 53.6062153,
+    "lon": -0.9753023,
+    "source": "osm",
+    "osm_site": "https://www.thornegolf.co.uk/",
+    "official_site": "https://www.thornegolf.co.uk/"
+  },
+  {
+    "name": "Beauchief Golf Club",
+    "lat": 53.3324652,
+    "lon": -1.5014748,
+    "source": "osm",
+    "osm_site": "https://www.sheffieldgolf.co.uk/beauchief/",
+    "official_site": "https://www.sheffieldgolf.co.uk/beauchief/"
+  },
+  {
+    "name": "18 hole Blue Monster Course",
+    "lat": 53.3375505,
+    "lon": -1.3075722,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hallamshire Golf Club",
+    "lat": 53.3751634,
+    "lon": -1.5520833,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hillies Golf Club",
+    "lat": 53.514241,
+    "lon": -1.4015118,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Stocksbridge Golf Club",
+    "lat": 53.4687034,
+    "lon": -1.577609,
+    "source": "osm",
+    "osm_site": "https://www.stocksbridgegolfclub.co.uk/",
+    "official_site": "https://www.stocksbridgegolfclub.co.uk/"
+  },
+  {
+    "name": "Waterfront Golf",
+    "lat": 53.5126676,
+    "lon": -1.3428421,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Roundwood Golf Club",
+    "lat": 53.455733,
+    "lon": -1.3320307,
+    "source": "osm",
+    "osm_site": "https://www.roundwoodgolfclub.co.uk/",
+    "official_site": "https://www.roundwoodgolfclub.co.uk/"
+  },
+  {
+    "name": "Wheatley Golf Course",
+    "lat": 53.5389292,
+    "lon": -1.0824448,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Wortley Golf Course",
+    "lat": 53.4978021,
+    "lon": -1.5238862,
+    "source": "osm",
+    "osm_site": "https://www.wortleygolfclub.co.uk/",
+    "official_site": "https://www.wortleygolfclub.co.uk/"
+  },
+  {
+    "name": "Silkstone Golf Course",
+    "lat": 53.5513298,
+    "lon": -1.5426431,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Wath Golf Club",
+    "lat": 53.4846049,
+    "lon": -1.3505152,
+    "source": "osm",
+    "osm_site": "https://www.wathgolfclub.co.uk/",
+    "official_site": "https://www.wathgolfclub.co.uk/"
+  },
+  {
+    "name": "High Melton Golf Course",
+    "lat": 53.5079035,
+    "lon": -1.2352201,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lindrick Golf Club",
+    "lat": 53.3371729,
+    "lon": -1.1776349,
+    "source": "osm",
+    "osm_site": "https://www.lindrickgolfclub.co.uk/",
+    "official_site": "https://www.lindrickgolfclub.co.uk/"
+  },
+  {
+    "name": "Crookhill Park Golf Course",
+    "lat": 53.4701489,
+    "lon": -1.2119802,
+    "source": "osm",
+    "osm_site": "https://www.crookhillgolfcourse.co.uk/",
+    "official_site": "https://www.crookhillgolfcourse.co.uk/"
+  },
+  {
+    "name": "Thornhurst Manor Golf Course",
+    "lat": 53.585736,
+    "lon": -1.1448,
+    "source": "osm",
+    "osm_site": "https://www.thornhurstmanor.co.uk/golf-club.html",
+    "official_site": "https://www.thornhurstmanor.co.uk/golf-club.html"
+  },
+  {
+    "name": "Bawtry Golf & Country Club",
+    "lat": 53.4578216,
+    "lon": -0.992817,
+    "source": "osm",
+    "osm_site": "https://www.bawtrygolfclub.co.uk/",
+    "official_site": "https://www.bawtrygolfclub.co.uk/"
+  },
+  {
+    "name": "Doncaster Golf Club",
+    "lat": 53.4898743,
+    "lon": -1.064813,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Abbeydale Golf Club",
+    "lat": 53.325568,
+    "lon": -1.5041291,
+    "source": "osm",
+    "osm_site": "https://www.abbeydalegolfclub.co.uk/",
+    "official_site": "https://www.abbeydalegolfclub.co.uk/"
+  },
+  {
+    "name": "Tinsley Park Golf Course and Wood",
+    "lat": 53.3887511,
+    "lon": -1.3917639,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Owston Park Golf Course",
+    "lat": 53.5920984,
+    "lon": -1.166726,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hillsborough Golf Club",
+    "lat": 53.4171898,
+    "lon": -1.5368171,
+    "source": "osm",
+    "osm_site": "https://www.hillsboroughgolfclub.co.uk/",
+    "official_site": "https://www.hillsboroughgolfclub.co.uk/"
+  },
+  {
+    "name": "Rother Valley Golf Centre",
+    "lat": 53.3375505,
+    "lon": -1.3058096,
+    "source": "osm",
+    "osm_site": "https://www.rothervalleygolfcentre.co.uk/",
+    "official_site": "https://www.rothervalleygolfcentre.co.uk/"
+  },
+  {
+    "name": "Styrrup Hall Golf & Country Club",
+    "lat": 53.4151284,
+    "lon": -1.0915498,
+    "source": "osm",
+    "osm_site": "https://www.styrrupgolf.co.uk/",
+    "official_site": "https://www.styrrupgolf.co.uk/"
+  }
+]

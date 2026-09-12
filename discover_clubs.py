@@ -169,10 +169,41 @@ COUNTY_BOUNDS = {
     # advertise a Scilly course as "25 miles" from Penzance and then need a
     # boat or a plane. Same rule as the Isle of Wight.
     "cornwall": ["Cornwall"],
+
+    # --- Fourth wave, 2026-09-12: the North. Probed first, as always, and
+    # this is the wave where it mattered most — three of the eleven names
+    # below do not exist as boundaries at all.
+    #
+    # "Cheshire" survives only as a historic level-8 area; the county is four
+    # unitaries.
+    "cheshire": ["Cheshire East", "Cheshire West and Chester", "Warrington", "Halton"],
+    # Metropolitan counties, level 5 like Greater London and West Midlands.
+    "greater_manchester": ["Greater Manchester"],
+    "west_yorkshire": ["West Yorkshire"],
+    "south_yorkshire": ["South Yorkshire"],
+    # Merseyside and Tyne and Wear match NOTHING at any level — OSM keeps only
+    # their boroughs, which sit at level 8. See COUNTY_ADMIN_LEVEL.
+    "merseyside": ["Liverpool", "Sefton", "Knowsley", "St Helens", "Wirral"],
+    "tyne_and_wear": ["Newcastle upon Tyne", "Gateshead", "North Tyneside",
+                      "South Tyneside", "Sunderland"],
+    "lancashire": ["Lancashire", "Blackpool", "Blackburn with Darwen"],
+    # Cumbria was split in 2023 and the county boundary is gone with it.
+    "cumbria": ["Cumberland", "Westmorland and Furness"],
+    "north_yorkshire": ["North Yorkshire", "York"],
+    "east_yorkshire": ["East Riding of Yorkshire", "Kingston upon Hull"],
+    "north_east": ["County Durham", "Northumberland", "Darlington",
+                   "Stockton-on-Tees", "Middlesbrough", "Redcar and Cleveland",
+                   "Hartlepool"],
 }
 
 # Areas whose OSM boundary is not at the usual admin_level 6.
-COUNTY_ADMIN_LEVEL = {"london": 5, "west_midlands": 5}
+COUNTY_ADMIN_LEVEL = {
+    "london": 5, "west_midlands": 5,
+    "greater_manchester": 5, "west_yorkshire": 5, "south_yorkshire": 5,
+    # Merseyside and Tyne and Wear are named by their boroughs, and a borough
+    # is level 8 — the only two areas in the list that go that deep.
+    "merseyside": 8, "tyne_and_wear": 8,
+}
 DEFAULT_ADMIN_LEVEL = 6
 
 # Clubs the county union lists that are not reachable by road from the county
@@ -336,6 +367,21 @@ COUNTY_UNION_URLS = {
     "herefordshire": None,
     "shropshire": None,
     "lincolnshire": None,
+
+    # Fourth wave. Lancashire's union runs the shared CMS and lists 139 clubs
+    # — by far the biggest directory we have found, and historically it covers
+    # Manchester and Merseyside clubs too. None of the others answer.
+    "lancashire": "https://www.lancashiregolf.org/countyclubs.php",
+    "cheshire": None,
+    "greater_manchester": None,
+    "merseyside": None,
+    "cumbria": None,
+    "west_yorkshire": None,
+    "south_yorkshire": None,
+    "north_yorkshire": None,
+    "east_yorkshire": None,
+    "north_east": None,
+    "tyne_and_wear": None,
 }
 
 SOCIAL_HOSTS = ("facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com", "youtube.com")
