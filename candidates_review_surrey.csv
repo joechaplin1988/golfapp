@@ -114,3 +114,6 @@ Limpsfield Chart Golf Club,https://www.limpsfieldchartgolf.co.uk/,51.2547992,0.0
 Sunningdale Golf Club,https://www.sunningdale-golfclub.co.uk/,51.3819099,-0.6342329,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.sunningdale-golfclub.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
 The Leatherhead Club,https://playgolfgroup.com/leatherhead/,51.3218093,-0.3354987,intelligent_golf,public,https://www.theleatherheadclub.com/visitorbooking/,high,
 Banstead Downs Golf Club,https://www.bansteaddowns.co.uk,51.3347096,-0.2069719,brs,public,https://visitors.brsgolf.com/bansteaddowns#/course/1,high,
+Pachesham Golf Course,https://www.pacheshamgolf.co.uk/,51.3120029,-0.347987,unknown,unknown,,low,homepage loaded (https://www.pacheshamgolf.co.uk/) but no platform signal found on it or 5 booking-ish link(s)
+Cranleigh School Golf Course,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Frimley Lodge Pitch and Putt,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

@@ -27,3 +27,4 @@ Chalgrave Manor Golf Club,https://www.chalgravegolf.co.uk,,,unknown,unknown,,low
 Henlow Golf Club,https://www.henlowgolfclub.com,,,unknown,unknown,,low,homepage loaded (https://henlowgolfclub.com/) but no platform signal found on it or 3 booking-ish link(s)
 Sharnbrook Golf Club,https://www.sharnbrookgolfclub.co.uk,,,unknown,unknown,,low,homepage loaded (https://sharnbrookgolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
 Abbotsley Golf Hotel,https://www.abbotsley.com/,52.1963068,-0.2396806,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.abbotsley.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
+Whipsnade Park Golf Club,https://www.whipsnadeparkgolf.co.uk/,51.8375034,-0.5417199,brs,public,https://visitors.brsgolf.com/whipsnadepark,high,

@@ -39,3 +39,13 @@ Mentmore Golf and Country Club,,51.8643963,-0.6926886,no_site,unknown,,low,no of
 Woburn Golf Club,,51.9927028,-0.6575053,no_site,unknown,,low,no official website resolved (not in county union directory)
 Abbey Hill Golf Centre,https://abbeyhillgc.co.uk/,52.0442567,-0.8117644,esp,public,https://www.e-s-p.com/elitelive/book_webpromotion.php?ref=AHcrazygolf&dt=CRAZYGOLF&,high,
 Wexham Park Golf Centre,,51.5381178,-0.5729347,no_site,unknown,,low,no official website resolved (not in county union directory)
+Buckinghamshire Golf Course,https://www.buckinghamshiregc.com/,51.5726934,-0.4916732,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Harleyford Golf Club,https://www.harleyfordgolf.co.uk/,51.5595164,-0.8057276,intelligent_golf,public,https://harleyford.intelligentgolf.co.uk/visitorbooking/,high,
+Hedsor Golf Course,https://hedsorgolfcourse.co.uk/,51.5763725,-0.6719051,unknown,unknown,,low,homepage loaded (https://hedsorgolfcourse.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Huntswood Golf Course,https://www.huntswoodgolf.com/,51.5414657,-0.6791287,brs,public,https://visitors.brsgolf.com/huntswood#/course/1,high,
+Silverstone Golf Club,https://www.silverstonegolfclub.co.uk/,52.0627688,-1.041862,unknown,unknown,,low,homepage loaded (https://www.silverstonegolfclub.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+Thorney Park Golf Club,https://thorneypark.com/,51.506327,-0.4934834,unknown,unknown,,low,homepage loaded (https://thorneypark.com/) but no platform signal found on it or 2 booking-ish link(s)
+Three Locks Golf Club,https://www.threelocksgolfclub.co.uk/,51.9507332,-0.6994344,brs,public,https://visitors.brsgolf.com/threelocks#/,high,confirmed by following the platform link found on the club's own site
+Wexham Park Golf Centre,https://www.wexhamparkgolfcentre.co.uk/,51.5381178,-0.5729347,brs,public,https://visitors.brsgolf.com/wexhampark18#/course/1,high,confirmed by following the platform link found on the club's own site
+Windmill Hill Golf Centre,https://www.windmillhillgc.co.uk/,51.9931742,-0.7752656,unknown,unknown,,low,homepage loaded (https://www.windmillhillgc.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Chiltern Hospital Golf Course,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

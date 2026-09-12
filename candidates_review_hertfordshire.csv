@@ -57,3 +57,9 @@ Hanbury Manor Marriott Hotel & Country Club,https://www.marriott.co.uk/hotels/tr
 Brocket Hall,https://www.brocket-hall.co.uk/golf/,51.8026725,-0.2404115,intelligent_golf,public,https://brocket.intelligentgolf.co.uk/visitorbooking/,high,
 Chorleywood Golf Club,,51.6552715,-0.5101843,no_site,unknown,,low,no official website resolved (not in county union directory)
 Berkhamsted Golf Club,https://www.berkhamstedgolfclub.co.uk/,51.774509,-0.5432092,intelligent_golf,public,https://www.berkhamstedgolfclub.co.uk/visitorbooking/,high,
+Dyrham Park Country Club,https://www.dyrhampark.com/,51.6730314,-0.2280053,unknown,unknown,,low,homepage loaded (https://www.dyrhampark.com/) but no platform signal found on it or 2 booking-ish link(s)
+Knebworth Golf Course,https://www.knebworthgolfclub.com/,51.8774559,-0.1958838,intelligent_golf,public,https://www.knebworthgolfclub.com/visitorbooking/,high,
+Sandy Lodge Golf Club,https://www.sandylodge.co.uk/,51.6278758,-0.423274,intelligent_golf,login_required,,high,intelligent_golf convention path requires login: https://www.sandylodge.co.uk/visitorbooking/
+Shendish Manor Golf Course,https://www.shendishmanorgolfclub.co.uk/,51.7300311,-0.4678039,unknown,unknown,,low,homepage loaded (https://www.shendishmanorgolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Verulam Golf Club,https://www.verulamgolf.co.uk/,51.7371796,-0.3250247,intelligent_golf,public,https://www.verulamgolf.co.uk/visitorbooking/,high,
+West Herts Golf Club,https://www.westhertsgolfclub.co.uk/,51.664432,-0.4329873,intelligent_golf,public,https://www.westhertsgolfclub.co.uk/visitorbooking/,high,

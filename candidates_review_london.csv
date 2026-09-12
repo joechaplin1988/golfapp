@@ -75,3 +75,21 @@ Wyke Green Golf Club,,51.491704,-0.3350143,no_site,unknown,,low,no official webs
 Ruislip Golf Course,https://www.hillingdon.gov.uk/index.jsp?articleid=11141,51.5734219,-0.4415417,dead_link,unknown,,low,"directory URL returned HTTP 404 — stale link, needs a fresh website lookup"
 Upminster Golf and Bowling Club,,51.5652022,0.2504003,no_site,unknown,,low,no official website resolved (not in county union directory)
 West Middlesex Golf Course,,51.5137663,-0.3569882,no_site,unknown,,low,no official website resolved (not in county union directory)
+Crews Hill Golf Course,https://www.crewshillgolfclub.com/,51.6807448,-0.1098606,brs,public,https://visitors.brsgolf.com/crewshill,high,
+Ealing Golf Course,https://www.ealinggolfclub.com/,51.530265,-0.3172018,intelligent_golf,public,https://ealing.intelligentgolf.co.uk/visitorbooking/,high,
+Enfield Golf Club,https://www.enfieldgolfclub.co.uk/,51.6501458,-0.1028065,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Hadley Wood Golf Course,https://www.hadleywoodgc.com/,51.6615782,-0.1627983,intelligent_golf,public,https://www.hadleywoodgc.com/visitorbooking/,high,
+Haste Hill Golf Course,https://www.hastehillgolfclub.co.uk/,51.5992397,-0.4240683,brs,public,https://visitors.brsgolf.com/hastehill#/course/1,high,confirmed by following the platform link found on the club's own site
+Hillingdon Golf Course,https://www.hillingdongolfclub.co.uk/,51.5379074,-0.4646046,unknown,unknown,,low,homepage loaded (https://www.hillingdongolfclub.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Lee Valley Golf Course,https://www.leevalleygolfclub.com/,51.6324466,-0.0341516,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Mill Hill Golf Course,https://www.millhillgc.co.uk/,51.633143,-0.2601838,golfnow,out_of_scope,,high,"GolfNow listing, not the club's own booking — excluded by policy: https://www.golfnow.co.uk/courses/-1759-mill-hill-golf-club-details"
+Northwood Golf Course,https://www.northwoodgolf.co.uk/,51.6055967,-0.4281434,intelligent_golf,public,https://www.northwoodgolf.co.uk/visitorbooking/,high,
+Stanmore Golf Club,https://www.stanmoregolfclub.co.uk/,51.6077478,-0.3190764,brs,public,https://visitors.brsgolf.com/stanmore#/course/1,high,
+Stockley Park Golf Club,https://www.stockleyparkgolf.co.uk/,51.5135428,-0.4429594,brs,public,https://visitors.brsgolf.com/stockleypark#/course/1,high,
+Sudbury Golf Course,https://www.sudburygc.co.uk/,51.5451536,-0.315196,intelligent_golf,public,https://sudbury.intelligentgolf.co.uk/visitorbooking/,high,
+Trent Park Golf Course,https://www.trentparkgolf.co.uk/,51.6531621,-0.1316881,brs,public,https://visitors.brsgolf.com/trentpark18#/course/1,high,confirmed by following the platform link found on the club's own site
+Wyke Green Golf Club,https://www.wykegreengolfclub.co.uk/,51.491704,-0.3350143,clubv1,public,https://wykegreengc.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-12,high,
+Harrow School Golf Course,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Queens Park Pitch and Putt,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+South Norwood Pitch and Putt,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Tudor Park Footgolf Course,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

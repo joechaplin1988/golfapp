@@ -1,0 +1,7 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Ashdown Park,https://www.ashdownpark.com/,51.0710952,0.0365432,unknown,unknown,,low,homepage loaded (https://www.ashdownpark.com/) but no platform signal found on it or 6 booking-ish link(s)
+Boars Head Golf Centre,https://www.boarsheadgolf.com/,51.0681321,0.189432,brs,public,https://visitors.brsgolf.com/boarshead#/course/1,high,
+Villa Golf Club,https://www.villagolfcourse.co.uk/,51.1415332,0.1479719,unknown,unknown,,low,homepage loaded (https://www.villagolfcourse.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Allhallows Holiday Park Golf Course,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Goffs Park Pitch and Putt,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Putting Green,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

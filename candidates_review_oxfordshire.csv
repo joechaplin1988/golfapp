@@ -27,3 +27,11 @@ Tadmarton Heath Golf Club,,52.0172797,-1.433101,no_site,unknown,,low,no official
 Badgemore Park Golf Club,,51.544489,-0.927273,no_site,unknown,,low,no official website resolved (not in county union directory)
 Hinksey Heights Golf Course,https://www.oxford-golf.co.uk/,51.7320399,-1.2826276,clubv1,public,https://hinkseyheights.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,
 Shrivenham Park Golf Club,https://www.shrivenhampark.com/,51.6070062,-1.6507842,unknown,unknown,,low,homepage loaded (https://custommapposter.com/article/best/926?sd=shrivenhampark.com) but no platform signal found on it or 1 booking-ish link(s)
+Badgemore Park Golf Club,https://www.badgemorepark.com/,51.544489,-0.927273,intelligent_golf,public,https://badgemorepark.intelligentgolf.co.uk/visitorbooking/,high,
+Frilford Heath Golf Course,https://www.frilfordheath.co.uk/,51.6821352,-1.3686472,intelligent_golf,public,https://www.frilfordheath.co.uk/visitorbooking/,high,
+Hadden Hill Golf Course,https://www.haddenhillgolf.co.uk/,51.6117674,-1.2160785,intelligent_golf,public,https://haddenhill.intelligentgolf.co.uk/visitorbooking/,high,
+Heythrop Park Golf,https://www.warnerhotels.co.uk:443/hotels/heythrop-park-hotel,51.9368314,-1.4717766,unknown,unknown,,low,homepage loaded (https://www.warnerhotels.co.uk:443/hotels/heythrop-park-hotel) but no platform signal found on it or 13 booking-ish link(s)
+Huntercombe Golf Club,https://www.huntercombegolfclub.co.uk/,51.5828599,-1.0271567,intelligent_golf,public,https://huntercombe.intelligentgolf.co.uk/visitorbooking/,high,
+Rye Hill Golf Club,https://www.ryehill.co.uk/,52.0145687,-1.4237971,brs,public,https://visitors.brsgolf.com/ryehill,high,
+Radley College Golf Course,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+St. Edward's School Golf Course,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

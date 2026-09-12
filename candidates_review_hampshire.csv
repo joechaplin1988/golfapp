@@ -87,3 +87,7 @@ Ordnance Survey Golf Club,https://www.ordnancesurveygolfclub.org.uk,,,error,unkn
 Skylark Golf & Country Club,https://www.skylarkcountryclub.co.uk/golf,,,intelligent_golf,public,https://skylark.intelligentgolf.co.uk/visitorbooking/,high,confirmed by following the platform link found on the club's own site
 Southsea Golf Club,https://www.southsea-golf.co.uk,,,unknown,unknown,,low,homepage loaded (https://www.southsea-golf.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
 Wheatlands Golf Club,https://www.wheatlandsjersey.com,,,brs,public,https://visitors.brsgolf.com/wheatlands,high,
+Otterbourne Golf Course,https://www.otterbournegolfclub.com/,51.0138848,-1.3631328,unknown,unknown,,low,homepage loaded (https://www.otterbournegolfclub.com/) but no platform signal found on it or 2 booking-ish link(s)
+Town Meadow Golf Course,https://orc.org.uk/golf/,51.2441065,-1.2691399,unknown,unknown,,low,homepage loaded (https://orc.org.uk/golf/) but no platform signal found on it or 1 booking-ish link(s)
+Hoburne Holiday Park Bashley,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Mini Golf,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

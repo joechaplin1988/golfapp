@@ -41,3 +41,16 @@ Downshire Golf Complex,https://www.bracknell-forest.gov.uk/downshiregolfcomplex,
 Sunningdale Golf Club,,51.3819099,-0.6342329,no_site,unknown,,low,no official website resolved (not in county union directory)
 Wokefield Park,,51.3856368,-1.0290364,no_site,unknown,,low,no official website resolved (not in county union directory)
 Home Park Golf Course,,51.4802665,-0.5956126,no_site,unknown,,low,no official website resolved (not in county union directory)
+Downshire Golf Complex,https://www.downshiregolf.co.uk/,51.3944417,-0.7881244,unknown,unknown,,low,homepage loaded (https://www.downshiregolf.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+East Berkshire Golf Club,https://www.eastberkshiregolfclub.com/,51.3746501,-0.8169052,intelligent_golf,login_required,,high,intelligent_golf convention path requires login: https://www.eastberkshiregolfclub.com/visitorbooking/
+Hennerton Golf Club,https://www.hennertongolfclub.co.uk/,51.5160988,-0.8643053,brs,public,https://visitors.brsgolf.com/hennerton/,high,
+Lavender Park Golf Centre,https://lavenderparkgolf.co.uk/,51.410258,-0.7051048,unknown,unknown,,low,homepage loaded (https://lavenderparkgolf.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+Maidenhead Golf Course,https://www.maidenheadgolf.co.uk/,51.5113453,-0.7228731,intelligent_golf,login_required,,high,booking link requires login: https://www.maidenheadgolf.co.uk/visitorbooking
+Richings Park Golf and Country Club,https://www.richingspark.co.uk/,51.4976784,-0.519644,intelligent_golf,public,https://www.richingspark.co.uk/visitorbooking/,high,
+Sunningdale Golf Club,https://www.sunningdalegolfclub.co.uk/,51.3819099,-0.6342329,intelligent_golf,public,https://www.sunningdalegolfclub.co.uk/visitorbooking/,high,confirmed via intelligent_golf's standard booking path
+Temple Golf Course,https://www.templegolfclub.co.uk/,51.5380072,-0.7950503,intelligent_golf,public,https://www.templegolfclub.co.uk/visitorbooking/,high,
+Theale Golf Club,https://www.thealegolf.com/,51.445702,-1.0790811,brs,public,https://visitors.brsgolf.com/theale#/course/1,high,
+Winter Hill Golf Course,https://www.winterhillgolfclub.uk/,51.5670853,-0.7206497,golf_manager,public,https://winterhill.golfmanager.com/consumer/home,high,
+Bradfield College Golf Club,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+The Bunker Indoor Golf Simulator,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Wellington College Golf Course,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

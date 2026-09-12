@@ -32,6 +32,7 @@ import logging
 import os
 import re
 from collections import Counter
+from urllib.parse import urlparse
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger("golf")
@@ -129,15 +130,20 @@ def _informativeness(r: dict) -> int:
         return 4
     if r["platform"] in SCRAPED_PLATFORMS:
         return 3
-    if r["access"] in ("not_available", "login_required", "out_of_scope"):
+    if r["access"] in ("not_available", "login_required", "out_of_scope") or r["platform"] == "not_a_club":
         return 2
-    if r["platform"] not in ("", "unknown", "no_site", "error", "blocked", "dead_link"):
+    # "Site loaded, no booking system spotted" knows more than "no website
+    # found". Ranking them equal left every club the website pass DID find a
+    # site for still saying "no working website found".
+    if r["platform"] not in ("", "no_site", "error", "blocked", "dead_link"):
         return 1
     return 0
 
 
 def classify(review: dict) -> tuple[str, str]:
     p, a = review["platform"], review["access"]
+    if p == "not_a_club":
+        return "out_of_scope", review["note"][:110] or "not a course a visitor books a round at"
     if a == "out_of_scope" or p == "golfnow":
         return "out_of_scope", "GolfNow/TeeItUp only — excluded by policy"
     if a == "login_required":
@@ -177,8 +183,28 @@ def main() -> None:
             "evidence_url": rv.get("evidence_url", ""),
         })
 
+    # A club can be live under one name and unresolved under another: OSM
+    # says "South Petersfield Golf Club", the config says "Petersfield Golf
+    # Club (South Petersfield)". Name matching misses that, so 36 live clubs
+    # were also listed as unresolved, asking for a review they don't need.
+    # The booking URL is the same either way, so match on that too.
+    def booking_sig(url: str) -> str:
+        p = urlparse((url or "").lower())
+        host = p.netloc.replace("www.", "")
+        # Shared booking hosts carry the club in the path, not the host.
+        if host in ("visitors.brsgolf.com", "www.chronogolf.com", "chronogolf.com", "www.e-s-p.com", "e-s-p.com"):
+            return host + p.path.rstrip("/")
+        return host
+    live_sigs = set()
+    with open("clubs_config.csv", newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            if (row.get("base_url") or "").strip():
+                live_sigs.add(booking_sig(row["base_url"]))
+
     for key, rv in reviews.items():
         if key in config:
+            continue
+        if rv.get("evidence_url") and booking_sig(rv["evidence_url"]) in live_sigs:
             continue
         status, reason = classify(rv)
         rows.append({
