@@ -526,3 +526,27 @@ crawler walked off a club's booking page onto whatever the marketplace linked
 first, giving five unrelated clubs Cannock Park's yardage — Cornwall to
 Hampshire. chronogolf.com is now on SHARED_HOSTS with the other booking hosts,
 and those rows were cleared and re-read from each club's own site.
+
+## Fourth wave: the North (2026-09-12)
+Cheshire, Greater Manchester, Merseyside, Lancashire, Cumbria, West Yorkshire,
+South Yorkshire, North Yorkshire, East Yorkshire with Hull, and the North East
+with Tyne and Wear. 443 -> 644 clubs, 516 -> 724 sheets, forty areas. Royal
+Lytham & St Annes, Royal Birkdale and Hillside are in.
+
+The boundary probe earned its keep here. Merseyside and Tyne and Wear match
+NOTHING at any admin level — OSM keeps only their boroughs, at level 8, deeper
+than any area we had needed. Cheshire survives only as a historic level-8 area
+(four unitaries now) and Cumbria's boundary is gone entirely (split in 2023).
+Greater Manchester, West Yorkshire and South Yorkshire are level 5.
+
+Two cleaning bugs, both from Lancashire's 139-club union overlapping Manchester
+and Merseyside: the same club arriving under two names (keep the tidier one),
+and coordinates matched by name across every county file ever written, which
+put a Lincolnshire club's position on the St Helens club of the same name. The
+coordinate lookup is now scoped to the wave being cleaned; pass COORDS_GLOB.
+
+The town chooser now ranks by Postcodes.io's local_type (City, Town, Suburban
+Area, Village, Hamlet) ahead of everything else. Counting nearby courses was
+primary and got Bradford and Scarborough wrong: a Manchester suburb and a Kent
+hamlet both sit in denser golf country than the city and the seaside town they
+share a name with.
