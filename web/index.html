@@ -84,9 +84,8 @@
 <div class="wrap">
   <header>
     <h1>⛳ Tee Times Near You</h1>
-    <p>Visitor tee times from clubs across England — the South East, East Anglia, the
-       Midlands and the West Country, from Kent to Cornwall — in one place.
-       Book on the club's own site.</p>
+    <p>Visitor tee times from clubs across England — from Kent and Cornwall to Cumbria
+       and Northumberland — in one place. Book on the club's own site.</p>
   </header>
 
   <form id="search">
@@ -278,6 +277,15 @@ const COVERED = new Set([
   "Shropshire", "Telford and Wrekin",
   "Lincolnshire", "North Lincolnshire", "North East Lincolnshire",
   "Devon", "City of Plymouth", "Torbay", "Cornwall",
+  "Cheshire East", "Cheshire West and Chester", "Warrington", "Halton",
+  "Lancashire", "Blackpool", "Blackburn with Darwen",
+  "Cumberland", "Westmorland and Furness",
+  "North Yorkshire", "York", "East Riding of Yorkshire", "City of Kingston upon Hull",
+  "County Durham", "Darlington", "Hartlepool", "Stockton-on-Tees",
+  "Middlesbrough", "Redcar and Cleveland", "Northumberland",
+  // Manchester, Liverpool, Leeds, Sheffield and Newcastle have no
+  // county_unitary at all, so their region is the only label there is.
+  "North West", "Yorkshire and the Humber", "North East",
 ]);
 
 const FULL_POSTCODE_RE = /^[a-z]{1,2}\d[a-z\d]?\s*\d[a-z]{2}$/i;
@@ -359,7 +367,7 @@ async function resolveLocation(input) {
     const key = (place + "|" + where).toLowerCase();
     if (seen.has(key)) continue;
     seen.add(key);
-    options.push({ lat: p.latitude, lng: p.longitude, place, where });
+    options.push({ lat: p.latitude, lng: p.longitude, place, where, kind: p.local_type });
     if (options.length === 6) break;
   }
   if (options.length === 1) return options[0];
@@ -372,16 +380,21 @@ async function resolveLocation(input) {
   // working the moment we covered both counties.
   const points = await clubPoints();
   for (const o of options) o.nearby = points ? countWithin(points, o.lat, o.lng, 30) : 0;
-  // A county named after the town outranks the count, because a town that
-  // gave its name to its county is the one people mean: "Cambridgeshire"
-  // contains "Cambridge", and so it beats the Cambridge in Gloucestershire
-  // even though that one has more courses within 30 km. Same for Luton,
-  // Bedford, Swindon, Peterborough, Poole and Brighton. Only then the count,
-  // which is what settles Swanley (Kent 59, Gloucestershire 12), and last
-  // whether we cover the county at all, for when nothing else separates them.
+
+  // What kind of place it is decides this, and nothing else comes close: a
+  // city outranks a hamlet of the same name every time. Bradford the city is
+  // in Yorkshire, but there is a Bradford that is a suburb of Manchester with
+  // more courses around it, and a Scarborough that is a hamlet in Kent. Both
+  // of those won on a nearby-course count alone.
+  const RANK = { "City": 5, "Town": 4, "Suburban Area": 3, "Village": 2,
+                 "Hamlet": 1, "Other Settlement": 1 };
+  // Then a county named after the town, which is what separates two places of
+  // the same kind: "Cambridgeshire" contains "Cambridge". Then how many of our
+  // courses are near it, and last whether we cover the county at all.
   const namesake = o => (o.where || "").toLowerCase().includes((o.place || "").toLowerCase());
   const flag = (o, f) => (f(o) ? 1 : 0);
   options.sort((a, b) =>
+    ((RANK[b.kind] || 0) - (RANK[a.kind] || 0)) ||
     (flag(b, namesake) - flag(a, namesake)) ||
     (b.nearby - a.nearby) ||
     (flag(b, o => COVERED.has(o.where)) - flag(a, o => COVERED.has(o.where))));
