@@ -63,7 +63,10 @@ def base_name(config_name: str) -> str:
 
 
 def county_of(path: str) -> str:
-    m = re.search(r"candidates_review_?([a-z]*)\.csv$", os.path.basename(path))
+    # recheck_<county>.csv too: without it every club a residue pass recovered
+    # fell through to the "" default below and was labelled kent/sussex, even
+    # Royal Birkdale.
+    m = re.search(r"(?:candidates_review|recheck)_?([a-z]*)\.csv$", os.path.basename(path))
     name = (m.group(1) if m else "") or ""
     return {"": "kent/sussex", "2": "kent/sussex", "3": "kent/sussex",
             "batch1": "kent/sussex", "recovered": "kent/sussex/surrey"}.get(name, name)
