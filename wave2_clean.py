@@ -29,7 +29,7 @@ INPUTS = sys.argv[1:-1] or [f"approved_rows_wave2{w}.csv" for w in "abc"]
 OUT = sys.argv[-1] if len(sys.argv) > 1 else "approved_rows_wave2.csv"
 NOT_A_ROUND = re.compile(
     r"footgolf|foot golf|disc golf|mini golf|adventure|crazy golf|"
-    r"pitch\s*(and|&)\s*putt|putting green|coaching diary|driving range", re.I)
+    r"pitch\s*(and|&)\s*putt|putting green|coaching diary|driving range|golf range", re.I)
 MAX_KM = 15.0
 
 

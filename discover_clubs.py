@@ -218,7 +218,9 @@ COUNTY_UNION_EXCLUDE = {
         r"\b(alderney|jersey|guernsey|sark|herm|la moye|l'?ancresse|"
         r"la grande mare|les mielles|les ormes|st\.? ?pierre park|st\.? ?clements|"
         r"isle of wight|freshwater|shanklin|osborne|ryde|ventnor|cowes|"
-        r"newport|westridge)\b", re.I),
+        # Wheatlands is St Ouen, Jersey (JE3): a BRS sheet verified live and
+        # was added before its postcode gave it away.
+        r"newport|westridge|wheatlands)\b", re.I),
 }
 
 
