@@ -5,15 +5,21 @@ name: Scrape tee times into Supabase
 #
 # Three cadences (UTC), because testers are in London and the Home Counties
 # and sheets change fastest close to the day:
-#   - every 2 hours, 04:00-22:00 : launch area, today .. +2 days   (~30 min)
-#   - 13:00                      : all of England, today .. +2 days (~70 min)
-#   - 00:30                      : all of England, today .. +6 days (~2.5 h)
+#   - every 2 hours, 04:17-22:17 : launch area, today .. +2 days   (~30 min)
+#   - 12:47                      : all of England, today .. +2 days (~70 min)
+#   - 00:37                      : all of England, today .. +6 days (~2.5 h)
+#
+# Never on the hour. GitHub documents the start of every hour as the busiest
+# time for scheduled workflows, when they are delayed and, under enough load,
+# dropped. On 2026-09-13 four of the five top-of-the-hour slots simply never
+# ran. Odd minutes avoid the rush.
 #
 # Slots are chosen so a run always finishes before the NEXT one queues. Only
 # one run may hold the concurrency group, and GitHub keeps a single pending
-# run: a newer one queuing cancels the pending one. The 13:00 run overlaps the
-# 14:00 launch run, which waits as the only pending run; nothing else queues
-# before 16:00. The overnight run has until 04:00.
+# run: a newer one queuing cancels the pending one. The 12:47 run may wait
+# briefly for the 12:17 launch run, then overlaps the 14:17 launch run, which
+# waits as the only pending run; nothing else queues before 16:17. The
+# overnight run has until 04:17.
 #
 # Earlier history:
 # The gap between them matters. A near run takes ~45 minutes at 516 sheets and
@@ -28,9 +34,9 @@ name: Scrape tee times into Supabase
 
 on:
   schedule:
-    - cron: "0 4-22/2 * * *"     # launch area, near window
-    - cron: "0 13 * * *"         # all of England, near window
-    - cron: "30 0 * * *"         # all of England, full 7-day window
+    - cron: "17 4-22/2 * * *"    # launch area, near window
+    - cron: "47 12 * * *"        # all of England, near window
+    - cron: "37 0 * * *"         # all of England, full 7-day window
   workflow_dispatch:             # manual "Run workflow" button in the Actions tab
     inputs:
       days:
@@ -77,6 +83,6 @@ jobs:
           # The overnight cron and manual runs get the full window; the other
           # two crons refresh the next three days. Only the 2-hourly cron is
           # limited to the launch area.
-          DAYS: ${{ github.event.inputs.days || (github.event.schedule == '30 0 * * *' && '7' || '3') }}
-          AREA: ${{ github.event.inputs.area || (github.event.schedule == '0 4-22/2 * * *' && 'launch' || 'all') }}
+          DAYS: ${{ github.event.inputs.days || (github.event.schedule == '37 0 * * *' && '7' || '3') }}
+          AREA: ${{ github.event.inputs.area || (github.event.schedule == '17 4-22/2 * * *' && 'launch' || 'all') }}
         run: python run_pipeline.py --days "$DAYS" --area "$AREA"
