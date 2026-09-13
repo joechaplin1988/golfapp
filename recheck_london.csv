@@ -66,3 +66,6 @@ Wyke Green Golf Club,,51.491704,-0.3350143,no_site,unknown,,low,still no website
 Ruislip Golf Course,https://www.hillingdon.gov.uk/index.jsp?articleid=11141,51.5734219,-0.4415417,dead_link,unknown,,low,site reachable (https://pre.hillingdon.gov.uk/) but no visitor booking found on it or 0 sub-page(s)
 Upminster Golf and Bowling Club,,51.5652022,0.2504003,no_site,unknown,,low,still no website known
 West Middlesex Golf Course,,51.5137663,-0.3569882,no_site,unknown,,low,still no website known
+Harrow Hill Golf Course,https://www.harrowhillgolfcourse.co.uk/,51.5773148,-0.3281059,error,unknown,,low,unreachable even with a browser user agent
+C & L Golf & Country Club,https://www.candlcountryclub.co.uk/,51.5459695,-0.4023914,error,unknown,,low,unreachable even with a browser user agent
+Bigshots (Northwick Park),https://www.bigshotsgolfuk.com/,51.571677,-0.3198058,error,unknown,,low,unreachable even with a browser user agent

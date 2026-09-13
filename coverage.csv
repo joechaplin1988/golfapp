@@ -580,6 +580,7 @@ Epsom Downs Golf Club,live,surrey,intelligent_golf,1,KT17 4JR,,https://www.epsom
 Gatton Manor Golf Course,live,surrey,brs,1,RH5 5PQ,,https://visitors.brsgolf.com/gattonmanorgc#/course/1
 Guildford Golf Club,live,surrey,intelligent_golf,1,GU1 2HL,,https://guildford.intelligentgolf.co.uk/visitorbooking/
 Hindhead Golf Club,live,surrey,intelligent_golf,1,GU26 6HY,,https://www.hindheadgolfclub.co.uk/visitorbooking/
+Horne Park Golf Academy,live,surrey,intelligent_golf,1,RH6 9JZ,,https://hornepark.intelligentgolf.co.uk/visitorbooking/
 Hurtmore Golf Club,live,surrey,brs,1,GU7 2RN,,https://visitors.brsgolf.com/hurtmore#/course/1
 Kingswood Golf & Country Club,live,surrey,intelligent_golf,1,KT20 6NE,,https://www.kingswood-golf.co.uk/visitorbooking/
 Limpsfield Chart Golf Club,live,surrey,intelligent_golf,1,RH8 0SL,,https://www.limpsfieldchartgolf.co.uk/visitorbooking/
@@ -855,9 +856,9 @@ Chiltern Hills Golf Course,unresolved,buckinghamshire,no_site,0,,no working webs
 Flackwell Heath Golf Course,unresolved,buckinghamshire,no_site,0,,no working website found,
 Gerrards Cross Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
 Harewood Downs Golf Course,unresolved,buckinghamshire,no_site,0,,no working website found,
-Hazlemere Golf Club,unresolved,buckinghamshire,error,0,,site refused or failed to load,
+Hazlemere Golf Club,unresolved,buckinghamshire,unknown,0,,site reachable (https://www.hazlemeregolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s),
 Hedsor Golf Course,unresolved,buckinghamshire,unknown,0,,homepage loaded (https://hedsorgolfcourse.co.uk/) but no platform signal found on it or 1 booking-ish link(s),
-Lambourne Golf Club,unresolved,buckinghamshire,error,0,,site refused or failed to load,
+Lambourne Golf Club,unresolved,buckinghamshire,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,https://www.intelligentgolf.co.uk
 Ley Hill GC,unresolved,buckinghamshire,no_site,0,,no working website found,
 Magnolia Park,unresolved,buckinghamshire,unknown,0,,homepage loaded (https://magnoliapark.co.uk/) but no platform signal found on it or 0 booking-ish link(s),
 Mentmore Golf and Country Club,unresolved,buckinghamshire,no_site,0,,no working website found,
@@ -866,7 +867,7 @@ Southfield,unresolved,buckinghamshire,no_site,0,,no working website found,
 Stoke Park Golf Course,unresolved,buckinghamshire,dead_link,0,,no working website found,
 The South Buckinghamshire Golf Course,unresolved,buckinghamshire,unknown,0,,homepage loaded (https://thesouthbuckinghamshire.co.uk/) but no platform signal found on it or 0 booking-ish l,
 Thorney Park Golf Club,unresolved,buckinghamshire,unknown,0,,homepage loaded (https://thorneypark.com/) but no platform signal found on it or 2 booking-ish link(s),
-Weston Turville  Golf Club,unresolved,buckinghamshire,error,0,,site refused or failed to load,
+Weston Turville  Golf Club,unresolved,buckinghamshire,unknown,0,,site reachable (https://buydomainnames.co.uk/domain/westonturvillegc.co.uk?offer=parked) but no visitor bookin,
 Windmill Hill Golf Centre,unresolved,buckinghamshire,unknown,0,,homepage loaded (https://www.windmillhillgc.co.uk/) but no platform signal found on it or 1 booking-ish link(s,
 Woburn Golf Club,unresolved,buckinghamshire,no_site,0,,no working website found,
 Brampton Park Golf Club,unresolved,cambridgeshire,clubv1,0,,clubv1 seen but no confirmed public visitor sheet — worth another look,https://default.hub.clubv1.com/
@@ -1221,6 +1222,12 @@ Three Lakes Golf Course,unresolved,hertfordshire,unknown,0,,homepage loaded (htt
 Welwyn Garden City Golf Club,unresolved,hertfordshire,unknown,0,,homepage loaded (https://www.welwyngardencitygolfclub.co.uk/) but no platform signal found on it or 2 booking-,
 Wheathampstead Pay & Play Golf Course,unresolved,hertfordshire,unknown,0,,homepage loaded (https://www.wheathampsteadgolfvillage.com/) but no platform signal found on it or 1 booking-i,
 Ashdown Park,unresolved,kent,unknown,0,,homepage loaded (https://www.ashdownpark.com/) but no platform signal found on it or 6 booking-ish link(s),
+Sene Valley Golf Club,unresolved,kent,clubv1,0,,clubv1 seen but no confirmed public visitor sheet — worth another look,https://senevalley.hub.clubv1.com
+Shooters Hill Golf Course,unresolved,kent,unknown,0,,site reachable (https://shgc.uk.com/) but no visitor booking found on it or 0 sub-page(s),
+Tudor Park Country Club,unresolved,kent,unknown,0,,site reachable (https://www.marriottlifestyle.co.uk/golf-uk) but no visitor booking found on it or 0 sub-page(,
+Upchurch River Valley North Course,unresolved,kent,esp,0,,esp seen but no confirmed public visitor sheet — worth another look,https://www.e-s-p.com/elitelive/login.php
+Upchurch River Valley South Course,unresolved,kent,esp,0,,esp seen but no confirmed public visitor sheet — worth another look,https://www.e-s-p.com/elitelive/login.php
+Upchurch River Valley West Course,unresolved,kent,esp,0,,esp seen but no confirmed public visitor sheet — worth another look,https://www.e-s-p.com/elitelive/login.php
 Villa Golf Club,unresolved,kent,unknown,0,,homepage loaded (https://www.villagolfcourse.co.uk/) but no platform signal found on it or 2 booking-ish link(,
 Allhallows Golf Course,unresolved,kent/sussex,no_site,0,,no working website found,
 Bay View Park Executive Golf Course,unresolved,kent/sussex,no_site,0,,no working website found,
@@ -1245,27 +1252,18 @@ Horton Golf Club,unresolved,kent/sussex,no_site,0,,no working website found,
 Kent & Surrey Golf & Country Club,unresolved,kent/sussex,no_site,0,,no working website found,
 Leas Course,unresolved,kent/sussex,no_site,0,,no working website found,
 Manston Golf Centre,unresolved,kent/sussex,unknown,0,,homepage loaded (https://www.manstongolfcentre.co.uk/) but no platform signal found on it or 3 booking-ish lin,
-Poult Wood Golf Course - 18 Hole,unresolved,kent/sussex,blocked,0,,site refused or failed to load,
-Poult Wood Golf Course - 9 Hole,unresolved,kent/sussex,blocked,0,,site refused or failed to load,
 Rochester and Cobham Park Golf Club,unresolved,kent/sussex,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
 Roundwood Hall Golf Club,unresolved,kent/sussex,unknown,0,,homepage loaded (https://www.roundwoodhall.co.uk/) but no platform signal found on it or 0 booking-ish link(s),
 Rustington Golf Centre,unresolved,kent/sussex,unknown,0,,homepage loaded (https://rgcgolf.com/) but no platform signal found on it or 17 booking-ish link(s),
 Rye Golf Club,unresolved,kent/sussex,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,https://www.ryegolfclub.co.uk/visitorbooking/
-Sene Valley Golf Club,unresolved,kent/sussex,error,0,,site refused or failed to load,
-Shooters Hill Golf Course,unresolved,kent/sussex,error,0,,site refused or failed to load,
 Sidcup Golf Club,unresolved,kent/sussex,unknown,0,,homepage loaded (https://sidcupgolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s),
 Tonbridge Golf Centre,unresolved,kent/sussex,no_site,0,,no working website found,
-Tudor Park Country Club,unresolved,kent/sussex,error,0,,site refused or failed to load,
-Upchurch River Valley North Course,unresolved,kent/sussex,blocked,0,,site refused or failed to load,
-Upchurch River Valley South Course,unresolved,kent/sussex,blocked,0,,site refused or failed to load,
-Upchurch River Valley West Course,unresolved,kent/sussex,blocked,0,,site refused or failed to load,
 Wellshurst Golf and Country Club,unresolved,kent/sussex,unknown,0,,homepage loaded (https://wellshurst.com/) but no platform signal found on it or 2 booking-ish link(s),
 Whitstable and Seasalter Golf Club,unresolved,kent/sussex,unknown,0,,homepage loaded (https://www.whitstable-golfclub.co.uk/) but no platform signal found on it or 4 booking-ish l,
 World of Golf,unresolved,kent/sussex,no_site,0,,no working website found,
 Worthing Golf Club,unresolved,kent/sussex,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
 Wrotham Heath Golf Club,unresolved,kent/sussex,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
 Braeside Golf Club,unresolved,kent/sussex/surrey,unknown,0,,homepage loaded (https://www.braesidegolfclub.com/) but no platform signal found on it or 0 booking-ish link(s,
-Charterhouse School Golf Club,unresolved,kent/sussex/surrey,blocked,0,,site refused or failed to load,
 Corinthian Golf Club,unresolved,kent/sussex/surrey,brs,0,,brs seen but no confirmed public visitor sheet — worth another look,
 Coulsdon Court Golf Club,unresolved,kent/sussex/surrey,unknown,0,,homepage loaded (https://ccgc.co.uk/) but no platform signal found on it or 1 booking-ish link(s),
 Kingsnorth Golf Club,unresolved,kent/sussex/surrey,unknown,0,,homepage loaded (https://kingsnorthgolf.co.uk/) but no platform signal found on it or 1 booking-ish link(s),
@@ -1744,7 +1742,8 @@ Stonham Barns Golf Centre,unresolved,suffolk,no_site,0,,no working website found
 Stowmarket Golf & Archery Centre,unresolved,suffolk,unknown,0,,homepage loaded (https://www.stowmarketgolfcentre.co.uk/) but no platform signal found on it or 2 booking-ish ,
 The Suffolk Golf & Spa Hotel,unresolved,suffolk,dead_link,0,,no working website found,
 Beaverbrook Golf Club,unresolved,surrey,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
-Betchworth Park Golf Club,unresolved,surrey,blocked,0,,site refused or failed to load,
+Betchworth Park Golf Club,unresolved,surrey,clubv1,0,,clubv1 seen but no confirmed public visitor sheet — worth another look,https://betchworthpark.hub.clubv1.com/
+Charterhouse School Golf Club,unresolved,surrey,unknown,0,,site reachable (https://www.charterhouseclub.co.uk/golf-club) but no visitor booking found on it or 4 sub-page,
 Coombe Hill Golf Club,unresolved,surrey,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
 Dulwich and Sydenham Hill Golf Club,unresolved,surrey,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,
 Effingham Golf Club,unresolved,surrey,unknown,0,,homepage loaded (https://www.effinghamgolfclub.com/) but no platform signal found on it or 3 booking-ish link(,
@@ -1756,7 +1755,6 @@ Foxhills,unresolved,surrey,unknown,0,,homepage loaded (https://www.foxhills.co.u
 Halford Hewitt Golf Course,unresolved,surrey,no_site,0,,no working website found,
 Hankley Common Golf Club,unresolved,surrey,intelligent_golf,0,,intelligent_golf seen but no confirmed public visitor sheet — worth another look,https://hankleycommon.intelligentgolf.co.uk/visitorbooking/
 Hersham Golf Club,unresolved,surrey,unknown,0,,homepage loaded (https://hershamgolfclub.com/) but no platform signal found on it or 2 booking-ish link(s),
-Horne Park Golf Academy,unresolved,surrey,error,0,,site refused or failed to load,
 Horton Park Golf Club,unresolved,surrey,error,0,,site refused or failed to load,
 Main Course,unresolved,surrey,no_site,0,,no working website found,
 Merrist Wood Golf Club,unresolved,surrey,no_site,0,,no working website found,
@@ -1768,7 +1766,7 @@ Sandown Park - Colt Course,unresolved,surrey,unknown,0,,homepage loaded (https:/
 Sandown Park - Eclipse Course,unresolved,surrey,unknown,0,,homepage loaded (https://www.sandownparkgolf.com/) but no platform signal found on it or 5 booking-ish link(s),
 Sandown Park - Masters,unresolved,surrey,unknown,0,,homepage loaded (https://www.sandownparkgolf.com/) but no platform signal found on it or 5 booking-ish link(s),
 Shey Copse,unresolved,surrey,no_site,0,,no working website found,
-St George's Hill Golf Club,unresolved,surrey,blocked,0,,site refused or failed to load,
+St George's Hill Golf Club,unresolved,surrey,unknown,0,,site reachable (https://www.stgeorgeshillgolfclub.co.uk/) but no visitor booking found on it or 2 sub-page(s),
 The Addington Golf Club,unresolved,surrey,esp,0,,esp seen but no confirmed public visitor sheet — worth another look,https://www.e-s-p.com/elitelive/book_date.php
 The Church,unresolved,surrey,no_site,0,,no working website found,
 The Garden,unresolved,surrey,no_site,0,,no working website found,

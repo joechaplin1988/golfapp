@@ -1,0 +1,7 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Charterhouse School Golf Club,https://www.charterhousegolfclub.co.uk/,,,unknown,unknown,,low,site reachable (https://www.charterhouseclub.co.uk/golf-club) but no visitor booking found on it or 4 sub-page(s)
+White Lodge Golf Club,https://whitelodgegolfclub.co.uk/,,,error,unknown,,low,unreachable even with a browser user agent
+Betchworth Park Golf Club,https://www.betchworthparkgc.co.uk/,51.2360649,-0.3039436,clubv1,unknown,https://betchworthpark.hub.clubv1.com/,medium,site reachable (https://www.betchworthparkgc.co.uk/) but no visitor booking found on it or 1 sub-page(s)
+Horton Park Golf Club,https://hortonparkgolf.com/,51.355514,-0.283372,error,unknown,,low,unreachable even with a browser user agent
+Horne Park Golf Academy,https://www.hornepark.co.uk/,51.177549,-0.0760197,intelligent_golf,public,https://hornepark.intelligentgolf.co.uk/visitorbooking/,high,found on https://hornepark.co.uk/green-fees/
+St George's Hill Golf Club,https://www.stgeorgeshillgolfclub.co.uk/,51.3466478,-0.4514455,unknown,unknown,,low,site reachable (https://www.stgeorgeshillgolfclub.co.uk/) but no visitor booking found on it or 2 sub-page(s)

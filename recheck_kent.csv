@@ -1,0 +1,9 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Shooters Hill Golf Course,https://www.shgc.uk.com/,51.471235,0.0778669,unknown,unknown,,low,site reachable (https://shgc.uk.com/) but no visitor booking found on it or 0 sub-page(s)
+Sene Valley Golf Club,https://www.senevalleygolfclub.com/,51.0773687,1.1052178,clubv1,unknown,https://senevalley.hub.clubv1.com,medium,site reachable (https://www.senevalleygolfclub.co.uk/) but no visitor booking found on it or 2 sub-page(s)
+Tudor Park Country Club,https://www.marriottgolf.co.uk/club/tudor-park,51.2620354,0.5891547,unknown,unknown,,low,site reachable (https://www.marriottlifestyle.co.uk/golf-uk) but no visitor booking found on it or 0 sub-page(s)
+Upchurch River Valley North Course,https://www.urvgc.co.uk/Home.aspx,51.3708125,0.6356366,esp,unknown,https://www.e-s-p.com/elitelive/login.php,medium,site reachable (https://urvgc.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Upchurch River Valley South Course,https://www.urvgc.co.uk/Home.aspx,51.3632954,0.6342862,esp,unknown,https://www.e-s-p.com/elitelive/login.php,medium,site reachable (https://urvgc.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Upchurch River Valley West Course,https://www.urvgc.co.uk/Home.aspx,51.3676705,0.6348436,esp,unknown,https://www.e-s-p.com/elitelive/login.php,medium,site reachable (https://urvgc.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Poult Wood Golf Course - 18 Hole,https://www.tmactive.co.uk/locations/poult-wood,51.2230216,0.302703,gladstone,public,https://tma.gladstonego.cloud/book,high,found on https://www.tmactive.co.uk/
+Poult Wood Golf Course - 9 Hole,https://www.tmactive.co.uk/locations/poult-wood,51.2240505,0.2961872,gladstone,public,https://tma.gladstonego.cloud/book,high,found on https://www.tmactive.co.uk/
