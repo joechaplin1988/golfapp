@@ -28,3 +28,5 @@ Henlow Golf Club,https://www.henlowgolfclub.com,,,unknown,unknown,,low,homepage 
 Sharnbrook Golf Club,https://www.sharnbrookgolfclub.co.uk,,,unknown,unknown,,low,homepage loaded (https://sharnbrookgolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
 Abbotsley Golf Hotel,https://www.abbotsley.com/,52.1963068,-0.2396806,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.abbotsley.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
 Whipsnade Park Golf Club,https://www.whipsnadeparkgolf.co.uk/,51.8375034,-0.5417199,brs,public,https://visitors.brsgolf.com/whipsnadepark,high,
+Galley Hills Course,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"
+Warden Hills Course,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"

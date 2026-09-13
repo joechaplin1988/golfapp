@@ -1,0 +1,74 @@
+[
+ {
+  "name": "Burnham Beeches Golf Club",
+  "lat": 51.5492284,
+  "lon": -0.6460634,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.bbgc.co.uk/"
+ },
+ {
+  "name": "Flackwell Heath Golf Course",
+  "lat": 51.6002043,
+  "lon": -0.6974482,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.fhgc.co.uk/"
+ },
+ {
+  "name": "Bishop's Stortford Golf Club",
+  "lat": 51.8684067,
+  "lon": 0.1884653,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.bsgc.co.uk/"
+ },
+ {
+  "name": "Brickendon Grange Golf Club",
+  "lat": 51.7517711,
+  "lon": -0.0911097,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.bggc.org.uk/"
+ },
+ {
+  "name": "Brookmans Park Golf Course",
+  "lat": 51.7261,
+  "lon": -0.1935465,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.bpgc.co.uk/"
+ },
+ {
+  "name": "Bush Hill Park Golf Club",
+  "lat": 51.6462836,
+  "lon": -0.0880528,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.bhpgc.com/"
+ },
+ {
+  "name": "Strawberry Hill Golf Club",
+  "lat": 51.4365988,
+  "lon": -0.343613,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.shgolf.co.uk/"
+ },
+ {
+  "name": "West Middlesex Golf Course",
+  "lat": 51.5137663,
+  "lon": -0.3569882,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://westmiddlesex.golf/"
+ },
+ {
+  "name": "The Springs Golf Club",
+  "lat": 51.576502,
+  "lon": -1.1189222,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://verderesorts.co.uk/the-springs-resort-and-golf-club/golf-membership/?utm_source=thespringsgolfclub.co.uk&utm_medium=Referral&utm_campaign=SP+Redirect"
+ }
+]

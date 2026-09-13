@@ -49,3 +49,6 @@ Three Locks Golf Club,https://www.threelocksgolfclub.co.uk/,51.9507332,-0.699434
 Wexham Park Golf Centre,https://www.wexhamparkgolfcentre.co.uk/,51.5381178,-0.5729347,brs,public,https://visitors.brsgolf.com/wexhampark18#/course/1,high,confirmed by following the platform link found on the club's own site
 Windmill Hill Golf Centre,https://www.windmillhillgc.co.uk/,51.9931742,-0.7752656,unknown,unknown,,low,homepage loaded (https://www.windmillhillgc.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
 Chiltern Hospital Golf Course,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Burnham Beeches Golf Club,https://www.bbgc.co.uk/,51.5492284,-0.6460634,intelligent_golf,login_required,,high,intelligent_golf convention path requires login: https://www.bbgc.co.uk/visitorbooking/
+Flackwell Heath Golf Course,https://www.fhgc.co.uk/,51.6002043,-0.6974482,intelligent_golf,public,https://www.fhgc.co.uk/visitorbooking/,high,
+Southfield,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"

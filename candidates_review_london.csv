@@ -93,3 +93,12 @@ Harrow School Golf Course,,,,not_a_club,out_of_scope,,high,not a club a visitor 
 Queens Park Pitch and Putt,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
 South Norwood Pitch and Putt,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
 Tudor Park Footgolf Course,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Bush Hill Park Golf Club,https://www.bhpgc.com/,51.6462836,-0.0880528,intelligent_golf,public,https://www.bhpgc.com/visitorbooking/,high,
+Strawberry Hill Golf Club,https://www.shgolf.co.uk/,51.4365988,-0.343613,clubv1,public,https://strawberry.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-13,high,
+West Middlesex Golf Course,https://westmiddlesex.golf/,51.5137663,-0.3569882,unknown,unknown,,low,homepage loaded (https://westmiddlesex.golf/) but no platform signal found on it or 0 booking-ish link(s)
+Championship Course,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"
+David Lloyd Hampton,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Falconwood Course,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"
+Horsenden Hill Activity Centre,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+The Oaks - Acorn Course,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"
+The Oaks Horley Course,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"

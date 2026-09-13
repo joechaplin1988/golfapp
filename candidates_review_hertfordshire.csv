@@ -63,3 +63,8 @@ Sandy Lodge Golf Club,https://www.sandylodge.co.uk/,51.6278758,-0.423274,intelli
 Shendish Manor Golf Course,https://www.shendishmanorgolfclub.co.uk/,51.7300311,-0.4678039,unknown,unknown,,low,homepage loaded (https://www.shendishmanorgolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
 Verulam Golf Club,https://www.verulamgolf.co.uk/,51.7371796,-0.3250247,intelligent_golf,public,https://www.verulamgolf.co.uk/visitorbooking/,high,
 West Herts Golf Club,https://www.westhertsgolfclub.co.uk/,51.664432,-0.4329873,intelligent_golf,public,https://www.westhertsgolfclub.co.uk/visitorbooking/,high,
+Brickendon Grange Golf Club,https://www.bggc.org.uk/,51.7517711,-0.0911097,clubv1,public,https://bggc.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-13,high,confirmed by following the platform link found on the club's own site
+Brookmans Park Golf Course,https://www.bpgc.co.uk/,51.7261,-0.1935465,intelligent_golf,public,https://www.bpgc.co.uk/visitorbooking/,high,
+Melbourne Course,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"
+Palmerston Course,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"
+The Grove,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"
