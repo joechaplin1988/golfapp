@@ -3,10 +3,19 @@ name: Scrape tee times into Supabase
 # Runs the whole pipeline (run_pipeline.py) on a schedule. GitHub Actions is
 # both the scheduler and the Python host (n8n Cloud can't run Python).
 #
-# Two cadences, because sheets change fastest close to the day:
-#   - every 4 hours  : the near window, today .. +2 days   (--days 3)
-#   - once a day     : the full window, today .. +6 days   (--days 7)
+# Three cadences (UTC), because testers are in London and the Home Counties
+# and sheets change fastest close to the day:
+#   - every 2 hours, 04:00-22:00 : launch area, today .. +2 days   (~30 min)
+#   - 13:00                      : all of England, today .. +2 days (~70 min)
+#   - 00:30                      : all of England, today .. +6 days (~2.5 h)
 #
+# Slots are chosen so a run always finishes before the NEXT one queues. Only
+# one run may hold the concurrency group, and GitHub keeps a single pending
+# run: a newer one queuing cancels the pending one. The 13:00 run overlaps the
+# 14:00 launch run, which waits as the only pending run; nothing else queues
+# before 16:00. The overnight run has until 04:00.
+#
+# Earlier history:
 # The gap between them matters. A near run takes ~45 minutes at 516 sheets and
 # a full one about two hours, and the concurrency group lets only one run touch
 # the database at a time. On the old every-2-hours cadence the full run never
@@ -19,14 +28,20 @@ name: Scrape tee times into Supabase
 
 on:
   schedule:
-    - cron: "0 */4 * * *"        # near window (UTC)
-    - cron: "30 2 * * *"         # full 7-day window, overnight (UTC)
+    - cron: "0 4-22/2 * * *"     # launch area, near window
+    - cron: "0 13 * * *"         # all of England, near window
+    - cron: "30 0 * * *"         # all of England, full 7-day window
   workflow_dispatch:             # manual "Run workflow" button in the Actions tab
     inputs:
       days:
         description: "How many days ahead to scrape (today = 1)"
         default: "7"
         required: false
+      area:
+        description: "all = every club; launch = London and the Home Counties only"
+        type: choice
+        options: [all, launch]
+        default: all
 
 concurrency:                     # never let two runs overlap on the same DB
   group: scrape
@@ -59,7 +74,9 @@ jobs:
           # IPv6-only from GitHub runners):
           #   host=aws-1-eu-west-1.pooler.supabase.com port=5432 user=postgres.<ref> password=<pw> dbname=postgres sslmode=require
           DATABASE_URL: ${{ secrets.GOLF_APP }}
-          # The overnight cron and manual runs get the full window; the
-          # 4-hourly cron only refreshes the next three days.
-          DAYS: ${{ github.event.inputs.days || (github.event.schedule == '30 2 * * *' && '7' || '3') }}
-        run: python run_pipeline.py --days "$DAYS"
+          # The overnight cron and manual runs get the full window; the other
+          # two crons refresh the next three days. Only the 2-hourly cron is
+          # limited to the launch area.
+          DAYS: ${{ github.event.inputs.days || (github.event.schedule == '30 0 * * *' && '7' || '3') }}
+          AREA: ${{ github.event.inputs.area || (github.event.schedule == '0 4-22/2 * * *' && 'launch' || 'all') }}
+        run: python run_pipeline.py --days "$DAYS" --area "$AREA"

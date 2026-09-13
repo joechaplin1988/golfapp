@@ -550,3 +550,25 @@ Area, Village, Hamlet) ahead of everything else. Counting nearby courses was
 primary and got Bradford and Scarborough wrong: a Manchester suburb and a Kent
 hamlet both sit in denser golf country than the city and the seaside town they
 share a name with.
+
+## MVP launch area (2026-09-13)
+Joe's call: put the platform in front of real users in a defined area first —
+London and the Home Counties — rather than UK-wide, because someone searching
+an area we have not worked would get a poor experience.
+
+What that changed:
+- **Refresh priority.** run_pipeline.py --area launch scrapes only clubs whose
+  postcode area is in LAUNCH_POSTCODE_AREAS (301 of 756 sheets). The schedule
+  runs it every 2 hours 04:00-22:00 UTC, all of England at 13:00 for 3 days,
+  and all of England for 7 days at 00:30. The DB sync always uses the whole
+  config, so clubs outside the area are never dropped, only refreshed less often.
+  Hampshire's coast (PO, SO) is outside by choice; widen the set to change that.
+- **Coverage work order.** Home Counties first. find_websites.py found 62 sites
+  for the 199 no-website clubs (+32 sheets live). review_launch_area.csv is
+  the 301 clubs still unresolved there, handed to Joe for a manual pass,
+  ordered easiest-first; automated work continues from the bottom of that list
+  so the two never overlap.
+- **Deferred, not dropped:** Wales and Scotland; a "not covered yet" message for
+  out-of-area searches (bundle with the next web change to save a Netlify
+  build); satellite course images (licensed map imagery, no club permission
+  needed — club photos would need it).

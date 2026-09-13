@@ -60,15 +60,36 @@ SCRAPE_FNS = {
 }
 
 
+# London and the Home Counties, by postcode area: where the MVP launches. Testers
+# judge us on whether times are current, so the schedule refreshes these clubs
+# every two hours and the rest of England less often. Hampshire's coast (PO,
+# SO) is deliberately outside; add areas here to widen the launch.
+LAUNCH_POSTCODE_AREAS = frozenset({
+    "E", "EC", "N", "NW", "SE", "SW", "W", "WC",                  # London
+    "BR", "CR", "DA", "EN", "HA", "IG", "KT", "RM", "SM", "TW", "UB", "WD",
+    "CT", "ME", "TN",                                              # Kent
+    "BN", "RH", "GU",                                              # Sussex, Surrey
+    "CM", "CO", "SS",                                              # Essex
+    "AL", "SG", "LU", "HP", "MK",                                  # Herts, Beds, Bucks
+    "SL", "RG", "OX",                                              # Berks, Oxon
+})
+
+
+def in_launch_area(club: gc.ClubConfig) -> bool:
+    pc = club.postcode.strip().upper()
+    return (pc[:2] if pc[:2].isalpha() else pc[:1]) in LAUNCH_POSTCODE_AREAS
+
+
 def date_window(days: int, start: str | None) -> list[str]:
     d0 = date.fromisoformat(start) if start else date.today()
     return [(d0 + timedelta(days=i)).isoformat() for i in range(days)]
 
 
-def run(config_path: str, platforms: list[str], dates: list[str], to_db: bool) -> None:
+def run(config_path: str, platforms: list[str], dates: list[str], to_db: bool,
+        area: str = "all") -> None:
     started_at = datetime.now(timezone.utc)
     log.info(f"Pipeline: {len(platforms)} platform(s) x {len(dates)} date(s) "
-             f"({dates[0]}..{dates[-1]}){' -> DB' if to_db else ' (no DB)'}")
+             f"({dates[0]}..{dates[-1]}), area={area}{' -> DB' if to_db else ' (no DB)'}")
     if to_db:
         # Keep the DB's clubs/courses in step with clubs_config.csv on every
         # run, so a club added to the CSV and pushed goes live on the next
@@ -87,6 +108,13 @@ def run(config_path: str, platforms: list[str], dates: list[str], to_db: bool) -
             log.error(f"config -> DB sync failed (continuing with existing courses): {e}")
 
     work = {p: gc.load_clubs(config_path, platform=p) for p in platforms}
+    if area == "launch":
+        # Filter only what gets SCRAPED. The sync above still ran on the whole
+        # config, so clubs outside the launch area stay in the DB untouched
+        # and keep their tee times until the next all-England run.
+        work = {p: [c for c in clubs if in_launch_area(c)] for p, clubs in work.items()}
+        log.info(f"Launch area only: {sum(len(c) for c in work.values())} course(s) "
+                 f"in London and the Home Counties")
     work = {p: c for p, c in work.items() if c}
     q: queue.Queue = queue.Queue()
 
@@ -148,7 +176,7 @@ def run(config_path: str, platforms: list[str], dates: list[str], to_db: bool) -
                 with c2.cursor() as cur:
                     golf_db.record_scrape_run(
                         cur, started_at=started_at, days=len(dates),
-                        platforms=",".join(sorted(work)),
+                        platforms=",".join(sorted(work)) + (" [launch area]" if area == "launch" else ""),
                         courses=sum(len(v) for v in work.values()) * len(dates),
                         ok=tally["ok"], empty=tally["empty"], error=tally["error"],
                         rows_written=tally["rows"],
@@ -169,5 +197,7 @@ if __name__ == "__main__":
     ap.add_argument("--start", default=None, help="first date YYYY-MM-DD (default: today)")
     ap.add_argument("--platforms", nargs="+", default=list(SCRAPE_FNS), choices=list(SCRAPE_FNS))
     ap.add_argument("--no-db", action="store_true", help="scrape and summarise only; don't write to the DB")
+    ap.add_argument("--area", choices=("all", "launch"), default="all",
+                    help="launch = London and the Home Counties only (see LAUNCH_POSTCODE_AREAS)")
     a = ap.parse_args()
-    run(a.config, a.platforms, date_window(a.days, a.start), to_db=not a.no_db)
+    run(a.config, a.platforms, date_window(a.days, a.start), to_db=not a.no_db, area=a.area)
