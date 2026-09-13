@@ -302,6 +302,9 @@ async function getJson(url) {
 // the common path (a postcode) never loads it. A failure is not fatal: the
 // chooser falls back to its county ranking.
 let clubPointsCache;
+// Courses we list within the search radius. Only worked out when a search
+// finds nothing, which is the one time it changes what the page should say.
+let nearbyCourses = null;
 async function clubPoints() {
   if (clubPointsCache !== undefined) return clubPointsCache;
   try {
@@ -518,7 +521,12 @@ function render() {
   const f = currentFilters();
   const rows = applyFilters(allRows, f);
   if (!allRows.length) {
-    setStatus("No tee times found for that search. Try a wider radius, a different date, or fewer players.");
+    if (nearbyCourses === 0) {
+      setStatus("We don't list any courses within " + $("radius").value + " miles of there yet. " +
+                "We cover clubs across England, most completely in London and the Home Counties.");
+    } else {
+      setStatus("No tee times found for that search. Try a wider radius, a different date, or fewer players.");
+    }
     return;
   }
   if (!rows.length) {
@@ -615,6 +623,16 @@ async function runSearch(loc) {
       in_max_price: null,   // price, holes and time window are filtered client-side
       in_holes: null,
     });
+    // Nothing nearby at all is a different answer from nothing free today. It
+    // means we don't list courses there yet, and "try a different date" would
+    // send someone in Glasgow round in circles.
+    nearbyCourses = null;
+    if (!allRows.length) {
+      const points = await clubPoints();
+      if (points) {
+        nearbyCourses = countWithin(points, loc.lat, loc.lng, Number($("radius").value) / MILES_PER_KM);
+      }
+    }
     filtersEl.hidden = false;
     // A phone shows the form and nothing else, so without this the page looks
     // like the Search button did nothing. Only on a fresh search, never on a
