@@ -56,7 +56,8 @@ MAX_KM = 15.0
 NOT_A_CLUB = re.compile(
     r"simulator|indoor|driving range|golf range|\brange\b|pitch\s*(and|&)?\s*putt|"
     r"footgolf|foot golf|mini golf|crazy golf|adventure golf|putting|"
-    r"\bschool\b|\bcollege\b|hospital|holiday park|caravan", re.I)
+    r"\bschool\b|\bcollege\b|hospital|holiday park|caravan|"
+    r"topgolf|top golf|starter shack|leisure centre|activity centre|david lloyd", re.I)
 
 GENERIC = {"the", "golf", "club", "course", "centre", "center", "complex", "leisure",
            "and", "country", "estate", "gc", "links", "gold"}
@@ -93,23 +94,46 @@ def core_words(name):
     return [w for w in words if w not in GENERIC]
 
 
-def guesses(name):
-    """Most likely first, so the first verified hit is usually the right one."""
+def guesses(name, extra_only=False):
+    """(domain, strict) pairs, most likely first.
+
+    The first pass is <name><golfclub|gc|golf|golfcourse>.<tld>. The extra
+    pass covers what that missed in the Home Counties: initials (Burnham
+    Beeches -> bbgc.co.uk, Bishop's Stortford -> bsgc), a leading "the"
+    (thegrove.co.uk), and the .golf / .club domains.
+
+    strict=True marks a guess too ambiguous to accept on a title match:
+    bbgc.co.uk could be any B-B golf club in the country, so it only counts
+    with a postcode on the page near the club.
+    """
     core = core_words(name)
     if not core:
         return []
-    bases = ["".join(core)]
-    if len(core) > 1:
-        bases.append("-".join(core))
     out = []
-    for base in bases:
-        for suffix in ("golfclub", "gc", "golf", "golfcourse", ""):
-            for tld in (".co.uk", ".com", ".org.uk", ".uk"):
-                label = f"{base}{suffix}" if suffix else base
-                if suffix and "-" in base:
-                    label = f"{base}-{suffix}"
-                if len(label) > 3:
-                    out.append(label + tld)
+    if not extra_only:
+        bases = ["".join(core)]
+        if len(core) > 1:
+            bases.append("-".join(core))
+        for base in bases:
+            for suffix in ("golfclub", "gc", "golf", "golfcourse", ""):
+                for tld in (".co.uk", ".com", ".org.uk", ".uk"):
+                    label = f"{base}{suffix}" if suffix else base
+                    if suffix and "-" in base:
+                        label = f"{base}-{suffix}"
+                    if len(label) > 3:
+                        out.append((label + tld, False))
+    joined = "".join(core)
+    if name.lower().startswith("the "):
+        for suffix in ("", "golfclub", "golf"):
+            for tld in (".co.uk", ".com"):
+                out.append((f"the{joined}{suffix}{tld}", False))
+    for tld in (".golf", ".club"):
+        out.append((joined + tld, False))
+    if len(core) >= 2:
+        initials = "".join(w[0] for w in core)
+        for suffix in ("gc", "golfclub", "golf"):
+            for tld in (".co.uk", ".com", ".org.uk"):
+                out.append((f"{initials}{suffix}{tld}", True))
     return list(dict.fromkeys(out))
 
 
@@ -142,7 +166,7 @@ def postcodes_near(postcodes, lat, lon):
     return min(dists) if dists else None
 
 
-def check_site(domain, name, lat, lon, session):
+def check_site(domain, name, lat, lon, session, strict=False):
     distinctive = max(core_words(name), key=len, default="")
     for url in (f"https://www.{domain}", f"https://{domain}"):
         host = url.split("//", 1)[1]
@@ -171,6 +195,8 @@ def check_site(domain, name, lat, lon, session):
         if near is not None:
             # A real postcode, but somewhere else: another club of the same name.
             return None
+        if strict:
+            return None
         if distinctive and distinctive in title.lower() and "golf" in title.lower():
             return {"site": r.url, "confidence": "medium",
                     "evidence": f"no postcode on page; club name in title: {title[:60]}"}
@@ -184,11 +210,15 @@ def find_for(club, session):
     # OSM sometimes names a single COURSE at a multi-course venue — "The
     # Church", "Village course", "The Garden". One generic word guesses its
     # way onto churchgolf.com or a for-sale domain, never the club.
-    if "golf" not in name.lower() and len(core_words(name)) < 2:
+    # "Main Course", "Melbourne Course", "Galley Hills Course" too: a course
+    # inside a bigger venue, named on its own.
+    if "golf" not in name.lower() and (len(core_words(name)) < 2 or re.search(r"\bcourse$", name, re.I)):
         return {**club, "result": "skipped", "reason": "a course name, not a club name; nothing to search on"}
-    for domain in guesses(name):
-        hit = check_site(domain, name, club.get("lat"), club.get("lon"), session)
+    for domain, strict in guesses(name, extra_only=club.get("extra_only", False)):
+        hit = check_site(domain, name, club.get("lat"), club.get("lon"), session, strict)
         if hit:
+            if strict:
+                hit["evidence"] = "initials domain; " + hit["evidence"]
             return {**club, "result": "found", **hit}
     return {**club, "result": "not_found", "reason": "no guessed domain verified"}
 
@@ -227,9 +257,13 @@ def main():
     ap.add_argument("--out", required=True, help="enumerate-format JSON of clubs whose site was found")
     ap.add_argument("--report", default=None, help="CSV of every club tried and the outcome")
     ap.add_argument("--workers", type=int, default=10)
+    ap.add_argument("--extra-only", action="store_true",
+                    help="only the second-pass guesses, for clubs the first pass already failed on")
     a = ap.parse_args()
 
     clubs = load_clubs(set(a.counties))
+    for c in clubs:
+        c["extra_only"] = a.extra_only
     print(f"{len(clubs)} unresolved no-website club(s) in {', '.join(a.counties)}")
     session = requests.Session()
     results = []
