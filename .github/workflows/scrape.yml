@@ -3,23 +3,21 @@ name: Scrape tee times into Supabase
 # Runs the whole pipeline (run_pipeline.py) on a schedule. GitHub Actions is
 # both the scheduler and the Python host (n8n Cloud can't run Python).
 #
-# Three cadences (UTC), because testers are in London and the Home Counties
-# and sheets change fastest close to the day:
-#   - every 2 hours, 04:17-22:17 : launch area, today .. +2 days   (~30 min)
-#   - 12:47                      : all of England, today .. +2 days (~70 min)
-#   - 00:37                      : all of England, today .. +6 days (~2.5 h)
+# Scheduled runs don't trust which cron fired. GitHub delays and drops
+# scheduled runs for this repository: on 2026-09-13 four of five top-of-the-
+# hour slots never ran, and after moving to odd minutes the overnight full run
+# still never fired while the launch slots that did came 35 minutes to 2 hours
+# late. So every slot runs --area auto, which reads scrape_runs and does the
+# most overdue job:
+#   - all of England, 7 days, if no full run has finished in 24 hours (~2.5 h)
+#   - else all of England, 3 days, if none has finished in 12 hours   (~70 min)
+#   - else London and the Home Counties, 3 days                        (~30 min)
+# A dropped or killed run records nothing, so the next slot picks up its work.
 #
-# Never on the hour. GitHub documents the start of every hour as the busiest
-# time for scheduled workflows, when they are delayed and, under enough load,
-# dropped. On 2026-09-13 four of the five top-of-the-hour slots simply never
-# ran. Odd minutes avoid the rush.
-#
-# Slots are chosen so a run always finishes before the NEXT one queues. Only
-# one run may hold the concurrency group, and GitHub keeps a single pending
-# run: a newer one queuing cancels the pending one. The 12:47 run may wait
-# briefly for the 12:17 launch run, then overlaps the 14:17 launch run, which
-# waits as the only pending run; nothing else queues before 16:17. The
-# overnight run has until 04:17.
+# The slots keep the old spacing, so clubs are asked no more often than before.
+# Only one run holds the concurrency group at a time; a slot that fires while a
+# long run is going waits as the single pending run, and by the time it starts
+# the history shows the long run done.
 #
 # Earlier history:
 # The gap between them matters. A near run takes ~45 minutes at 516 sheets and
@@ -34,9 +32,9 @@ name: Scrape tee times into Supabase
 
 on:
   schedule:
-    - cron: "17 4-22/2 * * *"    # launch area, near window
-    - cron: "47 12 * * *"        # all of England, near window
-    - cron: "37 0 * * *"         # all of England, full 7-day window
+    - cron: "17 4-22/2 * * *"    # every slot is --area auto; see above
+    - cron: "47 12 * * *"
+    - cron: "37 0 * * *"
   workflow_dispatch:             # manual "Run workflow" button in the Actions tab
     inputs:
       days:
@@ -44,10 +42,10 @@ on:
         default: "7"
         required: false
       area:
-        description: "all = every club; launch = London and the Home Counties only"
+        description: "auto = most overdue job; all = every club; launch = London and the Home Counties only"
         type: choice
-        options: [all, launch]
-        default: all
+        options: [auto, all, launch]
+        default: auto
 
 concurrency:                     # never let two runs overlap on the same DB
   group: scrape
@@ -80,9 +78,8 @@ jobs:
           # IPv6-only from GitHub runners):
           #   host=aws-1-eu-west-1.pooler.supabase.com port=5432 user=postgres.<ref> password=<pw> dbname=postgres sslmode=require
           DATABASE_URL: ${{ secrets.GOLF_APP }}
-          # The overnight cron and manual runs get the full window; the other
-          # two crons refresh the next three days. Only the 2-hourly cron is
-          # limited to the launch area.
-          DAYS: ${{ github.event.inputs.days || (github.event.schedule == '37 0 * * *' && '7' || '3') }}
-          AREA: ${{ github.event.inputs.area || (github.event.schedule == '17 4-22/2 * * *' && 'launch' || 'all') }}
+          # Scheduled runs are always auto, which picks its own window. DAYS only
+          # matters for a manual run with area all or launch.
+          DAYS: ${{ github.event.inputs.days || '3' }}
+          AREA: ${{ github.event.inputs.area || 'auto' }}
         run: python run_pipeline.py --days "$DAYS" --area "$AREA"

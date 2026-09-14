@@ -80,6 +80,46 @@ def in_launch_area(club: gc.ClubConfig) -> bool:
     return (pc[:2] if pc[:2].isalpha() else pc[:1]) in LAUNCH_POSTCODE_AREAS
 
 
+# How stale each kind of run may get before a scheduled slot does it instead of
+# the launch-area refresh. GitHub's scheduler delays and drops runs for this
+# repository (2026-09-13: the overnight full run never fired, and the launch
+# slots that did fire were 35 minutes to 2 hours late). So scheduled runs don't
+# trust WHICH cron fired; each asks the run history what is most overdue.
+FULL_RUN_MAX_AGE = timedelta(hours=24)
+ALL_ENGLAND_MAX_AGE = timedelta(hours=12)
+
+
+def decide(last_full, last_all_england, now):
+    """(days, area, reason) for a scheduled run. Pure, so it can be tested
+    without a database: pass the finished_at of the latest all-England 7-day
+    run and the latest all-England run of any length, or None for never."""
+    if last_full is None or now - last_full > FULL_RUN_MAX_AGE:
+        age = "never" if last_full is None else f"{(now - last_full).total_seconds() / 3600:.1f}h ago"
+        return 7, "all", f"last full 7-day run {age}"
+    if last_all_england is None or now - last_all_england > ALL_ENGLAND_MAX_AGE:
+        age = "never" if last_all_england is None else f"{(now - last_all_england).total_seconds() / 3600:.1f}h ago"
+        return 3, "all", f"last all-England run {age}"
+    return 3, "launch", "full and all-England runs are both recent enough"
+
+
+def decide_from_history():
+    """Read scrape_runs and decide. A run that dies before recording itself
+    leaves no row, so the next slot simply tries again: dropped or killed runs
+    delay the work, they never lose it."""
+    with golf_db.get_connection() as conn, conn.cursor() as cur:
+        cur.execute(
+            """
+            select
+                max(finished_at) filter (where days >= 7),
+                max(finished_at)
+            from scrape_runs
+            where platforms not like '%[launch area]%'
+            """
+        )
+        last_full, last_all = cur.fetchone()
+    return decide(last_full, last_all, datetime.now(timezone.utc))
+
+
 def date_window(days: int, start: str | None) -> list[str]:
     d0 = date.fromisoformat(start) if start else date.today()
     return [(d0 + timedelta(days=i)).isoformat() for i in range(days)]
@@ -197,7 +237,14 @@ if __name__ == "__main__":
     ap.add_argument("--start", default=None, help="first date YYYY-MM-DD (default: today)")
     ap.add_argument("--platforms", nargs="+", default=list(SCRAPE_FNS), choices=list(SCRAPE_FNS))
     ap.add_argument("--no-db", action="store_true", help="scrape and summarise only; don't write to the DB")
-    ap.add_argument("--area", choices=("all", "launch"), default="all",
-                    help="launch = London and the Home Counties only (see LAUNCH_POSTCODE_AREAS)")
+    ap.add_argument("--area", choices=("all", "launch", "auto"), default="all",
+                    help="launch = London and the Home Counties only (see LAUNCH_POSTCODE_AREAS); "
+                         "auto = do whatever the run history says is most overdue, ignoring --days")
     a = ap.parse_args()
-    run(a.config, a.platforms, date_window(a.days, a.start), to_db=not a.no_db, area=a.area)
+    days, area = a.days, a.area
+    if area == "auto":
+        if a.no_db:
+            raise SystemExit("--area auto reads the run history, so it needs the database (drop --no-db)")
+        days, area, reason = decide_from_history()
+        log.info(f"Auto: {days} day(s), area={area} ({reason})")
+    run(a.config, a.platforms, date_window(days, a.start), to_db=not a.no_db, area=area)

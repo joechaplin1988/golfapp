@@ -572,3 +572,22 @@ What that changed:
   out-of-area searches (bundle with the next web change to save a Netlify
   build); satellite course images (licensed map imagery, no club permission
   needed — club photos would need it).
+
+## Scheduling that survives GitHub dropping runs (2026-09-14)
+GitHub's scheduler delays and drops scheduled runs for this repository. On
+2026-09-13 four of five top-of-the-hour slots never ran. Moving to odd minutes
+did not fix it: overnight the full 7-day run never fired at all, and the launch
+slots that did fire were 35 minutes to 2 hours late, leaving the rest of England
+and days 4-7 unrefreshed for over a day.
+
+So scheduled runs no longer trust which cron fired. Every slot runs
+run_pipeline.py --area auto, which reads scrape_runs and does the most overdue
+job: all of England for 7 days if no full run finished in 24 hours, else all of
+England for 3 days if none finished in 12 hours, else the launch area. A run that
+is dropped or killed records nothing, so the next slot picks its work up. The
+thresholds are FULL_RUN_MAX_AGE and ALL_ENGLAND_MAX_AGE; decide() is a pure
+function with the cases tested offline. Slot spacing is unchanged, so no club is
+asked more often than before.
+
+If this still proves unreliable, the next step is an external trigger calling
+GitHub's dispatch API on a timer, which needs a token and an account — Joe's call.
