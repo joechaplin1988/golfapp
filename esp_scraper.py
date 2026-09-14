@@ -64,7 +64,7 @@ def _to_ddmmyy(date_iso: str) -> str:
 ESP_BACKEND_ERROR_RE = re.compile(r"RestAPI error|Connection timed out after|Fatal error", re.I)
 
 
-def _find_18_hole_group(html: str) -> str | None:
+def _find_18_hole_group(html: str, date_iso: str | None = None) -> str | None:
     """Pick the visitor 18-hole group link from a chooser page, else None.
 
     A chooser can carry two kinds of link. gotdata=1 selects a real booking
@@ -89,10 +89,29 @@ def _find_18_hole_group(html: str) -> str | None:
                 # Three Rivers lists "Fitness Classes" and "Gym Workout" above
                 # its two courses. None of the four says 18, so the first one
                 # won, and the scraper read a gym timetable as an empty tee sheet.
-                or re.search(r"\b(fitness|gym|class(es)?|swim\w*|spa|tennis|lessons?)\b", blob)):
+                or re.search(r"\b(fitness|gym|class(es)?|swim\w*|spa|tennis|lessons?)\b", blob)
+                # Garon Park added a "Golf Simulator" category on 2026-09-14. It
+                # contains "golf", so it outscored "Main Courses" and production
+                # scraped the indoor simulator: no tee times, every date. A scan
+                # of all 29 ESP choosers found more that contain "golf" and only
+                # lose today because they are listed second: "Mr Mulligan's
+                # Pirate Golf", "Foot Golf", "Open Golf Events".
+                or re.search(r"\b(simulators?|golfsim|indoor|driving range|range|pirate|foot golf|"
+                             r"events?|custom fitting|swing studio|play and learn)\b", blob)):
             return -1
+        # Woldingham and Surrey National offer "Weekday Golf" and "Weekend Golf"
+        # as separate groups. Always taking the first meant every Saturday and
+        # Sunday came back empty while weekdays showed 37-66 tee times.
+        if date_iso:
+            import datetime as _dt
+            weekend = _dt.date.fromisoformat(date_iso).weekday() >= 5
+            if re.search(r"\bweekends?\b", blob) and not weekend:
+                return -1
+            if re.search(r"\bweekdays?\b", blob) and weekend:
+                return -1
         value = 1 if "18" in blob else 0
-        if re.search(r"\b(tee times?|golf|course)\b", blob):
+        # "courses?" -- the plural matters: "Main Courses" must count as golf.
+        if re.search(r"\b(tee times?|golf|courses?)\b", blob):
             value += 0.25
         if "gotdata=2" in blob:
             value -= 0.5
@@ -156,7 +175,7 @@ def scrape_club(club: gc.ClubConfig, date_iso: str, session) -> tuple[list[gc.Te
     # the group step entirely and go straight to the AJAX fetch.
     DATE_CHOOSER_PAGES = ("book_date.php", "book_widedaterange.php")
     if not any(p in start.url for p in DATE_CHOOSER_PAGES):
-        group_href = _find_18_hole_group(start.text)
+        group_href = _find_18_hole_group(start.text, date_iso)
         if not group_href:
             # ESP's own backend sometimes fails behind its front end: the page
             # renders normally, with the club's name, and simply has no groups
@@ -183,7 +202,7 @@ def scrape_club(club: gc.ClubConfig, date_iso: str, session) -> tuple[list[gc.Te
             return [], "error"
         # A category link lands on a second chooser: choose again, once.
         if "gotdata=2" in group_href:
-            inner = _find_18_hole_group(grp.text)
+            inner = _find_18_hole_group(grp.text, date_iso)
             if not inner or "gotdata=2" in inner:
                 log.error(f"[{club.club_name}] ESP category page offered no bookable group")
                 return [], "error"
@@ -204,8 +223,10 @@ def scrape_club(club: gc.ClubConfig, date_iso: str, session) -> tuple[list[gc.Te
     # why: Sedlescombe sat in the launch area returning silent empties until an
     # audit went looking.
     if "Export Not Found" in frag.text:
-        log.info(f"[{club.club_name}] ESP has no bookable activities for this club "
-                 f"(Export Not Found) on {date_iso} - a club-side setup, not a scraper fault")
+        # Not always club-side: a wrongly chosen group (Garon Park's simulator)
+        # answers exactly the same way. Say what the page said, not a verdict.
+        log.info(f"[{club.club_name}] ESP returned Export Not Found on {date_iso}: the chosen "
+                 f"group has nothing bookable (club setup, or the wrong group was picked)")
         return [], "empty"
     try:
         results = parse_fragment(frag.text, club, date_iso)
