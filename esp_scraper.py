@@ -65,19 +65,35 @@ ESP_BACKEND_ERROR_RE = re.compile(r"RestAPI error|Connection timed out after|Fat
 
 
 def _find_18_hole_group(html: str) -> str | None:
-    """Pick the visitor 18-hole group link from the chooser page, else None."""
+    """Pick the visitor 18-hole group link from a chooser page, else None.
+
+    A chooser can carry two kinds of link. gotdata=1 selects a real booking
+    group. gotdata=2 opens a CATEGORY, which is a second chooser of groups,
+    and some clubs put every course behind one: Garon Park's page offers
+    "Main Courses", "Par 3 Course", "Adventure Golf" and "Carvery Bookings",
+    with "Starts On West/South/East Course" one level down. Treating the
+    category as the group selected nothing, and every date came back as an
+    honest-looking "empty" -- a live club with no tee times, ever.
+    A category now scores just below a real group, so it is only followed
+    when nothing better is on the page (see scrape_club).
+    """
     soup = BeautifulSoup(html, "html.parser")
     group_links = [a for a in soup.find_all("a", href=True) if "book_group.php" in a["href"]]
     if not group_links:
         return None
-    # Prefer a link that clearly means 18 holes; avoid Par 3 / 9 hole.
+
     def score(a):
         blob = (a["href"] + " " + a.get_text(" ", strip=True)).lower()
-        if "par 3" in blob or "par3" in blob or re.search(r"\b9\b", blob):
+        if ("par 3" in blob or "par3" in blob or re.search(r"\b9\b", blob)
+                or any(w in blob for w in ("adventure", "footgolf", "carvery", "mini golf", "academy"))):
             return -1
-        return 1 if "18" in blob else 0
+        value = 1 if "18" in blob else 0
+        if "gotdata=2" in blob:
+            value -= 0.5
+        return value
+
     best = max(group_links, key=score)
-    return best["href"]
+    return best["href"] if score(best) > -1 else None
 
 
 def parse_fragment(html: str, club: gc.ClubConfig, date_iso: str) -> list[gc.TeeTimeResult]:
@@ -159,6 +175,15 @@ def scrape_club(club: gc.ClubConfig, date_iso: str, session) -> tuple[list[gc.Te
         grp = gc.fetch(session, club.club_name, "GET", urljoin(start.url, group_href))
         if grp is None:
             return [], "error"
+        # A category link lands on a second chooser: choose again, once.
+        if "gotdata=2" in group_href:
+            inner = _find_18_hole_group(grp.text)
+            if not inner or "gotdata=2" in inner:
+                log.error(f"[{club.club_name}] ESP category page offered no bookable group")
+                return [], "error"
+            grp = gc.fetch(session, club.club_name, "GET", urljoin(grp.url, inner))
+            if grp is None:
+                return [], "error"
     gc.pause_between_clubs()
 
     # Step 3 — fetch the day's slot fragment.
