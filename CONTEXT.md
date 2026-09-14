@@ -576,9 +576,16 @@ What that changed:
 ## Scheduling that survives GitHub dropping runs (2026-09-14)
 GitHub's scheduler delays and drops scheduled runs for this repository. On
 2026-09-13 four of five top-of-the-hour slots never ran. Moving to odd minutes
-did not fix it: overnight the full 7-day run never fired at all, and the launch
-slots that did fire were 35 minutes to 2 hours late, leaving the rest of England
-and days 4-7 unrefreshed for over a day.
+did not fix it: the slots that fired came 35 minutes to 5 hours late (the 00:37
+full run started at 05:21), and the 18:17 launch slot never came.
+
+Correction, and an operating rule: twice (2026-09-13 09:46 and 2026-09-14 07:35
+UTC) a full 7-day run was cancelled as "stuck" because the newest check times
+for the first three days had stopped moving. Both were healthy and working
+through days 4-7 — the second was on its last day. Almost all of the second
+run's writes landed, but neither recorded a scrape_runs row. There is no
+evidence of runs hanging. Before cancelling any run as stuck, check the newest
+checked_at across EVERY date in its window, not just the first three.
 
 So scheduled runs no longer trust which cron fired. Every slot runs
 run_pipeline.py --area auto, which reads scrape_runs and does the most overdue

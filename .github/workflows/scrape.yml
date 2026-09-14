@@ -5,10 +5,10 @@ name: Scrape tee times into Supabase
 #
 # Scheduled runs don't trust which cron fired. GitHub delays and drops
 # scheduled runs for this repository: on 2026-09-13 four of five top-of-the-
-# hour slots never ran, and after moving to odd minutes the overnight full run
-# still never fired while the launch slots that did came 35 minutes to 2 hours
-# late. So every slot runs --area auto, which reads scrape_runs and does the
-# most overdue job:
+# hour slots never ran, and after moving to odd minutes the slots that did
+# fire came 35 minutes to 5 hours late (the 00:37 full run started at 05:21).
+# So every slot runs --area auto, which reads scrape_runs and does the most
+# overdue job:
 #   - all of England, 7 days, if no full run has finished in 24 hours (~2.5 h)
 #   - else all of England, 3 days, if none has finished in 12 hours   (~70 min)
 #   - else London and the Home Counties, 3 days                        (~30 min)
