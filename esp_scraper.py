@@ -85,9 +85,15 @@ def _find_18_hole_group(html: str) -> str | None:
     def score(a):
         blob = (a["href"] + " " + a.get_text(" ", strip=True)).lower()
         if ("par 3" in blob or "par3" in blob or re.search(r"\b9\b", blob)
-                or any(w in blob for w in ("adventure", "footgolf", "carvery", "mini golf", "academy"))):
+                or any(w in blob for w in ("adventure", "footgolf", "carvery", "mini golf", "academy"))
+                # Three Rivers lists "Fitness Classes" and "Gym Workout" above
+                # its two courses. None of the four says 18, so the first one
+                # won, and the scraper read a gym timetable as an empty tee sheet.
+                or re.search(r"\b(fitness|gym|class(es)?|swim\w*|spa|tennis|lessons?)\b", blob)):
             return -1
         value = 1 if "18" in blob else 0
+        if re.search(r"\b(tee times?|golf|course)\b", blob):
+            value += 0.25
         if "gotdata=2" in blob:
             value -= 0.5
         return value
@@ -193,6 +199,14 @@ def scrape_club(club: gc.ClubConfig, date_iso: str, session) -> tuple[list[gc.Te
                     headers={"X-Requested-With": "XMLHttpRequest"})
     if frag is None:
         return [], "error"
+    # ESP answers this when the club has nothing set up to book, and the group
+    # page above says "No Activities Found". Still an empty day for us, but say
+    # why: Sedlescombe sat in the launch area returning silent empties until an
+    # audit went looking.
+    if "Export Not Found" in frag.text:
+        log.info(f"[{club.club_name}] ESP has no bookable activities for this club "
+                 f"(Export Not Found) on {date_iso} - a club-side setup, not a scraper fault")
+        return [], "empty"
     try:
         results = parse_fragment(frag.text, club, date_iso)
         if results:
