@@ -71,6 +71,12 @@
   .price .per { display:block; color:var(--muted); font-size:.72rem; font-weight:500; }
   a.book { flex-shrink:0; text-decoration:none; background:var(--accent); color:var(--accent-ink);
     padding:8px 13px; border-radius:8px; font-weight:600; font-size:.88rem; }
+  /* Golf Monthly ranking stamp. Deliberately not the green accent, so it
+     reads as an award rather than a button. */
+  .rank { display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.02em;
+    text-transform:uppercase; color:#6b4a00; background:#f6e7b8; border:1px solid #e2c56d;
+    border-radius:4px; padding:1px 6px; margin-left:6px; vertical-align:1px; white-space:nowrap; }
+  @media (prefers-color-scheme: dark) { .rank { color:#f3d98b; background:#3a2f12; border-color:#6b5520; } }
   .pill { display:inline-block; font-size:.72rem; color:var(--muted); border:1px solid var(--line);
     border-radius:999px; padding:1px 7px; margin-left:6px; }
   footer { margin-top:36px; color:var(--muted); font-size:.82rem; text-align:center; }
@@ -301,6 +307,26 @@ async function getJson(url) {
 // Club coordinates, fetched once and only when a place name is ambiguous —
 // the common path (a postcode) never loads it. A failure is not fatal: the
 // chooser falls back to its county ranking.
+// Golf Monthly UK & Ireland Top 100 / Next 100 (2025/26), keyed "club|course"
+// the way results name them. Built by build_rankings.py from the hand-checked
+// course_rankings.csv. Loaded once, in the background: if it fails the results
+// simply show no stamps.
+let RANKINGS = {};
+fetch("rankings.json").then(r => r.ok ? r.json() : {}).then(j => {
+  RANKINGS = j || {};
+  // A search that finished before this arrived gets its stamps now.
+  if (typeof allRows !== "undefined" && allRows.length) render();
+}).catch(() => {});
+
+function rankStamp(g) {
+  const r = RANKINGS[g.club + "|" + (g.course || g.club)];
+  if (!r) return "";
+  const title = r.tier === "Top 100"
+    ? "Golf Monthly UK & Ireland Top 100, 2025/26: ranked " + r.rank
+    : "Golf Monthly UK & Ireland Next 100 (courses ranked 101-200), 2025/26";
+  return '<span class="rank" title="' + esc(title) + '">' + esc(r.tier) + '</span>';
+}
+
 let clubPointsCache;
 // Courses we list within the search radius. Only worked out when a search
 // finds nothing, which is the one time it changes what the page should say.
@@ -549,7 +575,7 @@ function render() {
     card.innerHTML =
       '<summary>' +
         '<div class="meta">' +
-          '<div class="club-name">' + esc(g.club) + esc(course) +
+          '<div class="club-name">' + esc(g.club) + esc(course) + rankStamp(g) +
             holesSet.map(h => '<span class="pill">' + h + ' holes</span>').join("") + '</div>' +
           '<div class="sub">' + miles + ' mi away · ' + n + ' tee time' + (n === 1 ? "" : "s") +
             ' from ' + g.earliest + '</div>' +
