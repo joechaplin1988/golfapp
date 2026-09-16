@@ -166,6 +166,20 @@ def load(clubs: dict) -> None:
     log.info(f"Upserted {n_clubs} club(s) and {n_courses} course(s)"
              + (f"; {len(failed)} club(s) skipped: {', '.join(failed)}" if failed else ""))
 
+    # Only after a clean sync: a club that failed to upsert must not have its
+    # tee times taken down as if it had been removed.
+    if failed:
+        log.warning("some clubs failed to sync; not retiring unlisted courses this run")
+        return
+    keep = [(co["platform"], co["base_url"], co["course_ref"])
+            for c in clubs.values() for co in c["courses"] if co["scrape_enabled"]]
+    with golf_db.get_connection() as conn:
+        with conn.transaction(), conn.cursor() as cur:
+            retired, deleted = golf_db.retire_unlisted_courses(cur, keep)
+    if retired or deleted:
+        log.info(f"Retired {retired} course(s) no longer in the config; "
+                 f"removed {deleted} future tee time(s) for courses not being scraped")
+
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="Load club config into clubs/courses tables")

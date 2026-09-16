@@ -87,6 +87,43 @@ def upsert_course(cur, *, club_id, name, platform, base_url, course_ref, scrape_
     return cur.fetchone()[0]
 
 
+def retire_unlisted_courses(cur, keep: list[tuple[str, str, str]]) -> tuple[int, int]:
+    """Take courses that are no longer scraped off the site.
+
+    Search reads every stored tee time and knows nothing about the config, so
+    a course removed from clubs_config.csv (a Jersey club, a duplicate row)
+    or parked there kept showing its future tee times until the dates passed,
+    up to a week. Courses not in `keep` are marked not scraped, and future tee
+    times for any course not scraped are deleted. Course rows themselves stay,
+    for their history.
+
+    `keep` is every enabled (platform, base_url, course_ref) in the config.
+    Refuses to act on a suspiciously short list, so a truncated or unreadable
+    config can never empty the site.
+    """
+    if len(keep) < 100:
+        raise ValueError(f"refusing to retire courses against a config of only {len(keep)} course(s)")
+    platforms, urls, refs = (list(x) for x in zip(*keep))
+    cur.execute(
+        """
+        update courses co set scrape_enabled = false
+        where co.scrape_enabled
+          and not exists (
+              select 1 from unnest(%s::text[], %s::text[], %s::text[]) k(p, u, r)
+              where k.p = co.platform and k.u = co.base_url and k.r = co.course_ref)
+        """,
+        (platforms, urls, refs),
+    )
+    retired = cur.rowcount
+    cur.execute(
+        """
+        delete from tee_times t using courses co
+        where co.id = t.course_id and not co.scrape_enabled and t.tee_date >= current_date
+        """
+    )
+    return retired, cur.rowcount
+
+
 def record_scrape_run(cur, *, started_at, days, platforms, courses, ok, empty, error,
                       rows_written) -> None:
     """One row per scheduled run. `courses` already holds the LATEST status per
