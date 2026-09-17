@@ -112,11 +112,22 @@ def build_email(a: dict, rows: list[dict]) -> tuple[str, str, str]:
                                  else f" ({r['course_name']})")
         lines[(r["tee_date"], name)].append(r)
     ordered = sorted(lines.items(), key=lambda kv: (kv[0][0], min(x["distance_km"] for x in kv[1])))
-    shown, hidden = ordered[:MAX_LINES], ordered[MAX_LINES:]
+    # Share the list out between the days, nearest clubs first on each, so a
+    # busy Saturday doesn't fill the email and leave Sunday out.
+    per_day = defaultdict(list)
+    for item in ordered:
+        per_day[item[0][0]].append(item)
+    cap = max(2, MAX_LINES // max(1, len(per_day)))
+    shown = [item for d in sorted(per_day) for item in per_day[d][:cap]][:MAX_LINES]
+    hidden = [item for item in ordered if item not in shown]
 
     unsubscribe = f"{SITE_URL}/.netlify/functions/alert-unsubscribe?token={a['token']}" if a.get("token") else SITE_URL
     count = len(rows)
-    subject = f"{count} new tee time{'' if count == 1 else 's'} near {a.get('place') or 'you'}"
+    # The first email lists what is already there, so "new" would be wrong.
+    first = not a.get("last_sent_at")
+    subject = (f"{count} tee time{'' if count == 1 else 's'} available near {a.get('place') or 'you'}" if first
+               else f"{count} new tee time{'' if count == 1 else 's'} near {a.get('place') or 'you'}")
+    intro = "Tee times available now for your alert" if first else "New tee times for your alert"
 
     text_parts, html_rows = [], []
     for (d, name), slots in shown:
@@ -139,11 +150,11 @@ def build_email(a: dict, rows: list[dict]) -> tuple[str, str, str]:
     tail = f"\n...and {extra} more tee time{'' if extra == 1 else 's'} on {SITE_URL}" if hidden else ""
 
     summary = describe(a)
-    text = (f"New tee times for your alert: {summary}\n\n" + "\n\n".join(text_parts) + tail +
+    text = (f"{intro}: {summary}\n\n" + "\n\n".join(text_parts) + tail +
             f"\n\nTimes change quickly, so check on the club's site before you set off.\n"
             f"Stop this alert: {unsubscribe}\n")
     body = (f"<div style='font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:560px;color:#1c2620'>"
-            f"<p>New tee times for your alert:<br><strong>{html.escape(summary)}</strong></p>"
+            f"<p>{intro}:<br><strong>{html.escape(summary)}</strong></p>"
             f"<table style='width:100%;border-collapse:collapse'>{''.join(html_rows)}</table>"
             + (f"<p>...and {extra} more on <a href='{SITE_URL}' style='color:#1f6b3b'>Tee Times Near You</a>.</p>" if hidden else "")
             + f"<p style='color:#5c6b60;font-size:13px'>Times change quickly, so check on the club's site before you set off. "
