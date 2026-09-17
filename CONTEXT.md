@@ -598,3 +598,11 @@ asked more often than before.
 
 If this still proves unreliable, the next step is an external trigger calling
 GitHub's dispatch API on a timer, which needs a token and an account — Joe's call.
+
+## Manual review of the launch area: stopped (2026-09-17)
+Joe checked 11 rows of review_launch_area.csv and found nothing the automated
+passes had missed each time, so he has stopped the manual review as too slow
+for its yield. Treat the ~270 remaining unresolved Home Counties clubs as
+"no findable public online booking" for launch purposes. They stay off the
+site. Revisit only with a cheaper method, such as a club emailing to ask to
+be listed, or a golfer reporting a missing club.
