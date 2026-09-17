@@ -7,7 +7,16 @@
 # scraper code, clubs_config.csv and docs change far more often than web/,
 # and each build spends Netlify credits. Exit 0 = skip the build. Netlify
 # sets CACHED_COMMIT_REF (last deployed commit) and COMMIT_REF (this one).
+#
+# Tee-time alerts (netlify/functions): the sign-up form stays hidden until
+# ALERTS_ENABLED is set to "true" in the Netlify UI. The functions also need
+# SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, RESEND_API_KEY, ALERTS_FROM and
+# SITE_URL there. The service role key is read by the functions at run time
+# and is never written into config.js or anything else the browser loads.
 [build]
   publish = "web"
-  command = "printf 'window.CONFIG={SUPABASE_ANON_KEY:\"%s\"};' \"$SUPABASE_ANON_KEY\" > web/config.js"
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- web/ netlify.toml"
+  command = "printf 'window.CONFIG={SUPABASE_ANON_KEY:\"%s\",ALERTS_ENABLED:\"%s\"};' \"$SUPABASE_ANON_KEY\" \"${ALERTS_ENABLED:-false}\" > web/config.js"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- web/ netlify/ netlify.toml"
+
+[functions]
+  directory = "netlify/functions"

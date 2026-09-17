@@ -1,0 +1,62 @@
+name: Tee time alerts
+
+# Emails confirmed alerts about new matching tee times (send_alerts.py).
+#
+# Runs straight after every scrape finishes, so an alert sees fresh data, and
+# never overlaps itself. Until the RESEND_API_KEY and ALERTS_FROM secrets are
+# set it runs as a dry run: it logs the emails it would send and changes
+# nothing.
+#
+# Run it by hand from the Actions tab to test: tick "dry run", and optionally
+# paste a made-up alert as JSON, e.g.
+#   {"place":"Sevenoaks","lat":51.27,"lng":0.19,"radius_km":16,"players":2,"days":[6,7]}
+
+on:
+  workflow_run:
+    workflows: ["Scrape tee times into Supabase"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print the emails instead of sending them"
+        type: boolean
+        default: true
+      test_alert:
+        description: "Optional made-up alert as JSON (always a dry run)"
+        required: false
+        default: ""
+
+concurrency:
+  group: alerts
+  cancel-in-progress: false
+
+jobs:
+  alerts:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Apply pending DB migrations
+        env:
+          DATABASE_URL: ${{ secrets.GOLF_APP }}
+        run: python apply_migrations.py
+      - name: Send alerts
+        env:
+          DATABASE_URL: ${{ secrets.GOLF_APP }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          ALERTS_FROM: ${{ secrets.ALERTS_FROM }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          TEST_ALERT: ${{ github.event.inputs.test_alert }}
+        run: |
+          args=""
+          if [ "$DRY_RUN" = "true" ]; then args="--dry-run"; fi
+          if [ -n "$TEST_ALERT" ]; then
+            python send_alerts.py --test-alert "$TEST_ALERT"
+          else
+            python send_alerts.py $args
+          fi

@@ -79,6 +79,19 @@
   @media (prefers-color-scheme: dark) { .rank { color:#f3d98b; background:#3a2f12; border-color:#6b5520; } }
   .pill { display:inline-block; font-size:.72rem; color:var(--muted); border:1px solid var(--line);
     border-radius:999px; padding:1px 7px; margin-left:6px; }
+  .alertbox { background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:12px 14px; margin:4px 0 12px; box-shadow:var(--shadow); }
+  .alertbox > button.open { font:inherit; font-weight:600; color:var(--accent); background:none;
+    border:0; padding:2px 0; cursor:pointer; text-align:left; }
+  .alertbox form { display:flex; flex-direction:column; gap:10px; margin-top:8px; }
+  .alertbox .days { display:flex; flex-wrap:wrap; gap:6px; }
+  .alertbox .days label { font-size:.85rem; font-weight:500; color:var(--ink); border:1px solid var(--line);
+    border-radius:999px; padding:4px 10px; cursor:pointer; user-select:none; }
+  .alertbox .days input { position:absolute; opacity:0; pointer-events:none; }
+  .alertbox .days label:has(input:checked) { background:var(--accent); color:var(--accent-ink); border-color:var(--accent); }
+  .alertbox .note { color:var(--muted); font-size:.8rem; margin:0; }
+  .alertbox .msg { margin:8px 0 0; font-size:.9rem; }
+  .alertbox button.go { margin-top:0; }
   footer { margin-top:36px; color:var(--muted); font-size:.82rem; text-align:center; }
   @media (max-width:560px){
     .filters{grid-template-columns:1fr 1fr;} .field.between{grid-column:1 / -1;}
@@ -162,6 +175,27 @@
   </details>
 
   <div id="status"></div>
+  <!-- Tee-time alerts. Hidden until ALERTS_ENABLED is set in Netlify, so the
+       site shows nothing while email sending isn't configured. -->
+  <div id="alertbox" class="alertbox" hidden>
+    <button type="button" class="open" id="alert-open">Email me when tee times like these come up</button>
+    <form id="alert-form" hidden>
+      <div class="field">
+        <label for="alert-email">Your email</label>
+        <input id="alert-email" type="email" autocomplete="email" required placeholder="you@example.com" />
+      </div>
+      <div class="field">
+        <label>On these days</label>
+        <div class="days" id="alert-days"></div>
+      </div>
+      <p class="note" id="alert-summary"></p>
+      <button class="go" type="submit">Set up alert</button>
+      <p class="note">We'll email you a link to confirm first. After that, only this alert: at most one email every
+        three hours, a link to stop it in every email, and it ends by itself after 90 days. Stopping it deletes
+        your email address.</p>
+    </form>
+    <p class="msg" id="alert-msg" hidden></p>
+  </div>
   <div id="results" class="results"></div>
 
   <footer>
@@ -331,6 +365,8 @@ let clubPointsCache;
 // Courses we list within the search radius. Only worked out when a search
 // finds nothing, which is the one time it changes what the page should say.
 let nearbyCourses = null;
+// The place the last search resolved to, which an alert is saved against.
+let lastLoc = null;
 async function clubPoints() {
   if (clubPointsCache !== undefined) return clubPointsCache;
   try {
@@ -635,6 +671,80 @@ for (const id of ["from", "to", "holes", "maxprice", "sort"]) {
   $(id).addEventListener("input", render);
 }
 
+// ---- Tee-time alerts --------------------------------------------------------
+// A string written by the Netlify build. Only the exact word "true" turns alerts on,
+// so a mistyped value leaves them off rather than breaking the page.
+const ALERTS_ENABLED = !!(window.CONFIG && String(window.CONFIG.ALERTS_ENABLED).trim().toLowerCase() === "true");
+const DAY_LABELS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+function showAlertBox() {
+  // Not where we list no courses: an alert there could never fire.
+  $("alertbox").hidden = !ALERTS_ENABLED || !lastLoc || nearbyCourses === 0;
+  $("alert-form").hidden = true;
+  $("alert-open").hidden = false;
+  $("alert-msg").hidden = true;
+}
+
+function alertSummary() {
+  const f = currentFilters();
+  const n = $("players").value;
+  return "For " + n + " player" + (n === "1" ? "" : "s") + " within " + $("radius").value + " miles of " +
+    (lastLoc.place || "this search") + ", " + f.from + " to " + f.to +
+    (f.holes ? ", " + f.holes + " holes" : "") +
+    (f.maxPrice != null ? ", up to £" + f.maxPrice : "") +
+    ". Change the search or filters first to alter this.";
+}
+
+$("alert-open").addEventListener("click", () => {
+  // Pre-tick the weekday of the date they searched: the best guess at when they play.
+  const searched = new Date($("date").value + "T12:00:00");
+  const iso = ((searched.getDay() + 6) % 7) + 1;
+  $("alert-days").innerHTML = DAY_LABELS.map((d, i) =>
+    '<label><input type="checkbox" value="' + (i + 1) + '"' + (i + 1 === iso ? " checked" : "") + ">" + d + "</label>").join("");
+  $("alert-summary").textContent = alertSummary();
+  $("alert-open").hidden = true;
+  $("alert-msg").hidden = true;
+  $("alert-form").hidden = false;
+  $("alert-email").focus();
+});
+
+$("alert-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const btn = $("alert-form").querySelector("button.go");
+  const days = [...$("alert-days").querySelectorAll("input:checked")].map(i => Number(i.value));
+  if (!days.length) {
+    $("alert-msg").textContent = "Pick at least one day.";
+    $("alert-msg").hidden = false;
+    return;
+  }
+  const f = currentFilters();
+  btn.disabled = true;
+  try {
+    const res = await fetch("/.netlify/functions/alert-subscribe", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email: $("alert-email").value, place: lastLoc.place || null, lat: lastLoc.lat, lng: lastLoc.lng,
+        radius_km: Number($("radius").value) / MILES_PER_KM, players: Number($("players").value),
+        days: days.length === 7 ? [] : days, time_from: f.from, time_to: f.to,
+        max_price: f.maxPrice, holes: f.holes ? Number(f.holes) : null,
+      }),
+    });
+    const body = await res.json().catch(() => ({}));
+    if (res.ok) {
+      $("alert-form").hidden = true;
+      $("alert-msg").textContent = "Nearly done: check your email and use the link to confirm your alert.";
+    } else {
+      $("alert-msg").textContent = body.error || "Sorry, that didn't work. Please try again.";
+    }
+  } catch {
+    $("alert-msg").textContent = "Sorry, that didn't work. Please try again.";
+  } finally {
+    $("alert-msg").hidden = false;
+    btn.disabled = false;
+  }
+});
+
 async function runSearch(loc) {
   const btn = $("search").querySelector("button.go");
   btn.disabled = true;
@@ -653,6 +763,7 @@ async function runSearch(loc) {
     // means we don't list courses there yet, and "try a different date" would
     // send someone in Glasgow round in circles.
     nearbyCourses = null;
+    lastLoc = loc;
     if (!allRows.length) {
       const points = await clubPoints();
       if (points) {
@@ -665,6 +776,7 @@ async function runSearch(loc) {
     // filter change — that would yank the page while someone is adjusting it.
     filtersEl.open = !window.matchMedia("(max-width: 560px)").matches;
     render();
+    showAlertBox();
     showAnswer(filtersEl);
     record("search_events", {
       area: outwardOnly($("postcode").value),
