@@ -39,3 +39,11 @@ Hallowes Golf Club,https://www.hallowesgolfclub.co.uk/,53.2883265,-1.4663146,int
 Trent Lock Golf Centre,https://www.trentlock.co.uk/,52.8779152,-1.2830439,brs,public,https://visitors.brsgolf.com/trentlock#/course/1,high,confirmed by following the platform link found on the club's own site
 Brailsford Golf Course,,52.9651041,-1.6228071,no_site,unknown,,low,no official website resolved (not in county union directory)
 Manor (Laceby) Golf Club,,53.5261235,-0.1535108,no_site,unknown,,low,no official website resolved (not in county union directory)
+Brailsford Golf Course,https://www.brailsfordgolfcourse.com/,52.9651041,-1.6228071,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Buxton and High Peak Golf Club,https://bhpgc.co.uk/,53.2679332,-1.8927459,brs,public,https://visitors.brsgolf.com/buxtonandhighpeak#/open-competitions,high,confirmed by following the platform link found on the club's own site
+Cavendish Golf Club,https://www.cavendishgolfclub.com/,53.2599537,-1.9348702,intelligent_golf,public,https://cavendish.intelligentgolf.co.uk/visitorbooking/,high,
+Matlock Golf Club,https://www.matlockgolfclub.co.uk/,53.1552702,-1.5311761,intelligent_golf,public,https://golf.matlockgolfclub.co.uk/visitorbooking/,high,
+New Mills Golf Club,https://www.newmillsgolfclub.co.uk/,53.3761741,-2.0116905,brs,public,https://visitors.brsgolf.com/newmills#/course/1,high,
+Shirland Golf Club,https://shirlandgolfclub.co.uk/,53.1143219,-1.4098929,brs,public,https://visitors.brsgolf.com/shirland#/course/1,high,confirmed by following the platform link found on the club's own site
+Stanedge Golf Club,https://stanedgegolfclub.co.uk/,53.2060064,-1.4971303,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Tapton Park Golf Club,https://taptonparkgolfclub.com/,53.2421932,-1.4110959,unknown,unknown,,low,homepage loaded (https://taptonparkgolfclub.com/) but no platform signal found on it or 0 booking-ish link(s)

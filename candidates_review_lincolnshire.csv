@@ -52,3 +52,20 @@ Kenwick Park Golf Club Ltd,,53.3397186,0.0268026,no_site,unknown,,low,no officia
 Boston Golf Club,https://www.bostongc.co.uk/,53.0075061,-0.0157976,clubv1,public,https://boston.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-11,high,confirmed by following the platform link found on the club's own site
 Blankney Golf Club,https://www.blankneygolfclub.co.uk/,53.1291133,-0.4179095,intelligent_golf,public,https://www.blankneygolfclub.co.uk/visitorbooking/,high,
 Belton Woods Hotel,https://www.devere-hotels.co.uk/hotel-lodges/locations/belton-woods/golf/introduction.html,52.9411645,-0.6374088,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.devere-hotels.co.uk', port=443): Max retries exceeded with url: /hotel-lodges/locations/belton-woods/golf/introduction.html (Caused by NewConnectionError(""HTTPSConnection(host='www.devere-hotels.co.uk', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it""))"
+Ashby Decoy Golf Club,https://www.ashbydecoy.co.uk/,53.5617447,-0.689438,clubv1,public,https://ashbydecoy.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-17,high,
+Carholme Golf Club,https://carholmegolfclub.co.uk/,53.2368711,-0.5677458,clubv1,public,https://carholme.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-17&coursId=357,high,
+Cleethorpes Golf Club,https://www.cleethorpesgolfclub.co.uk/,53.5410488,-0.0147492,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://cleethorpes.hub.clubv1.com/Visitors/booking"
+Gedney Hill Golf Club,https://www.gedneyhillgolfclub.com/,52.6949199,-0.017649,clubv1,unknown,,medium,platform link(s) seen (['clubv1']) but no confirmed public booking page found
+Grimsby Golf Club,https://www.grimsbygolfclub.co.uk/,53.559415,-0.126524,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://grimsby.hub.clubv1.com/Visitors/booking"
+Holme Hall Golf Course,https://www.holmehallgolf.co.uk/,53.5550806,-0.6162288,intelligent_golf,public,https://www.holmehallgolf.co.uk/visitorbooking/,high,
+Kirton Holme Golf Club,https://www.kirtonholmegolfclub.co.uk/,52.9588319,-0.1167323,clubv1,public,https://kirtonholme.hub.clubv1.com/visitors/TeeSheet?date=2026-09-17,high,
+Lakeside Park,https://www.lakesidepark.co.uk/,53.441099,0.1630817,unknown,unknown,,low,homepage loaded (https://www.lakesidepark.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Lincoln Golf Club,https://www.lincolngc.co.uk/,53.3033189,-0.7333697,intelligent_golf,public,https://lincoln.intelligentgolf.co.uk/visitorbooking/,high,
+Louth Golf Club,https://louthgolf.com/,53.3589207,-0.0192847,brs,public,https://visitors.brsgolf.com/louth#/open-competitions,high,confirmed by following the platform link found on the club's own site
+Sleaford Golf Club,https://www.sleafordgolfclub.co.uk/,52.9799385,-0.4676807,clubv1,public,https://sleaford.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-17,high,
+Spalding Golf Club,https://www.spaldinggolfclub.co.uk/,52.8392666,-0.1148629,intelligent_golf,public,https://www.spaldinggolfclub.co.uk/visitorbooking/,high,
+Stoke Rochford Golf Club,https://www.stokerochfordgolfclub.co.uk/,52.8446935,-0.6334519,clubv1,public,https://stokerochford.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-17,high,
+Tetney Golf Club,https://www.tetneygolfclub.co.uk/,53.4888646,-0.031075,unknown,unknown,,low,homepage loaded (https://www.tetneygolfclub.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Waltham Windmill Golf Club,https://www.walthamwindmillgolfclub.co.uk/,53.5087825,-0.0841504,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): http://walthamwindmill.hub.clubv1.com/Visitors/booking"
+North Shore Pitch And Putt,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Willows Caravan Park Executive Course,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

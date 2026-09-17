@@ -49,3 +49,21 @@ The Mark Butler Golf Academy (Sedgley Golf Centre),https://www.themarkbutlergolf
 Greenfield Golf Club,https://greenfieldgolf.co.uk/,52.6359943,-2.1156344,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='greenfieldgolf.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError('A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider.')))"
 Walmley Golf Club,,52.5417915,-1.8146081,no_site,unknown,,low,no official website resolved (not in county union directory)
 Tidbury Green Golf Course,,52.3859699,-1.855513,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bloxwich Golf Course,https://www.bloxwichgolfclub.com/,52.6333001,-1.9983651,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Boldmere Golf Course,https://www.boldmeregolfclub.uk/,52.55675,-1.8557212,unknown,unknown,,low,homepage loaded (https://www.boldmeregolfclub.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Copsewood Grange Golf Course,https://copsewoodgrangegolfclub.co.uk/,52.400431,-1.4593023,brs,public,https://visitors.brsgolf.com/copsewoodgrange#/course/1,high,
+Edgbaston Golf Course,https://www.edgbastongc.co.uk/,52.4557746,-1.9184511,intelligent_golf,public,https://www.edgbastongc.co.uk/visitorbooking/,high,
+Harborne Golf Club,https://www.harbornegolfclub.org.uk/,52.4514147,-1.9714447,intelligent_golf,public,https://www.harbornegolfclub.org.uk/visitorbooking/,high,
+Hearsall Golf Club,https://www.hearsallgolfclub.co.uk/,52.3929612,-1.5403352,intelligent_golf,login_required,,high,intelligent_golf convention path requires login: https://www.hearsallgolfclub.co.uk/visitorbooking/
+Moor Hall Golf Course,https://www.moorhallgolfclub.co.uk/,52.5798123,-1.8134488,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Moseley Golf Course,https://www.moseleygolfclub.co.uk/,52.4347583,-1.8776556,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+North Warwickshire Golf Course,https://www.northwarwickshiregolfclub.co.uk/,52.433032,-1.6643503,unknown,unknown,,low,homepage loaded (https://www.northwarwickshiregolfclub.co.uk/) but no platform signal found on it or 4 booking-ish link(s)
+Oxley Park Golf Club,https://www.oxleyparkgolfclub.co.uk/,52.6104052,-2.1388057,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://oxleypark.hub.clubv1.com/Visitors/booking"
+Robin Hood Golf Course,https://www.robinhoodgolfclub.co.uk/,52.4254728,-1.8201799,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Sandwell Park Golf Club,https://www.sandwellparkgolfclub.co.uk/,52.5156356,-1.9672523,clubv1,public,https://sandwellpark.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-17,high,
+Sutton Coldfield Golf Club,https://www.suttoncoldfieldgc.com/,52.575814,-1.8687201,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Walmley Golf Club,https://www.walmleygolfclub.co.uk/,52.5417915,-1.8146081,intelligent_golf,public,https://www.walmleygolfclub.co.uk/visitorbooking/,high,
+Warley Woods Golf Course,https://www.warleywoods.org.uk/,52.4721389,-1.9848167,unknown,unknown,,low,homepage loaded (https://www.warleywoods.org.uk/) but no platform signal found on it or 5 booking-ish link(s)
+Wishaw Golf Club,https://www.wishawgc.co.uk/,52.5450024,-1.7718627,unknown,unknown,,low,homepage loaded (https://www.wishawgc.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+18-hole pitch and putt course,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+War Memorial Park 'FootGolf' Course,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

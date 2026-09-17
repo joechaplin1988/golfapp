@@ -77,3 +77,21 @@ Barnsley Golf Club,https://www.barnsleygolfclub.co.uk/,53.5966302,-1.4923903,blo
 Bracken Ghyll Golf Club,https://www.brackenghyll.co.uk,53.9518293,-1.897992,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.brackenghyll.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(""The certificate's CN name does not match the passed value."")))"
 Mid Yorkshire Golf Club,,53.6789451,-1.2521036,no_site,unknown,,low,no official website resolved (not in county union directory)
 Ilkley Golf Club,https://www.ilkleygolfclub.co.uk/,53.9344986,-1.8486513,brs,public,https://visitors.brsgolf.com/ilkley#/course/1,high,confirmed by following the platform link found on the club's own site
+Baildon Golf Club,https://www.baildongolfclub.com/,53.8556629,-1.7684536,brs,public,https://visitors.brsgolf.com/baildon?iframe=1#/course/1,high,confirmed by following the platform link found on the club's own site
+Castlefields Golf Club,https://castlefieldsgolfclub.co.uk/,53.6921902,-1.7885354,unknown,unknown,,low,homepage loaded (https://castlefieldsgolfclub.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Dewsbury Golf Course,https://www.dewsburygolf.co.uk/,53.6644512,-1.6689979,clubv1,public,https://dewsbury.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-17,high,
+Garforth Golf Club,https://www.garforthgolfclub.co.uk/,53.8114592,-1.3972967,brs,public,https://visitors.brsgolf.com/garforth#/course/1,high,
+Headingley Golf Club,https://www.headingleygolfclub.co.uk/,53.8650443,-1.5743605,brs,public,https://visitors.brsgolf.com/headingley#/course/1,high,
+Headley Golf Course,https://www.headleygolfclub.co.uk/,53.7863302,-1.8538222,unknown,unknown,,low,homepage loaded (https://www.headleygolfclub.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Horsforth Golf Course,https://horsforthgolfclub.co.uk/,53.8563113,-1.65571,brs,public,https://visitors.brsgolf.com/horsforth#/course/1,high,confirmed by following the platform link found on the club's own site
+Howley Hall Golf Course,https://www.howleyhall.co.uk/,53.7262241,-1.614838,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://howleyhall.hub.clubv1.com/Visitors/booking"
+Longley Park,https://www.longleyparkgc.co.uk/,53.63895,-1.7721919,brs,public,https://visitors.brsgolf.com/longley,high,
+Low Laithes Golf Course,https://www.lowlaithesgolfclub.co.uk/,53.6890912,-1.5469038,clubv1,public,https://lowlaithes.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-17,high,
+Normanton Golf Club,https://www.normantongolf.co.uk/,53.703461,-1.4866961,unknown,unknown,,low,homepage loaded (https://www.normantongolf.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+South Leeds Golf Club,https://southleedsgolfclub.co.uk/,53.7569125,-1.5608706,unknown,unknown,,low,homepage loaded (https://southleedsgolfclub.co.uk/) but no platform signal found on it or 6 booking-ish link(s)
+Wakefield Golf Club,https://www.wakefieldgolfclub.co.uk/,53.6425977,-1.4852139,intelligent_golf,public,https://www.wakefieldgolfclub.co.uk/visitorbooking/,high,
+West End Golf Club,https://westendgolfclub.co.uk/,53.7290383,-1.905323,unknown,unknown,,low,homepage loaded (https://westendgolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Whitwood Golf Club,https://www.whitwoodgolf.com/,53.7201517,-1.3910735,brs,public,https://visitors.brsgolf.com/whitwood#/course/1,high,confirmed by following the platform link found on the club's own site
+Willow Valley Golf,https://www.willowvalleygolf.com/,53.7091304,-1.7519494,unknown,unknown,,low,homepage loaded (https://www.willowvalleygolf.com/) but no platform signal found on it or 3 booking-ish link(s)
+Woolley Park Golf Course,https://www.woolleyparkgolfclub.co.uk/,53.6152464,-1.5050242,unknown,unknown,,low,homepage loaded (https://www.woolleyparkgolfclub.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Thornes Park Pitch and Putt,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

@@ -49,3 +49,18 @@ Knutsford Golf Club,https://www.knutsfordgolf.com/,53.3138697,-2.3772334,clubv1,
 Davenport Golf Club,https://www.davenportgolf.co.uk/,53.3511961,-2.0952079,intelligent_golf,public,https://davenport.intelligentgolf.co.uk/visitorbooking/,high,
 Cheshire Golf Course,,53.074014,-2.805326,no_site,unknown,,low,no official website resolved (not in county union directory)
 Nicklaus Golf Course,,53.0712699,-2.8142518,no_site,unknown,,low,no official website resolved (not in county union directory)
+Alderley Edge Golf Club,https://www.aegc.co.uk/,53.3102549,-2.2470996,brs,public,https://visitors.brsgolf.com/alderleyedge,high,
+Alsager Golf and Country Club,https://alsagergolfclub.co.uk/,53.0856074,-2.2893084,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Astbury Golf Course,https://www.astburygolfclub.com/,53.1516305,-2.2088364,clubv1,unknown,,medium,platform link(s) seen (['clubv1']) but no confirmed public booking page found
+Cheshire Golf Course,https://www.cheshiregolf.org.uk/,53.074014,-2.805326,unknown,unknown,,low,homepage loaded (https://www.cheshiregolf.org.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Disley Golf Course,https://www.disleygolfclub.co.uk/,53.3660254,-2.0488298,brs,public,https://visitors.brsgolf.com/disley,high,
+Hartford Golf Club,https://www.hartfordgolfclub.co.uk/,53.2538806,-2.5495126,unknown,unknown,,low,homepage loaded (https://www.hartfordgolfclub.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+Heyrose Golf Club,https://www.heyrosegolfclub.com/,53.3114704,-2.4439692,brs,public,https://visitors.brsgolf.com/heyrose,high,
+Malkins Bank Golf Course,https://malkinsbankgolfclub.co.uk/,53.1250673,-2.352018,unknown,unknown,,low,homepage loaded (https://malkinsbankgolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Mere Golf and Country Club,https://www.fairmont.com/en/hotels/mere/fairmont-cheshire-the-mere.html,53.3333794,-2.4043815,unknown,unknown,,low,homepage loaded (https://www.fairmont.com/en/hotels/mere/fairmont-cheshire-the-mere.html) but no platform signal found on it or 24 booking-ish link(s)
+Portal Golf and Country Club,https://www.portalgolfclub.co.uk/,53.1707342,-2.6530431,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://portal.hub.clubv1.com/Visitors/booking"
+Pryors Hayes Golf Club,https://competitions.pryorshayes.co.uk/,53.1912763,-2.7262631,unknown,unknown,,low,homepage loaded (https://competitions.pryorshayes.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Runcorn Golf Course,https://www.runcorngolfclub.co.uk/,53.3218572,-2.7278706,clubv1,public,https://runcorn.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-17,high,
+Sandiway Golf Club,https://sandiwaygolf.co.uk/,53.2309283,-2.5745528,intelligent_golf,public,https://sandiway.intelligentgolf.co.uk/visitorbooking/,high,
+Wilmslow Golf Club,https://www.wilmslowgolfclub.co.uk/,53.2977685,-2.2745491,intelligent_golf,public,https://wilmslow.intelligentgolf.co.uk/visitorbooking/,high,
+Emerald Championship Course,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"

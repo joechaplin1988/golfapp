@@ -38,3 +38,15 @@ Royal Norwich Golf Club,,52.7128864,1.1235183,no_site,unknown,,low,no official w
 Eaton Park Pitch & Kick,https://www.norwich.gov.uk/pitchandkick,52.6191586,1.250527,unknown,unknown,,low,homepage loaded (https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities) but no platform signal found on it or 1 booking-ish link(s)
 Eagles Golf Centre,https://www.eaglesgolfonline.co.uk/,52.7309355,0.3126843,unknown,unknown,,low,homepage loaded (https://www.eaglesgolfonline.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
 Fakenham Golf Club,https://www.fakenhamgolfclub.co.uk/,52.823514,0.8590488,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://fakeham.hub.clubv1.com/Visitors/booking"
+Denver Golf Club,https://www.denvergolfclub.co.uk/,52.5890195,0.3641646,unknown,unknown,,low,homepage loaded (https://www.denvergolfclub.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Dereham Golf Club,https://www.derehamgolfclub.com/,52.690903,0.9335813,unknown,unknown,,low,homepage loaded (https://www.derehamgolfclub.com/) but no platform signal found on it or 2 booking-ish link(s)
+Dunston Hall Golf Course,https://www.dunstonhallgolfclub.co.uk/,52.5702852,1.2833233,unknown,unknown,,low,homepage loaded (https://www.dunstonhallgolfclub.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Gorleston Golf Club,https://www.gorlestongolfclub.co.uk/,52.549948,1.7305405,clubv1,public,https://gorleston.hub.clubv1.com/visitors/TeeSheet?date=2026-09-17,high,
+Hunstanton Golf Club,https://www.hunstantongolfclub.com/,52.9613791,0.5174025,intelligent_golf,public,https://hunstanton.intelligentgolf.co.uk/visitorbooking/,high,
+Mundesley Golf Course,https://www.mundesleygolfclub.com/,52.8768305,1.4194909,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://mundesley.hub.clubv1.com/Visitors/booking"
+Royal Cromer Golf Club,https://www.royalcromergolfclub.com/,52.9218635,1.3261883,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://royalcromer.hub.clubv1.com/Visitors/booking"
+Royal Norwich Golf Club,https://www.royalnorwich.co.uk/,52.7128864,1.1235183,golf_manager,public,https://eu.golfmanager.com/royalnorwich/consumer/book?area=100001&resourceType=100062,high,
+Sheringham Golf Links,https://www.sheringhamgolfclub.co.uk/,52.9443257,1.1900708,brs,public,https://visitors.brsgolf.com/sheringham#/course/1,high,
+Wensum Valley Hotel Golf Course,https://wensumvalleyhotel.co.uk/,52.6867257,1.1780861,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Crazy Golf,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Hunstanton Putting Green,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

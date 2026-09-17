@@ -22,3 +22,5 @@ Meridian Golf hole #1,,52.178033,-0.0013649,no_site,unknown,,low,no official web
 Lakeside Lodge Golf & Country Club,https://lakeside-lodge.co.uk/,52.3916649,-0.0325055,esp,unknown,,medium,platform link(s) seen (['esp']) but no confirmed public booking page found
 The Old Nene Golf & Country Club,https://www.theoldnene.co.uk,52.4686294,-0.1050438,unknown,unknown,,low,homepage loaded (https://theoldnene.co.uk/) but no platform signal found on it or 35 booking-ish link(s)
 Wandlebury,https://www.gogmagog.co.uk/,52.1630132,0.1815595,brs,unknown,,medium,"platform link(s) seen (['brs', 'intelligent_golf']) but no confirmed public booking page found"
+Girton Golf Club,https://www.girtongolf.co.uk/,52.2477832,0.0721862,brs,public,https://visitors.brsgolf.com/girton#/course/1,high,
+Priory Golf & Activity Centre,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

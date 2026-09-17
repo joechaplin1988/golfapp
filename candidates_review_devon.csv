@@ -59,3 +59,7 @@ Downes Crediton Golf Club,https://www.downescreditongc.co.uk,50.7796924,-3.63596
 Ilfracombe Golf Club,https://www.ilfracombegolfclub.com,,,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
 Warren Golf Club (Devon) Golf Club,https://www.dwgc.co.uk,,,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
 Welbeck Manor Golf Club,https://www.welbeckmanor.co.uk/sparkwell-golf-course/uncategorised/sparkwell-golf-course,,,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.welbeckmanor.co.uk', port=443): Max retries exceeded with url: /sparkwell-golf-course/uncategorised/sparkwell-golf-course (Caused by NameResolutionError(""HTTPSConnection(host='www.welbeckmanor.co.uk', port=443): Failed to resolve 'www.welbeckmanor.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Bovey Tracey Golf Club,https://boveytraceygolf.co.uk/,50.6021559,-3.6870625,intelligent_golf,public,https://boveytracey.intelligentgolf.co.uk/visitorbooking/,high,
+Dawlish Warren Golf Club,https://devonlinksgolf.com/,50.6032095,-3.4360685,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Cayman Golf (Pitch and Putt),,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Torbay Golf Centre (Pitch and Putt),,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

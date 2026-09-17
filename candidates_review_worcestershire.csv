@@ -30,3 +30,14 @@ Bransford Golf Club,,52.167172,-2.3050262,no_site,unknown,,low,no official websi
 Ravenmeadow Golf Club,,52.2207916,-2.2069054,no_site,unknown,,low,no official website resolved (not in county union directory)
 Tidbury Green Golf Course,,52.3859699,-1.855513,no_site,unknown,,low,no official website resolved (not in county union directory)
 Ombersley Golf Club,https://www.ombersleygolfclub.co.uk,52.3039493,-2.2490295,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Churchill & Blakedown Golf Club,https://www.churchillblakedowngolfclub.co.uk/,52.4076069,-2.1866646,clubv1,public,https://822.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-17,high,confirmed by following the platform link found on the club's own site
+Droitwich Golf Course,https://www.droitwichgolfclub.co.uk/,52.2808919,-2.1479017,clubv1,public,https://droitwich.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-17,high,
+Gaudet Luce Golf Course,https://gaudet-luce.co.uk/,52.257626,-2.1306399,esp,public,https://www.e-s-p.com/elitelive/book_group.php,high,
+Kings Norton Golf Course,https://www.kingsnortongolfclub.co.uk/,52.371674,-1.9068388,intelligent_golf,unknown,,medium,platform link(s) seen (['intelligent_golf']) but no confirmed public booking page found
+Little Lakes,https://www.littlelakespark.co.uk/golf/,52.3527252,-2.3494481,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Pitcheroak Golf Course,https://pitcheroak.co.uk/,52.2995188,-1.9523381,unknown,unknown,,low,homepage loaded (https://pitcheroak.co.uk/) but no platform signal found on it or 3 booking-ish link(s)
+Ravenmeadow Golf Club,https://www.ravenmeadowgolf.co.uk/,52.2207916,-2.2069054,unknown,unknown,,low,homepage loaded (https://www.ravenmeadowgolf.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+The Abbey Hotel,https://theabbeyhotel.co.uk/,52.3201886,-1.9268197,brs,public,https://visitors.brsgolf.com/theabbey#/course/1,high,confirmed by following the platform link found on the club's own site
+The Vale Golf and Country Club,https://www.thevalegolf.co.uk/,52.1508135,-1.9927616,intelligent_golf,login_required,,high,booking link requires login: https://www.thevalegolf.co.uk/book_a_teetime
+Ravenmeadow Pitch and Putt,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Worcester Golf Range,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

@@ -42,3 +42,18 @@ Heaton Moor Golf Club,,53.4273263,-2.1943277,no_site,unknown,,low,no official we
 Ashton-in-Makerfield Golf Club,https://www.ashton-in-makerfieldgolfclub.co.uk/,53.4831648,-2.6541919,intelligent_golf,login_required,,high,booking link requires login: https://www.ashton-in-makerfieldgolfclub.co.uk/book_a_tee_time
 Avro Golf Club,,53.3302918,-2.1615521,no_site,unknown,,low,no official website resolved (not in county union directory)
 Hale Golf Course,,53.3609577,-2.326314,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ashton on Mersey Golf Club,https://www.ashtononmerseygolfclub.co.uk/,53.4359403,-2.3405841,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://ashtononmersey.hub.clubv1.com/Visitors/booking"
+Avro Golf Club,https://www.avrogolf.co.uk/,53.3302918,-2.1615521,brs,public,https://visitors.brsgolf.com/avro#/course/1,high,confirmed by following the platform link found on the club's own site
+Bramhall Golf Club,https://www.bramhallgolfclub.co.uk/,53.358743,-2.1494932,intelligent_golf,public,https://www.bramhallgolfclub.co.uk/visitorbooking/,high,
+Chorlton-cum-Hardy Golf Club,https://www.chorltoncumhardygolfclub.co.uk/,53.4266683,-2.2762328,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://chorltoncumhardy.hub.clubv1.com/Visitors/booking"
+Dunham Forest Golf and Country Club,https://www.dunhamforestgolf.com/,53.3859075,-2.3769455,unknown,unknown,,low,homepage loaded (https://www.dunhamforestgolf.com/) but no platform signal found on it or 0 booking-ish link(s)
+Hale Golf Course,https://www.halegolfclub.com/,53.3609577,-2.326314,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://hale.hub.clubv1.com/Visitors/booking"
+Harwood Golf Club,https://www.harwoodgolfclub.com/,53.5998028,-2.3684927,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Hazel Grove Golf Club,https://www.hazelgrovegolfclub.co.uk/,53.3738735,-2.0946783,brs,public,https://visitors.brsgolf.com/hazelgrove#/open-competitions,high,
+Heaton Moor Golf Club,https://www.heatonmoorgolfclub.co.uk/,53.4273263,-2.1943277,clubv1,public,https://heatonmoor.hub.clubv1.com/visitors/TeeSheet?date=2026-09-17,high,
+Romiley Golf Course,https://romileygolfclub.co.uk/,53.4195664,-2.0722395,clubv1,public,https://romiley.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-17,high,
+Sale Golf Club,https://www.salegolfclub.com/,53.4246801,-2.2849788,brs,public,https://visitors.brsgolf.com/sale,high,
+Stamford Golf Club,https://www.stamfordgolfclub.co.uk/,53.5052235,-2.0333505,clubv1,public,https://stamford.hub.clubv1.com/visitors/TeeSheet?date=2026-09-17,high,
+Stockport Golf Club,https://www.stockportgolf.co.uk/,53.3881445,-2.0919209,intelligent_golf,public,https://www.stockportgolf.co.uk/visitorbooking/,high,
+Worsley Golf Course,https://www.worsleygolfclub.co.uk/,53.4972332,-2.3586295,intelligent_golf,public,https://worsley.intelligentgolf.co.uk/visitorbooking/,high,
+Pitch and Putt,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

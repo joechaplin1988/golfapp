@@ -32,3 +32,13 @@ Owston Park Golf Course,,53.5920984,-1.166726,no_site,unknown,,low,no official w
 Hillsborough Golf Club,https://www.hillsboroughgolfclub.co.uk/,53.4171898,-1.5368171,intelligent_golf,public,https://www.hillsboroughgolfclub.co.uk/visitorbooking/,high,
 Rother Valley Golf Centre,https://www.rothervalleygolfcentre.co.uk/,53.3375505,-1.3058096,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
 Styrrup Hall Golf & Country Club,https://www.styrrupgolf.co.uk/,53.4151284,-1.0915498,error,unknown,,low,"homepage fetch failed: HTTPSConnectionPool(host='www.styrrupgolf.co.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(""HTTPSConnection(host='www.styrrupgolf.co.uk', port=443): Failed to resolve 'www.styrrupgolf.co.uk' ([Errno 11001] getaddrinfo failed)""))"
+Hallamshire Golf Club,https://www.hallamshiregolfclub.co.uk/,53.3751634,-1.5520833,unknown,not_available,,high,"platform reached but not a public visitor sheet (booking link; members-only, or visitor booking not enabled): https://clubnet.golfgraffix.com/Booking/members/app/clubnet_memberlogin.html?clubid=76C4EU-37024-79989"
+Hickleton Golf Club,https://www.hickletongolfclub.co.uk/,53.5465612,-1.2783217,unknown,unknown,,low,homepage loaded (https://www.hickletongolfclub.co.uk/) but no platform signal found on it or 2 booking-ish link(s)
+Owston Park Golf Course,https://www.owstonpark.com/,53.5920984,-1.166726,unknown,unknown,,low,homepage loaded (https://www.owstonpark.com/) but no platform signal found on it or 2 booking-ish link(s)
+Rotherham Golf Club,https://www.rotherhamgolfclub.com/,53.4608716,-1.2959694,intelligent_golf,public,https://rotherham.intelligentgolf.co.uk/visitorbooking/,high,
+Sandhill Golf Course,https://sandhillgolfclub.co.uk/,53.5459469,-1.3538581,brs,public,https://visitors.brsgolf.com/sandhill#/course/1,high,
+Silkstone Golf Course,https://www.silkstonegolfclub.co.uk/,53.5513298,-1.5426431,intelligent_golf,public,https://www.silkstonegolfclub.co.uk/visitorbooking/,high,
+Tankersley Park Golf Course,https://www.tankersleyparkgolfclub.org.uk/,53.4835525,-1.4745116,intelligent_golf,public,https://tankersley.intelligentgolf.co.uk/visitorbooking/,high,
+Thornhurst Manor Golf Course,https://thornhurstmanor.co.uk/,53.585736,-1.1448,unknown,login_required,,high,booking link requires login: https://boxoffice.thornhurst.uk/
+Waterfront Golf,https://www.waterfrontgolf.co.uk/,53.5126676,-1.3428421,brs,public,https://visitors.brsgolf.com/waterfront,high,
+18 hole Blue Monster Course,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"

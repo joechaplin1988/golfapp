@@ -40,3 +40,11 @@ Leicester City Football Club Golf Course,,52.7437233,-1.0765489,no_site,unknown,
 Breedon Priory Golf Centre (Main Course),https://www.breedonpriory.co.uk/,52.8110758,-1.4044152,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
 Pitch and Putt,,50.4632991,-3.5399211,no_site,unknown,,low,no official website resolved (not in county union directory)
 Pitch and Putt,,50.4101821,-5.069896,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hinckley Golf Club,https://www.hinckleygolfclub.co.uk/,52.5489537,-1.347253,intelligent_golf,public,https://www.hinckleygolfclub.co.uk/visitorbooking/,high,
+Humberstone Heights,https://humberstoneheightsgolfclub.co.uk/,52.6531123,-1.0837079,unknown,unknown,,low,homepage loaded (https://humberstoneheightsgolfclub.co.uk/) but no platform signal found on it or 0 booking-ish link(s)
+Leicestershire Golf Club,https://www.theleicestershiregolfclub.co.uk/,52.6181934,-1.0842821,clubv1,public,https://theleicestershire.hub.clubv1.com/visitors/TeeSheet?date=2026-09-17,high,
+Lutterworth Golf Club,https://www.lutterworthgc.co.uk/,52.4491605,-1.198234,intelligent_golf,login_required,,high,booking link requires login: https://www.lutterworthgc.co.uk/book_now
+Rothley Park Golf Club,https://rothleypark.co.uk/,52.7002774,-1.1479658,unknown,unknown,,low,homepage loaded (https://rothleypark.co.uk/) but no platform signal found on it or 13 booking-ish link(s)
+Rutland Water Golf Course,https://rutlandwatergolfcourse.co.uk/,52.639995,-0.6573771,unknown,unknown,,low,homepage loaded (https://rutlandwatergolfcourse.co.uk/) but no platform signal found on it or 1 booking-ish link(s)
+Willesley Park Golf Club,https://willesleypark.com/,52.7301177,-1.4919155,brs,public,https://visitors.brsgolf.com/willesley#/course/1,high,confirmed by following the platform link found on the club's own site
+Woolfox,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"

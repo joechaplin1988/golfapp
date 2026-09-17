@@ -1,0 +1,762 @@
+[
+ {
+  "name": "Aberdelghy Golf Course",
+  "lat": 54.5351783,
+  "lon": -6.0226695,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.aberdelghygolfcourse.co.uk/"
+ },
+ {
+  "name": "Ashfield Golf Course",
+  "lat": 54.1100938,
+  "lon": -6.579572,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.ashfieldgolfcourse.com/"
+ },
+ {
+  "name": "Ballycastle Golf Club",
+  "lat": 55.2030731,
+  "lon": -6.2355623,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.ballycastlegolfclub.com/"
+ },
+ {
+  "name": "Ballymena Golf Course",
+  "lat": 54.8848924,
+  "lon": -6.2239368,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.ballymenagolfclub.com/"
+ },
+ {
+  "name": "Balmoral Golf Club",
+  "lat": 54.5635707,
+  "lon": -5.9709225,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.balmoralgolf.com/"
+ },
+ {
+  "name": "Cairndhu Golf Course",
+  "lat": 54.8924858,
+  "lon": -5.84791,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.cairndhugolfclub.co.uk/"
+ },
+ {
+  "name": "Carnalea Golf Club",
+  "lat": 54.6640717,
+  "lon": -5.6989218,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://carnaleagolfclub.co.uk/"
+ },
+ {
+  "name": "Carnfunnock Golf Course",
+  "lat": 54.8853346,
+  "lon": -5.8420967,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://carnfunnock.com/"
+ },
+ {
+  "name": "Castlereagh Hills Golf Course",
+  "lat": 54.5679275,
+  "lon": -5.8339931,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.castlereaghhills.com/"
+ },
+ {
+  "name": "Castlerock Golf Club",
+  "lat": 55.1638116,
+  "lon": -6.7734422,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.castlerockgc.co.uk/"
+ },
+ {
+  "name": "Cliftonville Golf Club",
+  "lat": 54.6265722,
+  "lon": -5.9522322,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.cliftonvillegolfclub.com/"
+ },
+ {
+  "name": "Clogher Valley Golf Club",
+  "lat": 54.3666837,
+  "lon": -7.3402942,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://cloghervalleygc.co.uk/"
+ },
+ {
+  "name": "Donaghadee Golf Club",
+  "lat": 54.6509037,
+  "lon": -5.5496551,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.donaghadeegolfclub.com/"
+ },
+ {
+  "name": "Dungannon Golf Club",
+  "lat": 54.5174961,
+  "lon": -6.7856848,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.dungannongolfclub.com/"
+ },
+ {
+  "name": "Enniskillen Golf Club",
+  "lat": 54.3381102,
+  "lon": -7.6153177,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.enniskillengolfclub.com/"
+ },
+ {
+  "name": "Fintona Golf Club",
+  "lat": 54.4924759,
+  "lon": -7.3203103,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://fintonagolfclub.com/"
+ },
+ {
+  "name": "Fortwilliam Golf Club",
+  "lat": 54.6441557,
+  "lon": -5.929439,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.fortwilliamgc.co.uk/"
+ },
+ {
+  "name": "Galgorm Castle Golf Club",
+  "lat": 54.8519083,
+  "lon": -6.3123666,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.galgorm.com/golf.html"
+ },
+ {
+  "name": "Gracehill Golf Club",
+  "lat": 55.1411888,
+  "lon": -6.3932101,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://gracehillgolfclub.com/"
+ },
+ {
+  "name": "Helen's Bay Golf Club",
+  "lat": 54.6705877,
+  "lon": -5.736706,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.helensbaygc.com/"
+ },
+ {
+  "name": "Holywood Golf Course",
+  "lat": 54.6318501,
+  "lon": -5.8299318,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.holywoodgolfclub.co.uk/"
+ },
+ {
+  "name": "Kilkeel Golf Course",
+  "lat": 54.0745008,
+  "lon": -6.0480635,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://kilkeelgolfclub.com/"
+ },
+ {
+  "name": "Knock Golf Club",
+  "lat": 54.596964,
+  "lon": -5.8201647,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.knockgolfclub.co.uk/"
+ },
+ {
+  "name": "Lisburn Golf Course",
+  "lat": 54.485947,
+  "lon": -6.0732916,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://lisburngolfclub.com/"
+ },
+ {
+  "name": "Lough Erne Golf Resort",
+  "lat": 54.3976248,
+  "lon": -7.696377,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.lougherneresort.com/"
+ },
+ {
+  "name": "Lurgan Golf Course",
+  "lat": 54.4670299,
+  "lon": -6.3179565,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.lurgangolfclub.com/"
+ },
+ {
+  "name": "Malone Golf Club",
+  "lat": 54.538158,
+  "lon": -5.9719578,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://malonegolfclub.co.uk/"
+ },
+ {
+  "name": "Massereene Golf Club",
+  "lat": 54.7135126,
+  "lon": -6.2305001,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.massereenegc.com"
+ },
+ {
+  "name": "Moyola Park Golf Club",
+  "lat": 54.7839033,
+  "lon": -6.5701102,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.moyolaparkgolfclub.co.uk/"
+ },
+ {
+  "name": "Omagh Golf Club",
+  "lat": 54.5892392,
+  "lon": -7.2928456,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.omaghgolfclub.co.uk/"
+ },
+ {
+  "name": "Ormeau Golf Club",
+  "lat": 54.5829476,
+  "lon": -5.914465,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://ormeaugolfclub.com/"
+ },
+ {
+  "name": "Portadown Golf Club",
+  "lat": 54.4042153,
+  "lon": -6.4137151,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.portadowngolfclub.co.uk/"
+ },
+ {
+  "name": "Rockmount Golf Course",
+  "lat": 54.4881203,
+  "lon": -5.88426,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://rockmountgolfclub.com/"
+ },
+ {
+  "name": "Royal Belfast Golf Club",
+  "lat": 54.6600049,
+  "lon": -5.7845384,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://royalbelfast.com"
+ },
+ {
+  "name": "Royal County Down Golf Course",
+  "lat": 54.2232661,
+  "lon": -5.8758305,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.royalcountydowngolfclub.com/"
+ },
+ {
+  "name": "Whitehead Golf Club",
+  "lat": 54.7658298,
+  "lon": -5.7032437,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://whiteheadgolfclub.com/"
+ },
+ {
+  "name": "Cawdor Castle Golf Club",
+  "lat": 57.5214763,
+  "lon": -3.9212276,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.cawdorcastle.com/"
+ },
+ {
+  "name": "Dalmilling Golf Course",
+  "lat": 55.465426,
+  "lon": -4.5912806,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.dalmillinggolf.com/"
+ },
+ {
+  "name": "Fereneze Golf Club",
+  "lat": 55.8061771,
+  "lon": -4.411976,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.ferenezegolfclub.co.uk/"
+ },
+ {
+  "name": "Mains of Taymouth Golf Course",
+  "lat": 56.5916131,
+  "lon": -3.9937222,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.taymouth.co.uk/"
+ },
+ {
+  "name": "Turriff Golf Club",
+  "lat": 57.5377995,
+  "lon": -2.4810014,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.turriffgolfclub.co.uk/"
+ },
+ {
+  "name": "Aberdare Golf Club",
+  "lat": 51.715759,
+  "lon": -3.4262368,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://aberdaregolfclub.co.uk/"
+ },
+ {
+  "name": "Abergele Golf Club",
+  "lat": 53.2852457,
+  "lon": -3.6042017,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.abergelegolfclub.co.uk/"
+ },
+ {
+  "name": "Aberystwyth Golf Course",
+  "lat": 52.423774,
+  "lon": -4.0722043,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.aberystwythgolfclub.com/"
+ },
+ {
+  "name": "Bargoed Golf Course",
+  "lat": 51.6922073,
+  "lon": -3.2429201,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.bargoedgolfclub.co.uk/"
+ },
+ {
+  "name": "Bryn Meadows",
+  "lat": 51.6425814,
+  "lon": -3.2059955,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.brynmeadows.co.uk/"
+ },
+ {
+  "name": "Brynhill Golf Club",
+  "lat": 51.421176,
+  "lon": -3.2959637,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.brynhillgolfclub.co.uk/"
+ },
+ {
+  "name": "Caernarfon Golf Club",
+  "lat": 53.1310836,
+  "lon": -4.2964426,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.caernarfongolfclub.co.uk/"
+ },
+ {
+  "name": "Caerphilly Golf Club",
+  "lat": 51.5671154,
+  "lon": -3.2234289,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.caerphillygolfclub.com/"
+ },
+ {
+  "name": "Celtic Haven",
+  "lat": 51.6505031,
+  "lon": -4.7647332,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.haven.com/parks/south-wales/lydstep-beach"
+ },
+ {
+  "name": "Celtic Manor Golf Club",
+  "lat": 51.6140853,
+  "lon": -2.9277701,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.celtic-manor.com/"
+ },
+ {
+  "name": "Cliff Hotel Golf Course",
+  "lat": 52.1182902,
+  "lon": -4.6882744,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://cliffhotel.com/"
+ },
+ {
+  "name": "Coed y Mwstwr Golf Club",
+  "lat": 51.5120234,
+  "lon": -3.5264418,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.coed-y-mwstwr.co.uk/"
+ },
+ {
+  "name": "Conwy Golf Club",
+  "lat": 53.2931168,
+  "lon": -3.8497597,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.conwygolfclub.com/"
+ },
+ {
+  "name": "Criccieth Multi Golf",
+  "lat": 52.9195717,
+  "lon": -4.2212058,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.cricciethmultigolf.com/"
+ },
+ {
+  "name": "Denbigh Golf Course",
+  "lat": 53.1965249,
+  "lon": -3.4390075,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.denbighgolfclub.co.uk/"
+ },
+ {
+  "name": "Derllys Court Golf Club",
+  "lat": 51.852504,
+  "lon": -4.3883724,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.derllyscourtgolfclub.com/"
+ },
+ {
+  "name": "Dinas Powys Golf Club",
+  "lat": 51.4395918,
+  "lon": -3.2320548,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.dpgc.co.uk/"
+ },
+ {
+  "name": "Earlswood Golf Course",
+  "lat": 51.6300333,
+  "lon": -3.8472833,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.earlswoodgolfcourse.com/"
+ },
+ {
+  "name": "Garnant Golf Club",
+  "lat": 51.7976941,
+  "lon": -3.9101665,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.garnantgolf.co.uk/"
+ },
+ {
+  "name": "Glyn Abbey Golf Club",
+  "lat": 51.7405428,
+  "lon": -4.2347416,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.glynabbey.co.uk/"
+ },
+ {
+  "name": "Glynneath Golf Club",
+  "lat": 51.7621034,
+  "lon": -3.5804682,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://glynneathgolfclub.co.uk/"
+ },
+ {
+  "name": "Hawarden Golf Club",
+  "lat": 53.1795764,
+  "lon": -3.0361532,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://hawardengolfclub.co.uk/"
+ },
+ {
+  "name": "Holywell Golf Course",
+  "lat": 53.2636697,
+  "lon": -3.2384337,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.holywellgc.co.uk/"
+ },
+ {
+  "name": "Langland Bay Golf Club",
+  "lat": 51.5678538,
+  "lon": -4.0216947,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.langlandbaygolfclub.com/"
+ },
+ {
+  "name": "Llanishen Golf Course",
+  "lat": 51.5515274,
+  "lon": -3.1906879,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.llanishengc.co.uk/"
+ },
+ {
+  "name": "Llanwern Golf Club",
+  "lat": 51.5848323,
+  "lon": -2.9250353,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.llanwerngolfclub.co.uk/"
+ },
+ {
+  "name": "Machynys Golf",
+  "lat": 51.661739,
+  "lon": -4.146122,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.machynys.com/"
+ },
+ {
+  "name": "Maesdu Golf Club",
+  "lat": 53.3076727,
+  "lon": -3.8318743,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.maesdugolfclub.co.uk/"
+ },
+ {
+  "name": "Mold Golf Club",
+  "lat": 53.1696362,
+  "lon": -3.1978285,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://moldgolfclub.co.uk/"
+ },
+ {
+  "name": "Monmouth Golf Course",
+  "lat": 51.8288728,
+  "lon": -2.7067787,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://monmouthgolf.com/"
+ },
+ {
+  "name": "Monmouthshire Golf Club",
+  "lat": 51.8050337,
+  "lon": -3.0208585,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.monmouthshiregolfclub.co.uk/"
+ },
+ {
+  "name": "Morriston Golf Club",
+  "lat": 51.6745784,
+  "lon": -3.9380065,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.morristongolfclub.co.uk/"
+ },
+ {
+  "name": "Mountain Ash Golf Course",
+  "lat": 51.6960536,
+  "lon": -3.3967785,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.mountainashgc.com/"
+ },
+ {
+  "name": "Neath Golf Course",
+  "lat": 51.6844746,
+  "lon": -3.7922931,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.neathgolfclub.co.uk/"
+ },
+ {
+  "name": "Newport Golf Club",
+  "lat": 51.6012621,
+  "lon": -3.0579886,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.newportgolfclub.org.uk/"
+ },
+ {
+  "name": "North Wales Golf Club",
+  "lat": 53.3077023,
+  "lon": -3.8390186,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.northwalesgolfclub.org.uk/"
+ },
+ {
+  "name": "Old Colwyn Golf Club",
+  "lat": 53.283432,
+  "lon": -3.6927379,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.oldcolwyngolfclub.co.uk/"
+ },
+ {
+  "name": "Pennard Golf Club",
+  "lat": 51.5756154,
+  "lon": -4.0981775,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.pennardgolfclub.com/"
+ },
+ {
+  "name": "Penrhos Golf Course",
+  "lat": 52.3009494,
+  "lon": -4.1227202,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.penrhospark.com/"
+ },
+ {
+  "name": "Pontardawe Golf Club",
+  "lat": 51.7315567,
+  "lon": -3.8515369,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.pontardawegolfclub.co.uk/"
+ },
+ {
+  "name": "Pontnewydd Golf Course",
+  "lat": 51.6706028,
+  "lon": -3.0390939,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.pontnewyddgolf.co.uk/"
+ },
+ {
+  "name": "Pontypridd Golf Club",
+  "lat": 51.6051016,
+  "lon": -3.3189449,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.pontypriddgolfclub.com/"
+ },
+ {
+  "name": "Prestatyn Golf Course",
+  "lat": 53.3445457,
+  "lon": -3.3841911,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://prestatyngolfclub.co.uk/"
+ },
+ {
+  "name": "Pwllheli Golf Course",
+  "lat": 52.8792538,
+  "lon": -4.4385059,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://clwbgolffpwllheli.com"
+ },
+ {
+  "name": "Radyr Golf Club",
+  "lat": 51.5137247,
+  "lon": -3.2631333,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.radyrgolf.co.uk/"
+ },
+ {
+  "name": "Rhondda Golf Club",
+  "lat": 51.6309183,
+  "lon": -3.4385984,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.rhonddagolfclub.co.uk/"
+ },
+ {
+  "name": "Rhuddlan Golf Course",
+  "lat": 53.2935769,
+  "lon": -3.451948,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.rhuddlangolfclub.co.uk/"
+ },
+ {
+  "name": "Rhyl Golf Course",
+  "lat": 53.3304797,
+  "lon": -3.455006,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://rhylgolfclub.co.uk/"
+ },
+ {
+  "name": "Silver Birch Golf Course",
+  "lat": 53.2517763,
+  "lon": -3.6399633,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://silverbirchgolfclub.co.uk/"
+ },
+ {
+  "name": "Southerndown Golf Club",
+  "lat": 51.4744343,
+  "lon": -3.6085833,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.southerndowngolfclub.com/"
+ },
+ {
+  "name": "St. Giles",
+  "lat": 52.5204312,
+  "lon": -3.2971281,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.stgilesgolf.co.uk/"
+ },
+ {
+  "name": "Tata Steel Golf Course",
+  "lat": 51.5669529,
+  "lon": -3.75389,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.tatasteelgolf.co.uk/"
+ },
+ {
+  "name": "Tredegar Park Golf Club",
+  "lat": 51.5988944,
+  "lon": -3.0272043,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.tredegarparkgolfclub.co.uk/"
+ },
+ {
+  "name": "Wenvoe Castle Golf Club",
+  "lat": 51.4344535,
+  "lon": -3.2698487,
+  "source": "website_pass",
+  "osm_site": "",
+  "official_site": "https://www.wenvoecastlegolfclub.co.uk/"
+ }
+]

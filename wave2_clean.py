@@ -28,7 +28,9 @@ UA = {"User-Agent": "ServiceSynkGolfAggregator/0.1 (contact: joe@servicesynk.com
 INPUTS = sys.argv[1:-1] or [f"approved_rows_wave2{w}.csv" for w in "abc"]
 OUT = sys.argv[-1] if len(sys.argv) > 1 else "approved_rows_wave2.csv"
 NOT_A_ROUND = re.compile(
-    r"footgolf|foot golf|disc golf|mini golf|adventure|crazy golf|"
+    # Word boundaries: "foot golf" inside "Powfoot Golf Club" dropped a real
+    # Dumfriesshire links as a FootGolf sheet.
+    r"\bfoot ?golf|\bdisc golf|\bmini golf|\badventure|\bcrazy golf|"
     r"pitch\s*(and|&)\s*putt|putting green|coaching diary|driving range|golf range", re.I)
 MAX_KM = 15.0
 

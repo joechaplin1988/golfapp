@@ -49,3 +49,7 @@ Bentham Golf Club,https://www.benthamgolfclub.co.uk/contact-us/,54.1275957,-2.49
 Skipton Golf Club,https://www.skiptongolfclub.co.uk/,53.9747448,-2.0181558,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
 Gilling Castle Golf Club,https://www.ampleforthgolf.co.uk/,54.1816701,-1.0689589,unknown,login_required,,high,booking link requires login: https://www.ampleforthgolf.co.uk/visitors.htm
 Knaresborough Golf Club,https://www.knaresboroughgolfclub.co.uk/,54.0279458,-1.4463338,brs,public,https://visitors.brsgolf.com/knaresborough#/course/1,high,
+Easingwold Golf Club,https://www.easingwoldgolfclub.co.uk/,54.1076968,-1.1687464,brs,public,https://visitors.brsgolf.com/easingwold#/course/1,high,confirmed by following the platform link found on the club's own site
+Selby Golf Club,https://www.selbygolfclub.co.uk/,53.7622379,-1.1233864,brs,public,https://visitors.brsgolf.com/selby#/course/1,high,
+Conyngham Hall Leisure Park pitch and putt course,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Peasholm Pitch and Putt,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at

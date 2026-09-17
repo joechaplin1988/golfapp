@@ -25,3 +25,10 @@ Astbury Golf Course,,52.498503,-2.4080906,no_site,unknown,,low,no official websi
 Emerald Championship Course,,52.9816268,-2.6846328,no_site,unknown,,low,no official website resolved (not in county union directory)
 Henlle Park,,52.9077736,-3.0367711,no_site,unknown,,low,no official website resolved (not in county union directory)
 Bridgnorth Golf Club,,52.5503566,-2.4120513,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bridgnorth Golf Club,https://www.bridgnorthgolfclub.co.uk/,52.5503566,-2.4120513,brs,public,https://visitors.brsgolf.com/bridgnorth,high,confirmed by following the platform link found on the club's own site
+Church Stretton Golf Club,https://churchstrettongolfclub.co.uk/,52.5491248,-2.8161951,clubv1,public,https://churchstretton.hub.clubv1.com/Visitors/TeeSheet?date=2026-09-17,high,
+Henlle Park,https://www.henllehall.com,52.9077736,-3.0367711,unknown,unknown,,low,homepage loaded (https://www.henllehall.com/) but no platform signal found on it or 0 booking-ish link(s)
+Llanymynech Golf Course,https://llanymynechgc.co.uk/,52.7927764,-3.0909657,brs,public,https://visitors.brsgolf.com/midwales#/open-competitions,high,
+The Wrekin Golf Club,https://www.wrekingolfclub.co.uk/,52.6839498,-2.5228574,brs,public,https://visitors.brsgolf.com/wrekin#/,high,confirmed by following the platform link found on the club's own site
+Hawkstone Course,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"
+Saphire Course,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"

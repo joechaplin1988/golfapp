@@ -1,0 +1,136 @@
+name,official_site,lat,lon,platform,access,evidence_url,confidence,note
+Blackwood Golf Club,https://www.blackwoodgc.co.uk/,51.6768615,-3.1991951,brs,public,https://visitors.brsgolf.com/blackwoodwales#/,high,confirmed by following the platform link found on the club's own site
+Ballycastle Golf Club,,55.2030731,-6.2355623,no_site,unknown,,low,no official website resolved (not in county union directory)
+Moyola Park Golf Club,,54.7839033,-6.5701102,no_site,unknown,,low,no official website resolved (not in county union directory)
+Knock Golf Club,,54.596964,-5.8201647,no_site,unknown,,low,no official website resolved (not in county union directory)
+Carrickfergus Golf Course,https://carrickfergusgolfclub.co.uk/,54.7238848,-5.8047235,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Holywood Golf Course,,54.6318501,-5.8299318,no_site,unknown,,low,no official website resolved (not in county union directory)
+Royal Belfast Golf Club,,54.6600049,-5.7845384,no_site,unknown,,low,no official website resolved (not in county union directory)
+Helen's Bay Golf Club,,54.6705877,-5.736706,no_site,unknown,,low,no official website resolved (not in county union directory)
+Greenisland Golf Club,https://www.greenislandgolfclub.co.uk/,54.7062009,-5.8742655,brs,public,https://visitors.brsgolf.com/greenisland#/course/1,high,
+Carnalea Golf Club,,54.6640717,-5.6989218,no_site,unknown,,low,no official website resolved (not in county union directory)
+Malone Golf Club,,54.538158,-5.9719578,no_site,unknown,,low,no official website resolved (not in county union directory)
+Down Royal Golf Club,,54.4922742,-6.1279215,no_site,unknown,,low,no official website resolved (not in county union directory)
+Balmoral Golf Club,,54.5635707,-5.9709225,no_site,unknown,,low,no official website resolved (not in county union directory)
+Colin Valley Golf Course,,54.5595763,-6.0079525,no_site,unknown,,low,no official website resolved (not in county union directory)
+Scrabo Golf Club,,54.5811346,-5.7202475,no_site,unknown,,low,no official website resolved (not in county union directory)
+Cliftonville Golf Club,,54.6265722,-5.9522322,no_site,unknown,,low,no official website resolved (not in county union directory)
+Greenacres Golf Course,,54.7284667,-6.0028246,no_site,unknown,,low,no official website resolved (not in county union directory)
+Larne Golf Club,https://www.larnegolfclub.co.uk/,54.8549321,-5.7784924,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Whitehead Golf Club,,54.7658298,-5.7032437,no_site,unknown,,low,no official website resolved (not in county union directory)
+Belvoir Golf Course,,54.5598315,-5.9196448,no_site,unknown,,low,no official website resolved (not in county union directory)
+Shandon Park Golf Course,,54.5812641,-5.855929,no_site,unknown,,low,no official website resolved (not in county union directory)
+Clandeboye Golf CLub,https://www.cgc-ni.com/,54.6271006,-5.6876981,intelligent_golf,public,https://www.cgc-ni.com/visitorbooking/,high,
+Warrenpoint Golf Club,https://www.warrenpointgolf.com/,54.1085573,-6.2671553,brs,public,https://visitors.brsgolf.com/warrenpoint#/course/1,high,
+Tandragee Golf Course,,54.3480166,-6.4199718,no_site,unknown,,low,no official website resolved (not in county union directory)
+Royal County Down Golf Course,,54.2232661,-5.8758305,no_site,unknown,,low,no official website resolved (not in county union directory)
+City Of Belfast Golf Course,https://www.cityofbelfastgolfclub.com/,54.682089,-5.996438,brs,public,https://visitors.brsgolf.com/cityofbelfast#/course/1,high,
+Fortwilliam Golf Club,,54.6441557,-5.929439,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ballyclare Golf Course,,54.7737532,-6.0341665,no_site,unknown,,low,no official website resolved (not in county union directory)
+Tobermore Golf Centre,https://www.midulstercouncil.org/tobermoregolf,54.8168132,-6.6962259,unknown,unknown,,low,homepage loaded (https://www.midulstercouncil.org/tobermoregolf) but no platform signal found on it or 4 booking-ish link(s)
+Foyle Golf Club,https://www.foylegolfcentre.co.uk/,55.0395025,-7.2908409,esp,unknown,,medium,platform link(s) seen (['esp']) but no confirmed public booking page found
+Craigavon Golf Course,,54.4754129,-6.3631486,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lough Erne Golf Resort,,54.3976248,-7.696377,no_site,unknown,,low,no official website resolved (not in county union directory)
+Castlereagh Hills Golf Course,,54.5679275,-5.8339931,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ballymena Golf Course,,54.8848924,-6.2239368,no_site,unknown,,low,no official website resolved (not in county union directory)
+Massereene Golf Club,,54.7135126,-6.2305001,no_site,unknown,,low,no official website resolved (not in county union directory)
+Strabane Golf Club,,54.8116531,-7.4640828,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lurgan Golf Course,,54.4670299,-6.3179565,no_site,unknown,,low,no official website resolved (not in county union directory)
+Crossgar Golf Club,,54.4019153,-5.7589067,no_site,unknown,,low,no official website resolved (not in county union directory)
+Killymoon Golf Club,https://www.killymoongolfclub.com/,54.6341384,-6.724629,brs,public,https://visitors.brsgolf.com/killymoon#/course/1,high,confirmed by following the platform link found on the club's own site
+Clogher Valley Golf Club,,54.3666837,-7.3402942,no_site,unknown,,low,no official website resolved (not in county union directory)
+Castlerock Golf Club,,55.1638116,-6.7734422,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ashfield Golf Course,,54.1100938,-6.579572,no_site,unknown,,low,no official website resolved (not in county union directory)
+Enniskillen Golf Club,,54.3381102,-7.6153177,no_site,unknown,,low,no official website resolved (not in county union directory)
+Gracehill Golf Club,,55.1411888,-6.3932101,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Strand - Portstewart Golf Club,,55.1675907,-6.7324055,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Manor House & Golf Course,,54.9502411,-6.5467042,no_site,unknown,,low,no official website resolved (not in county union directory)
+Golf at Roe Valley,https://www.roevalleyresort.com/,55.0381278,-6.9573684,brs,public,https://visitors.brsgolf.com/roepark#/course/1,high,confirmed by following the platform link found on the club's own site
+Ormeau Golf Club,,54.5829476,-5.914465,no_site,unknown,,low,no official website resolved (not in county union directory)
+Kirkiston Castle Golf Club,,54.439684,-5.4721483,no_site,unknown,,low,no official website resolved (not in county union directory)
+St Patrick's Golf Club,,54.3317819,-5.6961234,no_site,unknown,,low,no official website resolved (not in county union directory)
+Portadown Golf Club,,54.4042153,-6.4137151,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ballyearl Golf Course,https://antrimandnewtownabbey.gov.uk/leisure-centres/book-online/book-golf/,54.700918,-5.953856,brs,public,https://visitors.brsgolf.com/allenpark#/course/1,high,confirmed by following the platform link found on the club's own site
+Burnfield House Golf Club,,54.6975536,-5.935212,no_site,unknown,,low,no official website resolved (not in county union directory)
+Riverside - Portstewart Golf Club,,55.1662448,-6.7233442,no_site,unknown,,low,no official website resolved (not in county union directory)
+Armagh Golf Club,,54.3376691,-6.6467383,no_site,unknown,,low,no official website resolved (not in county union directory)
+Newtownstewart Golf Club,https://www.newtownstewartgolfclub.com/,54.7041282,-7.4216197,unknown,unknown,,low,homepage loaded (https://ft95.net/) but no platform signal found on it or 1 booking-ish link(s)
+Dungannon Golf Club,,54.5174961,-6.7856848,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bushfoot Golf Club,,55.2168937,-6.5327442,no_site,unknown,,low,no official website resolved (not in county union directory)
+Fintona Golf Club,,54.4924759,-7.3203103,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ashwoods Golf Centre,,54.326897,-7.6785496,no_site,unknown,,low,no official website resolved (not in county union directory)
+Moyola Park,,54.7828516,-6.5604789,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bentra Golf Course,,54.7619396,-5.7221509,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ronan Valley Golf Course,,54.7436271,-6.5991959,no_site,unknown,,low,no official website resolved (not in county union directory)
+Carnfunnock Golf Course,,54.8853346,-5.8420967,no_site,unknown,,low,no official website resolved (not in county union directory)
+Hill Valley Golf,,54.7919683,-7.4856932,no_site,unknown,,low,no official website resolved (not in county union directory)
+Cairndhu Golf Course,,54.8924858,-5.84791,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ardglass Golf Club,https://www.ardglassgolfclub.com/,54.2530594,-5.6121946,brs,public,https://visitors.brsgolf.com/ardglass#/course/1,high,confirmed by following the platform link found on the club's own site
+Ballyreagh Golf Course,,55.1962006,-6.6829845,no_site,unknown,,low,no official website resolved (not in county union directory)
+Brown Trout Inn golf course,https://browntroutinn.com/,55.0381973,-6.5987426,blocked,unknown,,low,homepage returned HTTP 403 — likely bot-blocked; needs a browser-based check
+Cloghogue Pitch and Putt,,54.1532722,-6.3428418,no_site,unknown,,low,no official website resolved (not in county union directory)
+Rory McIlroy's backyard course,,54.5257462,-5.8487807,no_site,unknown,,low,no official website resolved (not in county union directory)
+Galgorm Castle Golf Club,,54.8519083,-6.3123666,no_site,unknown,,low,no official website resolved (not in county union directory)
+Kilrea Golf Course,https://kilreagolfclub.com/,54.9424681,-6.5553824,golfnow,out_of_scope,,high,"GolfNow listing, not the club's own booking — excluded by policy: https://www.golfnow.co.uk/tee-times/facility/17150-kilrea-golf-club/search#sortby=Date&view=Grouping&holes=3&timeperiod=3&timemax=42&timemin=10&players=0&pricemax=10000&pricemin=0"
+Mahee Island Golf Course,,54.4985341,-5.6388089,no_site,unknown,,low,no official website resolved (not in county union directory)
+Ardminnan Golf Club,,54.415244,-5.4718544,no_site,unknown,,low,no official website resolved (not in county union directory)
+Blackwood Golf Centre,,54.6306332,-5.7261643,no_site,unknown,,low,no official website resolved (not in county union directory)
+Dunluce Links,https://www.royalportrushgolfclub.com/courses/the-dunluce/,55.2027537,-6.6252608,clubv1,unknown,,medium,platform link(s) seen (['clubv1']) but no confirmed public booking page found
+Laganview Golf Centre,https://www.laganviewgolfcentre.co.uk/,54.5334976,-6.0127006,unknown,unknown,,low,homepage loaded (https://laganviewgolfcentre.co.uk/) but no platform signal found on it or 4 booking-ish link(s)
+Kilkeel Golf Course,,54.0745008,-6.0480635,no_site,unknown,,low,no official website resolved (not in county union directory)
+Lisburn Golf Course,,54.485947,-6.0732916,no_site,unknown,,low,no official website resolved (not in county union directory)
+Donaghadee Golf Club,,54.6509037,-5.5496551,no_site,unknown,,low,no official website resolved (not in county union directory)
+Bangor Golf Club,,54.6560465,-5.64978,no_site,unknown,,low,no official website resolved (not in county union directory)
+Rockmount Golf Course,,54.4881203,-5.88426,no_site,unknown,,low,no official website resolved (not in county union directory)
+Mount Ober Golf Club,,54.5520324,-5.8819121,no_site,unknown,,low,no official website resolved (not in county union directory)
+Cloverhill Golf Club,https://www.cloverhillgolfclub.co.uk/,54.1036841,-6.487566,brs,not_available,,high,"platform reached but not a public visitor sheet (booking link; members-only, or visitor booking not enabled): https://www.cloverhillgolfclub.co.uk/members/member-tee-times/"
+Dunmurry Golf Course,,54.5481598,-5.9854581,no_site,unknown,,low,no official website resolved (not in county union directory)
+The Old Course - Portstewart Golf Club,,55.1905802,-6.7038489,no_site,unknown,,low,no official website resolved (not in county union directory)
+Aberdelghy Golf Course,,54.5351783,-6.0226695,no_site,unknown,,low,no official website resolved (not in county union directory)
+Omagh Golf Club,,54.5892392,-7.2928456,no_site,unknown,,low,no official website resolved (not in county union directory)
+Faughan Valley Golf Centre,,55.0212574,-7.2467481,no_site,unknown,,low,no official website resolved (not in county union directory)
+Aberdelghy Golf Course,https://www.aberdelghygolfcourse.co.uk/,54.5351783,-6.0226695,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Ashfield Golf Course,https://www.ashfieldgolfcourse.com/,54.1100938,-6.579572,unknown,unknown,,low,homepage loaded (https://www.ashfieldgolfcourse.com/) but no platform signal found on it or 6 booking-ish link(s)
+Ballycastle Golf Club,https://www.ballycastlegolfclub.com/,55.2030731,-6.2355623,brs,public,https://visitors.brsgolf.com/ballycastle?utm_source=homepage&utm_medium=cta&utm_campaign=hero_booking#/course/1,high,
+Ballymena Golf Course,https://www.ballymenagolfclub.com/,54.8848924,-6.2239368,brs,public,https://visitors.brsgolf.com/ballymena#/course/1,high,
+Balmoral Golf Club,https://www.balmoralgolf.com/,54.5635707,-5.9709225,brs,public,https://visitors.brsgolf.com/balmoral,high,
+Cairndhu Golf Course,https://www.cairndhugolfclub.co.uk/,54.8924858,-5.84791,clubv1,not_available,,high,"platform reached but not a public visitor sheet (platform link; members-only, or visitor booking not enabled): https://cairndhu.hub.clubv1.com/Visitors/booking"
+Carnalea Golf Club,https://carnaleagolfclub.co.uk/,54.6640717,-5.6989218,brs,public,https://visitors.brsgolf.com/carnalea#/course/1,high,confirmed by following the platform link found on the club's own site
+Carnfunnock Golf Course,https://carnfunnock.com/,54.8853346,-5.8420967,unknown,unknown,,low,homepage loaded (https://carnfunnock.com/) but no platform signal found on it or 1 booking-ish link(s)
+Castlereagh Hills Golf Course,https://www.castlereaghhills.com/,54.5679275,-5.8339931,brs,public,https://visitors.brsgolf.com/castlereaghhills#/course/1,high,confirmed by following the platform link found on the club's own site
+Castlerock Golf Club,https://www.castlerockgc.co.uk/,55.1638116,-6.7734422,intelligent_golf,public,https://www.castlerockgc.co.uk/visitorbooking/,high,
+Cliftonville Golf Club,https://www.cliftonvillegolfclub.com/,54.6265722,-5.9522322,unknown,unknown,,low,homepage loaded (https://www.cliftonvillegolfclub.com/) but no platform signal found on it or 6 booking-ish link(s)
+Clogher Valley Golf Club,https://cloghervalleygc.co.uk/,54.3666837,-7.3402942,unknown,unknown,,low,homepage loaded (https://cloghervalleygc.co.uk/) but no platform signal found on it or 5 booking-ish link(s)
+Donaghadee Golf Club,https://www.donaghadeegolfclub.com/,54.6509037,-5.5496551,brs,public,https://visitors.brsgolf.com/donaghadee?iframe=1,high,
+Dungannon Golf Club,https://www.dungannongolfclub.com/,54.5174961,-6.7856848,unknown,unknown,,low,homepage loaded (https://www.dungannongolfclub.com/) but no platform signal found on it or 5 booking-ish link(s)
+Enniskillen Golf Club,https://www.enniskillengolfclub.com/,54.3381102,-7.6153177,brs,public,https://visitors.brsgolf.com/enniskillen#/course/1,high,confirmed by following the platform link found on the club's own site
+Fintona Golf Club,https://fintonagolfclub.com/,54.4924759,-7.3203103,brs,unknown,,medium,platform link(s) seen (['brs']) but no confirmed public booking page found
+Fortwilliam Golf Club,https://www.fortwilliamgc.co.uk/,54.6441557,-5.929439,clubv1,public,https://fortwilliam.hub.clubv1.com/visitors/TeeSheet?date=2026-09-17,high,
+Galgorm Castle Golf Club,https://www.galgorm.com/golf.html,54.8519083,-6.3123666,brs,public,https://visitors.brsgolf.com/galgorm#/course/1,high,confirmed by following the platform link found on the club's own site
+Gracehill Golf Club,https://gracehillgolfclub.com/,55.1411888,-6.3932101,brs,public,https://visitors.brsgolf.com/gracehill,high,
+Helen's Bay Golf Club,https://www.helensbaygc.com/,54.6705877,-5.736706,brs,public,https://visitors.brsgolf.com/helensbay#/course/1,high,
+Holywood Golf Course,https://www.holywoodgolfclub.co.uk/,54.6318501,-5.8299318,brs,public,https://visitors.brsgolf.com/holywood#/course/1,high,confirmed by following the platform link found on the club's own site
+Kilkeel Golf Course,https://kilkeelgolfclub.com/,54.0745008,-6.0480635,brs,public,https://visitors.brsgolf.com/kilkeel#/course/1,high,confirmed by following the platform link found on the club's own site
+Knock Golf Club,https://www.knockgolfclub.co.uk/,54.596964,-5.8201647,brs,public,https://visitors.brsgolf.com/knock#/course/1,high,
+Lisburn Golf Course,https://lisburngolfclub.com/,54.485947,-6.0732916,brs,public,https://visitors.brsgolf.com/lisburn#/course/1,high,confirmed by following the platform link found on the club's own site
+Lough Erne Golf Resort,https://www.lougherneresort.com/,54.3976248,-7.696377,unknown,unknown,,low,homepage loaded (https://www.lougherneresort.com/) but no platform signal found on it or 5 booking-ish link(s)
+Lurgan Golf Course,https://www.lurgangolfclub.com/,54.4670299,-6.3179565,brs,public,https://visitors.brsgolf.com/lurgan,high,
+Malone Golf Club,https://malonegolfclub.co.uk/,54.538158,-5.9719578,brs,public,https://visitors.brsgolf.com/malone,high,
+Massereene Golf Club,https://www.massereenegc.com,54.7135126,-6.2305001,unknown,unknown,,low,homepage loaded (https://www.massereenegc.com/) but no platform signal found on it or 5 booking-ish link(s)
+Moyola Park Golf Club,https://www.moyolaparkgolfclub.co.uk/,54.7839033,-6.5701102,brs,public,https://visitors.brsgolf.com/moyola#/course/1,high,
+Omagh Golf Club,https://www.omaghgolfclub.co.uk/,54.5892392,-7.2928456,brs,public,https://visitors.brsgolf.com/omagh,high,
+Ormeau Golf Club,https://ormeaugolfclub.com/,54.5829476,-5.914465,brs,public,https://visitors.brsgolf.com/ormeau#/course/1,high,confirmed by following the platform link found on the club's own site
+Portadown Golf Club,https://www.portadowngolfclub.co.uk/,54.4042153,-6.4137151,brs,public,https://visitors.brsgolf.com/portadown,high,
+Rockmount Golf Course,https://rockmountgolfclub.com/,54.4881203,-5.88426,brs,public,https://visitors.brsgolf.com/rockmount#/open-competitions,high,confirmed by following the platform link found on the club's own site
+Royal Belfast Golf Club,https://royalbelfast.com,54.6600049,-5.7845384,brs,public,https://visitors.brsgolf.com/royalbelfast#/course/1,high,
+Royal County Down Golf Course,https://www.royalcountydowngolfclub.com/,54.2232661,-5.8758305,unknown,unknown,,low,homepage loaded (https://www.royalcountydowngolfclub.com/) but no platform signal found on it or 0 booking-ish link(s)
+Whitehead Golf Club,https://whiteheadgolfclub.com/,54.7658298,-5.7032437,brs,public,https://visitors.brsgolf.com/whitehead#/course/1,high,
+Carrickfergus Golf Course,https://carrickfergusgolfclub.co.uk/,54.7238848,-5.8047235,unknown,unknown,,low,site reachable (https://carrickfergusgolfclub.co.uk/) but no visitor booking found on it or 0 sub-page(s)
+Tobermore Golf Centre,https://www.midulstercouncil.org/tobermoregolf,54.8168132,-6.6962259,unknown,unknown,,low,site reachable (https://www.midulstercouncil.org/tobermoregolf) but no visitor booking found on it or 1 sub-page(s)
+Newtownstewart Golf Club,https://www.newtownstewartgolfclub.com/,54.7041282,-7.4216197,unknown,unknown,,low,site reachable (https://ft95.net/) but no visitor booking found on it or 1 sub-page(s)
+Brown Trout Inn golf course,https://browntroutinn.com/,55.0381973,-6.5987426,unknown,unknown,,low,site reachable (https://browntroutinn.com/) but no visitor booking found on it or 0 sub-page(s)
+Laganview Golf Centre,https://www.laganviewgolfcentre.co.uk/,54.5334976,-6.0127006,unknown,unknown,,low,site reachable (https://laganviewgolfcentre.co.uk/) but no visitor booking found on it or 2 sub-page(s)
+Bushfoot Golf Club,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Cloghogue Pitch and Putt,,,,not_a_club,out_of_scope,,high,not a club a visitor books a round at
+Rory McIlroy's backyard course,,,,not_a_club,out_of_scope,,high,"a course name, not a club name; nothing to search on"
+Larne Golf Club,https://www.larnegolfclub.co.uk/,54.8549321,-5.7784924,brs,public,https://visitors.brsgolf.com/larne,high,BRS page title: Larne Golf Club - Book Tee Times Online - Online Golf Bookin
