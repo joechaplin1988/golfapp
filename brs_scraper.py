@@ -73,9 +73,20 @@ def booking_url(club: gc.ClubConfig) -> str:
     return f"{club.base_url.rstrip('/')}#/course/{club.course_id or '1'}"
 
 
-def _single_fee(fee: dict) -> float:
-    p = gc.parse_price(str(fee.get("green_fee1_ball") or ""))
-    return p if p is not None else float("inf")
+def _per_head(fee: dict) -> float:
+    """Cheapest price per golfer across the party sizes this fee is sold for.
+
+    Was the 1-ball fee alone. Silvermere sells no 1-ball at all -- its fee is
+    2-ball 150.00, 3-ball 202.50, 4-ball 250.00 with green_fee1_ball null -- so
+    every fee looked unusable, the club's prices were thrown away and the site
+    said "price on club site" for tee times the club prices openly.
+    """
+    per = []
+    for n in range(1, 5):
+        p = gc.parse_price(str(fee.get(f"green_fee{n}_ball") or ""))
+        if p is not None and p > 0:
+            per.append(p / n)
+    return min(per) if per else float("inf")
 
 
 def _holes(fee: dict) -> int:
@@ -86,12 +97,12 @@ def _holes(fee: dict) -> int:
 
 
 def _pick_green_fee(fees: list[dict]) -> dict | None:
-    """Longest round first, then cheapest single-ball fee; packages only as a last resort."""
-    usable = [f for f in fees if _single_fee(f) != float("inf")]
+    """Longest round first, then cheapest per golfer; packages only as a last resort."""
+    usable = [f for f in fees if _per_head(f) != float("inf")]
     if not usable:
         return None
     bare = [f for f in usable if not f.get("package_enabled")] or usable
-    return min(bare, key=lambda f: (-_holes(f), _single_fee(f)))
+    return min(bare, key=lambda f: (-_holes(f), _per_head(f)))
 
 
 def parse(payload: dict, club: gc.ClubConfig, date_iso: str) -> tuple[list[gc.TeeTimeResult], str]:
@@ -117,9 +128,11 @@ def parse(payload: dict, club: gc.ClubConfig, date_iso: str) -> tuple[list[gc.Te
                 p = gc.parse_price(str(fee.get(f"green_fee{n}_ball") or ""))
                 if p is not None and p > 0:
                     prices[str(n)] = p
+        # A party size the club doesn't sell (Silvermere has no 1-ball) simply
+        # has no price key, so a solo golfer's search doesn't offer the slot.
         if not prices:
-            # Some BRS clubs publish availability but no green fee at all
-            # (Silvermere: 45 open slots, every green_fee1_ball null). Dropping
+            # Some BRS clubs publish availability but no green fee at all.
+            # Dropping
             # them hid the whole club — same "availability known, price not
             # published" case as Gladstone, so same policy: keep the slot with
             # null prices and let the page say "price on club site".
