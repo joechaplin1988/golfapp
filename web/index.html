@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Tee Times Near You — England</title>
+<title>Tee Times Near You — UK</title>
 <style>
   :root {
     --bg: #f6f7f5; --card: #ffffff; --ink: #1c2620; --muted: #5c6b60;
@@ -103,8 +103,8 @@
 <div class="wrap">
   <header>
     <h1>⛳ Tee Times Near You</h1>
-    <p>Visitor tee times from clubs across England — from Kent and Cornwall to Cumbria
-       and Northumberland — in one place. Book on the club's own site.</p>
+    <p>Visitor tee times from over 1,000 golf clubs across England, Scotland, Wales and
+       Northern Ireland — in one place. Book on the club's own site.</p>
   </header>
 
   <form id="search">
@@ -585,7 +585,7 @@ function render() {
   if (!allRows.length) {
     if (nearbyCourses === 0) {
       setStatus("We don't list any courses within " + $("radius").value + " miles of there yet. " +
-                "We cover clubs across England, most completely in London and the Home Counties.");
+                "We cover over 1,000 clubs across the UK, most completely in London and the Home Counties.");
     } else {
       setStatus("No tee times found for that search. Try a wider radius, a different date, or fewer players.");
     }
