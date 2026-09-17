@@ -194,6 +194,15 @@ COUNTY_BOUNDS = {
     "north_east": ["County Durham", "Northumberland", "Darlington",
                    "Stockton-on-Tees", "Middlesbrough", "Redcar and Cleveland",
                    "Hartlepool"],
+
+    # --- Fifth wave, 2026-09-17: the other UK nations, each as one country
+    # boundary at admin_level 4. OSM names them bilingually, so the English
+    # name alone matches nothing: "Alba / Scotland", "Cymru / Wales". Island
+    # clubs a ferry away are removed after probing, by postcode (see
+    # wave2_clean.py), because a council boundary doesn't separate them.
+    "scotland": ["Alba / Scotland"],
+    "wales": ["Cymru / Wales"],
+    "northern_ireland": ["Northern Ireland / Tuaisceart \u00c9ireann"],
 }
 
 # Areas whose OSM boundary is not at the usual admin_level 6.
@@ -203,6 +212,7 @@ COUNTY_ADMIN_LEVEL = {
     # Merseyside and Tyne and Wear are named by their boroughs, and a borough
     # is level 8 — the only two areas in the list that go that deep.
     "merseyside": 8, "tyne_and_wear": 8,
+    "scotland": 4, "wales": 4, "northern_ireland": 4,
 }
 DEFAULT_ADMIN_LEVEL = 6
 
@@ -266,14 +276,14 @@ def enumerate_osm(county: str, refresh: bool = False) -> list[dict]:
         f'area["name"="{a}"]["admin_level"="{level}"]->.a{i};' for i, a in enumerate(areas)
     )
     area_queries = "\n".join(f"nwr[\"leisure\"=\"golf_course\"](area.a{i});" for i in range(len(areas)))
-    query = f"[out:json][timeout:60];\n{area_defs}\n(\n{area_queries}\n);\nout center tags;"
+    query = f"[out:json][timeout:180];\n{area_defs}\n(\n{area_queries}\n);\nout center tags;"
 
     last_err = None
     resp = None
     for url in OVERPASS_URLS:
         try:
             resp = requests.post(url, data={"data": query},
-                                 headers={"User-Agent": USER_AGENT}, timeout=90)
+                                 headers={"User-Agent": USER_AGENT}, timeout=200)
             resp.raise_for_status()
             break
         except requests.RequestException as e:
@@ -384,6 +394,10 @@ COUNTY_UNION_URLS = {
     "east_yorkshire": None,
     "north_east": None,
     "tyne_and_wear": None,
+    # No shared-CMS union directory for the nations; OSM website tags only.
+    "scotland": None,
+    "wales": None,
+    "northern_ireland": None,
 }
 
 SOCIAL_HOSTS = ("facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com", "youtube.com")

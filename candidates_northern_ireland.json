@@ -1,0 +1,786 @@
+[
+  {
+    "name": "Ballycastle Golf Club",
+    "lat": 55.2030731,
+    "lon": -6.2355623,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Moyola Park Golf Club",
+    "lat": 54.7839033,
+    "lon": -6.5701102,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Knock Golf Club",
+    "lat": 54.596964,
+    "lon": -5.8201647,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Carrickfergus Golf Course",
+    "lat": 54.7238848,
+    "lon": -5.8047235,
+    "source": "osm",
+    "osm_site": "https://carrickfergusgolfclub.co.uk/",
+    "official_site": "https://carrickfergusgolfclub.co.uk/"
+  },
+  {
+    "name": "Holywood Golf Course",
+    "lat": 54.6318501,
+    "lon": -5.8299318,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Royal Belfast Golf Club",
+    "lat": 54.6600049,
+    "lon": -5.7845384,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Helen's Bay Golf Club",
+    "lat": 54.6705877,
+    "lon": -5.736706,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Greenisland Golf Club",
+    "lat": 54.7062009,
+    "lon": -5.8742655,
+    "source": "osm",
+    "osm_site": "https://www.greenislandgolfclub.co.uk/",
+    "official_site": "https://www.greenislandgolfclub.co.uk/"
+  },
+  {
+    "name": "Carnalea Golf Club",
+    "lat": 54.6640717,
+    "lon": -5.6989218,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Malone Golf Club",
+    "lat": 54.538158,
+    "lon": -5.9719578,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Down Royal Golf Club",
+    "lat": 54.4922742,
+    "lon": -6.1279215,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Balmoral Golf Club",
+    "lat": 54.5635707,
+    "lon": -5.9709225,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Colin Valley Golf Course",
+    "lat": 54.5595763,
+    "lon": -6.0079525,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Scrabo Golf Club",
+    "lat": 54.5811346,
+    "lon": -5.7202475,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cliftonville Golf Club",
+    "lat": 54.6265722,
+    "lon": -5.9522322,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Greenacres Golf Course",
+    "lat": 54.7284667,
+    "lon": -6.0028246,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Larne Golf Club",
+    "lat": 54.8549321,
+    "lon": -5.7784924,
+    "source": "osm",
+    "osm_site": "https://www.larnegolfclub.co.uk/",
+    "official_site": "https://www.larnegolfclub.co.uk/"
+  },
+  {
+    "name": "Whitehead Golf Club",
+    "lat": 54.7658298,
+    "lon": -5.7032437,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Belvoir Golf Course",
+    "lat": 54.5598315,
+    "lon": -5.9196448,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Shandon Park Golf Course",
+    "lat": 54.5812641,
+    "lon": -5.855929,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Clandeboye Golf CLub",
+    "lat": 54.6271006,
+    "lon": -5.6876981,
+    "source": "osm",
+    "osm_site": "https://www.cgc-ni.com/",
+    "official_site": "https://www.cgc-ni.com/"
+  },
+  {
+    "name": "Warrenpoint Golf Club",
+    "lat": 54.1085573,
+    "lon": -6.2671553,
+    "source": "osm",
+    "osm_site": "https://www.warrenpointgolf.com/",
+    "official_site": "https://www.warrenpointgolf.com/"
+  },
+  {
+    "name": "Tandragee Golf Course",
+    "lat": 54.3480166,
+    "lon": -6.4199718,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Royal County Down Golf Course",
+    "lat": 54.2232661,
+    "lon": -5.8758305,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "City Of Belfast Golf Course",
+    "lat": 54.682089,
+    "lon": -5.996438,
+    "source": "osm",
+    "osm_site": "https://www.cityofbelfastgolfclub.com/",
+    "official_site": "https://www.cityofbelfastgolfclub.com/"
+  },
+  {
+    "name": "Hilton Templepatrick Golf Course",
+    "lat": 54.707116,
+    "lon": -6.1023451,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Fortwilliam Golf Club",
+    "lat": 54.6441557,
+    "lon": -5.929439,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ballyclare Golf Course",
+    "lat": 54.7737532,
+    "lon": -6.0341665,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Tobermore Golf Centre",
+    "lat": 54.8168132,
+    "lon": -6.6962259,
+    "source": "osm",
+    "osm_site": "https://www.midulstercouncil.org/tobermoregolf",
+    "official_site": "https://www.midulstercouncil.org/tobermoregolf"
+  },
+  {
+    "name": "Foyle Golf Club",
+    "lat": 55.0395025,
+    "lon": -7.2908409,
+    "source": "osm",
+    "osm_site": "https://www.foylegolfcentre.co.uk/",
+    "official_site": "https://www.foylegolfcentre.co.uk/"
+  },
+  {
+    "name": "Craigavon Golf Course",
+    "lat": 54.4754129,
+    "lon": -6.3631486,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lough Erne Golf Resort",
+    "lat": 54.3976248,
+    "lon": -7.696377,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Castlereagh Hills Golf Course",
+    "lat": 54.5679275,
+    "lon": -5.8339931,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ballymena Golf Course",
+    "lat": 54.8848924,
+    "lon": -6.2239368,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Massereene Golf Club",
+    "lat": 54.7135126,
+    "lon": -6.2305001,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Strabane Golf Club",
+    "lat": 54.8116531,
+    "lon": -7.4640828,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lurgan Golf Course",
+    "lat": 54.4670299,
+    "lon": -6.3179565,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Crossgar Golf Club",
+    "lat": 54.4019153,
+    "lon": -5.7589067,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Greenmount Golf Club",
+    "lat": 54.6985647,
+    "lon": -6.2181897,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Killymoon Golf Club",
+    "lat": 54.6341384,
+    "lon": -6.724629,
+    "source": "osm",
+    "osm_site": "https://www.killymoongolfclub.com/",
+    "official_site": "https://www.killymoongolfclub.com/"
+  },
+  {
+    "name": "Clogher Valley Golf Club",
+    "lat": 54.3666837,
+    "lon": -7.3402942,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Castlerock Golf Club",
+    "lat": 55.1638116,
+    "lon": -6.7734422,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ashfield Golf Course",
+    "lat": 54.1100938,
+    "lon": -6.579572,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Enniskillen Golf Club",
+    "lat": 54.3381102,
+    "lon": -7.6153177,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Gracehill Golf Club",
+    "lat": 55.1411888,
+    "lon": -6.3932101,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Strand - Portstewart Golf Club",
+    "lat": 55.1675907,
+    "lon": -6.7324055,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Manor House & Golf Course",
+    "lat": 54.9502411,
+    "lon": -6.5467042,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Golf at Roe Valley",
+    "lat": 55.0381278,
+    "lon": -6.9573684,
+    "source": "osm",
+    "osm_site": "https://www.roevalleyresort.com/",
+    "official_site": "https://www.roevalleyresort.com/"
+  },
+  {
+    "name": "Ormeau Golf Club",
+    "lat": 54.5829476,
+    "lon": -5.914465,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Kirkiston Castle Golf Club",
+    "lat": 54.439684,
+    "lon": -5.4721483,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "St Patrick's Golf Club",
+    "lat": 54.3317819,
+    "lon": -5.6961234,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Portadown Golf Club",
+    "lat": 54.4042153,
+    "lon": -6.4137151,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Temple Golf Course",
+    "lat": 54.4637218,
+    "lon": -5.9083882,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bright Golf Course",
+    "lat": 54.2734368,
+    "lon": -5.6933086,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ballyearl Golf Course",
+    "lat": 54.700918,
+    "lon": -5.953856,
+    "source": "osm",
+    "osm_site": "https://antrimandnewtownabbey.gov.uk/leisure-centres/book-online/book-golf/",
+    "official_site": "https://antrimandnewtownabbey.gov.uk/leisure-centres/book-online/book-golf/"
+  },
+  {
+    "name": "Burnfield House Golf Club",
+    "lat": 54.6975536,
+    "lon": -5.935212,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Riverside - Portstewart Golf Club",
+    "lat": 55.1662448,
+    "lon": -6.7233442,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Armagh Golf Club",
+    "lat": 54.3376691,
+    "lon": -6.6467383,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Newtownstewart Golf Club",
+    "lat": 54.7041282,
+    "lon": -7.4216197,
+    "source": "osm",
+    "osm_site": "https://www.newtownstewartgolfclub.com/",
+    "official_site": "https://www.newtownstewartgolfclub.com/"
+  },
+  {
+    "name": "Dungannon Golf Club",
+    "lat": 54.5174961,
+    "lon": -6.7856848,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bushfoot Golf Club",
+    "lat": 55.2168937,
+    "lon": -6.5327442,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Fintona Golf Club",
+    "lat": 54.4924759,
+    "lon": -7.3203103,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ashwoods Golf Centre",
+    "lat": 54.326897,
+    "lon": -7.6785496,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Moyola Park",
+    "lat": 54.7828516,
+    "lon": -6.5604789,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bentra Golf Course",
+    "lat": 54.7619396,
+    "lon": -5.7221509,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Edenmore Golf Course",
+    "lat": 54.4527492,
+    "lon": -6.2331923,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ronan Valley Golf Course",
+    "lat": 54.7436271,
+    "lon": -6.5991959,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Carnfunnock Golf Course",
+    "lat": 54.8853346,
+    "lon": -5.8420967,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hill Valley Golf",
+    "lat": 54.7919683,
+    "lon": -7.4856932,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cairndhu Golf Course",
+    "lat": 54.8924858,
+    "lon": -5.84791,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ardglass Golf Club",
+    "lat": 54.2530594,
+    "lon": -5.6121946,
+    "source": "osm",
+    "osm_site": "https://www.ardglassgolfclub.com/",
+    "official_site": "https://www.ardglassgolfclub.com/"
+  },
+  {
+    "name": "Ballyreagh Golf Course",
+    "lat": 55.1962006,
+    "lon": -6.6829845,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Brown Trout Inn golf course",
+    "lat": 55.0381973,
+    "lon": -6.5987426,
+    "source": "osm",
+    "osm_site": "https://browntroutinn.com/",
+    "official_site": "https://browntroutinn.com/"
+  },
+  {
+    "name": "Cloghogue Pitch and Putt",
+    "lat": 54.1532722,
+    "lon": -6.3428418,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Rory McIlroy's backyard course",
+    "lat": 54.5257462,
+    "lon": -5.8487807,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Galgorm Castle Golf Club",
+    "lat": 54.8519083,
+    "lon": -6.3123666,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Mayobridge Golf Club",
+    "lat": 54.1931266,
+    "lon": -6.2445023,
+    "source": "osm",
+    "osm_site": "https://www.mayobridgegolf.com/",
+    "official_site": "https://www.mayobridgegolf.com/"
+  },
+  {
+    "name": "Kilrea Golf Course",
+    "lat": 54.9424681,
+    "lon": -6.5553824,
+    "source": "osm",
+    "osm_site": "https://kilreagolfclub.com/",
+    "official_site": "https://kilreagolfclub.com/"
+  },
+  {
+    "name": "Mahee Island Golf Course",
+    "lat": 54.4985341,
+    "lon": -5.6388089,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ardminnan Golf Club",
+    "lat": 54.415244,
+    "lon": -5.4718544,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Blackwood Golf Centre",
+    "lat": 54.6306332,
+    "lon": -5.7261643,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Valley Links",
+    "lat": 55.204131,
+    "lon": -6.633484,
+    "source": "osm",
+    "osm_site": "https://www.royalportrushgolfclub.com/courses/the-valley/",
+    "official_site": "https://www.royalportrushgolfclub.com/courses/the-valley/"
+  },
+  {
+    "name": "Dunluce Links",
+    "lat": 55.2027537,
+    "lon": -6.6252608,
+    "source": "osm",
+    "osm_site": "https://www.royalportrushgolfclub.com/courses/the-dunluce/",
+    "official_site": "https://www.royalportrushgolfclub.com/courses/the-dunluce/"
+  },
+  {
+    "name": "Laganview Golf Centre",
+    "lat": 54.5334976,
+    "lon": -6.0127006,
+    "source": "osm",
+    "osm_site": "https://www.laganviewgolfcentre.co.uk/",
+    "official_site": "https://www.laganviewgolfcentre.co.uk/"
+  },
+  {
+    "name": "Kilkeel Golf Course",
+    "lat": 54.0745008,
+    "lon": -6.0480635,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lisburn Golf Course",
+    "lat": 54.485947,
+    "lon": -6.0732916,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Donaghadee Golf Club",
+    "lat": 54.6509037,
+    "lon": -5.5496551,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bangor Golf Club",
+    "lat": 54.6560465,
+    "lon": -5.64978,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Rockmount Golf Course",
+    "lat": 54.4881203,
+    "lon": -5.88426,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Spa Golf Club",
+    "lat": 54.3920545,
+    "lon": -5.9090043,
+    "source": "osm",
+    "osm_site": "https://www.spagolfclub.net/",
+    "official_site": "https://www.spagolfclub.net/"
+  },
+  {
+    "name": "Mount Ober Golf Club",
+    "lat": 54.5520324,
+    "lon": -5.8819121,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cloverhill Golf Club",
+    "lat": 54.1036841,
+    "lon": -6.487566,
+    "source": "osm",
+    "osm_site": "https://www.cloverhillgolfclub.co.uk/",
+    "official_site": "https://www.cloverhillgolfclub.co.uk/"
+  },
+  {
+    "name": "Dunmurry Golf Course",
+    "lat": 54.5481598,
+    "lon": -5.9854581,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Old Course - Portstewart Golf Club",
+    "lat": 55.1905802,
+    "lon": -6.7038489,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Aberdelghy Golf Course",
+    "lat": 54.5351783,
+    "lon": -6.0226695,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Banbridge Golf Club",
+    "lat": 54.3617521,
+    "lon": -6.2886622,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Omagh Golf Club",
+    "lat": 54.5892392,
+    "lon": -7.2928456,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Faughan Valley Golf Centre",
+    "lat": 55.0212574,
+    "lon": -7.2467481,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  }
+]

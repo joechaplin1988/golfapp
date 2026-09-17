@@ -32,6 +32,14 @@ NOT_A_ROUND = re.compile(
     r"pitch\s*(and|&)\s*putt|putting green|coaching diary|driving range|golf range", re.I)
 MAX_KM = 15.0
 
+# Clubs a ferry away. Search distance is straight-line, so a course on Arran
+# would show as 15 miles from Ardrossan and a Channel Islands course as near
+# Hampshire. Matched on the postcode's outward code, after it has been checked
+# against the club's real position. Skye (IV) is bridged and stays in.
+FERRY_ONLY = re.compile(
+    r"^(HS\d|ZE\d|JE\d|GY\d|IM\d|KW1[5-7]|KA2[78]|PA20|PA4[1-9]|PA6\d|PA7[0-8]|"
+    r"PH4[2-4]|TR2[1-5]|PO3\d|PO4[01])\b")
+
 
 def norm(s):
     s = re.sub(r"\(.*?\)", " ", s.lower())
@@ -69,6 +77,8 @@ print(f"{len(rows)} unique verified rows")
 
 dropped = []
 keep = [r for r in rows if not NOT_A_ROUND.search(r["club_name"])]
+dropped_islands = [r for r in keep if FERRY_ONLY.match((r["postcode"] or "").upper())]
+keep = [r for r in keep if r not in dropped_islands]
 dropped += [(r["club_name"], "not a round of golf") for r in rows if NOT_A_ROUND.search(r["club_name"])]
 
 first_tee = {norm(r["club_name"]) for r in keep if "1st tee" in r["club_name"].lower()}
@@ -88,6 +98,22 @@ keep = keep2
 import os
 COORDS_GLOB = os.environ.get("COORDS_GLOB", "candidates_*.json")
 coords = {}
+# Keys two different clubs normalise to. "Blackwood Golf Club" (Wales) and
+# "Blackwood Golf Centre" (Northern Ireland) both become "blackwood", and the
+# Welsh club was given the Irish one's position, 369 km out. A name that could
+# be either club tells us nothing, so those rows keep their own postcode.
+ambiguous = set()
+seen_at = {}
+for p in Path(".").glob(COORDS_GLOB):
+    try:
+        for c in json.loads(p.read_text(encoding="utf-8")):
+            if c.get("lat") and c.get("lon"):
+                k, here_ = norm(c["name"]), (round(float(c["lat"]), 2), round(float(c["lon"]), 2))
+                if k in seen_at and seen_at[k] != here_:
+                    ambiguous.add(k)
+                seen_at.setdefault(k, here_)
+    except (json.JSONDecodeError, ValueError, KeyError):
+        continue
 for p in Path(".").glob(COORDS_GLOB):
     try:
         for c in json.loads(p.read_text(encoding="utf-8")):
@@ -109,7 +135,7 @@ for i in range(0, len(pcs), 100):
 
 bad, filled = [], []
 for r in keep:
-    here = coords.get(norm(r["club_name"]))
+    here = None if norm(r["club_name"]) in ambiguous else coords.get(norm(r["club_name"]))
     pc = (r["postcode"] or "").upper()
     if pc and pc in loc and here:
         d = haversine(here[0], here[1], loc[pc][0], loc[pc][1])
@@ -142,6 +168,11 @@ for n, pc, dist in filled:
     print(f"  + {n[:44]:46s} {pc:9s} {dist}")
 
 still = [r["club_name"] for r in keep if not r["postcode"]]
+# Postcodes blank at the first check were reverse-geocoded above, so check again.
+late = [r for r in keep if FERRY_ONLY.match((r["postcode"] or "").upper())]
+keep = [r for r in keep if r not in late]
+for r in dropped_islands + late:
+    print(f"  ~ {r['club_name'][:52]:54s} {r['postcode']}: a ferry away, dropped")
 print(f"\n{len(keep)} rows kept; {len(still)} still without a postcode: {still}")
 
 with open(OUT, "w", newline="", encoding="utf-8") as f:

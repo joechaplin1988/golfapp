@@ -1,0 +1,4530 @@
+[
+  {
+    "name": "Iona Golf Course",
+    "lat": 56.3274796,
+    "lon": -6.4170489,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "King Robert the Bruce",
+    "lat": 55.3175053,
+    "lon": -4.8325934,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ailsa",
+    "lat": 55.3147547,
+    "lon": -4.8343939,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Fair Isle Lighthouse Keeper's Golf Course",
+    "lat": 59.5138948,
+    "lon": -1.6503341,
+    "source": "osm",
+    "osm_site": "https://fair-isle.blogspot.com/p/golf.html",
+    "official_site": "https://fair-isle.blogspot.com/p/golf.html"
+  },
+  {
+    "name": "Lochview Family Golf Centre",
+    "lat": 55.8727883,
+    "lon": -4.0594659,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Baberton Golf Course",
+    "lat": 55.9069808,
+    "lon": -3.2957764,
+    "source": "osm",
+    "osm_site": "https://babertongc.com/",
+    "official_site": "https://babertongc.com/"
+  },
+  {
+    "name": "Kingsknowe Golf Course",
+    "lat": 55.9147997,
+    "lon": -3.2702621,
+    "source": "osm",
+    "osm_site": "https://www.kingsknowe.com/",
+    "official_site": "https://www.kingsknowe.com/"
+  },
+  {
+    "name": "Silverknowes Golf Course",
+    "lat": 55.9758285,
+    "lon": -3.2706377,
+    "source": "osm",
+    "osm_site": "https://www.edinburghleisure.co.uk/venues/silverknowes-golf-course/",
+    "official_site": "https://www.edinburghleisure.co.uk/venues/silverknowes-golf-course/"
+  },
+  {
+    "name": "Prestonfield Golf Course",
+    "lat": 55.9362184,
+    "lon": -3.156754,
+    "source": "osm",
+    "osm_site": "https://www.prestonfieldgolf.co.uk/",
+    "official_site": "https://www.prestonfieldgolf.co.uk/"
+  },
+  {
+    "name": "Carrick Knowe Golf Club",
+    "lat": 55.9384138,
+    "lon": -3.2628297,
+    "source": "osm",
+    "osm_site": "https://www.carrickvalegolfclub.co.uk/",
+    "official_site": "https://www.carrickvalegolfclub.co.uk/"
+  },
+  {
+    "name": "The Royal Burgess Golfing Society of Edinburgh",
+    "lat": 55.9650306,
+    "lon": -3.2993219,
+    "source": "osm",
+    "osm_site": "https://www.royalburgess.co.uk/",
+    "official_site": "https://www.royalburgess.co.uk/"
+  },
+  {
+    "name": "Bruntsfield Links",
+    "lat": 55.9700204,
+    "lon": -3.2911382,
+    "source": "osm",
+    "osm_site": "https://www.bruntsfieldlinks.co.uk/",
+    "official_site": "https://www.bruntsfieldlinks.co.uk/"
+  },
+  {
+    "name": "Ravelston Golf Course",
+    "lat": 55.9527982,
+    "lon": -3.2615334,
+    "source": "osm",
+    "osm_site": "https://www.ravelstongolfclub.co.uk/",
+    "official_site": "https://www.ravelstongolfclub.co.uk/"
+  },
+  {
+    "name": "Murrayfield Golf Course",
+    "lat": 55.9497338,
+    "lon": -3.2606357,
+    "source": "osm",
+    "osm_site": "https://www.murrayfieldgolfclub.co.uk/",
+    "official_site": "https://www.murrayfieldgolfclub.co.uk/"
+  },
+  {
+    "name": "Duddingston Golf Course",
+    "lat": 55.9403742,
+    "lon": -3.1350386,
+    "source": "osm",
+    "osm_site": "https://www.duddingstongolfclub.co.uk/",
+    "official_site": "https://www.duddingstongolfclub.co.uk/"
+  },
+  {
+    "name": "Portobello Golf Course",
+    "lat": 55.9467487,
+    "lon": -3.1136602,
+    "source": "osm",
+    "osm_site": "https://www.edinburghleisure.co.uk/venues/portobello-golf-course",
+    "official_site": "https://www.edinburghleisure.co.uk/venues/portobello-golf-course"
+  },
+  {
+    "name": "Craigentinny Golf Course",
+    "lat": 55.9639504,
+    "lon": -3.1419249,
+    "source": "osm",
+    "osm_site": "https://www.edinburghleisure.co.uk/venues/craigentinny-golf-course",
+    "official_site": "https://www.edinburghleisure.co.uk/venues/craigentinny-golf-course"
+  },
+  {
+    "name": "Royal Aberdeen Golf Club",
+    "lat": 57.1877215,
+    "lon": -2.0779569,
+    "source": "osm",
+    "osm_site": "https://www.royalaberdeengolf.com/",
+    "official_site": "https://www.royalaberdeengolf.com/"
+  },
+  {
+    "name": "Newmachar Golf Club",
+    "lat": 57.242011,
+    "lon": -2.2000367,
+    "source": "osm",
+    "osm_site": "https://www.newmachargolfclub.co.uk/",
+    "official_site": "https://www.newmachargolfclub.co.uk/"
+  },
+  {
+    "name": "Westhill Golf Club",
+    "lat": 57.1598604,
+    "lon": -2.2906628,
+    "source": "osm",
+    "osm_site": "https://westhillgolf.co.uk/",
+    "official_site": "https://westhillgolf.co.uk/"
+  },
+  {
+    "name": "Kippie Lodge Sports & Leisure",
+    "lat": 57.1033804,
+    "lon": -2.2531968,
+    "source": "osm",
+    "osm_site": "https://www.kippielodge.com/sports/",
+    "official_site": "https://www.kippielodge.com/sports/"
+  },
+  {
+    "name": "Peterculter Golf Club",
+    "lat": 57.0862287,
+    "lon": -2.2702848,
+    "source": "osm",
+    "osm_site": "https://www.petercultergolfclub.co.uk/",
+    "official_site": "https://www.petercultergolfclub.co.uk/"
+  },
+  {
+    "name": "Deeside Golf Club",
+    "lat": 57.109345,
+    "lon": -2.1858597,
+    "source": "osm",
+    "osm_site": "https://www.deesidegolfclub.com/",
+    "official_site": "https://www.deesidegolfclub.com/"
+  },
+  {
+    "name": "Portlethen Golf Club",
+    "lat": 57.0658108,
+    "lon": -2.1450693,
+    "source": "osm",
+    "osm_site": "https://www.portlethengolfclub.com/",
+    "official_site": "https://www.portlethengolfclub.com/"
+  },
+  {
+    "name": "Haggs Castle Golf Course",
+    "lat": 55.8346717,
+    "lon": -4.3188784,
+    "source": "osm",
+    "osm_site": "https://haggscastlegolfclub.com/",
+    "official_site": "https://haggscastlegolfclub.com/"
+  },
+  {
+    "name": "Pollok Golf Course",
+    "lat": 55.8265162,
+    "lon": -4.3190389,
+    "source": "osm",
+    "osm_site": "https://www.pollokgolf.com/",
+    "official_site": "https://www.pollokgolf.com/"
+  },
+  {
+    "name": "North Ronaldsay Golf Course",
+    "lat": 59.3737599,
+    "lon": -2.4098814,
+    "source": "osm",
+    "osm_site": "https://northronaldsaytrust.com/2017/06/09/18-hole-golf-course-project/",
+    "official_site": "https://northronaldsaytrust.com/2017/06/09/18-hole-golf-course-project/"
+  },
+  {
+    "name": "Ralston Golf Course",
+    "lat": 55.8418927,
+    "lon": -4.3833946,
+    "source": "osm",
+    "osm_site": "https://www.ralstongolfclub.com/",
+    "official_site": "https://www.ralstongolfclub.com/"
+  },
+  {
+    "name": "Whitecraigs Golf Club",
+    "lat": 55.7843495,
+    "lon": -4.3168537,
+    "source": "osm",
+    "osm_site": "https://www.whitecraigsgolfclub.net/",
+    "official_site": "https://www.whitecraigsgolfclub.net/"
+  },
+  {
+    "name": "David Lloyd Rouken Glen Golf Club",
+    "lat": 55.7956062,
+    "lon": -4.3242943,
+    "source": "osm",
+    "osm_site": "https://www.davidlloyd.co.uk/clubs/glasgow-rouken-glen/at-glasgow-rouken-glen/golf",
+    "official_site": "https://www.davidlloyd.co.uk/clubs/glasgow-rouken-glen/at-glasgow-rouken-glen/golf"
+  },
+  {
+    "name": "Old Course",
+    "lat": 55.5254098,
+    "lon": -4.6372954,
+    "source": "osm",
+    "osm_site": "https://www.royaltroon.co.uk/the-courses/old-course/",
+    "official_site": "https://www.royaltroon.co.uk/the-courses/old-course/"
+  },
+  {
+    "name": "Windyhill Golf Club",
+    "lat": 55.935207,
+    "lon": -4.3674285,
+    "source": "osm",
+    "osm_site": "https://windyhillgolfclub.co.uk/",
+    "official_site": "https://windyhillgolfclub.co.uk/"
+  },
+  {
+    "name": "Brancumhall Golf Development Centre",
+    "lat": 55.7753137,
+    "lon": -4.1427632,
+    "source": "osm",
+    "osm_site": "https://www.slleisureandculture.co.uk/info/246/brancumhall_golf_development_centre",
+    "official_site": "https://www.slleisureandculture.co.uk/info/246/brancumhall_golf_development_centre"
+  },
+  {
+    "name": "Drumpellier Golf Course",
+    "lat": 55.8596514,
+    "lon": -4.0561377,
+    "source": "osm",
+    "osm_site": "https://www.drumpelliergolf.co.uk/",
+    "official_site": "https://www.drumpelliergolf.co.uk/"
+  },
+  {
+    "name": "Clober Golf Club",
+    "lat": 55.9488059,
+    "lon": -4.3328841,
+    "source": "osm",
+    "osm_site": "https://www.clobergolfclub.co.uk/",
+    "official_site": "https://www.clobergolfclub.co.uk/"
+  },
+  {
+    "name": "Douglas Park Golf Club",
+    "lat": 55.9269087,
+    "lon": -4.3094631,
+    "source": "osm",
+    "osm_site": "https://www.douglasparkgolfclub.co.uk/",
+    "official_site": "https://www.douglasparkgolfclub.co.uk/"
+  },
+  {
+    "name": "Larkhall Golf Course",
+    "lat": 55.7388984,
+    "lon": -3.956862,
+    "source": "osm",
+    "osm_site": "https://www.slleisureandculture.co.uk/info/243/larkhall_golf_course",
+    "official_site": "https://www.slleisureandculture.co.uk/info/243/larkhall_golf_course"
+  },
+  {
+    "name": "Bearsden Golf Club",
+    "lat": 55.9209592,
+    "lon": -4.3578488,
+    "source": "osm",
+    "osm_site": "https://bearsdengolfclub.co.uk/",
+    "official_site": "https://bearsdengolfclub.co.uk/"
+  },
+  {
+    "name": "Elderslie Golf Club",
+    "lat": 55.8329475,
+    "lon": -4.4722228,
+    "source": "osm",
+    "osm_site": "https://eldersliegolfclub.com/",
+    "official_site": "https://eldersliegolfclub.com/"
+  },
+  {
+    "name": "Fereneze Golf Club",
+    "lat": 55.8061771,
+    "lon": -4.411976,
+    "source": "osm",
+    "osm_site": "https://www.ferenezegolfclub.org/",
+    "official_site": "https://www.ferenezegolfclub.org/"
+  },
+  {
+    "name": "Glasgow Golf Club (Killermont Course)",
+    "lat": 55.9102801,
+    "lon": -4.3012678,
+    "source": "osm",
+    "osm_site": "https://www.glasgowgolfclub.com/killermont.asp",
+    "official_site": "https://www.glasgowgolfclub.com/killermont.asp"
+  },
+  {
+    "name": "Balmore Golf Club",
+    "lat": 55.9418118,
+    "lon": -4.2534447,
+    "source": "osm",
+    "osm_site": "https://www.balmoregolfclub.co.uk/",
+    "official_site": "https://www.balmoregolfclub.co.uk/"
+  },
+  {
+    "name": "Paisley Golf Club",
+    "lat": 55.8081369,
+    "lon": -4.4514815,
+    "source": "osm",
+    "osm_site": "https://paisleygolfclub.com/",
+    "official_site": "https://paisleygolfclub.com/"
+  },
+  {
+    "name": "Loch View Golf Course",
+    "lat": 55.8724593,
+    "lon": -4.0630736,
+    "source": "osm",
+    "osm_site": "https://www.activenl.co.uk/venue-finder/venues-3/lochview-family-golf-centre",
+    "official_site": "https://www.activenl.co.uk/venue-finder/venues-3/lochview-family-golf-centre"
+  },
+  {
+    "name": "Torrance House Golf Club",
+    "lat": 55.7435854,
+    "lon": -4.1493578,
+    "source": "osm",
+    "osm_site": "https://torrancehousegc.co.uk/",
+    "official_site": "https://torrancehousegc.co.uk/"
+  },
+  {
+    "name": "Braid Hills Golf Course",
+    "lat": 55.9149247,
+    "lon": -3.1916888,
+    "source": "osm",
+    "osm_site": "https://www.edinburghleisure.co.uk/venues/braid-hills-golf-course",
+    "official_site": "https://www.edinburghleisure.co.uk/venues/braid-hills-golf-course"
+  },
+  {
+    "name": "Braid Hills Golf Centre",
+    "lat": 55.912216,
+    "lon": -3.1797486,
+    "source": "osm",
+    "osm_site": "https://www.braidhillsgolf.co.uk/",
+    "official_site": "https://www.braidhillsgolf.co.uk/"
+  },
+  {
+    "name": "Panmure Links",
+    "lat": 56.491712,
+    "lon": -2.7675251,
+    "source": "osm",
+    "osm_site": "https://www.panmuregolfclub.co.uk/",
+    "official_site": "https://www.panmuregolfclub.co.uk/"
+  },
+  {
+    "name": "The Carnoustie Burnside Course",
+    "lat": 56.4943758,
+    "lon": -2.7284533,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hamilton Golf Club",
+    "lat": 55.7569367,
+    "lon": -4.0077095,
+    "source": "osm",
+    "osm_site": "https://www.hamiltongolfclub.co.uk/",
+    "official_site": "https://www.hamiltongolfclub.co.uk/"
+  },
+  {
+    "name": "Cowglen Golf Club",
+    "lat": 55.8184832,
+    "lon": -4.3174518,
+    "source": "osm",
+    "osm_site": "https://www.cowglengolfclub.co.uk/",
+    "official_site": "https://www.cowglengolfclub.co.uk/"
+  },
+  {
+    "name": "Barshaw Park Golf Course",
+    "lat": 55.8523613,
+    "lon": -4.3937413,
+    "source": "osm",
+    "osm_site": "https://www.oneren.org/sport/golf-and-bowling-greens/",
+    "official_site": "https://www.oneren.org/sport/golf-and-bowling-greens/"
+  },
+  {
+    "name": "Cawder Golf Club",
+    "lat": 55.9272882,
+    "lon": -4.2290481,
+    "source": "osm",
+    "osm_site": "https://www.cawdergolfclub.com/",
+    "official_site": "https://www.cawdergolfclub.com/"
+  },
+  {
+    "name": "Machrihanish Links",
+    "lat": 55.4330758,
+    "lon": -5.7201844,
+    "source": "osm",
+    "osm_site": "https://www.machgolf.com/",
+    "official_site": "https://www.machgolf.com/"
+  },
+  {
+    "name": "Broomieknowe Golf Course",
+    "lat": 55.8840496,
+    "lon": -3.0992795,
+    "source": "osm",
+    "osm_site": "https://www.broomieknowe.com/",
+    "official_site": "https://www.broomieknowe.com/"
+  },
+  {
+    "name": "Hayston Golf Club",
+    "lat": 55.9426456,
+    "lon": -4.1819392,
+    "source": "osm",
+    "osm_site": "https://www.haystongolf.com/",
+    "official_site": "https://www.haystongolf.com/"
+  },
+  {
+    "name": "Turnhouse Golf Club",
+    "lat": 55.9525872,
+    "lon": -3.333826,
+    "source": "osm",
+    "osm_site": "https://www.turnhousegolfclub.com/",
+    "official_site": "https://www.turnhousegolfclub.com/"
+  },
+  {
+    "name": "Langlands Golf Club",
+    "lat": 55.7310074,
+    "lon": -4.1739774,
+    "source": "osm",
+    "osm_site": "https://www.langlandsgolfclub.co.uk/",
+    "official_site": "https://www.langlandsgolfclub.co.uk/"
+  },
+  {
+    "name": "Littlehill Golf Course",
+    "lat": 55.8943881,
+    "lon": -4.2145839,
+    "source": "osm",
+    "osm_site": "https://www.glasgowlife.org.uk/sport/venues/littlehill-golf-club",
+    "official_site": "https://www.glasgowlife.org.uk/sport/venues/littlehill-golf-club"
+  },
+  {
+    "name": "Bishopbriggs Golf Club",
+    "lat": 55.9113111,
+    "lon": -4.2412299,
+    "source": "osm",
+    "osm_site": "https://www.thebishopbriggsgolfclub.com/",
+    "official_site": "https://www.thebishopbriggsgolfclub.com/"
+  },
+  {
+    "name": "Campsie Golf Club",
+    "lat": 55.9817378,
+    "lon": -4.1971051,
+    "source": "osm",
+    "osm_site": "https://www.campsiegolfclub.com/",
+    "official_site": "https://www.campsiegolfclub.com/"
+  },
+  {
+    "name": "Fortrose & Rosemarkie Golf Club",
+    "lat": 57.5783631,
+    "lon": -4.1032654,
+    "source": "osm",
+    "osm_site": "https://www.fortrosegolfclub.co.uk/",
+    "official_site": "https://www.fortrosegolfclub.co.uk/"
+  },
+  {
+    "name": "Dundas Parks Golf Club",
+    "lat": 55.9733122,
+    "lon": -3.4076203,
+    "source": "osm",
+    "osm_site": "https://www.dundasparksgolf.co.uk/",
+    "official_site": "https://www.dundasparksgolf.co.uk/"
+  },
+  {
+    "name": "Niddry Castle Golf Course",
+    "lat": 55.9540461,
+    "lon": -3.4485979,
+    "source": "osm",
+    "osm_site": "https://www.niddrycastlegolfclub.co.uk/",
+    "official_site": "https://www.niddrycastlegolfclub.co.uk/"
+  },
+  {
+    "name": "Ratho Park Golf Club",
+    "lat": 55.9215626,
+    "lon": -3.3591308,
+    "source": "osm",
+    "osm_site": "https://www.rathoparkgolfclub.co.uk/",
+    "official_site": "https://www.rathoparkgolfclub.co.uk/"
+  },
+  {
+    "name": "Gogarburn Golf Course",
+    "lat": 55.9339081,
+    "lon": -3.3437257,
+    "source": "osm",
+    "osm_site": "https://www.gogarburngc.com/",
+    "official_site": "https://www.gogarburngc.com/"
+  },
+  {
+    "name": "Melville Golf Course",
+    "lat": 55.8889159,
+    "lon": -3.099471,
+    "source": "osm",
+    "osm_site": "https://www.melvillegolf.com/",
+    "official_site": "https://www.melvillegolf.com/"
+  },
+  {
+    "name": "West Course",
+    "lat": 55.9012647,
+    "lon": -3.3683004,
+    "source": "osm",
+    "osm_site": "https://www.dalmahoyhotelandcountryclub.co.uk/",
+    "official_site": "https://www.dalmahoyhotelandcountryclub.co.uk/"
+  },
+  {
+    "name": "Pumpherston Golf Club",
+    "lat": 55.9073304,
+    "lon": -3.4827772,
+    "source": "osm",
+    "osm_site": "https://www.pumpherstongolfclub.co.uk/",
+    "official_site": "https://www.pumpherstongolfclub.co.uk/"
+  },
+  {
+    "name": "Bonnyton Golf Club",
+    "lat": 55.7440377,
+    "lon": -4.3077081,
+    "source": "osm",
+    "osm_site": "https://www.bonnytongolfclub.com/",
+    "official_site": "https://www.bonnytongolfclub.com/"
+  },
+  {
+    "name": "Mearns Castle Golf Academy",
+    "lat": 55.7725092,
+    "lon": -4.2890218,
+    "source": "osm",
+    "osm_site": "https://mcgolfacademy.co.uk/",
+    "official_site": "https://mcgolfacademy.co.uk/"
+  },
+  {
+    "name": "Hirsel Golf Club",
+    "lat": 55.6528462,
+    "lon": -2.2681246,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Strathclyde Park Golf Course",
+    "lat": 55.7871303,
+    "lon": -4.0420151,
+    "source": "osm",
+    "osm_site": "https://www.slleisureandculture.co.uk/info/244/strathclyde_park_golf_course",
+    "official_site": "https://www.slleisureandculture.co.uk/info/244/strathclyde_park_golf_course"
+  },
+  {
+    "name": "Gourock Golf Club",
+    "lat": 55.9464469,
+    "lon": -4.8444265,
+    "source": "osm",
+    "osm_site": "https://www.gourockgolfclub.com/",
+    "official_site": "https://www.gourockgolfclub.com/"
+  },
+  {
+    "name": "Greenock Golf Club",
+    "lat": 55.9508818,
+    "lon": -4.7870643,
+    "source": "osm",
+    "osm_site": "https://greenockgolfclub.co.uk/",
+    "official_site": "https://greenockgolfclub.co.uk/"
+  },
+  {
+    "name": "Renfrew Golf Course",
+    "lat": 55.8866993,
+    "lon": -4.4007935,
+    "source": "osm",
+    "osm_site": "https://www.renfrewgolfclub.net/",
+    "official_site": "https://www.renfrewgolfclub.net/"
+  },
+  {
+    "name": "Comrie Golf Course",
+    "lat": 56.3802148,
+    "lon": -3.9851649,
+    "source": "osm",
+    "osm_site": "https://www.comriegolf.co.uk/",
+    "official_site": "https://www.comriegolf.co.uk/"
+  },
+  {
+    "name": "Strathmore Golf Centre",
+    "lat": 56.6008635,
+    "lon": -3.2191078,
+    "source": "osm",
+    "osm_site": "https://www.strathmoregolf.com/",
+    "official_site": "https://www.strathmoregolf.com/"
+  },
+  {
+    "name": "Glenisla Golf Course",
+    "lat": 56.6235439,
+    "lon": -3.2126765,
+    "source": "osm",
+    "osm_site": "https://www.alythgolfclub.co.uk/glenisla-course",
+    "official_site": "https://www.alythgolfclub.co.uk/glenisla-course"
+  },
+  {
+    "name": "Brailgowrie Golf Club",
+    "lat": 56.5683329,
+    "lon": -3.3342187,
+    "source": "osm",
+    "osm_site": "https://www.theblairgowriegolfclub.co.uk/",
+    "official_site": "https://www.theblairgowriegolfclub.co.uk/"
+  },
+  {
+    "name": "Newtonmore Golf Club",
+    "lat": 57.0620897,
+    "lon": -4.1100074,
+    "source": "osm",
+    "osm_site": "https://www.newtonmoregolf.com/",
+    "official_site": "https://www.newtonmoregolf.com/"
+  },
+  {
+    "name": "Ruchill Park Golf Course",
+    "lat": 55.8912677,
+    "lon": -4.2769977,
+    "source": "osm",
+    "osm_site": "https://www.glasgowlife.org.uk/sport/our-facilities/golfcourses/ruchill-golf-course",
+    "official_site": "https://www.glasgowlife.org.uk/sport/our-facilities/golfcourses/ruchill-golf-course"
+  },
+  {
+    "name": "Palacerigg Golf Club",
+    "lat": 55.9391655,
+    "lon": -3.9398336,
+    "source": "osm",
+    "osm_site": "https://www.palacerigggolfclub.co.uk/",
+    "official_site": "https://www.palacerigggolfclub.co.uk/"
+  },
+  {
+    "name": "Beith Golf Club",
+    "lat": 55.761124,
+    "lon": -4.6035237,
+    "source": "osm",
+    "osm_site": "https://www.beithgolfclub.co.uk/",
+    "official_site": "https://www.beithgolfclub.co.uk/"
+  },
+  {
+    "name": "Anstruther Golf Club",
+    "lat": 56.2169305,
+    "lon": -2.711618,
+    "source": "osm",
+    "osm_site": "https://www.anstruthergolf.co.uk/",
+    "official_site": "https://www.anstruthergolf.co.uk/"
+  },
+  {
+    "name": "Dumfries and Galloway Golf Course",
+    "lat": 55.0653566,
+    "lon": -3.6348417,
+    "source": "osm",
+    "osm_site": "https://www.dandggolfclub.co.uk/",
+    "official_site": "https://www.dandggolfclub.co.uk/"
+  },
+  {
+    "name": "Glasgow Golf Club / Gailes Links",
+    "lat": 55.5965665,
+    "lon": -4.6647232,
+    "source": "osm",
+    "osm_site": "https://www.gaileslinks.co.uk/",
+    "official_site": "https://www.gaileslinks.co.uk/"
+  },
+  {
+    "name": "Dundonald Links",
+    "lat": 55.5850892,
+    "lon": -4.6562145,
+    "source": "osm",
+    "osm_site": "https://www.dundonaldlinks.com/",
+    "official_site": "https://www.dundonaldlinks.com/"
+  },
+  {
+    "name": "Dragon's Tooth Golf Club",
+    "lat": 56.6849766,
+    "lon": -5.1892926,
+    "source": "osm",
+    "osm_site": "https://www.dragonstooth.co.uk/",
+    "official_site": "https://www.dragonstooth.co.uk/"
+  },
+  {
+    "name": "Dalmilling Golf Course",
+    "lat": 55.465426,
+    "lon": -4.5912806,
+    "source": "osm",
+    "osm_site": "https://www.golfsouthayrshire.com/play/the-courses/dalmiling/",
+    "official_site": "https://www.golfsouthayrshire.com/play/the-courses/dalmiling/"
+  },
+  {
+    "name": "St. Nicholas Golf Club",
+    "lat": 55.4875856,
+    "lon": -4.6226493,
+    "source": "osm",
+    "osm_site": "https://www.prestwickstnicholas.com/",
+    "official_site": "https://www.prestwickstnicholas.com/"
+  },
+  {
+    "name": "St. Cuthbert Golf Club",
+    "lat": 55.490234,
+    "lon": -4.5959083,
+    "source": "osm",
+    "osm_site": "https://www.stcuthbert.co.uk/",
+    "official_site": "https://www.stcuthbert.co.uk/"
+  },
+  {
+    "name": "Annanhill Golf Club",
+    "lat": 55.6060518,
+    "lon": -4.5231353,
+    "source": "osm",
+    "osm_site": "https://annanhillgolfclub.co.uk/",
+    "official_site": "https://annanhillgolfclub.co.uk/"
+  },
+  {
+    "name": "Machrihanish Dunes Golf Course",
+    "lat": 55.4507445,
+    "lon": -5.7084333,
+    "source": "osm",
+    "osm_site": "https://www.machrihanishdunes.com/",
+    "official_site": "https://www.machrihanishdunes.com/"
+  },
+  {
+    "name": "King James VI Golf Club",
+    "lat": 56.383541,
+    "lon": -3.4203954,
+    "source": "osm",
+    "osm_site": "https://www.kingjamesvi.co.uk/",
+    "official_site": "https://www.kingjamesvi.co.uk/"
+  },
+  {
+    "name": "The North Berwick Golf Club",
+    "lat": 56.0597721,
+    "lon": -2.7464812,
+    "source": "osm",
+    "osm_site": "https://www.northberwickgolfclub.com/",
+    "official_site": "https://www.northberwickgolfclub.com/"
+  },
+  {
+    "name": "Bothwell Castle Golf Club",
+    "lat": 55.8099868,
+    "lon": -4.0811529,
+    "source": "osm",
+    "osm_site": "https://www.bcgolf.co.uk/",
+    "official_site": "https://www.bcgolf.co.uk/"
+  },
+  {
+    "name": "Turnberry",
+    "lat": 55.3219191,
+    "lon": -4.8361435,
+    "source": "osm",
+    "osm_site": "https://www.turnberry.co.uk/",
+    "official_site": "https://www.turnberry.co.uk/"
+  },
+  {
+    "name": "Glencorse Golf Club",
+    "lat": 55.8478144,
+    "lon": -3.1965319,
+    "source": "osm",
+    "osm_site": "https://www.glencorsegolfclub.com/",
+    "official_site": "https://www.glencorsegolfclub.com/"
+  },
+  {
+    "name": "Uphall Golf Course",
+    "lat": 55.9253104,
+    "lon": -3.5172869,
+    "source": "osm",
+    "osm_site": "https://www.uphallgolfclub.com/",
+    "official_site": "https://www.uphallgolfclub.com/"
+  },
+  {
+    "name": "Craigie Hill Golf Course",
+    "lat": 56.38352,
+    "lon": -3.4536719,
+    "source": "osm",
+    "osm_site": "https://www.craigiehill.co.uk/",
+    "official_site": "https://www.craigiehill.co.uk/"
+  },
+  {
+    "name": "Haddington Golf Course",
+    "lat": 55.9572949,
+    "lon": -2.7565901,
+    "source": "osm",
+    "osm_site": "https://www.haddingtongolf.co.uk/",
+    "official_site": "https://www.haddingtongolf.co.uk/"
+  },
+  {
+    "name": "Calderbraes Golf Club",
+    "lat": 55.8388331,
+    "lon": -4.1037944,
+    "source": "osm",
+    "osm_site": "https://calderbraes-golf-club.co.uk/",
+    "official_site": "https://calderbraes-golf-club.co.uk/"
+  },
+  {
+    "name": "Pitch and Putt",
+    "lat": 55.8298346,
+    "lon": -4.2657831,
+    "source": "osm",
+    "osm_site": "https://www.glasgowlife.org.uk/sport/our-facilities/pitchandputt/queens-park",
+    "official_site": "https://www.glasgowlife.org.uk/sport/our-facilities/pitchandputt/queens-park"
+  },
+  {
+    "name": "Wishaw Golf Club",
+    "lat": 55.7817716,
+    "lon": -3.9368387,
+    "source": "osm",
+    "osm_site": "https://www.wishawgolfclub.com/",
+    "official_site": "https://www.wishawgolfclub.com/"
+  },
+  {
+    "name": "New Course",
+    "lat": 56.3544011,
+    "lon": -2.816889,
+    "source": "osm",
+    "osm_site": "https://www.standrews.org.uk/Play/Courses/New-Course",
+    "official_site": "https://www.standrews.org.uk/Play/Courses/New-Course"
+  },
+  {
+    "name": "Jubilee Course",
+    "lat": 56.3560641,
+    "lon": -2.8156317,
+    "source": "osm",
+    "osm_site": "https://www.standrews.org.uk/Play/Courses/Jubilee-Course",
+    "official_site": "https://www.standrews.org.uk/Play/Courses/Jubilee-Course"
+  },
+  {
+    "name": "Helensburgh Golf Club",
+    "lat": 56.0135928,
+    "lon": -4.707842,
+    "source": "osm",
+    "osm_site": "https://www.helensburghgolfclub.co.uk/",
+    "official_site": "https://www.helensburghgolfclub.co.uk/"
+  },
+  {
+    "name": "Gigha Golf Club",
+    "lat": 55.6852038,
+    "lon": -5.739879,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Aberfoyle Golf Club",
+    "lat": 56.1765332,
+    "lon": -4.3619262,
+    "source": "osm",
+    "osm_site": "https://www.aberfoylegolf.co.uk/",
+    "official_site": "https://www.aberfoylegolf.co.uk/"
+  },
+  {
+    "name": "Sandyhills Golf Club",
+    "lat": 55.843024,
+    "lon": -4.1544235,
+    "source": "osm",
+    "osm_site": "https://www.sandyhillsgolfclub.co.uk/",
+    "official_site": "https://www.sandyhillsgolfclub.co.uk/"
+  },
+  {
+    "name": "Golf It!",
+    "lat": 55.8743152,
+    "lon": -4.1752873,
+    "source": "osm",
+    "osm_site": "https://www.golf-it.com/",
+    "official_site": "https://www.golf-it.com/"
+  },
+  {
+    "name": "East Kilbride Golf Club",
+    "lat": 55.783301,
+    "lon": -4.1560742,
+    "source": "osm",
+    "osm_site": "https://www.ekgolfclub.com/",
+    "official_site": "https://www.ekgolfclub.com/"
+  },
+  {
+    "name": "Pitlochry Golf Course",
+    "lat": 56.7127804,
+    "lon": -3.7430527,
+    "source": "osm",
+    "osm_site": "https://www.pitlochrygolf.co.uk/",
+    "official_site": "https://www.pitlochrygolf.co.uk/"
+  },
+  {
+    "name": "Hilton Park Golf Club",
+    "lat": 55.9679432,
+    "lon": -4.3541768,
+    "source": "osm",
+    "osm_site": "https://www.hiltonpark.net/",
+    "official_site": "https://www.hiltonpark.net/"
+  },
+  {
+    "name": "Milngavie Golf Club",
+    "lat": 55.958339,
+    "lon": -4.3421044,
+    "source": "osm",
+    "osm_site": "https://www.milngaviegolfclub.co.uk/",
+    "official_site": "https://www.milngaviegolfclub.co.uk/"
+  },
+  {
+    "name": "Schawpark Golf course",
+    "lat": 56.1339144,
+    "lon": -3.7660782,
+    "source": "osm",
+    "osm_site": "https://www.alloagolfclub.co.uk/",
+    "official_site": "https://www.alloagolfclub.co.uk/"
+  },
+  {
+    "name": "Banchory Golf Club",
+    "lat": 57.0517234,
+    "lon": -2.5148295,
+    "source": "osm",
+    "osm_site": "https://www.banchorygolfclub.co.uk/",
+    "official_site": "https://www.banchorygolfclub.co.uk/"
+  },
+  {
+    "name": "Forres Golf Club",
+    "lat": 57.6075505,
+    "lon": -3.5895306,
+    "source": "osm",
+    "osm_site": "https://forresgolfclub.co.uk/",
+    "official_site": "https://forresgolfclub.co.uk/"
+  },
+  {
+    "name": "Moffat Golf Course",
+    "lat": 55.3288004,
+    "lon": -3.4594371,
+    "source": "osm",
+    "osm_site": "https://www.moffatgolfclub.co.uk/",
+    "official_site": "https://www.moffatgolfclub.co.uk/"
+  },
+  {
+    "name": "Torphins Golf Club",
+    "lat": 57.1124765,
+    "lon": -2.6306891,
+    "source": "osm",
+    "osm_site": "https://www.torphinsgolfclub.co.uk/",
+    "official_site": "https://www.torphinsgolfclub.co.uk/"
+  },
+  {
+    "name": "Braehead Golf Club",
+    "lat": 56.1259423,
+    "lon": -3.8258897,
+    "source": "osm",
+    "osm_site": "https://www.braeheadgolfclub.co.uk/",
+    "official_site": "https://www.braeheadgolfclub.co.uk/"
+  },
+  {
+    "name": "Tulliallan Golf Club",
+    "lat": 56.0830314,
+    "lon": -3.7149205,
+    "source": "osm",
+    "osm_site": "https://www.tulliallangolf.co.uk/",
+    "official_site": "https://www.tulliallangolf.co.uk/"
+  },
+  {
+    "name": "Dullatur Golf Course",
+    "lat": 55.9594529,
+    "lon": -4.0164973,
+    "source": "osm",
+    "osm_site": "https://www.dullaturgolf.com/",
+    "official_site": "https://www.dullaturgolf.com/"
+  },
+  {
+    "name": "Forrester Park Golf Course",
+    "lat": 56.0688686,
+    "lon": -3.5316023,
+    "source": "osm",
+    "osm_site": "https://www.forresterparkresort.com/",
+    "official_site": "https://www.forresterparkresort.com/"
+  },
+  {
+    "name": "Cardross Golf Club",
+    "lat": 55.9664623,
+    "lon": -4.6451788,
+    "source": "osm",
+    "osm_site": "https://www.cardross.com",
+    "official_site": "https://www.cardross.com"
+  },
+  {
+    "name": "Aberdour Golf Club",
+    "lat": 56.0463831,
+    "lon": -3.3065996,
+    "source": "osm",
+    "osm_site": "https://www.aberdourgolfclub.co.uk/",
+    "official_site": "https://www.aberdourgolfclub.co.uk/"
+  },
+  {
+    "name": "Carnwath Golf Club",
+    "lat": 55.7009696,
+    "lon": -3.6375915,
+    "source": "osm",
+    "osm_site": "https://www.carnwathgc.co.uk/",
+    "official_site": "https://www.carnwathgc.co.uk/"
+  },
+  {
+    "name": "Lauder Golf Club",
+    "lat": 55.7092749,
+    "lon": -2.7572612,
+    "source": "osm",
+    "osm_site": "https://lauder.golf-club.website/website/",
+    "official_site": "https://lauder.golf-club.website/website/"
+  },
+  {
+    "name": "Pitreavie Golf Club",
+    "lat": 56.0540058,
+    "lon": -3.4273239,
+    "source": "osm",
+    "osm_site": "https://www.pitreaviegolfclub.co.uk/",
+    "official_site": "https://www.pitreaviegolfclub.co.uk/"
+  },
+  {
+    "name": "Winterfield Golf Course",
+    "lat": 56.0034254,
+    "lon": -2.536316,
+    "source": "osm",
+    "osm_site": "https://www.enjoyleisure.com/Centre.aspx?comp_id=10",
+    "official_site": "https://www.enjoyleisure.com/Centre.aspx?comp_id=10"
+  },
+  {
+    "name": "Longniddry Golf Course",
+    "lat": 55.9770037,
+    "lon": -2.9093674,
+    "source": "osm",
+    "osm_site": "https://www.longniddrygolfclub.co.uk/",
+    "official_site": "https://www.longniddrygolfclub.co.uk/"
+  },
+  {
+    "name": "Raon Goilf Ste\u00f2rnabhaigh",
+    "lat": 58.2157503,
+    "lon": -6.3953123,
+    "source": "osm",
+    "osm_site": "https://www.stornowaygolfclub.co.uk/",
+    "official_site": "https://www.stornowaygolfclub.co.uk/"
+  },
+  {
+    "name": "Lumphanan Golf Course",
+    "lat": 57.1260903,
+    "lon": -2.6823275,
+    "source": "osm",
+    "osm_site": "https://www.lumphanangolfclub.co.uk/",
+    "official_site": "https://www.lumphanangolfclub.co.uk/"
+  },
+  {
+    "name": "Eyemouth Golf Club",
+    "lat": 55.8682032,
+    "lon": -2.0803424,
+    "source": "osm",
+    "osm_site": "https://www.eyemouthgolfclub.co.uk/",
+    "official_site": "https://www.eyemouthgolfclub.co.uk/"
+  },
+  {
+    "name": "Crichton Golf Club",
+    "lat": 55.0567059,
+    "lon": -3.5932995,
+    "source": "osm",
+    "osm_site": "https://www.crichtongolfclub.com/",
+    "official_site": "https://www.crichtongolfclub.com/"
+  },
+  {
+    "name": "Nunfield Golf Course",
+    "lat": 55.0819254,
+    "lon": -3.602386,
+    "source": "osm",
+    "osm_site": "https://www.thecounty.co.uk/",
+    "official_site": "https://www.thecounty.co.uk/"
+  },
+  {
+    "name": "Bathgate Golf Course",
+    "lat": 55.8943309,
+    "lon": -3.6326246,
+    "source": "osm",
+    "osm_site": "https://www.bathgategolfclub.com/",
+    "official_site": "https://www.bathgategolfclub.com/"
+  },
+  {
+    "name": "Falkland Golf Club",
+    "lat": 56.2558044,
+    "lon": -3.1961844,
+    "source": "osm",
+    "osm_site": "https://www.falklandgolfclub.com/",
+    "official_site": "https://www.falklandgolfclub.com/"
+  },
+  {
+    "name": "Huntly Golf Club",
+    "lat": 57.4545955,
+    "lon": -2.7750134,
+    "source": "osm",
+    "osm_site": "https://www.huntlygolfclub.com/",
+    "official_site": "https://www.huntlygolfclub.com/"
+  },
+  {
+    "name": "Royal Tarlair Golf Club",
+    "lat": 57.6692267,
+    "lon": -2.4723673,
+    "source": "osm",
+    "osm_site": "https://royaltarlair.co.uk/",
+    "official_site": "https://royaltarlair.co.uk/"
+  },
+  {
+    "name": "Duff House Royal Golf Club",
+    "lat": 57.6572886,
+    "lon": -2.5220848,
+    "source": "osm",
+    "osm_site": "https://www.duffhouseroyal.com/",
+    "official_site": "https://www.duffhouseroyal.com/"
+  },
+  {
+    "name": "Caprington Golf Club",
+    "lat": 55.5859429,
+    "lon": -4.5120729,
+    "source": "osm",
+    "osm_site": "https://www.capringtongolfclub.com/",
+    "official_site": "https://www.capringtongolfclub.com/"
+  },
+  {
+    "name": "Muirfield",
+    "lat": 56.0457735,
+    "lon": -2.8218287,
+    "source": "osm",
+    "osm_site": "https://www.muirfield.org.uk/",
+    "official_site": "https://www.muirfield.org.uk/"
+  },
+  {
+    "name": "Championship Course",
+    "lat": 57.8884934,
+    "lon": -4.0142193,
+    "source": "osm",
+    "osm_site": "https://www.royaldornoch.com/",
+    "official_site": "https://www.royaldornoch.com/"
+  },
+  {
+    "name": "Moray Golf Club",
+    "lat": 57.7192432,
+    "lon": -3.3143426,
+    "source": "osm",
+    "osm_site": "https://www.moraygolf.co.uk/",
+    "official_site": "https://www.moraygolf.co.uk/"
+  },
+  {
+    "name": "Oatridge Golf Course",
+    "lat": 55.9435372,
+    "lon": -3.5147747,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Inverurie Golf Club",
+    "lat": 57.2796134,
+    "lon": -2.3926654,
+    "source": "osm",
+    "osm_site": "https://www.inveruriegolfclub.co.uk/",
+    "official_site": "https://www.inveruriegolfclub.co.uk/"
+  },
+  {
+    "name": "Dunblane New Golf Club",
+    "lat": 56.1796334,
+    "lon": -3.9540165,
+    "source": "osm",
+    "osm_site": "https://www.dngc.co.uk/",
+    "official_site": "https://www.dngc.co.uk/"
+  },
+  {
+    "name": "Peebles Golf Club",
+    "lat": 55.6567055,
+    "lon": -3.2084954,
+    "source": "osm",
+    "osm_site": "https://www.peeblesgolfclub.com/",
+    "official_site": "https://www.peeblesgolfclub.com/"
+  },
+  {
+    "name": "Lundin Ladies Golf Club",
+    "lat": 56.2142279,
+    "lon": -2.9596435,
+    "source": "osm",
+    "osm_site": "https://www.lundinladiesgolfclub.co.uk/",
+    "official_site": "https://www.lundinladiesgolfclub.co.uk/"
+  },
+  {
+    "name": "Alford Golf Club",
+    "lat": 57.2367521,
+    "lon": -2.6964697,
+    "source": "osm",
+    "osm_site": "https://www.alfordgolfclub.com/",
+    "official_site": "https://www.alfordgolfclub.com/"
+  },
+  {
+    "name": "Elie Golf Course",
+    "lat": 56.1888584,
+    "lon": -2.8395232,
+    "source": "osm",
+    "osm_site": "https://www.golfhouseclub.co.uk/",
+    "official_site": "https://www.golfhouseclub.co.uk/"
+  },
+  {
+    "name": "Durness Golf Club",
+    "lat": 58.5734135,
+    "lon": -4.7801561,
+    "source": "osm",
+    "osm_site": "https://www.durnessgolfclub.org/",
+    "official_site": "https://www.durnessgolfclub.org/"
+  },
+  {
+    "name": "Keith Golf Club",
+    "lat": 57.5411905,
+    "lon": -2.9710949,
+    "source": "osm",
+    "osm_site": "https://www.keithgolfclub.co.uk/",
+    "official_site": "https://www.keithgolfclub.co.uk/"
+  },
+  {
+    "name": "Lilliardsedge Holiday Park & Golf Course",
+    "lat": 55.5313733,
+    "lon": -2.6082576,
+    "source": "osm",
+    "osm_site": "https://www.lilliardsedgepark.co.uk/Page/Golf.aspx",
+    "official_site": "https://www.lilliardsedgepark.co.uk/Page/Golf.aspx"
+  },
+  {
+    "name": "Cowdenbeath Golf Course",
+    "lat": 56.1156334,
+    "lon": -3.3298179,
+    "source": "osm",
+    "osm_site": "https://cowdenbeath-golfclub.com/",
+    "official_site": "https://cowdenbeath-golfclub.com/"
+  },
+  {
+    "name": "Lochgelly Golf Club",
+    "lat": 56.126636,
+    "lon": -3.322197,
+    "source": "osm",
+    "osm_site": "https://www.lochgellygolfclub.co.uk/",
+    "official_site": "https://www.lochgellygolfclub.co.uk/"
+  },
+  {
+    "name": "Milnathort Golf Club",
+    "lat": 56.2241896,
+    "lon": -3.4164989,
+    "source": "osm",
+    "osm_site": "https://www.milnathortgolfclub.co.uk/",
+    "official_site": "https://www.milnathortgolfclub.co.uk/"
+  },
+  {
+    "name": "Paul Lawrie Golf Centre",
+    "lat": 57.1117852,
+    "lon": -2.1688886,
+    "source": "osm",
+    "osm_site": "https://www.paullawriegolfcentre.co.uk/",
+    "official_site": "https://www.paullawriegolfcentre.co.uk/"
+  },
+  {
+    "name": "Craigewan Course",
+    "lat": 57.5244005,
+    "lon": -1.8045994,
+    "source": "osm",
+    "osm_site": "https://www.peterheadgolfclub.co.uk/course/craigewan-course/",
+    "official_site": "https://www.peterheadgolfclub.co.uk/course/craigewan-course/"
+  },
+  {
+    "name": "Nairn Golf Club",
+    "lat": 57.5845294,
+    "lon": -3.908488,
+    "source": "osm",
+    "osm_site": "https://nairngolfclub.co.uk/",
+    "official_site": "https://nairngolfclub.co.uk/"
+  },
+  {
+    "name": "Nairn Dunbar Golf Course",
+    "lat": 57.5906748,
+    "lon": -3.8482983,
+    "source": "osm",
+    "osm_site": "https://www.nairndunbar.com/",
+    "official_site": "https://www.nairndunbar.com/"
+  },
+  {
+    "name": "Cruden Bay Golf Club",
+    "lat": 57.406562,
+    "lon": -1.8585756,
+    "source": "osm",
+    "osm_site": "https://www.crudenbaygolfclub.co.uk/",
+    "official_site": "https://www.crudenbaygolfclub.co.uk/"
+  },
+  {
+    "name": "Cochrane Castle Golf Club",
+    "lat": 55.8203664,
+    "lon": -4.5195844,
+    "source": "osm",
+    "osm_site": "https://cochranecastle.com/",
+    "official_site": "https://cochranecastle.com/"
+  },
+  {
+    "name": "Lanark Golf Club",
+    "lat": 55.673316,
+    "lon": -3.7462698,
+    "source": "osm",
+    "osm_site": "https://www.lanarkgolfclub.co.uk/",
+    "official_site": "https://www.lanarkgolfclub.co.uk/"
+  },
+  {
+    "name": "Dodhead Golf Course",
+    "lat": 56.068346,
+    "lon": -3.2139224,
+    "source": "osm",
+    "osm_site": "https://www.burntislandgolfhouseclub.co.uk/",
+    "official_site": "https://www.burntislandgolfhouseclub.co.uk/"
+  },
+  {
+    "name": "Longside Golf Club",
+    "lat": 57.519757,
+    "lon": -1.9373655,
+    "source": "osm",
+    "osm_site": "https://longsidegolfclub.co.uk/",
+    "official_site": "https://longsidegolfclub.co.uk/"
+  },
+  {
+    "name": "Invergordon Golf Club",
+    "lat": 57.6944625,
+    "lon": -4.1909977,
+    "source": "osm",
+    "osm_site": "https://invergordongolf.co.uk/",
+    "official_site": "https://invergordongolf.co.uk/"
+  },
+  {
+    "name": "Canmore Golf Club",
+    "lat": 56.0831716,
+    "lon": -3.457256,
+    "source": "osm",
+    "osm_site": "https://www.canmoregolfclub.co.uk/",
+    "official_site": "https://www.canmoregolfclub.co.uk/"
+  },
+  {
+    "name": "Kilbirnie Place Golf Club",
+    "lat": 55.7498337,
+    "lon": -4.7014743,
+    "source": "osm",
+    "osm_site": "https://www.kilbirnieplacegc.co.uk/",
+    "official_site": "https://www.kilbirnieplacegc.co.uk/"
+  },
+  {
+    "name": "Belleisle & Seafield Golf Courses",
+    "lat": 55.4409043,
+    "lon": -4.637399,
+    "source": "osm",
+    "osm_site": "https://www.golfsouthayrshire.com/play/the-courses/belleisle-park/",
+    "official_site": "https://www.golfsouthayrshire.com/play/the-courses/belleisle-park/"
+  },
+  {
+    "name": "Erskine Golf Club",
+    "lat": 55.9206914,
+    "lon": -4.4963134,
+    "source": "osm",
+    "osm_site": "https://www.erskinegolfclublimited.co.uk/",
+    "official_site": "https://www.erskinegolfclublimited.co.uk/"
+  },
+  {
+    "name": "Earl of Mar Golf Course",
+    "lat": 55.9212574,
+    "lon": -4.4766752,
+    "source": "osm",
+    "osm_site": "https://www.marhall.com/golf/",
+    "official_site": "https://www.marhall.com/golf/"
+  },
+  {
+    "name": "Lochmaben Golf Club",
+    "lat": 55.1224706,
+    "lon": -3.4473681,
+    "source": "osm",
+    "osm_site": "https://www.lochmabengolf.co.uk/",
+    "official_site": "https://www.lochmabengolf.co.uk/"
+  },
+  {
+    "name": "Gleddoch Golf and Spa Resort",
+    "lat": 55.9157436,
+    "lon": -4.5855535,
+    "source": "osm",
+    "osm_site": "https://www.gleddoch.com/golf/",
+    "official_site": "https://www.gleddoch.com/golf/"
+  },
+  {
+    "name": "Port Glasgow Golf Club",
+    "lat": 55.9192146,
+    "lon": -4.683905,
+    "source": "osm",
+    "osm_site": "https://www.portglasgowgolfclub.co.uk/",
+    "official_site": "https://www.portglasgowgolfclub.co.uk/"
+  },
+  {
+    "name": "Stonehaven Golf Club",
+    "lat": 56.9812132,
+    "lon": -2.1877783,
+    "source": "osm",
+    "osm_site": "https://www.stonehavengolfclub.com/",
+    "official_site": "https://www.stonehavengolfclub.com/"
+  },
+  {
+    "name": "Castle Douglas Golf Club",
+    "lat": 54.9429892,
+    "lon": -3.9389214,
+    "source": "osm",
+    "osm_site": "https://www.cdgolfclub.co.uk/",
+    "official_site": "https://www.cdgolfclub.co.uk/"
+  },
+  {
+    "name": "Knightswood Golf Course",
+    "lat": 55.8931907,
+    "lon": -4.3576521,
+    "source": "osm",
+    "osm_site": "https://www.glasgowlife.org.uk/sport/our-facilities/golfcourses/knightswood-golf-course",
+    "official_site": "https://www.glasgowlife.org.uk/sport/our-facilities/golfcourses/knightswood-golf-course"
+  },
+  {
+    "name": "Balnagask Golf Course",
+    "lat": 57.1389129,
+    "lon": -2.0609827,
+    "source": "osm",
+    "osm_site": "https://www.sportaberdeen.co.uk/balnagask",
+    "official_site": "https://www.sportaberdeen.co.uk/balnagask"
+  },
+  {
+    "name": "Dalmuir Municipal Golf Course",
+    "lat": 55.9183395,
+    "lon": -4.4268196,
+    "source": "osm",
+    "osm_site": "https://www.west-dunbarton.gov.uk/leisure-parks-events/dalmuir-golf-course/",
+    "official_site": "https://www.west-dunbarton.gov.uk/leisure-parks-events/dalmuir-golf-course/"
+  },
+  {
+    "name": "Lockerbie Golf Club",
+    "lat": 55.1273243,
+    "lon": -3.3418384,
+    "source": "osm",
+    "osm_site": "https://www.lockerbiegolf.co.uk/",
+    "official_site": "https://www.lockerbiegolf.co.uk/"
+  },
+  {
+    "name": "Alva Golf Course",
+    "lat": 56.1564099,
+    "lon": -3.8043039,
+    "source": "osm",
+    "osm_site": "https://www.alvagolfclub.co.uk/",
+    "official_site": "https://www.alvagolfclub.co.uk/"
+  },
+  {
+    "name": "Saline Golf Course",
+    "lat": 56.1110454,
+    "lon": -3.5588207,
+    "source": "osm",
+    "osm_site": "https://salinegc.co.uk/",
+    "official_site": "https://salinegc.co.uk/"
+  },
+  {
+    "name": "Harburn Golf Club",
+    "lat": 55.8315343,
+    "lon": -3.5421043,
+    "source": "osm",
+    "osm_site": "https://harburngolfclub.co.uk/",
+    "official_site": "https://harburngolfclub.co.uk/"
+  },
+  {
+    "name": "Bridgecastle Golf Club",
+    "lat": 55.9075003,
+    "lon": -3.6951551,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lochore Meadow Golf Course",
+    "lat": 56.1519135,
+    "lon": -3.3306015,
+    "source": "osm",
+    "osm_site": "https://www.fifegolftrust.co.uk/our-courses/lochore-meadows",
+    "official_site": "https://www.fifegolftrust.co.uk/our-courses/lochore-meadows"
+  },
+  {
+    "name": "The West Kilbride Golf Club",
+    "lat": 55.6923994,
+    "lon": -4.8794426,
+    "source": "osm",
+    "osm_site": "https://www.westkilbridegolfclub.com/",
+    "official_site": "https://www.westkilbridegolfclub.com/"
+  },
+  {
+    "name": "Drumoig Golf Centre",
+    "lat": 56.4185416,
+    "lon": -2.9136473,
+    "source": "osm",
+    "osm_site": "https://www.drumoiggolfcentre.co.uk/",
+    "official_site": "https://www.drumoiggolfcentre.co.uk/"
+  },
+  {
+    "name": "Bonnybridge Golf Club",
+    "lat": 56.0099663,
+    "lon": -3.8754069,
+    "source": "osm",
+    "osm_site": "https://www.bonnybridgegc.co.uk/",
+    "official_site": "https://www.bonnybridgegc.co.uk/"
+  },
+  {
+    "name": "Glenbervie Golf Course",
+    "lat": 56.0396092,
+    "lon": -3.8496652,
+    "source": "osm",
+    "osm_site": "https://www.glenberviegolfclub.com/",
+    "official_site": "https://www.glenberviegolfclub.com/"
+  },
+  {
+    "name": "Crieff Golf Club",
+    "lat": 56.3832739,
+    "lon": -3.8238597,
+    "source": "osm",
+    "osm_site": "https://crieffgolf.co.uk/",
+    "official_site": "https://crieffgolf.co.uk/"
+  },
+  {
+    "name": "Bridge of Allan Golf Club",
+    "lat": 56.161056,
+    "lon": -3.9408315,
+    "source": "osm",
+    "osm_site": "https://www.bofagc.com/",
+    "official_site": "https://www.bofagc.com/"
+  },
+  {
+    "name": "Kirkcaldy Golf Club",
+    "lat": 56.099545,
+    "lon": -3.1928622,
+    "source": "osm",
+    "osm_site": "https://kirkcaldygolfclub.co.uk/",
+    "official_site": "https://kirkcaldygolfclub.co.uk/"
+  },
+  {
+    "name": "Dunnikier Park Golf Course",
+    "lat": 56.1398711,
+    "lon": -3.163114,
+    "source": "osm",
+    "osm_site": "https://fifegolftrust.co.uk/dunnikier-golf-course/",
+    "official_site": "https://fifegolftrust.co.uk/dunnikier-golf-course/"
+  },
+  {
+    "name": "Oldmeldrum Golf Club",
+    "lat": 57.3367691,
+    "lon": -2.3000307,
+    "source": "osm",
+    "osm_site": "https://www.oldmeldrumgolf.co.uk/",
+    "official_site": "https://www.oldmeldrumgolf.co.uk/"
+  },
+  {
+    "name": "Falkirk Tryst Golf Club",
+    "lat": 56.0304256,
+    "lon": -3.8198478,
+    "source": "osm",
+    "osm_site": "https://www.falkirktrystgolfclub.com/",
+    "official_site": "https://www.falkirktrystgolfclub.com/"
+  },
+  {
+    "name": "Thornton Golf Club",
+    "lat": 56.1672842,
+    "lon": -3.1259273,
+    "source": "osm",
+    "osm_site": "https://www.thorntongolfclub.co.uk/",
+    "official_site": "https://www.thorntongolfclub.co.uk/"
+  },
+  {
+    "name": "Naemoor",
+    "lat": 56.1834342,
+    "lon": -3.5986237,
+    "source": "osm",
+    "osm_site": "https://www.muckhartgolf.com/",
+    "official_site": "https://www.muckhartgolf.com/"
+  },
+  {
+    "name": "Dollar Golf Club",
+    "lat": 56.1692288,
+    "lon": -3.678144,
+    "source": "osm",
+    "osm_site": "https://www.dollargolfclub.com/",
+    "official_site": "https://www.dollargolfclub.com/"
+  },
+  {
+    "name": "Cupar Golf Club",
+    "lat": 56.3093702,
+    "lon": -3.0035438,
+    "source": "osm",
+    "osm_site": "https://www.cupargolfclub.co.uk/",
+    "official_site": "https://www.cupargolfclub.co.uk/"
+  },
+  {
+    "name": "Aberfeldy Golf Club",
+    "lat": 56.623279,
+    "lon": -3.8671047,
+    "source": "osm",
+    "osm_site": "https://www.aberfeldy-golfclub.co.uk/",
+    "official_site": "https://www.aberfeldy-golfclub.co.uk/"
+  },
+  {
+    "name": "Scoonie Golf Course",
+    "lat": 56.2047421,
+    "lon": -2.9888877,
+    "source": "osm",
+    "osm_site": "https://www.scooniegolfclub.com/https://fifegolftrust.co.uk/scoonie-golf-course/",
+    "official_site": "https://www.scooniegolfclub.com/https://fifegolftrust.co.uk/scoonie-golf-course/"
+  },
+  {
+    "name": "Leven Links Golf Course",
+    "lat": 56.2023336,
+    "lon": -2.9813162,
+    "source": "osm",
+    "osm_site": "https://www.leven-links.com/",
+    "official_site": "https://www.leven-links.com/"
+  },
+  {
+    "name": "Lundin Golf Club",
+    "lat": 56.2087757,
+    "lon": -2.9649202,
+    "source": "osm",
+    "osm_site": "https://www.lundingolfclub.co.uk/",
+    "official_site": "https://www.lundingolfclub.co.uk/"
+  },
+  {
+    "name": "Polmont Golf Club",
+    "lat": 55.968423,
+    "lon": -3.7058692,
+    "source": "osm",
+    "osm_site": "https://www.polmontgolfclub.co.uk/",
+    "official_site": "https://www.polmontgolfclub.co.uk/"
+  },
+  {
+    "name": "Mains of Taymouth Golf Course",
+    "lat": 56.5916131,
+    "lon": -3.9937222,
+    "source": "osm",
+    "osm_site": "https://www.taymouth.co.uk/on-site-facilities/kenmore-golf-course.htm",
+    "official_site": "https://www.taymouth.co.uk/on-site-facilities/kenmore-golf-course.htm"
+  },
+  {
+    "name": "Taymouth Castle Golf Course",
+    "lat": 56.5892083,
+    "lon": -3.9851949,
+    "source": "osm",
+    "osm_site": "https://welcometotaymouth.com/",
+    "official_site": "https://welcometotaymouth.com/"
+  },
+  {
+    "name": "Kings Links Golf Course",
+    "lat": 57.1664695,
+    "lon": -2.0830734,
+    "source": "osm",
+    "osm_site": "https://www.sportaberdeen.co.uk/kings-links",
+    "official_site": "https://www.sportaberdeen.co.uk/kings-links"
+  },
+  {
+    "name": "Roxburghe Hotel & Golf Course",
+    "lat": 55.5555866,
+    "lon": -2.4726055,
+    "source": "osm",
+    "osm_site": "https://www.roxburghe.net/golf-course",
+    "official_site": "https://www.roxburghe.net/golf-course"
+  },
+  {
+    "name": "Bridgend & District Golf Club",
+    "lat": 55.9643533,
+    "lon": -3.5403763,
+    "source": "osm",
+    "osm_site": "https://www.bridgendgolfclub.com/",
+    "official_site": "https://www.bridgendgolfclub.com/"
+  },
+  {
+    "name": "Glen Golf Club",
+    "lat": 56.0585923,
+    "lon": -2.689567,
+    "source": "osm",
+    "osm_site": "https://www.glengolfclub.co.uk/",
+    "official_site": "https://www.glengolfclub.co.uk/"
+  },
+  {
+    "name": "Dalziel Golf Course",
+    "lat": 55.796942,
+    "lon": -3.9373621,
+    "source": "osm",
+    "osm_site": "https://dalzielpark.co.uk/golf",
+    "official_site": "https://dalzielpark.co.uk/golf"
+  },
+  {
+    "name": "Boat of Garten Golf and Tennis Club",
+    "lat": 57.2443312,
+    "lon": -3.7555618,
+    "source": "osm",
+    "osm_site": "https://www.boatgolf.com/",
+    "official_site": "https://www.boatgolf.com/"
+  },
+  {
+    "name": "Selkirk Golf Club",
+    "lat": 55.54247,
+    "lon": -2.8247102,
+    "source": "osm",
+    "osm_site": "https://www.selkirkgolfclub.co.uk/",
+    "official_site": "https://www.selkirkgolfclub.co.uk/"
+  },
+  {
+    "name": "Grangemouth Golf Club",
+    "lat": 55.9937844,
+    "lon": -3.6905076,
+    "source": "osm",
+    "osm_site": "https://www.grangemouthgolfclub.co.uk/",
+    "official_site": "https://www.grangemouthgolfclub.co.uk/"
+  },
+  {
+    "name": "Gullane Childrens Course",
+    "lat": 56.0330791,
+    "lon": -2.8305653,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Eden Course",
+    "lat": 56.3539516,
+    "lon": -2.8288545,
+    "source": "osm",
+    "osm_site": "https://www.standrews.org.uk/Play/Courses/Eden-Course",
+    "official_site": "https://www.standrews.org.uk/Play/Courses/Eden-Course"
+  },
+  {
+    "name": "Strathtyrum Course",
+    "lat": 56.3507045,
+    "lon": -2.8296193,
+    "source": "osm",
+    "osm_site": "https://www.standrews.org.uk/Play/Courses/Strathtyrum-Course",
+    "official_site": "https://www.standrews.org.uk/Play/Courses/Strathtyrum-Course"
+  },
+  {
+    "name": "Balgove Course",
+    "lat": 56.3483414,
+    "lon": -2.8215032,
+    "source": "osm",
+    "osm_site": "https://www.standrews.org.uk/Play/Courses/Balgove-Course",
+    "official_site": "https://www.standrews.org.uk/Play/Courses/Balgove-Course"
+  },
+  {
+    "name": "Innerleithen Golf Club",
+    "lat": 55.6398916,
+    "lon": -3.0577668,
+    "source": "osm",
+    "osm_site": "https://www.innerleithengolf.co.uk/",
+    "official_site": "https://www.innerleithengolf.co.uk/"
+  },
+  {
+    "name": "Archerfield Links",
+    "lat": 56.0556716,
+    "lon": -2.792248,
+    "source": "osm",
+    "osm_site": "https://www.archerfieldgolfclub.com/",
+    "official_site": "https://www.archerfieldgolfclub.com/"
+  },
+  {
+    "name": "The Renaissance Club",
+    "lat": 56.0541685,
+    "lon": -2.8074074,
+    "source": "osm",
+    "osm_site": "https://trcaa.com/",
+    "official_site": "https://trcaa.com/"
+  },
+  {
+    "name": "Kinghorn Golf Course",
+    "lat": 56.0680452,
+    "lon": -3.1848118,
+    "source": "osm",
+    "osm_site": "https://www.fifegolftrust.co.uk/our-courses/kinghorn",
+    "official_site": "https://www.fifegolftrust.co.uk/our-courses/kinghorn"
+  },
+  {
+    "name": "Monksford House Golf Course",
+    "lat": 55.5884126,
+    "lon": -2.6672516,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Kirriemuir",
+    "lat": 56.6894527,
+    "lon": -2.9970034,
+    "source": "osm",
+    "osm_site": "https://www.kirriemuirgolfclub.co.uk/",
+    "official_site": "https://www.kirriemuirgolfclub.co.uk/"
+  },
+  {
+    "name": "Hopeman Golf Club",
+    "lat": 57.7095568,
+    "lon": -3.4201135,
+    "source": "osm",
+    "osm_site": "https://www.hopemangc.co.uk/",
+    "official_site": "https://www.hopemangc.co.uk/"
+  },
+  {
+    "name": "Cluny Golf",
+    "lat": 56.1557363,
+    "lon": -3.2165112,
+    "source": "osm",
+    "osm_site": "https://www.clunyactivities.co.uk/golf/",
+    "official_site": "https://www.clunyactivities.co.uk/golf/"
+  },
+  {
+    "name": "Shotts Golf Club",
+    "lat": 55.8283569,
+    "lon": -3.7803202,
+    "source": "osm",
+    "osm_site": "https://www.shottsgolfclub.co.uk/",
+    "official_site": "https://www.shottsgolfclub.co.uk/"
+  },
+  {
+    "name": "Easter Moffat Golf Club",
+    "lat": 55.8712496,
+    "lon": -3.9175803,
+    "source": "osm",
+    "osm_site": "https://www.emgc.org.uk/",
+    "official_site": "https://www.emgc.org.uk/"
+  },
+  {
+    "name": "Kirkintilloch Golf Club",
+    "lat": 55.9490797,
+    "lon": -4.1707468,
+    "source": "osm",
+    "osm_site": "https://www.kirkintillochgolfclub.com/",
+    "official_site": "https://www.kirkintillochgolfclub.com/"
+  },
+  {
+    "name": "Carluke Golf Club",
+    "lat": 55.7327632,
+    "lon": -3.8645474,
+    "source": "osm",
+    "osm_site": "https://www.carlukegolfclub.com/",
+    "official_site": "https://www.carlukegolfclub.com/"
+  },
+  {
+    "name": "Cullen Golf Club",
+    "lat": 57.6963281,
+    "lon": -2.8414623,
+    "source": "osm",
+    "osm_site": "https://www.cullengolfclub.co.uk/",
+    "official_site": "https://www.cullengolfclub.co.uk/"
+  },
+  {
+    "name": "Kirkhill Golf Club",
+    "lat": 55.800977,
+    "lon": -4.1655419,
+    "source": "osm",
+    "osm_site": "https://www.kirkhillgolfclub.org.uk/",
+    "official_site": "https://www.kirkhillgolfclub.org.uk/"
+  },
+  {
+    "name": "Cathkin Braes Golf Club",
+    "lat": 55.7946212,
+    "lon": -4.2103167,
+    "source": "osm",
+    "osm_site": "https://cathkinbraesgolfclub.co.uk/",
+    "official_site": "https://cathkinbraesgolfclub.co.uk/"
+  },
+  {
+    "name": "Orkney Golf Club",
+    "lat": 58.9849041,
+    "lon": -2.9869959,
+    "source": "osm",
+    "osm_site": "https://orkneygolfclub.co.uk/",
+    "official_site": "https://orkneygolfclub.co.uk/"
+  },
+  {
+    "name": "South Ronaldsay Golf Course",
+    "lat": 58.821796,
+    "lon": -2.9610985,
+    "source": "osm",
+    "osm_site": "https://southronaldsaygolf.com/",
+    "official_site": "https://southronaldsaygolf.com/"
+  },
+  {
+    "name": "West Linton Golf Course",
+    "lat": 55.7531253,
+    "lon": -3.3807734,
+    "source": "osm",
+    "osm_site": "https://www.wlgc.co.uk/",
+    "official_site": "https://www.wlgc.co.uk/"
+  },
+  {
+    "name": "Piperdam Golf & Leisure Resort",
+    "lat": 56.5,
+    "lon": -3.1369183,
+    "source": "osm",
+    "osm_site": "https://www.landal.co.uk/parks/piperdam?gclsrc=aw.ds&gad_source=1#filter:eyJhttps://www.landal.co.uk/parks/piperdamzIjoiMyJ9",
+    "official_site": "https://www.landal.co.uk/parks/piperdam?gclsrc=aw.ds&gad_source=1#filter:eyJhttps://www.landal.co.uk/parks/piperdamzIjoiMyJ9"
+  },
+  {
+    "name": "Eastwood Golf Course",
+    "lat": 55.7449343,
+    "lon": -4.3549289,
+    "source": "osm",
+    "osm_site": "https://www.eastwoodgolfclub.co.uk/",
+    "official_site": "https://www.eastwoodgolfclub.co.uk/"
+  },
+  {
+    "name": "Asta Golf Club",
+    "lat": 60.1592266,
+    "lon": -1.2585864,
+    "source": "osm",
+    "osm_site": "https://www.astagolfcourse.com/",
+    "official_site": "https://www.astagolfcourse.com/"
+  },
+  {
+    "name": "Shetland Golf Club",
+    "lat": 60.1657278,
+    "lon": -1.2218763,
+    "source": "osm",
+    "osm_site": "https://www.shetlandgolfclub.co.uk/",
+    "official_site": "https://www.shetlandgolfclub.co.uk/"
+  },
+  {
+    "name": "Skelmorlie Golf Club",
+    "lat": 55.8677248,
+    "lon": -4.8747347,
+    "source": "osm",
+    "osm_site": "https://www.skelmorliegolf.co.uk/",
+    "official_site": "https://www.skelmorliegolf.co.uk/"
+  },
+  {
+    "name": "Callander Golf Club",
+    "lat": 56.2435675,
+    "lon": -4.198837,
+    "source": "osm",
+    "osm_site": "https://www.callandergolfclub.co.uk/",
+    "official_site": "https://www.callandergolfclub.co.uk/"
+  },
+  {
+    "name": "Kilsyth Lennox Golfcouse",
+    "lat": 55.9864799,
+    "lon": -4.0481267,
+    "source": "osm",
+    "osm_site": "https://www.kilsythlennox.com/",
+    "official_site": "https://www.kilsythlennox.com/"
+  },
+  {
+    "name": "Blairmore and Strone Golf Club",
+    "lat": 55.9896415,
+    "lon": -4.901832,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bishopbriggs Golf Range",
+    "lat": 55.926987,
+    "lon": -4.1944192,
+    "source": "osm",
+    "osm_site": "https://bishopbriggsgolfrange.co.uk/",
+    "official_site": "https://bishopbriggsgolfrange.co.uk/"
+  },
+  {
+    "name": "Newburgh Golf Club",
+    "lat": 57.3129018,
+    "lon": -1.9995878,
+    "source": "osm",
+    "osm_site": "https://www.newburghgolfclub.co.uk/",
+    "official_site": "https://www.newburghgolfclub.co.uk/"
+  },
+  {
+    "name": "Grantown-On-Spey Golf Club",
+    "lat": 57.3330892,
+    "lon": -3.5962832,
+    "source": "osm",
+    "osm_site": "https://www.grantownonspeygolfclub.co.uk/",
+    "official_site": "https://www.grantownonspeygolfclub.co.uk/"
+  },
+  {
+    "name": "Clydebank & District Golf Course",
+    "lat": 55.922665,
+    "lon": -4.3915002,
+    "source": "osm",
+    "osm_site": "https://www.clydebankdgc.co.uk/",
+    "official_site": "https://www.clydebankdgc.co.uk/"
+  },
+  {
+    "name": "Dumbarton Golf Club",
+    "lat": 55.9537195,
+    "lon": -4.5705693,
+    "source": "osm",
+    "osm_site": "https://dumbartongolfclub.co.uk/",
+    "official_site": "https://dumbartongolfclub.co.uk/"
+  },
+  {
+    "name": "Murcar Links Golf Club",
+    "lat": 57.2055939,
+    "lon": -2.0693351,
+    "source": "osm",
+    "osm_site": "https://murcarlinks.com/",
+    "official_site": "https://murcarlinks.com/"
+  },
+  {
+    "name": "Sanquhar Golf Course",
+    "lat": 55.3623292,
+    "lon": -3.9364475,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "St Boswells Golf Course",
+    "lat": 55.5782499,
+    "lon": -2.6381614,
+    "source": "osm",
+    "osm_site": "https://www.stboswellsgolfclub.co.uk/",
+    "official_site": "https://www.stboswellsgolfclub.co.uk/"
+  },
+  {
+    "name": "Falkirk Golf Club",
+    "lat": 56.0109925,
+    "lon": -3.82547,
+    "source": "osm",
+    "osm_site": "https://www.falkirkgolfclub.co.uk/",
+    "official_site": "https://www.falkirkgolfclub.co.uk/"
+  },
+  {
+    "name": "Lynedoch Course",
+    "lat": 56.416275,
+    "lon": -3.3638556,
+    "source": "osm",
+    "osm_site": "https://www.murrayshall.co.uk/",
+    "official_site": "https://www.murrayshall.co.uk/"
+  },
+  {
+    "name": "The Kames Golf Club (Mouse Valley)",
+    "lat": 55.698563,
+    "lon": -3.7055065,
+    "source": "osm",
+    "osm_site": "https://www.kames-golf-club.com/html/",
+    "official_site": "https://www.kames-golf-club.com/html/"
+  },
+  {
+    "name": "Wee Braids Golf Course",
+    "lat": 55.9123197,
+    "lon": -3.1900633,
+    "source": "osm",
+    "osm_site": "https://www.edinburghleisure.co.uk/venues/wee-braids-golf-course",
+    "official_site": "https://www.edinburghleisure.co.uk/venues/wee-braids-golf-course"
+  },
+  {
+    "name": "Ullapool Golf Club",
+    "lat": 57.9040262,
+    "lon": -5.1710211,
+    "source": "osm",
+    "osm_site": "https://www.ullapoolgolfclub.co.uk/",
+    "official_site": "https://www.ullapoolgolfclub.co.uk/"
+  },
+  {
+    "name": "Bruntsfield Links Short Hole Golf Course",
+    "lat": 55.9396978,
+    "lon": -3.2012352,
+    "source": "osm",
+    "osm_site": "https://www.bruntsfieldshortholegolfclub.co.uk/",
+    "official_site": "https://www.bruntsfieldshortholegolfclub.co.uk/"
+  },
+  {
+    "name": "Dougalston Golf Course",
+    "lat": 55.9430428,
+    "lon": -4.2977556,
+    "source": "osm",
+    "osm_site": "https://www.dougalstongolfclub.co.uk/contact/",
+    "official_site": "https://www.dougalstongolfclub.co.uk/contact/"
+  },
+  {
+    "name": "Whiting Bay Golf Club",
+    "lat": 55.4912459,
+    "lon": -5.1066768,
+    "source": "osm",
+    "osm_site": "https://www.whitingbaygolf.com/",
+    "official_site": "https://www.whitingbaygolf.com/"
+  },
+  {
+    "name": "Kemnay Golf Club",
+    "lat": 57.2246547,
+    "lon": -2.4489646,
+    "source": "osm",
+    "osm_site": "https://www.kemnaygolfclub.co.uk/",
+    "official_site": "https://www.kemnaygolfclub.co.uk/"
+  },
+  {
+    "name": "Airdrie Golf Club",
+    "lat": 55.8836018,
+    "lon": -3.9857043,
+    "source": "osm",
+    "osm_site": "https://www.airdriegolfclub.co.uk/",
+    "official_site": "https://www.airdriegolfclub.co.uk/"
+  },
+  {
+    "name": "Elmwood Golf Course",
+    "lat": 56.3005794,
+    "lon": -3.0442912,
+    "source": "osm",
+    "osm_site": "https://www.elmwoodgolf.co.uk/",
+    "official_site": "https://www.elmwoodgolf.co.uk/"
+  },
+  {
+    "name": "Machrie Bay Golf Course",
+    "lat": 55.5538218,
+    "lon": -5.340198,
+    "source": "osm",
+    "osm_site": "https://machriebay.com/",
+    "official_site": "https://machriebay.com/"
+  },
+  {
+    "name": "Tarland Golf Club",
+    "lat": 57.1288455,
+    "lon": -2.846923,
+    "source": "osm",
+    "osm_site": "https://www.tarlandgolfclub.co.uk/",
+    "official_site": "https://www.tarlandgolfclub.co.uk/"
+  },
+  {
+    "name": "Aboyne Golf Course",
+    "lat": 57.0841704,
+    "lon": -2.7708823,
+    "source": "osm",
+    "osm_site": "https://www.aboynegolfclub.co.uk/",
+    "official_site": "https://www.aboynegolfclub.co.uk/"
+  },
+  {
+    "name": "Dunning Golf Club",
+    "lat": 56.3137865,
+    "lon": -3.5931099,
+    "source": "osm",
+    "osm_site": "https://www.dunninggolfclub.co.uk/",
+    "official_site": "https://www.dunninggolfclub.co.uk/"
+  },
+  {
+    "name": "Spean Bridge Golf Club",
+    "lat": 56.887372,
+    "lon": -4.9284853,
+    "source": "osm",
+    "osm_site": "https://speangolf.co.uk/",
+    "official_site": "https://speangolf.co.uk/"
+  },
+  {
+    "name": "Glenalmond College Golf Course",
+    "lat": 56.4296991,
+    "lon": -3.6789639,
+    "source": "osm",
+    "osm_site": "https://www.glenalmondcollege.co.uk/co-curricular/sports/golf-school",
+    "official_site": "https://www.glenalmondcollege.co.uk/co-curricular/sports/golf-school"
+  },
+  {
+    "name": "Castle Stuart Golf Links",
+    "lat": 57.5274296,
+    "lon": -4.1078949,
+    "source": "osm",
+    "osm_site": "https://www.castlestuartgolf.com/",
+    "official_site": "https://www.castlestuartgolf.com/"
+  },
+  {
+    "name": "Minto Golf Course",
+    "lat": 55.4747459,
+    "lon": -2.6838441,
+    "source": "osm",
+    "osm_site": "https://www.mintogolf.co.uk/",
+    "official_site": "https://www.mintogolf.co.uk/"
+  },
+  {
+    "name": "North Gailes Golf Centre",
+    "lat": 55.5954011,
+    "lon": -4.6587708,
+    "source": "osm",
+    "osm_site": "https://www.northgailes.co.uk/golf.html",
+    "official_site": "https://www.northgailes.co.uk/golf.html"
+  },
+  {
+    "name": "Western Gailes Golf Club",
+    "lat": 55.5809172,
+    "lon": -4.663888,
+    "source": "osm",
+    "osm_site": "https://www.westerngailes.com/",
+    "official_site": "https://www.westerngailes.com/"
+  },
+  {
+    "name": "Kilmarnock Golf Club Barassie Links",
+    "lat": 55.5703741,
+    "lon": -4.6496472,
+    "source": "osm",
+    "osm_site": "https://www.kbgc.co.uk/",
+    "official_site": "https://www.kbgc.co.uk/"
+  },
+  {
+    "name": "Jedburgh Golf Course",
+    "lat": 55.4719897,
+    "lon": -2.583238,
+    "source": "osm",
+    "osm_site": "https://www.jedburghgolfclub.co.uk/",
+    "official_site": "https://www.jedburghgolfclub.co.uk/"
+  },
+  {
+    "name": "Craigielaw Golf Club",
+    "lat": 56.0086202,
+    "lon": -2.8769053,
+    "source": "osm",
+    "osm_site": "https://www.craigielawgolfclub.com/",
+    "official_site": "https://www.craigielawgolfclub.com/"
+  },
+  {
+    "name": "Luffness New Golf Club",
+    "lat": 56.0223197,
+    "lon": -2.8440184,
+    "source": "osm",
+    "osm_site": "https://www.luffnessnew.com/",
+    "official_site": "https://www.luffnessnew.com/"
+  },
+  {
+    "name": "Gairloch Golf Club",
+    "lat": 57.7152441,
+    "lon": -5.6853269,
+    "source": "osm",
+    "osm_site": "https://gairlochgolfclub.co.uk/",
+    "official_site": "https://gairlochgolfclub.co.uk/"
+  },
+  {
+    "name": "Raon Goilf Beinn na Faoghla",
+    "lat": 57.4788106,
+    "lon": -7.357548,
+    "source": "osm",
+    "osm_site": "https://www.benbeculagolfclub.co.uk/",
+    "official_site": "https://www.benbeculagolfclub.co.uk/"
+  },
+  {
+    "name": "Inveraray Golf Club",
+    "lat": 56.2236182,
+    "lon": -5.0856007,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Killin Golf Club",
+    "lat": 56.4787387,
+    "lon": -4.3187317,
+    "source": "osm",
+    "osm_site": "https://www.killingolfclub.co.uk/",
+    "official_site": "https://www.killingolfclub.co.uk/"
+  },
+  {
+    "name": "Fairways Loch Ness Golf Club",
+    "lat": 57.453461,
+    "lon": -4.2041554,
+    "source": "osm",
+    "osm_site": "https://www.golflochness.com/",
+    "official_site": "https://www.golflochness.com/"
+  },
+  {
+    "name": "The Castle Course",
+    "lat": 56.327785,
+    "lon": -2.754188,
+    "source": "osm",
+    "osm_site": "https://www.standrews.org.uk/Play/Courses/The-Castle-Course",
+    "official_site": "https://www.standrews.org.uk/Play/Courses/The-Castle-Course"
+  },
+  {
+    "name": "Alyth Golf Course",
+    "lat": 56.6222431,
+    "lon": -3.1999861,
+    "source": "osm",
+    "osm_site": "https://www.alythgolfclub.co.uk/",
+    "official_site": "https://www.alythgolfclub.co.uk/"
+  },
+  {
+    "name": "Cawdor Castle Golf Club",
+    "lat": 57.5214763,
+    "lon": -3.9212276,
+    "source": "osm",
+    "osm_site": "https://www.cawdorcastle.com/golf/index.cfm",
+    "official_site": "https://www.cawdorcastle.com/golf/index.cfm"
+  },
+  {
+    "name": "Shiskine Golf Club",
+    "lat": 55.506966,
+    "lon": -5.3473513,
+    "source": "osm",
+    "osm_site": "https://www.shiskinegolf.com/",
+    "official_site": "https://www.shiskinegolf.com/"
+  },
+  {
+    "name": "The Carrick Golf Course",
+    "lat": 56.0369379,
+    "lon": -4.6377964,
+    "source": "osm",
+    "osm_site": "https://www.thecarrick.com/",
+    "official_site": "https://www.thecarrick.com/"
+  },
+  {
+    "name": "Powfoot Golf Club",
+    "lat": 54.9770609,
+    "lon": -3.3419755,
+    "source": "osm",
+    "osm_site": "https://www.powfootgolfclub.com/",
+    "official_site": "https://www.powfootgolfclub.com/"
+  },
+  {
+    "name": "Whitemoss Golf Club",
+    "lat": 56.312388,
+    "lon": -3.6417011,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Hawick Golf Course",
+    "lat": 55.4072919,
+    "lon": -2.7984823,
+    "source": "osm",
+    "osm_site": "https://www.hawickgolfclub.com/",
+    "official_site": "https://www.hawickgolfclub.com/"
+  },
+  {
+    "name": "Craibstone Golf Course",
+    "lat": 57.182457,
+    "lon": -2.2320424,
+    "source": "osm",
+    "osm_site": "https://www.marshall-leisure.co.uk/",
+    "official_site": "https://www.marshall-leisure.co.uk/"
+  },
+  {
+    "name": "Cambuslang Golf Club",
+    "lat": 55.8213228,
+    "lon": -4.1607814,
+    "source": "osm",
+    "osm_site": "https://cambuslanggolf.co.uk/",
+    "official_site": "https://cambuslanggolf.co.uk/"
+  },
+  {
+    "name": "Wigtown and Bladnoch Golf Club",
+    "lat": 54.8642482,
+    "lon": -4.4497717,
+    "source": "osm",
+    "osm_site": "https://wigtownbladnoch.cw.sct.dotgolf.co.uk/home",
+    "official_site": "https://wigtownbladnoch.cw.sct.dotgolf.co.uk/home"
+  },
+  {
+    "name": "Leslie Golf Club",
+    "lat": 56.2044908,
+    "lon": -3.2189276,
+    "source": "osm",
+    "osm_site": "https://www.lesliegolfclub.co.uk/",
+    "official_site": "https://www.lesliegolfclub.co.uk/"
+  },
+  {
+    "name": "Tain Golf Club",
+    "lat": 57.8158047,
+    "lon": -4.0292411,
+    "source": "osm",
+    "osm_site": "https://tain-golfclub.co.uk/",
+    "official_site": "https://tain-golfclub.co.uk/"
+  },
+  {
+    "name": "Brora Golf Club",
+    "lat": 58.0233987,
+    "lon": -3.842989,
+    "source": "osm",
+    "osm_site": "https://www.broragolfclub.co.uk/",
+    "official_site": "https://www.broragolfclub.co.uk/"
+  },
+  {
+    "name": "Wick Golf Club",
+    "lat": 58.4932168,
+    "lon": -3.1335844,
+    "source": "osm",
+    "osm_site": "https://www.wickgolfclub.org.uk/",
+    "official_site": "https://www.wickgolfclub.org.uk/"
+  },
+  {
+    "name": "Stromness Golf Club",
+    "lat": 58.9523218,
+    "lon": -3.3014599,
+    "source": "osm",
+    "osm_site": "https://www.stromnessgc.co.uk/",
+    "official_site": "https://www.stromnessgc.co.uk/"
+  },
+  {
+    "name": "Isle of Skye Golf Club",
+    "lat": 57.3112957,
+    "lon": -6.0917929,
+    "source": "osm",
+    "osm_site": "https://www.isleofskyegolfclub.co.uk/",
+    "official_site": "https://www.isleofskyegolfclub.co.uk/"
+  },
+  {
+    "name": "Comann Goilf na Hearadh",
+    "lat": 57.8306588,
+    "lon": -7.0369328,
+    "source": "osm",
+    "osm_site": "https://www.harrisgolf.com/",
+    "official_site": "https://www.harrisgolf.com/"
+  },
+  {
+    "name": "Stranraer Golf Club",
+    "lat": 54.9250942,
+    "lon": -5.0638362,
+    "source": "osm",
+    "osm_site": "https://www.stranraergolfclub.net/",
+    "official_site": "https://www.stranraergolfclub.net/"
+  },
+  {
+    "name": "Portpatrick Dunskey Golf Club",
+    "lat": 54.8478127,
+    "lon": -5.1201148,
+    "source": "osm",
+    "osm_site": "https://www.portpatrickgolfclub.com/",
+    "official_site": "https://www.portpatrickgolfclub.com/"
+  },
+  {
+    "name": "Wigtownshire County Golf Course",
+    "lat": 54.8653746,
+    "lon": -4.8278994,
+    "source": "osm",
+    "osm_site": "https://wigtownshirecountygolfclub.com/",
+    "official_site": "https://wigtownshirecountygolfclub.com/"
+  },
+  {
+    "name": "St Medan Golf Club",
+    "lat": 54.7255296,
+    "lon": -4.5394577,
+    "source": "osm",
+    "osm_site": "https://www.stmedangolfclub.com/",
+    "official_site": "https://www.stmedangolfclub.com/"
+  },
+  {
+    "name": "Brighouse Bay Golf Club",
+    "lat": 54.7799313,
+    "lon": -4.1415451,
+    "source": "osm",
+    "osm_site": "https://www.brighousebay-golfclub.co.uk/",
+    "official_site": "https://www.brighousebay-golfclub.co.uk/"
+  },
+  {
+    "name": "Colvend Golf Club",
+    "lat": 54.878238,
+    "lon": -3.7383974,
+    "source": "osm",
+    "osm_site": "https://www.colvendgolfclub.co.uk/",
+    "official_site": "https://www.colvendgolfclub.co.uk/"
+  },
+  {
+    "name": "Arbroath Golf Course",
+    "lat": 56.5363672,
+    "lon": -2.6304408,
+    "source": "osm",
+    "osm_site": "https://www.arbroathgolfcourse.co.uk/",
+    "official_site": "https://www.arbroathgolfcourse.co.uk/"
+  },
+  {
+    "name": "Montrose Golf Links",
+    "lat": 56.7207001,
+    "lon": -2.4506106,
+    "source": "osm",
+    "osm_site": "https://montrosegolflinks.com/",
+    "official_site": "https://montrosegolflinks.com/"
+  },
+  {
+    "name": "Inverallochy Golf Club",
+    "lat": 57.668496,
+    "lon": -1.9195754,
+    "source": "osm",
+    "osm_site": "https://www.inverallochygolfclub.com/",
+    "official_site": "https://www.inverallochygolfclub.com/"
+  },
+  {
+    "name": "Fraserburgh Golf Club",
+    "lat": 57.6742651,
+    "lon": -1.9812047,
+    "source": "osm",
+    "osm_site": "https://fraserburghgolfclub.org/",
+    "official_site": "https://fraserburghgolfclub.org/"
+  },
+  {
+    "name": "Rosehearty Golf Club",
+    "lat": 57.6965936,
+    "lon": -2.1033546,
+    "source": "osm",
+    "osm_site": "https://www.roseheartygolfclub.com/",
+    "official_site": "https://www.roseheartygolfclub.com/"
+  },
+  {
+    "name": "Strathlene Golf Club",
+    "lat": 57.6923228,
+    "lon": -2.9181824,
+    "source": "osm",
+    "osm_site": "https://www.strathlenegolfclub.co.uk/",
+    "official_site": "https://www.strathlenegolfclub.co.uk/"
+  },
+  {
+    "name": "Buckpool Golf Club",
+    "lat": 57.6685679,
+    "lon": -2.9907264,
+    "source": "osm",
+    "osm_site": "https://buckpoolgolf.com/",
+    "official_site": "https://buckpoolgolf.com/"
+  },
+  {
+    "name": "Spey Bay Golf Course",
+    "lat": 57.6683777,
+    "lon": -3.0642943,
+    "source": "osm",
+    "osm_site": "https://www.linksdao.io/spey-bay",
+    "official_site": "https://www.linksdao.io/spey-bay"
+  },
+  {
+    "name": "Garmouth & Kingston Golf Course",
+    "lat": 57.6670934,
+    "lon": -3.1024905,
+    "source": "osm",
+    "osm_site": "https://garmouthkingstongolfclub.com/",
+    "official_site": "https://garmouthkingstongolfclub.com/"
+  },
+  {
+    "name": "Traigh Golf Course",
+    "lat": 56.9419635,
+    "lon": -5.8540629,
+    "source": "osm",
+    "osm_site": "https://www.traighgolf.co.uk/",
+    "official_site": "https://www.traighgolf.co.uk/"
+  },
+  {
+    "name": "Taynuilt Golf Club",
+    "lat": 56.434466,
+    "lon": -5.2412953,
+    "source": "osm",
+    "osm_site": "https://www.taynuiltgolfclub.co.uk/",
+    "official_site": "https://www.taynuiltgolfclub.co.uk/"
+  },
+  {
+    "name": "Gleneagles Golf Resort",
+    "lat": 56.2791972,
+    "lon": -3.7561935,
+    "source": "osm",
+    "osm_site": "https://www.gleneagles.com/golf",
+    "official_site": "https://www.gleneagles.com/golf"
+  },
+  {
+    "name": "Auchterarder Golf Club",
+    "lat": 56.2879046,
+    "lon": -3.727848,
+    "source": "osm",
+    "osm_site": "https://www.auchterardergolf.co.uk/home",
+    "official_site": "https://www.auchterardergolf.co.uk/home"
+  },
+  {
+    "name": "gWest golf course",
+    "lat": 56.2719115,
+    "lon": -3.7890195,
+    "source": "osm",
+    "osm_site": "https://www.gwest.co.uk/golf.php",
+    "official_site": "https://www.gwest.co.uk/golf.php"
+  },
+  {
+    "name": "Hollandbush Golf Course",
+    "lat": 55.6111932,
+    "lon": -3.8902109,
+    "source": "osm",
+    "osm_site": "https://www.hollandbushgolfclub.co.uk/",
+    "official_site": "https://www.hollandbushgolfclub.co.uk/"
+  },
+  {
+    "name": "Tillicoultry Golf Club",
+    "lat": 56.1554622,
+    "lon": -3.7561056,
+    "source": "osm",
+    "osm_site": "https://www.tillicoultrygolfclub.com/",
+    "official_site": "https://www.tillicoultrygolfclub.com/"
+  },
+  {
+    "name": "Kingsfield Golf Course",
+    "lat": 55.9840472,
+    "lon": -3.5543971,
+    "source": "osm",
+    "osm_site": "https://www.kingsfieldgolf.com/",
+    "official_site": "https://www.kingsfieldgolf.com/"
+  },
+  {
+    "name": "Strathendrick Golf Club",
+    "lat": 56.0556167,
+    "lon": -4.4454125,
+    "source": "osm",
+    "osm_site": "https://www.strathendrickgolfclub.co.uk/",
+    "official_site": "https://www.strathendrickgolfclub.co.uk/"
+  },
+  {
+    "name": "North Inch Golf Course",
+    "lat": 56.4092244,
+    "lon": -3.4368764,
+    "source": "osm",
+    "osm_site": "https://www.northinchgolf.co.uk/",
+    "official_site": "https://www.northinchgolf.co.uk/"
+  },
+  {
+    "name": "Crow Wood Golf Club",
+    "lat": 55.9019886,
+    "lon": -4.118787,
+    "source": "osm",
+    "osm_site": "https://www.crowwoodgolfclub.co.uk/",
+    "official_site": "https://www.crowwoodgolfclub.co.uk/"
+  },
+  {
+    "name": "Galashiels Golf Course",
+    "lat": 55.6241375,
+    "lon": -2.8000497,
+    "source": "osm",
+    "osm_site": "https://www.galashielsgolfclub.co.uk/",
+    "official_site": "https://www.galashielsgolfclub.co.uk/"
+  },
+  {
+    "name": "Blair Atholl Golf Club",
+    "lat": 56.7616011,
+    "lon": -3.8377804,
+    "source": "osm",
+    "osm_site": "https://www.blairathollgolf.co.uk/",
+    "official_site": "https://www.blairathollgolf.co.uk/"
+  },
+  {
+    "name": "Castle Park Golf Course",
+    "lat": 55.8888723,
+    "lon": -2.7227825,
+    "source": "osm",
+    "osm_site": "https://www.castleparkgolfclub.co.uk/",
+    "official_site": "https://www.castleparkgolfclub.co.uk/"
+  },
+  {
+    "name": "Largs Golf Course",
+    "lat": 55.7760285,
+    "lon": -4.8514824,
+    "source": "osm",
+    "osm_site": "https://www.largsgolfclub.co.uk/",
+    "official_site": "https://www.largsgolfclub.co.uk/"
+  },
+  {
+    "name": "Strathpeffer Spa Golf Club",
+    "lat": 57.5910566,
+    "lon": -4.5501265,
+    "source": "osm",
+    "osm_site": "https://www.strathpeffergolf.co.uk/",
+    "official_site": "https://www.strathpeffergolf.co.uk/"
+  },
+  {
+    "name": "Riverside Lodge Hotel Irvine Golf Course",
+    "lat": 55.6118993,
+    "lon": -4.6506504,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Wee Course",
+    "lat": 56.1751771,
+    "lon": -3.0676656,
+    "source": "osm",
+    "osm_site": "https://www.wellsgreen.co.uk/golf/wee-course/",
+    "official_site": "https://www.wellsgreen.co.uk/golf/wee-course/"
+  },
+  {
+    "name": "New Galloway Golf Club",
+    "lat": 55.0678722,
+    "lon": -4.1471177,
+    "source": "osm",
+    "osm_site": "https://newgallowaygolfclub.com/",
+    "official_site": "https://newgallowaygolfclub.com/"
+  },
+  {
+    "name": "Kingussie Golf Club",
+    "lat": 57.0914782,
+    "lon": -4.0529104,
+    "source": "osm",
+    "osm_site": "https://kingussiegolfclub.co.uk/",
+    "official_site": "https://kingussiegolfclub.co.uk/"
+  },
+  {
+    "name": "Bonar Bridge, Ardgay Golf Club",
+    "lat": 57.8917847,
+    "lon": -4.3271591,
+    "source": "osm",
+    "osm_site": "https://www.bbagc.co.uk/",
+    "official_site": "https://www.bbagc.co.uk/"
+  },
+  {
+    "name": "Ballindalloch Castle Golf Course",
+    "lat": 57.4027864,
+    "lon": -3.3659099,
+    "source": "osm",
+    "osm_site": "https://www.ballindallochcastlegolf.com/",
+    "official_site": "https://www.ballindallochcastlegolf.com/"
+  },
+  {
+    "name": "Whitehill House Golf Course",
+    "lat": 55.8469413,
+    "lon": -3.1250114,
+    "source": "osm",
+    "osm_site": "https://www.whitehillhousegolf.co.uk/",
+    "official_site": "https://www.whitehillhousegolf.co.uk/"
+  },
+  {
+    "name": "Strathaven Golf Club",
+    "lat": 55.6904494,
+    "lon": -4.0684111,
+    "source": "osm",
+    "osm_site": "https://www.strathavengc.com/",
+    "official_site": "https://www.strathavengc.com/"
+  },
+  {
+    "name": "Braemar Golf Club",
+    "lat": 56.9948,
+    "lon": -3.396839,
+    "source": "osm",
+    "osm_site": "https://www.braemargolfclub.co.uk/",
+    "official_site": "https://www.braemargolfclub.co.uk/"
+  },
+  {
+    "name": "Dalmally Golf Club",
+    "lat": 56.4069279,
+    "lon": -5.0118636,
+    "source": "osm",
+    "osm_site": "https://www.dalmallygolfclub.co.uk/",
+    "official_site": "https://www.dalmallygolfclub.co.uk/"
+  },
+  {
+    "name": "Auchterderran Golf Course",
+    "lat": 56.150684,
+    "lon": -3.2779795,
+    "source": "osm",
+    "osm_site": "https://fifegolftrust.co.uk/auchterderran-golf-course/",
+    "official_site": "https://fifegolftrust.co.uk/auchterderran-golf-course/"
+  },
+  {
+    "name": "St Michaels Golf Club",
+    "lat": 56.3884809,
+    "lon": -2.9003724,
+    "source": "osm",
+    "osm_site": "https://stmichaelsgolfclub.com/",
+    "official_site": "https://stmichaelsgolfclub.com/"
+  },
+  {
+    "name": "Comunn Goilf Bharraidh",
+    "lat": 57.0088368,
+    "lon": -7.5056573,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Raon Goilf Aisgernis",
+    "lat": 57.1849548,
+    "lon": -7.4150567,
+    "source": "osm",
+    "osm_site": "https://askernishgolfclub.com/",
+    "official_site": "https://askernishgolfclub.com/"
+  },
+  {
+    "name": "Lilliesleaf Golf Course",
+    "lat": 55.4925832,
+    "lon": -2.787542,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Melrose Golf Club",
+    "lat": 55.5868316,
+    "lon": -2.7289904,
+    "source": "osm",
+    "osm_site": "https://melrosegolfclub.co.uk/",
+    "official_site": "https://melrosegolfclub.co.uk/"
+  },
+  {
+    "name": "Woll Golf Course",
+    "lat": 55.4851896,
+    "lon": -2.8548357,
+    "source": "osm",
+    "osm_site": "https://www.wollgolf.co.uk/",
+    "official_site": "https://www.wollgolf.co.uk/"
+  },
+  {
+    "name": "Bute Golf Club",
+    "lat": 55.7584884,
+    "lon": -5.058245,
+    "source": "osm",
+    "osm_site": "https://www.butegolfclub.com/",
+    "official_site": "https://www.butegolfclub.com/"
+  },
+  {
+    "name": "Kingarrock Hickory Golf Course",
+    "lat": 56.2926992,
+    "lon": -3.0038563,
+    "source": "osm",
+    "osm_site": "https://www.nts.org.uk/visit/places/hill-of-tarvit-mansion/highlights/kingarrock-hickory-golf",
+    "official_site": "https://www.nts.org.uk/visit/places/hill-of-tarvit-mansion/highlights/kingarrock-hickory-golf"
+  },
+  {
+    "name": "Balfron Golf Club",
+    "lat": 56.0781247,
+    "lon": -4.3289485,
+    "source": "osm",
+    "osm_site": "https://www.balfrongolfsociety.org.uk/",
+    "official_site": "https://www.balfrongolfsociety.org.uk/"
+  },
+  {
+    "name": "Gifford Golf Club",
+    "lat": 55.8956452,
+    "lon": -2.7590832,
+    "source": "osm",
+    "osm_site": "https://www.giffordgolfclub.com/",
+    "official_site": "https://www.giffordgolfclub.com/"
+  },
+  {
+    "name": "Newcastleton Golf Course",
+    "lat": 55.1802135,
+    "lon": -2.8257009,
+    "source": "osm",
+    "osm_site": "https://www.visitnewcastleton.com/content/newcastleton-golf-club",
+    "official_site": "https://www.visitnewcastleton.com/content/newcastleton-golf-club"
+  },
+  {
+    "name": "Lamlash Golf Club",
+    "lat": 55.5456052,
+    "lon": -5.1288983,
+    "source": "osm",
+    "osm_site": "https://www.lamlashgolfclub.com/",
+    "official_site": "https://www.lamlashgolfclub.com/"
+  },
+  {
+    "name": "New Cumnock Golf Course",
+    "lat": 55.4074932,
+    "lon": -4.2021201,
+    "source": "osm",
+    "osm_site": "https://members.tripod.com/bob_newcumnock/golf/welcomex.html",
+    "official_site": "https://members.tripod.com/bob_newcumnock/golf/welcomex.html"
+  },
+  {
+    "name": "Doon Valley Golf Club",
+    "lat": 55.3609484,
+    "lon": -4.4919966,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ballochmyle Golf Club",
+    "lat": 55.5048242,
+    "lon": -4.3522605,
+    "source": "osm",
+    "osm_site": "https://ballochmylegolfclub.com/",
+    "official_site": "https://ballochmylegolfclub.com/"
+  },
+  {
+    "name": "Newton Stewart Golf Club",
+    "lat": 54.9647468,
+    "lon": -4.4733931,
+    "source": "osm",
+    "osm_site": "https://www.newtonstewartgolfclub.co.uk/",
+    "official_site": "https://www.newtonstewartgolfclub.co.uk/"
+  },
+  {
+    "name": "Brunston Castle Golf Club",
+    "lat": 55.2719368,
+    "lon": -4.7394416,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Maybole Golf Course",
+    "lat": 55.3484384,
+    "lon": -4.6885939,
+    "source": "osm",
+    "osm_site": "https://www.maybolegolf.com/",
+    "official_site": "https://www.maybolegolf.com/"
+  },
+  {
+    "name": "Roodlea Golf Course",
+    "lat": 55.4418682,
+    "lon": -4.5434513,
+    "source": "osm",
+    "osm_site": "https://www.roodleagolf.co.uk/",
+    "official_site": "https://www.roodleagolf.co.uk/"
+  },
+  {
+    "name": "Whalsay Golf Club",
+    "lat": 60.3787945,
+    "lon": -0.9146068,
+    "source": "osm",
+    "osm_site": "https://www.whalsaygolfclub.co.uk/",
+    "official_site": "https://www.whalsaygolfclub.co.uk/"
+  },
+  {
+    "name": "Port Bannatyne Golf Club",
+    "lat": 55.8567604,
+    "lon": -5.0901688,
+    "source": "osm",
+    "osm_site": "https://portbannatynegolfclub.co.uk/",
+    "official_site": "https://portbannatynegolfclub.co.uk/"
+  },
+  {
+    "name": "St. Stephen\u2019s Primary School golf course",
+    "lat": 55.8544376,
+    "lon": -3.9993658,
+    "source": "osm",
+    "osm_site": "https://blogs.glowscotland.org.uk/nl/ststephensprimary/",
+    "official_site": "https://blogs.glowscotland.org.uk/nl/ststephensprimary/"
+  },
+  {
+    "name": "Edzell Golf Club",
+    "lat": 56.7998447,
+    "lon": -2.6612186,
+    "source": "osm",
+    "osm_site": "https://www.edzellgolfclub.com/",
+    "official_site": "https://www.edzellgolfclub.com/"
+  },
+  {
+    "name": "Millport Golf Course",
+    "lat": 55.7652064,
+    "lon": -4.9327676,
+    "source": "osm",
+    "osm_site": "https://millportgolfclub.co.uk/",
+    "official_site": "https://millportgolfclub.co.uk/"
+  },
+  {
+    "name": "Kelly Castle golf course",
+    "lat": 56.5508195,
+    "lon": -2.6401803,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Craigtoun Course",
+    "lat": 56.3194159,
+    "lon": -2.8443965,
+    "source": "osm",
+    "osm_site": "https://www.standrews.com/golf/courses/the-craigtoun-course",
+    "official_site": "https://www.standrews.com/golf/courses/the-craigtoun-course"
+  },
+  {
+    "name": "Carrbridge Golf Club",
+    "lat": 57.2877644,
+    "lon": -3.8135906,
+    "source": "osm",
+    "osm_site": "https://carrbridgegolf.co.uk/",
+    "official_site": "https://carrbridgegolf.co.uk/"
+  },
+  {
+    "name": "Ballumbie Castle Golf Course",
+    "lat": 56.4978435,
+    "lon": -2.9044847,
+    "source": "osm",
+    "osm_site": "https://www.ballumbiegolf.co.uk/",
+    "official_site": "https://www.ballumbiegolf.co.uk/"
+  },
+  {
+    "name": "Corrie Golf Club",
+    "lat": 55.6636092,
+    "lon": -5.1610617,
+    "source": "osm",
+    "osm_site": "https://www.golfonarran.com/",
+    "official_site": "https://www.golfonarran.com/"
+  },
+  {
+    "name": "Forbes of Kingennie Golf Course",
+    "lat": 56.5159955,
+    "lon": -2.8443961,
+    "source": "osm",
+    "osm_site": "https://forbesofkingennie.co.uk/",
+    "official_site": "https://forbesofkingennie.co.uk/"
+  },
+  {
+    "name": "Inchmarlo Golf Resort",
+    "lat": 57.0589054,
+    "lon": -2.5339817,
+    "source": "osm",
+    "osm_site": "https://www.inchmarlogolf.co.uk/",
+    "official_site": "https://www.inchmarlogolf.co.uk/"
+  },
+  {
+    "name": "Dufftown Golf Club",
+    "lat": 57.4404442,
+    "lon": -3.1582973,
+    "source": "osm",
+    "osm_site": "https://dufftowngolfclub.com/",
+    "official_site": "https://dufftowngolfclub.com/"
+  },
+  {
+    "name": "Bishopshire Golf Club",
+    "lat": 56.2090321,
+    "lon": -3.3232475,
+    "source": "osm",
+    "osm_site": "https://www.bishopshiregolf.club/",
+    "official_site": "https://www.bishopshiregolf.club/"
+  },
+  {
+    "name": "Campbelltown Putting Green",
+    "lat": 55.4220026,
+    "lon": -5.6002042,
+    "source": "osm",
+    "osm_site": "https://www.skdt.org/putting-green/",
+    "official_site": "https://www.skdt.org/putting-green/"
+  },
+  {
+    "name": "Biggar Golf Club",
+    "lat": 55.6190438,
+    "lon": -3.5123627,
+    "source": "osm",
+    "osm_site": "https://www.biggargolfclub.co.uk/",
+    "official_site": "https://www.biggargolfclub.co.uk/"
+  },
+  {
+    "name": "Auchenharvie Golf Course",
+    "lat": 55.6355054,
+    "lon": -4.7687485,
+    "source": "osm",
+    "osm_site": "https://kaleisure.com/location/auchenharvie-golf-course/",
+    "official_site": "https://kaleisure.com/location/auchenharvie-golf-course/"
+  },
+  {
+    "name": "Seton Sands 9 Hole Golf Course",
+    "lat": 55.9668033,
+    "lon": -2.9267084,
+    "source": "osm",
+    "osm_site": "https://www.haven.com/parks/scotland/seton-sands",
+    "official_site": "https://www.haven.com/parks/scotland/seton-sands"
+  },
+  {
+    "name": "Irvine Golf Club",
+    "lat": 55.6255956,
+    "lon": -4.6891705,
+    "source": "osm",
+    "osm_site": "https://www.theirvinegolfclub.co.uk/",
+    "official_site": "https://www.theirvinegolfclub.co.uk/"
+  },
+  {
+    "name": "Ardeer Golf Club",
+    "lat": 55.6578657,
+    "lon": -4.75388,
+    "source": "osm",
+    "osm_site": "https://ardeergolfclub.co.uk/",
+    "official_site": "https://ardeergolfclub.co.uk/"
+  },
+  {
+    "name": "Cowal Golf Club",
+    "lat": 55.9658328,
+    "lon": -4.9224019,
+    "source": "osm",
+    "osm_site": "https://www.cowalgolfclub.online/",
+    "official_site": "https://www.cowalgolfclub.online/"
+  },
+  {
+    "name": "Dunecht House Golf Club",
+    "lat": 57.1585988,
+    "lon": -2.4094974,
+    "source": "osm",
+    "osm_site": "https://www.dunechthousegolfclub.co.uk/",
+    "official_site": "https://www.dunechthousegolfclub.co.uk/"
+  },
+  {
+    "name": "St Fillans Golf Club",
+    "lat": 56.3888253,
+    "lon": -4.1016837,
+    "source": "osm",
+    "osm_site": "https://www.st-fillans-golf.com/",
+    "official_site": "https://www.st-fillans-golf.com/"
+  },
+  {
+    "name": "Buchanan Castle Golf Club",
+    "lat": 56.0635381,
+    "lon": -4.4803593,
+    "source": "osm",
+    "osm_site": "https://www.buchanancastlegolfclub.co.uk/",
+    "official_site": "https://www.buchanancastlegolfclub.co.uk/"
+  },
+  {
+    "name": "Cathcart Castle Golf Course",
+    "lat": 55.7885404,
+    "lon": -4.2995814,
+    "source": "osm",
+    "osm_site": "https://www.cathcartcastle.net/",
+    "official_site": "https://www.cathcartcastle.net/"
+  },
+  {
+    "name": "East Renfrewshire Golf Club",
+    "lat": 55.7555851,
+    "lon": -4.367665,
+    "source": "osm",
+    "osm_site": "https://www.eastrengolfclub.co.uk/",
+    "official_site": "https://www.eastrengolfclub.co.uk/"
+  },
+  {
+    "name": "Atholl Palace Hotel Pitch and Putt course",
+    "lat": 56.6995576,
+    "lon": -3.7162226,
+    "source": "osm",
+    "osm_site": "https://www.athollpalace.com/attractions/putting-green/",
+    "official_site": "https://www.athollpalace.com/attractions/putting-green/"
+  },
+  {
+    "name": "Williamwood Golf Club",
+    "lat": 55.7955679,
+    "lon": -4.2794304,
+    "source": "osm",
+    "osm_site": "https://www.williamwoodgc.co.uk/",
+    "official_site": "https://www.williamwoodgc.co.uk/"
+  },
+  {
+    "name": "Rutherford Castle Golf Course",
+    "lat": 55.7700401,
+    "lon": -3.3374444,
+    "source": "osm",
+    "osm_site": "https://rutherfordcastlegc.org.uk/",
+    "official_site": "https://rutherfordcastlegc.org.uk/"
+  },
+  {
+    "name": "Irvine Ravenspark Golf Club",
+    "lat": 55.632177,
+    "lon": -4.6821751,
+    "source": "osm",
+    "osm_site": "https://www.irgc.co.uk/",
+    "official_site": "https://www.irgc.co.uk/"
+  },
+  {
+    "name": "Broadlees Golf Course",
+    "lat": 55.7120623,
+    "lon": -4.1039734,
+    "source": "osm",
+    "osm_site": "https://www.broadleesgolf.co.uk/",
+    "official_site": "https://www.broadleesgolf.co.uk/"
+  },
+  {
+    "name": "Glencruitten Golf Club",
+    "lat": 56.4117457,
+    "lon": -5.4533991,
+    "source": "osm",
+    "osm_site": "https://www.golfoban.com/",
+    "official_site": "https://www.golfoban.com/"
+  },
+  {
+    "name": "Douglas Water Golf Course",
+    "lat": 55.5916106,
+    "lon": -3.7865308,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Thurso Golf Club",
+    "lat": 58.5826497,
+    "lon": -3.5523179,
+    "source": "osm",
+    "osm_site": "https://thursogolfclub.co.uk/",
+    "official_site": "https://thursogolfclub.co.uk/"
+  },
+  {
+    "name": "The Pine Lodge Golf Centre",
+    "lat": 57.252587,
+    "lon": -2.4164232,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Foulford Inn Golf Course",
+    "lat": 56.4202449,
+    "lon": -3.7842242,
+    "source": "osm",
+    "osm_site": "https://foulfordinn.co.uk/",
+    "official_site": "https://foulfordinn.co.uk/"
+  },
+  {
+    "name": "Rowallan Castle Golf Course",
+    "lat": 55.6495314,
+    "lon": -4.4945334,
+    "source": "osm",
+    "osm_site": "https://rowallancastle.com/rowallan-championship-golf-course-ayrshire/",
+    "official_site": "https://rowallancastle.com/rowallan-championship-golf-course-ayrshire/"
+  },
+  {
+    "name": "Dalbeattie Golf Club",
+    "lat": 54.9410261,
+    "lon": -3.8298372,
+    "source": "osm",
+    "osm_site": "https://www.dalbeattiegolfclub.co.uk/",
+    "official_site": "https://www.dalbeattiegolfclub.co.uk/"
+  },
+  {
+    "name": "Fort Augustus Golf Club",
+    "lat": 57.1381201,
+    "lon": -4.6942911,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Charleton Golf Club",
+    "lat": 56.2226571,
+    "lon": -2.8672653,
+    "source": "osm",
+    "osm_site": "https://charleton.co.uk/",
+    "official_site": "https://charleton.co.uk/"
+  },
+  {
+    "name": "Vale of Leven Golf Club",
+    "lat": 55.9918527,
+    "lon": -4.5558638,
+    "source": "osm",
+    "osm_site": "https://www.volgc.org/",
+    "official_site": "https://www.volgc.org/"
+  },
+  {
+    "name": "Kingsbarns Golf Links",
+    "lat": 56.2994358,
+    "lon": -2.6413124,
+    "source": "osm",
+    "osm_site": "https://www.kingsbarns.com/",
+    "official_site": "https://www.kingsbarns.com/"
+  },
+  {
+    "name": "Pitlochry Putting Green",
+    "lat": 56.7038154,
+    "lon": -3.7411245,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Meldrum House Golf Course",
+    "lat": 57.3524312,
+    "lon": -2.3141866,
+    "source": "osm",
+    "osm_site": "https://www.meldrumhouse.com/golf/",
+    "official_site": "https://www.meldrumhouse.com/golf/"
+  },
+  {
+    "name": "Loch of Aboyne Golf Course",
+    "lat": 57.0901719,
+    "lon": -2.7619182,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Feddinch Mains",
+    "lat": 56.3158902,
+    "lon": -2.8303411,
+    "source": "osm",
+    "osm_site": "https://amgolf.consultationonline.co.uk/",
+    "official_site": "https://amgolf.consultationonline.co.uk/"
+  },
+  {
+    "name": "Callendar Park Golf Course",
+    "lat": 55.9942498,
+    "lon": -3.7744549,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Struie Course",
+    "lat": 57.8734071,
+    "lon": -4.0339614,
+    "source": "osm",
+    "osm_site": "https://royaldornoch.com/struie-course/",
+    "official_site": "https://royaldornoch.com/struie-course/"
+  },
+  {
+    "name": "Kirkcudbright Golf Course",
+    "lat": 54.8436283,
+    "lon": -4.0353185,
+    "source": "osm",
+    "osm_site": "https://www.kirkcudbrightgolf.co.uk/",
+    "official_site": "https://www.kirkcudbrightgolf.co.uk/"
+  },
+  {
+    "name": "Alness Golf Club",
+    "lat": 57.7052408,
+    "lon": -4.2638763,
+    "source": "osm",
+    "osm_site": "https://www.alnessgolf.co.uk/",
+    "official_site": "https://www.alnessgolf.co.uk/"
+  },
+  {
+    "name": "Colonsay Golf Club",
+    "lat": 56.0611026,
+    "lon": -6.2441065,
+    "source": "osm",
+    "osm_site": "https://www.colonsay.org.uk/Things-to-Do/Golf",
+    "official_site": "https://www.colonsay.org.uk/Things-to-Do/Golf"
+  },
+  {
+    "name": "Dumbarnie Links",
+    "lat": 56.2081078,
+    "lon": -2.8919786,
+    "source": "osm",
+    "osm_site": "https://dumbarnielinks.com/",
+    "official_site": "https://dumbarnielinks.com/"
+  },
+  {
+    "name": "Abernethy Golf club",
+    "lat": 57.2715495,
+    "lon": -3.6499087,
+    "source": "osm",
+    "osm_site": "https://www.abernethygolfclub.com/",
+    "official_site": "https://www.abernethygolfclub.com/"
+  },
+  {
+    "name": "Lochwinnoch Golf Club",
+    "lat": 55.7989675,
+    "lon": -4.6418245,
+    "source": "osm",
+    "osm_site": "https://www.lochwinnochgolf.co.uk/",
+    "official_site": "https://www.lochwinnochgolf.co.uk/"
+  },
+  {
+    "name": "Kilmacolm Golf Club",
+    "lat": 55.8894877,
+    "lon": -4.6081186,
+    "source": "osm",
+    "osm_site": "https://www.kilmacolmgolfclub.com/",
+    "official_site": "https://www.kilmacolmgolfclub.com/"
+  },
+  {
+    "name": "Craggan Golf Course",
+    "lat": 57.3118093,
+    "lon": -3.6262666,
+    "source": "osm",
+    "osm_site": "https://www.cairngormsactivities.co.uk/golf",
+    "official_site": "https://www.cairngormsactivities.co.uk/golf"
+  },
+  {
+    "name": "Spey Valley 9-hole Academy Golf Course",
+    "lat": 57.1963154,
+    "lon": -3.8107007,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Langholm Golf Club",
+    "lat": 55.1511422,
+    "lon": -2.9905514,
+    "source": "osm",
+    "osm_site": "https://www.langholmgolfclub.co.uk/",
+    "official_site": "https://www.langholmgolfclub.co.uk/"
+  },
+  {
+    "name": "Covesea Links",
+    "lat": 57.7208799,
+    "lon": -3.3595062,
+    "source": "osm",
+    "osm_site": "https://covesealinks.com/",
+    "official_site": "https://covesealinks.com/"
+  },
+  {
+    "name": "Hoddom Castle Caravan Site golf course",
+    "lat": 55.0453783,
+    "lon": -3.3176843,
+    "source": "osm",
+    "osm_site": "https://www.hoddomcastle.co.uk/",
+    "official_site": "https://www.hoddomcastle.co.uk/"
+  },
+  {
+    "name": "Lybster Golf Club",
+    "lat": 58.3040876,
+    "lon": -3.2823502,
+    "source": "osm",
+    "osm_site": "https://lybstergolfclub.co.uk/",
+    "official_site": "https://lybstergolfclub.co.uk/"
+  },
+  {
+    "name": "Helmsdale Community Golf Club",
+    "lat": 58.1240738,
+    "lon": -3.6585002,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Beechbank 6-hole course",
+    "lat": 57.2246742,
+    "lon": -2.4564302,
+    "source": "osm",
+    "osm_site": "https://www.kemnaygolfclub.co.uk/copy-of-championship-course",
+    "official_site": "https://www.kemnaygolfclub.co.uk/copy-of-championship-course"
+  },
+  {
+    "name": "Turriff Golf Club",
+    "lat": 57.5377995,
+    "lon": -2.4810014,
+    "source": "osm",
+    "osm_site": "https://www.turriffgolfclub.com/",
+    "official_site": "https://www.turriffgolfclub.com/"
+  },
+  {
+    "name": "Craigknowes Golf Course",
+    "lat": 54.8882566,
+    "lon": -3.8075855,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Loudoun Gowf Club",
+    "lat": 55.6057288,
+    "lon": -4.363788,
+    "source": "osm",
+    "osm_site": "https://www.loudoungowfclub.co.uk/",
+    "official_site": "https://www.loudoungowfclub.co.uk/"
+  },
+  {
+    "name": "Muirkirk Golf Club",
+    "lat": 55.5113868,
+    "lon": -4.0727357,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Westray Golf Club",
+    "lat": 59.3257587,
+    "lon": -3.0000016,
+    "source": "osm",
+    "osm_site": "https://westraygolf.org/",
+    "official_site": "https://westraygolf.org/"
+  },
+  {
+    "name": "Auchenblae Golf Course",
+    "lat": 56.9036448,
+    "lon": -2.4401106,
+    "source": "osm",
+    "osm_site": "https://www.auchenblaegolfcourse.co.uk",
+    "official_site": "https://www.auchenblaegolfcourse.co.uk"
+  },
+  {
+    "name": "Kilspindie Golf Club",
+    "lat": 56.0096657,
+    "lon": -2.881928,
+    "source": "osm",
+    "osm_site": "https://kilspindiegolfclub.co.uk/",
+    "official_site": "https://kilspindiegolfclub.co.uk/"
+  },
+  {
+    "name": "Dunkeld and Birnam Golf Club",
+    "lat": 56.5705265,
+    "lon": -3.569021,
+    "source": "osm",
+    "osm_site": "https://www.dunkeldandbirnamgolfclub.co.uk/",
+    "official_site": "https://www.dunkeldandbirnamgolfclub.co.uk/"
+  },
+  {
+    "name": "Craignure Golf Club",
+    "lat": 56.4831406,
+    "lon": -5.7300685,
+    "source": "osm",
+    "osm_site": "https://craignuregolfclub.co.uk/",
+    "official_site": "https://craignuregolfclub.co.uk/"
+  },
+  {
+    "name": "Tobermory Golf Club",
+    "lat": 56.6289294,
+    "lon": -6.0642467,
+    "source": "osm",
+    "osm_site": "https://www.tobermorygolfclub.com/",
+    "official_site": "https://www.tobermorygolfclub.com/"
+  },
+  {
+    "name": "The Machrie",
+    "lat": 55.6643758,
+    "lon": -6.2558669,
+    "source": "osm",
+    "osm_site": "https://islaygolfclub.co.uk/",
+    "official_site": "https://islaygolfclub.co.uk/"
+  },
+  {
+    "name": "Beginners Golf Course",
+    "lat": 55.8902068,
+    "lon": -3.1132548,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Kintore Golf Club",
+    "lat": 57.2431114,
+    "lon": -2.3207408,
+    "source": "osm",
+    "osm_site": "https://www.kintoregolfclub.net/",
+    "official_site": "https://www.kintoregolfclub.net/"
+  },
+  {
+    "name": "Gullane Golf Club",
+    "lat": 56.0304657,
+    "lon": -2.845598,
+    "source": "osm",
+    "osm_site": "https://gullanegolfclub.com/",
+    "official_site": "https://gullanegolfclub.com/"
+  },
+  {
+    "name": "Vaul Golf Club",
+    "lat": 56.5322503,
+    "lon": -6.7908114,
+    "source": "osm",
+    "osm_site": "https://vaulgolfclub.co.uk/",
+    "official_site": "https://vaulgolfclub.co.uk/"
+  },
+  {
+    "name": "Rothesay Golf Club",
+    "lat": 55.8329212,
+    "lon": -5.0409677,
+    "source": "osm",
+    "osm_site": "https://www.rothesaygolfclub.co.uk/",
+    "official_site": "https://www.rothesaygolfclub.co.uk/"
+  },
+  {
+    "name": "Uig Lodge golf course",
+    "lat": 58.1881348,
+    "lon": -7.0146121,
+    "source": "osm",
+    "osm_site": "https://www.uiglodge.co.uk/",
+    "official_site": "https://www.uiglodge.co.uk/"
+  },
+  {
+    "name": "Gordonstoun Golf Course",
+    "lat": 57.7068086,
+    "lon": -3.3561432,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Bogside House golf course",
+    "lat": 55.5151661,
+    "lon": -4.5532474,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Routenburn Golf Club",
+    "lat": 55.8211617,
+    "lon": -4.875485,
+    "source": "osm",
+    "osm_site": "https://www.routenburngolfclub.co.uk/",
+    "official_site": "https://www.routenburngolfclub.co.uk/"
+  },
+  {
+    "name": "Whinhill Golf Course",
+    "lat": 55.9326317,
+    "lon": -4.760952,
+    "source": "osm",
+    "osm_site": "https://ilactivegolf.com/",
+    "official_site": "https://ilactivegolf.com/"
+  },
+  {
+    "name": "Medal Course",
+    "lat": 56.4854119,
+    "lon": -2.7963556,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Ashludie Course",
+    "lat": 56.4859625,
+    "lon": -2.8012555,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lochgilphead Golf Club",
+    "lat": 56.0438084,
+    "lon": -5.4126526,
+    "source": "osm",
+    "osm_site": "https://www.lochgilpheadgolfclub.co.uk/",
+    "official_site": "https://www.lochgilpheadgolfclub.co.uk/"
+  },
+  {
+    "name": "Balmoral Estate 9-hole golf course",
+    "lat": 57.0350902,
+    "lon": -3.218303,
+    "source": "osm",
+    "osm_site": "https://balmoralcastle.com/visiting/balmoral-estate/golf",
+    "official_site": "https://balmoralcastle.com/visiting/balmoral-estate/golf"
+  },
+  {
+    "name": "Kinloss Golf Course",
+    "lat": 57.6513225,
+    "lon": -3.515943,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Wee course",
+    "lat": 55.6631374,
+    "lon": -6.2539529,
+    "source": "osm",
+    "osm_site": "https://another.place/the-machrie/golf/the-wee-course",
+    "official_site": "https://another.place/the-machrie/golf/the-wee-course"
+  },
+  {
+    "name": "Kyles of Bute Golf Club",
+    "lat": 55.8880683,
+    "lon": -5.2473303,
+    "source": "osm",
+    "osm_site": "https://www.kylesofbutegolfclub.co.uk/",
+    "official_site": "https://www.kylesofbutegolfclub.co.uk/"
+  },
+  {
+    "name": "B. A.  Club Pitch and Putt",
+    "lat": 56.832321,
+    "lon": -5.079273,
+    "source": "osm",
+    "osm_site": "https://www.facebook.com/pages/BA-Club/151694704870059",
+    "official_site": "https://www.facebook.com/pages/BA-Club/151694704870059"
+  },
+  {
+    "name": "The Baird Course",
+    "lat": 56.192833,
+    "lon": -2.8275815,
+    "source": "osm",
+    "osm_site": "https://www.eliesportsclub.co.uk/golf",
+    "official_site": "https://www.eliesportsclub.co.uk/golf"
+  },
+  {
+    "name": "Dunes Golf Centre",
+    "lat": 57.6765033,
+    "lon": -1.9952178,
+    "source": "osm",
+    "osm_site": "https://dunesgolfcentre.co.uk/",
+    "official_site": "https://dunesgolfcentre.co.uk/"
+  },
+  {
+    "name": "Ardfin Golf Course",
+    "lat": 55.7998414,
+    "lon": -6.0206841,
+    "source": "osm",
+    "osm_site": "https://www.ardfin.com/golf/",
+    "official_site": "https://www.ardfin.com/golf/"
+  },
+  {
+    "name": "Heads of Ayr Golf Course",
+    "lat": 55.4299221,
+    "lon": -4.6942953,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Craigtoun Country Park Course",
+    "lat": 56.3174881,
+    "lon": -2.8406695,
+    "source": "osm",
+    "osm_site": "https://www.friendsofcraigtoun.org.uk/attractions/park-golf",
+    "official_site": "https://www.friendsofcraigtoun.org.uk/attractions/park-golf"
+  },
+  {
+    "name": "Pitch and Putt Course",
+    "lat": 55.3143474,
+    "lon": -4.8312441,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Montgomery",
+    "lat": 56.2097799,
+    "lon": -3.4128147,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Bruce",
+    "lat": 56.21264,
+    "lon": -3.4146602,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Craighead Links",
+    "lat": 56.2764124,
+    "lon": -2.596805,
+    "source": "osm",
+    "osm_site": "https://crailgolfingsociety.co.uk/golf/craighead-links/",
+    "official_site": "https://crailgolfingsociety.co.uk/golf/craighead-links/"
+  },
+  {
+    "name": "Balcomie Links",
+    "lat": 56.2828454,
+    "lon": -2.6011938,
+    "source": "osm",
+    "osm_site": "https://crailgolfingsociety.co.uk/golf/balcomie-links/",
+    "official_site": "https://crailgolfingsociety.co.uk/golf/balcomie-links/"
+  },
+  {
+    "name": "Portland Course",
+    "lat": 55.5280197,
+    "lon": -4.6388557,
+    "source": "osm",
+    "osm_site": "https://www.royaltroon.co.uk/the-courses/portland-course/",
+    "official_site": "https://www.royaltroon.co.uk/the-courses/portland-course/"
+  },
+  {
+    "name": "2019 Course",
+    "lat": 56.1369514,
+    "lon": -3.1583984,
+    "source": "osm",
+    "osm_site": "https://fifegolftrust.co.uk/dunnikier-golf-course/",
+    "official_site": "https://fifegolftrust.co.uk/dunnikier-golf-course/"
+  },
+  {
+    "name": "Torrance Course",
+    "lat": 56.32156,
+    "lon": -2.7314506,
+    "source": "osm",
+    "osm_site": "https://www.standrewsbay.com/",
+    "official_site": "https://www.standrewsbay.com/"
+  },
+  {
+    "name": "The Carnoustie Buddon Course",
+    "lat": 56.4913985,
+    "lon": -2.7298414,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Carnoustie Championship Course",
+    "lat": 56.4935515,
+    "lon": -2.7271971,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Nestie",
+    "lat": 56.4953445,
+    "lon": -2.7171176,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Halkett Course",
+    "lat": 56.0608137,
+    "lon": -3.5031561,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Cowden",
+    "lat": 56.1840931,
+    "lon": -3.6136568,
+    "source": "osm",
+    "osm_site": "https://www.muckhartgolf.com/",
+    "official_site": "https://www.muckhartgolf.com/"
+  },
+  {
+    "name": "Arndean",
+    "lat": 56.1804499,
+    "lon": -3.6021328,
+    "source": "osm",
+    "osm_site": "https://www.muckhartgolf.com/",
+    "official_site": "https://www.muckhartgolf.com/"
+  },
+  {
+    "name": "Loch Lomond Golf Course",
+    "lat": 56.0646353,
+    "lon": -4.6357318,
+    "source": "osm",
+    "osm_site": "https://www.lochlomond.com/",
+    "official_site": "https://www.lochlomond.com/"
+  },
+  {
+    "name": "Kempston Course",
+    "lat": 57.6570484,
+    "lon": -3.1691085,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Wee Course",
+    "lat": 56.5716573,
+    "lon": -3.3423571,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Rosemount Course",
+    "lat": 56.5689204,
+    "lon": -3.3375519,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Lansdowne Course",
+    "lat": 56.5680998,
+    "lon": -3.3321856,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Dornock Course",
+    "lat": 56.383612,
+    "lon": -3.8200077,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "The Ferntower Coure",
+    "lat": 56.3835966,
+    "lon": -3.8264434,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Skeabost Golf Club",
+    "lat": 57.4534596,
+    "lon": -6.3106848,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Rothes Golf Course",
+    "lat": 57.5233699,
+    "lon": -3.223092,
+    "source": "osm",
+    "osm_site": "https://www.rothesgolfclub.co.uk/",
+    "official_site": "https://www.rothesgolfclub.co.uk/"
+  },
+  {
+    "name": "Crieff Hydro Golf Course",
+    "lat": 56.3898949,
+    "lon": -3.8409357,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Craigmillar Park Golf Club",
+    "lat": 55.9218357,
+    "lon": -3.1777149,
+    "source": "osm",
+    "osm_site": "https://www.craigmillarpark.co.uk",
+    "official_site": "https://www.craigmillarpark.co.uk"
+  },
+  {
+    "name": "Aigas Golf Course",
+    "lat": 57.4407262,
+    "lon": -4.5633891,
+    "source": "osm",
+    "osm_site": "https://aigasgolfcourse.co.uk/",
+    "official_site": "https://aigasgolfcourse.co.uk/"
+  },
+  {
+    "name": "Kelso Golf Club",
+    "lat": 55.6124425,
+    "lon": -2.4315147,
+    "source": "osm",
+    "osm_site": "https://www.kelsogolfclub.co.uk/",
+    "official_site": "https://www.kelsogolfclub.co.uk/"
+  },
+  {
+    "name": "Muir of Ord Golf Club",
+    "lat": 57.51144,
+    "lon": -4.4599603,
+    "source": "osm",
+    "osm_site": "https://www.muirofordgolfclub.co.uk/",
+    "official_site": "https://www.muirofordgolfclub.co.uk/"
+  },
+  {
+    "name": "Lochcarron Golf Course",
+    "lat": 57.4155408,
+    "lon": -5.4725826,
+    "source": "osm",
+    "osm_site": "https://lochcarrongolfclub.co.uk/",
+    "official_site": "https://lochcarrongolfclub.co.uk/"
+  },
+  {
+    "name": "Dunbar Golf Club",
+    "lat": 55.993159,
+    "lon": -2.4848121,
+    "source": "osm",
+    "osm_site": "https://www.dunbargolfclub.com/",
+    "official_site": "https://www.dunbargolfclub.com/"
+  },
+  {
+    "name": "Musselburgh Links, The Old Golf Course",
+    "lat": 55.9465857,
+    "lon": -3.0362931,
+    "source": "osm",
+    "osm_site": "https://www.musselburgholdlinks.co.uk/",
+    "official_site": "https://www.musselburgholdlinks.co.uk/"
+  },
+  {
+    "name": "Mortonhall Golf Course",
+    "lat": 55.9090551,
+    "lon": -3.1972156,
+    "source": "osm",
+    "osm_site": "https://www.mortonhallgc.co.uk/",
+    "official_site": "https://www.mortonhallgc.co.uk/"
+  },
+  {
+    "name": "Drimsynie Estate Golf Course Lochgoilhead",
+    "lat": 56.1719209,
+    "lon": -4.9077662,
+    "source": "osm",
+    "osm_site": "https://www.argyllholidays.com/parks/drimsynie-estate-holiday-village",
+    "official_site": "https://www.argyllholidays.com/parks/drimsynie-estate-holiday-village"
+  },
+  {
+    "name": "Merchants of Edinburgh Golf Club",
+    "lat": 55.9186569,
+    "lon": -3.2310321,
+    "source": "osm",
+    "osm_site": "https://www.merchantsgolf.com/",
+    "official_site": "https://www.merchantsgolf.com/"
+  },
+  {
+    "name": "Practise area",
+    "lat": 56.1191334,
+    "lon": -3.950204,
+    "source": "osm",
+    "osm_site": "https://www.stirlinggolfclub.com/",
+    "official_site": "https://www.stirlinggolfclub.com/"
+  },
+  {
+    "name": "Stirling Golf Club",
+    "lat": 56.115696,
+    "lon": -3.9564922,
+    "source": "osm",
+    "osm_site": "https://www.stirlinggolfclub.com/",
+    "official_site": "https://www.stirlinggolfclub.com/"
+  },
+  {
+    "name": "Swanston Golf Course",
+    "lat": 55.8932786,
+    "lon": -3.2165688,
+    "source": "osm",
+    "osm_site": "https://www.swanstongolf.co.uk/",
+    "official_site": "https://www.swanstongolf.co.uk/"
+  },
+  {
+    "name": "University of Stirling - Airthrey Golf Club",
+    "lat": 56.1477282,
+    "lon": -3.9120497,
+    "source": "osm",
+    "osm_site": "https://www.stir.ac.uk/sports-centre/facilities/golf/",
+    "official_site": "https://www.stir.ac.uk/sports-centre/facilities/golf/"
+  },
+  {
+    "name": "Liberton Golf Course",
+    "lat": 55.9181696,
+    "lon": -3.1462482,
+    "source": "osm",
+    "osm_site": "https://www.libertongc.co.uk/",
+    "official_site": "https://www.libertongc.co.uk/"
+  },
+  {
+    "name": "Old Course Ranfurly Golf Club",
+    "lat": 55.8489582,
+    "lon": -4.5773316,
+    "source": "osm",
+    "osm_site": "https://www.oldranfurly.com/",
+    "official_site": "https://www.oldranfurly.com/"
+  },
+  {
+    "name": "Ranfurly Castle Golf Club",
+    "lat": 55.8526622,
+    "lon": -4.6032974,
+    "source": "osm",
+    "osm_site": "https://www.ranfurlycastlegolfclub.co.uk/",
+    "official_site": "https://www.ranfurlycastlegolfclub.co.uk/"
+  },
+  {
+    "name": "Colville Park Golf Course",
+    "lat": 55.8017242,
+    "lon": -3.9805732,
+    "source": "osm",
+    "osm_site": "https://colvilleparkgc.co.uk/",
+    "official_site": "https://colvilleparkgc.co.uk/"
+  },
+  {
+    "name": "Girvan",
+    "lat": 55.2504345,
+    "lon": -4.8534585,
+    "source": "osm",
+    "osm_site": "https://www.girvangolf.com/",
+    "official_site": "https://www.girvangolf.com/"
+  },
+  {
+    "name": "Troon Lochgreen",
+    "lat": 55.5362249,
+    "lon": -4.6395457,
+    "source": "osm",
+    "osm_site": "https://www.golfsouthayrshire.com/courses/6/troon-lochgreen",
+    "official_site": "https://www.golfsouthayrshire.com/courses/6/troon-lochgreen"
+  },
+  {
+    "name": "Brodick Golf Course",
+    "lat": 55.5838116,
+    "lon": -5.1587175,
+    "source": "osm",
+    "osm_site": "https://www.brodickgolf.com/",
+    "official_site": "https://www.brodickgolf.com/"
+  },
+  {
+    "name": "Lochranza Golf Course",
+    "lat": 55.7022719,
+    "lon": -5.2806577,
+    "source": "osm",
+    "osm_site": "https://www.lochranzagolf.com/",
+    "official_site": "https://www.lochranzagolf.com/"
+  },
+  {
+    "name": "Playsport Golf Test Drive Range",
+    "lat": 55.7812641,
+    "lon": -4.1792622,
+    "source": "osm",
+    "osm_site": "https://www.playsportgolf.co.uk/",
+    "official_site": "https://www.playsportgolf.co.uk/"
+  },
+  {
+    "name": "The Westerwood Hotel & Golf Resort",
+    "lat": 55.9712552,
+    "lon": -3.9913483,
+    "source": "osm",
+    "osm_site": "https://www.qhotels.co.uk/our-locations/the-westerwood-hotel-golf-resort/golf/",
+    "official_site": "https://www.qhotels.co.uk/our-locations/the-westerwood-hotel-golf-resort/golf/"
+  },
+  {
+    "name": "McDonald Golf Course",
+    "lat": 57.3712689,
+    "lon": -2.0815731,
+    "source": "osm",
+    "osm_site": "https://www.ellongolfclub.co.uk/",
+    "official_site": "https://www.ellongolfclub.co.uk/"
+  },
+  {
+    "name": "King's Golf Club",
+    "lat": 57.4632567,
+    "lon": -4.260214,
+    "source": "osm",
+    "osm_site": "https://www.kingsgolfclubinverness.co.uk/",
+    "official_site": "https://www.kingsgolfclubinverness.co.uk/"
+  },
+  {
+    "name": "Glenrothes Golf Course",
+    "lat": 56.1869148,
+    "lon": -3.2116407,
+    "source": "osm",
+    "osm_site": "https://www.glenrothesgolf.org.uk",
+    "official_site": "https://www.glenrothesgolf.org.uk"
+  },
+  {
+    "name": "Balbirnie Park Golf Club",
+    "lat": 56.2094742,
+    "lon": -3.1490117,
+    "source": "osm",
+    "osm_site": "https://www.balbirniegolf.com/",
+    "official_site": "https://www.balbirniegolf.com/"
+  },
+  {
+    "name": "Inverness Golf Club",
+    "lat": 57.4731017,
+    "lon": -4.2040028,
+    "source": "osm",
+    "osm_site": "https://www.invernessgolfclub.co.uk/",
+    "official_site": "https://www.invernessgolfclub.co.uk/"
+  },
+  {
+    "name": "Elgin Golf Club",
+    "lat": 57.6271167,
+    "lon": -3.3162034,
+    "source": "osm",
+    "osm_site": "https://www.elgingolfclub.com/",
+    "official_site": "https://www.elgingolfclub.com/"
+  },
+  {
+    "name": "King's Acre Golf Course",
+    "lat": 55.8905139,
+    "lon": -3.1184027,
+    "source": "osm",
+    "osm_site": "https://www.kings-acregolf.com/",
+    "official_site": "https://www.kings-acregolf.com/"
+  },
+  {
+    "name": "West Lothian Golf Course",
+    "lat": 55.9970119,
+    "lon": -3.6005736,
+    "source": "osm",
+    "osm_site": "https://www.westlothiangc.com/",
+    "official_site": "https://www.westlothiangc.com/"
+  },
+  {
+    "name": "Royal Musselburgh Golf Course",
+    "lat": 55.9510023,
+    "lon": -2.999416,
+    "source": "osm",
+    "osm_site": "https://www.royalmusselburgh.co.uk/",
+    "official_site": "https://www.royalmusselburgh.co.uk/"
+  },
+  {
+    "name": "Lenzie Golf Club",
+    "lat": 55.9096002,
+    "lon": -4.1462942,
+    "source": "osm",
+    "osm_site": "https://www.lenziegolfclub.co.uk/",
+    "official_site": "https://www.lenziegolfclub.co.uk/"
+  },
+  {
+    "name": "The Pines Golf Centre",
+    "lat": 55.0831931,
+    "lon": -3.5809144,
+    "source": "osm",
+    "osm_site": "https://www.pinesgolf.com/",
+    "official_site": "https://www.pinesgolf.com/"
+  },
+  {
+    "name": "Troon Darley",
+    "lat": 55.5516942,
+    "lon": -4.6472833,
+    "source": "osm",
+    "osm_site": "https://www.golfsouthayrshire.com/courses/7/troon-darley",
+    "official_site": "https://www.golfsouthayrshire.com/courses/7/troon-darley"
+  },
+  {
+    "name": "Troon Fullarton",
+    "lat": 55.5393333,
+    "lon": -4.6426305,
+    "source": "osm",
+    "osm_site": "https://www.golfsouthayrshire.com/courses/8/troon-fullarton",
+    "official_site": "https://www.golfsouthayrshire.com/courses/8/troon-fullarton"
+  },
+  {
+    "name": "Insch Golf Club",
+    "lat": 57.3425324,
+    "lon": -2.6266426,
+    "source": "osm",
+    "osm_site": "https://www.inschgolfclub.co.uk/",
+    "official_site": "https://www.inschgolfclub.co.uk/"
+  },
+  {
+    "name": "Drumoig Golf Course",
+    "lat": 56.4128338,
+    "lon": -2.9022873,
+    "source": "osm",
+    "osm_site": "https://www.drumoiggolfhotel.com/",
+    "official_site": "https://www.drumoiggolfhotel.com/"
+  },
+  {
+    "name": "Tarbert Golf Club",
+    "lat": 55.8602246,
+    "lon": -5.4421446,
+    "source": "osm",
+    "osm_site": "https://tarbertgolfclub.com/",
+    "official_site": "https://tarbertgolfclub.com/"
+  },
+  {
+    "name": "Dunaverty Golf Club",
+    "lat": 55.3107857,
+    "lon": -5.6370325,
+    "source": "osm",
+    "osm_site": "https://www.dunavertygolfclub.com/",
+    "official_site": "https://www.dunavertygolfclub.com/"
+  },
+  {
+    "name": "Ross Priory Club",
+    "lat": 56.0526034,
+    "lon": -4.5415164,
+    "source": "osm",
+    "osm_site": "https://www.strath.ac.uk/rosspriory/",
+    "official_site": "https://www.strath.ac.uk/rosspriory/"
+  },
+  {
+    "name": "Thornhill Golf Course",
+    "lat": 55.2441006,
+    "lon": -3.7473789,
+    "source": "osm",
+    "osm_site": "https://www.thornhillgolfclub.co.uk/",
+    "official_site": "https://www.thornhillgolfclub.co.uk/"
+  },
+  {
+    "name": "Deer Park",
+    "lat": 55.9128376,
+    "lon": -3.5376738,
+    "source": "osm",
+    "osm_site": "https://www.deer-park.co.uk/",
+    "official_site": "https://www.deer-park.co.uk/"
+  },
+  {
+    "name": "Linlithgow Golf Club",
+    "lat": 55.9653768,
+    "lon": -3.6247559,
+    "source": "osm",
+    "osm_site": "https://www.linlithgowgolf.co.uk/",
+    "official_site": "https://www.linlithgowgolf.co.uk/"
+  },
+  {
+    "name": "Cally Palace Hotel & Golf Course",
+    "lat": 54.8749938,
+    "lon": -4.1817143,
+    "source": "osm",
+    "osm_site": "https://www.mcmillanhotels.co.uk/hotels/cally-palace-hotel/golf-at-cally-palace",
+    "official_site": "https://www.mcmillanhotels.co.uk/hotels/cally-palace-hotel/golf-at-cally-palace"
+  },
+  {
+    "name": "Guthrie Castle Golf Course",
+    "lat": 56.6433018,
+    "lon": -2.717256,
+    "source": "osm",
+    "osm_site": "https://www.guthriecastle.com/tour-the-castle-scottish-event-venue/golf-course/",
+    "official_site": "https://www.guthriecastle.com/tour-the-castle-scottish-event-venue/golf-course/"
+  },
+  {
+    "name": "Brechin Golf Club",
+    "lat": 56.7485509,
+    "lon": -2.6557601,
+    "source": "osm",
+    "osm_site": "https://www.brechingolfclub.co.uk/",
+    "official_site": "https://www.brechingolfclub.co.uk/"
+  },
+  {
+    "name": "Torwoodlee Golf Course",
+    "lat": 55.6362389,
+    "lon": -2.8370391,
+    "source": "osm",
+    "osm_site": "https://www.torwoodleegolfclub.co.uk/",
+    "official_site": "https://www.torwoodleegolfclub.co.uk/"
+  },
+  {
+    "name": "Greenburn Golf Course",
+    "lat": 55.8206945,
+    "lon": -3.7040941,
+    "source": "osm",
+    "osm_site": "https://www.greenburngolfclub.co.uk/",
+    "official_site": "https://www.greenburngolfclub.co.uk/"
+  },
+  {
+    "name": "Auchmill Golf Course",
+    "lat": 57.1713368,
+    "lon": -2.1709316,
+    "source": "osm",
+    "osm_site": "https://auchmillgolfclub.co.uk/",
+    "official_site": "https://auchmillgolfclub.co.uk/"
+  },
+  {
+    "name": "Wee Demon golf course",
+    "lat": 56.008309,
+    "lon": -4.6010371,
+    "source": "osm",
+    "osm_site": "https://www.cameronhouse.co.uk/club/golf/the-wee-demon/",
+    "official_site": "https://www.cameronhouse.co.uk/club/golf/the-wee-demon/"
+  },
+  {
+    "name": "Downfield",
+    "lat": 56.4901202,
+    "lon": -3.0316693,
+    "source": "osm",
+    "osm_site": "https://www.downfieldgolf.com/",
+    "official_site": "https://www.downfieldgolf.com/"
+  },
+  {
+    "name": "Forfar Golf Club",
+    "lat": 56.6435919,
+    "lon": -2.8478724,
+    "source": "osm",
+    "osm_site": "https://www.forfargolfclub.co.uk",
+    "official_site": "https://www.forfargolfclub.co.uk"
+  },
+  {
+    "name": "Prestwick Golf Club",
+    "lat": 55.5086221,
+    "lon": -4.621193,
+    "source": "osm",
+    "osm_site": "https://www.prestwickgc.co.uk/",
+    "official_site": "https://www.prestwickgc.co.uk/"
+  },
+  {
+    "name": "Carnegie Links",
+    "lat": 57.857529,
+    "lon": -4.1306581,
+    "source": "osm",
+    "osm_site": "https://www.carnegieclub.co.uk/golf-championship-links.html",
+    "official_site": "https://www.carnegieclub.co.uk/golf-championship-links.html"
+  },
+  {
+    "name": "Newbattle Golf Club",
+    "lat": 55.8846834,
+    "lon": -3.0633248,
+    "source": "osm",
+    "osm_site": "https://newbattlegolfclub.com/",
+    "official_site": "https://newbattlegolfclub.com/"
+  },
+  {
+    "name": "Hazlehead Golf Course",
+    "lat": 57.1358399,
+    "lon": -2.1892213,
+    "source": "osm",
+    "osm_site": "https://www.sportaberdeen.co.uk/hazlehead",
+    "official_site": "https://www.sportaberdeen.co.uk/hazlehead"
+  },
+  {
+    "name": "Southerness Golf Course",
+    "lat": 54.878041,
+    "lon": -3.6131249,
+    "source": "osm",
+    "osm_site": "https://southernessgolfclub.com/",
+    "official_site": "https://southernessgolfclub.com/"
+  },
+  {
+    "name": "Reay Golf Course",
+    "lat": 58.5629503,
+    "lon": -3.7751396,
+    "source": "osm",
+    "osm_site": "https://reaygolfclub.com/",
+    "official_site": "https://reaygolfclub.com/"
+  },
+  {
+    "name": "Carradale Golf Course",
+    "lat": 55.588788,
+    "lon": -5.4643124,
+    "source": "osm",
+    "osm_site": "https://www.carradalegolf.com/",
+    "official_site": "https://www.carradalegolf.com/"
+  },
+  {
+    "name": "Leadhills Golf Course",
+    "lat": 55.4145522,
+    "lon": -3.7537165,
+    "source": "osm",
+    "osm_site": "https://www.leadhillsgolfclub.com/",
+    "official_site": "https://www.leadhillsgolfclub.com/"
+  },
+  {
+    "name": "Scotscraig Golf Club",
+    "lat": 56.4386308,
+    "lon": -2.8752734,
+    "source": "osm",
+    "osm_site": "https://www.scotscraiggolfclub.com/",
+    "official_site": "https://www.scotscraiggolfclub.com/"
+  },
+  {
+    "name": "Portmahomack Golf Club",
+    "lat": 57.8343745,
+    "lon": -3.8230237,
+    "source": "osm",
+    "osm_site": "https://portmahomackgolfclub.com/",
+    "official_site": "https://portmahomackgolfclub.com/"
+  },
+  {
+    "name": "Glens Course",
+    "lat": 56.6059548,
+    "lon": -2.6128609,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Isle of Eriska Golf Club",
+    "lat": 56.5340904,
+    "lon": -5.4137376,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  },
+  {
+    "name": "Macdonald Spey Valley Championship Golf Course",
+    "lat": 57.205815,
+    "lon": -3.7991274,
+    "source": "osm",
+    "osm_site": "https://www.macdonaldhotels.co.uk/spey-valley/golf",
+    "official_site": "https://www.macdonaldhotels.co.uk/spey-valley/golf"
+  },
+  {
+    "name": "Bellshill Golf Club",
+    "lat": 55.8043699,
+    "lon": -4.0207518,
+    "source": "osm",
+    "osm_site": "https://www.bellshillgolfclub.com/",
+    "official_site": "https://www.bellshillgolfclub.com/"
+  },
+  {
+    "name": "Musselburgh Golf Course",
+    "lat": 55.9300364,
+    "lon": -3.0550749,
+    "source": "osm",
+    "osm_site": "https://www.themusselburghgolfclub.com/",
+    "official_site": "https://www.themusselburghgolfclub.com/"
+  },
+  {
+    "name": "Craigielaw Golf Course",
+    "lat": 56.0049313,
+    "lon": -2.8770663,
+    "source": "osm",
+    "osm_site": "https://www.craigielawgolfclub.com/",
+    "official_site": "https://www.craigielawgolfclub.com/"
+  },
+  {
+    "name": "Golspie Golf Club",
+    "lat": 57.9611962,
+    "lon": -3.9929705,
+    "source": "osm",
+    "osm_site": "https://www.golspiegolfclub.co.uk/",
+    "official_site": "https://www.golspiegolfclub.co.uk/"
+  },
+  {
+    "name": "Caldwell Golf Club",
+    "lat": 55.7587832,
+    "lon": -4.5165051,
+    "source": "osm",
+    "osm_site": "https://caldwellgolfclub.com/",
+    "official_site": "https://caldwellgolfclub.com/"
+  },
+  {
+    "name": "Burrowhead Holiday Village Pitch and Putt course",
+    "lat": 54.6837382,
+    "lon": -4.4041571,
+    "source": "osm",
+    "osm_site": "https://burrowheadholidayvillage.co.uk/",
+    "official_site": "https://burrowheadholidayvillage.co.uk/"
+  },
+  {
+    "name": "Ladybank Golf Club",
+    "lat": 56.2861985,
+    "lon": -3.1206887,
+    "source": "osm",
+    "osm_site": "https://ladybankgolf.co.uk/",
+    "official_site": "https://ladybankgolf.co.uk/"
+  },
+  {
+    "name": "Kittocks Course",
+    "lat": 56.3212182,
+    "lon": -2.7225081,
+    "source": "osm",
+    "osm_site": "https://www.standrewsbay.com/",
+    "official_site": "https://www.standrewsbay.com/"
+  },
+  {
+    "name": "Pitfirrane Course",
+    "lat": 56.0597767,
+    "lon": -3.5120651,
+    "source": "osm",
+    "osm_site": "https://www.dunfermlinegolfclub.com/",
+    "official_site": "https://www.dunfermlinegolfclub.com/"
+  },
+  {
+    "name": "Murrayshall Course",
+    "lat": 56.4188389,
+    "lon": -3.3655723,
+    "source": "osm",
+    "osm_site": "https://www.murrayshall.co.uk/",
+    "official_site": "https://www.murrayshall.co.uk/"
+  },
+  {
+    "name": "East Course",
+    "lat": 55.9012087,
+    "lon": -3.3601134,
+    "source": "osm",
+    "osm_site": "https://www.dalmahoyhotelandcountryclub.co.uk/",
+    "official_site": "https://www.dalmahoyhotelandcountryclub.co.uk/"
+  },
+  {
+    "name": "Maverston Golf Course",
+    "lat": 57.6552827,
+    "lon": -3.1705442,
+    "source": "osm",
+    "osm_site": "https://www.maverstongolf.com/",
+    "official_site": "https://www.maverstongolf.com/"
+  },
+  {
+    "name": "Duns Golf Course",
+    "lat": 55.7754497,
+    "lon": -2.3798445,
+    "source": "osm",
+    "osm_site": "https://www.dunsgolfclub.com/",
+    "official_site": "https://www.dunsgolfclub.com/"
+  },
+  {
+    "name": "Macdonald Cardrona Hotel Golf Course",
+    "lat": 55.6361231,
+    "lon": -3.1172437,
+    "source": "osm",
+    "osm_site": "",
+    "official_site": null
+  }
+]
