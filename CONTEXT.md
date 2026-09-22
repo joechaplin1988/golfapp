@@ -606,3 +606,32 @@ for its yield. Treat the ~270 remaining unresolved Home Counties clubs as
 "no findable public online booking" for launch purposes. They stay off the
 site. Revisit only with a cheaper method, such as a club emailing to ask to
 be listed, or a golfer reporting a missing club.
+
+## Course status on the card (2026-09-22)
+Tester feedback: "nothing worse than when you pay a lot of money only for
+certain aspects of the course to be under maintenance", with a screenshot of a
+club announcing four temporary greens on its own booking page. We were reading
+that page anyway and throwing the line away.
+
+Captured at no extra request from the two platforms that publish it there:
+Intelligent Golf (a themed block on the booking page, or the bullet line the
+platform draws) and BRS (a dated `messages` array in the tee-sheet JSON, so a
+BRS notice expires by itself and is only kept when its range covers the day
+being scraped). Measured coverage on a 45-club IG sample: 8 clubs, ~18%. The
+other six platforms publish nothing on the page we read; leave them alone
+rather than fetching a second page per club per run.
+
+Stored on `courses` (status_note, status_note_at — migration 007), never per
+tee time. Written once per course per run, from the first date that scraped
+without error. A successful read with nothing on the page CLEARS the note, so
+"greens temporary" disappears when the work is done; an errored scrape leaves
+it alone rather than wiping a real warning over one bad minute.
+
+Rules that keep it honest: the club's own words, never reworded or summarised;
+empty boxes ("No updates available", a bare "Course Status" heading) are
+dropped, because showing them implies we know something we don't; a club that
+publishes nothing shows nothing, and silence is never read as "course open";
+the card says when WE last read the line, since several clubs leave a stale one
+up (Cooden Beach still says August). The ⚠ restrictions pill on the summary
+line is deliberately narrow — temporary greens, maintenance, closures, buggies
+off — because flagging every note would teach people to ignore the flag.

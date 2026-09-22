@@ -17,6 +17,7 @@ import csv
 import json
 import logging
 import os
+import re
 import time
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
@@ -144,6 +145,79 @@ class TeeTimeResult:
     checked_at: str = field(default_factory=utc_now_iso)
 
 
+# --- Course status ------------------------------------------------------------
+#
+# Clubs publish a line about the state of the course — "greens 9, 10, 14, 15 are
+# temporary due to drainage works", "preferred lies in play", "buggies off".
+# Testers asked for it: paying a visitor green fee and arriving to find half the
+# greens under maintenance is the worst surprise in golf, and the club has
+# already said so on the very page we read.
+#
+# It is collected alongside the tee sheet at no extra request, so only the
+# platforms that publish it on that page carry one. The note is the club's own
+# words — never reworded, never summarised, and stored with the time we read it
+# so the page can say how fresh it is. A club that publishes nothing shows
+# nothing; we never infer "course open" from silence.
+
+STATUS_MAX_CHARS = 400
+_STATUS_LEAD = re.compile(r"^[\s●•▪–—\-*:]+")
+# "Cooden Beach Golf Course: COURSE OPEN..." — the club's own name back at it is
+# noise on a card that already says which club this is.
+_CLUB_WORDS = re.compile(r"[^a-z0-9]+")
+_GENERIC = {"golf", "club", "course", "the", "gc", "g", "c", "links", "park", "and"}
+# The heading above the notice, when a theme has it in an unexpected tag.
+_STATUS_LABEL = re.compile(r"^(course|greens?)?\s*status(\s+update)?\s*[:\-–—]?\s*", re.I)
+# Clubs that keep the block but have nothing in it. "Course open" is a status;
+# "no updates available" is an empty box, and showing it implies we know
+# something we don't.
+_SAYS_NOTHING = re.compile(
+    r"^(no\s+(current\s+)?(updates?|news|information|reports?)(\s+available)?|"
+    r"nothing\s+to\s+report|none|n/?a|tbc|tba|coming\s+soon|latest\s+news)\s*[.!]?$", re.I)
+
+_status_notes: dict[tuple[str, str, str], str] = {}
+
+
+def _club_key(club: "ClubConfig") -> tuple[str, str, str]:
+    return (club.platform, club.base_url, club.course_id or "")
+
+
+def clean_status_note(text: str, club_name: str = "") -> str:
+    """Tidy a club's status line without changing what it says.
+
+    Only cosmetic: collapse whitespace, drop the bullet the platform draws, drop
+    the club's own name where it prefixes its own notice, and cut an essay down
+    to a readable length on a word boundary. If what's left is too short to mean
+    anything ("Open" alone is fine, "." is not), return "" so nothing is shown.
+    """
+    note = re.sub(r"\s+", " ", (text or "").replace("\xa0", " ")).strip()
+    note = _STATUS_LEAD.sub("", _STATUS_LABEL.sub("", _STATUS_LEAD.sub("", note)))
+    head, sep, tail = note.partition(":")
+    if sep and len(head) <= 60 and tail.strip():
+        words = {w for w in _CLUB_WORDS.split(head.lower()) if w} - _GENERIC
+        club = {w for w in _CLUB_WORDS.split(club_name.lower()) if w} - _GENERIC
+        # Both sides must actually name something: a club whose name is all
+        # generic words would otherwise match every prefix and eat real text.
+        if words and club and (words <= club or club <= words):
+            note = _STATUS_LEAD.sub("", tail.strip())
+    if _SAYS_NOTHING.match(note):
+        return ""
+    if len(note) > STATUS_MAX_CHARS:
+        cut = note[:STATUS_MAX_CHARS].rsplit(" ", 1)[0]
+        note = cut.rstrip(" ,;.") + "…"
+    return note if len(note) >= 8 else ""
+
+
+def record_status_note(club: "ClubConfig", text: str) -> None:
+    """Called by a scraper when the page it just read carried a status line."""
+    note = clean_status_note(text, club.club_name)
+    if note:
+        _status_notes[_club_key(club)] = note
+
+
+def status_note_for(club: "ClubConfig") -> str:
+    return _status_notes.get(_club_key(club), "")
+
+
 def write_results(results: list[TeeTimeResult], output_path: str) -> None:
     Path(output_path).write_text(
         json.dumps([asdict(r) for r in results], indent=2), encoding="utf-8"
@@ -192,7 +266,6 @@ def pause_between_clubs() -> None:
 
 def parse_price(text: str) -> Optional[float]:
     """'£38.00' / '38.00' / '£1,250' -> float. None if no number (defensive)."""
-    import re
     m = re.search(r"\d+(?:\.\d+)?", text.replace(",", ""))
     return float(m.group()) if m else None
 
@@ -239,6 +312,7 @@ def run_platform(scrape_club: ScrapeClubFn, platform: str, config_path: str,
             "course_ref": club.course_id,
             "status": status,
             "n": len(results),
+            "status_note": status_note_for(club),
         })
         if i < len(clubs) - 1:
             pause_between_clubs()

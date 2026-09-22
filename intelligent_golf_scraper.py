@@ -24,6 +24,7 @@ Usage:
 """
 
 import argparse
+import copy
 import re
 from datetime import datetime
 from urllib.parse import urljoin
@@ -44,6 +45,16 @@ PLATFORM = "intelligent_golf"
 TEE_SHEET_CONTAINER_SELECTOR = "div.teebooking-teetimes"
 NO_AVAILABILITY_SELECTOR = ".no-teetimes-message"
 
+# Course status. Clubs that publish one put it in a themed block on the same
+# page as the tee sheet — the class name varies with the club's theme, so try
+# the ones seen in the wild and fall back on the bullet the platform draws in
+# front of the line ("● Lamberhurst: Course is OPEN. Trolleys permitted."). The
+# sidebar's #coursestatus tab is only rendered when the club has set a status,
+# so a club with nothing to say yields nothing, which is the right answer.
+STATUS_SELECTORS = ("#coursestatus, .courseStatus, .course-status, .coursestatus, "
+                    ".status-section, .home-status-content, .footer-status")
+STATUS_BULLET = "●"
+
 
 def to_ddmmyyyy(date_iso: str) -> str:
     return datetime.strptime(date_iso, "%Y-%m-%d").strftime("%d-%m-%Y")
@@ -53,8 +64,30 @@ def build_url(club: gc.ClubConfig, date_iso: str) -> str:
     return f"{club.base_url.rstrip('/')}/?date={to_ddmmyyyy(date_iso)}&course={club.course_id}"
 
 
+def course_status(soup) -> str:
+    """The club's own course-status line from the booking page, or "".
+
+    Text inside HTML comments never counts: several clubs have commented their
+    status block out of the theme (Canterbury's still says June), and a notice
+    the club has switched off must not reappear on our card.
+    """
+    for box in soup.select(STATUS_SELECTORS):
+        block = copy.copy(box)                  # the tee sheet is parsed from `soup`
+        for heading in block.find_all(["h1", "h2", "h3", "h4", "h5", "h6"]):
+            heading.decompose()
+        if (text := block.get_text(" ", strip=True)):
+            return text
+
+    # No themed wrapper: take the shortest element that IS the bullet line,
+    # which is the one holding the notice and nothing else.
+    lines = [t for el in soup.find_all(["p", "div", "span", "li"])
+             if (t := el.get_text(" ", strip=True)).startswith(STATUS_BULLET) and len(t) < 600]
+    return min(lines, key=len) if lines else ""
+
+
 def parse(html: str, club: gc.ClubConfig, date_iso: str) -> tuple[list[gc.TeeTimeResult], str]:
     soup = BeautifulSoup(html, "html.parser")
+    gc.record_status_note(club, course_status(soup))
     results: list[gc.TeeTimeResult] = []
 
     slots = soup.select('div[class*="teetimes-slot"]')

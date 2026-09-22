@@ -105,9 +105,29 @@ def _pick_green_fee(fees: list[dict]) -> dict | None:
     return min(bare, key=lambda f: (-_holes(f), _per_head(f)))
 
 
+def course_messages(data: dict, date_iso: str) -> str:
+    """The club's notices for this date, joined into one line.
+
+    BRS dates its messages, so unlike most platforms a notice expires by itself
+    — one whose range doesn't cover the day being scraped is not shown, even
+    though it is sitting in the same response.
+    """
+    active = []
+    for m in data.get("messages") or []:
+        if not isinstance(m, dict) or not (text := (m.get("message") or "").strip()):
+            continue
+        start, end = m.get("start_date") or "", m.get("end_date") or ""
+        if (start and date_iso < start) or (end and date_iso > end):
+            continue
+        active.append(text)
+    return " ".join(active)
+
+
 def parse(payload: dict, club: gc.ClubConfig, date_iso: str) -> tuple[list[gc.TeeTimeResult], str]:
     results: list[gc.TeeTimeResult] = []
-    tee_times = (payload.get("data") or {}).get("tee_times") if isinstance(payload, dict) else None
+    data = payload.get("data") or {} if isinstance(payload, dict) else {}
+    gc.record_status_note(club, course_messages(data, date_iso))
+    tee_times = data.get("tee_times") if isinstance(payload, dict) else None
     if tee_times is None:
         log.error(f"[{club.club_name}] Response had no data.tee_times — "
                   f"API shape may have changed, or the club page didn't set its context")

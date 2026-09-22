@@ -87,6 +87,30 @@ def upsert_course(cur, *, club_id, name, platform, base_url, course_ref, scrape_
     return cur.fetchone()[0]
 
 
+def set_course_status(cur, *, platform, base_url, course_ref, note: str) -> None:
+    """Store the club's course-status line, or clear it when the club drops it.
+
+    Only ever called for a sheet that was actually read. A scrape that errored
+    leaves the stored note alone rather than wiping a real warning because the
+    club's server had a bad minute — but a successful read with nothing on the
+    page DOES clear it, so "greens temporary" disappears when the work is done
+    instead of haunting the card for months.
+
+    status_note_at only moves when the text changes, so the page can say how
+    long a notice has stood rather than how recently we looked.
+    """
+    cur.execute(
+        """
+        update courses
+           set status_note = nullif(%s, ''),
+               status_note_at = case when status_note is distinct from nullif(%s, '')
+                                     then now() else status_note_at end
+         where platform = %s and base_url = %s and course_ref = %s
+        """,
+        (note, note, platform, base_url, course_ref or ""),
+    )
+
+
 def retire_unlisted_courses(cur, keep: list[tuple[str, str, str]]) -> tuple[int, int]:
     """Take courses that are no longer scraped off the site.
 

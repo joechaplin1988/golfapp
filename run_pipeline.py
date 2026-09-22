@@ -168,9 +168,12 @@ def run(config_path: str, platforms: list[str], dates: list[str], to_db: bool,
                 except Exception as e:  # a scrape blowing up must not stop the run
                     log.error(f"[{club.club_name}] {date_iso} scrape raised: {e}")
                     results, status = [], "error"
-                q.put((platform, club, date_iso, results, status))
+                # Read here, not in the consumer: by the time the consumer gets
+                # to this item the scraper has moved on to the next date and
+                # would have overwritten the club's note.
+                q.put((platform, club, date_iso, results, status, gc.status_note_for(club)))
                 gc.pause_between_clubs()
-        q.put((platform, None, None, None, None))  # this platform is finished
+        q.put((platform, None, None, None, None, None))  # this platform is finished
 
     threads = [threading.Thread(target=scrape_platform, args=(p, c), daemon=True, name=p)
                for p, c in work.items()]
@@ -181,8 +184,9 @@ def run(config_path: str, platforms: list[str], dates: list[str], to_db: bool,
     tally = {"ok": 0, "empty": 0, "error": 0, "rows": 0}
     try:
         remaining = len(threads)
+        noted: set[tuple[str, str, str]] = set()   # course-status written this run
         while remaining:
-            platform, club, date_iso, results, status = q.get()
+            platform, club, date_iso, results, status, status_note = q.get()
             if club is None:
                 remaining -= 1
                 continue
@@ -196,6 +200,14 @@ def run(config_path: str, platforms: list[str], dates: list[str], to_db: bool,
                             results=[dataclasses.asdict(r) for r in results],
                             status=status,
                         )
+                        # The status is about the course, not the day, so once
+                        # per course from the first date we managed to read.
+                        key = (platform, club.base_url, club.course_id or "")
+                        if status != "error" and key not in noted:
+                            noted.add(key)
+                            golf_db.set_course_status(
+                                cur, platform=platform, base_url=club.base_url,
+                                course_ref=club.course_id, note=status_note)
                     tally["rows"] += n
                 except Exception as e:
                     log.error(f"[{club.club_name}] {date_iso} DB write failed: {e}")
