@@ -69,6 +69,11 @@ def describe(a: dict) -> str:
             f"{str(a['time_from'])[:5]}-{str(a['time_to'])[:5]}{holes}{price}")
 
 
+def money(v: float) -> str:
+    """Green fees are usually whole pounds; show pennies only when there are some."""
+    return f"£{v:,.0f}" if round(v * 100) % 100 == 0 else f"£{v:,.2f}"
+
+
 def as_time(v) -> time:
     return v if isinstance(v, time) else time.fromisoformat(str(v)[:5])
 
@@ -134,7 +139,11 @@ def build_email(a: dict, rows: list[dict]) -> tuple[str, str, str]:
         slots.sort(key=lambda x: as_time(x["tee_time"]))
         miles = min(x["distance_km"] for x in slots) * 0.621371
         prices = [float(x["price"]) for x in slots if x.get("price") is not None]
-        price = f"from £{min(prices):.0f} for {a['players']}" if prices else "price on club site"
+        # Prices are the party total; testers read a group price as their own
+        # green fee, so lead with per player, same as the website.
+        cheapest = min(prices) if prices else None
+        price = (f"from {money(cheapest / a['players'])} per player "
+                 f"({money(cheapest)} for {a['players']})") if cheapest is not None else "price on club site"
         times = ", ".join(str(x["tee_time"])[:5] for x in slots[:MAX_TIMES_PER_LINE])
         more = f" +{len(slots) - MAX_TIMES_PER_LINE} more" if len(slots) > MAX_TIMES_PER_LINE else ""
         when = f"{DAY_NAMES[d.isoweekday() - 1]} {d.day} {d.strftime('%b')}"

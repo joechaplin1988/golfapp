@@ -142,7 +142,7 @@
 
   <!-- Filters work on the results already loaded, so changing one is instant. Collapsed
        on a phone, where an always-open filter bar pushed the results off the screen. -->
-  <details class="filterbox" id="filters" hidden>
+  <details class="filterbox" id="filters">
     <summary>Filter and sort</summary>
     <div class="filters">
     <div class="field between">
@@ -160,7 +160,7 @@
       </select>
     </div>
     <div class="field">
-      <label for="maxprice">Max total £</label>
+      <label for="maxprice">Max £ per player</label>
       <input id="maxprice" type="number" min="0" step="1" placeholder="no limit" />
     </div>
     <div class="field wide">
@@ -270,6 +270,9 @@ $("date").min = today;
     $(id).innerHTML = opts.map(t => '<option value="' + t + '">' + t + '</option>').join("");
   }
   $("from").value = "06:00";
+  // Filters are usable before the first search now, so set the collapsed state
+  // here rather than when results arrive.
+  $("filters").open = !window.matchMedia("(max-width: 560px)").matches;
   $("to").value = "20:00";
 })();
 
@@ -536,7 +539,7 @@ function applyFilters(rows, f) {
     if (hhmm < f.from || hhmm > f.to) return false;
     if (f.holes && String(t.holes) !== f.holes) return false;
     // A max price means "I know what I'll pay", so unpriced slots drop out too.
-    if (f.maxPrice != null && (t.price == null || Number(t.price) > f.maxPrice)) return false;
+    if (f.maxPrice != null && (t.price == null || perPlayer(Number(t.price)) > f.maxPrice)) return false;
     return true;
   });
 }
@@ -617,7 +620,8 @@ function render() {
             ' from ' + g.earliest + '</div>' +
         '</div>' +
         '<div class="from">' + (g.minPrice != null
-            ? '<b>from £' + g.minPrice.toFixed(0) + '</b><span>' + playersLabel() + '</span>'
+            ? '<b>from ' + money(perPlayer(g.minPrice)) + '</b><span>per player · ' +
+              money(g.minPrice) + ' for ' + $("players").value + '</span>'
             : '<span>price on club site</span>') + '</div>' +
         '<div class="chev">▾</div>' +
       '</summary>' +
@@ -641,13 +645,14 @@ function render() {
     }
     for (const t of g.times) {
       // Some council courses (Gladstone) publish availability but no price.
-      const price = t.price != null ? "£" + Number(t.price).toFixed(0) : "see site";
+      const price = t.price != null ? money(perPlayer(Number(t.price))) : "see site";
+      const total = t.price != null ? money(Number(t.price)) + " for " + $("players").value : "";
       const row = document.createElement("div");
       row.className = "row";
       row.innerHTML =
         '<div class="time">' + String(t.tee_time).slice(0, 5) + '</div>' +
         '<span class="pill">' + t.holes + ' holes</span>' +
-        '<div class="price">' + price + '<span class="per">' + playersLabel() + '</span></div>' +
+        '<div class="price">' + price + '<span class="per">' + (total || playersLabel()) + '</span></div>' +
         '<a class="book" href="' + esc(t.booking_url) + '" target="_blank" rel="noopener noreferrer">Book</a>';
       row.querySelector("a.book").addEventListener("click", () => record("click_events", {
         club_id: t.club_id, club_name: t.club_name, course_name: t.course_name,
@@ -659,6 +664,17 @@ function render() {
     }
     resultsEl.appendChild(card);
   }
+}
+
+// Prices from every platform are the total for the party. Divide for display.
+function perPlayer(total) {
+  const n = Number($("players").value) || 1;
+  return total / n;
+}
+
+function money(n) {
+  // Green fees are usually whole pounds; show pennies only when there are some.
+  return "£" + (Math.round(n * 100) % 100 === 0 ? n.toFixed(0) : n.toFixed(2));
 }
 
 function playersLabel() {
@@ -770,7 +786,6 @@ async function runSearch(loc) {
         nearbyCourses = countWithin(points, loc.lat, loc.lng, Number($("radius").value) / MILES_PER_KM);
       }
     }
-    filtersEl.hidden = false;
     // A phone shows the form and nothing else, so without this the page looks
     // like the Search button did nothing. Only on a fresh search, never on a
     // filter change — that would yank the page while someone is adjusting it.
