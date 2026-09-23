@@ -36,6 +36,7 @@ def pending(cur) -> list[Path]:
             applied_at  timestamptz not null default now()
         )
     """)
+    cur.execute("alter table schema_migrations enable row level security")  # keeps the anon key out of it
     cur.execute("select filename from schema_migrations")
     done = {r[0] for r in cur.fetchall()}
     return [p for p in sorted(MIGRATIONS_DIR.glob("*.sql")) if p.name not in done]
