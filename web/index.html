@@ -59,6 +59,10 @@
   .chev { color:var(--muted); font-size:.9rem; transition:transform .15s; }
   details[open] > summary .chev { transform:rotate(180deg); }
   .times { border-top:1px solid var(--line); padding:6px 14px 10px; display:flex; flex-direction:column; }
+  .trip { color:var(--muted); font-size:.82rem; padding:2px 0 6px; line-height:1.45; }
+  .trip div { margin:1px 0; }
+  .trip b { color:var(--ink); font-weight:600; }
+  .trip .src { font-size:.72rem; opacity:.8; }
   .profile { color:var(--muted); font-size:.82rem; padding:6px 0 2px; }
   .choices { display:flex; flex-wrap:wrap; gap:8px; margin:4px 2px 12px; }
   .choices button { font:inherit; font-size:.9rem; padding:8px 12px; cursor:pointer;
@@ -79,6 +83,16 @@
   @media (prefers-color-scheme: dark) { .rank { color:#f3d98b; background:#3a2f12; border-color:#6b5520; } }
   .pill { display:inline-block; font-size:.72rem; color:var(--muted); border:1px solid var(--line);
     border-radius:999px; padding:1px 7px; margin-left:6px; }
+  .pill.warn { color:#8a5a00; background:#fdf3dd; border-color:#e6cf9a; }
+  .status { font-size:.85rem; line-height:1.45; padding:8px 10px; margin:6px 0 2px;
+    border-radius:9px; background:var(--bg); border:1px solid var(--line); }
+  .status.warn { background:#fdf3dd; border-color:#e6cf9a; color:#4a3a12; }
+  .status b { font-weight:600; }
+  .status .when { display:block; margin-top:2px; font-size:.72rem; opacity:.75; }
+  @media (prefers-color-scheme: dark) {
+    .pill.warn { color:#f3d98b; background:#3a2f12; border-color:#6b5520; }
+    .status.warn { background:#3a2f12; border-color:#6b5520; color:#f0e2bc; }
+  }
   .alertbox { background:var(--card); border:1px solid var(--line); border-radius:12px;
     padding:12px 14px; margin:4px 0 12px; box-shadow:var(--shadow); }
   .alertbox > button.open { font:inherit; font-weight:600; color:var(--accent); background:none;
@@ -199,6 +213,7 @@
   <div id="results" class="results"></div>
 
   <footer>
+    Places to eat, drink and stay come from OpenStreetMap contributors.<br>
     We don't take bookings or payments — every result links straight to the club's own booking page.
   </footer>
 </div>
@@ -362,6 +377,38 @@ function rankStamp(g) {
     ? "Golf Monthly UK & Ireland Top 100, 2025/26: ranked " + r.rank
     : "Golf Monthly UK & Ireland Next 100 (courses ranked 101-200), 2025/26";
   return '<span class="rank" title="' + esc(title) + '">' + esc(r.tier) + '</span>';
+}
+
+// One fetch shared by every card that opens. A FAILURE IS NOT REMEMBERED: a
+// dropped request on a phone used to mean no club showed trip info again for
+// the rest of the session, so the next card opened tries again.
+let tripCache, tripLoading;
+function tripInfo() {
+  if (tripCache !== undefined) return Promise.resolve(tripCache);
+  tripLoading = tripLoading || fetch("trip_info.json")
+    .then(r => r.ok ? r.json() : Promise.reject(new Error(r.status)))
+    .then(j => (tripCache = j))
+    .catch(() => { tripLoading = null; return null; });
+  return tripLoading;
+}
+
+// What is at the club and what is near it, for planning a trip rather than
+// just a round. Everything shown is a named place from OpenStreetMap; a club
+// with nothing recorded shows nothing at all rather than a guess.
+async function fillTrip(el, club) {
+  const all = await tripInfo();
+  if (!all) return false;              // couldn't load — let this card try again
+  const t = all[club];
+  if (!t) return true;                 // loaded, and this club simply has nothing
+  const bits = [];
+  if (t.on_site) bits.push("<div><b>On site:</b> " + esc(t.on_site.join(" · ")) + "</div>");
+  if (t.pubs) bits.push("<div><b>Pubs nearby:</b> " + esc(t.pubs.join(" · ")) + "</div>");
+  if (t.stays) bits.push("<div><b>Stay nearby:</b> " + esc(t.stays.join(" · ")) + "</div>");
+  if (!bits.length) return true;
+  bits.push('<div class="src">Places from OpenStreetMap, straight-line distance. Check before travelling.</div>');
+  el.innerHTML = bits.join("");
+  el.hidden = false;
+  return true;
 }
 
 let clubPointsCache;
@@ -544,6 +591,24 @@ function applyFilters(rows, f) {
   });
 }
 
+// Which course notes are a reason to think twice before paying a green fee.
+// "Course open, trolleys permitted" is reassurance; "greens 9 and 14 are
+// temporary" is the thing a tester said ruins a round you have already paid
+// for. Deliberately narrow — flagging every note would teach people to ignore
+// the flag, and the club's full words are on the card either way.
+const STATUS_WARNS = new RegExp(
+  "\\b(temp(orary|\\.)?\\s*(green|tee)|winter\\s*(green|tee)|under\\s*maintenance|" +
+  "maintenance\\s*(work|week|day)|hollow[\\s-]?(cor|tin)|verti[\\s-]?drain|scarif|" +
+  "sand(ing|ed)|drainage|closed|closure|out of play|carry only|ground under repair|" +
+  "no (buggies|trolleys|carts)|(buggies|trolleys)\\s+(are\\s+)?(not|off|banned|suspended))\\b", "i");
+
+// The club wrote the note whenever it liked; this is when WE last read it, and
+// the card says so rather than implying the note is live.
+function readOn(iso) {
+  const d = iso ? new Date(iso) : null;
+  return d && !isNaN(d) ? d.toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : "";
+}
+
 // One card per course: the club's tee times collapsed behind a summary line.
 function groupByCourse(rows) {
   const groups = new Map();
@@ -558,6 +623,10 @@ function groupByCourse(rows) {
             courseType: t.course_type, yardage: t.yardage, times: [] };
       groups.set(key, g);
     }
+    // Course status is per course, so every row in a group carries the same
+    // note — except a club collapsed into one card, where the first sheet that
+    // has one speaks for the club.
+    if (!g.status && t.status_note) { g.status = t.status_note; g.statusAt = t.status_note_at; }
     g.times.push(t);
   }
   for (const g of groups.values()) {
@@ -609,13 +678,15 @@ function render() {
     const course = g.course && g.course !== g.club ? " · " + g.course : "";
     const n = g.times.length;
     const holesSet = [...new Set(g.times.map(t => t.holes))].sort((a, b) => b - a);
+    const warned = !!g.status && STATUS_WARNS.test(g.status);
     const card = document.createElement("details");
     card.className = "club";
     card.innerHTML =
       '<summary>' +
         '<div class="meta">' +
           '<div class="club-name">' + esc(g.club) + esc(course) + rankStamp(g) +
-            holesSet.map(h => '<span class="pill">' + h + ' holes</span>').join("") + '</div>' +
+            holesSet.map(h => '<span class="pill">' + h + ' holes</span>').join("") +
+            (warned ? '<span class="pill warn">⚠ restrictions</span>' : '') + '</div>' +
           '<div class="sub">' + miles + ' mi away · ' + n + ' tee time' + (n === 1 ? "" : "s") +
             ' from ' + g.earliest + '</div>' +
         '</div>' +
@@ -637,6 +708,32 @@ function render() {
       g.courseType ? g.courseType.charAt(0).toUpperCase() + g.courseType.slice(1) : null,
       g.yardage ? Number(g.yardage).toLocaleString() + " yds" : null,
     ].filter(Boolean);
+    // What the club itself says about the course, in its own words, first
+    // thing in the panel — ahead of the times, because it changes whether you
+    // want any of them.
+    if (g.status) {
+      const s = document.createElement("div");
+      s.className = "status" + (warned ? " warn" : "");
+      const when = readOn(g.statusAt);
+      s.innerHTML = "<b>From the club:</b> " + esc(g.status) +
+        '<span class="when">Posted on the club’s booking page' +
+        (when ? ", read " + esc(when) : "") + ". Check with the club before you travel.</span>";
+      list.appendChild(s);
+    }
+    const trip = document.createElement("div");
+    trip.className = "trip";
+    trip.hidden = true;
+    list.appendChild(trip);
+    // Only when the card is opened, so a search of 60 clubs fetches nothing.
+    card.addEventListener("toggle", () => {
+      if (card.open && !trip.dataset.filled) {
+        trip.dataset.filled = "1";
+        // If the file couldn't be loaded, forget we tried: opening this card
+        // again should have another go rather than staying blank for good.
+        fillTrip(trip, g.club).then(ok => { if (!ok) delete trip.dataset.filled; });
+      }
+    }, { once: false });
+
     if (facts.length) {
       const p = document.createElement("div");
       p.className = "profile";
