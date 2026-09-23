@@ -174,6 +174,55 @@ _SAYS_NOTHING = re.compile(
     r"^(no\s+(current\s+)?(updates?|news|information|reports?)(\s+available)?|"
     r"nothing\s+to\s+report|none|n/?a|tbc|tba|coming\s+soon|latest\s+news)\s*[.!]?$", re.I)
 
+# Clubs use the same box for house rules and for the state of the course:
+# "non-golfers are strictly not allowed on the course", "our diner serves bacon
+# baps". Those are not what this feature is for, and carrying them would bury
+# the one line that decides whether a round is worth paying for. So a notice is
+# kept SENTENCE BY SENTENCE, and only the sentences that describe how the course
+# plays survive. Whitelist, not blacklist: a sentence we can't recognise is
+# dropped, because a missing note is honest while a menu under "From the club"
+# is noise.
+#
+# Written to catch condition, not the word "course" — "not allowed ON THE
+# COURSE" and "ride on the back of a BUGGY" must not qualify, which is why the
+# course words need a condition word beside them and the buggy clause only
+# matches the plural, permission-shaped phrasings a status line actually uses.
+_FEATURE = (r"(?:course|holes?|greens?|tees?|fairways?|bunkers?|links|"
+            # "Front 9 closed on Monday for over-seeding" is the whole point of
+            # this feature, and says nine as a digit.
+            r"(?:front|back|first|second)\s*(?:9|18|nine)|\d{1,2}\s*holes?)")
+_CONDITION = (r"(?:open|clos(?:ed|ure|ing)|playable|unplayable|temporary|temp|winter|"
+              r"mats?|preferred|maintenance|works?|drainage|repair|frost|snow|flood\w*|"
+              r"waterlogged|wet|aerat\w*|overseed\w*|renovat\w*|reduced|restrict\w*)")
+_ABOUT_THE_COURSE = re.compile(
+    "|".join((
+        # a course feature and a condition, either way round and close together
+        rf"\b{_FEATURE}\b[^.!?]{{0,40}}\b{_CONDITION}\b",
+        rf"\b{_CONDITION}\b[^.!?]{{0,40}}\b{_FEATURE}\b",
+        # phrases that are about the state of play on their own
+        r"\bpreferred lies\b", r"\bwinter (?:greens|tees|rules)\b",
+        r"\bground under repair\b", r"\bg\.?u\.?r\.?\b", r"\bcasual water\b",
+        r"\bstanding water\b", r"\bfrost\b", r"\bwaterlogged\b", r"\bqualifying\b",
+        r"\bno restrictions?\b",
+        r"\bhollow[- ]?(?:cor|tin)\w*\b", r"\bverti[- ]?drain\w*\b", r"\bscarif\w+\b",
+        r"\btop[- ]?dress\w*\b", r"\bcarry only\b", r"\bno (?:buggies|trolleys|carts)\b",
+        # equipment, but only the way a status line puts it — never "ride on the
+        # back of a buggy", which is a rule about behaviour
+        r"\b(?:buggies|buggys|trolleys|trollies|carts)\b[^.!?]{0,30}"
+        r"\b(?:on|off|permitted|allowed|banned|suspended|available|not|in use|restricted)\b",
+    )), re.I)
+# The club's own "Updated: 14th Sep" is worth keeping when something else is —
+# it dates the notice better than we can — but never on its own.
+_UPDATED = re.compile(r"^(?:last\s+)?updated\b[\s:]*\S", re.I)
+# Sentence ends, the bullets and spaced dashes clubs use instead of them, and
+# the club's own "Updated:" stamp, which is usually tacked onto the end of a
+# line rather than written as a sentence of its own. The dash matters: clubs
+# that never use a full stop run the course status and the dog policy together
+# in one breath, and without it the whole lot is kept or the whole lot is lost.
+_SENTENCE_SPLIT = re.compile(
+    r"(?<=[.!?])\s+|\s*[•·▪●]\s*|\n+|\s+[-–—]+\s*|"
+    r"\s+(?=(?:last\s+)?updated\s*:)", re.I)
+
 _status_notes: dict[tuple[str, str, str], str] = {}
 
 
@@ -181,13 +230,35 @@ def _club_key(club: "ClubConfig") -> tuple[str, str, str]:
     return (club.platform, club.base_url, club.course_id or "")
 
 
-def clean_status_note(text: str, club_name: str = "") -> str:
-    """Tidy a club's status line without changing what it says.
+def course_status_only(note: str) -> str:
+    """Keep the sentences that describe the course; drop the rest.
 
-    Only cosmetic: collapse whitespace, drop the bullet the platform draws, drop
-    the club's own name where it prefixes its own notice, and cut an essay down
-    to a readable length on a word boundary. If what's left is too short to mean
-    anything ("Open" alone is fine, "." is not), return "" so nothing is shown.
+    A club's notice board is one box, so "Greens 9, 10, 15, 14 are temporary due
+    to drainage works" arrives alongside "Good morning" and the clubhouse menu.
+    Sentences are kept, in the club's own words and original order, never
+    rewritten — this only decides which of them a golfer choosing a tee time
+    needs. Nothing recognisable means "", so the card shows nothing at all.
+    """
+    kept, dated = [], []
+    for part in _SENTENCE_SPLIT.split(note or ""):
+        part = part.strip(" –—-")
+        if not part:
+            continue
+        if _ABOUT_THE_COURSE.search(part):
+            kept.append(part if part[-1] in ".!?:" else part + ".")
+        elif _UPDATED.match(part):
+            dated.append(part)
+    return " ".join(kept + dated) if kept else ""
+
+
+def clean_status_note(text: str, club_name: str = "") -> str:
+    """The note we would store for a club, or "" if there isn't one.
+
+    Tidying is only cosmetic — collapse whitespace, drop the bullet the platform
+    draws, drop the club's own name where it prefixes its own notice, cut an
+    essay to a readable length on a word boundary. What the club says is never
+    reworded; `course_status_only` decides which sentences are about the course
+    at all, and an empty box returns "" so nothing is shown.
     """
     note = re.sub(r"\s+", " ", (text or "").replace("\xa0", " ")).strip()
     note = _STATUS_LEAD.sub("", _STATUS_LABEL.sub("", _STATUS_LEAD.sub("", note)))
@@ -201,6 +272,7 @@ def clean_status_note(text: str, club_name: str = "") -> str:
             note = _STATUS_LEAD.sub("", tail.strip())
     if _SAYS_NOTHING.match(note):
         return ""
+    note = course_status_only(note)
     if len(note) > STATUS_MAX_CHARS:
         cut = note[:STATUS_MAX_CHARS].rsplit(" ", 1)[0]
         note = cut.rstrip(" ,;.") + "…"

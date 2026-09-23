@@ -627,6 +627,25 @@ without error. A successful read with nothing on the page CLEARS the note, so
 "greens temporary" disappears when the work is done; an errored scrape leaves
 it alone rather than wiping a real warning over one bad minute.
 
+Course status ONLY (Joe, 2026-09-23). Clubs use the same box for house rules
+and marketing: "non-golfers are strictly NOT ALLOWED on the course", "our Diner
+serves bacon baps", car park hours, smoking policy. Joe's call was to carry
+true course status and nothing else, so a notice is kept SENTENCE BY SENTENCE
+and only sentences describing how the course plays survive — open/closed,
+temporary or winter greens, preferred lies, GUR, maintenance and drainage
+works, frost and flooding, buggies and trolleys on or off. It is a whitelist:
+a sentence we can't recognise is dropped, because a missing note is honest
+while a menu under "From the club" is noise. Sentences split on full stops,
+bullets AND spaced dashes, because clubs that never use a full stop run the
+status and the dog policy together in one breath. The club's own "Updated:
+14th Sep" rides along when something else survived, never alone.
+
+Two traps found on live pages and covered by test_course_status.py: the course
+words need a condition word beside them ("not allowed ON THE COURSE" must not
+qualify), and the buggy clause only matches plural permission-shaped phrasing
+("ride on the back of a BUGGY" is behaviour, not status). Measured on 80 live
+clubs: 17 publish something, 11 of those are course status.
+
 Rules that keep it honest: the club's own words, never reworded or summarised;
 empty boxes ("No updates available", a bare "Course Status" heading) are
 dropped, because showing them implies we know something we don't; a club that
