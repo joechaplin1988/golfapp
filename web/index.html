@@ -274,6 +274,40 @@ const today = new Date().toISOString().slice(0, 10);
 $("date").value = today;
 $("date").min = today;
 
+// ...and don't offer dates we have no tee times for. How far ahead we hold
+// depends on when the last full scrape finished, so it moves between about 5
+// and 7 days. Offering a date beyond it returned an empty page that read as a
+// broken search, which is exactly what it looked like to the first person who
+// hit it. Start on the safe end, then ask the database what we actually have.
+const plusDays = (n) => new Date(Date.now() + n * 864e5).toISOString().slice(0, 10);
+let lastDate = plusDays(5);
+$("date").max = lastDate;
+(async function findHorizon() {
+  try {
+    const r = await fetch(
+      SUPABASE_URL + "/rest/v1/tee_times?select=tee_date&order=tee_date.desc&limit=1",
+      { headers: { "apikey": SUPABASE_ANON_KEY,
+                   "Authorization": "Bearer " + SUPABASE_ANON_KEY } });
+    const rows = r.ok ? await r.json() : null;
+    // Corrects the bound in BOTH directions: a run that fell short leaves us
+    // holding fewer days than usual, and offering those dates is the bug.
+    const got = rows && rows[0] && rows[0].tee_date;
+    if (got && got >= today) {
+      lastDate = got;
+      $("date").max = got;
+      if ($("date").value > got) $("date").value = got;
+    }
+  } catch {
+    // Leave the conservative bound in place; a search still works.
+  }
+})();
+
+// "26 September" — for telling someone how far ahead we go.
+function prettyDate(iso) {
+  const d = new Date(iso + "T12:00:00");
+  return isNaN(d) ? iso : d.toLocaleDateString("en-GB", { day: "numeric", month: "long" });
+}
+
 // "Play between" options: 05:00 .. 21:00 in half-hour steps.
 (function buildTimeOptions() {
   const opts = [];
@@ -659,7 +693,10 @@ function render() {
       setStatus("We don't list any courses within " + $("radius").value + " miles of there yet. " +
                 "We cover over 1,000 clubs across the UK, most completely in London and the Home Counties.");
     } else {
-      setStatus("No tee times found for that search. Try a wider radius, a different date, or fewer players.");
+      setStatus($("date").value > lastDate
+        ? "We only list tee times up to " + prettyDate(lastDate) + " at the moment — clubs open " +
+          "their sheets a week or so ahead. Try a date on or before then."
+        : "No tee times found for that search. Try a wider radius, a different date, or fewer players.");
     }
     return;
   }
