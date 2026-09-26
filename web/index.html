@@ -177,6 +177,13 @@
       <label for="maxprice">Max £ per player</label>
       <input id="maxprice" type="number" min="0" step="1" placeholder="no limit" />
     </div>
+    <div class="field">
+      <label for="hasrange">Warm-up</label>
+      <select id="hasrange">
+        <option value="">Any club</option>
+        <option value="1">Has a driving range</option>
+      </select>
+    </div>
     <div class="field wide">
       <label for="sort">Sort clubs by</label>
       <select id="sort">
@@ -416,6 +423,19 @@ function rankStamp(g) {
 // One fetch shared by every card that opens. A FAILURE IS NOT REMEMBERED: a
 // dropped request on a phone used to mean no club showed trip info again for
 // the rest of the session, so the next card opened tries again.
+// Clubs with a range or practice ground on site, from the same OpenStreetMap
+// collection as the trip lines. Its own small file rather than the 200kB trip
+// one, and only fetched when somebody actually asks for the filter.
+let rangeClubs, rangeLoading;
+function rangeClubSet() {
+  if (rangeClubs !== undefined) return Promise.resolve(rangeClubs);
+  rangeLoading = rangeLoading || fetch("range_clubs.json")
+    .then(r => r.ok ? r.json() : Promise.reject(new Error(r.status)))
+    .then(list => (rangeClubs = new Set(list)))
+    .catch(() => { rangeLoading = null; return null; });
+  return rangeLoading;
+}
+
 let tripCache, tripLoading;
 function tripInfo() {
   if (tripCache !== undefined) return Promise.resolve(tripCache);
@@ -610,6 +630,7 @@ function currentFilters() {
     to: $("to").value,
     holes: $("holes").value,
     maxPrice: $("maxprice").value ? Number($("maxprice").value) : null,
+    hasRange: $("hasrange").value === "1",
     sort: $("sort").value,
   };
 }
@@ -621,6 +642,10 @@ function applyFilters(rows, f) {
     if (f.holes && String(t.holes) !== f.holes) return false;
     // A max price means "I know what I'll pay", so unpriced slots drop out too.
     if (f.maxPrice != null && (t.price == null || perPlayer(Number(t.price)) > f.maxPrice)) return false;
+    // Only ever narrows on clubs we KNOW have one. OpenStreetMap misses plenty
+    // of ranges, so this hides clubs that may well have one — which is why the
+    // message below says so rather than pretending the list is complete.
+    if (f.hasRange && !(rangeClubs && rangeClubs.has(t.club_name))) return false;
     return true;
   });
 }
@@ -702,7 +727,9 @@ function render() {
   }
   if (!rows.length) {
     setStatus("Nothing between " + f.from + " and " + f.to + " with those filters — " +
-              allRows.length.toLocaleString() + " tee times are available on this date if you widen them.");
+              allRows.length.toLocaleString() + " tee times are available on this date if you widen them." +
+              (f.hasRange ? " The driving range filter only keeps clubs where one is mapped on" +
+                            " OpenStreetMap, so it hides clubs that may well have one." : ""));
     return;
   }
   const groups = sortGroups(groupByCourse(rows), f.sort);
@@ -820,6 +847,13 @@ function esc(s){ return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","
 for (const id of ["from", "to", "holes", "maxprice", "sort"]) {
   $(id).addEventListener("input", render);
 }
+
+// The range filter needs its list before it can narrow anything, so fetch it
+// first and only then re-render. Without this the first tick hides every club.
+$("hasrange").addEventListener("input", async () => {
+  if ($("hasrange").value === "1") await rangeClubSet();
+  render();
+});
 
 // ---- Tee-time alerts --------------------------------------------------------
 // A string written by the Netlify build. Only the exact word "true" turns alerts on,
